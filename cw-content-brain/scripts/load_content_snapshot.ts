@@ -66,8 +66,8 @@ function normaliseRow(sourceTable: SnapshotTableName, value: unknown, index: num
     fees_info: stringField(value, "fees_info"),
     video_url: stringField(value, "video_url"),
     interview_url: stringField(value, "interview_url"),
-    detailed_audit: stringField(value, "detailed_audit"),
-    evidence: arrayField(value, "evidence"),
+    detailed_audit: jsonTextField(value, "detailed_audit"),
+    evidence: evidenceField(value, "evidence"),
     created_at: stringField(value, "created_at"),
     updated_at: stringField(value, "updated_at"),
   };
@@ -90,6 +90,39 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 function stringField(row: Record<string, unknown>, key: string): string | undefined {
   const value = row[key];
   return typeof value === "string" && value.trim() ? value.trim() : undefined;
+}
+
+function jsonTextField(row: Record<string, unknown>, key: string): string | undefined {
+  const value = row[key];
+  if (typeof value === "string" && value.trim()) {
+    return value.trim();
+  }
+  if (Array.isArray(value) || isRecord(value)) {
+    return JSON.stringify(value, null, 2);
+  }
+  return undefined;
+}
+
+function evidenceField(row: Record<string, unknown>, key: string): string[] | undefined {
+  const value = row[key];
+  if (Array.isArray(value)) {
+    const evidence = value
+      .map((item) => {
+        if (typeof item === "string") {
+          return item.trim();
+        }
+        if (Array.isArray(item) || isRecord(item)) {
+          return JSON.stringify(item, null, 2);
+        }
+        return undefined;
+      })
+      .filter((item): item is string => Boolean(item));
+    return evidence.length > 0 ? evidence : undefined;
+  }
+  if (isRecord(value)) {
+    return [JSON.stringify(value, null, 2)];
+  }
+  return undefined;
 }
 
 function numberField(row: Record<string, unknown>, key: string): number | undefined {
