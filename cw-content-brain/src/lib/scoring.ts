@@ -25,13 +25,20 @@ export function scoreRoute(route: RouteRecord, config: SiteConfig): SeoScore {
     },
     {
       name: "word_count",
-      passed: (route.wordCount ?? 0) >= config.seo.minWords,
-      detail: `${route.wordCount ?? 0} words`,
+      passed: route.wordCount >= config.seo.minWords,
+      detail: `${route.wordCount} words`,
     },
     {
       name: "internal_links",
       passed: route.internalLinks.length > 0,
       detail: `${route.internalLinks.length} internal links`,
+    },
+    {
+      name: "spa_content_not_rendered",
+      passed: !appearsThinSitemapSpaPage(route),
+      detail: appearsThinSitemapSpaPage(route)
+        ? "Sitemap URL returned thin React shell HTML; full Supabase article content was not scanned."
+        : "Raw HTML appears to contain enough page content for basic scoring.",
     },
   ];
 
@@ -48,4 +55,8 @@ export function averageScore(scores: SeoScore[]): number {
     return 0;
   }
   return Math.round(scores.reduce((sum, score) => sum + score.score, 0) / scores.length);
+}
+
+function appearsThinSitemapSpaPage(route: RouteRecord): boolean {
+  return route.discoveryMode === "sitemap-url" && route.wordCount < 250 && route.h1s.length === 0;
 }
