@@ -137,7 +137,11 @@ export async function verifyRenderedPages(): Promise<RenderedVerificationResult[
   const queue = await readQueue(config.queueInput);
   const pages = selectPages(queue, config);
   const browser = await chromium.launch({ headless: true });
-  let baseUrlCheck: BaseUrlCheck;
+  let baseUrlCheck: BaseUrlCheck = {
+    attemptedUrl: config.baseUrl,
+    success: false,
+    errorMessage: "Base URL check did not complete.",
+  };
   const results: RenderedVerificationResult[] = [];
 
   try {
@@ -204,9 +208,10 @@ async function verifyQueueItem(browser: Browser, item: PriorityQueueItem, config
   const page = await browser.newPage();
   let httpStatus: number | undefined;
   let finalUrl: string | undefined;
+  let failureStage: FailureStage = "unknown";
 
   try {
-    let failureStage: FailureStage = "goto";
+    failureStage = "goto";
     const response = await page.goto(attemptedUrl, { waitUntil: "domcontentloaded", timeout: config.timeoutMs });
     httpStatus = response?.status();
     finalUrl = page.url();
@@ -245,7 +250,7 @@ async function verifyQueueItem(browser: Browser, item: PriorityQueueItem, config
   } catch (error) {
     const diagnostics = describeError(error);
     const fallback = await nativeFetchFallback(attemptedUrl);
-    return failedResult(item, attemptedUrl, httpStatus === undefined ? "goto" : "extract", {
+    return failedResult(item, attemptedUrl, failureStage, {
       ...diagnostics,
       finalUrl,
       httpStatus,
