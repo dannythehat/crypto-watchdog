@@ -264,75 +264,89 @@ async function verifyQueueItem(browser: Browser, item: PriorityQueueItem, config
 }
 
 async function extractRenderedFacts(page: Page, status: number | null, config: RenderedVerifierConfig): Promise<RenderedFacts> {
-  const patterns = [...defaultAffiliatePatterns, ...(config.affiliatePatterns ?? [])].map((pattern) => pattern.toLowerCase());
-  const facts = await page.evaluate(
-    ({ baseUrl, affiliatePatterns, phrases, tokens, socialHostPatterns }) => {
-      const doc = (globalThis as any).document;
-      const location = (globalThis as any).location;
-      const bodyText = String(doc.body?.innerText ?? "");
-      const lowerText = bodyText.toLowerCase();
-      const baseHost = new URL(baseUrl).hostname.replace(/^www\./, "");
-      const sample = (values: string[]) => Array.from(new Set(values)).slice(0, 10);
-      const textFor = (selector: string) => Array.from(doc.querySelectorAll(selector)).map((node: any) => String(node.textContent ?? "").trim()).filter(Boolean).slice(0, 20);
-      const attr = (selector: string, name: string) => String(doc.querySelector(selector)?.getAttribute(name) ?? "") || undefined;
-      const hrefs = Array.from(doc.querySelectorAll("a[href]")).map((anchor: any) => {
-        try {
-          return new URL(String(anchor.getAttribute("href") ?? ""), location.href).href;
-        } catch {
-          return "";
-        }
-      }).filter(Boolean);
-      const isInternal = (href: string) => {
-        try {
-          return new URL(href).hostname.replace(/^www\./, "") === baseHost;
-        } catch {
-          return false;
-        }
-      };
-      const hasPattern = (href: string) => affiliatePatterns.some((pattern: string) => href.toLowerCase().includes(pattern));
-      const isSocial = (href: string) => socialHostPatterns.some((host: string) => {
-        try {
-          return new URL(href).hostname.includes(host);
-        } catch {
-          return false;
-        }
-      });
-      const internalLinks = hrefs.filter(isInternal);
-      const externalLinks = hrefs.filter((href) => !isInternal(href));
-      const affiliateLinks = hrefs.filter(hasPattern);
-      const credibleExternalLinks = externalLinks.filter((href) => !hasPattern(href) && !isSocial(href));
-      const images = Array.from(doc.images ?? []);
-      const iframeSrcs = Array.from(doc.querySelectorAll("iframe[src]")).map((iframe: any) => String(iframe.getAttribute("src") ?? ""));
-      const codeTokens = tokens.filter((token: string) => bodyText.includes(token));
-      const disclosureDetected = phrases.some((phrase: string) => lowerText.includes(phrase));
+  const payload = {
+    baseUrl: config.baseUrl,
+    affiliatePatterns: [...defaultAffiliatePatterns, ...(config.affiliatePatterns ?? [])].map((pattern) => pattern.toLowerCase()),
+    phrases: disclosurePhrases,
+    tokens: codeArtifactTokens,
+    socialHostPatterns: socialHosts,
+  };
 
-      return {
-        url: location.href,
-        titleTag: String(doc.title ?? "") || undefined,
-        metaDescription: attr('meta[name="description"]', "content"),
-        canonical: attr('link[rel="canonical"]', "href"),
-        ogTitle: attr('meta[property="og:title"]', "content"),
-        ogDescription: attr('meta[property="og:description"]', "content"),
-        ogImage: attr('meta[property="og:image"]', "content"),
-        twitterTitle: attr('meta[name="twitter:title"]', "content"),
-        twitterDescription: attr('meta[name="twitter:description"]', "content"),
-        h1s: textFor("h1"),
-        h2s: textFor("h2"),
-        visibleTextWordCount: bodyText.split(/\s+/).filter(Boolean).length,
-        internalLinks: { count: internalLinks.length, sampleHrefs: sample(internalLinks) },
-        externalLinks: { count: externalLinks.length, sampleHrefs: sample(externalLinks) },
-        credibleExternalLinks: { count: credibleExternalLinks.length, sampleHrefs: sample(credibleExternalLinks) },
-        affiliateLinks: { count: affiliateLinks.length, sampleHrefs: sample(affiliateLinks) },
-        affiliateDisclosureDetected: disclosureDetected ? "yes" : affiliateLinks.length > 0 ? "no" : "uncertain",
-        images: images.length,
-        imagesMissingAlt: images.filter((image: any) => !String(image.getAttribute("alt") ?? "").trim()).length,
-        youtubeEmbeds: iframeSrcs.filter((src) => src.includes("youtube.com") || src.includes("youtu.be")).length,
-        codeArtifactTokens: codeTokens,
-      };
-    },
-    { baseUrl: config.baseUrl, affiliatePatterns: patterns, phrases: disclosurePhrases, tokens: codeArtifactTokens, socialHostPatterns: socialHosts },
-  );
+  // Keep this browser-context extraction free of TypeScript-only syntax and transpiler helper dependencies because Playwright serialises it into the page.
+  const extractionSource = `(() => {
+    const payload = ${JSON.stringify(payload)};
+    const doc = document;
+    const currentLocation = window.location;
+    const bodyText = String((doc.body && doc.body.innerText) || "");
+    const lowerText = bodyText.toLowerCase();
+    const baseHost = new URL(payload.baseUrl).hostname.replace(/^www\./, "");
+    const uniqueSample = (values) => Array.from(new Set(values)).slice(0, 10);
+    const textFor = (selector) => Array.from(doc.querySelectorAll(selector))
+      .map((node) => String(node.textContent || "").trim())
+      .filter(Boolean)
+      .slice(0, 20);
+    const attr = (selector, name) => {
+      const node = doc.querySelector(selector);
+      const value = node ? String(node.getAttribute(name) || "") : "";
+      return value || undefined;
+    };
+    const hrefs = Array.from(doc.querySelectorAll("a[href]")).map((anchor) => {
+      try {
+        return new URL(String(anchor.getAttribute("href") || ""), currentLocation.href).href;
+      } catch {
+        return "";
+      }
+    }).filter(Boolean);
+    const isInternal = (href) => {
+      try {
+        return new URL(href).hostname.replace(/^www\./, "") === baseHost;
+      } catch {
+        return false;
+      }
+    };
+    const hasPattern = (href) => payload.affiliatePatterns.some((pattern) => href.toLowerCase().includes(pattern));
+    const isSocial = (href) => payload.socialHostPatterns.some((host) => {
+      try {
+        return new URL(href).hostname.includes(host);
+      } catch {
+        return false;
+      }
+    });
+    const internalLinks = hrefs.filter(isInternal);
+    const externalLinks = hrefs.filter((href) => !isInternal(href));
+    const affiliateLinks = hrefs.filter(hasPattern);
+    const credibleExternalLinks = externalLinks.filter((href) => !hasPattern(href) && !isSocial(href));
+    const images = Array.from(doc.images || []);
+    const iframeSrcs = Array.from(doc.querySelectorAll("iframe[src]")).map((iframe) => String(iframe.getAttribute("src") || ""));
+    const codeTokens = payload.tokens.filter((token) => bodyText.includes(token));
+    const disclosureDetected = payload.phrases.some((phrase) => lowerText.includes(phrase));
 
+    return {
+      url: currentLocation.href,
+      titleTag: String(doc.title || "") || undefined,
+      metaDescription: attr('meta[name="description"]', "content"),
+      canonical: attr('link[rel="canonical"]', "href"),
+      ogTitle: attr('meta[property="og:title"]', "content"),
+      ogDescription: attr('meta[property="og:description"]', "content"),
+      ogImage: attr('meta[property="og:image"]', "content"),
+      twitterTitle: attr('meta[name="twitter:title"]', "content"),
+      twitterDescription: attr('meta[name="twitter:description"]', "content"),
+      h1s: textFor("h1"),
+      h2s: textFor("h2"),
+      visibleTextWordCount: bodyText.split(/\s+/).filter(Boolean).length,
+      internalLinks: { count: internalLinks.length, sampleHrefs: uniqueSample(internalLinks) },
+      externalLinks: { count: externalLinks.length, sampleHrefs: uniqueSample(externalLinks) },
+      credibleExternalLinks: { count: credibleExternalLinks.length, sampleHrefs: uniqueSample(credibleExternalLinks) },
+      affiliateLinks: { count: affiliateLinks.length, sampleHrefs: uniqueSample(affiliateLinks) },
+      affiliateDisclosureDetected: disclosureDetected ? "yes" : affiliateLinks.length > 0 ? "no" : "uncertain",
+      images: images.length,
+      imagesMissingAlt: images.filter((image) => !String(image.getAttribute("alt") || "").trim()).length,
+      youtubeEmbeds: iframeSrcs.filter((src) => src.includes("youtube.com") || src.includes("youtu.be")).length,
+      codeArtifactTokens: codeTokens,
+    };
+  })()`;
+
+  const facts = (await page.evaluate(extractionSource)) as Omit<RenderedFacts, "status">;
   return { ...facts, status };
 }
 
