@@ -84,6 +84,8 @@ interface BaseUrlCheck {
 interface NativeFetchFallback {
   fallbackHttpStatus?: number;
   fallbackContentLength?: number;
+  fallbackErrorName?: string;
+  fallbackErrorMessage?: string;
 }
 
 interface RenderedVerificationResult extends NativeFetchFallback {
@@ -433,8 +435,12 @@ async function nativeFetchFallback(attemptedUrl: string): Promise<NativeFetchFal
       fallbackHttpStatus: response.status,
       fallbackContentLength: body.length,
     };
-  } catch {
-    return {};
+  } catch (error) {
+    const diagnostics = describeError(error);
+    return {
+      fallbackErrorName: diagnostics.errorName,
+      fallbackErrorMessage: diagnostics.errorMessage,
+    };
   }
 }
 
@@ -513,9 +519,11 @@ ${failed.length > 0 ? renderFailedTable(failed) : "No fetch failures recorded.\n
 
 ## Troubleshooting Advice
 
-- If the base URL fails, check internet access, site availability, and the Playwright browser installation.
-- If the base URL succeeds but page URLs fail, check URL construction, slugs, and live route patterns.
-- If native fetch succeeds but Playwright fails, check browser timing, headless behaviour, and client-side route loading.
+- If the verifier is disabled, set `enabled` to `true` in `config/rendered_verifier.config.json` before owner-run verification.
+- If the base URL fails, check whether `baseUrl` is wrong, the site is unavailable, there is a local DNS/network issue, or the Playwright browser is not installed locally.
+- If native fetch succeeds but Playwright fails, check whether the site blocks Playwright/browser requests, shows a Cloudflare/security challenge, or behaves differently in headless browser mode.
+- If the base URL succeeds but page URLs fail, check route construction mismatch, missing or changed slugs, and whether the page requires a different slug/path.
+- If failures happen during `wait` or `extract`, check timeout settings and whether the page needs longer to render client-side content.
 
 ${renderSection("Confirmed or Partially Verified", results.filter((result) => result.verificationStatus === "verified_possible_issue" || result.verificationStatus === "partially_verified"))}
 ${renderSection("Likely False Positives", results.filter((result) => result.verificationStatus === "likely_false_positive"))}
@@ -525,11 +533,15 @@ ${renderSection("Rendered Metadata Gaps", results.filter((result) => result.newR
 }
 
 function renderFailedTable(results: RenderedVerificationResult[]): string {
-  const rows = results.map((result) => `| ${result.queuePriorityRank} | ${result.attemptedUrl} | ${result.failureStage ?? "unknown"} | ${result.httpStatus ?? result.fallbackHttpStatus ?? "unknown"} | ${result.errorMessage ?? "unknown"} |`);
-  return `| Rank | Attempted URL | Failure stage | Status/fallback | Error |
-| --- | --- | --- | --- | --- |
+  const rows = results.map((result) => `| ${result.queuePriorityRank} | ${markdownCell(result.attemptedUrl)} | ${markdownCell(result.finalUrl)} | ${result.httpStatus ?? "unknown"} | ${result.fallbackHttpStatus ?? "unknown"} | ${result.failureStage ?? "unknown"} | ${markdownCell(result.errorName)} | ${markdownCell(result.errorMessage)} |`);
+  return `| Rank | attemptedUrl | finalUrl | httpStatus | fallbackHttpStatus | failureStage | errorName | errorMessage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 ${rows.join("\n")}
 `;
+}
+
+function markdownCell(value: string | number | undefined): string {
+  return truncate(String(value ?? "unknown"), 140).replace(/\|/g, "\\|").replace(/\s+/g, " ");
 }
 
 function renderSection(title: string, results: RenderedVerificationResult[]): string {
@@ -545,8 +557,8 @@ function renderResult(result: RenderedVerificationResult): string {
 - Verification status: ${result.verificationStatus}
 - Confidence adjustment: ${result.confidenceAdjustment}
 - Failure stage: ${result.failureStage ?? "none"}
-- Error: ${result.errorMessage ?? "none"}
-- Native fetch fallback: ${result.fallbackHttpStatus ?? "not run"}${result.fallbackContentLength !== undefined ? `, ${result.fallbackContentLength} bytes` : ""}
+- Error: ${result.errorName ?? "none"}: ${result.errorMessage ?? "none"}
+- Native fetch fallback: ${result.fallbackHttpStatus ?? "not run"}${result.fallbackContentLength !== undefined ? `, ${result.fallbackContentLength} bytes` : ""}${result.fallbackErrorName ? `, ${result.fallbackErrorName}: ${result.fallbackErrorMessage ?? "unknown"}` : ""}
 - Confirmed findings: ${result.confirmedFindings.map((finding) => finding.code).join(", ") || "none"}
 - Downgraded findings: ${result.downgradedFindings.map((finding) => finding.code).join(", ") || "none"}
 - New rendered findings: ${result.newRenderedFindings.map((finding) => finding.code).join(", ") || "none"}
