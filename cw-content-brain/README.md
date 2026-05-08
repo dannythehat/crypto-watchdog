@@ -138,11 +138,11 @@ Playwright may require a browser install later on the owner's machine. Codex mus
 
 ### Rendered Verifier Troubleshooting
 
-If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, and whether the Playwright browser is installed locally.
+If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
 
 If the base URL succeeds but page URLs fail, inspect each result's `attemptedUrl`, `finalUrl`, `failureStage`, `httpStatus`, `errorName`, and `errorMessage`. This usually points to URL construction, route patterns, missing slugs, redirects, or a route that only exists under a different path.
 
-If native fetch fallback succeeds but Playwright fails, compare `fallbackHttpStatus` and `fallbackContentLength` against the Playwright error. That usually means the page is reachable over HTTP but the browser run needs timing, headless, or browser-install investigation.
+If native fetch fallback succeeds but Playwright fails, compare `fallbackHttpStatus` and `fallbackContentLength` against the Playwright error. If native fetch also fails, inspect `fallbackErrorName` and `fallbackErrorMessage` for DNS, network, route, or security-challenge clues. That usually means the page is reachable over HTTP but the browser run needs timing, headless, browser-install, Cloudflare/security, or site-blocking investigation.
 
 ## Phase 1C Supabase Export Helper
 
