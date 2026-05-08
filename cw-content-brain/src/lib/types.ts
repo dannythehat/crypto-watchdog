@@ -11,6 +11,8 @@ export type Confidence = "low" | "medium" | "high";
 
 export type DiscoveryMode = "live-crawl" | "sitemap-url" | "route-manifest-fallback";
 
+export type SnapshotTableName = "reviews" | "blog_posts" | "warnings" | "categories";
+
 export interface SiteConfig {
   siteName: string;
   baseUrl: string;
@@ -32,6 +34,51 @@ export interface SiteConfig {
     descriptionMaxLength: number;
     minWords: number;
   };
+}
+
+export interface ContentSnapshotConfig {
+  enabled: boolean;
+  source: "local-json-export";
+  tables: Record<SnapshotTableName, string>;
+  readOnly: boolean;
+  writeBackToSupabase: boolean;
+}
+
+export interface NormalisedContentRecord {
+  sourceTable: SnapshotTableName;
+  id: string;
+  slug: string;
+  url: string;
+  title?: string;
+  status?: string;
+  category?: string;
+  rating?: string;
+  trust_score?: number;
+  summary?: string;
+  body?: string;
+  verdict?: string;
+  pros?: string[];
+  cons?: string[];
+  deposit_info?: string;
+  withdrawal_info?: string;
+  fees_info?: string;
+  video_url?: string;
+  interview_url?: string;
+  detailed_audit?: string;
+  evidence?: string[];
+  created_at?: string;
+  updated_at?: string;
+}
+
+export interface ContentAuditFinding {
+  code: string;
+  severity: "low" | "medium" | "high";
+  sourceTable: SnapshotTableName;
+  id: string;
+  slug: string;
+  title?: string;
+  message: string;
+  recommendation: string;
 }
 
 export interface RouteRecord {

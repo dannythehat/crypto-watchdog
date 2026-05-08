@@ -11,7 +11,12 @@
     "links": "tsx scripts/audit_links.ts",
     "internal-links": "tsx scripts/suggest_internal_links.ts",
     "draft": "tsx scripts/create_article_draft.ts",
-    "update-draft": "tsx scripts/update_article_draft.ts"
+    "update-draft": "tsx scripts/update_article_draft.ts",
+    "content:snapshot": "tsx scripts/load_content_snapshot.ts",
+    "content:quality": "tsx scripts/audit_content_quality.ts",
+    "content:affiliates": "tsx scripts/audit_affiliate_placement.ts",
+    "content:links": "tsx scripts/audit_content_linking.ts",
+    "content:audit": "tsx scripts/run_content_snapshot_audit.ts"
   },
   "devDependencies": {
     "@types/node": "^22.16.5",

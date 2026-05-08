@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "source": "local-json-export",
+  "tables": {
+    "reviews": "data/content_snapshot/reviews.example.json",
+    "blog_posts": "data/content_snapshot/blog_posts.example.json",
+    "warnings": "data/content_snapshot/warnings.example.json",
+    "categories": "data/content_snapshot/categories.example.json"
+  },
+  "readOnly": true,
+  "writeBackToSupabase": false
+}

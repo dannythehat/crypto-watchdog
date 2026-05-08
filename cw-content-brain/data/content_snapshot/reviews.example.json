@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fake-review-001",
+    "slug": "example-exchange-review",
+    "name": "Example Exchange",
+    "title": "Example Exchange Review",
+    "status": "draft",
+    "category": "exchange",
+    "rating": "orange",
+    "trust_score": 62,
+    "summary": "Fake example review snapshot for local tooling only. This is not a real platform assessment.",
+    "content": "Placeholder review body for local quality checks. Evidence has not been verified and this copy must not be published.",
+    "verdict": "Placeholder verdict requiring human review and source evidence.",
+    "pros": ["Clear example structure", "Useful for local parser testing"],
+    "cons": ["No verified evidence", "Not suitable for publication"],
+    "deposit_info": "Placeholder deposit information.",
+    "withdrawal_info": "Placeholder withdrawal information.",
+    "fees_info": "Placeholder fees information.",
+    "video_url": "https://example.com/video-placeholder",
+    "interview_url": "https://example.com/interview-placeholder",
+    "detailed_audit": {
+      "evidenceReviewed": [],
+      "riskSignals": ["Fake placeholder risk signal"],
+      "testingNotes": "Placeholder only. No real testing performed.",
+      "sourceLinks": []
+    },
+    "created_at": "2026-01-01T00:00:00.000Z",
+    "updated_at": "2026-01-02T00:00:00.000Z"
+  }
+]
