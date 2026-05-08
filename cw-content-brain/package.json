@@ -1,0 +1,22 @@
+{
+  "name": "cw-content-brain",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone Phase 1 content operations toolkit for CryptoWatchdog.",
+  "scripts": {
+    "crawl:site": "tsx scripts/crawl_site.ts",
+    "score:seo": "tsx scripts/score_seo.ts",
+    "audit:links": "tsx scripts/audit_links.ts",
+    "suggest:internal-links": "tsx scripts/suggest_internal_links.ts",
+    "draft:create": "tsx scripts/create_article_draft.ts",
+    "draft:update": "tsx scripts/update_article_draft.ts",
+    "phase1:audit": "tsx scripts/run_phase1_audit.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.16.5",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
+
