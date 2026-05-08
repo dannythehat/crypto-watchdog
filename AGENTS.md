@@ -6,12 +6,13 @@ This is a Lovable-generated Vite, React, and TypeScript app for CryptoWatchdog. 
 
 ## Content Brain Scope
 
-The `cw-content-brain/` directory contains planning assets for editorial research, review drafting, warning triage, and content governance. It is intentionally separate from the production app and does not run crawlers, write to Supabase, or require package installation.
+The `cw-content-brain/` directory contains standalone local scripts and planning assets for editorial research, review drafting, warning triage, site audits, and content governance. It is intentionally separate from the production app.
 
 ## Operating Rules
 
 - Do not add secrets, API keys, tokens, private credentials, or live database URLs.
-- Do not run install, crawler, build, test, deploy, or publish commands unless the task explicitly permits them.
+- Scripts must only be run manually by the owner.
+- Do not run install, crawler, build, test, deploy, publish, or database commands unless the task explicitly permits them.
 - Do not write to Supabase from this workspace.
 - Keep generated content evidence-led, neutral, and careful about legal or financial claims.
 - Prefer structured drafts and review checklists over automated publishing.
