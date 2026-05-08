@@ -8,6 +8,8 @@ Phase 1B adds a read-only local content snapshot layer. The content brain can an
 
 Phase 1C adds an optional owner-controlled Supabase export helper. It is disabled by default, uses local environment variables only, exports configured tables into local JSON files, and never writes back to Supabase.
 
+The audit reports now include confidence and false-positive-risk fields. Findings are possible issues, not confirmed defects, and should be triaged before any Priority Action Queue or content change is created.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -16,6 +18,7 @@ Phase 1C adds an optional owner-controlled Supabase export helper. It is disable
 - Avoid secrets, automated publishing, Supabase writes, or deployment coupling.
 - Discover public site URLs from `https://cryptowatchdog.net/sitemap.xml` before using fallback route manifests.
 - Analyse real exported content bodies from local JSON snapshots before recommending edits.
+- Reduce false positives by reviewing confidence, evidence snippets, and false-positive risk before building fix queues.
 
 ## Folder Map
 
@@ -26,8 +29,8 @@ Phase 1C adds an optional owner-controlled Supabase export helper. It is disable
 - `prompts/review-checklist.md`: human review checklist prompt.
 - `seeds/editorial-calendar.json`: starter content calendar for Phase 1.
 - `seeds/source-register.json`: neutral source categories to guide evidence gathering.
-- `scripts/`: standalone audit, crawl, SEO, link, draft, content snapshot, and optional export commands.
-- `src/lib/`: shared filesystem, CSV, route, sitemap, scoring, text, logger, and type helpers.
+- `scripts/`: standalone audit, crawl, SEO, link, draft, content snapshot, confidence summary, and optional export commands.
+- `src/lib/`: shared filesystem, CSV, route, sitemap, scoring, text, logger, audit, and type helpers.
 - `data/content_snapshot/`: local read-only JSON exports and normalised content output.
 - `data/`: generated inventory, reports, research, keywords, YouTube, affiliate, and draft outputs.
 
@@ -66,6 +69,29 @@ Generated content snapshot outputs:
 - `logs/content-snapshot-run.json`
 
 These reports are recommendations for human review. The tools do not connect to Supabase, write to Supabase, edit existing site content, publish content, or add affiliate links.
+
+## Confidence Triage
+
+Each content audit finding includes:
+
+- `confidence`: how strongly the local snapshot supports the finding.
+- `falsePositiveRisk`: how likely the finding may be explained by templates, rendered React components, structured fields, or missing context.
+- `evidenceSnippet`: a short local snippet when useful.
+- `reason`: why the tool assigned the confidence and risk.
+- `needsHumanReview`: whether a person must verify the finding.
+
+After running `npm run content:audit`, the owner can run:
+
+```bash
+npm run content:confidence
+```
+
+This writes:
+
+- `data/reports/audit_confidence_summary.json`
+- `data/reports/audit_confidence_summary.md`
+
+High-confidence findings should be reviewed first. High false-positive-risk findings should be checked against rendered pages and structured source fields before any edit is made. No content should be changed automatically based on these reports.
 
 ## Phase 1C Supabase Export Helper
 
@@ -107,6 +133,7 @@ Then run the follow-up local audit:
 
 ```bash
 npm run content:audit
+npm run content:confidence
 ```
 
 Do not commit private exported data or `.env` secrets. Keep `config/supabase_export.config.json` disabled unless actively exporting.
@@ -127,6 +154,7 @@ npm run draft -- --type exchange_review --keyword "best crypto exchange" --topic
 npm run update-draft -- --url https://cryptowatchdog.net/example-page
 npm run content:export
 npm run content:audit
+npm run content:confidence
 ```
 
 ## Required Outputs
@@ -143,5 +171,7 @@ npm run content:audit
 - `data/reports/content_quality_report.json`
 - `data/reports/affiliate_placement_report.json`
 - `data/reports/content_linking_report.json`
+- `data/reports/audit_confidence_summary.json`
+- `data/reports/audit_confidence_summary.md`
 - `logs/content-snapshot-run.json`
 - `logs/supabase-export-run.json`
