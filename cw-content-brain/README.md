@@ -144,6 +144,8 @@ If the base URL succeeds but page URLs fail, inspect each result's `attemptedUrl
 
 If native fetch fallback succeeds but Playwright fails, compare `fallbackHttpStatus` and `fallbackContentLength` against the Playwright error. If native fetch also fails, inspect `fallbackErrorName` and `fallbackErrorMessage` for DNS, network, route, or security-challenge clues. That usually means the page is reachable over HTTP but the browser run needs timing, headless, browser-install, Cloudflare/security, or site-blocking investigation.
 
+If the error is `ReferenceError: __name is not defined` during `page.evaluate`, the browser-context extraction function leaked a transpiler helper from the TypeScript runner. Fix `extractRenderedFacts()` so the browser-side code is plain serialised JavaScript; do not treat this as a website or URL failure.
+
 ## Phase 1C Supabase Export Helper
 
 The Supabase export helper is optional and owner-run only. It is read-only, disabled by default, and requires local environment variables that must never be committed:
