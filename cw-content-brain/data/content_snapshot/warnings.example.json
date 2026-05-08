@@ -9,7 +9,14 @@
     "rating": "red",
     "summary": "Fake warning example for local tooling only. It does not describe a real platform.",
     "body": "Placeholder warning copy. Strong claims require evidence fields, source links, and human review before publication.",
-    "evidence": [],
+    "evidence": [
+      {
+        "type": "fake-placeholder",
+        "label": "Example evidence object",
+        "sourceUrl": "https://example.com/evidence-placeholder",
+        "notes": "Placeholder only. No real evidence has been reviewed."
+      }
+    ],
     "verdict": "Placeholder warning verdict requiring review.",
     "created_at": "2026-01-05T00:00:00.000Z",
     "updated_at": "2026-01-06T00:00:00.000Z"
