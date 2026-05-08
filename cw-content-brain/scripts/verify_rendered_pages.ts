@@ -533,11 +533,11 @@ ${failed.length > 0 ? renderFailedTable(failed) : "No fetch failures recorded.\n
 
 ## Troubleshooting Advice
 
-- If the verifier is disabled, set `enabled` to `true` in `config/rendered_verifier.config.json` before owner-run verification.
-- If the base URL fails, check whether `baseUrl` is wrong, the site is unavailable, there is a local DNS/network issue, or the Playwright browser is not installed locally.
+- If the verifier is disabled, set enabled to true in config/rendered_verifier.config.json before owner-run verification.
+- If the base URL fails, check whether baseUrl is wrong, the site is unavailable, there is a local DNS/network issue, or the Playwright browser is not installed locally.
 - If native fetch succeeds but Playwright fails, check whether the site blocks Playwright/browser requests, shows a Cloudflare/security challenge, or behaves differently in headless browser mode.
 - If the base URL succeeds but page URLs fail, check route construction mismatch, missing or changed slugs, and whether the page requires a different slug/path.
-- If failures happen during `wait` or `extract`, check timeout settings and whether the page needs longer to render client-side content.
+- If failures happen during wait or extract, check timeout settings and whether the page needs longer to render client-side content.
 
 ${renderSection("Confirmed or Partially Verified", results.filter((result) => result.verificationStatus === "verified_possible_issue" || result.verificationStatus === "partially_verified"))}
 ${renderSection("Likely False Positives", results.filter((result) => result.verificationStatus === "likely_false_positive"))}
@@ -583,3 +583,5 @@ function renderResult(result: RenderedVerificationResult): string {
 if (isDirectRun(import.meta.url)) {
   await verifyRenderedPages();
 }
+
+
