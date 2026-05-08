@@ -5,7 +5,9 @@ dist/
 data/**/*.jsonl
 data/**/*.csv
 data/**/*.md
+data/content_snapshot/*.json
+!data/content_snapshot/*.example.json
+!data/content_snapshot/.gitkeep
 logs/*
 !logs/.gitkeep
 !data/**/.gitkeep
-
