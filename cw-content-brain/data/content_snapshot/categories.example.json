@@ -1,0 +1,13 @@
+[
+  {
+    "id": "fake-category-001",
+    "slug": "exchanges",
+    "title": "Exchanges",
+    "name": "Exchanges",
+    "status": "active",
+    "summary": "Fake category example for local snapshot testing.",
+    "description": "Placeholder category description for exchange-related reviews and education content.",
+    "created_at": "2026-01-07T00:00:00.000Z",
+    "updated_at": "2026-01-08T00:00:00.000Z"
+  }
+]
