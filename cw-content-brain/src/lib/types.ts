@@ -9,6 +9,8 @@ export type RiskRating = "green" | "orange" | "red" | "not_applicable";
 
 export type Confidence = "low" | "medium" | "high";
 
+export type FalsePositiveRisk = "low" | "medium" | "high";
+
 export type DiscoveryMode = "live-crawl" | "sitemap-url" | "route-manifest-fallback";
 
 export type SnapshotTableName = "reviews" | "blog_posts" | "warnings" | "categories";
@@ -79,6 +81,20 @@ export interface ContentAuditFinding {
   title?: string;
   message: string;
   recommendation: string;
+  confidence: Confidence;
+  falsePositiveRisk: FalsePositiveRisk;
+  evidenceSnippet?: string;
+  reason?: string;
+  needsHumanReview: boolean;
+}
+
+export interface ContentAuditSummary {
+  totalFindings: number;
+  byCode: Record<string, number>;
+  bySeverity: Record<string, number>;
+  byConfidence: Record<Confidence, number>;
+  byFalsePositiveRisk: Record<FalsePositiveRisk, number>;
+  needsHumanReviewCount: number;
 }
 
 export interface RouteRecord {
