@@ -6,6 +6,8 @@ Phase 1A upgrades discovery to sitemap-first crawling. CryptoWatchdog.net is a V
 
 Phase 1B adds a read-only local content snapshot layer. The content brain can analyse Supabase-shaped JSON exports placed in `data/content_snapshot/` without connecting to Supabase, writing to Supabase, editing site content, or publishing anything.
 
+Phase 1C adds an optional owner-controlled Supabase export helper. It is disabled by default, uses local environment variables only, exports configured tables into local JSON files, and never writes back to Supabase.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -24,7 +26,7 @@ Phase 1B adds a read-only local content snapshot layer. The content brain can an
 - `prompts/review-checklist.md`: human review checklist prompt.
 - `seeds/editorial-calendar.json`: starter content calendar for Phase 1.
 - `seeds/source-register.json`: neutral source categories to guide evidence gathering.
-- `scripts/`: standalone audit, crawl, SEO, link, draft, and content snapshot commands.
+- `scripts/`: standalone audit, crawl, SEO, link, draft, content snapshot, and optional export commands.
 - `src/lib/`: shared filesystem, CSV, route, sitemap, scoring, text, logger, and type helpers.
 - `data/content_snapshot/`: local read-only JSON exports and normalised content output.
 - `data/`: generated inventory, reports, research, keywords, YouTube, affiliate, and draft outputs.
@@ -63,7 +65,51 @@ Generated content snapshot outputs:
 - `data/reports/content_linking_report.json`
 - `logs/content-snapshot-run.json`
 
-These reports are recommendations for human review. The tools do not connect to Supabase, write to Supabase, edit existing site content, publish content, or add affiliate links. A future Phase 1C can add a safe Supabase export helper that remains read-only.
+These reports are recommendations for human review. The tools do not connect to Supabase, write to Supabase, edit existing site content, publish content, or add affiliate links.
+
+## Phase 1C Supabase Export Helper
+
+The Supabase export helper is optional and owner-run only. It is read-only, disabled by default, and requires local environment variables that must never be committed:
+
+- `SUPABASE_URL`
+- `SUPABASE_ANON_KEY`
+
+To use it, the owner must manually set `enabled` to `true` in `config/supabase_export.config.json`, provide the environment variables locally, and run:
+
+```bash
+cd cw-content-brain
+npm run content:export
+```
+
+The helper exports configured tables into local files:
+
+- `data/content_snapshot/reviews.json`
+- `data/content_snapshot/blog_posts.json`
+- `data/content_snapshot/warnings.json`
+- `data/content_snapshot/categories.json`
+- `logs/supabase-export-run.json`
+
+After exporting real files, update `config/content_snapshot.config.json` paths from:
+
+- `reviews.example.json`
+- `blog_posts.example.json`
+- `warnings.example.json`
+- `categories.example.json`
+
+to:
+
+- `reviews.json`
+- `blog_posts.json`
+- `warnings.json`
+- `categories.json`
+
+Then run the follow-up local audit:
+
+```bash
+npm run content:audit
+```
+
+Do not commit private exported data or `.env` secrets. Keep `config/supabase_export.config.json` disabled unless actively exporting.
 
 ## Commands
 
@@ -79,6 +125,7 @@ npm run links
 npm run internal-links
 npm run draft -- --type exchange_review --keyword "best crypto exchange" --topic "Example Exchange" --rating orange --notes "Draft only"
 npm run update-draft -- --url https://cryptowatchdog.net/example-page
+npm run content:export
 npm run content:audit
 ```
 
@@ -97,3 +144,4 @@ npm run content:audit
 - `data/reports/affiliate_placement_report.json`
 - `data/reports/content_linking_report.json`
 - `logs/content-snapshot-run.json`
+- `logs/supabase-export-run.json`
