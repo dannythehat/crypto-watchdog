@@ -17,7 +17,8 @@
     "content:affiliates": "tsx scripts/audit_affiliate_placement.ts",
     "content:links": "tsx scripts/audit_content_linking.ts",
     "content:audit": "tsx scripts/run_content_snapshot_audit.ts",
-    "content:export": "tsx scripts/export_supabase_snapshot.ts"
+    "content:export": "tsx scripts/export_supabase_snapshot.ts",
+    "content:confidence": "tsx scripts/summarise_audit_confidence.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.103.0"
