@@ -7,6 +7,7 @@ type PriorityBand = "critical" | "high" | "medium" | "low" | "verify_later";
 type VerificationStatus = "verified_possible_issue" | "likely_false_positive" | "partially_verified" | "needs_manual_review" | "fetch_failed";
 type ConfidenceAdjustment = "increase" | "decrease" | "unchanged";
 type DisclosureStatus = "yes" | "no" | "uncertain";
+type FailureStage = "url_build" | "goto" | "wait" | "extract" | "unknown";
 
 interface RenderedVerifierConfig {
   enabled: boolean;
@@ -72,8 +73,29 @@ interface VerificationFinding {
   evidence?: string;
 }
 
-interface RenderedVerificationResult {
+interface BaseUrlCheck {
+  attemptedUrl: string;
+  status?: number;
+  title?: string;
+  success: boolean;
+  errorMessage?: string;
+}
+
+interface NativeFetchFallback {
+  fallbackHttpStatus?: number;
+  fallbackContentLength?: number;
+  fallbackErrorName?: string;
+  fallbackErrorMessage?: string;
+}
+
+interface RenderedVerificationResult extends NativeFetchFallback {
   url: string;
+  attemptedUrl: string;
+  finalUrl?: string;
+  httpStatus?: number;
+  errorName?: string;
+  errorMessage?: string;
+  failureStage?: FailureStage;
   sourceTable: SnapshotTableName;
   slug: string;
   queuePriorityRank: number;
@@ -117,9 +139,15 @@ export async function verifyRenderedPages(): Promise<RenderedVerificationResult[
   const queue = await readQueue(config.queueInput);
   const pages = selectPages(queue, config);
   const browser = await chromium.launch({ headless: true });
+  let baseUrlCheck: BaseUrlCheck = {
+    attemptedUrl: config.baseUrl,
+    success: false,
+    errorMessage: "Base URL check did not complete.",
+  };
   const results: RenderedVerificationResult[] = [];
 
   try {
+    baseUrlCheck = await checkBaseUrl(browser, config);
     for (const item of pages) {
       results.push(await verifyQueueItem(browser, item, config));
     }
@@ -127,8 +155,8 @@ export async function verifyRenderedPages(): Promise<RenderedVerificationResult[
     await browser.close();
   }
 
-  await writeOutputs(config, results);
-  logger.info("Rendered page verification written", { pages: results.length });
+  await writeOutputs(config, results, baseUrlCheck);
+  logger.info("Rendered page verification written", { pages: results.length, baseUrlSuccess: baseUrlCheck.success });
   return results;
 }
 
@@ -149,27 +177,68 @@ function selectPages(items: PriorityQueueItem[], config: RenderedVerifierConfig)
     .slice(0, config.maxPagesPerRun);
 }
 
-async function verifyQueueItem(browser: Browser, item: PriorityQueueItem, config: RenderedVerifierConfig): Promise<RenderedVerificationResult> {
-  const url = absoluteUrl(item.url ?? item.slug, config.baseUrl);
+async function checkBaseUrl(browser: Browser, config: RenderedVerifierConfig): Promise<BaseUrlCheck> {
+  const attemptedUrl = normaliseUrl(config.baseUrl);
   const page = await browser.newPage();
 
   try {
-    const response = await page.goto(url, { waitUntil: "domcontentloaded", timeout: config.timeoutMs });
+    const response = await page.goto(attemptedUrl, { waitUntil: "domcontentloaded", timeout: config.timeoutMs });
+    return {
+      attemptedUrl,
+      status: response?.status(),
+      title: await page.title(),
+      success: Boolean(response && response.status() < 400),
+    };
+  } catch (error) {
+    return {
+      attemptedUrl,
+      success: false,
+      errorMessage: describeError(error).errorMessage,
+    };
+  } finally {
+    await page.close();
+  }
+}
+
+async function verifyQueueItem(browser: Browser, item: PriorityQueueItem, config: RenderedVerifierConfig): Promise<RenderedVerificationResult> {
+  const builtUrl = buildQueueItemUrl(item, config.baseUrl);
+  if (builtUrl.errorMessage) {
+    return failedResult(item, builtUrl.attemptedUrl, "url_build", { errorName: "UrlBuildError", errorMessage: builtUrl.errorMessage });
+  }
+
+  const attemptedUrl = builtUrl.attemptedUrl;
+  const page = await browser.newPage();
+  let httpStatus: number | undefined;
+  let finalUrl: string | undefined;
+  let failureStage: FailureStage = "unknown";
+
+  try {
+    failureStage = "goto";
+    const response = await page.goto(attemptedUrl, { waitUntil: "domcontentloaded", timeout: config.timeoutMs });
+    httpStatus = response?.status();
+    finalUrl = page.url();
+
     try {
+      failureStage = "wait";
       await page.waitForLoadState("networkidle", { timeout: Math.min(config.timeoutMs, 10000) });
-    } catch {
-      logger.warn("Network idle was not reached before timeout", { url });
+    } catch (error) {
+      logger.warn("Network idle was not reached before timeout", { url: attemptedUrl, error: describeError(error).errorMessage });
     }
+
     if (config.waitAfterLoadMs > 0) {
       await page.waitForTimeout(config.waitAfterLoadMs);
     }
 
+    failureStage = "extract";
     const facts = await extractRenderedFacts(page, response?.status() ?? null, config);
     const comparison = compareToQueueFindings(item, facts);
     const verificationStatus = statusFor(comparison.downgradedFindings, comparison.confirmedFindings, comparison.newRenderedFindings);
 
     return {
-      url,
+      url: facts.url,
+      attemptedUrl,
+      finalUrl: facts.url,
+      httpStatus: facts.status ?? undefined,
       sourceTable: item.sourceTable,
       slug: item.slug,
       queuePriorityRank: item.priorityRank,
@@ -181,19 +250,14 @@ async function verifyQueueItem(browser: Browser, item: PriorityQueueItem, config
       recommendedNextStep: nextStepFor(verificationStatus),
     };
   } catch (error) {
-    return {
-      url,
-      sourceTable: item.sourceTable,
-      slug: item.slug,
-      queuePriorityRank: item.priorityRank,
-      queuePriorityBand: item.priorityBand,
-      verificationStatus: "fetch_failed",
-      confidenceAdjustment: "unchanged",
-      downgradedFindings: [],
-      confirmedFindings: [],
-      newRenderedFindings: [],
-      recommendedNextStep: `Fetch failed during owner-run verification. Retry manually and inspect the rendered page before assigning edits. Error: ${error instanceof Error ? error.message : "Unknown error"}`,
-    };
+    const diagnostics = describeError(error);
+    const fallback = await nativeFetchFallback(attemptedUrl);
+    return failedResult(item, attemptedUrl, failureStage, {
+      ...diagnostics,
+      finalUrl,
+      httpStatus,
+      ...fallback,
+    });
   } finally {
     await page.close();
   }
@@ -324,40 +388,160 @@ function nextStepFor(status: VerificationStatus): string {
   if (status === "verified_possible_issue") return "Review the rendered evidence and assign a focused human-approved fix only if the issue is confirmed.";
   if (status === "likely_false_positive") return "Do not edit from the original queue item unless manual rendered-page review finds a real issue.";
   if (status === "partially_verified") return "Split confirmed issues from downgraded findings, then review the page manually before editing.";
-  if (status === "fetch_failed") return "Retry owner-run verification later and inspect the live page manually before assigning edits.";
+  if (status === "fetch_failed") return "Use attemptedUrl, failureStage, errorMessage, and native fetch fallback fields to diagnose the failure before assigning edits.";
   return "Manual review is still needed; rendered verification did not prove or dismiss the queue item.";
 }
 
-function absoluteUrl(value: string, baseUrl: string): string {
+function buildQueueItemUrl(item: PriorityQueueItem, baseUrl: string): { attemptedUrl: string; errorMessage?: string } {
   try {
-    return new URL(value).href;
-  } catch {
-    return new URL(value.startsWith("/") ? value : `/${value}`, baseUrl).href;
+    if (item.url?.startsWith("http://") || item.url?.startsWith("https://")) {
+      return { attemptedUrl: normaliseUrl(item.url) };
+    }
+
+    if (item.url) {
+      return { attemptedUrl: normaliseUrl(new URL(item.url, ensureTrailingSlash(baseUrl)).href) };
+    }
+
+    const prefix: Record<SnapshotTableName, string> = {
+      reviews: "/reviews/",
+      blog_posts: "/blog/",
+      warnings: "/warnings/",
+      categories: "/categories/",
+    };
+    return { attemptedUrl: normaliseUrl(new URL(`${prefix[item.sourceTable]}${item.slug}`, ensureTrailingSlash(baseUrl)).href) };
+  } catch (error) {
+    return {
+      attemptedUrl: item.url ?? item.slug,
+      errorMessage: describeError(error).errorMessage,
+    };
   }
 }
 
-async function writeOutputs(config: RenderedVerifierConfig, results: RenderedVerificationResult[]): Promise<void> {
+function normaliseUrl(value: string): string {
+  const parsed = new URL(value);
+  parsed.pathname = parsed.pathname.replace(/\/+/g, "/");
+  return parsed.href;
+}
+
+function ensureTrailingSlash(value: string): string {
+  return value.endsWith("/") ? value : `${value}/`;
+}
+
+async function nativeFetchFallback(attemptedUrl: string): Promise<NativeFetchFallback> {
+  try {
+    const response = await fetch(attemptedUrl);
+    const body = await response.text();
+    return {
+      fallbackHttpStatus: response.status,
+      fallbackContentLength: body.length,
+    };
+  } catch (error) {
+    const diagnostics = describeError(error);
+    return {
+      fallbackErrorName: diagnostics.errorName,
+      fallbackErrorMessage: diagnostics.errorMessage,
+    };
+  }
+}
+
+function failedResult(
+  item: PriorityQueueItem,
+  attemptedUrl: string,
+  failureStage: FailureStage,
+  diagnostics: Partial<RenderedVerificationResult>,
+): RenderedVerificationResult {
+  return {
+    url: attemptedUrl,
+    attemptedUrl,
+    sourceTable: item.sourceTable,
+    slug: item.slug,
+    queuePriorityRank: item.priorityRank,
+    queuePriorityBand: item.priorityBand,
+    verificationStatus: "fetch_failed",
+    confidenceAdjustment: "unchanged",
+    downgradedFindings: [],
+    confirmedFindings: [],
+    newRenderedFindings: [],
+    recommendedNextStep: nextStepFor("fetch_failed"),
+    ...diagnostics,
+    failureStage,
+  };
+}
+
+function describeError(error: unknown): { errorName?: string; errorMessage: string } {
+  if (error instanceof Error) {
+    return {
+      errorName: error.name,
+      errorMessage: truncate(error.message, 500),
+    };
+  }
+
+  return {
+    errorName: "UnknownError",
+    errorMessage: truncate(String(error), 500),
+  };
+}
+
+function truncate(value: string, maxLength: number): string {
+  return value.length > maxLength ? `${value.slice(0, maxLength - 3)}...` : value;
+}
+
+async function writeOutputs(config: RenderedVerifierConfig, results: RenderedVerificationResult[], baseUrlCheck: BaseUrlCheck): Promise<void> {
   await writeJson(config.outputJson, {
     generatedAt: new Date().toISOString(),
     disclaimer: "Rendered verification reduces false positives but does not edit, publish, or confirm legal conclusions automatically.",
+    baseUrlCheck,
     pageCount: results.length,
     results,
   });
-  await writeText(config.outputMd, renderMarkdown(results));
+  await writeText(config.outputMd, renderMarkdown(results, baseUrlCheck));
 }
 
-function renderMarkdown(results: RenderedVerificationResult[]): string {
+function renderMarkdown(results: RenderedVerificationResult[], baseUrlCheck: BaseUrlCheck): string {
+  const failed = results.filter((result) => result.verificationStatus === "fetch_failed");
   return `# Rendered Page Verification
 
 Generated: ${new Date().toISOString()}
 
 Rendered verification checks live React pages to reduce false positives from local snapshots and queue reports. It never edits content, publishes content, or writes to Supabase.
 
+## Base URL Sanity Check
+
+- Attempted URL: ${baseUrlCheck.attemptedUrl}
+- Success: ${baseUrlCheck.success ? "yes" : "no"}
+- Status: ${baseUrlCheck.status ?? "unknown"}
+- Title: ${baseUrlCheck.title ?? "unknown"}
+${baseUrlCheck.errorMessage ? `- Error: ${baseUrlCheck.errorMessage}\n` : ""}
+
+## Fetch Failure Diagnostics
+
+${failed.length > 0 ? renderFailedTable(failed) : "No fetch failures recorded.\n"}
+
+## Troubleshooting Advice
+
+- If the verifier is disabled, set `enabled` to `true` in `config/rendered_verifier.config.json` before owner-run verification.
+- If the base URL fails, check whether `baseUrl` is wrong, the site is unavailable, there is a local DNS/network issue, or the Playwright browser is not installed locally.
+- If native fetch succeeds but Playwright fails, check whether the site blocks Playwright/browser requests, shows a Cloudflare/security challenge, or behaves differently in headless browser mode.
+- If the base URL succeeds but page URLs fail, check route construction mismatch, missing or changed slugs, and whether the page requires a different slug/path.
+- If failures happen during `wait` or `extract`, check timeout settings and whether the page needs longer to render client-side content.
+
 ${renderSection("Confirmed or Partially Verified", results.filter((result) => result.verificationStatus === "verified_possible_issue" || result.verificationStatus === "partially_verified"))}
 ${renderSection("Likely False Positives", results.filter((result) => result.verificationStatus === "likely_false_positive"))}
 ${renderSection("Needs Manual Review", results.filter((result) => result.verificationStatus === "needs_manual_review" || result.verificationStatus === "fetch_failed"))}
 ${renderSection("Rendered Metadata Gaps", results.filter((result) => result.newRenderedFindings.some((finding) => finding.code.startsWith("rendered_"))))}
 `;
+}
+
+function renderFailedTable(results: RenderedVerificationResult[]): string {
+  const rows = results.map((result) => `| ${result.queuePriorityRank} | ${markdownCell(result.attemptedUrl)} | ${markdownCell(result.finalUrl)} | ${result.httpStatus ?? "unknown"} | ${result.fallbackHttpStatus ?? "unknown"} | ${result.failureStage ?? "unknown"} | ${markdownCell(result.errorName)} | ${markdownCell(result.errorMessage)} |`);
+  return `| Rank | attemptedUrl | finalUrl | httpStatus | fallbackHttpStatus | failureStage | errorName | errorMessage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+${rows.join("\n")}
+`;
+}
+
+function markdownCell(value: string | number | undefined): string {
+  return truncate(String(value ?? "unknown"), 140).replace(/\|/g, "\\|").replace(/\s+/g, " ");
 }
 
 function renderSection(title: string, results: RenderedVerificationResult[]): string {
@@ -367,10 +551,14 @@ function renderSection(title: string, results: RenderedVerificationResult[]): st
 function renderResult(result: RenderedVerificationResult): string {
   return `### #${result.queuePriorityRank} ${result.slug}
 
-- Page: ${result.url}
+- Page: ${result.finalUrl ?? result.url}
+- Attempted URL: ${result.attemptedUrl}
 - Queue priority: ${result.queuePriorityBand}
 - Verification status: ${result.verificationStatus}
 - Confidence adjustment: ${result.confidenceAdjustment}
+- Failure stage: ${result.failureStage ?? "none"}
+- Error: ${result.errorName ?? "none"}: ${result.errorMessage ?? "none"}
+- Native fetch fallback: ${result.fallbackHttpStatus ?? "not run"}${result.fallbackContentLength !== undefined ? `, ${result.fallbackContentLength} bytes` : ""}${result.fallbackErrorName ? `, ${result.fallbackErrorName}: ${result.fallbackErrorMessage ?? "unknown"}` : ""}
 - Confirmed findings: ${result.confirmedFindings.map((finding) => finding.code).join(", ") || "none"}
 - Downgraded findings: ${result.downgradedFindings.map((finding) => finding.code).join(", ") || "none"}
 - New rendered findings: ${result.newRenderedFindings.map((finding) => finding.code).join(", ") || "none"}
