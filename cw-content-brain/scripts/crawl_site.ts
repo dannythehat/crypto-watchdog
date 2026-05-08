@@ -2,14 +2,8 @@ import { readdir } from "node:fs/promises";
 import { isDirectRun, fromRepoRoot, readJson, readRepoText, writeJson, writeText } from "../src/lib/fs.js";
 import { toCsv } from "../src/lib/csv.js";
 import { logger } from "../src/lib/logger.js";
-import {
-  extractLinks,
-  findPossibleAffiliateLinks,
-  isAllowedDomain,
-  isInternalUrl,
-  pathFromUrl,
-  shouldCrawlPath,
-} from "../src/lib/routes.js";
+import { extractLinks, findPossibleAffiliateLinks, isInternalUrl } from "../src/lib/routes.js";
+import { discoverSitemapUrls } from "../src/lib/sitemap.js";
 import {
   countImages,
   countWords,
@@ -20,38 +14,38 @@ import {
   hasAffiliateDisclosure,
   stripHtml,
 } from "../src/lib/text.js";
-import type { RouteRecord, SiteConfig } from "../src/lib/types.js";
+import type { DiscoveryMode, RouteRecord, SiteConfig } from "../src/lib/types.js";
 
 const inventoryJsonPath = "data/site_scan/site_inventory.json";
 const inventoryCsvPath = "data/site_scan/site_inventory.csv";
 
 export async function crawlSite(): Promise<RouteRecord[]> {
   const config = await readJson<SiteConfig>("config/site.config.json");
-  const records = await crawlLive(config);
-  const inventory = records.length > 0 && records.some((record) => record.wordCount > 50)
-    ? records
+  const sitemapDiscovery = await discoverSitemapUrls(config);
+  const inventory = sitemapDiscovery.urls.length > 0
+    ? await crawlUrls(config, sitemapDiscovery.urls, "sitemap-url")
     : await createFallbackInventory(config);
 
   await writeJson(inventoryJsonPath, inventory);
   await writeText(inventoryCsvPath, toCsv(flattenInventory(inventory)));
-  logger.info("Site inventory written", { pages: inventory.length, json: inventoryJsonPath, csv: inventoryCsvPath });
+  logger.info("Site inventory written", {
+    pages: inventory.length,
+    sitemapUrls: sitemapDiscovery.urls.length,
+    json: inventoryJsonPath,
+    csv: inventoryCsvPath,
+  });
   return inventory;
 }
 
-async function crawlLive(config: SiteConfig): Promise<RouteRecord[]> {
-  const startUrl = process.env.SITE_BASE_URL ?? config.baseUrl;
-  const queue = [startUrl];
-  const visited = new Set<string>();
+async function crawlUrls(
+  config: SiteConfig,
+  urls: string[],
+  discoveryMode: Exclude<DiscoveryMode, "route-manifest-fallback">,
+): Promise<RouteRecord[]> {
   const records: RouteRecord[] = [];
 
-  while (queue.length > 0 && visited.size < config.maxPagesPerRun) {
-    const url = queue.shift()!;
-    if (visited.has(url) || !isAllowedDomain(url, config.allowedDomains)) {
-      continue;
-    }
-
-    visited.add(url);
-    logger.info("Scanning page", { url });
+  for (const url of urls.slice(0, config.maxPagesPerRun)) {
+    logger.info("Scanning sitemap page", { url });
 
     try {
       const response = await fetch(url, {
@@ -60,27 +54,17 @@ async function crawlLive(config: SiteConfig): Promise<RouteRecord[]> {
         },
       });
       const html = await response.text();
-      const links = extractLinks(url, html);
-      const internalLinks = links.filter((link) => isInternalUrl(startUrl, link));
-      const externalLinks = links.filter((link) => !isInternalUrl(startUrl, link));
-
-      for (const link of internalLinks) {
-        const path = pathFromUrl(link);
-        if (!visited.has(link) && shouldCrawlPath(path, config.crawl.includePatterns, config.crawl.excludePatterns)) {
-          queue.push(link);
-        }
-      }
-
-      records.push(buildRecord(url, response.status, html, internalLinks, externalLinks, "live-crawl"));
-
-      if (config.crawlDelayMs > 0) {
-        await new Promise((resolve) => setTimeout(resolve, config.crawlDelayMs));
-      }
+      records.push(buildRecord(config, url, response.status, html, discoveryMode));
     } catch (error) {
-      logger.warn("Live crawl failed for page", {
+      logger.warn("Sitemap URL fetch failed", {
         url,
         error: error instanceof Error ? error.message : "Unknown crawl error",
       });
+      records.push(emptySitemapRecord(url, discoveryMode));
+    }
+
+    if (config.crawlDelayMs > 0) {
+      await new Promise((resolve) => setTimeout(resolve, config.crawlDelayMs));
     }
   }
 
@@ -122,13 +106,15 @@ async function createFallbackInventory(config: SiteConfig): Promise<RouteRecord[
 }
 
 function buildRecord(
+  config: SiteConfig,
   url: string,
   statusCode: number,
   html: string,
-  internalLinks: string[],
-  externalLinks: string[],
-  discoveryMode: RouteRecord["discoveryMode"],
+  discoveryMode: DiscoveryMode,
 ): RouteRecord {
+  const links = extractLinks(url, html);
+  const internalLinks = links.filter((link) => isInternalUrl(config.baseUrl, link));
+  const externalLinks = links.filter((link) => !isInternalUrl(config.baseUrl, link));
   const allLinks = [...internalLinks, ...externalLinks];
   const imageStats = countImages(html);
   const text = stripHtml(html);
@@ -148,6 +134,27 @@ function buildRecord(
     imagesMissingAlt: imageStats.imagesMissingAlt,
     possibleAffiliateLinks: findPossibleAffiliateLinks(allLinks),
     hasAffiliateDisclosure: hasAffiliateDisclosure(text),
+    lastScannedAt: new Date().toISOString(),
+    discoveryMode,
+  };
+}
+
+function emptySitemapRecord(url: string, discoveryMode: Exclude<DiscoveryMode, "route-manifest-fallback">): RouteRecord {
+  return {
+    url,
+    statusCode: null,
+    title: undefined,
+    metaDescription: undefined,
+    canonical: undefined,
+    h1s: [],
+    h2s: [],
+    wordCount: 0,
+    internalLinks: [],
+    externalLinks: [],
+    imageCount: 0,
+    imagesMissingAlt: 0,
+    possibleAffiliateLinks: [],
+    hasAffiliateDisclosure: false,
     lastScannedAt: new Date().toISOString(),
     discoveryMode,
   };

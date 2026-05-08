@@ -9,6 +9,8 @@ export type RiskRating = "green" | "orange" | "red" | "not_applicable";
 
 export type Confidence = "low" | "medium" | "high";
 
+export type DiscoveryMode = "live-crawl" | "sitemap-url" | "route-manifest-fallback";
+
 export interface SiteConfig {
   siteName: string;
   baseUrl: string;
@@ -48,7 +50,7 @@ export interface RouteRecord {
   possibleAffiliateLinks: string[];
   hasAffiliateDisclosure: boolean;
   lastScannedAt: string;
-  discoveryMode: "live-crawl" | "route-manifest-fallback";
+  discoveryMode: DiscoveryMode;
 }
 
 export interface SeoScore {
@@ -99,9 +101,21 @@ export interface LinkFinding {
   note: string;
 }
 
+export interface SitemapDiscoveryReport {
+  sitemapUrl: string;
+  totalUrlsFound: number;
+  usableUrls: number;
+  excludedUrls: string[];
+  maxPagesPerRun: number;
+  sampledUrls: string[];
+  generatedAt: string;
+}
+
 export interface Phase1RunLog {
   startedAt: string;
   finishedAt: string;
+  pageCount: number;
+  discoveryModeCounts: Partial<Record<DiscoveryMode, number>>;
   outputs: string[];
   steps: Array<{
     name: string;
