@@ -12,6 +12,8 @@ The audit reports now include confidence and false-positive-risk fields. Finding
 
 The Priority Action Queue ranks possible fixes using confidence, false-positive risk, severity, issue type, and page-level combinations. It does not edit or publish anything.
 
+Rendered Page Verifier v1 optionally checks live rendered React pages against queue findings so injected disclosures, links, metadata, and page components can reduce false positives before exact fixes are assigned. It does not edit pages, publish content, or write to Supabase.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -22,6 +24,7 @@ The Priority Action Queue ranks possible fixes using confidence, false-positive 
 - Analyse real exported content bodies from local JSON snapshots before recommending edits.
 - Reduce false positives by reviewing confidence, evidence snippets, and false-positive risk before building fix queues.
 - Rank possible actions without treating findings as confirmed defects.
+- Verify high-risk queue items against rendered live pages before assigning edits.
 
 ## Folder Map
 
@@ -32,7 +35,7 @@ The Priority Action Queue ranks possible fixes using confidence, false-positive 
 - `prompts/review-checklist.md`: human review checklist prompt.
 - `seeds/editorial-calendar.json`: starter content calendar for Phase 1.
 - `seeds/source-register.json`: neutral source categories to guide evidence gathering.
-- `scripts/`: standalone audit, crawl, SEO, link, draft, content snapshot, confidence summary, priority queue, and optional export commands.
+- `scripts/`: standalone audit, crawl, SEO, link, draft, content snapshot, confidence summary, priority queue, rendered verification, and optional export commands.
 - `src/lib/`: shared filesystem, CSV, route, sitemap, scoring, text, logger, audit, and type helpers.
 - `data/content_snapshot/`: local read-only JSON exports and normalised content output.
 - `data/`: generated inventory, reports, research, keywords, YouTube, affiliate, and draft outputs.
@@ -113,6 +116,26 @@ The queue reads local generated reports and writes:
 
 The queue ranks possible fixes using confidence, false-positive risk, severity, issue-specific boosts, and page-level combinations. High false-positive-risk items must be checked against rendered pages before editing. Low-confidence items should be treated as checks, not fixes. The queue does not edit content, publish content, write to Supabase, or create tasks automatically.
 
+## Rendered Page Verifier
+
+Rendered Page Verifier v1 is optional and disabled by default in `config/rendered_verifier.config.json`. It should be run only after the queue exists:
+
+```bash
+npm run content:audit
+npm run content:confidence
+npm run content:queue
+npm run content:verify-rendered
+```
+
+The verifier opens live rendered pages with Playwright and compares page facts against queue findings. It can downgrade likely false positives when the rendered page already includes injected internal links, external links, disclosure text, metadata, or visible page components that are not present in the exported snapshot.
+
+The verifier never edits live pages, never publishes content, never writes to Supabase, and never changes app files. It writes only local generated reports:
+
+- `data/reports/rendered_page_verification.json`
+- `data/reports/rendered_page_verification.md`
+
+Playwright may require a browser install later on the owner's machine. Codex must not run browser install commands unless explicitly instructed. Generated verifier reports are local outputs and are ignored by Git.
+
 ## Phase 1C Supabase Export Helper
 
 The Supabase export helper is optional and owner-run only. It is read-only, disabled by default, and requires local environment variables that must never be committed:
@@ -177,6 +200,7 @@ npm run content:export
 npm run content:audit
 npm run content:confidence
 npm run content:queue
+npm run content:verify-rendered
 ```
 
 ## Required Outputs
@@ -197,5 +221,7 @@ npm run content:queue
 - `data/reports/audit_confidence_summary.md`
 - `data/reports/priority_action_queue.json`
 - `data/reports/priority_action_queue.md`
+- `data/reports/rendered_page_verification.json`
+- `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
 - `logs/supabase-export-run.json`

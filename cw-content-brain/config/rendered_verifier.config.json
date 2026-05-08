@@ -1,0 +1,22 @@
+{
+  "enabled": false,
+  "baseUrl": "https://cryptowatchdog.net",
+  "maxPagesPerRun": 25,
+  "timeoutMs": 20000,
+  "waitAfterLoadMs": 2500,
+  "queueInput": "data/reports/priority_action_queue.json",
+  "outputJson": "data/reports/rendered_page_verification.json",
+  "outputMd": "data/reports/rendered_page_verification.md",
+  "checks": {
+    "internalLinks": true,
+    "externalLinks": true,
+    "affiliateDisclosure": true,
+    "affiliateLinks": true,
+    "headings": true,
+    "metadata": true,
+    "imagesAlt": true,
+    "youtubeEmbeds": true,
+    "codeArtifacts": true,
+    "visibleTextWordCount": true
+  }
+}
