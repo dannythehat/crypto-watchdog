@@ -16,7 +16,11 @@
     "content:quality": "tsx scripts/audit_content_quality.ts",
     "content:affiliates": "tsx scripts/audit_affiliate_placement.ts",
     "content:links": "tsx scripts/audit_content_linking.ts",
-    "content:audit": "tsx scripts/run_content_snapshot_audit.ts"
+    "content:audit": "tsx scripts/run_content_snapshot_audit.ts",
+    "content:export": "tsx scripts/export_supabase_snapshot.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.103.0"
   },
   "devDependencies": {
     "@types/node": "^22.16.5",
