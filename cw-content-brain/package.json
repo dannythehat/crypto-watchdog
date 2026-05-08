@@ -19,13 +19,15 @@
     "content:audit": "tsx scripts/run_content_snapshot_audit.ts",
     "content:export": "tsx scripts/export_supabase_snapshot.ts",
     "content:confidence": "tsx scripts/summarise_audit_confidence.ts",
-    "content:queue": "tsx scripts/build_priority_action_queue.ts"
+    "content:queue": "tsx scripts/build_priority_action_queue.ts",
+    "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.103.0"
   },
   "devDependencies": {
     "@types/node": "^22.16.5",
+    "playwright": "^1.49.1",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }
