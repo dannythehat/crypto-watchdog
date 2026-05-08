@@ -1,0 +1,28 @@
+[
+  {
+    "category": "regulator_notice",
+    "description": "Warnings, enforcement actions, license registers, and consumer alerts from official financial regulators.",
+    "confidenceDefault": "high"
+  },
+  {
+    "category": "official_platform_record",
+    "description": "Platform-owned terms, privacy policies, proof-of-reserve pages, license pages, and support documents.",
+    "confidenceDefault": "medium"
+  },
+  {
+    "category": "blockchain_record",
+    "description": "Explorer pages, contract records, token approvals, and transaction evidence.",
+    "confidenceDefault": "high"
+  },
+  {
+    "category": "security_research",
+    "description": "Reports from reputable security researchers, audit firms, incident trackers, or threat intelligence teams.",
+    "confidenceDefault": "medium"
+  },
+  {
+    "category": "user_report",
+    "description": "Submitted complaints, screenshots, email records, chat logs, or support histories that require independent review.",
+    "confidenceDefault": "low"
+  }
+]
+

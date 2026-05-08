@@ -1,0 +1,35 @@
+[
+  {
+    "week": "phase-1-week-1",
+    "contentType": "education_post",
+    "title": "How to check whether a crypto platform is real",
+    "audience": "new_investor",
+    "priority": "high",
+    "notes": "Focus on domain checks, company identity, regulator databases, withdrawal terms, and pressure tactics."
+  },
+  {
+    "week": "phase-1-week-1",
+    "contentType": "platform_review",
+    "title": "Template review: exchange transparency checklist",
+    "audience": "active_trader",
+    "priority": "medium",
+    "notes": "Use as a model for future exchange reviews. Do not name a live platform without source notes."
+  },
+  {
+    "week": "phase-1-week-2",
+    "contentType": "scam_warning",
+    "title": "Withdrawal fee escalation warning pattern",
+    "audience": "general_reader",
+    "priority": "high",
+    "notes": "Explain the warning pattern without asserting a specific platform is fraudulent."
+  },
+  {
+    "week": "phase-1-week-2",
+    "contentType": "market_safety_note",
+    "title": "What guaranteed crypto returns usually hide",
+    "audience": "wallet_user",
+    "priority": "medium",
+    "notes": "Educational note about risk signals in yield claims and referral-driven offers."
+  }
+]
+

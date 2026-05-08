@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cryptowatchdog.local/schemas/content-item.schema.json",
+  "title": "CryptoWatchdog Content Item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contentType",
+    "status",
+    "title",
+    "slug",
+    "summary",
+    "audience",
+    "riskRating",
+    "confidence",
+    "sourceNotes",
+    "humanReview"
+  ],
+  "properties": {
+    "contentType": {
+      "type": "string",
+      "enum": ["platform_review", "scam_warning", "education_post", "market_safety_note"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["intake", "researching", "drafted", "needs_review", "approved", "rejected"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 120
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 40,
+      "maxLength": 260
+    },
+    "audience": {
+      "type": "string",
+      "enum": ["new_investor", "active_trader", "wallet_user", "general_reader"]
+    },
+    "riskRating": {
+      "type": "string",
+      "enum": ["green", "orange", "red", "not_applicable"]
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["medium", "high", "critical"]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "keyFindings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 10
+      }
+    },
+    "sourceNotes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "url", "retrievedAt", "claim", "confidence"],
+        "properties": {
+          "label": { "type": "string" },
+          "url": { "type": "string" },
+          "retrievedAt": { "type": "string", "format": "date" },
+          "claim": { "type": "string" },
+          "confidence": { "type": "string", "enum": ["low", "medium", "high"] }
+        }
+      }
+    },
+    "userGuidance": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "humanReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "reviewer", "notes"],
+      "properties": {
+        "required": { "type": "boolean" },
+        "reviewer": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}
+
