@@ -38,3 +38,23 @@ export function extractMetaDescription(html: string): string | undefined {
   return match?.[1]?.trim();
 }
 
+export function extractCanonical(html: string): string | undefined {
+  const match = html.match(/<link\s+[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["'][^>]*>/i);
+  return match?.[1]?.trim();
+}
+
+export function extractTags(html: string, tag: string): string[] {
+  return Array.from(html.matchAll(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, "gi")))
+    .map((match) => stripHtml(match[1]))
+    .filter(Boolean);
+}
+
+export function countImages(html: string): { imageCount: number; imagesMissingAlt: number } {
+  const images = Array.from(html.matchAll(/<img\b[^>]*>/gi)).map((match) => match[0]);
+  const imagesMissingAlt = images.filter((image) => !/\salt=["'][^"']+["']/i.test(image)).length;
+  return { imageCount: images.length, imagesMissingAlt };
+}
+
+export function hasAffiliateDisclosure(input: string): boolean {
+  return /affiliate|commission|compensation|sponsored|referral/i.test(input);
+}

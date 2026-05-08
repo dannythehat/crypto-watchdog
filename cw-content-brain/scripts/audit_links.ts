@@ -1,26 +1,38 @@
-import { readJson, todayIso, writeJson } from "../src/lib/fs.js";
+import { isDirectRun, readJson, writeJson } from "../src/lib/fs.js";
 import { logger } from "../src/lib/logger.js";
 import type { LinkFinding, RouteRecord } from "../src/lib/types.js";
 
-async function auditLinks(): Promise<void> {
-  const scanPath = process.argv[2] ?? `data/site_scan/site-scan-${todayIso()}.json`;
-  const routes = await readJson<RouteRecord[]>(scanPath);
+const linkAuditPath = "data/reports/link_audit.json";
+
+export async function auditLinks(): Promise<void> {
+  const routes = await readJson<RouteRecord[]>("data/site_scan/site_inventory.json");
   const findings: LinkFinding[] = [];
 
   for (const route of routes) {
-    for (const targetUrl of [...route.internalLinks, ...route.externalLinks]) {
-      const type = route.internalLinks.includes(targetUrl) ? "internal" : "external";
+    for (const targetUrl of route.internalLinks) {
       findings.push({
         sourceUrl: route.url,
         targetUrl,
-        type,
+        type: "internal",
         status: "unchecked",
-        note: "Recorded from site scan. Run a live status checker only when approved.",
+        note: "Collected from inventory. Live status checks require explicit approval.",
+      });
+    }
+
+    for (const targetUrl of route.externalLinks) {
+      findings.push({
+        sourceUrl: route.url,
+        targetUrl,
+        type: "external",
+        status: "review",
+        note: route.possibleAffiliateLinks.includes(targetUrl)
+          ? "Possible affiliate link; confirm disclosure and approval."
+          : "External link collected from inventory.",
       });
     }
   }
 
-  await writeJson(`data/reports/link-audit-${todayIso()}.json`, {
+  await writeJson(linkAuditPath, {
     generatedAt: new Date().toISOString(),
     findings,
   });
@@ -28,5 +40,6 @@ async function auditLinks(): Promise<void> {
   logger.info("Link audit report written", { links: findings.length });
 }
 
-await auditLinks();
-
+if (isDirectRun(import.meta.url)) {
+  await auditLinks();
+}

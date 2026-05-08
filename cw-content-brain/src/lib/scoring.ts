@@ -13,15 +13,15 @@ export function scoreRoute(route: RouteRecord, config: SiteConfig): SeoScore {
     {
       name: "description",
       passed:
-        Boolean(route.description) &&
-        route.description!.length >= config.seo.descriptionMinLength &&
-        route.description!.length <= config.seo.descriptionMaxLength,
-      detail: route.description ? `${route.description.length} characters` : "missing description",
+        Boolean(route.metaDescription) &&
+        route.metaDescription!.length >= config.seo.descriptionMinLength &&
+        route.metaDescription!.length <= config.seo.descriptionMaxLength,
+      detail: route.metaDescription ? `${route.metaDescription.length} characters` : "missing description",
     },
     {
       name: "h1",
-      passed: Boolean(route.h1),
-      detail: route.h1 ? route.h1 : "missing h1",
+      passed: route.h1s.length === 1,
+      detail: `${route.h1s.length} h1 tags`,
     },
     {
       name: "word_count",
@@ -49,4 +49,3 @@ export function averageScore(scores: SeoScore[]): number {
   }
   return Math.round(scores.reduce((sum, score) => sum + score.score, 0) / scores.length);
 }
-

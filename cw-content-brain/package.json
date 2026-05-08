@@ -5,13 +5,13 @@
   "type": "module",
   "description": "Standalone Phase 1 content operations toolkit for CryptoWatchdog.",
   "scripts": {
-    "crawl:site": "tsx scripts/crawl_site.ts",
-    "score:seo": "tsx scripts/score_seo.ts",
-    "audit:links": "tsx scripts/audit_links.ts",
-    "suggest:internal-links": "tsx scripts/suggest_internal_links.ts",
-    "draft:create": "tsx scripts/create_article_draft.ts",
-    "draft:update": "tsx scripts/update_article_draft.ts",
-    "phase1:audit": "tsx scripts/run_phase1_audit.ts"
+    "audit": "tsx scripts/run_phase1_audit.ts",
+    "crawl": "tsx scripts/crawl_site.ts",
+    "seo": "tsx scripts/score_seo.ts",
+    "links": "tsx scripts/audit_links.ts",
+    "internal-links": "tsx scripts/suggest_internal_links.ts",
+    "draft": "tsx scripts/create_article_draft.ts",
+    "update-draft": "tsx scripts/update_article_draft.ts"
   },
   "devDependencies": {
     "@types/node": "^22.16.5",
@@ -19,4 +19,3 @@
     "typescript": "^5.8.3"
   }
 }
-

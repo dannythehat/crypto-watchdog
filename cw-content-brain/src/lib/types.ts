@@ -2,7 +2,8 @@ export type ContentType =
   | "platform_review"
   | "scam_warning"
   | "education_post"
-  | "market_safety_note";
+  | "market_safety_note"
+  | "exchange_review";
 
 export type RiskRating = "green" | "orange" | "red" | "not_applicable";
 
@@ -10,12 +11,15 @@ export type Confidence = "low" | "medium" | "high";
 
 export interface SiteConfig {
   siteName: string;
-  siteUrl: string;
+  baseUrl: string;
   defaultLocale: string;
+  maxPagesPerRun: number;
+  crawlDelayMs: number;
+  allowedDomains: string[];
+  approvalRequiredFor: string[];
   contentTypes: ContentType[];
   protectedRoutes: string[];
   crawl: {
-    maxPages: number;
     includePatterns: string[];
     excludePatterns: string[];
   };
@@ -30,16 +34,21 @@ export interface SiteConfig {
 
 export interface RouteRecord {
   url: string;
-  path: string;
-  status?: number;
+  statusCode: number | null;
   title?: string;
-  description?: string;
-  h1?: string;
-  wordCount?: number;
+  metaDescription?: string;
+  canonical?: string;
+  h1s: string[];
+  h2s: string[];
+  wordCount: number;
   internalLinks: string[];
   externalLinks: string[];
-  issues: string[];
-  scannedAt: string;
+  imageCount: number;
+  imagesMissingAlt: number;
+  possibleAffiliateLinks: string[];
+  hasAffiliateDisclosure: boolean;
+  lastScannedAt: string;
+  discoveryMode: "live-crawl" | "route-manifest-fallback";
 }
 
 export interface SeoScore {
@@ -90,3 +99,13 @@ export interface LinkFinding {
   note: string;
 }
 
+export interface Phase1RunLog {
+  startedAt: string;
+  finishedAt: string;
+  outputs: string[];
+  steps: Array<{
+    name: string;
+    status: "completed" | "failed";
+    detail?: string;
+  }>;
+}

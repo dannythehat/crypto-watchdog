@@ -10,6 +10,17 @@
       "CryptoWatchdog verdict"
     ]
   },
+  "exchange_review": {
+    "sections": [
+      "Summary",
+      "Exchange overview",
+      "Security and custody checks",
+      "Fees and withdrawals",
+      "Risk signals",
+      "Evidence needed",
+      "Draft verdict"
+    ]
+  },
   "scam_warning": {
     "sections": [
       "Warning summary",
@@ -39,4 +50,3 @@
     ]
   }
 }
-

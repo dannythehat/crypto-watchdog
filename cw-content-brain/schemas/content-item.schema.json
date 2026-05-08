@@ -19,7 +19,7 @@
   "properties": {
     "contentType": {
       "type": "string",
-      "enum": ["platform_review", "scam_warning", "education_post", "market_safety_note"]
+      "enum": ["platform_review", "scam_warning", "education_post", "market_safety_note", "exchange_review"]
     },
     "status": {
       "type": "string",
@@ -96,4 +96,3 @@
     }
   }
 }
-

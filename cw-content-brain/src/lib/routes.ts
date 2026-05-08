@@ -14,6 +14,11 @@ export function isInternalUrl(siteUrl: string, candidate: string): boolean {
   return new URL(candidate).hostname === new URL(siteUrl).hostname;
 }
 
+export function isAllowedDomain(candidate: string, allowedDomains: string[]): boolean {
+  const hostname = new URL(candidate).hostname;
+  return allowedDomains.includes(hostname);
+}
+
 export function pathFromUrl(url: string): string {
   const parsed = new URL(url);
   return parsed.pathname || "/";
@@ -32,3 +37,6 @@ export function extractLinks(baseUrl: string, html: string): string[] {
     .filter((value): value is string => Boolean(value));
 }
 
+export function findPossibleAffiliateLinks(links: string[]): string[] {
+  return links.filter((link) => /[?&](ref|aff|affiliate|partner|utm_source|utm_campaign)=|\/ref\/|\/affiliate\//i.test(link));
+}
