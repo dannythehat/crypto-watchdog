@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Example Exchange Partner",
+    "status": "example_only",
+    "homepage": "https://example.com",
+    "trackingBaseUrl": "https://example.com/ref/example",
+    "disclosure": "CryptoWatchdog may receive compensation if a reader signs up through this link.",
+    "allowedContentTypes": ["platform_review", "education_post"],
+    "riskRestrictions": {
+      "allowRedAlertPlacement": false,
+      "allowWarningPages": false
+    }
+  }
+]
+

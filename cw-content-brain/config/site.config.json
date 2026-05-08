@@ -1,0 +1,28 @@
+{
+  "siteName": "CryptoWatchdog",
+  "baseUrl": "https://cryptowatchdog.net",
+  "defaultLocale": "en-GB",
+  "maxPagesPerRun": 100,
+  "crawlDelayMs": 750,
+  "allowedDomains": ["cryptowatchdog.net", "www.cryptowatchdog.net"],
+  "approvalRequiredFor": [
+    "publishing",
+    "supabase_writes",
+    "affiliate_link_changes",
+    "live_crawling",
+    "external_api_calls"
+  ],
+  "contentTypes": ["platform_review", "scam_warning", "education_post", "market_safety_note", "exchange_review"],
+  "protectedRoutes": ["/", "/reviews", "/blog", "/warnings", "/submit", "/about"],
+  "crawl": {
+    "includePatterns": ["/", "/reviews", "/blog", "/warnings", "/about"],
+    "excludePatterns": ["/submit"]
+  },
+  "seo": {
+    "titleMinLength": 30,
+    "titleMaxLength": 65,
+    "descriptionMinLength": 90,
+    "descriptionMaxLength": 160,
+    "minWords": 600
+  }
+}

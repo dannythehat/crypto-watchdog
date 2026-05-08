@@ -1,0 +1,52 @@
+{
+  "platform_review": {
+    "sections": [
+      "Summary",
+      "What the platform claims",
+      "Ownership and transparency",
+      "Fees and withdrawals",
+      "Risk signals",
+      "Evidence notes",
+      "CryptoWatchdog verdict"
+    ]
+  },
+  "exchange_review": {
+    "sections": [
+      "Summary",
+      "Exchange overview",
+      "Security and custody checks",
+      "Fees and withdrawals",
+      "Risk signals",
+      "Evidence needed",
+      "Draft verdict"
+    ]
+  },
+  "scam_warning": {
+    "sections": [
+      "Warning summary",
+      "Who may be affected",
+      "Observed pattern",
+      "Evidence notes",
+      "What users should do",
+      "Open questions"
+    ]
+  },
+  "education_post": {
+    "sections": [
+      "Summary",
+      "Why this matters",
+      "Step-by-step checks",
+      "Common mistakes",
+      "CryptoWatchdog checklist"
+    ]
+  },
+  "market_safety_note": {
+    "sections": [
+      "Summary",
+      "Current safety context",
+      "Signals to watch",
+      "Practical guidance",
+      "Sources"
+    ]
+  }
+}

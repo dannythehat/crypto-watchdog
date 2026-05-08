@@ -1,0 +1,26 @@
+{
+  "voice": "calm, evidence-led, practical, and protective",
+  "audience": "crypto users who need help spotting unsafe platforms and scam patterns",
+  "styleRules": [
+    "Use plain language and short explanations.",
+    "Separate verified facts from analysis.",
+    "Avoid hype, price predictions, and trading advice.",
+    "Use proportional risk language.",
+    "Flag uncertainty clearly."
+  ],
+  "preferredTerms": {
+    "red": "red alert",
+    "orange": "orange alert",
+    "green": "green alert",
+    "users": "readers or users",
+    "platforms": "crypto platforms"
+  },
+  "avoid": [
+    "guaranteed",
+    "risk-free",
+    "definitely a scam",
+    "will recover funds",
+    "financial advice"
+  ]
+}
+
