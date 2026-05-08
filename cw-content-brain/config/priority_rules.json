@@ -1,0 +1,41 @@
+{
+  "severityPoints": {
+    "critical": 100,
+    "high": 60,
+    "medium": 30,
+    "low": 10
+  },
+  "confidenceMultiplier": {
+    "high": 1.0,
+    "medium": 0.6,
+    "low": 0.25
+  },
+  "falsePositivePenalty": {
+    "low": 0,
+    "medium": -15,
+    "high": -35
+  },
+  "issuePriorityBoosts": {
+    "code_artifact_detected": 40,
+    "unsupported_strong_scam_language": 50,
+    "warning_claim_without_evidence": 35,
+    "affiliate_on_red_or_warning_page": 35,
+    "affiliate_without_nearby_disclosure": 25,
+    "affiliate_too_close_to_opening": 25,
+    "possible_affiliate_placeholder_not_approved": 35,
+    "repeated_affiliate_ctas": 20,
+    "review_missing_trust_score": 30,
+    "warning_without_source_links": 20,
+    "missing_external_evidence_links": 10,
+    "missing_internal_links": 5,
+    "missing_related_content_links": 0,
+    "weak_structure": 0
+  },
+  "extraPageBoosts": {
+    "affiliateAndTrustEvidenceIssue": 25,
+    "warningLegalTrustIssue": 25,
+    "reviewMissingTrustScore": 15,
+    "allHighFalsePositiveRisk": -40,
+    "allLowConfidence": -30
+  }
+}
