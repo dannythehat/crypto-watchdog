@@ -10,6 +10,8 @@ Phase 1C adds an optional owner-controlled Supabase export helper. It is disable
 
 The audit reports now include confidence and false-positive-risk fields. Findings are possible issues, not confirmed defects, and should be triaged before any Priority Action Queue or content change is created.
 
+The Priority Action Queue ranks possible fixes using confidence, false-positive risk, severity, issue type, and page-level combinations. It does not edit or publish anything.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -19,6 +21,7 @@ The audit reports now include confidence and false-positive-risk fields. Finding
 - Discover public site URLs from `https://cryptowatchdog.net/sitemap.xml` before using fallback route manifests.
 - Analyse real exported content bodies from local JSON snapshots before recommending edits.
 - Reduce false positives by reviewing confidence, evidence snippets, and false-positive risk before building fix queues.
+- Rank possible actions without treating findings as confirmed defects.
 
 ## Folder Map
 
@@ -29,7 +32,7 @@ The audit reports now include confidence and false-positive-risk fields. Finding
 - `prompts/review-checklist.md`: human review checklist prompt.
 - `seeds/editorial-calendar.json`: starter content calendar for Phase 1.
 - `seeds/source-register.json`: neutral source categories to guide evidence gathering.
-- `scripts/`: standalone audit, crawl, SEO, link, draft, content snapshot, confidence summary, and optional export commands.
+- `scripts/`: standalone audit, crawl, SEO, link, draft, content snapshot, confidence summary, priority queue, and optional export commands.
 - `src/lib/`: shared filesystem, CSV, route, sitemap, scoring, text, logger, audit, and type helpers.
 - `data/content_snapshot/`: local read-only JSON exports and normalised content output.
 - `data/`: generated inventory, reports, research, keywords, YouTube, affiliate, and draft outputs.
@@ -93,6 +96,23 @@ This writes:
 
 High-confidence findings should be reviewed first. High false-positive-risk findings should be checked against rendered pages and structured source fields before any edit is made. No content should be changed automatically based on these reports.
 
+## Priority Action Queue
+
+After confidence triage, the owner can build a ranked queue:
+
+```bash
+npm run content:audit
+npm run content:confidence
+npm run content:queue
+```
+
+The queue reads local generated reports and writes:
+
+- `data/reports/priority_action_queue.json`
+- `data/reports/priority_action_queue.md`
+
+The queue ranks possible fixes using confidence, false-positive risk, severity, issue-specific boosts, and page-level combinations. High false-positive-risk items must be checked against rendered pages before editing. Low-confidence items should be treated as checks, not fixes. The queue does not edit content, publish content, write to Supabase, or create tasks automatically.
+
 ## Phase 1C Supabase Export Helper
 
 The Supabase export helper is optional and owner-run only. It is read-only, disabled by default, and requires local environment variables that must never be committed:
@@ -134,6 +154,7 @@ Then run the follow-up local audit:
 ```bash
 npm run content:audit
 npm run content:confidence
+npm run content:queue
 ```
 
 Do not commit private exported data or `.env` secrets. Keep `config/supabase_export.config.json` disabled unless actively exporting.
@@ -155,6 +176,7 @@ npm run update-draft -- --url https://cryptowatchdog.net/example-page
 npm run content:export
 npm run content:audit
 npm run content:confidence
+npm run content:queue
 ```
 
 ## Required Outputs
@@ -173,5 +195,7 @@ npm run content:confidence
 - `data/reports/content_linking_report.json`
 - `data/reports/audit_confidence_summary.json`
 - `data/reports/audit_confidence_summary.md`
+- `data/reports/priority_action_queue.json`
+- `data/reports/priority_action_queue.md`
 - `logs/content-snapshot-run.json`
 - `logs/supabase-export-run.json`

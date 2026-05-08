@@ -15,6 +15,8 @@ export type DiscoveryMode = "live-crawl" | "sitemap-url" | "route-manifest-fallb
 
 export type SnapshotTableName = "reviews" | "blog_posts" | "warnings" | "categories";
 
+export type ContentAuditSeverity = "low" | "medium" | "high" | "critical";
+
 export interface SiteConfig {
   siteName: string;
   baseUrl: string;
@@ -74,7 +76,7 @@ export interface NormalisedContentRecord {
 
 export interface ContentAuditFinding {
   code: string;
-  severity: "low" | "medium" | "high";
+  severity: ContentAuditSeverity;
   sourceTable: SnapshotTableName;
   id: string;
   slug: string;
