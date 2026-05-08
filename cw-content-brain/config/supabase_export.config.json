@@ -1,0 +1,14 @@
+{
+  "enabled": false,
+  "readOnly": true,
+  "writeBackToSupabase": false,
+  "outputDir": "data/content_snapshot",
+  "tables": [
+    "reviews",
+    "blog_posts",
+    "warnings",
+    "categories"
+  ],
+  "limitPerTable": 500,
+  "orderBy": "updated_at"
+}
