@@ -172,7 +172,8 @@ function bandFor(score: number, findings: ContentAuditFinding[]): QueueItem["pri
   const hasLegalTrustRisk = findings.some((finding) => legalTrustIssues.has(finding.code));
   const highFalsePositiveDominates = findings.filter((finding) => finding.falsePositiveRisk === "high").length > findings.length / 2;
 
-  if (score < 20 || highFalsePositiveDominates) return "verify_later";
+  if (score < 20) return "verify_later";
+  if (highFalsePositiveDominates && !hasLegalTrustRisk) return "verify_later";
   if (score >= 120 && (hasHighConfidence || hasLegalTrustRisk)) return "critical";
   if (score >= 80) return "high";
   if (score >= 45) return "medium";
