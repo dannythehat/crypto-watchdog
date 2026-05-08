@@ -10,6 +10,28 @@ interface Suggestion {
 }
 
 const recommendationsPath = "data/reports/internal_link_recommendations.json";
+const ignoredTerms = new Set([
+  "the",
+  "and",
+  "for",
+  "with",
+  "that",
+  "this",
+  "from",
+  "your",
+  "fallback",
+  "record",
+  "generated",
+  "route",
+  "manifest",
+  "supabase",
+  "schema",
+  "crypto",
+  "watchdog",
+  "page",
+  "detail",
+  "example",
+]);
 
 export async function suggestInternalLinks(): Promise<void> {
   const routes = await readJson<RouteRecord[]>("data/site_scan/site_inventory.json");
@@ -21,8 +43,8 @@ export async function suggestInternalLinks(): Promise<void> {
         continue;
       }
 
-      const sourceTerms = topTerms(`${source.title ?? ""} ${source.metaDescription ?? ""} ${source.h1s.join(" ")}`);
-      const targetTerms = topTerms(`${target.title ?? ""} ${target.metaDescription ?? ""} ${target.h1s.join(" ")}`);
+      const sourceTerms = termsForRecord(source);
+      const targetTerms = termsForRecord(target);
       const sharedTerms = sourceTerms.filter((term) => targetTerms.includes(term));
 
       if (sharedTerms.length >= 1) {
@@ -30,7 +52,7 @@ export async function suggestInternalLinks(): Promise<void> {
           sourceUrl: source.url,
           suggestedTargetUrl: target.url,
           anchorHint: sharedTerms.slice(0, 3).join(" "),
-          reason: `Related page language: ${sharedTerms.slice(0, 4).join(", ")}`,
+          reason: `Related URL taxonomy or page terms: ${sharedTerms.slice(0, 4).join(", ")}`,
         });
       }
     }
@@ -44,13 +66,19 @@ export async function suggestInternalLinks(): Promise<void> {
   logger.info("Internal link recommendations written", { suggestions: suggestions.length });
 }
 
+function termsForRecord(record: RouteRecord): string[] {
+  const url = new URL(record.url);
+  const pathTerms = url.pathname.replace(/\.[a-z0-9]+$/i, " ").replace(/[^a-z0-9]+/gi, " ");
+  const contentTerms = record.discoveryMode === "sitemap-url" && record.wordCount < 250
+    ? ""
+    : `${record.title ?? ""} ${record.metaDescription ?? ""} ${record.h1s.join(" ")}`;
+  return topTerms(`${pathTerms} ${contentTerms}`);
+}
+
 function topTerms(input: string): string[] {
-  const stopWords = new Set(["the", "and", "for", "with", "that", "this", "from", "your", "crypto", "watchdog"]);
-  return input
-    .toLowerCase()
-    .match(/\b[a-z]{4,}\b/g)
-    ?.filter((term) => !stopWords.has(term))
-    .slice(0, 12) ?? [];
+  return Array.from(new Set(input.toLowerCase().match(/\b[a-z]{3,}\b/g) ?? []))
+    .filter((term) => !ignoredTerms.has(term))
+    .slice(0, 12);
 }
 
 if (isDirectRun(import.meta.url)) {
