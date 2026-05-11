@@ -32,6 +32,8 @@ Phase 2H adds a read-only Research & Duplicate Guard v1. It reviews proposed loc
 
 Phase 2I adds a read-only Agent Registry v1. It maps the current and planned Watchdog HQ AI workforce into named agents, departments, hierarchy levels, reporting lines, responsibilities, allowed actions, blocked actions, and approval requirements. It is a report-only registry, not an execution system.
 
+Phase 2J adds a read-only Master Command Queue v1. It combines available local reports into a Watchdog HQ morning dashboard for Danny, separating safe draft work, approval-needed work, blocked risks, monitor-only items, performance changes, money opportunities, and department manager summaries. It is report-only and never applies, approves, publishes, or edits live content.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -52,6 +54,7 @@ Phase 2I adds a read-only Agent Registry v1. It maps the current and planned Wat
 - Combine local SEO, content, affiliate, analytics, and rendered-verifier signals into a concise command queue.
 - Guard proposed content ideas against duplication, cannibalisation, and unsupported high-risk wording before drafting.
 - Maintain a local Watchdog HQ agent registry so ownership, safety boundaries, and future automation plans stay explicit.
+- Produce a local morning command dashboard that separates detected, suspected, recommended, blocked, approval-needed, and monitor-only work.
 
 ## Folder Map
 
@@ -160,6 +163,7 @@ npm run content:ga4
 npm run content:seo-brain
 npm run content:research-guard
 npm run content:agents
+npm run content:master-queue
 npm run content:verify-rendered
 ```
 
@@ -548,6 +552,40 @@ The hierarchy is explicit: Danny receives reports from the Master AI Manager / T
 
 Core departments are Command, Content, SEO, Research, Affiliates, Backlinks, Analytics, Trust & Safety, Media, Social, Operations, and Approvals. All v1 agents have `canAutoApply: false`. Risky or high-impact agents require human approval. Registry safety rules explicitly block publishing without approval, Supabase writes without a future approved workflow, live site edits, secrets, unauthorised affiliate links on red/warning/high-risk pages, trust rating changes without approval, and scam/fraud accusations without evidence review.
 
+## Master Command Queue
+
+Master Command Queue v1 is read-only and report-only. It creates the first Watchdog HQ morning dashboard by combining whichever local Content Brain reports are available:
+
+- `data/reports/seo_intelligence_queue.json`
+- `data/reports/agent_registry_report.json`
+- `data/reports/research_duplicate_guard_report.json`
+- `data/reports/metadata_suggestions.json`
+- `data/reports/internal_link_placement_suggestions.json`
+- `data/reports/affiliate_placement_suggestions.json`
+- `data/reports/offer_tracker_report.json`
+- `data/reports/search_console_report.json`
+- `data/reports/ga4_report.json`
+- `data/reports/rendered_page_verification.json`
+- `data/reports/priority_action_queue.json`
+- `data/reports/audit_confidence_summary.json`
+
+Run it locally with:
+
+```bash
+npm run content:master-queue
+```
+
+The queue writes only ignored local reports:
+
+- `data/reports/master_command_queue.json`
+- `data/reports/master_command_queue.md`
+
+The JSON output includes `generatedAt`, `disclaimer`, `queueVersion`, `sourceReportsRead`, `missingReports`, `summaryCounts`, `stageCounts`, `riskCounts`, `approvalCounts`, `safeDraftsReady`, `needsDannyApproval`, `blockedRiskyItems`, `monitorOnly`, `performanceChanges`, `moneyOpportunities`, `managerSummaries`, and `topPriorities`.
+
+Each queue item includes `id`, `title`, `sourceReport`, `section`, `department`, `priority`, `riskLevel`, `confidence`, `falsePositiveRisk`, `statusStage`, `needsHumanReview`, `needsDannyApproval`, `canAutoDraft`, `canAutoApply`, `suggestedNextAction`, `evidenceSummary`, and optional related URL/path fields. The stage model is explicit: detected -> suspected -> verified -> recommended -> approved -> applied. In v1, nothing is approved or applied, `approvedCount` and `appliedCount` stay `0`, and every item has `canAutoApply: false`.
+
+The dashboard groups work into safe draft ideas, Danny approval items, blocked/risky items, monitor-only items, performance changes, money opportunities, department manager summaries, and a capped top-priority list of at most 10 items. Affiliate placements, trust/rating-impacting issues, scam/fraud wording, legal/policy wording, live content decisions, publishing decisions, and high-risk claims must stay behind Danny approval. Treat the queue as local planning guidance, not permission to publish or edit live content.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -631,6 +669,7 @@ npm run content:ga4
 npm run content:seo-brain
 npm run content:research-guard
 npm run content:agents
+npm run content:master-queue
 npm run content:verify-rendered
 ```
 
@@ -670,6 +709,8 @@ npm run content:verify-rendered
 - `data/reports/research_duplicate_guard_report.md`
 - `data/reports/agent_registry_report.json`
 - `data/reports/agent_registry_report.md`
+- `data/reports/master_command_queue.json`
+- `data/reports/master_command_queue.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`

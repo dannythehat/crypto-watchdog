@@ -28,6 +28,7 @@
     "content:seo-brain": "tsc --outDir dist && node dist/scripts/build_seo_intelligence_brain.js",
     "content:research-guard": "tsc --outDir dist && node dist/scripts/build_research_duplicate_guard.js",
     "content:agents": "tsc --outDir dist && node dist/scripts/build_agent_registry.js",
+    "content:master-queue": "tsc --outDir dist && node dist/scripts/build_master_command_queue.js",
     "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts"
   },
   "dependencies": {
