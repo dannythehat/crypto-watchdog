@@ -8,6 +8,7 @@ data/**/*.jsonl
 data/**/*.csv
 data/**/*.md
 data/reports/*.json
+data/dashboard/*.json
 data/site_scan/*.json
 data/site_scan/*.csv
 data/ga4/exports/*
