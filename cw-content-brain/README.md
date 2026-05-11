@@ -30,6 +30,8 @@ Phase 2G adds a read-only SEO Intelligence Brain v1. It combines local metadata,
 
 Phase 2H adds a read-only Research & Duplicate Guard v1. It reviews proposed local content ideas against existing content snapshots before drafting, flags duplicate/cannibalisation/evidence risks, and never performs live web verification in v1.
 
+Phase 2I adds a read-only Agent Registry v1. It maps the current and planned Watchdog HQ AI workforce into named agents, departments, responsibilities, allowed actions, blocked actions, and approval requirements. It is a report-only registry, not an execution system.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -49,6 +51,7 @@ Phase 2H adds a read-only Research & Duplicate Guard v1. It reviews proposed loc
 - Import local GA4 exports to find draft engagement, CTA, content, and affiliate-placement review opportunities.
 - Combine local SEO, content, affiliate, analytics, and rendered-verifier signals into a concise command queue.
 - Guard proposed content ideas against duplication, cannibalisation, and unsupported high-risk wording before drafting.
+- Maintain a local Watchdog HQ agent registry so ownership, safety boundaries, and future automation plans stay explicit.
 
 ## Folder Map
 
@@ -156,6 +159,7 @@ npm run content:gsc
 npm run content:ga4
 npm run content:seo-brain
 npm run content:research-guard
+npm run content:agents
 npm run content:verify-rendered
 ```
 
@@ -509,6 +513,39 @@ Every item is marked `draft_only: true` and `needs_human_review: true`. The JSON
 
 Classifications include `no_overlap`, `related_but_distinct`, `same_search_intent`, `near_duplicate`, `keyword_cannibalisation_risk`, `update_existing_page_instead`, `create_supporting_article`, `needs_research`, and `blocked_until_evidence`. Unsupported high-risk wording such as scam, fraud, recovery guarantees, guaranteed safety, or ranking claims should be blocked until evidence is reviewed. Treat the report as a pre-draft review aid, not as approval to publish.
 
+## Agent Registry
+
+Agent Registry v1 is read-only and report-only. It defines the current and planned Watchdog HQ AI workforce and maps existing Content Brain scripts into named agents. It does not execute agents, call APIs, publish content, edit live pages, write to Supabase, or store secrets.
+
+Run it locally with:
+
+```bash
+npm run content:agents
+```
+
+The registry writes only ignored local reports:
+
+- `data/reports/agent_registry_report.json`
+- `data/reports/agent_registry_report.md`
+
+The JSON output includes:
+
+- `generatedAt`
+- `disclaimer`
+- `registryVersion`
+- `agentCount`
+- `activeAgentCount`
+- `plannedAgentCount`
+- `futureAgentCount`
+- `departmentCounts`
+- `riskCounts`
+- `safetyRules`
+- `agents`
+
+Each agent includes `id`, `name`, `department`, `currentStatus`, `mode`, `riskLevel`, `responsibilities`, `inputReports`, `outputReports`, `relatedScripts`, `allowedActions`, `blockedActions`, `canAutoDraft`, `canAutoApply`, and `requiresHumanApproval`.
+
+Core departments are Command, Content, SEO, Research, Affiliates, Backlinks, Analytics, Trust & Safety, Media, Social, Operations, and Approvals. All v1 agents have `canAutoApply: false`. Risky or high-impact agents require human approval. Registry safety rules explicitly block publishing without approval, Supabase writes without a future approved workflow, live site edits, secrets, unauthorised affiliate links on red/warning/high-risk pages, trust rating changes without approval, and scam/fraud accusations without evidence review.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -591,6 +628,7 @@ npm run content:gsc
 npm run content:ga4
 npm run content:seo-brain
 npm run content:research-guard
+npm run content:agents
 npm run content:verify-rendered
 ```
 
@@ -628,6 +666,8 @@ npm run content:verify-rendered
 - `data/reports/seo_intelligence_queue.md`
 - `data/reports/research_duplicate_guard_report.json`
 - `data/reports/research_duplicate_guard_report.md`
+- `data/reports/agent_registry_report.json`
+- `data/reports/agent_registry_report.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
