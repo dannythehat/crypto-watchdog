@@ -129,6 +129,8 @@ npm run content:verify-rendered
 
 The verifier opens live rendered pages with Playwright and compares page facts against queue findings. It can downgrade likely false positives when the rendered page already includes injected internal links, external links, disclosure text, metadata, or visible page components that are not present in the exported snapshot.
 
+Affiliate link checks should not treat internal CryptoWatchdog disclosure, legal, policy, accessibility, editorial policy, or methodology pages as affiliate links. Affiliate disclosure detection remains separate from affiliate link detection. Code artefact checks are heuristic and should look for code-like context rather than ordinary words such as "function" or "type" by themselves.
+
 The verifier never edits live pages, never publishes content, never writes to Supabase, and never changes app files. It writes only local generated reports:
 
 - `data/reports/rendered_page_verification.json`

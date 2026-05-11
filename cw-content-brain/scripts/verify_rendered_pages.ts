@@ -127,7 +127,10 @@ const defaultAffiliatePatterns = [
 ];
 
 const disclosurePhrases = ["affiliate", "commission", "disclosure", "sponsored", "referral"];
-const codeArtifactTokens = ["import ", "export default", "interface ", "type ", "const ", "function ", "className=", "<div", "</", "React."];
+const codeArtifactTokens = ["export default", "className=", "import {", "import React", "interface ", "</div", "<div", "useState(", "useEffect(", "=>", "const [", "function("];
+const weakCodeArtifactTokens = ["type ", "function ", "const "];
+const codeContextTokens = ["<", "/>", "</", "=>", "{", "}", "[", "]", "className=", "import ", "export "];
+const internalNonAffiliatePathnames = ["/affiliate-disclosure", "/privacy-policy", "/terms", "/terms-of-use", "/accessibility", "/editorial-policy", "/methodology"];
 const socialHosts = ["facebook.com", "x.com", "twitter.com", "linkedin.com", "instagram.com", "youtube.com", "youtu.be", "tiktok.com"];
 
 export async function verifyRenderedPages(): Promise<RenderedVerificationResult[]> {
@@ -269,6 +272,9 @@ async function extractRenderedFacts(page: Page, status: number | null, config: R
     affiliatePatterns: [...defaultAffiliatePatterns, ...(config.affiliatePatterns ?? [])].map((pattern) => pattern.toLowerCase()),
     phrases: disclosurePhrases,
     tokens: codeArtifactTokens,
+    weakCodeTokens: weakCodeArtifactTokens,
+    codeContextTokens,
+    internalNonAffiliatePathnames,
     socialHostPatterns: socialHosts,
   };
 
@@ -304,7 +310,21 @@ async function extractRenderedFacts(page: Page, status: number | null, config: R
         return false;
       }
     };
+    const isKnownInternalNonAffiliate = (href) => {
+      try {
+        const url = new URL(href);
+        const pathname = url.pathname.toLowerCase();
+        return isInternal(href) && payload.internalNonAffiliatePathnames.some((path) => pathname.includes(path));
+      } catch {
+        return false;
+      }
+    };
     const hasPattern = (href) => payload.affiliatePatterns.some((pattern) => href.toLowerCase().includes(pattern));
+    const isAffiliateLink = (href) => {
+      if (isKnownInternalNonAffiliate(href)) return false;
+      if (isInternal(href)) return false;
+      return hasPattern(href);
+    };
     const isSocial = (href) => payload.socialHostPatterns.some((host) => {
       try {
         return new URL(href).hostname.includes(host);
@@ -314,11 +334,14 @@ async function extractRenderedFacts(page: Page, status: number | null, config: R
     });
     const internalLinks = hrefs.filter(isInternal);
     const externalLinks = hrefs.filter((href) => !isInternal(href));
-    const affiliateLinks = hrefs.filter(hasPattern);
-    const credibleExternalLinks = externalLinks.filter((href) => !hasPattern(href) && !isSocial(href));
+    const affiliateLinks = hrefs.filter(isAffiliateLink);
+    const credibleExternalLinks = externalLinks.filter((href) => !isAffiliateLink(href) && !isSocial(href));
     const images = Array.from(doc.images || []);
     const iframeSrcs = Array.from(doc.querySelectorAll("iframe[src]")).map((iframe) => String(iframe.getAttribute("src") || ""));
-    const codeTokens = payload.tokens.filter((token) => bodyText.includes(token));
+    const strongCodeTokens = payload.tokens.filter((token) => bodyText.includes(token));
+    const weakCodeTokens = payload.weakCodeTokens.filter((token) => bodyText.includes(token));
+    const hasCodeContext = payload.codeContextTokens.some((token) => bodyText.includes(token));
+    const codeTokens = strongCodeTokens.concat(weakCodeTokens.length >= 2 && hasCodeContext ? weakCodeTokens : []);
     const disclosureDetected = payload.phrases.some((phrase) => lowerText.includes(phrase));
 
     return {
