@@ -18,6 +18,7 @@ type Department =
 type AgentStatus = "active" | "planned" | "future";
 type AgentMode = "rule_based" | "ai_assisted" | "api_powered" | "hybrid" | "future";
 type RiskLevel = "low" | "medium" | "high";
+type HierarchyLevel = "master_manager" | "department_manager" | "specialist_agent";
 
 interface AgentRegistryEntry {
   id: string;
@@ -26,6 +27,10 @@ interface AgentRegistryEntry {
   currentStatus: AgentStatus;
   mode: AgentMode;
   riskLevel: RiskLevel;
+  hierarchyLevel: HierarchyLevel;
+  reportsTo: string;
+  supervises: string[];
+  escalationRules: string[];
   responsibilities: string[];
   inputReports: string[];
   outputReports: string[];
@@ -40,6 +45,23 @@ interface AgentRegistryEntry {
 const outputJson = "data/reports/agent_registry_report.json";
 const outputMd = "data/reports/agent_registry_report.md";
 const registryVersion = "1.0.0";
+const masterAgentId = "master-ai-manager";
+const dannyOwnerId = "danny";
+
+const departments: Department[] = [
+  "Command",
+  "Content",
+  "SEO",
+  "Research",
+  "Affiliates",
+  "Backlinks",
+  "Analytics",
+  "Trust & Safety",
+  "Media",
+  "Social",
+  "Operations",
+  "Approvals",
+];
 
 const globalSafetyRules = [
   "No publishing unless explicitly approved by a human.",
@@ -76,7 +98,9 @@ export async function buildAgentRegistry(): Promise<AgentRegistryEntry[]> {
 }
 
 function registryAgents(): AgentRegistryEntry[] {
-  return [
+  return applyHierarchy([
+    masterManagerAgent(),
+    ...departmentManagerAgents(),
     activeAgent("content-quality-agent", "Content Quality Agent", "Content", "medium", ["Review local content snapshot quality signals.", "Identify thin, risky, or incomplete content fields."], ["data/content_snapshot/normalised_content.json"], ["data/reports/content_quality_report.json"], ["scripts/audit_content_quality.ts"]),
     activeAgent("affiliate-placement-agent", "Affiliate Placement Agent", "Affiliates", "high", ["Suggest safe, disclosed affiliate placements from local snapshots and vault records.", "Block red/warning/high-risk contexts."], ["data/content_snapshot/normalised_content.json", "config/affiliate_vault.example.json", "config/affiliate_vault.json"], ["data/reports/affiliate_placement_suggestions.json"], ["scripts/build_affiliate_placements.ts"]),
     activeAgent("internal-link-agent", "Internal Link Agent", "SEO", "medium", ["Suggest natural internal link placements.", "Identify orphan or thinly linked pages from local snapshots."], ["data/content_snapshot/normalised_content.json"], ["data/reports/internal_link_placement_suggestions.json"], ["scripts/build_internal_link_placements.ts"]),
@@ -91,7 +115,6 @@ function registryAgents(): AgentRegistryEntry[] {
     activeAgent("audit-confidence-agent", "Audit Confidence Agent", "Trust & Safety", "low", ["Summarise confidence and false-positive risk across audit findings."], ["data/reports/content_quality_report.json", "data/reports/affiliate_placement_report.json", "data/reports/content_linking_report.json"], ["data/reports/audit_confidence_summary.json"], ["scripts/summarise_audit_confidence.ts"]),
     activeAgent("supabase-snapshot-export-agent", "Supabase Snapshot Export Agent", "Operations", "high", ["Owner-controlled read-only export helper for local snapshots."], ["config/supabase_export.config.json", "local environment variables"], ["data/content_snapshot/*.json", "logs/supabase-export-run.json"], ["scripts/export_supabase_snapshot.ts"], ["Read configured Supabase tables only when explicitly enabled by owner."], ["Write to Supabase.", "Commit exported private data.", "Run without owner-provided local configuration."], false, true),
     activeAgent("local-content-snapshot-agent", "Local Content Snapshot Agent", "Content", "low", ["Normalise local JSON snapshot exports for downstream reports."], ["config/content_snapshot.config.json", "data/content_snapshot/*.json"], ["data/content_snapshot/normalised_content.json"], ["scripts/load_content_snapshot.ts"]),
-    plannedAgent("master-ai-manager", "Master AI Manager", "Command", "hybrid", "high", ["Coordinate future Watchdog HQ agent workflows.", "Route tasks to specialist agents only after approval."], [], [], []),
     plannedAgent("agent-team-lead", "Agent Team Lead", "Command", "hybrid", "medium", ["Group recommendations by department.", "Prepare human-readable execution plans."], ["data/reports/agent_registry_report.json"], [], []),
     plannedAgent("approval-queue-agent", "Approval Queue Agent", "Approvals", "rule_based", "high", ["Collect draft changes needing human approval.", "Prevent unsafe auto-apply flows."], ["future approval queue"], [], []),
     plannedAgent("preview-diff-agent", "Preview Diff Agent", "Approvals", "rule_based", "medium", ["Generate before/after previews for proposed content changes."], ["future draft patches"], [], []),
@@ -106,7 +129,102 @@ function registryAgents(): AgentRegistryEntry[] {
     plannedAgent("scam-claim-risk-agent", "Scam Claim Risk Agent", "Trust & Safety", "hybrid", "high", ["Review scam/fraud accusation wording for evidence risk.", "Block unsupported high-risk claims."], ["future claim drafts", "data/research_queue/inputs/*"], [], []),
     plannedAgent("trust-rating-agent", "Trust Rating Agent", "Trust & Safety", "hybrid", "high", ["Prepare trust rating review suggestions from evidence.", "Never change ratings without human approval."], ["future evidence packs"], [], []),
     plannedAgent("media-image-agent", "Media/Image Agent", "Media", "ai_assisted", "medium", ["Suggest safe image alt text, filenames, and future media tasks.", "Avoid misleading or invented visual claims."], ["data/reports/metadata_suggestions.json"], [], []),
-  ];
+  ]);
+}
+
+function masterManagerAgent(): AgentRegistryEntry {
+  return agent(
+    masterAgentId,
+    "Master AI Manager / Top Agent",
+    "Command",
+    "planned",
+    "hybrid",
+    "high",
+    [
+      "Receive department summaries from Department AI Managers.",
+      "Prioritise cross-department Watchdog HQ work.",
+      "Create Danny's daily command queue.",
+      "Identify what can be drafted, what needs Danny approval, what is blocked, and what is monitor-only.",
+      "Report directly to Danny.",
+    ],
+    ["department manager summaries", "data/reports/seo_intelligence_queue.json", "data/reports/agent_registry_report.json"],
+    ["future daily command queue"],
+    [],
+    ["Read approved local summaries.", "Prioritise draft-only command queues.", "Escalate important decisions to Danny."],
+    defaultBlockedActions(),
+    false,
+    true,
+    "master_manager",
+    dannyOwnerId,
+    [],
+    [
+      "Escalate high-risk, blocked, or cross-department recommendations to Danny.",
+      "Do not send any item to drafting unless the relevant Department AI Manager marks it safe or reviewable.",
+      "Never publish or apply changes directly.",
+    ],
+  );
+}
+
+function departmentManagerAgents(): AgentRegistryEntry[] {
+  return departments.map((department) => agent(
+    managerIdFor(department),
+    `${department} AI Manager`,
+    department,
+    "planned",
+    "hybrid",
+    department === "Trust & Safety" || department === "Approvals" || department === "Operations" || department === "Affiliates" ? "high" : "medium",
+    [
+      `Supervise specialist agents in ${department}.`,
+      "Review worker-agent outputs before escalation.",
+      "Check whether tasks are on-point, safe, useful, and evidence-based.",
+      "Summarise worker-agent findings.",
+      "Remove noise and duplicate recommendations.",
+      "Identify blocked or risky items.",
+      "Escalate only important items to the Master AI Manager.",
+    ],
+    ["specialist agent reports", "local report outputs"],
+    ["future department summary"],
+    [],
+    ["Read specialist outputs.", "Create draft-only department summaries.", "Escalate important or risky items."],
+    defaultBlockedActions(),
+    false,
+    true,
+    "department_manager",
+    masterAgentId,
+    [],
+    [
+      "Escalate high-risk recommendations to the Master AI Manager.",
+      "Escalate blocked items as risk controls, not action tasks.",
+      "Never publish or apply changes directly.",
+      "Require human approval for high-risk recommendations.",
+    ],
+  ));
+}
+
+function applyHierarchy(agents: AgentRegistryEntry[]): AgentRegistryEntry[] {
+  return agents.map((agentEntry) => {
+    if (agentEntry.hierarchyLevel === "master_manager") {
+      return { ...agentEntry, supervises: departments.map(managerIdFor) };
+    }
+    if (agentEntry.hierarchyLevel === "department_manager") {
+      return {
+        ...agentEntry,
+        supervises: agents
+          .filter((candidate) => candidate.hierarchyLevel === "specialist_agent" && candidate.department === agentEntry.department)
+          .map((candidate) => candidate.id),
+      };
+    }
+    return {
+      ...agentEntry,
+      reportsTo: managerIdFor(agentEntry.department),
+      escalationRules: [
+        "Report findings to the Department AI Manager.",
+        "Escalate high-risk, blocked, duplicate, noisy, or uncertain findings to the Department AI Manager.",
+        "Never report directly to Danny unless routed through the hierarchy.",
+        "Never publish or apply changes directly.",
+      ],
+    };
+  });
 }
 
 function activeAgent(
@@ -131,7 +249,26 @@ function plannedAgent(id: string, name: string, department: Department, mode: Ag
   return agent(id, name, department, status, mode, riskLevel, responsibilities, inputReports, outputReports, relatedScripts, ["Read approved local inputs when implemented.", "Generate draft-only suggestions when implemented.", "Route risky items to human approval."], defaultBlockedActions(), false, true);
 }
 
-function agent(id: string, name: string, department: Department, currentStatus: AgentStatus, mode: AgentMode, riskLevel: RiskLevel, responsibilities: string[], inputReports: string[], outputReports: string[], relatedScripts: string[], allowedActions: string[], blockedActions: string[], canAutoDraft: boolean, requiresHumanApproval: boolean): AgentRegistryEntry {
+function agent(
+  id: string,
+  name: string,
+  department: Department,
+  currentStatus: AgentStatus,
+  mode: AgentMode,
+  riskLevel: RiskLevel,
+  responsibilities: string[],
+  inputReports: string[],
+  outputReports: string[],
+  relatedScripts: string[],
+  allowedActions: string[],
+  blockedActions: string[],
+  canAutoDraft: boolean,
+  requiresHumanApproval: boolean,
+  hierarchyLevel: HierarchyLevel = "specialist_agent",
+  reportsTo = managerIdFor(department),
+  supervises: string[] = [],
+  escalationRules: string[] = [],
+): AgentRegistryEntry {
   return {
     id,
     name,
@@ -139,6 +276,10 @@ function agent(id: string, name: string, department: Department, currentStatus: 
     currentStatus,
     mode,
     riskLevel,
+    hierarchyLevel,
+    reportsTo,
+    supervises,
+    escalationRules,
     responsibilities,
     inputReports,
     outputReports,
@@ -149,6 +290,10 @@ function agent(id: string, name: string, department: Department, currentStatus: 
     canAutoApply: false,
     requiresHumanApproval,
   };
+}
+
+function managerIdFor(department: Department): string {
+  return `${department.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}-ai-manager`;
 }
 
 function defaultBlockedActions(): string[] {
@@ -175,6 +320,8 @@ function countBy<T extends string>(agents: AgentRegistryEntry[], pick: (agent: A
 function renderMarkdown(agents: AgentRegistryEntry[], report: { agentCount: number; activeAgentCount: number; plannedAgentCount: number; futureAgentCount: number; departmentCounts: Record<string, number>; riskCounts: Record<string, number> }): string {
   const active = agents.filter((agent) => agent.currentStatus === "active");
   const plannedFuture = agents.filter((agent) => agent.currentStatus !== "active");
+  const master = agents.find((agent) => agent.hierarchyLevel === "master_manager");
+  const managers = agents.filter((agent) => agent.hierarchyLevel === "department_manager");
   return `# Agent Registry Report
 
 Generated: ${new Date().toISOString()}
@@ -192,6 +339,18 @@ Read-only Agent Registry v1 for Watchdog HQ planning. This report maps existing 
 ## Departments
 
 ${Object.entries(report.departmentCounts).map(([department, count]) => `- ${department}: ${count}`).join("\n")}
+
+## Hierarchy
+
+- Danny
+  - ${master?.name ?? "Master AI Manager / Top Agent"}
+${managers.map((manager) => `    - ${manager.name}: supervises ${manager.supervises.length} specialist agent(s)`).join("\n")}
+
+Specialist agents report to their Department AI Manager. Department AI Managers report to the Master AI Manager. The Master AI Manager reports to Danny.
+
+## Department AI Managers
+
+${managers.map(renderAgent).join("\n")}
 
 ## Active Agents
 
@@ -222,6 +381,9 @@ function renderAgent(agent: AgentRegistryEntry): string {
 - Status: ${agent.currentStatus}
 - Mode: ${agent.mode}
 - Risk: ${agent.riskLevel}
+- Hierarchy level: ${agent.hierarchyLevel}
+- Reports to: ${agent.reportsTo}
+- Supervises: ${agent.supervises.length > 0 ? agent.supervises.join(", ") : "none"}
 - Can auto draft: ${agent.canAutoDraft ? "yes" : "no"}
 - Can auto apply: no
 - Requires human approval: ${agent.requiresHumanApproval ? "yes" : "no"}

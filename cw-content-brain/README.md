@@ -30,7 +30,7 @@ Phase 2G adds a read-only SEO Intelligence Brain v1. It combines local metadata,
 
 Phase 2H adds a read-only Research & Duplicate Guard v1. It reviews proposed local content ideas against existing content snapshots before drafting, flags duplicate/cannibalisation/evidence risks, and never performs live web verification in v1.
 
-Phase 2I adds a read-only Agent Registry v1. It maps the current and planned Watchdog HQ AI workforce into named agents, departments, responsibilities, allowed actions, blocked actions, and approval requirements. It is a report-only registry, not an execution system.
+Phase 2I adds a read-only Agent Registry v1. It maps the current and planned Watchdog HQ AI workforce into named agents, departments, hierarchy levels, reporting lines, responsibilities, allowed actions, blocked actions, and approval requirements. It is a report-only registry, not an execution system.
 
 ## Goals
 
@@ -542,7 +542,9 @@ The JSON output includes:
 - `safetyRules`
 - `agents`
 
-Each agent includes `id`, `name`, `department`, `currentStatus`, `mode`, `riskLevel`, `responsibilities`, `inputReports`, `outputReports`, `relatedScripts`, `allowedActions`, `blockedActions`, `canAutoDraft`, `canAutoApply`, and `requiresHumanApproval`.
+Each agent includes `id`, `name`, `department`, `currentStatus`, `mode`, `riskLevel`, `hierarchyLevel`, `reportsTo`, `supervises`, `escalationRules`, `responsibilities`, `inputReports`, `outputReports`, `relatedScripts`, `allowedActions`, `blockedActions`, `canAutoDraft`, `canAutoApply`, and `requiresHumanApproval`.
+
+The hierarchy is explicit: Danny receives reports from the Master AI Manager / Top Agent; the Master AI Manager supervises Department AI Managers; Department AI Managers supervise Specialist Agents / Worker Agents. Specialist agents report to their Department AI Manager, not directly to Danny. Department AI Managers review worker outputs, remove noise and duplicate recommendations, identify blocked/risky items, summarise findings, and escalate only important items to the Master AI Manager. The Master AI Manager prioritises cross-department work, creates Danny's command queue, and separates draftable, approval-needed, blocked, and monitor-only work.
 
 Core departments are Command, Content, SEO, Research, Affiliates, Backlinks, Analytics, Trust & Safety, Media, Social, Operations, and Approvals. All v1 agents have `canAutoApply: false`. Risky or high-impact agents require human approval. Registry safety rules explicitly block publishing without approval, Supabase writes without a future approved workflow, live site edits, secrets, unauthorised affiliate links on red/warning/high-risk pages, trust rating changes without approval, and scam/fraud accusations without evidence review.
 
