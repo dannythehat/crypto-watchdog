@@ -10,6 +10,8 @@ data/**/*.md
 data/reports/*.json
 data/site_scan/*.json
 data/site_scan/*.csv
+data/ga4/exports/*
+!data/ga4/exports/.gitkeep
 data/search_console/exports/*
 !data/search_console/exports/.gitkeep
 data/content_snapshot/*.json
