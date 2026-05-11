@@ -18,6 +18,8 @@ Phase 2A adds a read-only Metadata Engine v1. It analyses local snapshot content
 
 Phase 2B adds a read-only Internal Link Placement Brain v1. It analyses local snapshot content and suggests draft-only internal link opportunities between reviews, blog posts, warnings, and category pages. It does not edit pages, publish content, or write to Supabase.
 
+Phase 2C adds a read-only Affiliate Vault and Affiliate Placement Brain v1. It stores local owner-approved affiliate programme records and suggests draft-only affiliate placement opportunities with disclosure, expiry, and risk checks. It does not edit pages, publish content, write to Supabase, or add live affiliate links.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -31,6 +33,7 @@ Phase 2B adds a read-only Internal Link Placement Brain v1. It analyses local sn
 - Verify high-risk queue items against rendered live pages before assigning edits.
 - Draft metadata suggestions locally without inventing evidence, rankings, partnerships, guarantees, tests, ratings, or user numbers.
 - Suggest natural internal link placements while preserving main-answer-first, evidence-first page structure.
+- Suggest safe affiliate placements locally while keeping trust, disclosure, page risk, and human review ahead of revenue.
 
 ## Folder Map
 
@@ -132,6 +135,7 @@ npm run content:confidence
 npm run content:queue
 npm run content:metadata
 npm run content:internal-links
+npm run content:affiliates
 npm run content:verify-rendered
 ```
 
@@ -212,6 +216,64 @@ Placement guidance is strict: main answer first, evidence second, helpful links 
 
 High-confidence recommendations require specific shared entity/title terms or a strong category match with several non-generic shared terms. Broad crypto/safety/scam/education terms are treated as generic and should not create high-confidence, low false-positive-risk recommendations on their own. Weaker possible matches stay in `review_later` instead of filling every source page with links.
 
+## Affiliate Vault And Placement Brain
+
+Affiliate Vault v1 is a local config structure only. The example vault lives at `config/affiliate_vault.example.json`; owners can create an uncommitted `config/affiliate_vault.json` with approved records. Each record supports:
+
+- `brandName`
+- `category`
+- `affiliateUrl`
+- `cleanDisplayUrl`
+- `network`
+- `commissionType`
+- `countriesAllowed`
+- `approvedPageTypes`
+- `blockedPageTypes`
+- `allowedRiskRatings`
+- `disclosureRequired`
+- `disclosureText`
+- `offerText`
+- `offerExpiryDate`
+- `lastCheckedDate`
+- `status`
+- `notes`
+
+Affiliate Placement Brain v1 is read-only and draft-only. It reads `data/content_snapshot/normalised_content.json` when available, otherwise it loads the configured local JSON snapshot files. It reads affiliate records from the local vault and suggests only reviewable placements.
+
+Run it locally with:
+
+```bash
+npm run content:affiliates
+```
+
+The engine writes only ignored local reports:
+
+- `data/reports/affiliate_placement_suggestions.json`
+- `data/reports/affiliate_placement_suggestions.md`
+
+Every recommendation is marked `draft_only: true` and `needs_human_review: true`. The JSON output includes:
+
+- `sourcePage`
+- `affiliateBrand`
+- `affiliateCategory`
+- `cleanDisplayUrl`
+- `network`
+- `commissionType`
+- `suggestedPlacementContext`
+- `placementType`
+- `suggestedCtaText`
+- `disclosureRequired`
+- `disclosureText`
+- `reason`
+- `confidence`
+- `falsePositiveRisk`
+- `expiryStatus`
+- `offerText`
+- `riskFlags`
+- `blockedPlacements`
+
+Affiliate links are the money engine, but trust comes first. The placement brain blocks or flags red-rated pages, warnings, scam-alert style pages, legal/policy pages, blocked page types, disallowed risk ratings, stale offers, expired offers, paused programmes, and blocked programmes. Do not place aggressive "buy now" CTAs, do not dump affiliate CTAs at the top of pages, do not repeat affiliate CTAs, and do not place affiliate links on warning/red pages unless a human explicitly approves a narrow exception.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -286,6 +348,9 @@ npm run content:export
 npm run content:audit
 npm run content:confidence
 npm run content:queue
+npm run content:metadata
+npm run content:internal-links
+npm run content:affiliates
 npm run content:verify-rendered
 ```
 
@@ -311,6 +376,8 @@ npm run content:verify-rendered
 - `data/reports/metadata_suggestions.md`
 - `data/reports/internal_link_placement_suggestions.json`
 - `data/reports/internal_link_placement_suggestions.md`
+- `data/reports/affiliate_placement_suggestions.json`
+- `data/reports/affiliate_placement_suggestions.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`

@@ -1,0 +1,44 @@
+{
+  "readOnly": true,
+  "writeBackToSupabase": false,
+  "records": [
+    {
+      "brandName": "Example Exchange",
+      "category": "exchange",
+      "affiliateUrl": "https://example.com/cryptowatchdog-ref",
+      "cleanDisplayUrl": "example.com",
+      "network": "Example Network",
+      "commissionType": "CPA",
+      "countriesAllowed": ["GB", "US", "CA", "AU"],
+      "approvedPageTypes": ["reviews", "blog_posts", "categories"],
+      "blockedPageTypes": ["warnings"],
+      "allowedRiskRatings": ["green", "orange", "not_applicable"],
+      "disclosureRequired": true,
+      "disclosureText": "CryptoWatchdog may earn a commission if you use this link. This does not affect our evidence-first review process.",
+      "offerText": "Review the current offer directly on Example Exchange before signing up.",
+      "offerExpiryDate": "2026-12-31",
+      "lastCheckedDate": "2026-05-01",
+      "status": "needs_review",
+      "notes": "Example-only affiliate record for local tooling. Replace with owner-approved programme details outside generated reports."
+    },
+    {
+      "brandName": "Example Hardware Wallet",
+      "category": "wallet",
+      "affiliateUrl": "https://example.com/wallet-partner",
+      "cleanDisplayUrl": "example.com/wallet",
+      "network": "Direct",
+      "commissionType": "percentage",
+      "countriesAllowed": ["GB", "US", "CA", "AU", "IE", "NZ"],
+      "approvedPageTypes": ["blog_posts", "categories"],
+      "blockedPageTypes": ["warnings", "reviews"],
+      "allowedRiskRatings": ["green", "not_applicable"],
+      "disclosureRequired": true,
+      "disclosureText": "CryptoWatchdog may earn a commission if you buy through this link. We only suggest it where it helps the reader.",
+      "offerText": "Compare wallet security basics before choosing a device.",
+      "offerExpiryDate": "2026-09-30",
+      "lastCheckedDate": "2026-04-15",
+      "status": "paused",
+      "notes": "Paused example record to verify that the placement brain flags non-active offers for human review."
+    }
+  ]
+}
