@@ -37,6 +37,7 @@
     "content:manager-escalations": "tsx src/manager-escalation-router.ts",
     "content:daily-run": "tsx src/daily-run-orchestrator.ts",
     "content:daily-pack": "tsx src/daily-report-pack-builder.ts",
+    "content:dashboard-export": "tsx src/dashboard-data-exporter.ts",
     "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts"
   },
   "dependencies": {

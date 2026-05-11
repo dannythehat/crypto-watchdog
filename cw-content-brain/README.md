@@ -50,6 +50,8 @@ Phase 2Q adds a read-only Daily Run Orchestrator v1. It runs the safe local plan
 
 Phase 2R adds a read-only Daily Report Pack Builder v1. It collects the key local Watchdog HQ reports into one Danny-ready daily pack for human review and future dashboard input. It summarises counts, statuses, priorities, top decision items, blocked/risky items, monitor-only items, and money opportunities without copying huge raw reports or approving/applying anything.
 
+Phase 2S adds a read-only Dashboard Data Export Layer v1. It converts the Daily Report Pack into small local JSON files for future Watchdog HQ dashboard tabs. It is not the dashboard UI, and it never approves, applies, publishes, edits live content, creates patches, creates update payloads, writes to Supabase, or calls APIs.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -191,6 +193,7 @@ npm run content:qc
 npm run content:manager-escalations
 npm run content:daily-run
 npm run content:daily-pack
+npm run content:dashboard-export
 npm run content:verify-rendered
 ```
 
@@ -864,6 +867,45 @@ Pack status is `complete` when all required core inputs exist, `partial` when at
 
 The pack builder never approves, applies, publishes, creates patch files, creates update payloads, writes to Supabase, edits live site files, exposes secrets, or adds raw affiliate links. `canAutoApply` is always false, and `approvedCount` and `appliedCount` are always `0`.
 
+## Dashboard Data Export Layer
+
+Dashboard Data Export Layer v1 is read-only and report-only. It converts the local Daily Report Pack into small JSON files for future Watchdog HQ dashboard tabs. It is not the dashboard UI and does not create frontend code.
+
+Run it locally after the daily run and daily pack:
+
+```bash
+npm run content:dashboard-export
+```
+
+Input file:
+
+- `data/reports/daily_report_pack.json`
+
+If the input pack is missing, the exporter fails safely and writes a clear local report explaining the missing input.
+
+The exporter writes ignored local dashboard data files:
+
+- `data/dashboard/overview.json`
+- `data/dashboard/command.json`
+- `data/dashboard/approvals.json`
+- `data/dashboard/agents.json`
+- `data/dashboard/content.json`
+- `data/dashboard/seo.json`
+- `data/dashboard/affiliates.json`
+- `data/dashboard/research.json`
+- `data/dashboard/analytics.json`
+
+It also writes ignored local export reports:
+
+- `data/reports/dashboard_data_export_report.json`
+- `data/reports/dashboard_data_export_report.md`
+
+The dashboard files are tab-shaped data only. They summarise overview status cards, command queue data, approval-planning data, agent hierarchy and escalation summaries, content work, SEO work, affiliate and money opportunities, research risks, and analytics signals.
+
+The exporter sanitises dashboard output before writing. Every dashboard JSON includes `canAutoApply: false`, `approvedCount: 0`, and `appliedCount: 0`. It prevents `approved: true`, `applied: true`, and approved/applied stage values from being written to dashboard data. External URLs are redacted unless they are CryptoWatchdog URLs. If unsafe output cannot be sanitised, the exporter fails safely and writes only the local report.
+
+The dashboard export layer never approves, applies, publishes, creates patch files, creates update payloads, writes to Supabase, edits live site files, exposes secrets, or adds raw affiliate links.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -956,6 +998,7 @@ npm run content:qc
 npm run content:manager-escalations
 npm run content:daily-run
 npm run content:daily-pack
+npm run content:dashboard-export
 npm run content:verify-rendered
 ```
 
@@ -1013,6 +1056,17 @@ npm run content:verify-rendered
 - `data/reports/daily_run_orchestrator_report.md`
 - `data/reports/daily_report_pack.json`
 - `data/reports/daily_report_pack.md`
+- `data/reports/dashboard_data_export_report.json`
+- `data/reports/dashboard_data_export_report.md`
+- `data/dashboard/overview.json`
+- `data/dashboard/command.json`
+- `data/dashboard/approvals.json`
+- `data/dashboard/agents.json`
+- `data/dashboard/content.json`
+- `data/dashboard/seo.json`
+- `data/dashboard/affiliates.json`
+- `data/dashboard/research.json`
+- `data/dashboard/analytics.json`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
