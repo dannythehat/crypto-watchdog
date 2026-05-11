@@ -4,10 +4,12 @@ import type { Confidence, FalsePositiveRisk, NormalisedContentRecord, SnapshotTa
 import { loadContentSnapshot } from "./load_content_snapshot.js";
 
 type PlacementType = "in_content_after_relevant_section" | "contextual_further_reading_near_bottom";
+type RecommendationBucket = "recommend" | "review_later";
 
 interface InternalLinkRecommendation {
   draft_only: true;
   needs_human_review: true;
+  bucket: RecommendationBucket;
   sourcePage: PageRef;
   targetPage: PageRef;
   suggestedAnchorText: string;
@@ -32,6 +34,8 @@ interface Candidate {
   target: NormalisedContentRecord;
   score: number;
   sharedTerms: string[];
+  specificSharedTerms: string[];
+  sharedEntityTerms: string[];
   reasonParts: string[];
 }
 
@@ -39,7 +43,8 @@ const outputJson = "data/reports/internal_link_placement_suggestions.json";
 const outputMd = "data/reports/internal_link_placement_suggestions.md";
 const maxLinksPerSource = 4;
 const maxFurtherReadingPerSource = 1;
-const minScore = 18;
+const minRecommendationScore = 42;
+const minReviewLaterScore = 26;
 
 const stopWords = new Set([
   "about",
@@ -56,6 +61,9 @@ const stopWords = new Set([
   "cryptowatchdog",
   "evidence",
   "example",
+  "education",
+  "guide",
+  "guides",
   "fake",
   "for",
   "from",
@@ -73,6 +81,11 @@ const stopWords = new Set([
   "platform",
   "real",
   "review",
+  "risk",
+  "risks",
+  "safety",
+  "scam",
+  "scams",
   "should",
   "source",
   "snapshot",
@@ -82,13 +95,40 @@ const stopWords = new Set([
   "there",
   "this",
   "tooling",
+  "token",
+  "tokens",
   "users",
   "verdict",
+  "wallet",
+  "wallets",
   "warning",
   "where",
   "with",
   "publication",
   "requiring",
+  "exchange",
+  "exchanges",
+  "app",
+  "apps",
+]);
+
+const genericMatchTerms = new Set([
+  "app",
+  "apps",
+  "education",
+  "exchange",
+  "exchanges",
+  "guide",
+  "guides",
+  "risk",
+  "risks",
+  "safety",
+  "scam",
+  "scams",
+  "token",
+  "tokens",
+  "wallet",
+  "wallets",
 ]);
 
 export async function buildInternalLinkPlacements(): Promise<InternalLinkRecommendation[]> {
@@ -96,6 +136,7 @@ export async function buildInternalLinkPlacements(): Promise<InternalLinkRecomme
   const inboundCounts = countSnapshotInternalLinks(records);
   const candidates = buildCandidates(records, inboundCounts);
   const recommendations = selectRecommendations(candidates, inboundCounts);
+  const reviewLater = selectReviewLater(candidates, recommendations, inboundCounts);
 
   await writeJson(outputJson, {
     generatedAt: new Date().toISOString(),
@@ -104,12 +145,14 @@ export async function buildInternalLinkPlacements(): Promise<InternalLinkRecomme
     needs_human_review: true,
     sourceCount: records.length,
     recommendationCount: recommendations.length,
+    reviewLaterCount: reviewLater.length,
     orphanOrThinlyLinkedPages: orphanOrThinPages(records, inboundCounts),
     placementRule: "Main answer first. Evidence second. Helpful links naturally inside. Related content near the end or contextually placed. Affiliate links only where they genuinely help.",
     recommendations,
+    review_later: reviewLater,
   });
-  await writeText(outputMd, renderMarkdown(recommendations, records, inboundCounts));
-  logger.info("Internal link placement suggestions written", { recommendations: recommendations.length, outputJson, outputMd });
+  await writeText(outputMd, renderMarkdown(recommendations, reviewLater, records, inboundCounts));
+  logger.info("Internal link placement suggestions written", { recommendations: recommendations.length, reviewLater: reviewLater.length, outputJson, outputMd });
   return recommendations;
 }
 
@@ -130,7 +173,7 @@ function buildCandidates(records: NormalisedContentRecord[], inboundCounts: Map<
       if (snapshotText(source).includes(target.url)) continue;
 
       const candidate = scoreCandidate(source, target, inboundCounts.get(recordKey(target)) ?? 0);
-      if (candidate.score >= minScore) {
+      if (candidate.score >= minReviewLaterScore) {
         candidates.push(candidate);
       }
     }
@@ -143,42 +186,51 @@ function scoreCandidate(source: NormalisedContentRecord, target: NormalisedConte
   const sourceTerms = termsFor(source);
   const targetTerms = termsFor(target);
   const sharedTerms = targetTerms.filter((term) => sourceTerms.includes(term)).slice(0, 6);
+  const specificSharedTerms = sharedTerms.filter((term) => !genericMatchTerms.has(term));
+  const sharedEntityTerms = entityTermsFor(source).filter((term) => entityTermsFor(target).includes(term));
   const reasonParts: string[] = [];
-  let score = sharedTerms.length * 8;
+  let score = specificSharedTerms.length * 10 + sharedEntityTerms.length * 16;
 
   if (source.category && target.category && source.category === target.category) {
-    score += 16;
-    reasonParts.push(`both pages share the ${source.category} category`);
+    const categoryTerms = termsFromText(source.category).filter((term) => !genericMatchTerms.has(term));
+    score += categoryTerms.length > 0 ? 14 : 6;
+    reasonParts.push(categoryTerms.length > 0
+      ? `both pages share the specific ${source.category} category`
+      : `both pages share a broad ${source.category} category`);
   }
 
   if (source.sourceTable === "blog_posts" && ["reviews", "warnings", "categories"].includes(target.sourceTable)) {
-    score += 12;
+    score += 6;
     reasonParts.push("education content can naturally point readers to a practical review, warning, or category page after the main explanation");
   }
 
   if (source.sourceTable === "warnings" && ["reviews", "blog_posts"].includes(target.sourceTable)) {
-    score += 10;
+    score += 6;
     reasonParts.push("warning content can support readers with a relevant review or explainer after evidence context");
   }
 
   if (source.sourceTable === "reviews" && ["warnings", "blog_posts", "categories"].includes(target.sourceTable)) {
-    score += 8;
+    score += 5;
     reasonParts.push("review content can link to relevant safety context without interrupting the verdict");
   }
 
-  if (inboundCount === 0) {
-    score += 8;
+  if (inboundCount === 0 && hasStrongSpecificMatch(source, target, specificSharedTerms, sharedEntityTerms)) {
+    score += 5;
     reasonParts.push("target appears orphaned in snapshot text");
-  } else if (inboundCount < 2) {
-    score += 4;
+  } else if (inboundCount < 2 && hasStrongSpecificMatch(source, target, specificSharedTerms, sharedEntityTerms)) {
+    score += 3;
     reasonParts.push("target appears thinly linked in snapshot text");
   }
 
-  if (sharedTerms.length > 0) {
-    reasonParts.push(`shared terms: ${sharedTerms.join(", ")}`);
+  if (sharedEntityTerms.length > 0) {
+    reasonParts.push(`shared entity/title terms: ${sharedEntityTerms.join(", ")}`);
   }
 
-  return { source, target, score, sharedTerms, reasonParts };
+  if (specificSharedTerms.length > 0) {
+    reasonParts.push(`specific shared terms: ${specificSharedTerms.join(", ")}`);
+  }
+
+  return { source, target, score, sharedTerms, specificSharedTerms, sharedEntityTerms, reasonParts };
 }
 
 function selectRecommendations(candidates: Candidate[], inboundCounts: Map<string, number>): InternalLinkRecommendation[] {
@@ -192,6 +244,7 @@ function selectRecommendations(candidates: Candidate[], inboundCounts: Map<strin
     const pairKey = `${sourceKey}->${recordKey(candidate.target)}`;
     if (seenPairs.has(pairKey)) continue;
     if ((perSource.get(sourceKey) ?? 0) >= maxLinksPerSource) continue;
+    if (!isRecommendationQuality(candidate)) continue;
 
     const placementType = placementTypeFor(candidate);
     if (placementType === "contextual_further_reading_near_bottom" && (furtherReadingPerSource.get(sourceKey) ?? 0) >= maxFurtherReadingPerSource) {
@@ -209,13 +262,34 @@ function selectRecommendations(candidates: Candidate[], inboundCounts: Map<strin
   return selected;
 }
 
-function toRecommendation(candidate: Candidate, inboundCounts: Map<string, number>): InternalLinkRecommendation {
+function selectReviewLater(candidates: Candidate[], recommendations: InternalLinkRecommendation[], inboundCounts: Map<string, number>): InternalLinkRecommendation[] {
+  const recommendedPairs = new Set(recommendations.map((item) => `${item.sourcePage.sourceTable}:${item.sourcePage.slug}->${item.targetPage.sourceTable}:${item.targetPage.slug}`));
+  const perSource = new Map<string, number>();
+  const selected: InternalLinkRecommendation[] = [];
+
+  for (const candidate of candidates) {
+    const sourceKey = recordKey(candidate.source);
+    const pairKey = `${sourceKey}->${recordKey(candidate.target)}`;
+    if (recommendedPairs.has(pairKey)) continue;
+    if (candidate.score < minReviewLaterScore) continue;
+    if (isRecommendationQuality(candidate)) continue;
+    if ((perSource.get(sourceKey) ?? 0) >= 2) continue;
+
+    selected.push(toRecommendation(candidate, inboundCounts, "review_later"));
+    perSource.set(sourceKey, (perSource.get(sourceKey) ?? 0) + 1);
+  }
+
+  return selected;
+}
+
+function toRecommendation(candidate: Candidate, inboundCounts: Map<string, number>, bucket: RecommendationBucket = "recommend"): InternalLinkRecommendation {
   const inboundCount = inboundCounts.get(recordKey(candidate.target)) ?? 0;
   const placementType = placementTypeFor(candidate);
 
   return {
     draft_only: true,
     needs_human_review: true,
+    bucket,
     sourcePage: pageRef(candidate.source),
     targetPage: pageRef(candidate.target),
     suggestedAnchorText: anchorFor(candidate),
@@ -231,13 +305,13 @@ function toRecommendation(candidate: Candidate, inboundCounts: Map<string, numbe
 }
 
 function placementTypeFor(candidate: Candidate): PlacementType {
-  if (candidate.score >= 34 && candidate.sharedTerms.length >= 2) return "in_content_after_relevant_section";
+  if (candidate.score >= minRecommendationScore && candidate.specificSharedTerms.length >= 3) return "in_content_after_relevant_section";
   return "contextual_further_reading_near_bottom";
 }
 
 function placementContextFor(candidate: Candidate, placementType: PlacementType): string {
   const targetType = pageTypeLabel(candidate.target);
-  const shared = candidate.sharedTerms[0] ?? candidate.target.category ?? "the same risk topic";
+  const shared = bestSharedTopic(candidate) ?? candidate.target.category ?? "the same risk topic";
 
   if (placementType === "in_content_after_relevant_section") {
     return `Place after the first section or paragraph that discusses ${shared}, once the main answer and any evidence context are already clear. Link to the ${targetType} only if it helps the reader continue naturally.`;
@@ -248,24 +322,42 @@ function placementContextFor(candidate: Candidate, placementType: PlacementType)
 
 function anchorFor(candidate: Candidate): string {
   const targetTitle = titleFor(candidate.target);
-  const shared = candidate.sharedTerms.find((term) => !targetTitle.toLowerCase().includes(term)) ?? candidate.sharedTerms[0];
+  const shared = bestSharedTopic(candidate);
 
-  if (candidate.target.sourceTable === "warnings") return shared ? `warning signs around ${shared}` : "related warning signs";
-  if (candidate.target.sourceTable === "reviews") return shared ? `the related ${shared} review context` : "the related review context";
-  if (candidate.target.sourceTable === "categories") return shared ? `${shared} research resources` : "related research resources";
-  return shared ? `plain-English guidance on ${shared}` : "related safety guidance";
+  if (shared && !targetTitle.toLowerCase().includes(shared)) {
+    if (candidate.target.sourceTable === "warnings") return `warning signs around ${shared}`;
+    if (candidate.target.sourceTable === "reviews") return `${shared} review context`;
+    if (candidate.target.sourceTable === "categories") return `${shared} research resources`;
+    return `guidance on ${shared}`;
+  }
+
+  return targetTitle;
 }
 
 function confidenceFor(candidate: Candidate): Confidence {
-  if (candidate.score >= 42 && candidate.sharedTerms.length >= 2) return "high";
-  if (candidate.score >= 28) return "medium";
+  if (candidate.score >= 64 && hasStrongSpecificMatch(candidate.source, candidate.target, candidate.specificSharedTerms, candidate.sharedEntityTerms)) return "high";
+  if (candidate.score >= minRecommendationScore && candidate.specificSharedTerms.length >= 2) return "medium";
   return "low";
 }
 
 function falsePositiveRiskFor(candidate: Candidate): FalsePositiveRisk {
-  if (candidate.sharedTerms.length >= 3 && candidate.source.category && candidate.source.category === candidate.target.category) return "low";
-  if (candidate.sharedTerms.length >= 2 || candidate.score >= 32) return "medium";
+  if (candidate.score >= 72 && candidate.sharedEntityTerms.length >= 1 && candidate.specificSharedTerms.length >= 4 && candidate.source.category && candidate.source.category === candidate.target.category) return "low";
+  if (isRecommendationQuality(candidate) || candidate.specificSharedTerms.length >= 2) return "medium";
   return "high";
+}
+
+function isRecommendationQuality(candidate: Candidate): boolean {
+  return candidate.score >= minRecommendationScore && hasStrongSpecificMatch(candidate.source, candidate.target, candidate.specificSharedTerms, candidate.sharedEntityTerms);
+}
+
+function hasStrongSpecificMatch(source: NormalisedContentRecord, target: NormalisedContentRecord, specificSharedTerms: string[], sharedEntityTerms: string[]): boolean {
+  if (sharedEntityTerms.length >= 1) return true;
+  if (source.category && target.category && source.category === target.category && specificSharedTerms.length >= 3) return true;
+  return false;
+}
+
+function bestSharedTopic(candidate: Candidate): string | undefined {
+  return candidate.sharedEntityTerms[0] ?? candidate.specificSharedTerms.find((term) => !genericMatchTerms.has(term));
 }
 
 function countSnapshotInternalLinks(records: NormalisedContentRecord[]): Map<string, number> {
@@ -291,9 +383,19 @@ function orphanOrThinPages(records: NormalisedContentRecord[], inboundCounts: Ma
 }
 
 function termsFor(record: NormalisedContentRecord): string[] {
-  return Array.from(new Set(snapshotText(record).toLowerCase().match(/\b[a-z][a-z0-9]{2,}\b/g) ?? []))
+  return Array.from(new Set(termsFromText(snapshotText(record))))
     .filter((term) => !stopWords.has(term))
     .slice(0, 40);
+}
+
+function entityTermsFor(record: NormalisedContentRecord): string[] {
+  return termsFromText(`${record.title ?? ""} ${record.slug.replace(/-/g, " ")}`)
+    .filter((term) => !stopWords.has(term) && !genericMatchTerms.has(term))
+    .slice(0, 12);
+}
+
+function termsFromText(value: string): string[] {
+  return Array.from(new Set(value.toLowerCase().match(/\b[a-z][a-z0-9]{2,}\b/g) ?? []));
 }
 
 function snapshotText(record: NormalisedContentRecord): string {
@@ -340,7 +442,7 @@ function recordKey(record: NormalisedContentRecord): string {
   return `${record.sourceTable}:${record.slug}`;
 }
 
-function renderMarkdown(recommendations: InternalLinkRecommendation[], records: NormalisedContentRecord[], inboundCounts: Map<string, number>): string {
+function renderMarkdown(recommendations: InternalLinkRecommendation[], reviewLater: InternalLinkRecommendation[], records: NormalisedContentRecord[], inboundCounts: Map<string, number>): string {
   return `# Internal Link Placement Suggestions
 
 Generated: ${new Date().toISOString()}
@@ -355,7 +457,11 @@ ${orphanOrThinPages(records, inboundCounts).map((page) => `- ${page.title ?? pag
 
 ## Recommendations
 
-${recommendations.length > 0 ? recommendations.map(renderRecommendation).join("\n") : "No internal link placement suggestions generated.\n"}`;
+${recommendations.length > 0 ? recommendations.map(renderRecommendation).join("\n") : "No high or medium quality internal link placement suggestions generated.\n"}
+
+## Review Later
+
+${reviewLater.length > 0 ? reviewLater.map(renderRecommendation).join("\n") : "No low-confidence review-later suggestions generated.\n"}`;
 }
 
 function renderRecommendation(recommendation: InternalLinkRecommendation): string {

@@ -206,8 +206,11 @@ Every recommendation is marked `draft_only: true` and `needs_human_review: true`
 - `falsePositiveRisk`
 - `targetLinkStatus`
 - `orphanOrThinlyLinkedPages`
+- `review_later`
 
 Placement guidance is strict: main answer first, evidence second, helpful links naturally inside, related content near the end or contextually placed, and affiliate links only where they genuinely help. Do not dump related posts at the top of pages. Avoid spammy exact-match anchor text and excessive links per page. Treat every suggestion as a review aid, not an implementation instruction.
+
+High-confidence recommendations require specific shared entity/title terms or a strong category match with several non-generic shared terms. Broad crypto/safety/scam/education terms are treated as generic and should not create high-confidence, low false-positive-risk recommendations on their own. Weaker possible matches stay in `review_later` instead of filling every source page with links.
 
 ### Rendered Verifier Troubleshooting
 
