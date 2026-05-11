@@ -44,6 +44,8 @@ Phase 2N adds a read-only Master AI Manager Daily Brief v1. It reads the local W
 
 Phase 2O adds a read-only Quality Control Manager v1. It reviews local worker-agent and manager outputs before they reach Danny or the Master AI Manager, checking safety, usefulness, evidence, brand fit, duplication, approval flags, status stages, and manager-to-manager escalation needs. It is report-only and never approves, applies, publishes, edits live content, creates patches, creates update payloads, writes to Supabase, or calls APIs.
 
+Phase 2P adds a read-only Manager Escalation Router v1. It formalises manager-to-manager routing inside Watchdog HQ so department managers can route items sideways before anything reaches Danny. It recommends routing only, keeps the Detected -> Suspected -> Verified -> Recommended -> Approved -> Applied model explicit, and never approves, applies, publishes, edits live content, creates patches, creates update payloads, writes to Supabase, or calls APIs.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -182,6 +184,7 @@ npm run content:preview-diffs
 npm run content:approvals
 npm run content:daily-brief
 npm run content:qc
+npm run content:manager-escalations
 npm run content:verify-rendered
 ```
 
@@ -759,6 +762,37 @@ The manager-to-manager escalation model lets managers review sideways before Dan
 
 Hard QC rules are conservative: any `canAutoApply: true`, approved/applied status stage, or raw affiliate URL exposure becomes a high-severity finding. Scam/fraud, trust/rating, legal/policy, financial advice, affiliate-on-warning-page, duplicate/cannibalisation, generic draft, missing approval flag, and monitor-only signals are kept in review, revision, blocked, or escalation states. QC never marks anything approved or applied, never publishes, never writes to Supabase, never edits live files, never creates patch files, never creates update payloads, never changes trust ratings, never finalises legal/policy wording, and never makes scam/fraud accusations.
 
+## Manager Escalation Router
+
+Manager Escalation Router v1 is read-only and report-only. It formalises manager-to-manager routing inside Watchdog HQ so Department AI Managers can route items sideways before anything reaches Danny. The router treats every item as part of the Detected -> Suspected -> Verified -> Recommended -> Approved -> Applied model, but v1 can only output `detected`, `suspected`, `verified`, or `recommended` routing recommendations. It never records real approval or application.
+
+It reads whichever local reports are available:
+
+- `data/reports/quality_control_report.json`
+- `data/reports/approval_queue_report.json`
+- `data/reports/master_command_queue.json`
+- `data/reports/agent_registry_report.json`
+- `data/reports/master_daily_brief.json`
+
+Run it locally with:
+
+```bash
+npm run content:manager-escalations
+```
+
+The router writes only ignored local reports:
+
+- `data/reports/manager_escalation_router_report.json`
+- `data/reports/manager_escalation_router_report.md`
+
+The JSON output includes `generatedAt`, `phase`, `name`, `safetyMode`, `canAutoApply`, `approvedCount`, `appliedCount`, `missingInputs`, `sourceReportsRead`, `routeDefinitions`, `escalationItems`, `managerSummary`, and `safetyChecks`.
+
+Each escalation item includes `id`, `sourceReport`, optional `sourceItemId`, `detectedIssue`, `currentStage`, `fromManager`, `toManager`, `routeReason`, `recommendedAction`, `priority`, `confidence`, `requiresDannyDecision`, `canAutoApply`, `approved`, and `applied`.
+
+Supported routes include Content to SEO, Content to Research, SEO to Quality Control, Affiliates to Trust & Safety, Research to Content, Social to Trust & Safety, Quality Control to Master AI, and Master AI to Danny. High-priority human decisions should route through the Master AI Manager first, and only then to Danny.
+
+The router is local planning only. It never publishes, writes to Supabase, edits live site files, creates patch files, creates update payloads, exposes secrets, includes raw affiliate links as acceptable output, changes trust ratings, finalises legal/policy wording, makes scam/fraud accusations, or creates approved/applied states. `canAutoApply` is always false, and `approvedCount` and `appliedCount` are always `0`.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -848,6 +882,7 @@ npm run content:preview-diffs
 npm run content:approvals
 npm run content:daily-brief
 npm run content:qc
+npm run content:manager-escalations
 npm run content:verify-rendered
 ```
 
@@ -899,6 +934,8 @@ npm run content:verify-rendered
 - `data/reports/master_daily_brief.md`
 - `data/reports/quality_control_report.json`
 - `data/reports/quality_control_report.md`
+- `data/reports/manager_escalation_router_report.json`
+- `data/reports/manager_escalation_router_report.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
