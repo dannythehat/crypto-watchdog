@@ -33,6 +33,7 @@
     "content:preview-diffs": "tsc --outDir dist && node dist/scripts/build_preview_diff_engine.js",
     "content:approvals": "tsc --outDir dist && node dist/scripts/build_approval_queue.js",
     "content:daily-brief": "tsc --outDir dist && node dist/scripts/build_master_daily_brief.js",
+    "content:qc": "tsc --outDir dist && node dist/scripts/build_quality_control_manager.js",
     "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts"
   },
   "dependencies": {
