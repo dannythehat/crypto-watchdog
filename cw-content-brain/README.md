@@ -20,6 +20,8 @@ Phase 2B adds a read-only Internal Link Placement Brain v1. It analyses local sn
 
 Phase 2C adds a read-only Affiliate Vault and Affiliate Placement Brain v1. It stores local owner-approved affiliate programme records and suggests draft-only affiliate placement opportunities with disclosure, expiry, and risk checks. It does not edit pages, publish content, write to Supabase, or add live affiliate links.
 
+Phase 2D adds a read-only Offer Expiry / Deal Tracker v1. It reads the Affiliate Vault and classifies affiliate offers as current, expiring, expired, stale, paused, blocked, or needing review. It does not expose raw affiliate URLs, edit pages, publish content, or write to Supabase.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -34,6 +36,7 @@ Phase 2C adds a read-only Affiliate Vault and Affiliate Placement Brain v1. It s
 - Draft metadata suggestions locally without inventing evidence, rankings, partnerships, guarantees, tests, ratings, or user numbers.
 - Suggest natural internal link placements while preserving main-answer-first, evidence-first page structure.
 - Suggest safe affiliate placements locally while keeping trust, disclosure, page risk, and human review ahead of revenue.
+- Track offer expiry and stale affiliate terms locally before any placement is considered safe.
 
 ## Folder Map
 
@@ -136,6 +139,7 @@ npm run content:queue
 npm run content:metadata
 npm run content:internal-links
 npm run content:affiliates
+npm run content:offers
 npm run content:verify-rendered
 ```
 
@@ -274,6 +278,48 @@ Every recommendation is marked `draft_only: true` and `needs_human_review: true`
 
 Affiliate links are the money engine, but trust comes first. The placement brain blocks or flags red-rated pages, warnings, scam-alert style pages, legal/policy pages, blocked page types, disallowed risk ratings, stale offers, expired offers, paused programmes, and blocked programmes. Do not place aggressive "buy now" CTAs, do not dump affiliate CTAs at the top of pages, do not repeat affiliate CTAs, and do not place affiliate links on warning/red pages unless a human explicitly approves a narrow exception.
 
+## Offer Expiry / Deal Tracker
+
+Offer Expiry / Deal Tracker v1 is read-only and draft-only. It reads `config/affiliate_vault.json` when present, otherwise `config/affiliate_vault.example.json`. The report intentionally excludes raw `affiliateUrl` values and uses `cleanDisplayUrl` for review context so private tracking links are not exposed in generated reports.
+
+Run it locally with:
+
+```bash
+npm run content:offers
+```
+
+The tracker writes only ignored local reports:
+
+- `data/reports/offer_tracker_report.json`
+- `data/reports/offer_tracker_report.md`
+
+Every item is marked `draft_only: true` and `needs_human_review: true`. The JSON output includes:
+
+- `brandName`
+- `category`
+- `cleanDisplayUrl`
+- `network`
+- `commissionType`
+- `countriesAllowed`
+- `approvedPageTypes`
+- `blockedPageTypes`
+- `allowedRiskRatings`
+- `disclosureRequired`
+- `disclosureTextPresent`
+- `offerTextPresent`
+- `offerExpiryDate`
+- `lastCheckedDate`
+- `sourceStatus`
+- `classification`
+- `useStatus`
+- `recommendedActions`
+- `notes`
+- `safeToUse`
+- `needsReview`
+- `blocked`
+
+Classifications are `current`, `expires_soon`, `expired`, `stale_check`, `paused`, `blocked`, and `needs_review`. Recommended actions can include `renew_offer`, `verify_terms`, `pause_placements`, `remove_expired_cta`, `update_disclosure`, and `human_review_required`. Treat `safe_to_use` as a draft signal only: a human must still verify live offer terms and disclosure before publishing or placing any CTA.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -351,6 +397,7 @@ npm run content:queue
 npm run content:metadata
 npm run content:internal-links
 npm run content:affiliates
+npm run content:offers
 npm run content:verify-rendered
 ```
 
@@ -378,6 +425,8 @@ npm run content:verify-rendered
 - `data/reports/internal_link_placement_suggestions.md`
 - `data/reports/affiliate_placement_suggestions.json`
 - `data/reports/affiliate_placement_suggestions.md`
+- `data/reports/offer_tracker_report.json`
+- `data/reports/offer_tracker_report.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
