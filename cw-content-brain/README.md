@@ -38,6 +38,8 @@ Phase 2K adds a read-only Fix Draft Generator v1. It reads the Master Command Qu
 
 Phase 2L adds a read-only Preview Diff Engine v1. It reads Fix Draft Suggestions and local snapshot context to produce simulated textual previews of proposed changes before anything is approved or applied. It is preview-only/report-only and never creates patch files, update payloads, live edits, Supabase writes, or publishing actions.
 
+Phase 2M adds a read-only Approval Queue v1. It turns preview diffs, draft suggestions, and command queue items into a local decision list for Danny. It is approval-planning only: it may recommend a decision type, but it never marks anything approved, applies changes, edits files, creates patches or update payloads, writes to Supabase, or publishes.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -61,6 +63,7 @@ Phase 2L adds a read-only Preview Diff Engine v1. It reads Fix Draft Suggestions
 - Produce a local morning command dashboard that separates detected, suspected, recommended, blocked, approval-needed, and monitor-only work.
 - Generate cautious local fix draft suggestions from the command queue without producing final publishable content or live update payloads.
 - Preview draft suggestions as simulated before/proposed text so humans can review the direction before approval or application work exists.
+- Create a local decision queue that asks what Danny should review, approve to draft, approve to research, reject, defer, or monitor without granting approval itself.
 
 ## Folder Map
 
@@ -172,6 +175,7 @@ npm run content:agents
 npm run content:master-queue
 npm run content:fix-drafts
 npm run content:preview-diffs
+npm run content:approvals
 npm run content:verify-rendered
 ```
 
@@ -651,6 +655,34 @@ Preview types are `meta_title_preview`, `meta_description_preview`, `internal_li
 
 Every preview has `previewOnly: true`, `draftOnly: true`, `needsHumanReview: true`, and `canAutoApply: false`. No preview can be `approved` or `applied`. The engine does not create executable patch files, Supabase update payloads, snapshot writes, source-content edits, live-site edits, API calls, or publishing actions. Affiliate CTA previews must not include raw affiliate URLs. High-risk, affiliate, scam/fraud, trust/rating, legal/policy, and blocked previews require Danny approval. Blocked previews stay research/evidence-only, trust rating changes are never previewed as direct rating changes, and legal/policy wording is never final wording in v1.
 
+## Approval Queue
+
+Approval Queue v1 is read-only and approval-planning only. It reads preview diffs first, then uses draft, command queue, and agent registry context when available:
+
+- `data/reports/preview_diff_report.json`
+- `data/reports/fix_draft_suggestions.json`
+- `data/reports/master_command_queue.json`
+- `data/reports/agent_registry_report.json`
+
+Run it locally with:
+
+```bash
+npm run content:approvals
+```
+
+The queue writes only ignored local reports:
+
+- `data/reports/approval_queue_report.json`
+- `data/reports/approval_queue_report.md`
+
+The JSON output includes `generatedAt`, `disclaimer`, `approvalQueueVersion`, `sourceReportsRead`, `missingReports`, `summaryCounts`, `riskCounts`, `decisionTypeCounts`, `approvalCounts`, `readyForReview`, `needsDannyApproval`, `blockedPendingEvidence`, `safeToDraftOnly`, `rejectOrDefer`, `monitorOnly`, and `safetyNotes`.
+
+Each approval item includes `id`, optional `sourcePreviewId`, optional `sourceDraftId`, optional `sourceQueueItemId`, `sourceReport`, `section`, `department`, `decisionType`, `riskLevel`, `statusStage`, `needsHumanReview`, `needsDannyApproval`, `canAutoApply`, `title`, `decisionQuestion`, `evidenceSummary`, `recommendedDecision`, `rationale`, optional `blockedReason`, optional `approvalWarning`, and optional related URL/path fields.
+
+Decision types are `review`, `approve_to_draft`, `approve_to_research`, `approve_to_prepare_preview`, `reject`, `defer`, and `monitor`. These are decision prompts only; the report must not claim approval happened. Sections are capped at 60 total items, with per-section caps for ready review, Danny approval, blocked evidence, safe draft-only, reject/defer, and monitor-only items.
+
+Every item has `needsHumanReview: true` and `canAutoApply: false`. `approvedCount` and `appliedCount` are always `0`. High-risk, blocked, affiliate, scam/fraud, trust/rating, legal/policy, unclear, duplicated, or stale items require Danny approval, evidence review, rejection, deferral, or monitoring. The queue never publishes, writes to Supabase, edits files, creates patch files, creates update payloads, exposes secrets, changes trust ratings, finalises legal/policy wording, or makes scam/fraud accusations.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -737,6 +769,7 @@ npm run content:agents
 npm run content:master-queue
 npm run content:fix-drafts
 npm run content:preview-diffs
+npm run content:approvals
 npm run content:verify-rendered
 ```
 
@@ -782,6 +815,8 @@ npm run content:verify-rendered
 - `data/reports/fix_draft_suggestions.md`
 - `data/reports/preview_diff_report.json`
 - `data/reports/preview_diff_report.md`
+- `data/reports/approval_queue_report.json`
+- `data/reports/approval_queue_report.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
