@@ -40,7 +40,9 @@
     "content:dashboard-export": "tsx src/dashboard-data-exporter.ts",
     "content:dashboard-validate": "tsx src/dashboard-contract-validator.ts",
     "content:department-roadmap": "tsx src/department-roadmap-builder.ts",
-    "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts"
+    "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts",
+    "dashboard:build": "tsc --outDir dist && node dist/src/local-dashboard-shell-builder.js",
+    "dashboard:validate": "tsc --outDir dist && node dist/src/local-dashboard-shell-validator.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.103.0"

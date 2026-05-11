@@ -9,6 +9,7 @@ data/**/*.csv
 data/**/*.md
 data/reports/*.json
 data/dashboard/*.json
+data/local-dashboard/
 data/site_scan/*.json
 data/site_scan/*.csv
 data/ga4/exports/*
