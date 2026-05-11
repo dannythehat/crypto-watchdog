@@ -48,6 +48,8 @@ Phase 2P adds a read-only Manager Escalation Router v1. It formalises manager-to
 
 Phase 2Q adds a read-only Daily Run Orchestrator v1. It runs the safe local planning/report commands in sequence so Danny does not need to manage each command manually. It excludes live crawlers, Supabase export, Search Console import, GA4 import, rendered verification, publishing, apply, and live-site commands, and it stops on the first failure.
 
+Phase 2R adds a read-only Daily Report Pack Builder v1. It collects the key local Watchdog HQ reports into one Danny-ready daily pack for human review and future dashboard input. It summarises counts, statuses, priorities, top decision items, blocked/risky items, monitor-only items, and money opportunities without copying huge raw reports or approving/applying anything.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -188,6 +190,7 @@ npm run content:daily-brief
 npm run content:qc
 npm run content:manager-escalations
 npm run content:daily-run
+npm run content:daily-pack
 npm run content:verify-rendered
 ```
 
@@ -829,6 +832,38 @@ The JSON output includes `generatedAt`, `phase`, `name`, `safetyMode`, `canAutoA
 
 If any step fails, the orchestrator stops, records the failure, and lists the remaining commands under `skippedSteps`. It never continues as if everything passed. The orchestrator never approves, applies, publishes, creates patch files, creates update payloads, writes to Supabase, runs live crawlers, runs Google imports, verifies rendered live pages, or edits live site files. `canAutoApply` is always false, and `approvedCount` and `appliedCount` are always `0`.
 
+## Daily Report Pack Builder
+
+Daily Report Pack Builder v1 is read-only and report-only. It collects key local Watchdog HQ reports into one Danny-ready daily pack for human review and future dashboard input. It summarises counts, statuses, priorities, top items, safety issues, and next review blocks without copying huge raw reports.
+
+Run it locally after the daily run with:
+
+```bash
+npm run content:daily-pack
+```
+
+Required core inputs:
+
+- `data/reports/daily_run_orchestrator_report.json`
+- `data/reports/master_daily_brief.json`
+- `data/reports/quality_control_report.json`
+- `data/reports/manager_escalation_router_report.json`
+- `data/reports/master_command_queue.json`
+- `data/reports/approval_queue_report.json`
+
+Optional supporting inputs include research guard, fix drafts, preview diffs, agent registry, SEO intelligence, metadata, internal links, affiliates, offers, Search Console, GA4, rendered verification, priority queue, and audit confidence reports. Missing optional files are reported but do not fail the pack.
+
+The builder writes only ignored local reports:
+
+- `data/reports/daily_report_pack.json`
+- `data/reports/daily_report_pack.md`
+
+The JSON output includes `generatedAt`, `phase`, `name`, `safetyMode`, `canAutoApply`, `approvedCount`, `appliedCount`, required/optional input lists, missing input lists, `packStatus`, report summaries, top Danny decision items, blocked/risky items, monitor-only items, money opportunities, next recommended blocks, and `safetyChecks`.
+
+Pack status is `complete` when all required core inputs exist, `partial` when at least one required input is missing but at least one core input exists, and `failed` only when no required core input exists. The builder actively scans loaded report JSON text for unsafe states such as `canAutoApply: true`, `approved: true`, `applied: true`, or approved/applied stage values. Any unsafe signal is copied into the pack as a blocked/risky item for review, but the source report is never modified.
+
+The pack builder never approves, applies, publishes, creates patch files, creates update payloads, writes to Supabase, edits live site files, exposes secrets, or adds raw affiliate links. `canAutoApply` is always false, and `approvedCount` and `appliedCount` are always `0`.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -920,6 +955,7 @@ npm run content:daily-brief
 npm run content:qc
 npm run content:manager-escalations
 npm run content:daily-run
+npm run content:daily-pack
 npm run content:verify-rendered
 ```
 
@@ -975,6 +1011,8 @@ npm run content:verify-rendered
 - `data/reports/manager_escalation_router_report.md`
 - `data/reports/daily_run_orchestrator_report.json`
 - `data/reports/daily_run_orchestrator_report.md`
+- `data/reports/daily_report_pack.json`
+- `data/reports/daily_report_pack.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
