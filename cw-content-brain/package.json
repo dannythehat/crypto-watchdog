@@ -25,6 +25,7 @@
     "content:offers": "tsc --outDir dist && node dist/scripts/build_offer_tracker.js",
     "content:gsc": "tsc --outDir dist && node dist/scripts/build_search_console_report.js",
     "content:ga4": "tsc --outDir dist && node dist/scripts/build_ga4_report.js",
+    "content:seo-brain": "tsc --outDir dist && node dist/scripts/build_seo_intelligence_brain.js",
     "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts"
   },
   "dependencies": {

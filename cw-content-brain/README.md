@@ -26,6 +26,8 @@ Phase 2E adds a read-only Search Console Connector v1. It imports local Google S
 
 Phase 2F adds a read-only GA4 Analytics Connector v1. It imports local GA4 CSV/JSON exports, normalises page and engagement performance records, and suggests draft-only review opportunities without live Google authentication. It never writes to Google, Supabase, or live pages.
 
+Phase 2G adds a read-only SEO Intelligence Brain v1. It combines local metadata, internal link, affiliate, offer, Search Console, GA4, and rendered verifier reports into a prioritised draft action queue. It never applies changes, writes to Supabase or Google, edits live pages, or publishes content.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -43,6 +45,7 @@ Phase 2F adds a read-only GA4 Analytics Connector v1. It imports local GA4 CSV/J
 - Track offer expiry and stale affiliate terms locally before any placement is considered safe.
 - Import local Search Console exports to find draft SEO refresh opportunities without connecting to Google APIs.
 - Import local GA4 exports to find draft engagement, CTA, content, and affiliate-placement review opportunities.
+- Combine local SEO, content, affiliate, analytics, and rendered-verifier signals into a concise command queue.
 
 ## Folder Map
 
@@ -148,6 +151,7 @@ npm run content:affiliates
 npm run content:offers
 npm run content:gsc
 npm run content:ga4
+npm run content:seo-brain
 npm run content:verify-rendered
 ```
 
@@ -411,6 +415,48 @@ The JSON output includes:
 
 Every recommendation is marked `draft_only: true` and `needs_human_review: true`. The connector can flag high-traffic but weak-engagement pages, pages with traffic but low or zero conversion/key-event signals, pages with traffic but no affiliate-click events when available, CTA review opportunities, content refresh opportunities, metadata review opportunities, and affiliate placement review opportunities. Treat all recommendations as prompts for human analytics review, not as publishing instructions.
 
+## SEO Intelligence Brain
+
+SEO Intelligence Brain v1 is read-only and draft-only. It combines whichever local reports are available and safely tolerates missing inputs:
+
+- `data/reports/metadata_suggestions.json`
+- `data/reports/internal_link_placement_suggestions.json`
+- `data/reports/affiliate_placement_suggestions.json`
+- `data/reports/offer_tracker_report.json`
+- `data/reports/search_console_report.json`
+- `data/reports/ga4_report.json`
+- `data/reports/rendered_page_verification.json`
+
+Run it locally with:
+
+```bash
+npm run content:seo-brain
+```
+
+The brain writes only ignored local reports:
+
+- `data/reports/seo_intelligence_queue.json`
+- `data/reports/seo_intelligence_queue.md`
+
+Every queue item is marked `draft_only: true`. Items are marked `needs_human_review: true` unless the item is explicitly blocked. The JSON output includes:
+
+- `loadedReports`
+- `missingReports`
+- `signalCount`
+- `itemCount`
+- `items`
+- `status`
+- `priority`
+- `opportunityType`
+- `page`
+- `brandName`
+- `confidence`
+- `falsePositiveRisk`
+- `sourceSignals`
+- `suggestedNextAction`
+
+Opportunity types include `metadata_improvement`, `internal_link_support`, `content_refresh`, `ctr_improvement`, `page_2_opportunity`, `weak_engagement`, `affiliate_review`, `offer_review`, `evidence_or_trust_review`, and `media_review`. Priorities are `critical`, `high`, `medium`, `low`, and `monitor`. Status values are `safe_draft`, `needs_human_review`, `blocked`, and `monitor`. Treat the queue as Danny's command view: things safe to draft, things to review manually, things to block, and things to monitor. It does not apply changes.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -491,6 +537,7 @@ npm run content:affiliates
 npm run content:offers
 npm run content:gsc
 npm run content:ga4
+npm run content:seo-brain
 npm run content:verify-rendered
 ```
 
@@ -524,6 +571,8 @@ npm run content:verify-rendered
 - `data/reports/search_console_report.md`
 - `data/reports/ga4_report.json`
 - `data/reports/ga4_report.md`
+- `data/reports/seo_intelligence_queue.json`
+- `data/reports/seo_intelligence_queue.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
