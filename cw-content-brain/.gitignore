@@ -14,6 +14,8 @@ data/ga4/exports/*
 !data/ga4/exports/.gitkeep
 data/search_console/exports/*
 !data/search_console/exports/.gitkeep
+data/research_queue/inputs/*
+!data/research_queue/inputs/.gitkeep
 data/content_snapshot/*.json
 data/content_snapshot/normalised_content.json
 !data/content_snapshot/*.example.json

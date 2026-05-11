@@ -28,6 +28,8 @@ Phase 2F adds a read-only GA4 Analytics Connector v1. It imports local GA4 CSV/J
 
 Phase 2G adds a read-only SEO Intelligence Brain v1. It combines local metadata, internal link, affiliate, offer, Search Console, GA4, and rendered verifier reports into a prioritised draft action queue. It never applies changes, writes to Supabase or Google, edits live pages, or publishes content.
 
+Phase 2H adds a read-only Research & Duplicate Guard v1. It reviews proposed local content ideas against existing content snapshots before drafting, flags duplicate/cannibalisation/evidence risks, and never performs live web verification in v1.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -46,6 +48,7 @@ Phase 2G adds a read-only SEO Intelligence Brain v1. It combines local metadata,
 - Import local Search Console exports to find draft SEO refresh opportunities without connecting to Google APIs.
 - Import local GA4 exports to find draft engagement, CTA, content, and affiliate-placement review opportunities.
 - Combine local SEO, content, affiliate, analytics, and rendered-verifier signals into a concise command queue.
+- Guard proposed content ideas against duplication, cannibalisation, and unsupported high-risk wording before drafting.
 
 ## Folder Map
 
@@ -152,6 +155,7 @@ npm run content:offers
 npm run content:gsc
 npm run content:ga4
 npm run content:seo-brain
+npm run content:research-guard
 npm run content:verify-rendered
 ```
 
@@ -468,6 +472,43 @@ Opportunity types include `metadata_improvement`, `internal_link_support`, `cont
 
 The SEO Brain separates actionable tasks from blocked/risk-control items so Danny is not flooded with non-actionable warnings. `items` and `actionQueue` contain the main non-blocked action queue. `blockedItems` retains capped risk controls such as blocked affiliate placements. `monitorItems` retains capped monitor-only items. Treat the queue as Danny's command view: things safe to draft, things to review manually, things to block, and things to monitor. It does not apply changes.
 
+## Research & Duplicate Guard
+
+Research & Duplicate Guard v1 is read-only and draft-only. It does not use live web search or verify claims online. Drop proposed content idea CSV or JSON files into:
+
+- `data/research_queue/inputs/`
+
+Real inputs are ignored by Git. The committed folder contains only `.gitkeep`. CSV headers can include `title`, `description`, `target keyword`, `secondary keywords`, `type`, and `notes`. JSON files can be an array of ideas or an object with `ideas`, `rows`, or `data`.
+
+Run it locally with:
+
+```bash
+npm run content:research-guard
+```
+
+The guard writes only ignored local reports:
+
+- `data/reports/research_duplicate_guard_report.json`
+- `data/reports/research_duplicate_guard_report.md`
+
+Every item is marked `draft_only: true` and `needs_human_review: true`. The JSON output includes:
+
+- `inputFolder`
+- `ideaCount`
+- `existingPageCount`
+- `classificationCounts`
+- `items`
+- `idea`
+- `classification`
+- `classifications`
+- `matchedExistingPages`
+- `similarityReason`
+- `confidence`
+- `falsePositiveRisk`
+- `suggestedNextAction`
+
+Classifications include `no_overlap`, `related_but_distinct`, `same_search_intent`, `near_duplicate`, `keyword_cannibalisation_risk`, `update_existing_page_instead`, `create_supporting_article`, `needs_research`, and `blocked_until_evidence`. Unsupported high-risk wording such as scam, fraud, recovery guarantees, guaranteed safety, or ranking claims should be blocked until evidence is reviewed. Treat the report as a pre-draft review aid, not as approval to publish.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -549,6 +590,7 @@ npm run content:offers
 npm run content:gsc
 npm run content:ga4
 npm run content:seo-brain
+npm run content:research-guard
 npm run content:verify-rendered
 ```
 
@@ -584,6 +626,8 @@ npm run content:verify-rendered
 - `data/reports/ga4_report.md`
 - `data/reports/seo_intelligence_queue.json`
 - `data/reports/seo_intelligence_queue.md`
+- `data/reports/research_duplicate_guard_report.json`
+- `data/reports/research_duplicate_guard_report.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
