@@ -40,6 +40,8 @@ Phase 2L adds a read-only Preview Diff Engine v1. It reads Fix Draft Suggestions
 
 Phase 2M adds a read-only Approval Queue v1. It turns preview diffs, draft suggestions, and command queue items into a local decision list for Danny. It is approval-planning only: it may recommend a decision type, but it never marks anything approved, applies changes, edits files, creates patches or update payloads, writes to Supabase, or publishes.
 
+Phase 2N adds a read-only Master AI Manager Daily Brief v1. It reads the local Watchdog HQ reports and produces a plain-English executive summary of what matters today, including priorities, department manager briefs, risk notes, opportunity notes, and safe next actions. It is report-only and never approves, applies, publishes, edits live content, creates patches, creates update payloads, writes to Supabase, or calls APIs.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -176,6 +178,7 @@ npm run content:master-queue
 npm run content:fix-drafts
 npm run content:preview-diffs
 npm run content:approvals
+npm run content:daily-brief
 npm run content:verify-rendered
 ```
 
@@ -683,6 +686,38 @@ Decision types are `review`, `approve_to_draft`, `approve_to_research`, `approve
 
 Every item has `needsHumanReview: true` and `canAutoApply: false`. `approvedCount` and `appliedCount` are always `0`. High-risk, blocked, affiliate, scam/fraud, trust/rating, legal/policy, unclear, duplicated, or stale items require Danny approval, evidence review, rejection, deferral, or monitoring. The queue never publishes, writes to Supabase, edits files, creates patch files, creates update payloads, exposes secrets, changes trust ratings, finalises legal/policy wording, or makes scam/fraud accusations.
 
+## Master AI Manager Daily Brief
+
+Master AI Manager Daily Brief v1 is read-only and report-only. It reads the local Watchdog HQ planning reports where available and turns them into a cautious plain-English daily briefing for Danny:
+
+- `data/reports/master_command_queue.json`
+- `data/reports/approval_queue_report.json`
+- `data/reports/preview_diff_report.json`
+- `data/reports/fix_draft_suggestions.json`
+- `data/reports/agent_registry_report.json`
+- `data/reports/seo_intelligence_queue.json`
+- `data/reports/research_duplicate_guard_report.json`
+- `data/reports/offer_tracker_report.json`
+- `data/reports/search_console_report.json`
+- `data/reports/ga4_report.json`
+
+Run it locally with:
+
+```bash
+npm run content:daily-brief
+```
+
+The brief writes only ignored local reports:
+
+- `data/reports/master_daily_brief.json`
+- `data/reports/master_daily_brief.md`
+
+The JSON output includes `generatedAt`, `disclaimer`, `briefVersion`, `sourceReportsRead`, `missingReports`, `executiveSummary`, `todayCommandQueue`, `topThreePriorities`, `managerBriefs`, `approvalSnapshot`, `riskSnapshot`, `opportunitySnapshot`, `whatDannyShouldDoToday`, `whatAgentsShouldDoNext`, `blockedUntilDannyDecides`, `safetyCounts`, and `safetyNotes`.
+
+The Markdown output includes Master AI Manager Daily Brief, Executive Summary, Today's Command Queue, Top 3 Priorities, Department Manager Briefs, Approval Snapshot, Risk Snapshot, Opportunity Snapshot, What Danny Should Do Today, What Agents Should Do Next, Blocked Until Danny Decides, Safety Notes, and Missing Reports.
+
+The brief uses cautious language such as detected, likely, needs review, blocked pending evidence, ready for draft review, and monitor only. It does not claim anything is approved or applied. `canAutoApply` is always false, and `approvedCount` and `appliedCount` are always `0`. It never publishes, writes to Supabase, edits live site files, creates patch files, creates update payloads, exposes secrets, includes raw affiliate URLs, changes trust ratings, finalises legal/policy wording, or makes scam/fraud accusations.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -770,6 +805,7 @@ npm run content:master-queue
 npm run content:fix-drafts
 npm run content:preview-diffs
 npm run content:approvals
+npm run content:daily-brief
 npm run content:verify-rendered
 ```
 
@@ -817,6 +853,8 @@ npm run content:verify-rendered
 - `data/reports/preview_diff_report.md`
 - `data/reports/approval_queue_report.json`
 - `data/reports/approval_queue_report.md`
+- `data/reports/master_daily_brief.json`
+- `data/reports/master_daily_brief.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
