@@ -14,7 +14,7 @@
     "update-draft": "tsx scripts/update_article_draft.ts",
     "content:snapshot": "tsx scripts/load_content_snapshot.ts",
     "content:quality": "tsx scripts/audit_content_quality.ts",
-    "content:affiliates": "tsx scripts/audit_affiliate_placement.ts",
+    "content:affiliates": "tsc --outDir dist && node dist/scripts/build_affiliate_placements.js",
     "content:links": "tsx scripts/audit_content_linking.ts",
     "content:audit": "tsx scripts/run_content_snapshot_audit.ts",
     "content:export": "tsx scripts/export_supabase_snapshot.ts",

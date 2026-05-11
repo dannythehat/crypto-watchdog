@@ -1,6 +1,7 @@
 node_modules/
 dist/
 .env
+config/affiliate_vault.json
 *.log
 package-lock.json
 data/**/*.jsonl
