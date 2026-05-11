@@ -22,6 +22,8 @@ Phase 2C adds a read-only Affiliate Vault and Affiliate Placement Brain v1. It s
 
 Phase 2D adds a read-only Offer Expiry / Deal Tracker v1. It reads the Affiliate Vault and classifies affiliate offers as current, expiring, expired, stale, paused, blocked, or needing review. It does not expose raw affiliate URLs, edit pages, publish content, or write to Supabase.
 
+Phase 2E adds a read-only Search Console Connector v1. It imports local Google Search Console CSV/JSON exports, normalises SEO performance records, and suggests draft-only review opportunities without live Google authentication. It never writes to Google, Supabase, or live pages.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -37,6 +39,7 @@ Phase 2D adds a read-only Offer Expiry / Deal Tracker v1. It reads the Affiliate
 - Suggest natural internal link placements while preserving main-answer-first, evidence-first page structure.
 - Suggest safe affiliate placements locally while keeping trust, disclosure, page risk, and human review ahead of revenue.
 - Track offer expiry and stale affiliate terms locally before any placement is considered safe.
+- Import local Search Console exports to find draft SEO refresh opportunities without connecting to Google APIs.
 
 ## Folder Map
 
@@ -140,6 +143,7 @@ npm run content:metadata
 npm run content:internal-links
 npm run content:affiliates
 npm run content:offers
+npm run content:gsc
 npm run content:verify-rendered
 ```
 
@@ -320,6 +324,45 @@ Every item is marked `draft_only: true` and `needs_human_review: true`. The JSON
 
 Classifications are `current`, `expires_soon`, `expired`, `stale_check`, `paused`, `blocked`, and `needs_review`. Recommended actions can include `renew_offer`, `verify_terms`, `pause_placements`, `remove_expired_cta`, `update_disclosure`, and `human_review_required`. Treat `safe_to_use` as a draft signal only: a human must still verify live offer terms and disclosure before publishing or placing any CTA.
 
+## Search Console Connector
+
+Search Console Connector v1 is read-only and local-file based. It does not use live Google API authentication. Drop exported Google Search Console CSV or JSON files into:
+
+- `data/search_console/exports/`
+
+Real exports are ignored by Git. The committed folder contains only `.gitkeep`. CSV headers can include common Search Console names such as `Query`, `Page`, `Country`, `Device`, `Date`, `Clicks`, `Impressions`, `CTR`, and `Average position`. JSON files can be an array of records or an object with `rows` or `data`.
+
+Run it locally with:
+
+```bash
+npm run content:gsc
+```
+
+The connector writes only ignored local reports:
+
+- `data/reports/search_console_report.json`
+- `data/reports/search_console_report.md`
+
+The JSON output includes:
+
+- `exportFolder`
+- `importedFiles`
+- `recordCount`
+- `topQueries`
+- `topPages`
+- `recommendations`
+- `query`
+- `page`
+- `country`
+- `device`
+- `date`
+- `clicks`
+- `impressions`
+- `ctr`
+- `averagePosition`
+
+Every recommendation is marked `draft_only: true` and `needs_human_review: true`. The connector can flag low-CTR/high-impression opportunities, page 2 opportunities, rising keywords, falling keywords, metadata review opportunities, internal-link review opportunities, and content refresh review opportunities when the local export has enough data. Treat all recommendations as prompts for human SEO review, not as publishing instructions.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -398,6 +441,7 @@ npm run content:metadata
 npm run content:internal-links
 npm run content:affiliates
 npm run content:offers
+npm run content:gsc
 npm run content:verify-rendered
 ```
 
@@ -427,6 +471,8 @@ npm run content:verify-rendered
 - `data/reports/affiliate_placement_suggestions.md`
 - `data/reports/offer_tracker_report.json`
 - `data/reports/offer_tracker_report.md`
+- `data/reports/search_console_report.json`
+- `data/reports/search_console_report.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
