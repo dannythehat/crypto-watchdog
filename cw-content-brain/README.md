@@ -34,6 +34,8 @@ Phase 2I adds a read-only Agent Registry v1. It maps the current and planned Wat
 
 Phase 2J adds a read-only Master Command Queue v1. It combines available local reports into a Watchdog HQ morning dashboard for Danny, separating safe draft work, approval-needed work, blocked risks, monitor-only items, performance changes, money opportunities, and department manager summaries. It is report-only and never applies, approves, publishes, or edits live content.
 
+Phase 2K adds a read-only Fix Draft Generator v1. It reads the Master Command Queue and supporting local reports to prepare safe draft-only fix suggestions, such as metadata drafts, internal link drafts, image alt text drafts, evidence checklists, research briefs, and approval-only affiliate CTA drafts. It never edits content, writes to Supabase, publishes, or creates live patches.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -55,6 +57,7 @@ Phase 2J adds a read-only Master Command Queue v1. It combines available local r
 - Guard proposed content ideas against duplication, cannibalisation, and unsupported high-risk wording before drafting.
 - Maintain a local Watchdog HQ agent registry so ownership, safety boundaries, and future automation plans stay explicit.
 - Produce a local morning command dashboard that separates detected, suspected, recommended, blocked, approval-needed, and monitor-only work.
+- Generate cautious local fix draft suggestions from the command queue without producing final publishable content or live update payloads.
 
 ## Folder Map
 
@@ -164,6 +167,7 @@ npm run content:seo-brain
 npm run content:research-guard
 npm run content:agents
 npm run content:master-queue
+npm run content:fix-drafts
 npm run content:verify-rendered
 ```
 
@@ -586,6 +590,36 @@ Each queue item includes `id`, `title`, `sourceReport`, `section`, `department`,
 
 The dashboard groups work into safe draft ideas, Danny approval items, blocked/risky items, monitor-only items, performance changes, money opportunities, department manager summaries, and a capped top-priority list of at most 10 items. Affiliate placements, trust/rating-impacting issues, scam/fraud wording, legal/policy wording, live content decisions, publishing decisions, and high-risk claims must stay behind Danny approval. Treat the queue as local planning guidance, not permission to publish or edit live content.
 
+## Fix Draft Generator
+
+Fix Draft Generator v1 is read-only and draft-only. It reads the Master Command Queue first, then uses supporting local reports where available:
+
+- `data/reports/master_command_queue.json`
+- `data/reports/metadata_suggestions.json`
+- `data/reports/internal_link_placement_suggestions.json`
+- `data/reports/research_duplicate_guard_report.json`
+- `data/reports/rendered_page_verification.json`
+- `data/reports/affiliate_placement_suggestions.json`
+
+Run it locally with:
+
+```bash
+npm run content:fix-drafts
+```
+
+The generator writes only ignored local reports:
+
+- `data/reports/fix_draft_suggestions.json`
+- `data/reports/fix_draft_suggestions.md`
+
+The JSON output includes `generatedAt`, `disclaimer`, `draftVersion`, `sourceReportsRead`, `missingReports`, `summaryCounts`, `riskCounts`, `approvalCounts`, `draftTypeCounts`, and `drafts`.
+
+Each draft includes `id`, `sourceQueueItemId`, `sourceReport`, optional `relatedUrl` or `relatedPath`, `department`, `draftType`, `riskLevel`, `statusStage`, `draftOnly`, `needsHumanReview`, `needsDannyApproval`, `canAutoApply`, `title`, `draftText`, `rationale`, `safetyNotes`, and optional `blockedReason`.
+
+Draft types are `meta_title`, `meta_description`, `faq`, `internal_link`, `image_alt_text`, `refresh_outline`, `evidence_checklist`, `affiliate_cta`, `blocked_item_research`, and `research_brief`. V1 uses the Master Command Queue sections `safeDraftsReady`, `needsDannyApproval`, `blockedRiskyItems`, and `moneyOpportunities`; output is capped at 50 drafts total, with separate caps for safe, approval, and blocked/research drafts.
+
+Every draft has `draftOnly: true`, `needsHumanReview: true`, and `canAutoApply: false`. No draft can be `approved` or `applied`. High-risk, affiliate, scam/fraud, trust/rating, legal/policy, and blocked items require Danny approval. Affiliate CTA drafts must not include raw affiliate URLs. Scam/fraud wording is framed as an evidence checklist or research task, not an accusation. Trust rating changes and legal/policy wording are never drafted as final changes in v1.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -670,6 +704,7 @@ npm run content:seo-brain
 npm run content:research-guard
 npm run content:agents
 npm run content:master-queue
+npm run content:fix-drafts
 npm run content:verify-rendered
 ```
 
@@ -711,6 +746,8 @@ npm run content:verify-rendered
 - `data/reports/agent_registry_report.md`
 - `data/reports/master_command_queue.json`
 - `data/reports/master_command_queue.md`
+- `data/reports/fix_draft_suggestions.json`
+- `data/reports/fix_draft_suggestions.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
