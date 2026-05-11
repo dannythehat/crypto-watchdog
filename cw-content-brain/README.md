@@ -14,6 +14,8 @@ The Priority Action Queue ranks possible fixes using confidence, false-positive 
 
 Rendered Page Verifier v1 optionally checks live rendered React pages against queue findings so injected disclosures, links, metadata, and page components can reduce false positives before exact fixes are assigned. It does not edit pages, publish content, or write to Supabase.
 
+Phase 2A adds a read-only Metadata Engine v1. It analyses local snapshot content and rendered verifier facts when available, then produces draft-only metadata suggestions for human review. It does not edit pages, publish content, write to Supabase, or verify claims.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -25,6 +27,7 @@ Rendered Page Verifier v1 optionally checks live rendered React pages against qu
 - Reduce false positives by reviewing confidence, evidence snippets, and false-positive risk before building fix queues.
 - Rank possible actions without treating findings as confirmed defects.
 - Verify high-risk queue items against rendered live pages before assigning edits.
+- Draft metadata suggestions locally without inventing evidence, rankings, partnerships, guarantees, tests, ratings, or user numbers.
 
 ## Folder Map
 
@@ -35,7 +38,7 @@ Rendered Page Verifier v1 optionally checks live rendered React pages against qu
 - `prompts/review-checklist.md`: human review checklist prompt.
 - `seeds/editorial-calendar.json`: starter content calendar for Phase 1.
 - `seeds/source-register.json`: neutral source categories to guide evidence gathering.
-- `scripts/`: standalone audit, crawl, SEO, link, draft, content snapshot, confidence summary, priority queue, rendered verification, and optional export commands.
+- `scripts/`: standalone audit, crawl, SEO, link, draft, content snapshot, confidence summary, priority queue, rendered verification, metadata suggestions, and optional export commands.
 - `src/lib/`: shared filesystem, CSV, route, sitemap, scoring, text, logger, audit, and type helpers.
 - `data/content_snapshot/`: local read-only JSON exports and normalised content output.
 - `data/`: generated inventory, reports, research, keywords, YouTube, affiliate, and draft outputs.
@@ -124,6 +127,7 @@ Rendered Page Verifier v1 is optional and disabled by default in `config/rendere
 npm run content:audit
 npm run content:confidence
 npm run content:queue
+npm run content:metadata
 npm run content:verify-rendered
 ```
 
@@ -137,6 +141,39 @@ The verifier never edits live pages, never publishes content, never writes to Su
 - `data/reports/rendered_page_verification.md`
 
 Playwright may require a browser install later on the owner's machine. Codex must not run browser install commands unless explicitly instructed. Generated verifier reports are local outputs and are ignored by Git.
+
+## Metadata Engine
+
+Metadata Engine v1 is read-only and draft-only. It reads `data/content_snapshot/normalised_content.json` when available, otherwise it loads the configured local JSON snapshot files. It also reads `data/reports/rendered_page_verification.json` when available so existing rendered titles, descriptions, canonical tags, social metadata, and image counts can inform review notes.
+
+Run it locally with:
+
+```bash
+npm run content:metadata
+```
+
+The engine writes only ignored local reports:
+
+- `data/reports/metadata_suggestions.json`
+- `data/reports/metadata_suggestions.md`
+
+Every item is marked `draft_only: true` and `needs_human_review: true`. The JSON output includes:
+
+- `seoTitleDraft`
+- `metaDescriptionDraft`
+- `canonicalCheck`
+- `ogTitleDraft`
+- `ogDescriptionDraft`
+- `twitterTitleDraft`
+- `twitterDescriptionDraft`
+- `schemaSuggestionType`
+- `imageAltTextSuggestions`
+- `imageFilenameSuggestions`
+- `targetKeywordSuggestion`
+- `secondaryKeywordSuggestions`
+- `safetyNotes`
+
+Metadata suggestions must preserve CryptoWatchdog's evidence-first, protection-first, plain-English tone. They must not invent evidence, ratings, tests, user numbers, rankings, partnerships, or guarantees. Treat the report as a review aid, not an implementation or publishing instruction.
 
 ### Rendered Verifier Troubleshooting
 
@@ -233,6 +270,8 @@ npm run content:verify-rendered
 - `data/reports/audit_confidence_summary.md`
 - `data/reports/priority_action_queue.json`
 - `data/reports/priority_action_queue.md`
+- `data/reports/metadata_suggestions.json`
+- `data/reports/metadata_suggestions.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
