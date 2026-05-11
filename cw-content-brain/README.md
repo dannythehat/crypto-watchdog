@@ -16,6 +16,8 @@ Rendered Page Verifier v1 optionally checks live rendered React pages against qu
 
 Phase 2A adds a read-only Metadata Engine v1. It analyses local snapshot content and rendered verifier facts when available, then produces draft-only metadata suggestions for human review. It does not edit pages, publish content, write to Supabase, or verify claims.
 
+Phase 2B adds a read-only Internal Link Placement Brain v1. It analyses local snapshot content and suggests draft-only internal link opportunities between reviews, blog posts, warnings, and category pages. It does not edit pages, publish content, or write to Supabase.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -28,6 +30,7 @@ Phase 2A adds a read-only Metadata Engine v1. It analyses local snapshot content
 - Rank possible actions without treating findings as confirmed defects.
 - Verify high-risk queue items against rendered live pages before assigning edits.
 - Draft metadata suggestions locally without inventing evidence, rankings, partnerships, guarantees, tests, ratings, or user numbers.
+- Suggest natural internal link placements while preserving main-answer-first, evidence-first page structure.
 
 ## Folder Map
 
@@ -38,7 +41,7 @@ Phase 2A adds a read-only Metadata Engine v1. It analyses local snapshot content
 - `prompts/review-checklist.md`: human review checklist prompt.
 - `seeds/editorial-calendar.json`: starter content calendar for Phase 1.
 - `seeds/source-register.json`: neutral source categories to guide evidence gathering.
-- `scripts/`: standalone audit, crawl, SEO, link, draft, content snapshot, confidence summary, priority queue, rendered verification, metadata suggestions, and optional export commands.
+- `scripts/`: standalone audit, crawl, SEO, link, draft, content snapshot, confidence summary, priority queue, rendered verification, metadata suggestions, internal link placement suggestions, and optional export commands.
 - `src/lib/`: shared filesystem, CSV, route, sitemap, scoring, text, logger, audit, and type helpers.
 - `data/content_snapshot/`: local read-only JSON exports and normalised content output.
 - `data/`: generated inventory, reports, research, keywords, YouTube, affiliate, and draft outputs.
@@ -128,6 +131,7 @@ npm run content:audit
 npm run content:confidence
 npm run content:queue
 npm run content:metadata
+npm run content:internal-links
 npm run content:verify-rendered
 ```
 
@@ -174,6 +178,36 @@ Every item is marked `draft_only: true` and `needs_human_review: true`. The JSON
 - `safetyNotes`
 
 Metadata suggestions must preserve CryptoWatchdog's evidence-first, protection-first, plain-English tone. They must not invent evidence, ratings, tests, user numbers, rankings, partnerships, or guarantees. Treat the report as a review aid, not an implementation or publishing instruction.
+
+## Internal Link Placement Brain
+
+Internal Link Placement Brain v1 is read-only and draft-only. It reads `data/content_snapshot/normalised_content.json` when available, otherwise it loads the configured local JSON snapshot files. It suggests natural internal link opportunities between reviews, blog posts, warnings, and category pages using local snapshot text only.
+
+Run it locally with:
+
+```bash
+npm run content:internal-links
+```
+
+The engine writes only ignored local reports:
+
+- `data/reports/internal_link_placement_suggestions.json`
+- `data/reports/internal_link_placement_suggestions.md`
+
+Every recommendation is marked `draft_only: true` and `needs_human_review: true`. The JSON output includes:
+
+- `sourcePage`
+- `targetPage`
+- `suggestedAnchorText`
+- `suggestedPlacementContext`
+- `placementType`
+- `reason`
+- `confidence`
+- `falsePositiveRisk`
+- `targetLinkStatus`
+- `orphanOrThinlyLinkedPages`
+
+Placement guidance is strict: main answer first, evidence second, helpful links naturally inside, related content near the end or contextually placed, and affiliate links only where they genuinely help. Do not dump related posts at the top of pages. Avoid spammy exact-match anchor text and excessive links per page. Treat every suggestion as a review aid, not an implementation instruction.
 
 ### Rendered Verifier Troubleshooting
 
@@ -272,6 +306,8 @@ npm run content:verify-rendered
 - `data/reports/priority_action_queue.md`
 - `data/reports/metadata_suggestions.json`
 - `data/reports/metadata_suggestions.md`
+- `data/reports/internal_link_placement_suggestions.json`
+- `data/reports/internal_link_placement_suggestions.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
