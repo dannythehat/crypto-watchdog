@@ -24,6 +24,8 @@ Phase 2D adds a read-only Offer Expiry / Deal Tracker v1. It reads the Affiliate
 
 Phase 2E adds a read-only Search Console Connector v1. It imports local Google Search Console CSV/JSON exports, normalises SEO performance records, and suggests draft-only review opportunities without live Google authentication. It never writes to Google, Supabase, or live pages.
 
+Phase 2F adds a read-only GA4 Analytics Connector v1. It imports local GA4 CSV/JSON exports, normalises page and engagement performance records, and suggests draft-only review opportunities without live Google authentication. It never writes to Google, Supabase, or live pages.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -40,6 +42,7 @@ Phase 2E adds a read-only Search Console Connector v1. It imports local Google S
 - Suggest safe affiliate placements locally while keeping trust, disclosure, page risk, and human review ahead of revenue.
 - Track offer expiry and stale affiliate terms locally before any placement is considered safe.
 - Import local Search Console exports to find draft SEO refresh opportunities without connecting to Google APIs.
+- Import local GA4 exports to find draft engagement, CTA, content, and affiliate-placement review opportunities.
 
 ## Folder Map
 
@@ -144,6 +147,7 @@ npm run content:internal-links
 npm run content:affiliates
 npm run content:offers
 npm run content:gsc
+npm run content:ga4
 npm run content:verify-rendered
 ```
 
@@ -363,6 +367,50 @@ The JSON output includes:
 
 Every recommendation is marked `draft_only: true` and `needs_human_review: true`. The connector can flag low-CTR/high-impression opportunities, page 2 opportunities, rising keywords, falling keywords, metadata review opportunities, internal-link review opportunities, and content refresh review opportunities when the local export has enough data. Treat all recommendations as prompts for human SEO review, not as publishing instructions.
 
+## GA4 Analytics Connector
+
+GA4 Analytics Connector v1 is read-only and local-file based. It does not use live Google API authentication. Drop exported GA4 CSV or JSON files into:
+
+- `data/ga4/exports/`
+
+Real exports are ignored by Git. The committed folder contains only `.gitkeep`. CSV headers can include common GA4 names such as `Page path`, `Page URL`, `Page title`, `Date`, `Session source / medium`, `Sessions`, `Users`, `Views`, `Engagement rate`, `Average engagement time`, `Event count`, `Conversions`, `Key events`, and `Affiliate clicks`. JSON files can be an array of records or an object with `rows` or `data`.
+
+Run it locally with:
+
+```bash
+npm run content:ga4
+```
+
+The connector writes only ignored local reports:
+
+- `data/reports/ga4_report.json`
+- `data/reports/ga4_report.md`
+
+The JSON output includes:
+
+- `exportFolder`
+- `importedFiles`
+- `recordCount`
+- `topPagesByViews`
+- `topPagesBySessions`
+- `recommendations`
+- `pagePath`
+- `pageUrl`
+- `pageTitle`
+- `date`
+- `sourceMedium`
+- `sessions`
+- `users`
+- `views`
+- `engagementRate`
+- `averageEngagementTimeSeconds`
+- `eventCount`
+- `conversions`
+- `keyEvents`
+- `affiliateClickEvents`
+
+Every recommendation is marked `draft_only: true` and `needs_human_review: true`. The connector can flag high-traffic but weak-engagement pages, pages with traffic but low or zero conversion/key-event signals, pages with traffic but no affiliate-click events when available, CTA review opportunities, content refresh opportunities, metadata review opportunities, and affiliate placement review opportunities. Treat all recommendations as prompts for human analytics review, not as publishing instructions.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -442,6 +490,7 @@ npm run content:internal-links
 npm run content:affiliates
 npm run content:offers
 npm run content:gsc
+npm run content:ga4
 npm run content:verify-rendered
 ```
 
@@ -473,6 +522,8 @@ npm run content:verify-rendered
 - `data/reports/offer_tracker_report.md`
 - `data/reports/search_console_report.json`
 - `data/reports/search_console_report.md`
+- `data/reports/ga4_report.json`
+- `data/reports/ga4_report.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
