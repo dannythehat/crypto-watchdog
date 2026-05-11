@@ -46,6 +46,8 @@ Phase 2O adds a read-only Quality Control Manager v1. It reviews local worker-ag
 
 Phase 2P adds a read-only Manager Escalation Router v1. It formalises manager-to-manager routing inside Watchdog HQ so department managers can route items sideways before anything reaches Danny. It recommends routing only, keeps the Detected -> Suspected -> Verified -> Recommended -> Approved -> Applied model explicit, and never approves, applies, publishes, edits live content, creates patches, creates update payloads, writes to Supabase, or calls APIs.
 
+Phase 2Q adds a read-only Daily Run Orchestrator v1. It runs the safe local planning/report commands in sequence so Danny does not need to manage each command manually. It excludes live crawlers, Supabase export, Search Console import, GA4 import, rendered verification, publishing, apply, and live-site commands, and it stops on the first failure.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -185,6 +187,7 @@ npm run content:approvals
 npm run content:daily-brief
 npm run content:qc
 npm run content:manager-escalations
+npm run content:daily-run
 npm run content:verify-rendered
 ```
 
@@ -793,6 +796,39 @@ Supported routes include Content to SEO, Content to Research, SEO to Quality Con
 
 The router is local planning only. It never publishes, writes to Supabase, edits live site files, creates patch files, creates update payloads, exposes secrets, includes raw affiliate links as acceptable output, changes trust ratings, finalises legal/policy wording, makes scam/fraud accusations, or creates approved/applied states. `canAutoApply` is always false, and `approvedCount` and `appliedCount` are always `0`.
 
+## Daily Run Orchestrator
+
+Daily Run Orchestrator v1 is read-only and report-only. It runs the safe local Watchdog HQ planning commands in a fixed sequence and writes a local run report. It does not accept arbitrary command input.
+
+Run it locally with:
+
+```bash
+npm run content:daily-run
+```
+
+The orchestrator runs these fixed commands in order:
+
+1. `npm run content:research-guard`
+2. `npm run content:agents`
+3. `npm run content:master-queue`
+4. `npm run content:fix-drafts`
+5. `npm run content:preview-diffs`
+6. `npm run content:approvals`
+7. `npm run content:daily-brief`
+8. `npm run content:qc`
+9. `npm run content:manager-escalations`
+
+It explicitly excludes live crawlers, Supabase export, Search Console import, GA4 import, rendered verification, publishing, apply, write-to-live, and live-site commands. It does not run `npm run crawl`, `npm run content:export`, `npm run content:gsc`, `npm run content:ga4`, or `npm run content:verify-rendered`.
+
+The orchestrator writes only ignored local reports:
+
+- `data/reports/daily_run_orchestrator_report.json`
+- `data/reports/daily_run_orchestrator_report.md`
+
+The JSON output includes `generatedAt`, `phase`, `name`, `safetyMode`, `canAutoApply`, `approvedCount`, `appliedCount`, `overallStatus`, `steps`, `skippedSteps`, and `safetyChecks`. Each step records `stepNumber`, `command`, `purpose`, `status`, `startedAt`, `finishedAt`, `durationMs`, and `exitCode`.
+
+If any step fails, the orchestrator stops, records the failure, and lists the remaining commands under `skippedSteps`. It never continues as if everything passed. The orchestrator never approves, applies, publishes, creates patch files, creates update payloads, writes to Supabase, runs live crawlers, runs Google imports, verifies rendered live pages, or edits live site files. `canAutoApply` is always false, and `approvedCount` and `appliedCount` are always `0`.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -883,6 +919,7 @@ npm run content:approvals
 npm run content:daily-brief
 npm run content:qc
 npm run content:manager-escalations
+npm run content:daily-run
 npm run content:verify-rendered
 ```
 
@@ -936,6 +973,8 @@ npm run content:verify-rendered
 - `data/reports/quality_control_report.md`
 - `data/reports/manager_escalation_router_report.json`
 - `data/reports/manager_escalation_router_report.md`
+- `data/reports/daily_run_orchestrator_report.json`
+- `data/reports/daily_run_orchestrator_report.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
