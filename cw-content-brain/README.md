@@ -52,6 +52,8 @@ Phase 2R adds a read-only Daily Report Pack Builder v1. It collects the key loca
 
 Phase 2S adds a read-only Dashboard Data Export Layer v1. It converts the Daily Report Pack into small local JSON files for future Watchdog HQ dashboard tabs. It is not the dashboard UI, and it never approves, applies, publishes, edits live content, creates patches, creates update payloads, writes to Supabase, or calls APIs.
 
+Phase 2T adds a read-only Dashboard Contract Validator v1. It checks the local dashboard JSON files before any future dashboard UI reads them, validating required fields, safe approval/apply states, and URL safety. It is not the dashboard UI and never auto-fixes dashboard files.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -194,6 +196,7 @@ npm run content:manager-escalations
 npm run content:daily-run
 npm run content:daily-pack
 npm run content:dashboard-export
+npm run content:dashboard-validate
 npm run content:verify-rendered
 ```
 
@@ -906,6 +909,39 @@ The exporter sanitises dashboard output before writing. Every dashboard JSON inc
 
 The dashboard export layer never approves, applies, publishes, creates patch files, creates update payloads, writes to Supabase, edits live site files, exposes secrets, or adds raw affiliate links.
 
+## Dashboard Contract Validator
+
+Dashboard Contract Validator v1 is read-only and report-only. It checks the local Watchdog HQ dashboard JSON files before any future dashboard UI reads them. It is not the dashboard UI and does not create frontend code.
+
+Run it after the daily run, daily pack, and dashboard export:
+
+```bash
+npm run content:dashboard-validate
+```
+
+Input dashboard files:
+
+- `data/dashboard/overview.json`
+- `data/dashboard/command.json`
+- `data/dashboard/approvals.json`
+- `data/dashboard/agents.json`
+- `data/dashboard/content.json`
+- `data/dashboard/seo.json`
+- `data/dashboard/affiliates.json`
+- `data/dashboard/research.json`
+- `data/dashboard/analytics.json`
+
+The validator writes ignored local reports:
+
+- `data/reports/dashboard_contract_validation_report.json`
+- `data/reports/dashboard_contract_validation_report.md`
+
+The validator checks that every dashboard file exists, parses as JSON, includes required fields, keeps `canAutoApply: false`, keeps approval/application counts at `0` where present, does not contain `canAutoApply: true`, `approved: true`, `applied: true`, or approved/applied stage values, and does not contain raw external URLs unless they are CryptoWatchdog URLs.
+
+Each dashboard tab also has a shape contract. For example, `overview.json` must include status cards, `approvals.json` must remain `PLANNING_ONLY`, `agents.json` must include hierarchy and manager routing, and `affiliates.json` must include a safety note that affiliate opportunities are planning-only and red-rated or warning pages require manual approval before affiliate placement.
+
+If any required file is missing, JSON parsing fails, a required field is absent, an unsafe approval/apply state appears, or a raw external URL appears, validation fails and the script sets a failing exit code. It still writes the validation report. The validator never modifies dashboard JSON files, never auto-fixes data, never creates UI, never publishes, never writes to Supabase, never creates patch files, and never creates update payloads.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -999,6 +1035,7 @@ npm run content:manager-escalations
 npm run content:daily-run
 npm run content:daily-pack
 npm run content:dashboard-export
+npm run content:dashboard-validate
 npm run content:verify-rendered
 ```
 
@@ -1058,6 +1095,8 @@ npm run content:verify-rendered
 - `data/reports/daily_report_pack.md`
 - `data/reports/dashboard_data_export_report.json`
 - `data/reports/dashboard_data_export_report.md`
+- `data/reports/dashboard_contract_validation_report.json`
+- `data/reports/dashboard_contract_validation_report.md`
 - `data/dashboard/overview.json`
 - `data/dashboard/command.json`
 - `data/dashboard/approvals.json`
