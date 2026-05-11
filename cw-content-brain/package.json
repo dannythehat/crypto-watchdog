@@ -30,6 +30,7 @@
     "content:agents": "tsc --outDir dist && node dist/scripts/build_agent_registry.js",
     "content:master-queue": "tsc --outDir dist && node dist/scripts/build_master_command_queue.js",
     "content:fix-drafts": "tsc --outDir dist && node dist/scripts/build_fix_draft_generator.js",
+    "content:preview-diffs": "tsc --outDir dist && node dist/scripts/build_preview_diff_engine.js",
     "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts"
   },
   "dependencies": {

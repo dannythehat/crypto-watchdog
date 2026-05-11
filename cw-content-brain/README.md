@@ -36,6 +36,8 @@ Phase 2J adds a read-only Master Command Queue v1. It combines available local r
 
 Phase 2K adds a read-only Fix Draft Generator v1. It reads the Master Command Queue and supporting local reports to prepare safe draft-only fix suggestions, such as metadata drafts, internal link drafts, image alt text drafts, evidence checklists, research briefs, and approval-only affiliate CTA drafts. It never edits content, writes to Supabase, publishes, or creates live patches.
 
+Phase 2L adds a read-only Preview Diff Engine v1. It reads Fix Draft Suggestions and local snapshot context to produce simulated textual previews of proposed changes before anything is approved or applied. It is preview-only/report-only and never creates patch files, update payloads, live edits, Supabase writes, or publishing actions.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -58,6 +60,7 @@ Phase 2K adds a read-only Fix Draft Generator v1. It reads the Master Command Qu
 - Maintain a local Watchdog HQ agent registry so ownership, safety boundaries, and future automation plans stay explicit.
 - Produce a local morning command dashboard that separates detected, suspected, recommended, blocked, approval-needed, and monitor-only work.
 - Generate cautious local fix draft suggestions from the command queue without producing final publishable content or live update payloads.
+- Preview draft suggestions as simulated before/proposed text so humans can review the direction before approval or application work exists.
 
 ## Folder Map
 
@@ -168,6 +171,7 @@ npm run content:research-guard
 npm run content:agents
 npm run content:master-queue
 npm run content:fix-drafts
+npm run content:preview-diffs
 npm run content:verify-rendered
 ```
 
@@ -620,6 +624,33 @@ Draft types are `meta_title`, `meta_description`, `faq`, `internal_link`, `image
 
 Every draft has `draftOnly: true`, `needsHumanReview: true`, and `canAutoApply: false`. No draft can be `approved` or `applied`. High-risk, affiliate, scam/fraud, trust/rating, legal/policy, and blocked items require Danny approval. Affiliate CTA drafts must not include raw affiliate URLs. Scam/fraud wording is framed as an evidence checklist or research task, not an accusation. Trust rating changes and legal/policy wording are never drafted as final changes in v1.
 
+## Preview Diff Engine
+
+Preview Diff Engine v1 is read-only and preview-only. It reads Fix Draft Suggestions first, then uses local snapshot and command queue context when available:
+
+- `data/reports/fix_draft_suggestions.json`
+- `data/content_snapshot/normalised_content.json`
+- `data/reports/master_command_queue.json`
+
+Run it locally with:
+
+```bash
+npm run content:preview-diffs
+```
+
+The engine writes only ignored local reports:
+
+- `data/reports/preview_diff_report.json`
+- `data/reports/preview_diff_report.md`
+
+The JSON output includes `generatedAt`, `disclaimer`, `previewVersion`, `sourceReportsRead`, `missingReports`, `summaryCounts`, `riskCounts`, `approvalCounts`, `previewTypeCounts`, and `previews`.
+
+Each preview includes `id`, `sourceDraftId`, `sourceQueueItemId`, `sourceReport`, `previewType`, optional `relatedUrl` or `relatedPath`, `department`, `riskLevel`, `statusStage`, `previewOnly`, `draftOnly`, `needsHumanReview`, `needsDannyApproval`, `canAutoApply`, `title`, `currentValueSummary`, `proposedValueSummary`, `previewDiffText`, `rationale`, `safetyNotes`, and optional `blockedReason`.
+
+Preview types are `meta_title_preview`, `meta_description_preview`, `internal_link_preview`, `image_alt_text_preview`, `refresh_outline_preview`, `evidence_checklist_preview`, `affiliate_cta_preview`, `blocked_research_preview`, and `research_brief_preview`. V1 previews are simulated text only and are capped at 50 previews total, with separate caps for safe previews, approval previews, and blocked/research previews.
+
+Every preview has `previewOnly: true`, `draftOnly: true`, `needsHumanReview: true`, and `canAutoApply: false`. No preview can be `approved` or `applied`. The engine does not create executable patch files, Supabase update payloads, snapshot writes, source-content edits, live-site edits, API calls, or publishing actions. Affiliate CTA previews must not include raw affiliate URLs. High-risk, affiliate, scam/fraud, trust/rating, legal/policy, and blocked previews require Danny approval. Blocked previews stay research/evidence-only, trust rating changes are never previewed as direct rating changes, and legal/policy wording is never final wording in v1.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -705,6 +736,7 @@ npm run content:research-guard
 npm run content:agents
 npm run content:master-queue
 npm run content:fix-drafts
+npm run content:preview-diffs
 npm run content:verify-rendered
 ```
 
@@ -748,6 +780,8 @@ npm run content:verify-rendered
 - `data/reports/master_command_queue.md`
 - `data/reports/fix_draft_suggestions.json`
 - `data/reports/fix_draft_suggestions.md`
+- `data/reports/preview_diff_report.json`
+- `data/reports/preview_diff_report.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
