@@ -42,6 +42,8 @@ Phase 2M adds a read-only Approval Queue v1. It turns preview diffs, draft sugge
 
 Phase 2N adds a read-only Master AI Manager Daily Brief v1. It reads the local Watchdog HQ reports and produces a plain-English executive summary of what matters today, including priorities, department manager briefs, risk notes, opportunity notes, and safe next actions. It is report-only and never approves, applies, publishes, edits live content, creates patches, creates update payloads, writes to Supabase, or calls APIs.
 
+Phase 2O adds a read-only Quality Control Manager v1. It reviews local worker-agent and manager outputs before they reach Danny or the Master AI Manager, checking safety, usefulness, evidence, brand fit, duplication, approval flags, status stages, and manager-to-manager escalation needs. It is report-only and never approves, applies, publishes, edits live content, creates patches, creates update payloads, writes to Supabase, or calls APIs.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -179,6 +181,7 @@ npm run content:fix-drafts
 npm run content:preview-diffs
 npm run content:approvals
 npm run content:daily-brief
+npm run content:qc
 npm run content:verify-rendered
 ```
 
@@ -718,6 +721,44 @@ The Markdown output includes Master AI Manager Daily Brief, Executive Summary, T
 
 The brief uses cautious language such as detected, likely, needs review, blocked pending evidence, ready for draft review, and monitor only. It does not claim anything is approved or applied. `canAutoApply` is always false, and `approvedCount` and `appliedCount` are always `0`. It never publishes, writes to Supabase, edits live site files, creates patch files, creates update payloads, exposes secrets, includes raw affiliate URLs, changes trust ratings, finalises legal/policy wording, or makes scam/fraud accusations.
 
+## Quality Control Manager
+
+Quality Control Manager v1 is read-only and report-only. It checks local worker-agent and manager outputs before they reach Danny or the Master AI Manager. It reviews whether outputs are safe, useful, evidence-based, on-brand, non-duplicative, correctly staged, correctly approval-flagged, and properly escalated.
+
+It reads whichever local reports are available:
+
+- `data/reports/fix_draft_suggestions.json`
+- `data/reports/preview_diff_report.json`
+- `data/reports/approval_queue_report.json`
+- `data/reports/master_command_queue.json`
+- `data/reports/master_daily_brief.json`
+- `data/reports/agent_registry_report.json`
+- `data/reports/research_duplicate_guard_report.json`
+- `data/reports/seo_intelligence_queue.json`
+- `data/reports/affiliate_placement_suggestions.json`
+- `data/reports/offer_tracker_report.json`
+
+Run it locally with:
+
+```bash
+npm run content:qc
+```
+
+The QC manager writes only ignored local reports:
+
+- `data/reports/quality_control_report.json`
+- `data/reports/quality_control_report.md`
+
+The JSON output includes `generatedAt`, `disclaimer`, `qcVersion`, `sourceReportsRead`, `missingReports`, `summaryCounts`, `qcStatusCounts`, `severityCounts`, `riskCounts`, `issueTypeCounts`, `managerEscalationCounts`, `safetyCounts`, `findings`, `managerEscalationSummary`, and `safetyNotes`.
+
+Each QC finding includes `sourceItemId`, `sourceReport`, `sourceTitle`, `department`, `qcStatus`, `severity`, `riskLevel`, `issueType`, `detectedStage`, `needsHumanReview`, `needsDannyApproval`, `canAutoApply`, `recommendedManagerEscalation`, optional `secondaryManagerEscalation`, `recommendedAction`, `rationale`, and `safetyNotes`.
+
+QC statuses are `qc_pass_draft_only`, `needs_revision`, `needs_cross_manager_review`, `blocked_pending_evidence`, `escalate_to_master_ai`, `escalate_to_danny`, and `monitor_only`. Issue types include evidence gaps, unsafe claims, affiliate risk, trust/rating risk, legal/policy risk, financial advice risk, duplicate/cannibalisation risk, generic or low-value drafts, prioritisation issues, approval flag issues, unsafe status stages, auto-apply issues, raw affiliate URLs, cross-manager escalation, and monitor-only items.
+
+The manager-to-manager escalation model lets managers review sideways before Danny is interrupted. For example, Content can route search intent questions to SEO, SEO can route generic metadata to QC, Affiliates can route monetisation risk to Trust & Safety, Research can route update-existing-page questions to Content, and QC can route unclear cross-department risk to the Master AI Manager. The Master AI Manager should escalate to Danny only for clean, important decisions.
+
+Hard QC rules are conservative: any `canAutoApply: true`, approved/applied status stage, or raw affiliate URL exposure becomes a high-severity finding. Scam/fraud, trust/rating, legal/policy, financial advice, affiliate-on-warning-page, duplicate/cannibalisation, generic draft, missing approval flag, and monitor-only signals are kept in review, revision, blocked, or escalation states. QC never marks anything approved or applied, never publishes, never writes to Supabase, never edits live files, never creates patch files, never creates update payloads, never changes trust ratings, never finalises legal/policy wording, and never makes scam/fraud accusations.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -806,6 +847,7 @@ npm run content:fix-drafts
 npm run content:preview-diffs
 npm run content:approvals
 npm run content:daily-brief
+npm run content:qc
 npm run content:verify-rendered
 ```
 
@@ -855,6 +897,8 @@ npm run content:verify-rendered
 - `data/reports/approval_queue_report.md`
 - `data/reports/master_daily_brief.json`
 - `data/reports/master_daily_brief.md`
+- `data/reports/quality_control_report.json`
+- `data/reports/quality_control_report.md`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
