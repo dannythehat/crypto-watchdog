@@ -21,6 +21,7 @@
     "content:confidence": "tsx scripts/summarise_audit_confidence.ts",
     "content:queue": "tsx scripts/build_priority_action_queue.ts",
     "content:metadata": "tsc --outDir dist && node dist/scripts/build_metadata_suggestions.js",
+    "content:internal-links": "tsc --outDir dist && node dist/scripts/build_internal_link_placements.js",
     "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts"
   },
   "dependencies": {
