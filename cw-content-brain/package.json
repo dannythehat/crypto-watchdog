@@ -35,6 +35,7 @@
     "content:daily-brief": "tsc --outDir dist && node dist/scripts/build_master_daily_brief.js",
     "content:qc": "tsc --outDir dist && node dist/scripts/build_quality_control_manager.js",
     "content:manager-escalations": "tsx src/manager-escalation-router.ts",
+    "content:daily-run": "tsx src/daily-run-orchestrator.ts",
     "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts"
   },
   "dependencies": {
