@@ -444,7 +444,16 @@ Every queue item is marked `draft_only: true`. Items are marked `needs_human_rev
 - `missingReports`
 - `signalCount`
 - `itemCount`
+- `actionQueueCount`
+- `blockedItemCount`
+- `monitorItemCount`
+- `statusCounts`
+- `priorityCounts`
+- `opportunityTypeCounts`
 - `items`
+- `actionQueue`
+- `blockedItems`
+- `monitorItems`
 - `status`
 - `priority`
 - `opportunityType`
@@ -455,7 +464,9 @@ Every queue item is marked `draft_only: true`. Items are marked `needs_human_rev
 - `sourceSignals`
 - `suggestedNextAction`
 
-Opportunity types include `metadata_improvement`, `internal_link_support`, `content_refresh`, `ctr_improvement`, `page_2_opportunity`, `weak_engagement`, `affiliate_review`, `offer_review`, `evidence_or_trust_review`, and `media_review`. Priorities are `critical`, `high`, `medium`, `low`, and `monitor`. Status values are `safe_draft`, `needs_human_review`, `blocked`, and `monitor`. Treat the queue as Danny's command view: things safe to draft, things to review manually, things to block, and things to monitor. It does not apply changes.
+Opportunity types include `metadata_improvement`, `internal_link_support`, `content_refresh`, `ctr_improvement`, `page_2_opportunity`, `weak_engagement`, `affiliate_review`, `offer_review`, `evidence_or_trust_review`, and `media_review`. Priorities are `critical`, `high`, `medium`, `low`, and `monitor`. Status values are `safe_draft`, `needs_human_review`, `blocked`, and `monitor`.
+
+The SEO Brain separates actionable tasks from blocked/risk-control items so Danny is not flooded with non-actionable warnings. `items` and `actionQueue` contain the main non-blocked action queue. `blockedItems` retains capped risk controls such as blocked affiliate placements. `monitorItems` retains capped monitor-only items. Treat the queue as Danny's command view: things safe to draft, things to review manually, things to block, and things to monitor. It does not apply changes.
 
 ### Rendered Verifier Troubleshooting
 

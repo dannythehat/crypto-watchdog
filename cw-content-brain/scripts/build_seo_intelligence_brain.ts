@@ -39,6 +39,16 @@ interface SeoQueueItem {
   suggestedNextAction: string;
 }
 
+interface SeoBrainOutput {
+  actionQueue: SeoQueueItem[];
+  blockedItems: SeoQueueItem[];
+  monitorItems: SeoQueueItem[];
+  allItems: SeoQueueItem[];
+  statusCounts: Record<QueueStatus, number>;
+  priorityCounts: Record<Priority, number>;
+  opportunityTypeCounts: Record<OpportunityType, number>;
+}
+
 interface PageRef {
   sourceTable?: SnapshotTableName;
   id?: string;
@@ -59,6 +69,10 @@ interface SignalDraft {
 
 const outputJson = "data/reports/seo_intelligence_queue.json";
 const outputMd = "data/reports/seo_intelligence_queue.md";
+const maxActionQueueItems = 80;
+const maxBlockedItems = 10;
+const maxMonitorItems = 30;
+const maxActionItemsPerOpportunityType = 12;
 
 const reportPaths = {
   metadata: "data/reports/metadata_suggestions.json",
@@ -92,12 +106,23 @@ export async function buildSeoIntelligenceBrain(): Promise<SeoQueueItem[]> {
     loadedReports,
     missingReports,
     signalCount: signals.length,
-    itemCount: queue.length,
-    items: queue,
+    itemCount: queue.actionQueue.length,
+    actionQueueCount: queue.actionQueue.length,
+    blockedItemCount: queue.statusCounts.blocked,
+    blockedItemsShown: queue.blockedItems.length,
+    monitorItemCount: queue.statusCounts.monitor,
+    monitorItemsShown: queue.monitorItems.length,
+    statusCounts: queue.statusCounts,
+    priorityCounts: queue.priorityCounts,
+    opportunityTypeCounts: queue.opportunityTypeCounts,
+    items: queue.actionQueue,
+    actionQueue: queue.actionQueue,
+    blockedItems: queue.blockedItems,
+    monitorItems: queue.monitorItems,
   });
   await writeText(outputMd, renderMarkdown(queue, loadedReports, missingReports));
-  logger.info("SEO intelligence queue written", { items: queue.length, signals: signals.length, outputJson, outputMd });
-  return queue;
+  logger.info("SEO intelligence queue written", { actionQueue: queue.actionQueue.length, blockedItems: queue.blockedItems.length, monitorItems: queue.monitorItems.length, signals: signals.length, outputJson, outputMd });
+  return queue.actionQueue;
 }
 
 async function collect(name: string, path: string, loaded: string[], missing: string[], consume: (report: unknown) => void): Promise<void> {
@@ -201,7 +226,7 @@ function renderedSignals(report: unknown): SignalDraft[] {
   });
 }
 
-function buildQueue(signals: SignalDraft[]): SeoQueueItem[] {
+function buildQueue(signals: SignalDraft[]): SeoBrainOutput {
   const grouped = new Map<string, SignalDraft[]>();
   for (const draft of signals) {
     const brandKey = draft.brandName ? `|brand:${draft.brandName.toLowerCase()}` : "";
@@ -209,9 +234,56 @@ function buildQueue(signals: SignalDraft[]): SeoQueueItem[] {
     grouped.set(key, [...(grouped.get(key) ?? []), draft]);
   }
 
-  return Array.from(grouped.values()).map(toQueueItem)
-    .sort((a, b) => priorityRank(a.priority) - priorityRank(b.priority) || b.sourceSignals.length - a.sourceSignals.length)
-    .slice(0, 80);
+  const allItems = Array.from(grouped.values()).map(toQueueItem)
+    .sort((a, b) => priorityRank(a.priority) - priorityRank(b.priority) || b.sourceSignals.length - a.sourceSignals.length);
+  const blocked = allItems.filter((item) => item.status === "blocked");
+  const monitor = allItems.filter((item) => item.status === "monitor");
+  const actionable = allItems.filter((item) => item.status !== "blocked" && item.status !== "monitor");
+
+  return {
+    actionQueue: balancedActionQueue(actionable),
+    blockedItems: blocked.slice(0, maxBlockedItems),
+    monitorItems: monitor.slice(0, maxMonitorItems),
+    allItems,
+    statusCounts: countBy(allItems, (item) => item.status, ["safe_draft", "needs_human_review", "blocked", "monitor"]),
+    priorityCounts: countBy(allItems, (item) => item.priority, ["critical", "high", "medium", "low", "monitor"]),
+    opportunityTypeCounts: countBy(allItems, (item) => item.opportunityType, [
+      "metadata_improvement",
+      "internal_link_support",
+      "content_refresh",
+      "ctr_improvement",
+      "page_2_opportunity",
+      "weak_engagement",
+      "affiliate_review",
+      "offer_review",
+      "evidence_or_trust_review",
+      "media_review",
+    ]),
+  };
+}
+
+function balancedActionQueue(items: SeoQueueItem[]): SeoQueueItem[] {
+  const sorted = items.sort((a, b) => priorityRank(a.priority) - priorityRank(b.priority) || b.sourceSignals.length - a.sourceSignals.length);
+  const selected: SeoQueueItem[] = [];
+  const perType = new Map<OpportunityType, number>();
+
+  for (const item of sorted) {
+    if (selected.length >= maxActionQueueItems) break;
+    const count = perType.get(item.opportunityType) ?? 0;
+    if (count >= maxActionItemsPerOpportunityType) continue;
+    selected.push(item);
+    perType.set(item.opportunityType, count + 1);
+  }
+
+  if (selected.length < maxActionQueueItems) {
+    for (const item of sorted) {
+      if (selected.length >= maxActionQueueItems) break;
+      if (selected.includes(item)) continue;
+      selected.push(item);
+    }
+  }
+
+  return selected;
 }
 
 function toQueueItem(group: SignalDraft[]): SeoQueueItem {
@@ -273,9 +345,17 @@ function confidenceFor(group: SignalDraft[], weight: number): Confidence {
 }
 
 function falsePositiveFor(group: SignalDraft[]): FalsePositiveRisk {
-  if (group.some((item) => item.sourceSignal.falsePositiveRisk === "low")) return "low";
+  if (group.some((item) => item.sourceSignal.falsePositiveRisk === "high")) return "high";
   if (group.some((item) => item.sourceSignal.falsePositiveRisk === "medium")) return "medium";
-  return "high";
+  return "low";
+}
+
+function countBy<T extends string>(items: SeoQueueItem[], pick: (item: SeoQueueItem) => T, keys: T[]): Record<T, number> {
+  const counts = Object.fromEntries(keys.map((key) => [key, 0])) as Record<T, number>;
+  for (const item of items) {
+    counts[pick(item)] += 1;
+  }
+  return counts;
 }
 
 function nextActionFor(type: OpportunityType, status: QueueStatus): string {
@@ -361,7 +441,7 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
-function renderMarkdown(items: SeoQueueItem[], loadedReports: string[], missingReports: string[]): string {
+function renderMarkdown(queue: SeoBrainOutput, loadedReports: string[], missingReports: string[]): string {
   return `# SEO Intelligence Queue
 
 Generated: ${new Date().toISOString()}
@@ -372,10 +452,21 @@ Draft-only SEO Intelligence Brain queue for human review. This report combines l
 
 - Loaded: ${loadedReports.length > 0 ? loadedReports.join(", ") : "none"}
 - Missing: ${missingReports.length > 0 ? missingReports.join(", ") : "none"}
+- Action queue items: ${queue.actionQueue.length}
+- Blocked/risk-control items shown: ${queue.blockedItems.length}
+- Monitor items: ${queue.monitorItems.length}
 
-## Queue
+## Action Queue
 
-${items.length > 0 ? items.map(renderItem).join("\n") : "No SEO intelligence queue items generated.\n"}`;
+${queue.actionQueue.length > 0 ? queue.actionQueue.map(renderItem).join("\n") : "No actionable SEO intelligence queue items generated.\n"}
+
+## Blocked / Risk Controls
+
+${queue.blockedItems.length > 0 ? queue.blockedItems.map(renderItem).join("\n") : "No blocked risk-control items generated.\n"}
+
+## Monitor
+
+${queue.monitorItems.length > 0 ? queue.monitorItems.map(renderItem).join("\n") : "No monitor-only items generated.\n"}`;
 }
 
 function renderItem(item: SeoQueueItem): string {
