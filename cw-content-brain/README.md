@@ -54,6 +54,8 @@ Phase 2S adds a read-only Dashboard Data Export Layer v1. It converts the Daily 
 
 Phase 2T adds a read-only Dashboard Contract Validator v1. It checks the local dashboard JSON files before any future dashboard UI reads them, validating required fields, safe approval/apply states, and URL safety. It is not the dashboard UI and never auto-fixes dashboard files.
 
+Phase 2U adds a read-only Watchdog HQ Department Roadmap & Agent Coverage Map v1. It maps every major department/tab, current coverage, missing capabilities, planned manager agents, planned worker agents, dashboard data coverage, and recommended build order. It is planning-only and does not create functional agents or dashboard UI.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -197,6 +199,7 @@ npm run content:daily-run
 npm run content:daily-pack
 npm run content:dashboard-export
 npm run content:dashboard-validate
+npm run content:department-roadmap
 npm run content:verify-rendered
 ```
 
@@ -942,6 +945,33 @@ Each dashboard tab also has a shape contract. For example, `overview.json` must 
 
 If any required file is missing, JSON parsing fails, a required field is absent, an unsafe approval/apply state appears, or a raw external URL appears, validation fails and the script sets a failing exit code. It still writes the validation report. The validator never modifies dashboard JSON files, never auto-fixes data, never creates UI, never publishes, never writes to Supabase, never creates patch files, and never creates update payloads.
 
+## Department Roadmap And Agent Coverage Map
+
+Watchdog HQ Department Roadmap & Agent Coverage Map v1 is read-only and planning-only. It shows what departments exist now, what is only partially covered, what is missing, and what should be built next. It does not create functional worker agents and does not create dashboard UI.
+
+Run it locally with:
+
+```bash
+npm run content:department-roadmap
+```
+
+Required inputs when present:
+
+- `data/reports/agent_registry_report.json`
+- `data/reports/daily_report_pack.json`
+- `data/reports/dashboard_contract_validation_report.json`
+
+Optional supporting inputs include the Master Command Queue, Quality Control report, Manager Escalation Router report, and local dashboard overview, agents, and command JSON files. Missing optional files are listed in the output and do not stop the report.
+
+The roadmap writes only ignored local reports:
+
+- `data/reports/department_roadmap_and_agent_coverage.json`
+- `data/reports/department_roadmap_and_agent_coverage.md`
+
+The roadmap maps Command, Content, SEO, Affiliates, Offers / Deals, Backlinks, Analytics, Research, Social, Media / Images, Video, Scam Monitoring, Trust & Safety, Moderation, Evidence / Testing, Approvals, Agents, Settings, Safe Apply Engine future-only, and Audit Log future-only departments. Each department includes current status, purpose, existing capabilities, missing capabilities, planned manager agent, planned worker agents, dashboard data coverage, approval rules, blocked actions, suggested build phase, priority, and `canAutoApply: false`.
+
+The report also includes a coverage summary, next recommended build order, human approval rules, never-allowed rules, and safety checks. It never publishes, applies, edits live files, writes to Supabase, creates patch files, creates update payloads, runs live connectors, changes approval state, or sets `canAutoApply: true`.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -1036,6 +1066,7 @@ npm run content:daily-run
 npm run content:daily-pack
 npm run content:dashboard-export
 npm run content:dashboard-validate
+npm run content:department-roadmap
 npm run content:verify-rendered
 ```
 
@@ -1097,6 +1128,8 @@ npm run content:verify-rendered
 - `data/reports/dashboard_data_export_report.md`
 - `data/reports/dashboard_contract_validation_report.json`
 - `data/reports/dashboard_contract_validation_report.md`
+- `data/reports/department_roadmap_and_agent_coverage.json`
+- `data/reports/department_roadmap_and_agent_coverage.md`
 - `data/dashboard/overview.json`
 - `data/dashboard/command.json`
 - `data/dashboard/approvals.json`
