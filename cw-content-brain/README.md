@@ -1211,7 +1211,6 @@ Future audit entries should record the source agent, department, lifecycle stage
 The immutable audit principle is that future applied entries should not be overwritten. Corrections should be appended as follow-up audit entries with their own reasons and evidence. Human decisions are required before any future rating, affiliate, legal, publishing, live-site, or Safe Apply action.
 
 This audit trail phase is local-only and report-only. It does not create a live audit database, approve anything, apply anything, publish, edit live files, insert affiliate links, create patch files, create update payloads, call APIs, or write to Supabase.
-
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
