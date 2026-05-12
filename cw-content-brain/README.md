@@ -58,7 +58,7 @@ Phase 2U adds a read-only Watchdog HQ Department Roadmap & Agent Coverage Map v1
 
 Phase 2V adds a local-only Watchdog HQ Dashboard Shell v1. It reads ignored dashboard JSON files from `data/dashboard/` and generates a static local HTML viewer at `data/local-dashboard/index.html`. It is not the live CryptoWatchdog website and does not touch the Lovable app, Supabase, or live website files.
 
-Phase 2W adds a local-only Dashboard Launcher / Preview Runner + Smoke Test v1. It prints the local dashboard HTML path and `file://` URL for Danny, and adds a smoke test that checks the generated shell still shows the required read-only safety markers and no unsafe apply/publish/Supabase wording.
+Phase 2W adds a local-only Dashboard Launcher / Preview Runner + Smoke Test v1. It prints the local dashboard HTML path and ile:// URL for Danny, and adds a smoke test that checks the generated shell still shows the required read-only safety markers and no unsafe apply/publish/Supabase wording.
 
 ## Goals
 
