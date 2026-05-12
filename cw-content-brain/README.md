@@ -58,6 +58,8 @@ Phase 2U adds a read-only Watchdog HQ Department Roadmap & Agent Coverage Map v1
 
 Phase 2V adds a local-only Watchdog HQ Dashboard Shell v1. It reads ignored dashboard JSON files from `data/dashboard/` and generates a static local HTML viewer at `data/local-dashboard/index.html`. It is not the live CryptoWatchdog website and does not touch the Lovable app, Supabase, or live website files.
 
+Phase 2W adds a local-only Dashboard Launcher / Preview Runner + Smoke Test v1. It prints the local dashboard HTML path and `file://` URL for Danny, and adds a smoke test that checks the generated shell still shows the required read-only safety markers and no unsafe apply/publish/Supabase wording.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -204,6 +206,8 @@ npm run content:dashboard-validate
 npm run content:department-roadmap
 npm run dashboard:build
 npm run dashboard:validate
+npm run dashboard:smoke
+npm run dashboard:open
 npm run content:verify-rendered
 ```
 
@@ -1014,6 +1018,37 @@ The validator checks that all nine dashboard JSON inputs exist, the generated HT
 
 The local dashboard shell is view-only. It never writes to Supabase, never publishes, never edits live content, never inserts affiliate URLs, never creates patch files, never creates update payloads, and never creates an approval/apply workflow.
 
+## Dashboard Launcher And Smoke Test
+
+Dashboard Launcher / Preview Runner + Smoke Test v1 is local-only tooling for the generated Watchdog HQ dashboard shell. It does not start a server and does not touch the live CryptoWatchdog website.
+
+Build and validate the local dashboard first:
+
+```bash
+npm run dashboard:build
+npm run dashboard:validate
+```
+
+Run the smoke test with:
+
+```bash
+npm run dashboard:smoke
+```
+
+Open/preview the dashboard path with:
+
+```bash
+npm run dashboard:open
+```
+
+The launcher checks that the generated dashboard exists, then prints the absolute local HTML path and a `file://` URL Danny can paste into a browser. The generated dashboard remains:
+
+- `data/local-dashboard/index.html`
+
+The smoke test reads the generated HTML and confirms it contains `READ_ONLY_REPORT_ONLY`, `canAutoApply false`, `approvedCount 0`, `appliedCount 0`, and the Overview, Command, Approvals, Agents, Content, SEO, Affiliates, Research, and Analytics sections. It fails if unsafe markers appear, including `canAutoApply true`, `apply live`, unsafe Supabase-write wording, `publish now`, non-zero approval/application counts, service-role wording, or API-key wording.
+
+The launcher and smoke test are view-only/local-only. They never write outside `cw-content-brain`, never write to Supabase, never publish, never edit live content, never insert affiliate URLs, never create patch files, never create update payloads, and never create an approval/apply workflow.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -1111,6 +1146,8 @@ npm run content:dashboard-validate
 npm run content:department-roadmap
 npm run dashboard:build
 npm run dashboard:validate
+npm run dashboard:smoke
+npm run dashboard:open
 npm run content:verify-rendered
 ```
 
