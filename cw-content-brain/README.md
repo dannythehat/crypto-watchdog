@@ -66,6 +66,8 @@ Source Watchlist v1 adds a read-only local planning/report layer for future Watc
 
 Agent Output Contract v1 adds a read-only local contract for every future Watchdog HQ agent output. It defines the mandatory lifecycle, required fields, confidence rules, evidence rules, escalation rules, manager review rules, and blocked actions. In v1, agents may only output detected, suspected, verified, or recommended stages; approved and applied remain blocked.
 
+Department Inbox / Task Router v1 adds a read-only local routing model for future Watchdog HQ agent outputs. It defines department manager inboxes, routing rules, escalation rules, and manager decision options so small tasks go to managers first while Quality Control, Master AI Manager, and Danny see only escalated or sensitive items.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -212,6 +214,8 @@ npm run content:dashboard-validate
 npm run content:department-roadmap
 npm run content:agent-output-contract
 npm run content:agent-output-contract-validate
+npm run content:department-router
+npm run content:department-router-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1142,6 +1146,34 @@ In v1, future agents may only produce `detected`, `suspected`, `verified`, or `r
 Every future agent output should include fields such as `outputId`, `agentId`, `department`, `manager`, `sourceReference`, `lifecycleStage`, `findingType`, `detectedSignal`, `suspectedIssue`, `verifiedEvidence`, `recommendation`, `confidenceLevel`, `evidenceStrength`, `evidenceGaps`, `riskLevel`, `requiresHumanApproval`, `recommendedReviewer`, `blockedActions`, `allowedActionsNow`, `nextStep`, and `status`.
 
 The validator checks `READ_ONLY_REPORT_ONLY`, `canAutoApply: false`, zero approval/application counts, allowed/blocked stages, required output fields, safe valid examples, unsafe invalid examples, and unsafe marker absence. It fails if approved/applied stages appear where v1 output is allowed.
+## Department Inbox / Task Router
+
+Department Inbox / Task Router v1 is a local read-only/report-only routing layer for future Watchdog HQ agent outputs. It does not execute tasks, publish, apply, edit live files, write to Supabase, insert affiliate links, crawl/fetch live sources, make scam/fraud accusations, change trust ratings, or create a live approval/apply workflow.
+
+Build the local router report with:
+
+```bash
+npm run content:department-router
+```
+
+Validate the generated router report with:
+
+```bash
+npm run content:department-router-validate
+```
+
+The builder writes ignored local reports:
+
+- `data/reports/department_task_router_report.json`
+- `data/reports/department_task_router_report.md`
+
+The router defines department inboxes for Master AI Manager, Quality Control Manager, Content, SEO, Affiliates, Research, Analytics, Trust & Safety, Evidence / Testing, Media / Images, Video, Social, Backlinks, Offers / Deals, Safe Apply Engine future-only, and Danny Approval key-decisions-only. Every inbox has `canApprove: false` and `canApply: false`.
+
+Routing rules map future finding types such as `page_thinness`, `missing_internal_links`, `stale_review`, `unsupported_claim`, `scam_or_fraud_signal`, `regulator_notice`, `blockchain_evidence_signal`, `affiliate_disclosure_missing`, `analytics_drop`, `keyword_opportunity`, `duplicate_content_risk`, and `safe_apply_candidate` to the correct manager inboxes.
+
+Managers may request more evidence, route to another manager, mark duplicate, mark monitor-only, request revision, escalate to QC, escalate to Master AI, recommend Danny review, or block due to risk. Managers may not publish, apply, write to Supabase, change ratings, add affiliate links, make scam/fraud accusations, finalise legal wording, approve final action, or execute safe apply.
+
+All routed items preserve the lifecycle: Detected -> Suspected -> Verified -> Recommended -> Approved -> Applied. In v1, routed stages may only be `detected`, `suspected`, `verified`, or `recommended`; `approved` and `applied` are blocked.
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -1239,6 +1271,8 @@ npm run content:dashboard-validate
 npm run content:department-roadmap
 npm run content:agent-output-contract
 npm run content:agent-output-contract-validate
+npm run content:department-router
+npm run content:department-router-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1311,6 +1345,8 @@ npm run content:verify-rendered
 - `data/reports/department_roadmap_and_agent_coverage.md`
 - `data/reports/agent_output_contract_report.json`
 - `data/reports/agent_output_contract_report.md`
+- `data/reports/department_task_router_report.json`
+- `data/reports/department_task_router_report.md`
 - `data/reports/source_watchlist_report.json`
 - `data/reports/source_watchlist_report.md`
 - `data/dashboard/overview.json`
