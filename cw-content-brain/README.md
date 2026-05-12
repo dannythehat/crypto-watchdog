@@ -64,6 +64,8 @@ Phase 2X adds a local-only Dashboard UI Contract Guard v1. It validates the gene
 
 Source Watchlist v1 adds a read-only local planning/report layer for future Watchdog HQ source monitoring. It defines source categories, evidence value, risk, future manager routing, safety rules, escalation rules, and human approval requirements, but it does not crawl, fetch, scrape, monitor, publish, apply, edit live files, or write to Supabase.
 
+Agent Output Contract v1 adds a read-only local contract for every future Watchdog HQ agent output. It defines the mandatory lifecycle, required fields, confidence rules, evidence rules, escalation rules, manager review rules, and blocked actions. In v1, agents may only output detected, suspected, verified, or recommended stages; approved and applied remain blocked.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -208,6 +210,8 @@ npm run content:daily-pack
 npm run content:dashboard-export
 npm run content:dashboard-validate
 npm run content:department-roadmap
+npm run content:agent-output-contract
+npm run content:agent-output-contract-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1108,6 +1112,36 @@ The report defines source categories for official company sources, regulator/enf
 Future signals must follow the lifecycle: Detected -> Suspected -> Verified -> Recommended -> Approved -> Applied. Source Watchlist v1 can only define possible signals, suspected issues, verified evidence requirements, and recommended routing. It creates no approved or applied actions.
 
 Human approval is required before any future live monitoring connector and before any rating, content, affiliate, legal, publishing, or live-site action. The validator checks `READ_ONLY_REPORT_ONLY`, `canAutoApply: false`, zero approval/application counts, no live monitoring/fetching state, blocked actions, and unsafe marker absence.
+## Agent Output Contract
+
+Agent Output Contract v1 is a local read-only/report-only structure that defines the mandatory output format every future Watchdog HQ agent must use. It is foundational contract work only; it does not execute agents, publish, apply, edit live files, write to Supabase, insert affiliate links, crawl/fetch live sources, call APIs, make scam/fraud accusations, change trust ratings, or create an approval/apply workflow.
+
+Build the local contract report with:
+
+```bash
+npm run content:agent-output-contract
+```
+
+Validate the generated contract with:
+
+```bash
+npm run content:agent-output-contract-validate
+```
+
+The builder writes ignored local reports:
+
+- `data/reports/agent_output_contract_report.json`
+- `data/reports/agent_output_contract_report.md`
+
+The required lifecycle is:
+
+Detected -> Suspected -> Verified -> Recommended -> Approved -> Applied
+
+In v1, future agents may only produce `detected`, `suspected`, `verified`, or `recommended`. The `approved` and `applied` stages are blocked because approval is reserved for a future human approval workflow and application is reserved for a future Safe Apply Engine.
+
+Every future agent output should include fields such as `outputId`, `agentId`, `department`, `manager`, `sourceReference`, `lifecycleStage`, `findingType`, `detectedSignal`, `suspectedIssue`, `verifiedEvidence`, `recommendation`, `confidenceLevel`, `evidenceStrength`, `evidenceGaps`, `riskLevel`, `requiresHumanApproval`, `recommendedReviewer`, `blockedActions`, `allowedActionsNow`, `nextStep`, and `status`.
+
+The validator checks `READ_ONLY_REPORT_ONLY`, `canAutoApply: false`, zero approval/application counts, allowed/blocked stages, required output fields, safe valid examples, unsafe invalid examples, and unsafe marker absence. It fails if approved/applied stages appear where v1 output is allowed.
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -1203,6 +1237,8 @@ npm run content:daily-pack
 npm run content:dashboard-export
 npm run content:dashboard-validate
 npm run content:department-roadmap
+npm run content:agent-output-contract
+npm run content:agent-output-contract-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1273,6 +1309,8 @@ npm run content:verify-rendered
 - `data/reports/dashboard_contract_validation_report.md`
 - `data/reports/department_roadmap_and_agent_coverage.json`
 - `data/reports/department_roadmap_and_agent_coverage.md`
+- `data/reports/agent_output_contract_report.json`
+- `data/reports/agent_output_contract_report.md`
 - `data/reports/source_watchlist_report.json`
 - `data/reports/source_watchlist_report.md`
 - `data/dashboard/overview.json`

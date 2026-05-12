@@ -40,6 +40,8 @@
     "content:dashboard-export": "tsx src/dashboard-data-exporter.ts",
     "content:dashboard-validate": "tsx src/dashboard-contract-validator.ts",
     "content:department-roadmap": "tsx src/department-roadmap-builder.ts",
+    "content:agent-output-contract": "tsc --outDir dist && node dist/src/agent-output-contract-builder.js",
+    "content:agent-output-contract-validate": "tsc --outDir dist && node dist/src/agent-output-contract-validator.js",
     "content:source-watchlist": "tsc --outDir dist && node dist/src/source-watchlist-builder.js",
     "content:source-watchlist-validate": "tsc --outDir dist && node dist/src/source-watchlist-validator.js",
     "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts",
