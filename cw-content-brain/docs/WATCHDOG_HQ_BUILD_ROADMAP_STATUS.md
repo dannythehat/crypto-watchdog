@@ -4,7 +4,7 @@ This roadmap status file pairs with `docs/WATCHDOG_HQ_MASTER_BLUEPRINT.md`. Futu
 
 ## Status Summary
 
-The Watchdog HQ base structure through the Master Blueprint Lock is built/merged in summary form. Build #50 is the current Content Operations Command Centre build. Build #51 onward is planned and must follow the Master Blueprint Lock unless Danny changes the roadmap.
+The Watchdog HQ base structure through the Content Operations Command Centre is built/merged in summary form. Build #51 is the current Content QA & Brand Voice Manager build. Build #52 onward is planned and must follow the Master Blueprint Lock unless Danny changes the roadmap.
 
 | Build number | Build name | Status | Purpose | Main files/scripts | Safety notes | Date/PR placeholder |
 |---|---|---|---|---|---|---|
@@ -46,8 +46,8 @@ The Watchdog HQ base structure through the Master Blueprint Lock is built/merged
 | Agent Capability Registry v2 | Workforce capability map | built/merged | Map agents, departments, endpoints, maturity. | `content:agent-capabilities` | No AI/API calls. | PR #47 |
 | QC Department v2 | Gatekeeper Grace expansion | built/merged | Define major QC checks before Danny. | `content:qc-v2` | Blocks unsafe recommendations. | PR #48 |
 | Build #49 | Watchdog HQ Master Blueprint Lock v1 | built/merged | Lock canonical vision, safety rules, and roadmap. | `docs/WATCHDOG_HQ_MASTER_BLUEPRINT.md`, `docs/WATCHDOG_HQ_BUILD_ROADMAP_STATUS.md`, `content:blueprint-lock-validate` | Documentation + validation only. | PR #49 |
-| Build #50 | Content Operations Command Centre v1 | built | Create content operations planning command centre. | `content:ops-command`, `content:ops-command-validate`, `src/content-operations-command-centre-builder.ts`, `src/content-operations-command-centre-validator.ts` | READ_ONLY_REPORT_ONLY; no live edits, publishing, Supabase writes, API calls, media generation, or apply workflow. | This build |
-| Build #51 | Content QA & Brand Voice Manager v1 | planned | Add tone, structure, formatting, and brand voice QA. | TBD | No live edits or publishing. | Planned |
+| Build #50 | Content Operations Command Centre v1 | built/merged | Create content operations planning command centre. | `content:ops-command`, `content:ops-command-validate`, `src/content-operations-command-centre-builder.ts`, `src/content-operations-command-centre-validator.ts` | READ_ONLY_REPORT_ONLY; no live edits, publishing, Supabase writes, API calls, media generation, or apply workflow. | PR #50 |
+| Build #51 | Content QA & Brand Voice Manager v1 | built | Add tone, structure, formatting, and brand voice QA. | `content:qa-brand`, `content:qa-brand-validate`, `src/content-qa-brand-voice-manager-builder.ts`, `src/content-qa-brand-voice-manager-validator.ts` | READ_ONLY_REPORT_ONLY; no live edits, publishing, Supabase writes, affiliate insertion, API calls, media generation, trust rating changes, or final legal/policy wording. | This build |
 | Build #52 | Content Distribution & Update Planner v1 | planned | Plan related page updates after new content. | TBD | Planning only. | Planned |
 | Build #53 | Review Evidence Intake Contract v1 | planned | Define Danny evidence intake format for reviews. | TBD | Evidence placeholders allowed; fake claims blocked. | Planned |
 | Build #54 | Review Article Assembly Contract v1 | planned | Define how evidence becomes review draft structure. | TBD | No final claims without evidence. | Planned |
