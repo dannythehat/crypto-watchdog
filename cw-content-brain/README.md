@@ -76,6 +76,8 @@ Page Quality Profiler Agent v1 adds a read-only local page-quality triage layer.
 
 Page Blueprint Agent v1 adds a read-only local structure-planning layer. It reads Page Quality Profiler outputs and translates page weaknesses into recommended page blueprints, required sections, evidence requirements, media requirements, internal-linking requirements, disclosure requirements, and risk/compliance notes. It produces reports only and never edits live content, publishes, writes to Supabase, changes trust ratings, inserts affiliate links, or runs live crawling/fetching.
 
+Content Cluster / Related Sections Agent v1 adds a read-only local relationship-planning layer. It reads Page Quality Profiler and Page Blueprint Agent reports, optionally uses the local normalised content snapshot, and recommends related review, guide, warning, promo/news, comparison, card, mobile stacking, and natural internal-link section needs. It produces reports only and never edits live content, publishes, writes to Supabase, changes trust ratings, inserts affiliate links, or runs live crawling/fetching.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -232,6 +234,8 @@ npm run content:page-quality
 npm run content:page-quality-validate
 npm run content:page-blueprints
 npm run content:page-blueprints-validate
+npm run content:clusters
+npm run content:clusters-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1325,6 +1329,41 @@ Allowed lifecycle states are limited to `detected`, `suspected`, `verified`, `re
 
 This agent is local-only and report-only. It never writes to Supabase, publishes, edits live content, inserts affiliate URLs, creates approval/apply workflow, changes trust ratings, makes scam/fraud accusations, runs live crawling/fetching, creates patch files, or creates update payloads.
 
+## Content Cluster / Related Sections Agent
+
+Content Cluster / Related Sections Agent v1 is a local read-only/report-only agent that reads Page Quality Profiler and Page Blueprint Agent reports, then recommends the related content sections each page should eventually have. It plans structure only; it does not write live copy, insert links, or inspect the live website.
+
+Build the local report with:
+
+```bash
+npm run content:clusters
+```
+
+Validate the generated report with:
+
+```bash
+npm run content:clusters-validate
+```
+
+Inputs:
+
+- `data/reports/page_quality_profiler_report.json`
+- `data/reports/page_blueprint_agent_report.json`
+- `data/content_snapshot/normalised_content.json` when available
+
+The builder writes ignored local reports:
+
+- `data/reports/content_cluster_agent_report.json`
+- `data/reports/content_cluster_agent_report.md`
+
+Cluster types are `review_related_cluster`, `category_hub_cluster`, `guide_support_cluster`, `warning_safety_cluster`, `comparison_cluster`, and `full_rebuild_cluster`. Each recommendation includes related review needs, guide needs, warning needs, promo/news needs, comparison needs, internal-linking needs, sidebar/card needs, mobile stacking notes, anchor text guidance, relationship gaps, next owner, and a non-apply lifecycle state.
+
+Related review cards are recommended for reviews, category hubs, comparisons, and full rebuild pages where relevant. Warning/scam-risk pages use careful language and safer-alternative planning only where appropriate. Affiliate/promotional sections are disclosure-review only and do not include affiliate URLs. Internal links should be natural, useful, and not keyword-stuffed.
+
+Allowed lifecycle states are limited to `detected`, `suspected`, `verified`, `recommended`, `blocked`, `monitor_only`, `needs_more_evidence`, `escalated_to_qc`, `escalated_to_master_ai`, and `recommended_for_danny_review`. The `approved` and `applied` states are blocked.
+
+This agent is local-only and report-only. It never writes to Supabase, publishes, edits live content, inserts affiliate URLs, creates approval/apply workflow, changes trust ratings, makes scam/fraud accusations, runs live crawling/fetching, creates patch files, or creates update payloads.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -1432,6 +1471,8 @@ npm run content:page-quality
 npm run content:page-quality-validate
 npm run content:page-blueprints
 npm run content:page-blueprints-validate
+npm run content:clusters
+npm run content:clusters-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1514,6 +1555,8 @@ npm run content:verify-rendered
 - `data/reports/page_quality_profiler_report.md`
 - `data/reports/page_blueprint_agent_report.json`
 - `data/reports/page_blueprint_agent_report.md`
+- `data/reports/content_cluster_agent_report.json`
+- `data/reports/content_cluster_agent_report.md`
 - `data/reports/source_watchlist_report.json`
 - `data/reports/source_watchlist_report.md`
 - `data/dashboard/overview.json`
