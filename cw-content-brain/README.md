@@ -68,6 +68,8 @@ Agent Output Contract v1 adds a read-only local contract for every future Watchd
 
 Department Inbox / Task Router v1 adds a read-only local routing model for future Watchdog HQ agent outputs. It defines department manager inboxes, routing rules, escalation rules, and manager decision options so small tasks go to managers first while Quality Control, Master AI Manager, and Danny see only escalated or sensitive items.
 
+Human Decision Log / Audit Trail v1 adds a read-only local audit model for future Watchdog HQ governance. It defines how future agent detections, manager reviews, QC blocks, Master AI recommendations, and Danny decisions should be recorded before any future Safe Apply Engine exists. It is planning/report-only and does not approve, apply, publish, edit live files, create a live audit database, or write to Supabase.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -216,6 +218,8 @@ npm run content:agent-output-contract
 npm run content:agent-output-contract-validate
 npm run content:department-router
 npm run content:department-router-validate
+npm run content:decision-log
+npm run content:decision-log-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1174,6 +1178,40 @@ Routing rules map future finding types such as `page_thinness`, `missing_interna
 Managers may request more evidence, route to another manager, mark duplicate, mark monitor-only, request revision, escalate to QC, escalate to Master AI, recommend Danny review, or block due to risk. Managers may not publish, apply, write to Supabase, change ratings, add affiliate links, make scam/fraud accusations, finalise legal wording, approve final action, or execute safe apply.
 
 All routed items preserve the lifecycle: Detected -> Suspected -> Verified -> Recommended -> Approved -> Applied. In v1, routed stages may only be `detected`, `suspected`, `verified`, or `recommended`; `approved` and `applied` are blocked.
+
+## Human Decision Log / Audit Trail
+
+Human Decision Log / Audit Trail v1 is a local read-only/report-only governance model for future Watchdog HQ decisions. It defines the future audit entry schema for agent outputs, department manager reviews, Quality Control decisions, Master AI Manager recommendations, and future Danny decision records.
+
+Build the local audit model report with:
+
+```bash
+npm run content:decision-log
+```
+
+Validate the generated report with:
+
+```bash
+npm run content:decision-log-validate
+```
+
+The builder writes ignored local reports:
+
+- `data/reports/human_decision_log_report.json`
+- `data/reports/human_decision_log_report.md`
+
+The decision lifecycle remains:
+
+Detected -> Suspected -> Verified -> Recommended -> Approved -> Applied
+
+In v1, audit stages may only document `detected`, `suspected`, `verified`, `recommended`, `blocked`, `monitor_only`, `needs_more_evidence`, `escalated_to_qc`, `escalated_to_master_ai`, or `recommended_for_danny_review`. The `approved` and `applied` stages are documented as future states only and are blocked in v1.
+
+Future audit entries should record the source agent, department, lifecycle stage, finding type, evidence reference, confidence, routed manager, manager decision reason, QC decision reason, Master AI recommendation, future Danny decision reason, approval status, apply status, blocked actions, allowed actions, next step, and immutable note. Future Danny decision records are placeholders only in v1.
+
+The immutable audit principle is that future applied entries should not be overwritten. Corrections should be appended as follow-up audit entries with their own reasons and evidence. Human decisions are required before any future rating, affiliate, legal, publishing, live-site, or Safe Apply action.
+
+This audit trail phase is local-only and report-only. It does not create a live audit database, approve anything, apply anything, publish, edit live files, insert affiliate links, create patch files, create update payloads, call APIs, or write to Supabase.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -1273,6 +1311,8 @@ npm run content:agent-output-contract
 npm run content:agent-output-contract-validate
 npm run content:department-router
 npm run content:department-router-validate
+npm run content:decision-log
+npm run content:decision-log-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1347,6 +1387,8 @@ npm run content:verify-rendered
 - `data/reports/agent_output_contract_report.md`
 - `data/reports/department_task_router_report.json`
 - `data/reports/department_task_router_report.md`
+- `data/reports/human_decision_log_report.json`
+- `data/reports/human_decision_log_report.md`
 - `data/reports/source_watchlist_report.json`
 - `data/reports/source_watchlist_report.md`
 - `data/dashboard/overview.json`

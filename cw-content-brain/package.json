@@ -44,6 +44,8 @@
     "content:agent-output-contract-validate": "tsc --outDir dist && node dist/src/agent-output-contract-validator.js",
     "content:department-router": "tsc --outDir dist && node dist/src/department-task-router-builder.js",
     "content:department-router-validate": "tsc --outDir dist && node dist/src/department-task-router-validator.js",
+    "content:decision-log": "tsc --outDir dist && node dist/src/human-decision-log-builder.js",
+    "content:decision-log-validate": "tsc --outDir dist && node dist/src/human-decision-log-validator.js",
     "content:source-watchlist": "tsc --outDir dist && node dist/src/source-watchlist-builder.js",
     "content:source-watchlist-validate": "tsc --outDir dist && node dist/src/source-watchlist-validator.js",
     "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts",
