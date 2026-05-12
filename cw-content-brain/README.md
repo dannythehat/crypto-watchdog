@@ -70,6 +70,8 @@ Department Inbox / Task Router v1 adds a read-only local routing model for futur
 
 Human Decision Log / Audit Trail v1 adds a read-only local audit model for future Watchdog HQ governance. It defines how future agent detections, manager reviews, QC blocks, Master AI recommendations, and Danny decisions should be recorded before any future Safe Apply Engine exists. It is planning/report-only and does not approve, apply, publish, edit live files, create a live audit database, or write to Supabase.
 
+Base HQ Runbook v1 adds the local operating manual for the completed Watchdog HQ base structure. It documents the daily/reporting flow, dashboard flow, agent lifecycle, department routing, QC review, Master AI Manager filtering, Danny decision boundaries, audit trail, content blueprint principles, future connector rules, future worker agent rules, and future Safe Apply rules. It is planning/report-only and does not execute, approve, apply, publish, edit live files, create connectors, or write to Supabase.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -220,6 +222,8 @@ npm run content:department-router
 npm run content:department-router-validate
 npm run content:decision-log
 npm run content:decision-log-validate
+npm run content:base-runbook
+npm run content:base-runbook-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1212,6 +1216,45 @@ The immutable audit principle is that future applied entries should not be overw
 
 This audit trail phase is local-only and report-only. It does not create a live audit database, approve anything, apply anything, publish, edit live files, insert affiliate links, create patch files, create update payloads, call APIs, or write to Supabase.
 
+## Base HQ Runbook
+
+Base HQ Runbook v1 is the local read-only/report-only operating manual for the completed Watchdog HQ base structure. It is the final base-structure planning layer before real worker agents, live connectors, approval systems, or any future Safe Apply Engine.
+
+Build the local runbook report with:
+
+```bash
+npm run content:base-runbook
+```
+
+Validate the generated report with:
+
+```bash
+npm run content:base-runbook-validate
+```
+
+The builder writes ignored local reports:
+
+- `data/reports/base_hq_runbook_report.json`
+- `data/reports/base_hq_runbook_report.md`
+
+The runbook covers the completed base structure, daily local reporting flow, dashboard flow, source watchlist boundaries, agent output lifecycle, department routing, manager decisions, QC review, Master AI Manager filtering, Danny decision boundaries, human decision log/audit trail, blocked actions, future connector rules, future worker agent rules, future media/video rules, future affiliate rules, future content blueprint rules, and future Safe Apply rules.
+
+The locked lifecycle remains:
+
+Detected -> Suspected -> Verified -> Recommended -> Approved -> Applied
+
+In the current base, allowed states include `detected`, `suspected`, `verified`, `recommended`, `blocked`, `monitor_only`, `needs_more_evidence`, `escalated_to_qc`, `escalated_to_master_ai`, and `recommended_for_danny_review`. The `approved` and `applied` states are blocked.
+
+The runbook locks the content direction: CryptoWatchdog is evidence-led and opinion-led, not a generic AI content mill. Evidence comes first, opinion second, AI drafting third, SEO/media polish fourth, and human approval before anything important goes live. Pages should have a purpose, avoid random fluff, avoid unsupported claims, and use content-type evidence rules for reviews, updates, offers, guides, and warnings.
+
+Future worker agents must use the Agent Output Contract, route through the Department Router, create audit entries, preserve lifecycle stage, state evidence gaps, avoid overclaiming, and escalate sensitive findings. They cannot approve/apply, publish, write to Supabase, change ratings, add affiliate links, or make unsupported scam/fraud/legal claims.
+
+Future connectors must start read-only and local/export-only, with no committed secrets, no writes, no publishing, no Supabase writes unless explicitly approved later, no user data collection unless clearly approved, no live monitoring without human approval, and a validator.
+
+Future Safe Apply Engine work is future-only. It must require preview, diff, human approval, rollback plan, audit entry, restricted permissions, no auto-apply by default, and explicit Danny approval for rating changes, scam/fraud/legal wording, or affiliate insertion.
+
+This runbook phase is local-only and report-only. It does not execute tasks, create a live routing system, create an approval system, create applied states, write to Supabase, publish, edit live files, create a live audit database, change live connectors, create patch files, or create update payloads.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -1313,6 +1356,8 @@ npm run content:department-router
 npm run content:department-router-validate
 npm run content:decision-log
 npm run content:decision-log-validate
+npm run content:base-runbook
+npm run content:base-runbook-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1389,6 +1434,8 @@ npm run content:verify-rendered
 - `data/reports/department_task_router_report.md`
 - `data/reports/human_decision_log_report.json`
 - `data/reports/human_decision_log_report.md`
+- `data/reports/base_hq_runbook_report.json`
+- `data/reports/base_hq_runbook_report.md`
 - `data/reports/source_watchlist_report.json`
 - `data/reports/source_watchlist_report.md`
 - `data/dashboard/overview.json`
