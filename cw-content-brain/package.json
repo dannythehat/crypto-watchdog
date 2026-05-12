@@ -34,6 +34,8 @@
     "content:approvals": "tsc --outDir dist && node dist/scripts/build_approval_queue.js",
     "content:daily-brief": "tsc --outDir dist && node dist/scripts/build_master_daily_brief.js",
     "content:qc": "tsc --outDir dist && node dist/scripts/build_quality_control_manager.js",
+    "content:qc-v2": "tsc --outDir dist && node dist/src/qc-department-v2-builder.js",
+    "content:qc-v2-validate": "tsc --outDir dist && node dist/src/qc-department-v2-validator.js",
     "content:manager-escalations": "tsx src/manager-escalation-router.ts",
     "content:daily-run": "tsx src/daily-run-orchestrator.ts",
     "content:daily-pack": "tsx src/daily-report-pack-builder.ts",

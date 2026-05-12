@@ -82,6 +82,8 @@ Media + Video Brief Agent v1 adds a read-only local media-planning layer. It rea
 
 Agent Capability Registry v2 adds a read-only local workforce capability map. It defines Watchdog HQ departments, managers, worker agents, capability endpoints, allowed inputs and outputs, blocked actions, escalation routes, lifecycle limits, maturity status, and future implementation priority. It is a planning/reporting registry only and does not call AI APIs, call external APIs, crawl live sources, publish, apply, edit live content, or write to Supabase.
 
+QC Department v2 / Gatekeeper Grace Expansion v1 adds a read-only local quality-control contract for checking major agent outputs before they reach Danny. It defines Gatekeeper Grace's safety, unsupported-claim, affiliate-disclosure, trust-rating, scam-wording, human-approval, and unsafe-recommendation blocking endpoints. It is report-only and never approves, applies, publishes, edits live content, calls APIs, or writes to Supabase.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -220,6 +222,8 @@ npm run content:preview-diffs
 npm run content:approvals
 npm run content:daily-brief
 npm run content:qc
+npm run content:qc-v2
+npm run content:qc-v2-validate
 npm run content:manager-escalations
 npm run content:daily-run
 npm run content:daily-pack
@@ -1174,6 +1178,42 @@ In v1, future agents may only produce `detected`, `suspected`, `verified`, or `r
 Every future agent output should include fields such as `outputId`, `agentId`, `department`, `manager`, `sourceReference`, `lifecycleStage`, `findingType`, `detectedSignal`, `suspectedIssue`, `verifiedEvidence`, `recommendation`, `confidenceLevel`, `evidenceStrength`, `evidenceGaps`, `riskLevel`, `requiresHumanApproval`, `recommendedReviewer`, `blockedActions`, `allowedActionsNow`, `nextStep`, and `status`.
 
 The validator checks `READ_ONLY_REPORT_ONLY`, `canAutoApply: false`, zero approval/application counts, allowed/blocked stages, required output fields, safe valid examples, unsafe invalid examples, and unsafe marker absence. It fails if approved/applied stages appear where v1 output is allowed.
+## QC Department v2 / Gatekeeper Grace
+
+QC Department v2 / Gatekeeper Grace Expansion v1 is a local read-only/report-only contract for checking major agent outputs before they reach Danny or the Master AI Manager. It expands Gatekeeper Grace from a basic validator concept into a department-level safety gate.
+
+Build the local QC v2 report with:
+
+```bash
+npm run content:qc-v2
+```
+
+Validate the generated report with:
+
+```bash
+npm run content:qc-v2-validate
+```
+
+The builder writes ignored local reports:
+
+- `data/reports/qc_department_v2_report.json`
+- `data/reports/qc_department_v2_report.md`
+
+Gatekeeper Grace checks:
+
+- `qc.check_safety_boundaries`: blocks unsafe action leakage such as Supabase writes, publishing, live edits, approval/apply workflow, affiliate URL insertion, secrets/API keys, live crawling/fetching, AI/API calls, generated output commits, scam/fraud accusation risk, and trust rating change risk.
+- `qc.check_unsupported_claims`: flags scam/fraud allegations, safety claims, "tested by us" claims, user count claims, guarantee claims, ranking/best claims, fee claims, partnership claims, and trust rating claims that need evidence.
+- `qc.check_affiliate_disclosure`: checks affiliate/commercial disclosure needs and undisclosed affiliate-placement risk.
+- `qc.check_rating_change_risk`: blocks Green/Orange/Red trust rating change risk unless human review happens later.
+- `qc.check_scam_wording_risk`: prevents overstatement where evidence is only detected, suspected, or incomplete.
+- `qc.check_human_approval_needed`: classifies items that need Danny review.
+- `qc.block_unsafe_recommendation`: blocks unsafe recommendations and routes them to non-apply lifecycle states.
+
+QC v2 may route items to `blocked`, `needs_more_evidence`, `escalated_to_qc`, `escalated_to_master_ai`, or `recommended_for_danny_review`. It cannot approve or apply anything.
+
+Allowed states are limited to `detected`, `suspected`, `verified`, `recommended`, `blocked`, `monitor_only`, `needs_more_evidence`, `escalated_to_qc`, `escalated_to_master_ai`, and `recommended_for_danny_review`. The `approved` and `applied` states are blocked.
+
+This QC layer is local-only and report-only. It never writes to Supabase, publishes, edits live content, inserts affiliate URLs, creates approval/apply workflow, calls AI/APIs, runs live crawling/fetching, changes trust ratings, makes unsupported scam/fraud accusations, creates patch files, or creates update payloads.
 ## Department Inbox / Task Router
 
 Department Inbox / Task Router v1 is a local read-only/report-only routing layer for future Watchdog HQ agent outputs. It does not execute tasks, publish, apply, edit live files, write to Supabase, insert affiliate links, crawl/fetch live sources, make scam/fraud accusations, change trust ratings, or create a live approval/apply workflow.
@@ -1532,6 +1572,8 @@ npm run content:preview-diffs
 npm run content:approvals
 npm run content:daily-brief
 npm run content:qc
+npm run content:qc-v2
+npm run content:qc-v2-validate
 npm run content:manager-escalations
 npm run content:daily-run
 npm run content:daily-pack
@@ -1614,6 +1656,8 @@ npm run content:verify-rendered
 - `data/reports/master_daily_brief.md`
 - `data/reports/quality_control_report.json`
 - `data/reports/quality_control_report.md`
+- `data/reports/qc_department_v2_report.json`
+- `data/reports/qc_department_v2_report.md`
 - `data/reports/manager_escalation_router_report.json`
 - `data/reports/manager_escalation_router_report.md`
 - `data/reports/daily_run_orchestrator_report.json`
