@@ -74,6 +74,8 @@ Base HQ Runbook v1 adds the local operating manual for the completed Watchdog HQ
 
 Page Quality Profiler Agent v1 adds a read-only local page-quality triage layer. It profiles local snapshot pages for weak, thin, underdeveloped, unclear, stale, or badly structured content and recommends the next manager/blueprint review path. It produces reports only and never edits live content, publishes, writes to Supabase, changes trust ratings, inserts affiliate links, or runs live crawling/fetching.
 
+Page Blueprint Agent v1 adds a read-only local structure-planning layer. It reads Page Quality Profiler outputs and translates page weaknesses into recommended page blueprints, required sections, evidence requirements, media requirements, internal-linking requirements, disclosure requirements, and risk/compliance notes. It produces reports only and never edits live content, publishes, writes to Supabase, changes trust ratings, inserts affiliate links, or runs live crawling/fetching.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -228,6 +230,8 @@ npm run content:base-runbook
 npm run content:base-runbook-validate
 npm run content:page-quality
 npm run content:page-quality-validate
+npm run content:page-blueprints
+npm run content:page-blueprints-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1288,6 +1292,39 @@ Allowed lifecycle states are limited to `detected`, `suspected`, `verified`, `re
 
 This agent is local-only and report-only. It never writes to Supabase, publishes, edits live content, inserts affiliate URLs, creates approval/apply workflow, changes trust ratings, makes scam/fraud accusations, runs live crawling/fetching, creates patch files, or creates update payloads.
 
+## Page Blueprint Agent
+
+Page Blueprint Agent v1 is a local read-only/report-only agent that reads the Page Quality Profiler report and translates page weaknesses into recommended blueprint structures. It does not modify content and does not inspect the live website.
+
+Build the local report with:
+
+```bash
+npm run content:page-blueprints
+```
+
+Validate the generated report with:
+
+```bash
+npm run content:page-blueprints-validate
+```
+
+Input:
+
+- `data/reports/page_quality_profiler_report.json`
+
+The builder writes ignored local reports:
+
+- `data/reports/page_blueprint_agent_report.json`
+- `data/reports/page_blueprint_agent_report.md`
+
+Blueprint types are `review_blueprint`, `category_hub_blueprint`, `guide_blueprint`, `warning_scam_risk_blueprint`, `comparison_blueprint`, and `full_rebuild_blueprint`. Each recommendation includes the page URL or ID, title/name, inferred page type, source priority, recommended blueprint type, recommended structure sections, missing critical sections, optional enhancement sections, evidence requirements, media requirements, internal-linking requirements, affiliate disclosure requirements, risk/compliance notes, recommended next owner, and a non-apply lifecycle state.
+
+The agent turns profiler findings into structure guidance only. For example, missing evidence/proof on a review becomes evidence/proof/testing requirements; weak hub pages become category hub structure; warning/scam-risk pages require verified-vs-suspected separation, source lists, evidence timelines, and human review.
+
+Allowed lifecycle states are limited to `detected`, `suspected`, `verified`, `recommended`, `blocked`, `monitor_only`, `needs_more_evidence`, `escalated_to_qc`, `escalated_to_master_ai`, and `recommended_for_danny_review`. The `approved` and `applied` states are blocked.
+
+This agent is local-only and report-only. It never writes to Supabase, publishes, edits live content, inserts affiliate URLs, creates approval/apply workflow, changes trust ratings, makes scam/fraud accusations, runs live crawling/fetching, creates patch files, or creates update payloads.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -1393,6 +1430,8 @@ npm run content:base-runbook
 npm run content:base-runbook-validate
 npm run content:page-quality
 npm run content:page-quality-validate
+npm run content:page-blueprints
+npm run content:page-blueprints-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1473,6 +1512,8 @@ npm run content:verify-rendered
 - `data/reports/base_hq_runbook_report.md`
 - `data/reports/page_quality_profiler_report.json`
 - `data/reports/page_quality_profiler_report.md`
+- `data/reports/page_blueprint_agent_report.json`
+- `data/reports/page_blueprint_agent_report.md`
 - `data/reports/source_watchlist_report.json`
 - `data/reports/source_watchlist_report.md`
 - `data/dashboard/overview.json`
