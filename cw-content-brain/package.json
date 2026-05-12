@@ -44,7 +44,8 @@
     "dashboard:build": "tsc --outDir dist && node dist/src/local-dashboard-shell-builder.js",
     "dashboard:validate": "tsc --outDir dist && node dist/src/local-dashboard-shell-validator.js",
     "dashboard:open": "tsc --outDir dist && node dist/src/local-dashboard-launcher.js",
-    "dashboard:smoke": "tsc --outDir dist && node dist/src/local-dashboard-smoke-test.js"
+    "dashboard:smoke": "tsc --outDir dist && node dist/src/local-dashboard-smoke-test.js",
+    "dashboard:ui-guard": "tsc --outDir dist && node dist/src/local-dashboard-ui-contract-guard.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.103.0"
