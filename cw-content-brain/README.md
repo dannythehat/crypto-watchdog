@@ -1078,7 +1078,6 @@ npm run dashboard:open
 ```
 
 The UI guard fails if unsafe local dashboard wording appears, including `canAutoApply true`, non-zero approval/application markers, live apply/publish wording, Supabase write-enabled wording, service-role wording, or API-key wording. It is local-only/read-only, does not use Playwright or screenshots, does not create UI beyond validating the generated HTML, and never writes to Supabase, publishes, applies, edits live files, creates patches, or creates update payloads.
-
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
