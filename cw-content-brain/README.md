@@ -60,6 +60,8 @@ Phase 2V adds a local-only Watchdog HQ Dashboard Shell v1. It reads ignored dash
 
 Phase 2W adds a local-only Dashboard Launcher / Preview Runner + Smoke Test v1. It prints the local dashboard HTML path and ile:// URL for Danny, and adds a smoke test that checks the generated shell still shows the required read-only safety markers and no unsafe apply/publish/Supabase wording.
 
+Phase 2X adds a local-only Dashboard UI Contract Guard v1. It validates the generated dashboard HTML text/section contract before Danny reviews it, confirms the read-only safety language is visible, and rejects unsafe approval/apply/publishing/Supabase markers. It is not browser automation and never touches the live website.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -207,6 +209,7 @@ npm run content:department-roadmap
 npm run dashboard:build
 npm run dashboard:validate
 npm run dashboard:smoke
+npm run dashboard:ui-guard
 npm run dashboard:open
 npm run content:verify-rendered
 ```
@@ -1049,6 +1052,33 @@ The smoke test reads the generated HTML and confirms it contains `READ_ONLY_REPO
 
 The launcher and smoke test are view-only/local-only. They never write outside `cw-content-brain`, never write to Supabase, never publish, never edit live content, never insert affiliate URLs, never create patch files, never create update payloads, and never create an approval/apply workflow.
 
+## Dashboard UI Contract Guard
+
+Dashboard UI Contract Guard v1 is a stricter local-only text/HTML contract check for the generated Watchdog HQ dashboard shell. Run it after building the dashboard:
+
+```bash
+npm run dashboard:build
+npm run dashboard:ui-guard
+```
+
+The guard reads:
+
+- `data/local-dashboard/index.html`
+
+It checks that the dashboard clearly shows `Watchdog HQ`, `Local Dashboard Shell`, `READ_ONLY_REPORT_ONLY`, `Local only`, `Read only`, `No Supabase writes`, `No publishing`, `No approval/apply workflow`, `canAutoApply`, `approvedCount`, `appliedCount`, and the Overview, Command, Approvals, Agents, Content, SEO, Affiliates, Research, and Analytics sections. It also performs lightweight structure checks for the safety/status area, dashboard navigation, section/card content, and non-blank HTML length.
+
+Recommended local dashboard check sequence:
+
+```bash
+npm run dashboard:build
+npm run dashboard:validate
+npm run dashboard:smoke
+npm run dashboard:ui-guard
+npm run dashboard:open
+```
+
+The UI guard fails if unsafe local dashboard wording appears, including `canAutoApply true`, non-zero approval/application markers, live apply/publish wording, Supabase write-enabled wording, service-role wording, or API-key wording. It is local-only/read-only, does not use Playwright or screenshots, does not create UI beyond validating the generated HTML, and never writes to Supabase, publishes, applies, edits live files, creates patches, or creates update payloads.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -1147,6 +1177,7 @@ npm run content:department-roadmap
 npm run dashboard:build
 npm run dashboard:validate
 npm run dashboard:smoke
+npm run dashboard:ui-guard
 npm run dashboard:open
 npm run content:verify-rendered
 ```
