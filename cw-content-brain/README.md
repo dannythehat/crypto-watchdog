@@ -56,6 +56,8 @@ Phase 2T adds a read-only Dashboard Contract Validator v1. It checks the local d
 
 Phase 2U adds a read-only Watchdog HQ Department Roadmap & Agent Coverage Map v1. It maps every major department/tab, current coverage, missing capabilities, planned manager agents, planned worker agents, dashboard data coverage, and recommended build order. It is planning-only and does not create functional agents or dashboard UI.
 
+Phase 2V adds a local-only Watchdog HQ Dashboard Shell v1. It reads ignored dashboard JSON files from `data/dashboard/` and generates a static local HTML viewer at `data/local-dashboard/index.html`. It is not the live CryptoWatchdog website and does not touch the Lovable app, Supabase, or live website files.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -200,6 +202,8 @@ npm run content:daily-pack
 npm run content:dashboard-export
 npm run content:dashboard-validate
 npm run content:department-roadmap
+npm run dashboard:build
+npm run dashboard:validate
 npm run content:verify-rendered
 ```
 
@@ -972,6 +976,44 @@ The roadmap maps Command, Content, SEO, Affiliates, Offers / Deals, Backlinks, A
 
 The report also includes a coverage summary, next recommended build order, human approval rules, never-allowed rules, and safety checks. It never publishes, applies, edits live files, writes to Supabase, creates patch files, creates update payloads, runs live connectors, changes approval state, or sets `canAutoApply: true`.
 
+## Local Dashboard Shell
+
+Watchdog HQ Local Dashboard Shell v1 is a local-only static HTML viewer for Content Brain dashboard data. It is not the live CryptoWatchdog website, does not use the root app, and does not create or edit Lovable UI files.
+
+Build the local dashboard with:
+
+```bash
+npm run dashboard:build
+```
+
+Validate the local dashboard shell with:
+
+```bash
+npm run dashboard:validate
+```
+
+The builder reads ignored dashboard JSON files from:
+
+- `data/dashboard/overview.json`
+- `data/dashboard/command.json`
+- `data/dashboard/approvals.json`
+- `data/dashboard/agents.json`
+- `data/dashboard/content.json`
+- `data/dashboard/seo.json`
+- `data/dashboard/affiliates.json`
+- `data/dashboard/research.json`
+- `data/dashboard/analytics.json`
+
+It writes the generated local HTML viewer to:
+
+- `data/local-dashboard/index.html`
+
+The generated dashboard is ignored by Git. It shows Overview, Command, Approvals, Agents, Content, SEO, Affiliates, Research, and Analytics sections, plus a clear safety status bar with `READ_ONLY_REPORT_ONLY`, `canAutoApply false`, `approvedCount 0`, and `appliedCount 0`.
+
+The validator checks that all nine dashboard JSON inputs exist, the generated HTML exists, every expected section is present, and the required safety text is displayed. It fails if the generated dashboard contains unsafe signals such as `canAutoApply true`, non-zero approval/application counts, unsafe live-apply wording, or unsafe Supabase-write wording.
+
+The local dashboard shell is view-only. It never writes to Supabase, never publishes, never edits live content, never inserts affiliate URLs, never creates patch files, never creates update payloads, and never creates an approval/apply workflow.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -1067,6 +1109,8 @@ npm run content:daily-pack
 npm run content:dashboard-export
 npm run content:dashboard-validate
 npm run content:department-roadmap
+npm run dashboard:build
+npm run dashboard:validate
 npm run content:verify-rendered
 ```
 
@@ -1139,6 +1183,7 @@ npm run content:verify-rendered
 - `data/dashboard/affiliates.json`
 - `data/dashboard/research.json`
 - `data/dashboard/analytics.json`
+- `data/local-dashboard/index.html`
 - `data/reports/rendered_page_verification.json`
 - `data/reports/rendered_page_verification.md`
 - `logs/content-snapshot-run.json`
