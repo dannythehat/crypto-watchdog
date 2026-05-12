@@ -78,6 +78,8 @@ Page Blueprint Agent v1 adds a read-only local structure-planning layer. It read
 
 Content Cluster / Related Sections Agent v1 adds a read-only local relationship-planning layer. It reads Page Quality Profiler and Page Blueprint Agent reports, optionally uses the local normalised content snapshot, and recommends related review, guide, warning, promo/news, comparison, card, mobile stacking, and natural internal-link section needs. It produces reports only and never edits live content, publishes, writes to Supabase, changes trust ratings, inserts affiliate links, or runs live crawling/fetching.
 
+Media + Video Brief Agent v1 adds a read-only local media-planning layer. It reads Page Quality Profiler, Page Blueprint Agent, and Content Cluster Agent reports, optionally uses the local normalised content snapshot, and recommends screenshot, proof block, image, diagram, comparison visual, review card, alt text, mobile media, and video brief needs. It produces reports only and never generates, downloads, uploads, publishes, or edits media.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -236,6 +238,8 @@ npm run content:page-blueprints
 npm run content:page-blueprints-validate
 npm run content:clusters
 npm run content:clusters-validate
+npm run content:media-briefs
+npm run content:media-briefs-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1364,6 +1368,42 @@ Allowed lifecycle states are limited to `detected`, `suspected`, `verified`, `re
 
 This agent is local-only and report-only. It never writes to Supabase, publishes, edits live content, inserts affiliate URLs, creates approval/apply workflow, changes trust ratings, makes scam/fraud accusations, runs live crawling/fetching, creates patch files, or creates update payloads.
 
+## Media + Video Brief Agent
+
+Media + Video Brief Agent v1 is a local read-only/report-only agent that reads Page Quality Profiler, Page Blueprint Agent, and Content Cluster Agent reports, then recommends media needs for each page. It plans screenshots, proof blocks, diagrams, images, review cards, comparison visuals, alt text guidance, mobile media handling, and video brief outlines. It does not generate, download, upload, publish, or edit media.
+
+Build the local report with:
+
+```bash
+npm run content:media-briefs
+```
+
+Validate the generated report with:
+
+```bash
+npm run content:media-briefs-validate
+```
+
+Inputs:
+
+- `data/reports/page_quality_profiler_report.json`
+- `data/reports/page_blueprint_agent_report.json`
+- `data/reports/content_cluster_agent_report.json`
+- `data/content_snapshot/normalised_content.json` when available
+
+The builder writes ignored local reports:
+
+- `data/reports/media_video_brief_agent_report.json`
+- `data/reports/media_video_brief_agent_report.md`
+
+Media brief types are `review_media_brief`, `category_hub_media_brief`, `guide_media_brief`, `warning_safety_media_brief`, `comparison_media_brief`, and `full_rebuild_media_brief`. Each recommendation includes screenshot needs, proof block needs, image needs, diagram needs, video brief needs, comparison visual needs, review card visual needs, mobile media notes, evidence requirements, risk/compliance notes, alt text guidance, next owner, and a non-apply lifecycle state.
+
+Reviews can recommend proof/testing screenshots where relevant, but the agent must not claim testing happened unless evidence exists. Warning/scam-risk pages must use careful evidence-led media notes and must not create defamatory visual claims. Affiliate/promotional media is disclosure-review only and must not include raw affiliate URLs. Alt text should be descriptive, plain English, and not keyword-stuffed. Video briefs are outlines only, not production work.
+
+Allowed lifecycle states are limited to `detected`, `suspected`, `verified`, `recommended`, `blocked`, `monitor_only`, `needs_more_evidence`, `escalated_to_qc`, `escalated_to_master_ai`, and `recommended_for_danny_review`. The `approved` and `applied` states are blocked.
+
+This agent is local-only and report-only. It never writes to Supabase, publishes, edits live content, inserts affiliate URLs, creates approval/apply workflow, changes trust ratings, makes scam/fraud accusations, runs live crawling/fetching, generates images or videos, downloads external media, uploads media, creates patch files, or creates update payloads.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -1473,6 +1513,8 @@ npm run content:page-blueprints
 npm run content:page-blueprints-validate
 npm run content:clusters
 npm run content:clusters-validate
+npm run content:media-briefs
+npm run content:media-briefs-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1557,6 +1599,8 @@ npm run content:verify-rendered
 - `data/reports/page_blueprint_agent_report.md`
 - `data/reports/content_cluster_agent_report.json`
 - `data/reports/content_cluster_agent_report.md`
+- `data/reports/media_video_brief_agent_report.json`
+- `data/reports/media_video_brief_agent_report.md`
 - `data/reports/source_watchlist_report.json`
 - `data/reports/source_watchlist_report.md`
 - `data/dashboard/overview.json`
