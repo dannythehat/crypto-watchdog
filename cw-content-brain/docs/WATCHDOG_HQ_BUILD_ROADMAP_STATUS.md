@@ -69,3 +69,13 @@ Future roadmap items remain planned until Danny explicitly authorises them:
 - analytics intelligence
 - controlled approvals
 - Safe Apply Engine only much later
+
+## Build #52 — CryptoWatchdog Page Template & Themed Hub Library v1
+
+Status: planned
+
+Purpose:
+Create the locked page/template architecture library that future AI agents must follow for reviews, themed hub pages, guides, warnings, comparisons, promos, news/blog posts and related content sections.
+
+This build must define themed hub pages, trusted brand boxes, review cards, comparison tables, related blog sections, related guide sections, internal link rules, external/source link rules, media placement notes, affiliate disclosure rules, CryptoWatchdog final word rules, human/witty brand voice rules and serious-content exception rules.
+
