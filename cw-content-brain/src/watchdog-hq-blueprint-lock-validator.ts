@@ -30,6 +30,16 @@ const requiredBlueprintPhrases = [
   "Drafting reviews with placeholders is allowed",
   "Fake evidence/testing claims are blocked",
   "Safe Apply comes much later",
+  "Trusted DeFi wallets",
+  "DeFi wallets",
+  "Page and article templates",
+  "No humour on serious scam-loss pages",
+  "Human and witty brand voice",
+  "CryptoWatchdog final word",
+  "Related blog posts",
+  "Review cards",
+  "Beautiful trusted brand boxes",
+  "Themed hub pages",
 ];
 
 const unsafeMarkers = [
@@ -114,3 +124,4 @@ if (isDirectRun(import.meta.url)) {
     process.exitCode = 1;
   });
 }
+

@@ -346,3 +346,205 @@ Future phases:
 - Safe Apply Engine only much later
 
 Future connectors must begin read-only and local/export-only. Future worker agents must preserve lifecycle state, evidence gaps, manager routing, QC checks, and audit trail requirements. Future Safe Apply work requires preview, diff, human approval, rollback plan, audit entry, restricted permissions, and explicit Danny approval for rating, scam/fraud/legal, affiliate, and publishing-sensitive changes.
+
+## Locked Themed Hub and Page Architecture Vision
+
+CryptoWatchdog pages must not feel like generic AI articles or thin SEO pages. The long-term vision is a themed, human, useful, commercially aware and trust-led page system where every serious page acts like a structured authority hub.
+
+Every major page should have a clear purpose, a strong structure, relevant internal links, relevant external/source links where needed, related review cards, useful media placement, SEO-aware headings, and CryptoWatchdog's own opinion.
+
+The goal is not to create random content. The goal is to build pages that help users understand crypto products, risks, scams, tools, wallets, exchanges, casinos, DeFi services, AI bots and related topics in plain English.
+
+### Themed hub page principle
+
+Category and topic pages should be treated as themed hubs.
+
+Examples include:
+- DeFi wallets
+- Crypto exchanges
+- Crypto casinos
+- AI trading bots
+- Hardware wallets
+- Crypto tax tools
+- Crypto scams and warnings
+- Beginner guides
+- Crypto offers and promotions
+
+A themed hub page should normally explain:
+- what the topic is
+- how it works
+- why people use it
+- who it is suitable for
+- who should be careful
+- key features users should compare
+- main risks and red flags
+- common scams or mistakes
+- trusted or reviewed brands/tools in that category
+- comparison points between reviewed options
+- related guides
+- related reviews
+- related warnings
+- related blog/news posts where relevant
+- FAQs
+- CryptoWatchdog's own view at the bottom
+
+### DeFi wallet example structure
+
+A DeFi wallet page should not just define DeFi wallets. It should be organised like a proper user journey.
+
+It should explain:
+- what DeFi wallets are
+- how DeFi wallets work
+- why people use them
+- what private keys and seed phrases mean
+- why self-custody matters
+- the benefits of control, privacy and no big brother watching every move
+- the risks of losing seed phrases
+- fake wallet app risks
+- malicious approvals
+- phishing links
+- scam tokens
+- lack of customer support if the user makes a mistake
+- features to compare across reviewed wallets
+- the most trusted reviewed DeFi wallets
+- CryptoWatchdog's favourite options where evidence supports that view
+- related guides and warnings
+- FAQs
+- CryptoWatchdog's final word
+
+Trusted DeFi wallets should be shown in beautiful boxes/cards, not ugly plain text links. A trusted wallet box should normally include:
+- wallet image or logo
+- wallet name
+- rating or trust signal where approved
+- short reason it is relevant
+- clear button/link to read the CryptoWatchdog review
+- disclosure handling where affiliate/commercial context exists
+
+### Review card and trusted brand box principle
+
+Pages should use visual clickable review cards and trusted brand boxes where relevant.
+
+A review card or trusted brand box should normally include:
+- image/logo
+- brand or product name
+- rating/status where approved
+- short reason users may care
+- short risk note where relevant
+- clear link to the full review
+- affiliate disclosure logic where relevant
+
+These cards should support user navigation, internal linking, SEO structure and commercial opportunities without damaging trust.
+
+### Related content principle
+
+New content should not sit alone.
+
+When a new article, guide, review, warning, promo or blog post exists, Watchdog HQ should later be able to recommend:
+- which older pages should link to it
+- which category/topic hubs should include it
+- which related review cards should show it
+- which related blog sections should include it
+- which old related posts should be removed if no longer relevant
+- which SEO cluster it belongs to
+- which social posts should be planned from it
+- which images or videos should support it
+- which QA, QC or Danny approval steps are needed
+
+Related blog posts and related article sections must stay relevant. Future AI agents may recommend adding, replacing or removing related content if relevance changes.
+
+### Human and witty brand voice
+
+CryptoWatchdog should sound human, not corporate and not like a generic AI content farm.
+
+The voice should be:
+- evidence-first
+- protection-first
+- plain English
+- human
+- witty where appropriate
+- sceptical but not cynical
+- opinion-led where evidence supports the opinion
+- commercially aware but trust-led
+- useful before promotional
+
+Humour is allowed where it helps the user understand the topic and does not weaken trust. Light humour can appear in explainers, category pages, final words, plain-English comparisons and opinion sections.
+
+Humour must not be used on serious harm, scam-loss, fraud-risk, victim, legal, safety-critical or warning pages where it would feel disrespectful or reduce credibility.
+
+CryptoWatchdog can be funny in the final word where appropriate, but serious pages stay serious.
+
+### CryptoWatchdog final word principle
+
+Many serious pages should include CryptoWatchdog's own view near the bottom.
+
+This section can explain:
+- what we like
+- what worries us
+- who the page/topic/tool is best for
+- who should avoid it
+- what users should check before acting
+- which reviewed options are preferred where evidence supports that preference
+- what evidence is still missing
+- what would change our view
+
+The final word should feel human, useful and honest. It must not invent evidence, claim testing that did not happen, guarantee safety, or make unsupported scam/fraud accusations.
+
+### Article and page template principle
+
+Future AI agents must follow page and article templates.
+
+Templates must define:
+- mandatory sections
+- optional sections
+- SEO heading requirements
+- keyword intent requirements
+- evidence requirements
+- proof/testing placeholders
+- deposit and withdrawal placeholders where relevant
+- screenshot placeholders
+- image placement notes
+- video placement notes
+- trusted brand boxes
+- review cards
+- comparison tables
+- related guide sections
+- related blog/news sections
+- internal link requirements
+- external/source link requirements
+- affiliate disclosure requirements
+- CryptoWatchdog final word requirements
+- QA checks
+- QC escalation rules
+- Danny approval rules
+
+No future drafting agent should create random article structures. The correct workflow is: page type -> template -> gap map -> draft/rebuild plan -> QA -> QC -> Danny review -> safe apply much later.
+
+### Serious content exception
+
+Warning pages, scam-risk pages, legal/policy pages, financial-risk pages and victim-help pages require stricter tone and evidence discipline.
+
+These pages must:
+- separate verified evidence from suspected claims
+- avoid unsupported accusations
+- avoid humour that could feel disrespectful
+- avoid affiliate CTAs unless manually approved
+- avoid final safety guarantees
+- include practical user safety steps
+- escalate to Gatekeeper Grace and Danny where needed
+
+
+### Exact locked architecture phrases
+
+The following phrases are intentionally repeated so the blueprint lock validator can protect the vision from future drift:
+
+- Themed hub pages
+- Beautiful trusted brand boxes
+- Review cards
+- Related blog posts
+- CryptoWatchdog final word
+- Human and witty brand voice
+- No humour on serious scam-loss pages
+- Page and article templates
+- DeFi wallets
+- Trusted DeFi wallets
+
