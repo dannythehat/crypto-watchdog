@@ -56,6 +56,8 @@
     "content:clusters-validate": "tsc --outDir dist && node dist/src/content-cluster-agent-validator.js",
     "content:media-briefs": "tsc --outDir dist && node dist/src/media-video-brief-agent-builder.js",
     "content:media-briefs-validate": "tsc --outDir dist && node dist/src/media-video-brief-agent-validator.js",
+    "content:agent-capabilities": "tsc --outDir dist && node dist/src/agent-capability-registry-v2-builder.js",
+    "content:agent-capabilities-validate": "tsc --outDir dist && node dist/src/agent-capability-registry-v2-validator.js",
     "content:source-watchlist": "tsc --outDir dist && node dist/src/source-watchlist-builder.js",
     "content:source-watchlist-validate": "tsc --outDir dist && node dist/src/source-watchlist-validator.js",
     "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts",
