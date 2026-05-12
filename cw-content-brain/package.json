@@ -48,6 +48,8 @@
     "content:decision-log-validate": "tsc --outDir dist && node dist/src/human-decision-log-validator.js",
     "content:base-runbook": "tsc --outDir dist && node dist/src/base-hq-runbook-builder.js",
     "content:base-runbook-validate": "tsc --outDir dist && node dist/src/base-hq-runbook-validator.js",
+    "content:page-quality": "tsc --outDir dist && node dist/src/page-quality-profiler-builder.js",
+    "content:page-quality-validate": "tsc --outDir dist && node dist/src/page-quality-profiler-validator.js",
     "content:source-watchlist": "tsc --outDir dist && node dist/src/source-watchlist-builder.js",
     "content:source-watchlist-validate": "tsc --outDir dist && node dist/src/source-watchlist-validator.js",
     "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts",
