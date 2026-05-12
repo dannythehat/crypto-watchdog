@@ -62,6 +62,8 @@ Phase 2W adds a local-only Dashboard Launcher / Preview Runner + Smoke Test v1. 
 
 Phase 2X adds a local-only Dashboard UI Contract Guard v1. It validates the generated dashboard HTML text/section contract before Danny reviews it, confirms the read-only safety language is visible, and rejects unsafe approval/apply/publishing/Supabase markers. It is not browser automation and never touches the live website.
 
+Source Watchlist v1 adds a read-only local planning/report layer for future Watchdog HQ source monitoring. It defines source categories, evidence value, risk, future manager routing, safety rules, escalation rules, and human approval requirements, but it does not crawl, fetch, scrape, monitor, publish, apply, edit live files, or write to Supabase.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -206,6 +208,8 @@ npm run content:daily-pack
 npm run content:dashboard-export
 npm run content:dashboard-validate
 npm run content:department-roadmap
+npm run content:source-watchlist
+npm run content:source-watchlist-validate
 npm run dashboard:build
 npm run dashboard:validate
 npm run dashboard:smoke
@@ -1078,6 +1082,32 @@ npm run dashboard:open
 ```
 
 The UI guard fails if unsafe local dashboard wording appears, including `canAutoApply true`, non-zero approval/application markers, live apply/publish wording, Supabase write-enabled wording, service-role wording, or API-key wording. It is local-only/read-only, does not use Playwright or screenshots, does not create UI beyond validating the generated HTML, and never writes to Supabase, publishes, applies, edits live files, creates patches, or creates update payloads.
+## Source Watchlist
+
+Source Watchlist v1 is a planning-only source monitoring model for future Watchdog HQ work. It does not activate monitoring and does not crawl, fetch, scrape, call APIs, publish, apply, edit live files, insert affiliate links, write to Supabase, collect user/company data, make scam/fraud accusations, change trust ratings, or draw legal conclusions.
+
+Build the local report with:
+
+```bash
+npm run content:source-watchlist
+```
+
+Validate the generated report with:
+
+```bash
+npm run content:source-watchlist-validate
+```
+
+The builder writes ignored local reports:
+
+- `data/reports/source_watchlist_report.json`
+- `data/reports/source_watchlist_report.md`
+
+The report defines source categories for official company sources, regulator/enforcement sources, app/store/reputation sources, blockchain/evidence sources, security/research sources, SEO/content sources, and affiliate/commercial sources. Each watchlist item includes its category, source type, example source name, purpose, evidence value, risk level, suggested future check frequency, responsible department, future manager, future worker agent, planning-only status, human approval requirement, and notes.
+
+Future signals must follow the lifecycle: Detected -> Suspected -> Verified -> Recommended -> Approved -> Applied. Source Watchlist v1 can only define possible signals, suspected issues, verified evidence requirements, and recommended routing. It creates no approved or applied actions.
+
+Human approval is required before any future live monitoring connector and before any rating, content, affiliate, legal, publishing, or live-site action. The validator checks `READ_ONLY_REPORT_ONLY`, `canAutoApply: false`, zero approval/application counts, no live monitoring/fetching state, blocked actions, and unsafe marker absence.
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -1173,6 +1203,8 @@ npm run content:daily-pack
 npm run content:dashboard-export
 npm run content:dashboard-validate
 npm run content:department-roadmap
+npm run content:source-watchlist
+npm run content:source-watchlist-validate
 npm run dashboard:build
 npm run dashboard:validate
 npm run dashboard:smoke
@@ -1241,6 +1273,8 @@ npm run content:verify-rendered
 - `data/reports/dashboard_contract_validation_report.md`
 - `data/reports/department_roadmap_and_agent_coverage.json`
 - `data/reports/department_roadmap_and_agent_coverage.md`
+- `data/reports/source_watchlist_report.json`
+- `data/reports/source_watchlist_report.md`
 - `data/dashboard/overview.json`
 - `data/dashboard/command.json`
 - `data/dashboard/approvals.json`
