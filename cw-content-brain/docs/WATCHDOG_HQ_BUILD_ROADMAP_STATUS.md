@@ -1,0 +1,71 @@
+# Watchdog HQ Build Roadmap Status
+
+This roadmap status file pairs with `docs/WATCHDOG_HQ_MASTER_BLUEPRINT.md`. Future AI/Codex work must read both files before proposing or building new phases.
+
+## Status Summary
+
+The Watchdog HQ base structure through QC Department v2 is built/merged in summary form. Build #49 is the current blueprint lock. Build #50 onward is planned and must follow the Master Blueprint Lock unless Danny changes the roadmap.
+
+| Build number | Build name | Status | Purpose | Main files/scripts | Safety notes | Date/PR placeholder |
+|---|---|---|---|---|---|---|
+| Phase 1 | Base cw-content-brain toolkit | built/merged | Standalone content operations foundation. | `scripts/`, `src/lib/`, schemas/prompts/workflow docs | Report-only, no live writes. | Earlier PRs |
+| Phase 1A-1C | Sitemap/crawler/snapshot/export helper | built/merged | Discover URLs and analyse local snapshots/export helpers. | crawl, snapshot, export scripts | Export helper is owner-run/read-only; no Supabase writes. | Earlier PRs |
+| Phase 1D | Confidence and priority queue | built/merged | Triage findings and prioritise possible fixes. | confidence and queue reports | Findings are possible issues, not automatic fixes. | Earlier PRs |
+| Phase 1E | Rendered verifier | built/merged | Reduce false positives against rendered pages. | `scripts/verify_rendered_pages.ts` | Optional, read-only, no live edits. | Earlier PRs |
+| Phase 2A | Metadata engine | built/merged | Draft metadata suggestions. | `content:metadata` | Draft-only, needs review. | Earlier PRs |
+| Phase 2B | Internal link brain | built/merged | Suggest natural internal link opportunities. | `content:internal-links` | Draft-only, no live link insertion. | Earlier PRs |
+| Phase 2C-2D | Affiliate vault / offer tracker | built/merged | Plan affiliate placements and track stale/expired offers. | `content:affiliates`, `content:offers` | No affiliate URL insertion; disclosure-first. | Earlier PRs |
+| Phase 2E-2F | GSC/GA4 import connectors | built/merged | Import local analytics/search exports. | `content:gsc`, `content:ga4` | Local import only, no Google writes. | Earlier PRs |
+| Phase 2G | SEO Intelligence | built/merged | Combine local SEO/content/analytics signals. | `content:seo-brain` | Report-only action queue. | Earlier PRs |
+| Phase 2H | Research duplicate guard | built/merged | Check ideas against local content and risk wording. | `content:research-guard` | No live web verification in v1. | Earlier PRs |
+| Phase 2I | Agent Registry | built/merged | Define initial Watchdog HQ workforce hierarchy. | `content:agents` | Registry only, no execution. | Earlier PRs |
+| Phase 2J | Master Command Queue | built/merged | Daily command queue foundation. | `content:master-queue` | No approved/applied states. | Earlier PRs |
+| Phase 2K | Fix Draft Generator | built/merged | Prepare local draft-only fix suggestions. | `content:fix-drafts` | No final publishable content or update payloads. | Earlier PRs |
+| Phase 2L | Preview Diff Engine | built/merged | Simulated preview-only diff proposals. | `content:preview-diffs` | No patch files or live edits. | Earlier PRs |
+| Phase 2M | Approval Queue planning | built/merged | Human decision planning queue. | `content:approvals` | Does not grant approval. | Earlier PRs |
+| Phase 2N | Master AI Manager Daily Brief | built/merged | Plain-English daily brief. | `content:daily-brief` | Cautious language, report-only. | Earlier PRs |
+| Phase 2O | QC v1 | built/merged | First QC manager report. | `content:qc` | Gatekeeper layer, no execution. | Earlier PRs |
+| Phase 2P | Manager Escalation Router | built/merged | Manager-to-manager routing. | `content:manager-escalations` | Routing recommendations only. | Earlier PRs |
+| Phase 2Q | Daily Run Orchestrator | built/merged | Run safe daily reports in order. | `content:daily-run` | Excludes live crawlers/export/connectors. | Earlier PRs |
+| Phase 2R | Daily Report Pack | built/merged | Danny-ready daily report pack. | `content:daily-pack` | Summaries only, no approvals. | Earlier PRs |
+| Phase 2S | Dashboard Data Export | built/merged | Local dashboard JSON export. | `content:dashboard-export` | Local dashboard data only. | Earlier PRs |
+| Phase 2T | Dashboard Contract Validator | built/merged | Validate dashboard JSON contracts. | `content:dashboard-validate` | Fails unsafe states/URLs. | Earlier PRs |
+| Phase 2U | Department Roadmap / Coverage Map | built/merged | Plan department and agent coverage. | `content:department-roadmap` | Planning-only. | Earlier PRs |
+| Phase 2V | Local Dashboard Shell | built/merged | Static local dashboard viewer. | `dashboard:build`, `dashboard:validate` | Local-only HTML, no live app files. | Earlier PRs |
+| Phase 2W | Dashboard Launcher / Smoke Test | built/merged | Open/smoke test local dashboard. | `dashboard:open`, `dashboard:smoke` | No server required, local-only. | Earlier PRs |
+| Phase 2X | Dashboard UI Contract Guard | built/merged | Validate dashboard shell text/UI contract. | `dashboard:ui-guard` | Text/HTML validation only. | Earlier PRs |
+| Source Watchlist v1 | Source watchlist planning | built/merged | Define future monitored source model. | `content:source-watchlist` | No live crawling/fetching. | Earlier PRs |
+| Agent Output Contract v1 | Agent output lifecycle contract | built/merged | Require detected/suspected/verified/recommended separation. | `content:agent-output-contract` | approved/applied blocked. | Earlier PRs |
+| Department Router v1 | Department inbox/task router | built/merged | Route future findings to managers. | `content:department-router` | Managers cannot approve/apply. | Earlier PRs |
+| Human Decision Log v1 | Audit trail planning | built/merged | Define future audit entry schema. | `content:decision-log` | No live audit database. | Earlier PRs |
+| Base HQ Runbook v1 | Operating manual | built/merged | Document base structure and future rules. | `content:base-runbook` | Planning/report-only. | Earlier PRs |
+| Page Quality Profiler v1 | Page quality triage | built/merged | Detect weak/thin pages using local data. | `content:page-quality` | No live content edits. | Earlier PRs |
+| Page Blueprint Agent v1 | Page structure planning | built/merged | Recommend page blueprints. | `content:page-blueprints` | Structure only. | Earlier PRs |
+| Content Cluster Agent v1 | Related sections planning | built/merged | Plan related reviews/guides/warnings/links. | `content:clusters` | No link insertion. | PR #45 |
+| Media + Video Brief Agent v1 | Media planning | built/merged | Plan screenshots/proof/images/video briefs. | `content:media-briefs` | No media generation/download/upload. | PR #46 |
+| Agent Capability Registry v2 | Workforce capability map | built/merged | Map agents, departments, endpoints, maturity. | `content:agent-capabilities` | No AI/API calls. | PR #47 |
+| QC Department v2 | Gatekeeper Grace expansion | built/merged | Define major QC checks before Danny. | `content:qc-v2` | Blocks unsafe recommendations. | PR #48 |
+| Build #49 | Watchdog HQ Master Blueprint Lock v1 | in_progress | Lock canonical vision, safety rules, and roadmap. | `docs/WATCHDOG_HQ_MASTER_BLUEPRINT.md`, `docs/WATCHDOG_HQ_BUILD_ROADMAP_STATUS.md`, `content:blueprint-lock-validate` | Documentation + validation only. | This build |
+| Build #50 | Content Operations Command Centre v1 | planned | Create content operations planning command centre. | TBD | READ_ONLY_REPORT_ONLY first. | Planned |
+| Build #51 | Content QA & Brand Voice Manager v1 | planned | Add tone, structure, formatting, and brand voice QA. | TBD | No live edits or publishing. | Planned |
+| Build #52 | Content Distribution & Update Planner v1 | planned | Plan related page updates after new content. | TBD | Planning only. | Planned |
+| Build #53 | Review Evidence Intake Contract v1 | planned | Define Danny evidence intake format for reviews. | TBD | Evidence placeholders allowed; fake claims blocked. | Planned |
+| Build #54 | Review Article Assembly Contract v1 | planned | Define how evidence becomes review draft structure. | TBD | No final claims without evidence. | Planned |
+| Build #55 | Review Draft Safety Harness v1 | planned | Guard review drafts before rebuild work expands. | TBD | QC and Danny review required for high-risk content. | Planned |
+| Build #56 | Review Rebuild Agent v1 | planned | Future report-only rebuild agent using Danny-added evidence. | TBD | No publish/apply; evidence-led only. | Planned |
+
+## Future Roadmap
+
+Future roadmap items remain planned until Danny explicitly authorises them:
+
+- stronger content operations dashboard
+- review factory
+- evidence library
+- SEO growth engine
+- affiliate intelligence
+- source monitoring
+- social/media distribution
+- backlink intelligence
+- analytics intelligence
+- controlled approvals
+- Safe Apply Engine only much later

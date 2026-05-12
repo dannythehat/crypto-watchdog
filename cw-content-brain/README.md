@@ -1,5 +1,20 @@
 # CryptoWatchdog Content Brain
 
+## START HERE: Watchdog HQ Master Blueprint Lock
+
+Future AI/Codex work must read these canonical docs before proposing or building new phases:
+
+- [Watchdog HQ Master Blueprint](docs/WATCHDOG_HQ_MASTER_BLUEPRINT.md)
+- [Watchdog HQ Build Roadmap Status](docs/WATCHDOG_HQ_BUILD_ROADMAP_STATUS.md)
+
+These documents lock the Watchdog HQ vision, safety mode, lifecycle, department model, agent hierarchy, review workflow, and build roadmap/status tracker. If a future task conflicts with them, pause and ask Danny before building.
+
+Validate the blueprint lock with:
+
+```bash
+npm run content:blueprint-lock-validate
+```
+
 Phase 1 creates a self-contained Node/TypeScript content operating layer for CryptoWatchdog. It defines the editorial model, risk language, content schemas, prompt templates, audit scripts, draft tooling, and review workflow needed to produce trustworthy drafts without touching the Lovable app or Supabase data.
 
 Phase 1A upgrades discovery to sitemap-first crawling. CryptoWatchdog.net is a Vite/React/Supabase single-page app, so raw HTML fetches may return the React app shell rather than fully rendered article content. Sitemap URLs are still useful for inventory, SEO metadata checks, link reporting, and update planning, but full content analysis requires a read-only content snapshot or a later browser-rendered crawler. No Supabase writes are performed by this tool.
