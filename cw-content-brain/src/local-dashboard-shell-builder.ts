@@ -61,7 +61,7 @@ function renderDashboard(data: Map<string, unknown>): string {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Watchdog HQ Local Dashboard</title>
+  <title>Watchdog HQ Local Dashboard Shell</title>
   <style>
     :root {
       color-scheme: dark;
@@ -248,7 +248,7 @@ function renderDashboard(data: Map<string, unknown>): string {
   <header>
     <div class="topbar">
       <div class="brand">
-        <h1>Watchdog HQ Local Dashboard</h1>
+        <h1>Watchdog HQ Local Dashboard Shell</h1>
         <p>Content Brain viewer generated ${escapeHtml(generatedAt)}</p>
       </div>
       <div class="status" aria-label="Safety status">
@@ -258,7 +258,7 @@ function renderDashboard(data: Map<string, unknown>): string {
         <span class="pill">appliedCount <strong>${escapeHtml(String(appliedCount))}</strong></span>
       </div>
     </div>
-    <div class="banner">Local read-only dashboard. View-only Content Brain data. No live writes, no database writes, no approval workflow.</div>
+    <div class="banner">Local only. Read only. View-only Content Brain data. No Supabase writes. No publishing. No approval/apply workflow.</div>
   </header>
   <main>
     <nav aria-label="Dashboard sections">
