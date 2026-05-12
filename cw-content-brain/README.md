@@ -80,6 +80,8 @@ Content Cluster / Related Sections Agent v1 adds a read-only local relationship-
 
 Media + Video Brief Agent v1 adds a read-only local media-planning layer. It reads Page Quality Profiler, Page Blueprint Agent, and Content Cluster Agent reports, optionally uses the local normalised content snapshot, and recommends screenshot, proof block, image, diagram, comparison visual, review card, alt text, mobile media, and video brief needs. It produces reports only and never generates, downloads, uploads, publishes, or edits media.
 
+Agent Capability Registry v2 adds a read-only local workforce capability map. It defines Watchdog HQ departments, managers, worker agents, capability endpoints, allowed inputs and outputs, blocked actions, escalation routes, lifecycle limits, maturity status, and future implementation priority. It is a planning/reporting registry only and does not call AI APIs, call external APIs, crawl live sources, publish, apply, edit live content, or write to Supabase.
+
 ## Goals
 
 - Standardize how platform reviews, scam warnings, and education posts are researched and drafted.
@@ -240,6 +242,8 @@ npm run content:clusters
 npm run content:clusters-validate
 npm run content:media-briefs
 npm run content:media-briefs-validate
+npm run content:agent-capabilities
+npm run content:agent-capabilities-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1404,6 +1408,41 @@ Allowed lifecycle states are limited to `detected`, `suspected`, `verified`, `re
 
 This agent is local-only and report-only. It never writes to Supabase, publishes, edits live content, inserts affiliate URLs, creates approval/apply workflow, changes trust ratings, makes scam/fraud accusations, runs live crawling/fetching, generates images or videos, downloads external media, uploads media, creates patch files, or creates update payloads.
 
+## Agent Capability Registry v2
+
+Agent Capability Registry v2 is a local read-only/report-only workforce map for future Watchdog HQ agents. It prevents the system from becoming a loose script collection by defining departments, manager agents, worker agents, capability endpoints, allowed inputs, allowed outputs, blocked actions, escalation routes, lifecycle limits, maturity status, and future implementation priority.
+
+Build the local report with:
+
+```bash
+npm run content:agent-capabilities
+```
+
+Validate the generated report with:
+
+```bash
+npm run content:agent-capabilities-validate
+```
+
+The builder writes ignored local reports:
+
+- `data/reports/agent_capability_registry_v2_report.json`
+- `data/reports/agent_capability_registry_v2_report.md`
+
+Departments include Master AI Management, Quality Control, Audit Trail / Governance, Content, SEO, Internal Linking, Research / Evidence, Affiliate / Offers, Analytics, Backlinks, Social, Media / Video, Approvals, Safe Apply Engine, and Settings / Admin.
+
+Named agents include The Gaffer, Gatekeeper Grace, Audit Alfie, Routey Rachel, Blueprint Bella, Thin Page Theo, Rewrite Rita, Rankhound, Keyword Kev, Cluster Clara, Linksmith, Inspector Proof, Screenshot Sam, Red Flag Rita, Claim Checker Colin, Rating Guard Rachel, Offer Owl, Expiry Eddie, Disclosure Daisy, Pixel Pete, Image Iris, Storyboard Sam, Social Sophie, Metric Molly, Backlink Barry, Approval Ava, and Safe Apply Sam.
+
+Capability endpoint examples include `qc.check_safety_boundaries`, `qc.check_unsupported_claims`, `content.profile_page_quality`, `content.recommend_page_blueprint`, `content.recommend_related_sections`, `media.recommend_media_briefs`, `seo.check_title_meta`, `links.recommend_internal_links`, `affiliate.check_offer_expiry`, `analytics.import_ga4_signals`, `master.prioritise_tasks`, `approvals.prepare_human_review_item`, and `safe_apply.block_until_approved`.
+
+Allowed maturity statuses are `planned`, `registered`, `basic_report_only`, `active_report_only`, `ai_assisted`, `manager_reviewed`, `qc_reviewed`, `approval_ready`, and `safe_apply_ready`. Current maturity in v2 must not exceed `active_report_only`; later statuses are target states only until future approved workflows exist.
+
+Allowed lifecycle states are limited to `detected`, `suspected`, `verified`, `recommended`, `blocked`, `monitor_only`, `needs_more_evidence`, `escalated_to_qc`, `escalated_to_master_ai`, and `recommended_for_danny_review`. The `approved` and `applied` states are blocked.
+
+Blocked actions include `publish`, `supabase_write`, `live_content_edit`, `affiliate_url_insert`, `trust_rating_change`, `approval_apply`, `secret_access`, `external_api_call`, `live_crawl`, `media_generation`, and `media_download`.
+
+This registry is local-only and report-only. It never writes to Supabase, publishes, edits live content, inserts affiliate URLs, creates approval/apply workflow, changes trust ratings, makes scam/fraud accusations, runs live crawling/fetching, generates media, downloads media, calls AI APIs, calls external APIs, creates patch files, or creates update payloads.
+
 ### Rendered Verifier Troubleshooting
 
 If all pages return `fetch_failed`, first check the `baseUrlCheck` section in `data/reports/rendered_page_verification.json` or `.md`. If the base URL fails, check internet access, site availability, whether `baseUrl` is wrong, and whether the Playwright browser is installed locally.
@@ -1515,6 +1554,8 @@ npm run content:clusters
 npm run content:clusters-validate
 npm run content:media-briefs
 npm run content:media-briefs-validate
+npm run content:agent-capabilities
+npm run content:agent-capabilities-validate
 npm run content:source-watchlist
 npm run content:source-watchlist-validate
 npm run dashboard:build
@@ -1601,6 +1642,8 @@ npm run content:verify-rendered
 - `data/reports/content_cluster_agent_report.md`
 - `data/reports/media_video_brief_agent_report.json`
 - `data/reports/media_video_brief_agent_report.md`
+- `data/reports/agent_capability_registry_v2_report.json`
+- `data/reports/agent_capability_registry_v2_report.md`
 - `data/reports/source_watchlist_report.json`
 - `data/reports/source_watchlist_report.md`
 - `data/dashboard/overview.json`
