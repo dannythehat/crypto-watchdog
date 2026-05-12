@@ -37,6 +37,8 @@
     "content:qc-v2": "tsc --outDir dist && node dist/src/qc-department-v2-builder.js",
     "content:qc-v2-validate": "tsc --outDir dist && node dist/src/qc-department-v2-validator.js",
     "content:blueprint-lock-validate": "tsc --outDir dist && node dist/src/watchdog-hq-blueprint-lock-validator.js",
+    "content:ops-command": "tsc --outDir dist && node dist/src/content-operations-command-centre-builder.js",
+    "content:ops-command-validate": "tsc --outDir dist && node dist/src/content-operations-command-centre-validator.js",
     "content:manager-escalations": "tsx src/manager-escalation-router.ts",
     "content:daily-run": "tsx src/daily-run-orchestrator.ts",
     "content:daily-pack": "tsx src/daily-report-pack-builder.ts",
