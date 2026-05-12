@@ -52,6 +52,8 @@
     "content:page-quality-validate": "tsc --outDir dist && node dist/src/page-quality-profiler-validator.js",
     "content:page-blueprints": "tsc --outDir dist && node dist/src/page-blueprint-agent-builder.js",
     "content:page-blueprints-validate": "tsc --outDir dist && node dist/src/page-blueprint-agent-validator.js",
+    "content:clusters": "tsc --outDir dist && node dist/src/content-cluster-agent-builder.js",
+    "content:clusters-validate": "tsc --outDir dist && node dist/src/content-cluster-agent-validator.js",
     "content:source-watchlist": "tsc --outDir dist && node dist/src/source-watchlist-builder.js",
     "content:source-watchlist-validate": "tsc --outDir dist && node dist/src/source-watchlist-validator.js",
     "content:verify-rendered": "tsx scripts/verify_rendered_pages.ts",
