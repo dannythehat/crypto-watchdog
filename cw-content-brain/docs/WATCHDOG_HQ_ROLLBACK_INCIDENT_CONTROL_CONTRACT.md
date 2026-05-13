@@ -1128,3 +1128,80 @@ A valid `rollback_plan` must state:
 
 A `rollback_plan` is invalid if it proposes live publishing, Supabase writes, affiliate insertion, trust-rating edits, live site edits, deletion of production content, or any action outside the approved capability registry.
 
+
+---
+
+## Build 62 exact verification terms
+
+This section locks exact terms required by the Build 62 verification harness.
+
+### Incident ownership field
+
+Every incident report must include `incident_owner`.
+
+`incident_owner` identifies the accountable owner for the incident, recovery review, escalation route, and closure recommendation.
+
+Allowed `incident_owner` examples include:
+
+- The Gaffer
+- Gatekeeper Grace
+- Audit Alfie
+- owning department manager
+- Danny, only for CEO-level final decisions
+
+An incident is incomplete where `incident_owner` is missing.
+
+### Failed validation trigger
+
+The event type `failed_validation` must be logged when a validator, harness, schema check, QA check, safety check, roadmap check, blueprint check, or local verification step fails.
+
+A `failed_validation` event must include:
+
+- validation name
+- failed term or failed check
+- source document or report
+- state_before
+- state_after, where relevant
+- recovery_action
+- incident_owner
+- whether Danny review is required
+
+### Permission breach trigger
+
+The event type `permission_breach` must be logged when an agent, manager, script, workflow, or future connector attempts an action outside its allowed capability or permission boundary.
+
+A `permission_breach` event must be opened for attempted:
+
+- no live publishing breach
+- no Supabase writes breach
+- no affiliate insertion breach
+- no trust-rating edits breach
+- unsafe rating change
+- unsafe scam or fraud accusation
+- bypass of manager review
+- bypass of QA
+- bypass of Danny approval
+- unapproved cross-department handoff
+- unapproved apply/publish/write action
+
+### Unsafe handoff trigger
+
+The event type `unsafe_handoff` must be logged when a handoff violates the Build 60 Workflow State Machine and Handoff Contract.
+
+An `unsafe_handoff` event must be opened where:
+
+- source_agent is missing
+- target_agent is missing
+- workflow_status is missing
+- owning department is missing
+- owning manager is missing
+- approval_required is ignored
+- QA requirement is skipped
+- Danny review requirement is skipped
+- blocked action is routed forward
+- evidence gaps are hidden
+- rejection reasons are missing
+- escalation route is missing
+
+No `unsafe_handoff` may move forward until the issue has a recovery_action, incident_owner, and closure recommendation.
+
