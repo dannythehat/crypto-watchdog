@@ -651,3 +651,15 @@ This contract locks how Danny evidence, screenshots, deposit notes, withdrawal n
 Build 53 also confirms that department and agent access permissions will be wired in a later permissions/capability build. Until then, sensitive evidence remains restricted and must be escalated through the correct manager and Danny approval path.
 
 Build 54 will define how approved evidence becomes structured review article drafts using the Build 52C page library and Build 53 evidence contract.
+
+## Build 54 locked review article assembly contract
+
+The locked CryptoWatchdog review article assembly contract is maintained in cw-content-brain/docs/WATCHDOG_HQ_REVIEW_ARTICLE_ASSEMBLY_CONTRACT.md.
+
+Future review assembly, rebuild, QA, trust-status, affiliate, warning, comparison, category-card, and article-drafting agents must use this contract when turning evidence into structured review draft packages.
+
+This contract connects the Build 52C page/template library with the Build 53 evidence intake contract. It defines template selection, evidence gates, section assembly rules, claim-strength limits, safe wording, blocked wording, proof-gap handling, trust-status handling, affiliate handling, related content handling, QA handoff, Danny approval handoff, and draft package outputs.
+
+Build 54 remains READ_ONLY_REPORT_ONLY. It does not create live article files, write to Supabase, alter ratings, publish content, insert affiliate links, or enable Safe Apply.
+
+Build 55 will define the Review Draft Safety Harness that validates assembled drafts before review rebuild agents expand.
