@@ -1032,3 +1032,27 @@ The workflow_status field must be preserved by every agent, manager, validator, 
 
 workflow_status must not be replaced with informal wording such as done, pending, okay, passed, failed, or approved.
 
+
+---
+
+## Build 60 PR verification repair: source_agent and target_agent
+
+Every workflow handoff must identify both the sender and receiver of the work item.
+
+Required handoff fields:
+
+- source_agent
+- target_agent
+
+source_agent means the registered agent, manager, validator, QA role, or authorised workflow owner sending the work item forward.
+
+target_agent means the registered agent, manager, validator, QA role, or authorised workflow owner receiving the work item.
+
+A handoff is invalid where source_agent is missing.
+
+A handoff is invalid where target_agent is missing.
+
+source_agent and target_agent must both map back to the locked Agent Registry and Capability Registry.
+
+No workflow handoff may invent an unregistered agent, unregistered manager, or unapproved role.
+
