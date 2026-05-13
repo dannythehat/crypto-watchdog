@@ -51,8 +51,8 @@ The Watchdog HQ base structure through the Content Operations Command Centre is 
 | Build #52A | Watchdog HQ Multi-Agent Foundations Readiness Audit v1 | built | Audit whether new agents can be added without inventing new rules. | cw-content-brain/docs/WATCHDOG_HQ_FOUNDATIONS_READINESS_AUDIT.md | Documentation/control audit only; READ_ONLY_REPORT_ONLY; no live edits, publishing, Supabase writes, AI/API calls, media generation, trust rating changes, or Safe Apply. | This build |
 | Build #52B | Watchdog HQ Hive Operating Model v1 | built | Lock the 4-layer Hive model, departments, managers, routing rules, ownership rules, status paths, and escalation model. | cw-content-brain/docs/WATCHDOG_HQ_HIVE_OPERATING_MODEL.md | Operating model only; do not build the 120+ specialist Hive all at once. | This build |
 | Build #52C | CryptoWatchdog Page Template & Themed Hub Library v1 | built / ready for review | Create locked templates for reviews, themed hubs, guides, warnings, comparisons, promos, blog/news posts, trusted brand boxes, review cards, related sections, media placement, SEO, affiliate disclosure, QA/QC, and Danny approval rules. | TBD | Template/control library only; no live edits, publishing, affiliate insertion, media generation, or trust rating changes. | Planned |
-| Build #53 | Review Evidence Intake Contract v1 | planned / next | Define Danny evidence intake format for reviews. | TBD | Evidence placeholders allowed; fake claims blocked. | Planned |
-| Build #54 | Review Article Assembly Contract v1 | planned | Define how evidence becomes review draft structure. | TBD | No final claims without evidence. | Planned |
+| Build #53 | Review Evidence Intake Contract v1 | built / ready for review | Define Danny evidence intake format for reviews. | TBD | Evidence placeholders allowed; fake claims blocked. | Planned |
+| Build #54 | Review Article Assembly Contract v1 | planned / next | Define how evidence becomes review draft structure. | TBD | No final claims without evidence. | Planned |
 | Build #55 | Review Draft Safety Harness v1 | planned | Guard review drafts before rebuild work expands. | TBD | QC and Danny review required for high-risk content. | Planned |
 | Build #56 | Review Rebuild Agent v1 | planned | Future report-only rebuild agent using Danny-added evidence. | TBD | No publish/apply; evidence-led only. | Planned |
 
@@ -117,3 +117,11 @@ This build must define themed hub pages, trusted brand boxes, review cards, comp
 Status: built / ready for review. Locked output: cw-content-brain/docs/WATCHDOG_HQ_PAGE_TEMPLATE_THEMED_HUB_LIBRARY.md. Next planned build: Build #53 — Review Evidence Intake Contract v1.
 
 
+
+## Build #53 completion note
+
+Status: built / ready for review. Locked output: cw-content-brain/docs/WATCHDOG_HQ_REVIEW_EVIDENCE_INTAKE_CONTRACT.md.
+
+Build 53 defines the review evidence intake contract, including screenshots, deposit notes, withdrawal notes, support notes, regulation/licensing notes, public complaint patterns, source links, proof gaps, confidence levels, sensitivity levels, usage rules, escalation triggers, Danny approval fields, and the temporary access rule that sensitive evidence remains restricted until the later permissions/capability build.
+
+Next planned build: Build #54 — Review Article Assembly Contract v1.
