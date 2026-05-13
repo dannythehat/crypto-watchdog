@@ -63,7 +63,7 @@ The Watchdog HQ base structure through the Content Operations Command Centre is 
 | Build #59 | Agent Registry and Capability Registry v1 | built / ready for review | Define registered agents, departments, capabilities, permissions, delegated approvals, blocked actions, and escalation routes. |
 | Build #60 | Workflow State Machine and Handoff Contract v1 | built / ready for review | Define controlled task statuses, handoffs, manager routing, QA routing, Danny review routing, rejection loops, and report-only lifecycle movement. | `docs:workflow-state-machine` | Must remain READ_ONLY_REPORT_ONLY. |
 | Build #61 | Audit Trail and Event Log Contract v1 | built / ready for review | Define audit/event logging contract for workflow state changes, handoffs, validations, QA decisions, The Gaffer decisions, and Danny decisions. |Future roadmap items remain planned until Danny explicitly authorises them:
-| Build #62 | Rollback and Incident Control Contract v1 | planned / next | Define controlled rollback, incident, blocked-action, governance-failure, and recovery rules. | cw-content-brain/docs/WATCHDOG_HQ_ROLLBACK_INCIDENT_CONTROL_CONTRACT.md |
+| Build #62 | Rollback and Incident Control Contract v1 | built / ready for review | Define controlled rollback, incident, blocked-action, governance-failure, and recovery rules. | cw-content-brain/docs/WATCHDOG_HQ_ROLLBACK_INCIDENT_CONTROL_CONTRACT.md |
 
 - stronger content operations dashboard
 - review factory
@@ -222,3 +222,16 @@ Build 61 defines the audit trail and event log contract for Watchdog HQ. It lock
 Build 61 remains READ_ONLY_REPORT_ONLY. It does not create a live logger, database writer, Supabase integration, website editor, publishing workflow, affiliate inserter, trust-rating editor, AI/API caller, live crawler, or approval/apply workflow.
 
 Next planned build: Build #62 — Rollback and Incident Control Contract v1.
+
+## Build #62 completion note
+
+Status: built / ready for review. Locked output: cw-content-brain/docs/WATCHDOG_HQ_ROLLBACK_INCIDENT_CONTROL_CONTRACT.md.
+
+Build 62 defines the rollback and incident control contract for Watchdog HQ. It locks incident_opened, incident_type, severity, containment_action, rollback_requested, rollback_required, rollback_completed, blocked_action_detected, validation_failed, validator_failed, state_before, state_after, rollback_from_state, rollback_to_state, incident_closed, repeated_failure_loop, override_requested, blueprint_drift, roadmap_drift, and incident routing rules.
+
+Build 62 completes the first foundation-control contract set: agent identity, capability boundaries, workflow states, controlled handoffs, audit events, rollback rules, incident handling, safety locks, escalation paths, Danny approval protection, and Gatekeeper Grace governance.
+
+Current mode remains READ_ONLY_REPORT_ONLY. Build 62 does not create live scripts, publish, write to Supabase, edit website content, insert affiliate links, change trust ratings, perform live rollback automation, or create an approval/apply workflow.
+
+Next planned checkpoint: Foundation Module Completion Review — confirm the foundation-control layer is ready before starting the next agent/workforce build.
+
