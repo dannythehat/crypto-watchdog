@@ -1205,3 +1205,27 @@ An `unsafe_handoff` event must be opened where:
 
 No `unsafe_handoff` may move forward until the issue has a recovery_action, incident_owner, and closure recommendation.
 
+
+## Required Incident Closure Field: closure_recommendation
+
+Every incident review package must include closure_recommendation.
+
+closure_recommendation records the recommended close-out decision after the incident has been reviewed, repaired, escalated, or confirmed as blocked.
+
+Allowed closure_recommendation values:
+
+- close_no_action_required
+- close_after_documentation_update
+- close_after_repair
+- keep_open_pending_manager_review
+- keep_open_pending_qa_review
+- keep_open_pending_danny_review
+- scalate_to_the_gaffer
+- scalate_to_gatekeeper_grace
+- scalate_to_danny
+- convert_to_rollback_plan
+- locked_no_safe_closure
+
+A rollback or incident item cannot be considered complete where closure_recommendation is missing.
+
+closure_recommendation does not approve publishing, Supabase writes, affiliate insertion, trust-rating edits, or live changes. It is a report-only close-out recommendation under READ_ONLY_REPORT_ONLY mode.
