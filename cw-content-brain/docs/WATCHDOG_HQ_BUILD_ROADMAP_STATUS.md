@@ -54,10 +54,11 @@ The Watchdog HQ base structure through the Content Operations Command Centre is 
 | Build #53 | Review Evidence Intake Contract v1 | built / ready for review | Define Danny evidence intake format for reviews. | TBD | Evidence placeholders allowed; fake claims blocked. | Planned |
 | Build #54 | Review Article Assembly Contract v1 | built / ready for review | Define how evidence becomes review draft structure. | TBD | No final claims without evidence. | Planned |
 | Build #55 | Review Draft Safety Harness v1 | built / ready for review | Guard review drafts before rebuild work expands. | TBD | QC and Danny review required for high-risk content. | Planned |
-| Build #56 | Review Rebuild Agent v1 | planned / next | Future report-only rebuild agent using Danny-added evidence. | TBD | No publish/apply; evidence-led only. | Planned |
+| Build #56 | Review Rebuild Agent v1 | built / ready for review | Future report-only rebuild agent using Danny-added evidence. | TBD | No publish/apply; evidence-led only. | Planned |
 
 ## Future Roadmap
 
+| Build #57 | Review Rebuild Report Schema v1 | planned / next | Define local report schema and validation contract for Rewrite Rita outputs. |
 Future roadmap items remain planned until Danny explicitly authorises them:
 
 - stronger content operations dashboard
@@ -145,3 +146,15 @@ Build 55 defines the validation layer for assembled review draft packages before
 It locks the harness input/output objects, verdicts, allowed next states, validation checks, severity values, safety issue object, blocking issue rules, warning issue rules, detailed check definitions, pass rules, rejection rules, rejection loops, safe harness outputs, QA handoff, Danny handoff, and Build 56 handoff.
 
 Next planned build: Build #56 — Review Rebuild Agent v1.
+
+## Build #56 completion note
+
+Status: built / ready for review. Locked output: cw-content-brain/docs/WATCHDOG_HQ_REVIEW_REBUILD_AGENT.md.
+
+Build 56 defines Rewrite Rita, the first report-only Review Rebuild Agent v1.
+
+Rewrite Rita uses the Build 52C page/template library, Build 53 evidence intake contract, Build 54 article assembly contract, and Build 55 draft safety harness. It may prepare local/report-only rebuild reports only.
+
+It locks agent identity, required inputs, allowed harness verdicts, rebuild output object, section rebuild object, rewrite rules, blocked actions, report-only output principle, detailed rewrite behaviour, output folder rules, QA routing, Danny routing, failure routing, serious-content handling, affiliate handling, trust-status handling, proof-gap handling, claim handling, rebuild report acceptance criteria, future implementation constraints, and Build 57 handoff.
+
+Next planned build: Build #57 — Review Rebuild Report Schema v1.
