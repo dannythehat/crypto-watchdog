@@ -774,3 +774,29 @@ The Gaffer filters operational noise before Danny sees it. Gatekeeper Grace rece
 Current mode remains READ_ONLY_REPORT_ONLY. Build 61 does not create live scripts, write audit logs to Supabase, create database tables, publish, edit website content, send email, insert affiliate links, change trust ratings, activate approval/apply workflows, call AI/APIs, or perform live crawling.
 
 Build 62 will define the Rollback and Incident Control Contract v1 so blocked actions, failed validations, unsafe handoffs, blueprint drift, roadmap drift, and governance failures have a controlled recovery and escalation path.
+
+## Build 62 locked rollback and incident control contract
+
+The locked Watchdog HQ Rollback and Incident Control Contract v1 is maintained in cw-content-brain/docs/WATCHDOG_HQ_ROLLBACK_INCIDENT_CONTROL_CONTRACT.md.
+
+Build 62 defines how Watchdog HQ handles blocked actions, validation failures, unsafe outputs, blueprint drift, roadmap drift, incident_opened events, rollback_requested events, rollback_completed events, repeated failure loops, approval override requests, and incident closure.
+
+The rollback and incident control layer protects the system from uncontrolled fixes, silent bypasses, unsafe merges, live-action drift, accidental publishing, Supabase writes, affiliate insertion, trust-rating edits, unsupported scam/fraud wording, and agent/manager permission violations.
+
+The foundation-control set is now complete for the first module:
+
+1. Foundations Readiness Audit
+2. Hive Operating Model
+3. Agent Registry and Capability Registry
+4. Workflow State Machine and Handoff Contract
+5. Audit Trail and Event Log Contract
+6. Rollback and Incident Control Contract
+
+Danny remains the Human Owner and final authority for CEO-level exceptions, critical decisions, material blueprint pivots, failed governance overrides, live-action approvals, public trust decisions, trust-rating changes, serious scam/fraud wording, affiliate insertion, and publishing decisions.
+
+The Gaffer filters operational noise before Danny sees it. Gatekeeper Grace remains the governance owner for safety, evidence, claims, affiliate risk, rating risk, scam/fraud wording, and public trust risk.
+
+Current mode remains READ_ONLY_REPORT_ONLY. Build 62 does not enable live publishing, Supabase writes, affiliate insertion, trust-rating edits, live website edits, production deletion, live rollback automation, or approval/apply workflow.
+
+The next step is a Foundation Module Completion Review before starting the next agent/workforce build. Future agents must use the locked foundation-control contracts and must not invent new rules.
+
