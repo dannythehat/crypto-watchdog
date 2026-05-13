@@ -633,3 +633,9 @@ The following phrases are intentionally repeated so the blueprint lock validator
 - DeFi wallets
 - Trusted DeFi wallets
 
+
+
+## Build 52C locked page/template library
+
+The locked CryptoWatchdog page/template and themed hub library is maintained in cw-content-brain/docs/WATCHDOG_HQ_PAGE_TEMPLATE_THEMED_HUB_LIBRARY.md. Future agents must follow it when drafting or reviewing CryptoWatchdog pages, hubs, guides, warnings, comparisons, promos, news/blog posts, trusted brand boxes, review cards, related content sections, final word sections, image/video placement plans, SEO metadata, links, affiliate disclosures, and QA/QC/Danny approval checks.
+
