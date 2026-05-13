@@ -1056,3 +1056,15 @@ source_agent and target_agent must both map back to the locked Agent Registry an
 
 No workflow handoff may invent an unregistered agent, unregistered manager, or unapproved role.
 
+
+## Build 60 exact safety phrase lock
+
+For verification and future automation checks, Build 60 explicitly preserves the following locked blocked actions:
+
+- no live publishing
+- no Supabase writes
+- no affiliate insertion
+- no trust-rating edits
+
+These phrases are exact safety locks. Any future workflow state, handoff, manager route, QA route, agent output, or Gaffer decision must treat these as blocked unless Danny explicitly approves a later safe workflow with proper approval, audit, rollback, and permission controls.
+
