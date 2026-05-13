@@ -130,6 +130,84 @@ Watchdog HQ will eventually manage, work, audit, research, update, SEO-improve, 
 
 This vision is broad, but the operating model remains controlled: agents produce findings, drafts, briefs, reports, and review queues. Human approval remains required before anything important reaches a live user.
 
+## 7A. Multi-Agent Foundations Readiness Lock
+
+Before Watchdog HQ adds more specialist workers or expands the Hive, the foundations layer must be audited and locked.
+
+The formal readiness question is:
+
+**Can a new agent be added without inventing new rules?**
+
+If the answer is no, the foundations are not ready yet.
+
+Required foundation areas:
+
+- Agent identity
+- Permission model
+- State machine
+- Shared schemas
+- Knowledge architecture
+- Observability
+- Rollback and incident control
+- Human approval and escalation rules
+
+Required control layers:
+
+- Control plane: identity, policy engine, approvals, kill switch, logging
+- Execution plane: agent runtime, tools, connectors, queues, retries, timeouts
+- Data and memory plane: canonical knowledge, short-term task context, refresh rules, access boundaries
+- Observability plane: trace IDs, structured logs, version tracking, anomaly alerts, cost tracking
+
+Required design artifacts or equivalents:
+
+- Root `AGENTS.md`
+- Agent registry
+- Capability registry
+- Shared schemas for ticket input, agent output, rejection reasons, escalation reasons, and publish approvals
+- Workflow/state map showing all allowed transitions
+- Knowledge map documenting source-of-truth files and who can modify them
+- Logging and tracing spec, including trace IDs across agent chains
+- Incident and rollback playbook
+- Test harness and evaluation suite for each agent class
+
+These artifacts are the reusable rails for the Hive. Without them, adding agents may still be possible, but plugging them in safely becomes harder as the system grows.
+
+## 7B. Four-Layer Hive Operating Model Lock
+
+The target Watchdog HQ Hive model has four layers:
+
+1. Human Owner Layer — Danny remains final authority for exceptions, strategic pivots, high-risk brand decisions, publishing-sensitive decisions, trust/rating decisions, affiliate-sensitive decisions, and override approvals.
+2. Executive AI Layer — Chief Orchestrator, Content Operations Director, SEO Director, Brand Governance Director, Distribution Director, Media Director, and Analytics Director.
+3. Department Manager Layer — managers own departments, retries, exception flows, handoffs, quality gates, and escalation discipline.
+4. Specialist Worker Layer — narrow, bounded workers that perform specific tasks inside explicit permissions and contracts.
+
+The target master departments are:
+
+1. Executive Orchestration
+2. Content Operations
+3. Research & Intelligence
+4. Editorial Strategy
+5. Content Production
+6. SEO
+7. Media
+8. Social & Distribution
+9. QA & Governance
+10. Analytics & Lifecycle
+
+Operating rules:
+
+- Every task has one owning department and one owning agent.
+- Specialists can communicate directly only with agents in their own team, their manager, or an officially defined next-stage team.
+- Cross-department requests go through managers or the Chief Orchestrator.
+- QA never edits; QA only passes, rejects, or escalates.
+- Managers approve retries, exception flows, and cross-team work.
+- Only Executive AI or Danny can override failed governance gates.
+- The full 120+ specialist Hive is a future target operating model, not the immediate build.
+- Watchdog HQ must build the command structure, contracts, permissions, schemas, state flow, audit trail, and approval rails before scaling specialist agents.
+
+The Hive model exists to stop blueprint drift. Important vision must be locked into blueprint and roadmap control docs, then built bit by bit, with completed builds clearly marked so the next step is never guessed.
+
+
 ## 8. Review Production Workflow
 
 Review production workflow is locked:
@@ -321,13 +399,20 @@ Corrected next build sequence:
 - Build #49 — Watchdog HQ Master Blueprint Lock v1
 - Build #50 — Content Operations Command Centre v1
 - Build #51 — Content QA & Brand Voice Manager v1
-- Build #52 — Content Distribution & Update Planner v1
-- Build #53 — Review Evidence Intake Contract v1
-- Build #54 — Review Article Assembly Contract v1
-- Build #55 — Review Draft Safety Harness v1
-- Build #56 — Review Rebuild Agent v1
+- Build #52A — Watchdog HQ Multi-Agent Foundations Readiness Audit v1 — next
+- Build #52B — Watchdog HQ Hive Operating Model v1 — planned after #52A
+- Build #52C — CryptoWatchdog Page Template & Themed Hub Library v1 — planned after #52B
+- Build #53 — Review Evidence Intake Contract v1 — planned after #52C
+- Build #54 — Review Article Assembly Contract v1 — planned
+- Build #55 — Review Draft Safety Harness v1 — planned
+- Build #56 — Review Rebuild Agent v1 — planned
 
-Build #49 locks the vision and operating rules. Builds #50-#56 should follow this document unless Danny explicitly changes the roadmap.
+Build #52A must happen before additional specialist-agent expansion. It audits whether Watchdog HQ has enough reusable foundations for a new agent to be added without inventing new rules.
+
+Build #52B locks the four-layer Hive model, department ownership, manager routing, escalation paths, status paths, and cross-team operating rules.
+
+Build #52C then creates the page/template architecture library for reviews, themed hub pages, guides, warnings, comparisons, promos, news/blog posts, trusted brand boxes, review cards, related content sections, media placement, SEO rules, affiliate disclosure rules, QA/QC, and Danny approval rules.
+
 
 ## 17. Future Roadmap
 
