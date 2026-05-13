@@ -60,7 +60,8 @@ The Watchdog HQ base structure through the Content Operations Command Centre is 
 
 | Build #57 | Review Rebuild Report Schema v1 | built / ready for review | Define local report schema and validation contract for Rewrite Rita outputs. |
 | Build #58 | Review Rebuild Report Validator v1 | built / ready for review | Define validator contract for checking Rewrite Rita rebuild reports against Build 57 schema. |
-| Build #59 | Agent Registry and Capability Registry v1 | planned / next | Define registered agents, departments, capabilities, permissions, delegated approvals, blocked actions, and escalation routes. |
+| Build #59 | Agent Registry and Capability Registry v1 | built / ready for review | Define registered agents, departments, capabilities, permissions, delegated approvals, blocked actions, and escalation routes. |
+| Build #60 | Workflow State Machine and Handoff Contract v1 | planned / next | Define controlled task statuses, handoffs, manager routing, QA routing, Danny review routing, rejection loops, and report-only lifecycle movement. | `docs:workflow-state-machine` | Must remain READ_ONLY_REPORT_ONLY. |
 Future roadmap items remain planned until Danny explicitly authorises them:
 
 - stronger content operations dashboard
@@ -184,3 +185,16 @@ It locks validator inputs, validator output object, allowed verdicts, passing ru
 It also confirms the future operating model: routine non-critical issues route through the AI management layer and department leads, while Danny receives CEO-level exceptions and critical approvals.
 
 Next planned build: Build #59 — Agent Registry and Capability Registry v1.
+
+## Build #59 completion note
+
+Status: built / ready for review. Locked output: cw-content-brain/docs/WATCHDOG_HQ_AGENT_REGISTRY_CAPABILITY_REGISTRY.md.
+
+Build 59 consolidates the older Agent Registry and Agent Capability Registry v2 history into the current Watchdog HQ foundation model. It defines registered agents, departments, manager ownership, capability boundaries, globally blocked capabilities, delegated AI approvals, Danny-only approvals, routine vs critical decisions, escalation routes, connector boundaries, marketing/outreach boundaries, and registry update rules.
+
+Build 59 confirms that Danny should receive CEO-level exceptions and critical approvals, not every operational task. Routine non-critical issues should move through department managers, The Gaffer, and QA before reaching Danny.
+
+Build 59 remains READ_ONLY_REPORT_ONLY. It does not enable live publishing, Supabase writes, affiliate insertion, trust-rating edits, AI/API calls, Search Console actions, Analytics actions, Semrush actions, Gmail sending, media generation, live outreach, live crawling, or Safe Apply.
+
+Next planned build: Build #60 — Workflow State Machine and Handoff Contract v1.
+

@@ -719,3 +719,27 @@ Routine non-critical issues should route through the AI management layer, depart
 Build 58 remains READ_ONLY_REPORT_ONLY. It does not create a live validator script, publish, write to Supabase, edit live pages, alter ratings, change trust status, insert affiliate URLs, call AI/API tools, generate media, create live article files, send emails, connect Search Console, connect Analytics, connect Semrush, or enable Safe Apply.
 
 Build 59 will begin the Agent Registry / Capability Registry foundation so agents, departments, managers, permissions, blocked actions, delegated approvals, and escalation routes are controlled properly.
+
+---
+
+## Build 59 locked agent registry and capability registry
+
+The locked Watchdog HQ Agent Registry and Capability Registry v1 is maintained in cw-content-brain/docs/WATCHDOG_HQ_AGENT_REGISTRY_CAPABILITY_REGISTRY.md.
+
+Build 59 consolidates the older Phase 2I Agent Registry and Agent Capability Registry v2 history into the newer Watchdog HQ foundation model created by Builds 52A to 58.
+
+Build 59 defines registered agents, master departments, manager ownership, allowed capabilities, globally blocked capabilities, delegated AI approvals, Danny-only approvals, routine vs critical decision split, department access rules, escalation routes, connector boundaries, marketing/outreach boundaries, and registry update rules.
+
+The core authority model is now:
+
+1. Danny remains the Human Owner and final authority for CEO-level exceptions and critical decisions.
+2. The Gaffer coordinates the AI management layer and filters Danny-ready decisions.
+3. Department managers handle routine report-only workflow movement.
+4. Gatekeeper Grace controls QA and governance gates.
+5. Specialist workers operate only inside assigned department, manager, capability, and permission boundaries.
+
+Danny should receive CEO-level exceptions, not every operational item. Routine non-critical items should route through department managers, the AI management layer, and QA before reaching Danny.
+
+Current mode remains READ_ONLY_REPORT_ONLY. Build 59 does not enable live publishing, Supabase writes, affiliate insertion, trust-rating edits, AI/API calls, Search Console actions, Analytics actions, Semrush actions, Gmail sending, media generation, live outreach, live crawling, or Safe Apply.
+
+Build 60 will define the Workflow State Machine and Handoff Contract v1 so registered agents, managers, QA, The Gaffer, and Danny move work through controlled statuses rather than informal handoffs.
