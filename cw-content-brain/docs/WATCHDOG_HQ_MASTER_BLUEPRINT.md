@@ -703,3 +703,19 @@ Future Rewrite Rita outputs must include required top-level fields, source docum
 Build 57 remains READ_ONLY_REPORT_ONLY. It does not create a live generator, publish, write to Supabase, edit live pages, alter ratings, change trust status, insert affiliate URLs, call AI/API tools, generate media, create live article files, or enable Safe Apply.
 
 Build 58 will define the Review Rebuild Report Validator v1 that checks future Rewrite Rita reports against this schema.
+
+## Build 58 locked review rebuild report validator
+
+The locked CryptoWatchdog Review Rebuild Report Validator v1 contract is maintained in cw-content-brain/docs/WATCHDOG_HQ_REVIEW_REBUILD_REPORT_VALIDATOR.md.
+
+Build 58 defines the validation contract that future Rewrite Rita rebuild reports must pass before moving to QA or Danny review.
+
+The validator checks Build 57 schema compliance, required inputs, harness status, evidence support, proof-gap visibility, escalation visibility, blocked claims, affiliate handling, trust-status handling, serious-content handling, QA handoff, Danny review queue, blocked actions, routing decisions, and validation status.
+
+The validator does not rewrite content, publish, approve publication, change trust ratings, insert affiliate links, make commercial decisions, or bypass governance.
+
+Routine non-critical issues should route through the AI management layer, department leads, or relevant specialist managers. Danny should receive CEO-level exceptions, high-risk trust decisions, reputational decisions, scam/fraud/legal wording, affiliate conflict decisions, and other critical approvals.
+
+Build 58 remains READ_ONLY_REPORT_ONLY. It does not create a live validator script, publish, write to Supabase, edit live pages, alter ratings, change trust status, insert affiliate URLs, call AI/API tools, generate media, create live article files, send emails, connect Search Console, connect Analytics, connect Semrush, or enable Safe Apply.
+
+Build 59 will begin the Agent Registry / Capability Registry foundation so agents, departments, managers, permissions, blocked actions, delegated approvals, and escalation routes are controlled properly.
