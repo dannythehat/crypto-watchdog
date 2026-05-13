@@ -59,7 +59,8 @@ The Watchdog HQ base structure through the Content Operations Command Centre is 
 ## Future Roadmap
 
 | Build #57 | Review Rebuild Report Schema v1 | built / ready for review | Define local report schema and validation contract for Rewrite Rita outputs. |
-| Build #58 | Review Rebuild Report Validator v1 | planned / next | Define validator contract for checking Rewrite Rita rebuild reports against Build 57 schema. |
+| Build #58 | Review Rebuild Report Validator v1 | built / ready for review | Define validator contract for checking Rewrite Rita rebuild reports against Build 57 schema. |
+| Build #59 | Agent Registry and Capability Registry v1 | planned / next | Define registered agents, departments, capabilities, permissions, delegated approvals, blocked actions, and escalation routes. |
 Future roadmap items remain planned until Danny explicitly authorises them:
 
 - stronger content operations dashboard
@@ -171,3 +172,15 @@ The schema supports existing weak page rebuilds and new draft review rebuilds. I
 It locks required top-level fields, source documents, input status, harness status, rebuild status values, rebuilt section fields, claim strength values, evidence usage summary, proof-gap summary, escalation summary, blocked claims removed, cautious wording used, affiliate disclosure status, trust-status handling, serious-content handling, QA handoff, Danny review queue, recommended next actions, blocked action confirmations, validation status, and existing/new content handling.
 
 Next planned build: Build #58 — Review Rebuild Report Validator v1.
+
+## Build #58 completion note
+
+Status: built / ready for review. Locked output: cw-content-brain/docs/WATCHDOG_HQ_REVIEW_REBUILD_REPORT_VALIDATOR.md.
+
+Build 58 defines the validation contract that future Rewrite Rita rebuild reports must pass before moving to QA or Danny review.
+
+It locks validator inputs, validator output object, allowed verdicts, passing rules, warning rules, rejection rules, routing rules, blocked action checks, schema checks, safety checks, evidence checks, harness checks, section checks, affiliate checks, trust-status checks, serious-content checks, QA handoff checks, Danny review checks, issue severity rules, validation report naming, routing outputs, and acceptance criteria.
+
+It also confirms the future operating model: routine non-critical issues route through the AI management layer and department leads, while Danny receives CEO-level exceptions and critical approvals.
+
+Next planned build: Build #59 — Agent Registry and Capability Registry v1.
