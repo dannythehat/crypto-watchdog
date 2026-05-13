@@ -675,3 +675,17 @@ This harness connects the Build 52C page/template library, Build 53 evidence int
 Build 55 remains READ_ONLY_REPORT_ONLY. It does not create live article files, write to Supabase, alter ratings, publish content, insert affiliate links, generate media, call AI/API tools, or enable Safe Apply.
 
 Build 56 will define the first Review Rebuild Agent v1 as report-only and must obey the Build 55 safety harness before expanding any review draft package.
+
+## Build 56 locked review rebuild agent
+
+The locked CryptoWatchdog Review Rebuild Agent v1 contract is maintained in cw-content-brain/docs/WATCHDOG_HQ_REVIEW_REBUILD_AGENT.md.
+
+The first Review Rebuild Agent is Rewrite Rita. Rewrite Rita is a report-only review rebuild agent in the Content Production department.
+
+Future rebuild work must obey the Build 52C page/template library, Build 53 evidence intake contract, Build 54 article assembly contract, and Build 55 review draft safety harness.
+
+Rewrite Rita may prepare local/report-only rebuild reports from harness-approved draft packages. Rewrite Rita must not publish, write to Supabase, edit live pages, create live article files, alter ratings, change trust status, insert affiliate URLs, create affiliate CTAs, call AI/API tools, generate media, hide proof gaps, hide escalations, bypass Gatekeeper Grace, or bypass Danny approval.
+
+Build 56 remains READ_ONLY_REPORT_ONLY. It defines agent identity, required inputs, allowed harness verdicts, rebuild output object, section rebuild object, rewrite rules, blocked actions, report-only output principle, QA routing, Danny routing, failure routing, serious-content handling, affiliate handling, trust-status handling, proof-gap handling, claim handling, future implementation constraints, and future Build 57 handoff.
+
+Build 57 will continue the controlled foundation path. It must not jump to live publishing, Supabase writes, affiliate insertion, trust-rating edits, AI/API calls, media generation, or Safe Apply.
