@@ -1006,3 +1006,29 @@ Future agents must operate as controlled workers inside:
 
 This is how Watchdog HQ becomes a real AI company structure rather than a pile of disconnected prompts.
 
+
+## Required workflow status field
+
+Every future Watchdog HQ task, report, handoff, validation result, QA review item, manager review item, and Danny review item must include a `workflow_status` field.
+
+The `workflow_status` field is the controlled state marker for the work item. It must not be replaced with informal wording such as done, pending, waiting, okay, failed, or approved.
+
+Allowed `workflow_status` values must come from the controlled workflow state machine defined in this contract.
+
+Future agents, managers, validators, routers, QA checks, and audit/event logs must read and preserve `workflow_status` during every handoff.
+
+A handoff is invalid where `workflow_status` is missing, unclear, unsupported, or inconsistent with the current evidence, validation result, approval state, or escalation state.
+
+
+## Build 60 exact workflow_status control terms
+
+Every workflow item must include workflow_status.
+
+Allowed workflow_status values must come from the controlled workflow state machine in this contract.
+
+A handoff is invalid where workflow_status is missing.
+
+The workflow_status field must be preserved by every agent, manager, validator, QA reviewer, router, audit log, and Danny review queue handoff.
+
+workflow_status must not be replaced with informal wording such as done, pending, okay, passed, failed, or approved.
+
