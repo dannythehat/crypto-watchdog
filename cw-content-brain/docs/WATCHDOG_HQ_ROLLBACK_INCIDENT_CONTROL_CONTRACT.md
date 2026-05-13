@@ -1082,3 +1082,49 @@ It does not enable live website edits.
 It does not enable live rollback automation.
 
 It keeps Watchdog HQ safe, auditable, and ready for the next controlled phase.
+
+## Build 62 exact recovery and rollback field locks
+
+The rollback and incident control contract must preserve the following exact recovery fields for future validators and agents.
+
+### recovery_action
+
+`recovery_action` is the required field that records the safe report-only recovery step proposed or completed after a blocked action, failed validation, unsafe workflow state, failed handoff, unsafe claim, attempted permission breach, or governance escalation.
+
+Allowed `recovery_action` examples include:
+
+- reject_to_source_agent
+- reroute_to_manager
+- reroute_to_gatekeeper_grace
+- escalate_to_the_gaffer
+- escalate_to_danny
+- request_missing_evidence
+- quarantine_report_output
+- restore_previous_report_version
+- require_manual_review
+- mark_as_no_action_taken
+
+A `recovery_action` must never perform live publishing, no Supabase writes, no affiliate insertion, no trust-rating edits, live site edits, or destructive changes.
+
+### rollback_plan
+
+`rollback_plan` is the required field that records the controlled report-only rollback plan before any rollback-related recommendation is considered complete.
+
+A valid `rollback_plan` must state:
+
+- what changed
+- what failed
+- which artifact, output, or workflow state is affected
+- state_before
+- state_after
+- safest restoration target
+- owning manager
+- whether Gatekeeper Grace review is required
+- whether The Gaffer review is required
+- whether Danny review is required
+- expected recovery_action
+- audit event references
+- confirmation that the plan remains READ_ONLY_REPORT_ONLY
+
+A `rollback_plan` is invalid if it proposes live publishing, Supabase writes, affiliate insertion, trust-rating edits, live site edits, deletion of production content, or any action outside the approved capability registry.
+
