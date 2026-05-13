@@ -758,3 +758,19 @@ Build 60 remains READ_ONLY_REPORT_ONLY. It does not create live scripts, publish
 
 Build 61 will define the Audit Trail and Event Log Contract v1 so workflow state changes, handoffs, validations, QA decisions, The Gaffer decisions, and Danny decisions can be tracked consistently.
 
+
+## Build 61 locked audit trail and event log contract
+
+The locked Watchdog HQ Audit Trail and Event Log Contract v1 is maintained in cw-content-brain/docs/WATCHDOG_HQ_AUDIT_TRAIL_EVENT_LOG_CONTRACT.md.
+
+Build 61 defines how future Watchdog HQ workflows, agents, managers, QA checks, validators, handoffs, rejections, escalations, Danny reviews, PR checks, blueprint updates, roadmap updates, and rollback/incident signals must be recorded as audit_event records.
+
+The contract requires trace_id, workflow_id, event_id, event_type, event_timestamp_utc, actor, actor_type, workflow_status_before, workflow_status_after, permission_check, safety_check, approval_status, source_agent, target_agent, rejection_reason, escalation_reason, blocked_action, rollback_reference, and evidence references where applicable.
+
+Build 61 protects the system from silent failures, hidden rejections, invented approvals, missing Danny decisions, missing QA decisions, lost handoffs, unsupported claim movement, blueprint drift, roadmap drift, and current-mode breaches.
+
+The Gaffer filters operational noise before Danny sees it. Gatekeeper Grace receives QA and governance risk. Department managers receive operational routing and retry issues. Danny receives CEO-level exceptions and critical decisions only.
+
+Current mode remains READ_ONLY_REPORT_ONLY. Build 61 does not create live scripts, write audit logs to Supabase, create database tables, publish, edit website content, send email, insert affiliate links, change trust ratings, activate approval/apply workflows, call AI/APIs, or perform live crawling.
+
+Build 62 will define the Rollback and Incident Control Contract v1 so blocked actions, failed validations, unsafe handoffs, blueprint drift, roadmap drift, and governance failures have a controlled recovery and escalation path.

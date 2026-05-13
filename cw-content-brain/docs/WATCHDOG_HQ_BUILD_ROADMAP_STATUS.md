@@ -62,7 +62,8 @@ The Watchdog HQ base structure through the Content Operations Command Centre is 
 | Build #58 | Review Rebuild Report Validator v1 | built / ready for review | Define validator contract for checking Rewrite Rita rebuild reports against Build 57 schema. |
 | Build #59 | Agent Registry and Capability Registry v1 | built / ready for review | Define registered agents, departments, capabilities, permissions, delegated approvals, blocked actions, and escalation routes. |
 | Build #60 | Workflow State Machine and Handoff Contract v1 | built / ready for review | Define controlled task statuses, handoffs, manager routing, QA routing, Danny review routing, rejection loops, and report-only lifecycle movement. | `docs:workflow-state-machine` | Must remain READ_ONLY_REPORT_ONLY. |
-| Build #61 | Audit Trail and Event Log Contract v1 | planned / next | Define audit/event logging contract for workflow state changes, handoffs, validations, QA decisions, The Gaffer decisions, and Danny decisions. |Future roadmap items remain planned until Danny explicitly authorises them:
+| Build #61 | Audit Trail and Event Log Contract v1 | built / ready for review | Define audit/event logging contract for workflow state changes, handoffs, validations, QA decisions, The Gaffer decisions, and Danny decisions. |Future roadmap items remain planned until Danny explicitly authorises them:
+| Build #62 | Rollback and Incident Control Contract v1 | planned / next | Define controlled rollback, incident, blocked-action, governance-failure, and recovery rules. | cw-content-brain/docs/WATCHDOG_HQ_ROLLBACK_INCIDENT_CONTROL_CONTRACT.md |
 
 - stronger content operations dashboard
 - review factory
@@ -209,5 +210,15 @@ It locks task states, allowed transitions, department handoff routes, manager ac
 
 Build 60 keeps Watchdog HQ in READ_ONLY_REPORT_ONLY mode. It does not enable live publishing, Supabase writes, website edits, affiliate insertion, email sending, external submissions, rating changes, or Safe Apply.
 
-Next planned build: Build #61 — Audit Trail and Event Log Contract v1.
+Next planned build: Build #62 — Rollback and Incident Control Contract v1.
 
+
+## Build #61 completion note
+
+Status: built / ready for review. Locked output: cw-content-brain/docs/WATCHDOG_HQ_AUDIT_TRAIL_EVENT_LOG_CONTRACT.md.
+
+Build 61 defines the audit trail and event log contract for Watchdog HQ. It locks audit_event structure, event types, trace_id rules, workflow_id rules, workflow_status_before and workflow_status_after rules, actor and actor_type rules, permission_check, safety_check, approval_status, source_agent and target_agent handoff tracking, rejection_reason, escalation_reason, blocked_action, rollback_reference, Danny review recording, PR audit events, blueprint_updated, roadmap_updated, and validator failure events.
+
+Build 61 remains READ_ONLY_REPORT_ONLY. It does not create a live logger, database writer, Supabase integration, website editor, publishing workflow, affiliate inserter, trust-rating editor, AI/API caller, live crawler, or approval/apply workflow.
+
+Next planned build: Build #62 — Rollback and Incident Control Contract v1.
