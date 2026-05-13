@@ -58,7 +58,8 @@ The Watchdog HQ base structure through the Content Operations Command Centre is 
 
 ## Future Roadmap
 
-| Build #57 | Review Rebuild Report Schema v1 | planned / next | Define local report schema and validation contract for Rewrite Rita outputs. |
+| Build #57 | Review Rebuild Report Schema v1 | built / ready for review | Define local report schema and validation contract for Rewrite Rita outputs. |
+| Build #58 | Review Rebuild Report Validator v1 | planned / next | Define validator contract for checking Rewrite Rita rebuild reports against Build 57 schema. |
 Future roadmap items remain planned until Danny explicitly authorises them:
 
 - stronger content operations dashboard
@@ -158,3 +159,15 @@ Rewrite Rita uses the Build 52C page/template library, Build 53 evidence intake 
 It locks agent identity, required inputs, allowed harness verdicts, rebuild output object, section rebuild object, rewrite rules, blocked actions, report-only output principle, detailed rewrite behaviour, output folder rules, QA routing, Danny routing, failure routing, serious-content handling, affiliate handling, trust-status handling, proof-gap handling, claim handling, rebuild report acceptance criteria, future implementation constraints, and Build 57 handoff.
 
 Next planned build: Build #57 — Review Rebuild Report Schema v1.
+
+## Build #57 completion note
+
+Status: built / ready for review. Locked output: cw-content-brain/docs/WATCHDOG_HQ_REVIEW_REBUILD_REPORT_SCHEMA.md.
+
+Build 57 defines the local/report-only schema that future Rewrite Rita rebuild reports must follow.
+
+The schema supports existing weak page rebuilds and new draft review rebuilds. In both cases, the output remains a local/report-only rebuild report, not a live article edit.
+
+It locks required top-level fields, source documents, input status, harness status, rebuild status values, rebuilt section fields, claim strength values, evidence usage summary, proof-gap summary, escalation summary, blocked claims removed, cautious wording used, affiliate disclosure status, trust-status handling, serious-content handling, QA handoff, Danny review queue, recommended next actions, blocked action confirmations, validation status, and existing/new content handling.
+
+Next planned build: Build #58 — Review Rebuild Report Validator v1.

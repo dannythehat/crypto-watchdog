@@ -689,3 +689,17 @@ Rewrite Rita may prepare local/report-only rebuild reports from harness-approved
 Build 56 remains READ_ONLY_REPORT_ONLY. It defines agent identity, required inputs, allowed harness verdicts, rebuild output object, section rebuild object, rewrite rules, blocked actions, report-only output principle, QA routing, Danny routing, failure routing, serious-content handling, affiliate handling, trust-status handling, proof-gap handling, claim handling, future implementation constraints, and future Build 57 handoff.
 
 Build 57 will continue the controlled foundation path. It must not jump to live publishing, Supabase writes, affiliate insertion, trust-rating edits, AI/API calls, media generation, or Safe Apply.
+
+## Build 57 locked review rebuild report schema
+
+The locked CryptoWatchdog Review Rebuild Report Schema v1 is maintained in cw-content-brain/docs/WATCHDOG_HQ_REVIEW_REBUILD_REPORT_SCHEMA.md.
+
+Build 57 defines the local/report-only output schema that future Rewrite Rita review rebuild reports must follow.
+
+The schema supports both existing weak page rebuilds and new draft review rebuilds. In both cases, the output remains a local/report-only rebuild report, not a live article edit.
+
+Future Rewrite Rita outputs must include required top-level fields, source documents, input status, harness status, rebuild status, rebuilt sections, evidence usage summary, proof-gap summary, escalation summary, blocked claims removed, cautious wording used, affiliate disclosure status, trust-status handling, serious-content handling, QA handoff, Danny review queue, recommended next actions, blocked action confirmations, and validation status.
+
+Build 57 remains READ_ONLY_REPORT_ONLY. It does not create a live generator, publish, write to Supabase, edit live pages, alter ratings, change trust status, insert affiliate URLs, call AI/API tools, generate media, create live article files, or enable Safe Apply.
+
+Build 58 will define the Review Rebuild Report Validator v1 that checks future Rewrite Rita reports against this schema.
