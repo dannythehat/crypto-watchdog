@@ -400,7 +400,7 @@ Corrected next build sequence:
 - Build #50 — Content Operations Command Centre v1
 - Build #51 — Content QA & Brand Voice Manager v1
 - Build #52A - Watchdog HQ Multi-Agent Foundations Readiness Audit v1 - built in cw-content-brain/docs/WATCHDOG_HQ_FOUNDATIONS_READINESS_AUDIT.md
-- Build #52B - Watchdog HQ Hive Operating Model v1 - next
+- Build #52B - Watchdog HQ Hive Operating Model v1 - built in cw-content-brain/docs/WATCHDOG_HQ_HIVE_OPERATING_MODEL.md
 - Build #52C — CryptoWatchdog Page Template & Themed Hub Library v1 — planned after #52B
 - Build #53 — Review Evidence Intake Contract v1 — planned after #52C
 - Build #54 — Review Article Assembly Contract v1 — planned
@@ -409,7 +409,7 @@ Corrected next build sequence:
 
 Build #52A created the foundations readiness audit at cw-content-brain/docs/WATCHDOG_HQ_FOUNDATIONS_READINESS_AUDIT.md. It confirms Watchdog HQ has strong report-only foundations, but specialist-agent expansion remains paused until Build #52B locks the Hive operating model.
 
-Build #52B locks the four-layer Hive model, department ownership, manager routing, escalation paths, status paths, and cross-team operating rules.
+Build #52B created the Hive operating model at cw-content-brain/docs/WATCHDOG_HQ_HIVE_OPERATING_MODEL.md. It locks the four-layer Hive model, department ownership, manager routing, escalation paths, status paths, and cross-team operating rules.
 
 Build #52C then creates the page/template architecture library for reviews, themed hub pages, guides, warnings, comparisons, promos, news/blog posts, trusted brand boxes, review cards, related content sections, media placement, SEO rules, affiliate disclosure rules, QA/QC, and Danny approval rules.
 
