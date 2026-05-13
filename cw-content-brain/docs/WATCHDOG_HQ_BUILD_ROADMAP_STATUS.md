@@ -4,7 +4,7 @@ This roadmap status file pairs with `docs/WATCHDOG_HQ_MASTER_BLUEPRINT.md`. Futu
 
 ## Status Summary
 
-The Watchdog HQ base structure through the Content Operations Command Centre is built/merged in summary form. Build #51 is the current Content QA & Brand Voice Manager build. Build #52 onward is planned and must follow the Master Blueprint Lock unless Danny changes the roadmap.
+The Watchdog HQ base structure through the Content Operations Command Centre is built/merged in summary form. Build #51 is the current Content QA & Brand Voice Manager build. Before further specialist-agent expansion, Build #52A, #52B, and #52C now lock foundations, the Hive operating model, and the page/template library in the correct order. Build #52 onward must follow the Master Blueprint Lock unless Danny changes the roadmap.
 
 | Build number | Build name | Status | Purpose | Main files/scripts | Safety notes | Date/PR placeholder |
 |---|---|---|---|---|---|---|
@@ -48,7 +48,9 @@ The Watchdog HQ base structure through the Content Operations Command Centre is 
 | Build #49 | Watchdog HQ Master Blueprint Lock v1 | built/merged | Lock canonical vision, safety rules, and roadmap. | `docs/WATCHDOG_HQ_MASTER_BLUEPRINT.md`, `docs/WATCHDOG_HQ_BUILD_ROADMAP_STATUS.md`, `content:blueprint-lock-validate` | Documentation + validation only. | PR #49 |
 | Build #50 | Content Operations Command Centre v1 | built/merged | Create content operations planning command centre. | `content:ops-command`, `content:ops-command-validate`, `src/content-operations-command-centre-builder.ts`, `src/content-operations-command-centre-validator.ts` | READ_ONLY_REPORT_ONLY; no live edits, publishing, Supabase writes, API calls, media generation, or apply workflow. | PR #50 |
 | Build #51 | Content QA & Brand Voice Manager v1 | built | Add tone, structure, formatting, and brand voice QA. | `content:qa-brand`, `content:qa-brand-validate`, `src/content-qa-brand-voice-manager-builder.ts`, `src/content-qa-brand-voice-manager-validator.ts` | READ_ONLY_REPORT_ONLY; no live edits, publishing, Supabase writes, affiliate insertion, API calls, media generation, trust rating changes, or final legal/policy wording. | This build |
-| Build #52 | Content Distribution & Update Planner v1 | planned | Plan related page updates after new content. | TBD | Planning only. | Planned |
+| Build #52A | Watchdog HQ Multi-Agent Foundations Readiness Audit v1 | planned / next | Audit whether new agents can be added without inventing new rules. | TBD | Documentation/control audit only; READ_ONLY_REPORT_ONLY; no live edits, publishing, Supabase writes, AI/API calls, media generation, trust rating changes, or Safe Apply. | Planned |
+| Build #52B | Watchdog HQ Hive Operating Model v1 | planned | Lock the 4-layer Hive model, departments, managers, routing rules, ownership rules, status paths, and escalation model. | TBD | Operating model only; do not build the 120+ specialist Hive all at once. | Planned |
+| Build #52C | CryptoWatchdog Page Template & Themed Hub Library v1 | planned | Create locked templates for reviews, themed hubs, guides, warnings, comparisons, promos, blog/news posts, trusted brand boxes, review cards, related sections, media placement, SEO, affiliate disclosure, QA/QC, and Danny approval rules. | TBD | Template/control library only; no live edits, publishing, affiliate insertion, media generation, or trust rating changes. | Planned |
 | Build #53 | Review Evidence Intake Contract v1 | planned | Define Danny evidence intake format for reviews. | TBD | Evidence placeholders allowed; fake claims blocked. | Planned |
 | Build #54 | Review Article Assembly Contract v1 | planned | Define how evidence becomes review draft structure. | TBD | No final claims without evidence. | Planned |
 | Build #55 | Review Draft Safety Harness v1 | planned | Guard review drafts before rebuild work expands. | TBD | QC and Danny review required for high-risk content. | Planned |
@@ -70,7 +72,36 @@ Future roadmap items remain planned until Danny explicitly authorises them:
 - controlled approvals
 - Safe Apply Engine only much later
 
-## Build #52 — CryptoWatchdog Page Template & Themed Hub Library v1
+## Build #52A — Watchdog HQ Multi-Agent Foundations Readiness Audit v1
+
+Status: planned / next
+
+Purpose:
+Audit whether Watchdog HQ has the reusable foundations needed to plug in future agents without inventing new rules.
+
+Formal readiness question:
+**Can a new agent be added without inventing new rules?**
+
+This build must verify or define the minimum shared foundations: agent identity, permission model, state machine, shared schemas, knowledge architecture, observability, rollback and incident control, and human approval and escalation rules.
+
+It must also verify or define the required control artifacts or equivalents: root `AGENTS.md`, agent registry, capability registry, shared schemas, workflow/state map, knowledge map, logging/tracing spec, incident and rollback playbook, and test/evaluation harness.
+
+## Build #52B — Watchdog HQ Hive Operating Model v1
+
+Status: planned after #52A
+
+Purpose:
+Lock the future 4-layer Hive model without building the full specialist army immediately.
+
+The model is:
+1. Owner Layer
+2. Executive AI Layer
+3. Department Manager Layer
+4. Specialist Worker Layer
+
+This build must define the target departments, ownership rules, routing rules, allowed handoffs, rejection loops, escalation paths, governance gates, and human override rules.
+
+## Build #52C — CryptoWatchdog Page Template & Themed Hub Library v1
 
 Status: planned
 
