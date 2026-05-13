@@ -639,3 +639,15 @@ The following phrases are intentionally repeated so the blueprint lock validator
 
 The locked CryptoWatchdog page/template and themed hub library is maintained in cw-content-brain/docs/WATCHDOG_HQ_PAGE_TEMPLATE_THEMED_HUB_LIBRARY.md. Future agents must follow it when drafting or reviewing CryptoWatchdog pages, hubs, guides, warnings, comparisons, promos, news/blog posts, trusted brand boxes, review cards, related content sections, final word sections, image/video placement plans, SEO metadata, links, affiliate disclosures, and QA/QC/Danny approval checks.
 
+
+## Build 53 locked review evidence intake contract
+
+The locked CryptoWatchdog review evidence intake contract is maintained in cw-content-brain/docs/WATCHDOG_HQ_REVIEW_EVIDENCE_INTAKE_CONTRACT.md.
+
+Future review, rebuild, QA, trust-status, affiliate, warning, comparison, category-card, and evidence-checking agents must use this contract before relying on evidence in drafts or reports.
+
+This contract locks how Danny evidence, screenshots, deposit notes, withdrawal notes, support notes, public source links, complaint patterns, proof gaps, confidence levels, sensitivity levels, usage rules, escalation triggers, and approval statuses are recorded.
+
+Build 53 also confirms that department and agent access permissions will be wired in a later permissions/capability build. Until then, sensitive evidence remains restricted and must be escalated through the correct manager and Danny approval path.
+
+Build 54 will define how approved evidence becomes structured review article drafts using the Build 52C page library and Build 53 evidence contract.
