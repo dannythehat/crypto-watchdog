@@ -743,3 +743,18 @@ Danny should receive CEO-level exceptions, not every operational item. Routine n
 Current mode remains READ_ONLY_REPORT_ONLY. Build 59 does not enable live publishing, Supabase writes, affiliate insertion, trust-rating edits, AI/API calls, Search Console actions, Analytics actions, Semrush actions, Gmail sending, media generation, live outreach, live crawling, or Safe Apply.
 
 Build 60 will define the Workflow State Machine and Handoff Contract v1 so registered agents, managers, QA, The Gaffer, and Danny move work through controlled statuses rather than informal handoffs.
+
+## Build 60 locked workflow state machine and handoff contract
+
+The locked Watchdog HQ Workflow State Machine and Handoff Contract v1 is maintained in cw-content-brain/docs/WATCHDOG_HQ_WORKFLOW_STATE_MACHINE_HANDOFF_CONTRACT.md.
+
+Build 60 defines the controlled workflow spine for Watchdog HQ. It locks the approved task states, handoff rules, department routing, manager acceptance rules, validation paths, QA routing, Danny review queue rules, audit trail state event schema, duplicate work protection, output path rules, and escalation logic.
+
+Future agents, managers, validators, QA workers, data connectors, marketing agents, affiliate agents, SEO agents, content agents, and analytics agents must operate inside this workflow. They must not behave like loose chatbots or invent their own process.
+
+The Gaffer filters operational noise before Danny sees it. Danny remains the Human Owner and final authority for CEO-level exceptions and critical decisions, but routine non-critical work should be resolved by agents, managers, validators, QA, or The Gaffer.
+
+Build 60 remains READ_ONLY_REPORT_ONLY. It does not create live scripts, publish, write to Supabase, edit website files, send outreach emails, submit affiliate applications, insert affiliate links, change trust ratings, or activate Safe Apply.
+
+Build 61 will define the Audit Trail and Event Log Contract v1 so workflow state changes, handoffs, validations, QA decisions, The Gaffer decisions, and Danny decisions can be tracked consistently.
+
