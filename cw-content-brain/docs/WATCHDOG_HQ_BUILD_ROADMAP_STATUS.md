@@ -61,8 +61,8 @@ The Watchdog HQ base structure through the Content Operations Command Centre is 
 | Build #57 | Review Rebuild Report Schema v1 | built / ready for review | Define local report schema and validation contract for Rewrite Rita outputs. |
 | Build #58 | Review Rebuild Report Validator v1 | built / ready for review | Define validator contract for checking Rewrite Rita rebuild reports against Build 57 schema. |
 | Build #59 | Agent Registry and Capability Registry v1 | built / ready for review | Define registered agents, departments, capabilities, permissions, delegated approvals, blocked actions, and escalation routes. |
-| Build #60 | Workflow State Machine and Handoff Contract v1 | planned / next | Define controlled task statuses, handoffs, manager routing, QA routing, Danny review routing, rejection loops, and report-only lifecycle movement. | `docs:workflow-state-machine` | Must remain READ_ONLY_REPORT_ONLY. |
-Future roadmap items remain planned until Danny explicitly authorises them:
+| Build #60 | Workflow State Machine and Handoff Contract v1 | built / ready for review | Define controlled task statuses, handoffs, manager routing, QA routing, Danny review routing, rejection loops, and report-only lifecycle movement. | `docs:workflow-state-machine` | Must remain READ_ONLY_REPORT_ONLY. |
+| Build #61 | Audit Trail and Event Log Contract v1 | planned / next | Define audit/event logging contract for workflow state changes, handoffs, validations, QA decisions, The Gaffer decisions, and Danny decisions. |Future roadmap items remain planned until Danny explicitly authorises them:
 
 - stronger content operations dashboard
 - review factory
@@ -197,4 +197,17 @@ Build 59 confirms that Danny should receive CEO-level exceptions and critical ap
 Build 59 remains READ_ONLY_REPORT_ONLY. It does not enable live publishing, Supabase writes, affiliate insertion, trust-rating edits, AI/API calls, Search Console actions, Analytics actions, Semrush actions, Gmail sending, media generation, live outreach, live crawling, or Safe Apply.
 
 Next planned build: Build #60 — Workflow State Machine and Handoff Contract v1.
+
+
+## Build #60 completion note
+
+Status: built / ready for review. Locked output: cw-content-brain/docs/WATCHDOG_HQ_WORKFLOW_STATE_MACHINE_HANDOFF_CONTRACT.md.
+
+Build 60 defines the Watchdog HQ workflow state machine and handoff contract.
+
+It locks task states, allowed transitions, department handoff routes, manager acceptance rules, agent completion rules, validator completion rules, QA pass rules, Danny review queue rules, handoff rejection reasons, audit trail event schema, duplicate work protection, local/report-only output paths, CEO-level approval filtering, future data connector routing, and marketing/affiliate outreach routing.
+
+Build 60 keeps Watchdog HQ in READ_ONLY_REPORT_ONLY mode. It does not enable live publishing, Supabase writes, website edits, affiliate insertion, email sending, external submissions, rating changes, or Safe Apply.
+
+Next planned build: Build #61 — Audit Trail and Event Log Contract v1.
 
