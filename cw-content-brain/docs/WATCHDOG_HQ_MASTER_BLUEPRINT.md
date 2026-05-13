@@ -663,3 +663,15 @@ This contract connects the Build 52C page/template library with the Build 53 evi
 Build 54 remains READ_ONLY_REPORT_ONLY. It does not create live article files, write to Supabase, alter ratings, publish content, insert affiliate links, or enable Safe Apply.
 
 Build 55 will define the Review Draft Safety Harness that validates assembled drafts before review rebuild agents expand.
+
+## Build 55 locked review draft safety harness
+
+The locked CryptoWatchdog review draft safety harness is maintained in cw-content-brain/docs/WATCHDOG_HQ_REVIEW_DRAFT_SAFETY_HARNESS.md.
+
+Future review assembly, rebuild, QA, trust-status, affiliate, warning, comparison, category-card, and article-drafting agents must use this harness before any future Review Rebuild Agent expands draft work.
+
+This harness connects the Build 52C page/template library, Build 53 evidence intake contract, and Build 54 article assembly contract. It validates templates, evidence references, unsupported claims, invented testing, invented screenshots, scam/fraud/legal wording, affiliate misuse, trust-status consistency, serious-content tone, Danny approval gates, proof-gap visibility, escalation visibility, and output mode safety.
+
+Build 55 remains READ_ONLY_REPORT_ONLY. It does not create live article files, write to Supabase, alter ratings, publish content, insert affiliate links, generate media, call AI/API tools, or enable Safe Apply.
+
+Build 56 will define the first Review Rebuild Agent v1 as report-only and must obey the Build 55 safety harness before expanding any review draft package.
