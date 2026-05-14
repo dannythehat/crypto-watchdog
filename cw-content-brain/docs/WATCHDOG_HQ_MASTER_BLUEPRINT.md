@@ -915,3 +915,16 @@ Build 68 routes page opportunities and issues through the correct departments an
 
 Build 68 remains READ_ONLY_REPORT_ONLY. It does not publish content, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate media, download media, send outreach, send emails, approve publication, activate Safe Apply, or delete/change production data.
 
+
+## Build 69 locked page discovery work queue schema and validator contract
+
+The locked Watchdog HQ Page Discovery Work Queue Schema & Validator Contract v1 is maintained in cw-content-brain/docs/WATCHDOG_HQ_PAGE_DISCOVERY_WORK_QUEUE_SCHEMA_VALIDATOR_CONTRACT.md.
+
+Build 69 sits directly underneath Build 68. Build 68 defines how Watchdog HQ discovers, inventories, classifies, prioritises, and routes page work. Build 69 defines the report-only schema and validator rules that future page discovery work queue items must follow.
+
+Build 69 locks required report fields, required work item fields, allowed discovery categories, allowed workflow states, blocked approved/applied states, allowed priority values, owner department and owner agent requirements, QA escalation validation, Danny review validation, existing-page-first validation, missing-page validation, blocked action confirmations, validator verdicts, validator output fields, and audit traceability.
+
+Build 69 prevents future agents from inventing their own work queue formats, routing logic, priorities, workflow states, safety wording, or Danny escalation rules.
+
+Build 69 remains READ_ONLY_REPORT_ONLY. It does not publish content, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate media, download media, send outreach, send emails, approve publication, activate Safe Apply, or delete/change production data.
+

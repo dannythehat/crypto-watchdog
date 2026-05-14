@@ -427,3 +427,40 @@ Build 68 does not publish content, edit live pages, write to Supabase, insert af
 Next planned build:
 To be confirmed by Danny after Build 68 review.
 
+
+---
+
+## Build 69 — Page Discovery Work Queue Schema & Validator Contract v1
+
+Status: built / ready for review.
+
+Build 69 creates the report-only schema and validator contract for future page discovery work queue items produced under Build 68.
+
+New contract document:
+- cw-content-brain/docs/WATCHDOG_HQ_PAGE_DISCOVERY_WORK_QUEUE_SCHEMA_VALIDATOR_CONTRACT.md
+
+Build 69 locks:
+- report-level required fields
+- work-item required fields
+- allowed discovery categories
+- allowed workflow states
+- blocked approved/applied states
+- allowed priority values
+- owner department and owner agent requirements
+- routing validation rules
+- QA escalation validation
+- Danny review validation
+- existing-page-first validation
+- missing-page recommendation validation
+- blocked action confirmations
+- validator verdicts
+- validator output schema
+- Audit Alfie traceability requirements
+
+Safety mode remains READ_ONLY_REPORT_ONLY.
+
+Build 69 does not publish content, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate or download media, send outreach, send emails, approve publication, activate Safe Apply, or delete/change production data.
+
+Next planned build:
+To be confirmed by Danny after Build 69 review.
+
