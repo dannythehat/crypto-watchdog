@@ -289,3 +289,40 @@ Build 65 remains READ_ONLY_REPORT_ONLY. It does not add active live agents, publ
 
 Next planned build: Build #66 — Crypto Exchange Hub Page Builder Contract v1.
 
+
+---
+
+## Build 66 — Crypto Exchange Hub Page Builder Contract v1
+
+Status: Built / ready for review.
+
+Build 66 creates the first real Watchdog HQ page-builder contract.
+
+New contract document:
+- cw-content-brain/docs/WATCHDOG_HQ_CRYPTO_EXCHANGE_HUB_PAGE_BUILDER_CONTRACT.md
+
+Build 66 locks:
+- Crypto Exchange Hub Page Builder purpose
+- Editorial Strategy ownership
+- Blueprint Bella management
+- Gatekeeper Grace QA route
+- Audit Alfie audit route
+- Danny escalation route
+- crypto exchange niche lock
+- themed authority hub page structure
+- evidence-first rules
+- affiliate/commercial guardrails
+- internal/external link rules
+- image/video placement rules
+- related blog and guide placement rules
+- report-only output schema
+- QA/validator pass-fail rules
+- site repo / hub repo relationship
+- Lovable relationship as interface/site builder, not unchecked governance brain
+
+Safety mode remains READ_ONLY_REPORT_ONLY.
+
+Build 66 does not publish content, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate or download media, send outreach, approve publication, activate Safe Apply, or delete/change production data.
+
+Next planned build:
+Build 67 — Crypto Wallet Hub Page Builder Contract v1

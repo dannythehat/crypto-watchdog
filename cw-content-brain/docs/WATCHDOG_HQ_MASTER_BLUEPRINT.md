@@ -852,3 +852,21 @@ Build 65 remains READ_ONLY_REPORT_ONLY. It does not activate live agents. It def
 
 Build 66 will create the Crypto Exchange Hub Page Builder Contract v1 using the Build 63 onboarding gate, Build 64 department architecture, and Build 65 exact role catalogue.
 
+
+---
+
+## Build 66 Lock — Crypto Exchange Hub Page Builder Contract v1
+
+Build 66 locks the first real page-builder contract for Watchdog HQ.
+
+The Crypto Exchange Hub Page Builder is owned by Editorial Strategy under Blueprint Bella and must produce READ_ONLY_REPORT_ONLY page plans for CryptoWatchdog crypto exchange themed authority hub pages.
+
+This build confirms that future page-builder agents must work from locked contracts, templates, schemas, validators, workflow states, audit routes, QA gates, and Danny escalation routes.
+
+The Crypto Exchange Hub Page Builder must keep the page inside the crypto exchange niche. It may reference wallets, trading bots, DeFi, tax, staking, casinos, crypto cards, or security tools only as supporting context or natural related links where genuinely relevant. It must not turn the exchange hub into a wallet page, trading bot page, casino page, tax page, NFT page, staking page, DeFi page, or generic crypto page.
+
+The page-builder must plan beautiful, useful, human, evidence-led, trust-first, SEO-smart, beginner-friendly themed authority pages with a hero section, plain-English explanation, how exchanges work, exchange types, user comparison criteria, risks and red flags, reviewed exchange tiles, brand/platform cards, comparison tables, affiliate disclosure logic, internal links, external source rules, image/video placement plans, related blog and guide placements, CryptoWatchdog final word, FAQs, QA route, Danny escalation route, and report-only schema.
+
+Build 66 also records the site/hub relationship: Watchdog HQ is the control brain and the CryptoWatchdog site is the production-facing surface. Future read/write connections must be controlled through snapshots, reports, approval queues, Safe Apply, branches, pull requests, or equivalent Danny-approved workflows. Build 66 does not activate write-back.
+
+Lovable may help build future site and interface experiences, but Watchdog HQ remains the governance brain. Lovable must not bypass Watchdog HQ contracts, safety locks, validators, QA gates, or Danny approval.
