@@ -18,7 +18,7 @@ The Crypto Wallet Hub Page Builder must not publish content, edit live pages, wr
 
 ## Purpose
 
-Build 67 creates the first real page-builder contract for Watchdog HQ.
+Build 67 creates the Crypto Wallet Hub Page Builder operating contract for Watchdog HQ.
 
 The Crypto Wallet Hub Page Builder defines how the AI workforce must plan a crypto wallet themed authority hub page for CryptoWatchdog.
 
@@ -62,17 +62,17 @@ The crypto wallet hub page must stay inside the crypto wallet niche.
 
 It may reference adjacent topics only as supporting context or natural related links where genuinely relevant.
 
-Allowed supporting context includes wallets, trading bots, DeFi, tax, staking, casinos, crypto cards, security tools, custody, regulation, fiat on-ramps, and fiat off-ramps.
+Allowed supporting context includes exchanges, DeFi, staking, NFTs, tax, trading bots, crypto casinos, crypto cards, security tools, custody, scam warnings, phishing warnings, regulation, fiat on-ramps, and fiat off-ramps.
 
-It must not become a wallet page, trading bot page, casino page, tax page, NFT page, staking page, DeFi page, generic crypto page, or general investing page.
+It must not become an exchange page, trading bot page, casino page, tax page, NFT page, staking page, DeFi page, generic crypto page, or general investing page.
 
 Any off-topic drift must be rejected or escalated.
 
 ## Target user
 
-The page must serve users who want to understand, compare, and safely choose crypto wallets.
+The page must serve users who want to understand, compare, choose, back up, and safely use crypto wallets.
 
-Target users include beginners learning what crypto wallets are, users comparing wallets before opening an account, users checking whether an wallet looks safe, users comparing fees/KYC/custody/liquidity/supported coins/payment methods/mobile apps/support/withdrawals, and users trying to avoid fake wallets, pressure tactics, blocked withdrawals, cloned brands, and misleading platform claims.
+Target users include beginners learning what wallets are, users deciding between hot wallets and cold wallets, users comparing custodial and non-custodial wallets, users checking whether a wallet app or browser extension looks legitimate, users trying to understand seed phrases and private keys, users considering hardware wallets, users using DeFi wallets, and users trying to avoid fake wallet apps, phishing links, malicious browser extensions, wallet-drainer approvals, recovery phrase scams, and misleading security claims.
 
 ## Required page structure
 
@@ -104,17 +104,17 @@ The page-builder plan must consider:
 
 The hero must explain what the page helps the user do and why CryptoWatchdog evaluates wallets through a trust-first lens.
 
-The explanation section must define wallets as platforms for buying, selling, trading, and sometimes storing crypto.
+The explanation section must define crypto wallets as tools for storing, receiving, sending, and managing crypto assets and private-key access. It must clearly explain that wallets do not literally store coins inside the app; they manage keys and access to assets recorded on blockchains.
 
-The how-it-works section must cover account creation, KYC, fiat deposits, crypto deposits, trading pairs, fees, spreads, withdrawals, custody, security, and customer support.
+The how-it-works section must cover public addresses, private keys, seed phrases, recovery phrases, wallet backup, wallet recovery, wallet compatibility, supported networks, token support, signing transactions, custody model, and the difference between wallet software, hardware devices, and exchange-held wallets.
 
-The wallet types section may cover centralised wallets, decentralised wallets, peer-to-peer wallets, broker-style crypto platforms, app-first wallets, and fiat on-ramp/off-ramp services.
+The wallet types section may cover hot wallets, cold wallets, mobile wallets, browser wallets, desktop wallets, hardware wallets, paper wallets where relevant, custodial wallets, non-custodial wallets, multi-chain wallets, smart contract wallets, DeFi wallets, and exchange wallets as a related custody comparison.
 
-The comparison section must cover fees, spreads, deposit charges, withdrawal fees, custody, security, KYC, liquidity, supported coins, payment methods, fiat currencies, mobile app, customer support, withdrawal experience, complaint patterns where evidence exists, regulation/licensing transparency where evidence exists, and proof gaps.
+The comparison section must cover custody model, private-key control, seed phrase handling, backup and recovery process, supported coins and networks, hardware wallet compatibility, dApp/browser extension risks, DeFi approval risks, ease of use, security model, open-source or audit transparency where evidence exists, customer support, app-store/official download clarity, known proof gaps, and user-fit.
 
-The risks section must cover fake wallet websites, cloned brands, withdrawal blocks, pressure to deposit more, fake account managers, unclear ownership, unclear licensing claims, hidden fees, suspicious reviews, no clear support route, unrealistic profit claims, and impersonation scams.
+The risks section must cover fake wallet apps, cloned wallet websites, phishing links, malicious browser extensions, wallet-drainer approvals, fake support accounts, fake recovery services, seed phrase theft, private-key exposure, device loss, poor backup practices, unclear ownership, suspicious reviews, unsupported security claims, and impersonation scams.
 
-No platform may be called a scam, fraud, criminal, or fake unless evidence supports the wording and the required serious-content route is followed.
+No wallet may be called safe, secure, trusted, best, recommended, tested, or CryptoWatchdog favourite unless evidence supports the wording and the required governance route is followed.
 
 ## Reviewed wallet tiles and cards
 
@@ -288,3 +288,15 @@ The role must work existing-page-first. If an existing wallet page is found, it 
 The role must remain part of the Watchdog HQ hive-mind workflow. Research agents, SEO agents, inventory agents, page-quality agents, evidence agents, link agents, media planners, validators, managers, and Danny may all trigger or receive wallet-page work through approved workflow routes.
 
 Wallet-page output must remain READ_ONLY_REPORT_ONLY.
+
+---
+
+## Build 67 repair lock — wallet-language correction
+
+This repair confirms the Crypto Wallet Hub Page Builder contract must not inherit exchange-page assumptions.
+
+Wallet pages must be treated as wallet, custody, key-management, backup, recovery, dApp-risk, fake-app, phishing, seed-phrase, and private-key content.
+
+The contract must not define wallets primarily as trading platforms, liquidity venues, KYC products, fiat deposit products, or withdrawal platforms. Those may appear only as exchange-wallet or custodial-wallet context where genuinely relevant.
+
+Build 67 remains READ_ONLY_REPORT_ONLY.
