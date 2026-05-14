@@ -354,3 +354,42 @@ Build 66A does not publish content, edit live pages, write to Supabase, insert a
 Next planned build:
 Build 67 — Crypto Wallet Hub Page Builder Contract v1
 
+
+---
+
+## Build 67 — Crypto Wallet Hub Page Builder Contract v1
+
+Status: built / ready for review.
+
+Build 67 creates the Crypto Wallet Hub Page Builder operating contract.
+
+New contract document:
+- cw-content-brain/docs/WATCHDOG_HQ_CRYPTO_WALLET_HUB_PAGE_BUILDER_CONTRACT.md
+
+Build 67 locks:
+- Crypto Wallet Hub Page Builder purpose
+- existing-page-first behaviour
+- hive-mind trigger routes
+- Blueprint Bella management
+- Routey Rachel routing
+- Gatekeeper Grace QA route
+- Audit Alfie audit route
+- Danny escalation route
+- crypto wallet niche lock
+- wallet authority hub structure
+- wallet safety and security claim guardrails
+- fake wallet app and phishing warning coverage
+- custody / self-custody / seed phrase / private key coverage
+- affiliate/commercial guardrails
+- internal/external link rules
+- image/video placement rules
+- related guide, warning, review, blog and comparison placement
+- report-only output schema
+- validator routes
+
+Safety mode remains READ_ONLY_REPORT_ONLY.
+
+Build 67 does not publish content, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate or download media, send outreach, approve publication, activate Safe Apply, or delete/change production data.
+
+Next planned build:
+To be confirmed by Danny after Build 67 review. The next build must strengthen the Watchdog HQ hive-mind operating system rather than blindly adding page contracts.
