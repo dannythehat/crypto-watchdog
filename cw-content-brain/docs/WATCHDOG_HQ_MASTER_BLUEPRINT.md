@@ -800,3 +800,20 @@ Current mode remains READ_ONLY_REPORT_ONLY. Build 62 does not enable live publis
 
 The next step is a Foundation Module Completion Review before starting the next agent/workforce build. Future agents must use the locked foundation-control contracts and must not invent new rules.
 
+
+## Foundation Closure Safety Lock — Build 62A
+
+The Watchdog HQ foundation-control module remains locked in READ_ONLY_REPORT_ONLY mode.
+
+Blocked actions remain explicit and non-negotiable:
+
+- no live publishing
+- no live site edits
+- no Supabase writes
+- no affiliate insertion
+- no trust-rating edits
+- no approval/apply workflow
+- no real content publishing
+- no deleting/changing production data
+- no AI/API calls unless explicitly approved in a future controlled build
+
