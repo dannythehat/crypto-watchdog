@@ -235,3 +235,22 @@ Current mode remains READ_ONLY_REPORT_ONLY. Build 62 does not create live script
 
 Next planned checkpoint: Foundation Module Completion Review — confirm the foundation-control layer is ready before starting the next agent/workforce build.
 
+
+## Foundation Closure Safety Lock — Build 62A
+
+Build 62A closes the foundation-control safety wording gap by explicitly confirming that READ_ONLY_REPORT_ONLY blocks all live site edits.
+
+The following remain blocked:
+
+- no live publishing
+- no live site edits
+- no Supabase writes
+- no affiliate insertion
+- no trust-rating edits
+- no approval/apply workflow
+- no real content publishing
+- no deleting/changing production data
+- no AI/API calls unless explicitly approved in a future controlled build
+
+This confirms the foundation-control module is ready for formal completion review before the next workforce/agent build is selected.
+
