@@ -267,3 +267,14 @@ Build 63 remains READ_ONLY_REPORT_ONLY. It does not add active live agents, publ
 
 Next planned build: Build #64 — Department Role Architecture v1.
 
+
+## Build #64 completion note
+
+Status: built / ready for review. Locked output: cw-content-brain/docs/WATCHDOG_HQ_DEPARTMENT_ROLE_ARCHITECTURE.md.
+
+Build 64 defines the Watchdog HQ department role architecture before exact roles are expanded. It locks the four-layer company structure, master departments, department ownership, manager layer, specialist role families, page-builder families, content-builder families, validator families, evidence and trust families, SEO families, media and social families, affiliate and commercial families, analytics and lifecycle families, reporting lines, current-now vs future-later role behaviour, and Build 65 handoff.
+
+Build 64 remains READ_ONLY_REPORT_ONLY. It does not add active live agents, publish, edit live pages, write to Supabase, insert affiliate links, change trust ratings, call AI/API tools, generate media, send outreach, create Safe Apply, approve publication, or delete/change production data.
+
+Next planned build: Build #65 — Exact Role Catalogue v1.
+

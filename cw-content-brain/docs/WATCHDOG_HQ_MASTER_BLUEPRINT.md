@@ -830,3 +830,14 @@ This protects Danny's vision from drifting into vague agents, generic page build
 
 Build 64 will define the Department Role Architecture v1 using this onboarding gate.
 
+
+## Build 64 locked department role architecture
+
+The locked Watchdog HQ Department Role Architecture v1 is maintained in cw-content-brain/docs/WATCHDOG_HQ_DEPARTMENT_ROLE_ARCHITECTURE.md.
+
+Build 64 defines the Watchdog HQ company structure before exact roles are expanded. It locks the four-layer company model, master departments, department manager layer, specialist role families, page-builder role families, content-builder role families, validator role families, evidence and trust roles, SEO roles, media and social roles, affiliate and commercial roles, analytics and lifecycle roles, reporting lines, and Build 65 handoff.
+
+Build 64 confirms that page builders are not generic writers. Page-builder families must understand page type, niche, user intent, required sections, platform tiles, comparison tables, related reviews, related guides, related warnings, related blog posts, images, videos, internal links, external/source links, affiliate restrictions, CryptoWatchdog final word, QA route, and Danny approval route.
+
+Build 65 will define the Exact Role Catalogue v1 using the Build 63 onboarding gate and Build 64 department role architecture.
+
