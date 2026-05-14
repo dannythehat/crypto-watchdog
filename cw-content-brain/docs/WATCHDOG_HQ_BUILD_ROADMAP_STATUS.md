@@ -254,3 +254,16 @@ The following remain blocked:
 
 This confirms the foundation-control module is ready for formal completion review before the next workforce/agent build is selected.
 
+
+## Build #63 completion note
+
+Status: built / ready for review. Locked output: cw-content-brain/docs/WATCHDOG_HQ_AGENT_ONBOARDING_EXPANSION_GATE_CONTRACT.md.
+
+Build 63 defines the mandatory onboarding and expansion gate every future Watchdog HQ agent, manager, validator, page builder, content builder, SEO worker, media planner, affiliate worker, analytics worker, or operational role must pass before being added.
+
+It locks required role fields, department ownership, manager ownership, vision alignment, page-type awareness, template requirements, schema requirements, validator requirements, workflow state integration, audit events, rollback and incident routes, permission boundaries, blueprint update rules, roadmap update rules, and onboarding verdicts.
+
+Build 63 remains READ_ONLY_REPORT_ONLY. It does not add active live agents, publish, edit live pages, write to Supabase, insert affiliate links, change trust ratings, call AI/API tools, generate media, send outreach, create Safe Apply, approve publication, or delete/change production data.
+
+Next planned build: Build #64 — Department Role Architecture v1.
+
