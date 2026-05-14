@@ -210,7 +210,7 @@ It locks task states, allowed transitions, department handoff routes, manager ac
 
 Build 60 keeps Watchdog HQ in READ_ONLY_REPORT_ONLY mode. It does not enable live publishing, Supabase writes, website edits, affiliate insertion, email sending, external submissions, rating changes, or Safe Apply.
 
-Next planned build: Build #62 — Rollback and Incident Control Contract v1.
+Next planned build: Build #61 — Audit Trail and Event Log Contract v1.
 
 
 ## Build #61 completion note
@@ -326,3 +326,31 @@ Build 66 does not publish content, edit live pages, write to Supabase, insert af
 
 Next planned build:
 Build 67 — Crypto Wallet Hub Page Builder Contract v1
+
+
+---
+
+## Build 66A — Roadmap & Contract Drift Cleanup Lock v1
+
+Status: built / ready for review.
+
+Build 66A is a protective cleanup build before Build 67.
+
+Build 66A fixes confirmed drift:
+- Build 60 roadmap handoff now correctly points to Build 61 — Audit Trail and Event Log Contract v1.
+- Audit Trail contract stale Build 62 Knowledge Map wording now points to Build 62 — Rollback and Incident Control Contract v1.
+
+Build 66A also locks the clarified hive-mind interpretation:
+- Watchdog HQ is a controlled AI workforce / hive-mind command centre.
+- Page-builder contracts are operating contracts for future AI workers.
+- Page-builder agents work existing-page-first where CryptoWatchdog pages already exist.
+- Future agents may discover, audit, research, route, build, rebuild, refresh, link, enrich, QA, and monitor content through report-only workflows.
+- Build 67 remains next: Crypto Wallet Hub Page Builder Contract v1.
+
+Safety mode remains READ_ONLY_REPORT_ONLY.
+
+Build 66A does not publish content, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate or download media, send outreach, approve publication, activate Safe Apply, or delete/change production data.
+
+Next planned build:
+Build 67 — Crypto Wallet Hub Page Builder Contract v1
+

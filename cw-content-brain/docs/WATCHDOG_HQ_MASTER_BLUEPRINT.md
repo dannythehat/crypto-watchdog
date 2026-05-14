@@ -870,3 +870,20 @@ The page-builder must plan beautiful, useful, human, evidence-led, trust-first, 
 Build 66 also records the site/hub relationship: Watchdog HQ is the control brain and the CryptoWatchdog site is the production-facing surface. Future read/write connections must be controlled through snapshots, reports, approval queues, Safe Apply, branches, pull requests, or equivalent Danny-approved workflows. Build 66 does not activate write-back.
 
 Lovable may help build future site and interface experiences, but Watchdog HQ remains the governance brain. Lovable must not bypass Watchdog HQ contracts, safety locks, validators, QA gates, or Danny approval.
+
+---
+
+## Build 66A Blueprint Lock — Roadmap & Contract Drift Cleanup Lock v1
+
+Build 66A is a protective cleanup build before Build 67.
+
+It corrects confirmed roadmap/contract drift without changing the Watchdog HQ architecture, safety mode, role model, workflow model, or Build 67 direction.
+
+Build 66A confirms:
+- Watchdog HQ remains a controlled AI workforce / hive-mind command centre.
+- Page-builder contracts are future AI worker operating contracts, not blank-page content briefs.
+- Existing CryptoWatchdog pages must be treated as source material when they exist.
+- Future agents may discover, audit, research, route, build, rebuild, refresh, link, enrich, QA, and monitor content only through approved READ_ONLY_REPORT_ONLY workflows until Danny-approved Safe Apply exists.
+- Build 67 remains the next planned build: Crypto Wallet Hub Page Builder Contract v1.
+
+Build 66A remains READ_ONLY_REPORT_ONLY. It does not publish, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate media, approve publication, activate Safe Apply, or delete/change production data.
