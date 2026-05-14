@@ -436,7 +436,7 @@ Build 61 is complete when:
 
 ## 16. Build 62 direction
 
-Build 62 should define the Knowledge Map and Canonical Source Contract v1.
+Build 62 should define the Rollback and Incident Control Contract and Canonical Source Contract v1.
 
 Build 62 should lock which documents, registries, blueprints, reports, evidence packages, content sources, and future memory layers count as canonical knowledge for Watchdog HQ.
 
@@ -1025,4 +1025,5 @@ Required fields:
 - required_next_action
 
 An incident_opened event must preserve READ_ONLY_REPORT_ONLY mode and must not enable no live publishing, no Supabase writes, no affiliate insertion, or no trust-rating edits.
+
 
