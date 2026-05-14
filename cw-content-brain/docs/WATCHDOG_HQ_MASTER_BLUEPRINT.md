@@ -887,3 +887,18 @@ Build 66A confirms:
 - Build 67 remains the next planned build: Crypto Wallet Hub Page Builder Contract v1.
 
 Build 66A remains READ_ONLY_REPORT_ONLY. It does not publish, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate media, approve publication, activate Safe Apply, or delete/change production data.
+
+---
+
+## Build 67 Blueprint Lock — Crypto Wallet Hub Page Builder Contract v1
+
+Build 67 locks the Crypto Wallet Hub Page Builder as a specialist Watchdog HQ hive-mind worker contract.
+
+This role does not create wallet pages from scratch by default. It works existing-page-first and must use approved inventories, page snapshots, sitemap exports, approved content reports, SEO reports, research triggers, page-quality reports, or Danny instructions to determine whether a wallet page exists, needs rebuilding, needs refreshing, needs enrichment, or is missing.
+
+The role supports the wider hive-mind model: Research and SEO agents may identify wallet opportunities, page inventory agents may identify missing or weak wallet pages, Routey Rachel routes the task, Blueprint Bella owns page architecture, validators check the report, Gatekeeper Grace governs safety, Audit Alfie records traceability, and Danny remains final authority.
+
+Build 67 remains READ_ONLY_REPORT_ONLY and does not publish, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate media, approve publication, activate Safe Apply, or delete/change production data.
+
+Locked output:
+- cw-content-brain/docs/WATCHDOG_HQ_CRYPTO_WALLET_HUB_PAGE_BUILDER_CONTRACT.md
