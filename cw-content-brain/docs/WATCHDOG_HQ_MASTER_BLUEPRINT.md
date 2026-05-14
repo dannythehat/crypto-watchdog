@@ -841,3 +841,14 @@ Build 64 confirms that page builders are not generic writers. Page-builder famil
 
 Build 65 will define the Exact Role Catalogue v1 using the Build 63 onboarding gate and Build 64 department role architecture.
 
+
+## Build 65 locked exact role catalogue
+
+The locked Watchdog HQ Exact Role Catalogue v1 is maintained in cw-content-brain/docs/WATCHDOG_HQ_EXACT_ROLE_CATALOGUE.md.
+
+Build 65 converts the Build 64 department role architecture into the first exact named starter role catalogue. It defines command roles, page architecture and page-builder starter roles, evidence/trust roles, SEO roles, validator roles, media planning roles, affiliate/commercial planning roles, and analytics/lifecycle planning roles.
+
+Build 65 remains READ_ONLY_REPORT_ONLY. It does not activate live agents. It defines controlled role contracts that future builds may use.
+
+Build 66 will create the Crypto Exchange Hub Page Builder Contract v1 using the Build 63 onboarding gate, Build 64 department architecture, and Build 65 exact role catalogue.
+
