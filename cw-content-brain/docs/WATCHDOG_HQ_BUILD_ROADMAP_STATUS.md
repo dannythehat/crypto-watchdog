@@ -221,7 +221,7 @@ Build 61 defines the audit trail and event log contract for Watchdog HQ. It lock
 
 Build 61 remains READ_ONLY_REPORT_ONLY. It does not create a live logger, database writer, Supabase integration, website editor, publishing workflow, affiliate inserter, trust-rating editor, AI/API caller, live crawler, or approval/apply workflow.
 
-Next planned build: Build #61 — Audit Trail and Event Log Contract v1.
+Next planned build: Build #62 — Rollback and Incident Control Contract v1.
 
 ## Build #62 completion note
 
@@ -353,3 +353,4 @@ Build 66A does not publish content, edit live pages, write to Supabase, insert a
 
 Next planned build:
 Build 67 — Crypto Wallet Hub Page Builder Contract v1
+
