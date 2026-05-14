@@ -817,3 +817,16 @@ Blocked actions remain explicit and non-negotiable:
 - no deleting/changing production data
 - no AI/API calls unless explicitly approved in a future controlled build
 
+
+## Build 63 locked agent onboarding and expansion gate
+
+The locked Watchdog HQ Agent Onboarding & Expansion Gate Contract v1 is maintained in cw-content-brain/docs/WATCHDOG_HQ_AGENT_ONBOARDING_EXPANSION_GATE_CONTRACT.md.
+
+Build 63 defines the mandatory gate every future agent, manager, validator, page builder, content builder, SEO worker, media planner, affiliate worker, analytics worker, or operational role must pass before being added to Watchdog HQ.
+
+Future agents must define their department owner, manager owner, purpose, allowed inputs, allowed outputs, blocked actions, page/content type awareness where relevant, template requirements, schema requirements, validator route, workflow state integration, audit event integration, rollback and incident route, Gatekeeper Grace route, Danny escalation conditions, and blueprint/roadmap update requirements.
+
+This protects Danny's vision from drifting into vague agents, generic page builders, random SEO workers, unsafe affiliate agents, or uncontrolled AI sprawl.
+
+Build 64 will define the Department Role Architecture v1 using this onboarding gate.
+
