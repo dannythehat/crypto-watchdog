@@ -278,3 +278,14 @@ Build 64 remains READ_ONLY_REPORT_ONLY. It does not add active live agents, publ
 
 Next planned build: Build #65 — Exact Role Catalogue v1.
 
+
+## Build #65 completion note
+
+Status: built / ready for review. Locked output: cw-content-brain/docs/WATCHDOG_HQ_EXACT_ROLE_CATALOGUE.md.
+
+Build 65 defines the first exact named starter role catalogue for Watchdog HQ. It includes command roles, page architecture and page-builder starter roles, evidence/trust starter roles, SEO starter roles, validator starter roles, media planning, affiliate/commercial planning, and analytics/lifecycle planning roles.
+
+Build 65 remains READ_ONLY_REPORT_ONLY. It does not add active live agents, publish, edit live pages, write to Supabase, insert affiliate links, change trust ratings, call AI/API tools, generate media, send outreach, create Safe Apply, approve publication, or delete/change production data.
+
+Next planned build: Build #66 — Crypto Exchange Hub Page Builder Contract v1.
+
