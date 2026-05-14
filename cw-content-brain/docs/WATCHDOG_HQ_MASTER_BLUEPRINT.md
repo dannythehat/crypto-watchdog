@@ -902,3 +902,16 @@ Build 67 remains READ_ONLY_REPORT_ONLY and does not publish, edit live pages, wr
 
 Locked output:
 - cw-content-brain/docs/WATCHDOG_HQ_CRYPTO_WALLET_HUB_PAGE_BUILDER_CONTRACT.md
+
+## Build 68 locked page inventory, discovery and work routing contract
+
+The locked Watchdog HQ Page Inventory, Discovery & Work Routing Contract v1 is maintained in cw-content-brain/docs/WATCHDOG_HQ_PAGE_INVENTORY_DISCOVERY_WORK_ROUTING_CONTRACT.md.
+
+Build 68 creates the first hive-mind operating layer after the initial specialist page-builder contracts. It defines how future Watchdog HQ agents discover, inventory, classify, prioritise, and route CryptoWatchdog page work across the AI workforce.
+
+Build 68 confirms that Watchdog HQ must work existing-page-first. If a CryptoWatchdog page already exists, future agents must audit, refresh, rebuild, enrich, link, restructure, or route the existing page before proposing a duplicate page.
+
+Build 68 routes page opportunities and issues through the correct departments and managers, including Editorial Strategy, SEO, Internal Linking, Content Operations, Content Production, Evidence, Media, Affiliates, QA/Governance, Audit, The Gaffer, and Danny for CEO-level exceptions.
+
+Build 68 remains READ_ONLY_REPORT_ONLY. It does not publish content, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate media, download media, send outreach, send emails, approve publication, activate Safe Apply, or delete/change production data.
+

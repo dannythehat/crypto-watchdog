@@ -393,3 +393,37 @@ Build 67 does not publish content, edit live pages, write to Supabase, insert af
 
 Next planned build:
 To be confirmed by Danny after Build 67 review. The next build must strengthen the Watchdog HQ hive-mind operating system rather than blindly adding page contracts.
+
+---
+
+## Build 68 — Page Inventory, Discovery & Work Routing Contract v1
+
+Status: built / ready for review.
+
+Build 68 creates the first hive-mind operating layer after the initial specialist page-builder contracts.
+
+New contract document:
+- cw-content-brain/docs/WATCHDOG_HQ_PAGE_INVENTORY_DISCOVERY_WORK_ROUTING_CONTRACT.md
+
+Build 68 locks:
+- page inventory source rules
+- local/report-only discovery rules
+- existing-page-first behaviour
+- missing-page recommendation rules
+- discovery categories
+- department and manager routing logic
+- priority levels
+- report-only work queue object
+- allowed workflow states
+- QA and safety gates
+- Audit Alfie traceability rules
+- relationship to page-builder contracts
+- Danny CEO-level exception routing
+
+Safety mode remains READ_ONLY_REPORT_ONLY.
+
+Build 68 does not publish content, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate or download media, send outreach, send emails, approve publication, activate Safe Apply, or delete/change production data.
+
+Next planned build:
+To be confirmed by Danny after Build 68 review.
+
