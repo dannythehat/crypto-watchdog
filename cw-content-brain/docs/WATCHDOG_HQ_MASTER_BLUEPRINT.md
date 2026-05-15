@@ -962,3 +962,23 @@ Build 70 does not programme any role yet. No role may be programmed until Danny 
 Build 70 remains READ_ONLY_REPORT_ONLY. It does not publish, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate or download media, send outreach, send emails, approve publication, activate Safe Apply, or delete/change production data.
 
 The next build is Build 71 — Watchdog HQ Role Definition Review Pack v1.
+
+## Build 72 lock — Executive Orchestration Role Definition Pack v1
+
+Build 72 locks `cw-content-brain/docs/WATCHDOG_HQ_EXECUTIVE_ORCHESTRATION_ROLE_DEFINITION_PACK.md` as the first reviewed role definition pack under the Build 71 role review process.
+
+Build 72 defines the Executive Orchestration roles for:
+- Danny
+- The Gaffer
+- Routey Rachel
+- Approval Ava
+- Queue Commander
+- Priority Pete / Priority Polly
+- Conflict Resolver
+- Build Keeper
+- Agency Ops Reporter
+
+Build 72 does not programme agents, does not create runnable agents, does not create Safe Apply, and does not approve any AI role for live execution.
+
+No role may move to programming without Danny approval.
+READ_ONLY_REPORT_ONLY remains locked.

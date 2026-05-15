@@ -537,3 +537,35 @@ Build 71 should prepare department-by-department role definition review packs co
 - programming readiness
 
 Build 71 should not programme the roles yet.
+
+## Build 72 — Watchdog HQ Executive Orchestration Role Definition Pack v1
+
+Status: built / ready for review
+
+Purpose: define the Executive Orchestration role definition pack using the Build 71 role review process.
+
+Output:
+- `cw-content-brain/docs/WATCHDOG_HQ_EXECUTIVE_ORCHESTRATION_ROLE_DEFINITION_PACK.md`
+
+Roles covered:
+- Danny
+- The Gaffer
+- Routey Rachel
+- Approval Ava
+- Queue Commander
+- Priority Pete / Priority Polly
+- Conflict Resolver
+- Build Keeper
+- Agency Ops Reporter
+
+Safety:
+- no runnable agents
+- no role programming
+- no Safe Apply
+- no publishing
+- no live website edits
+- no Supabase writes
+- READ_ONLY_REPORT_ONLY remains locked
+
+Next build:
+- Build 73 — Watchdog HQ QA & Governance Role Definition Pack v1
