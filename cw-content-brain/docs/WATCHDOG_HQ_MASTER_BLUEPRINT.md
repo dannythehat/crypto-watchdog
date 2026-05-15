@@ -928,3 +928,37 @@ Build 69 prevents future agents from inventing their own work queue formats, rou
 
 Build 69 remains READ_ONLY_REPORT_ONLY. It does not publish content, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate media, download media, send outreach, send emails, approve publication, activate Safe Apply, or delete/change production data.
 
+
+---
+
+## Build 70 — AI Agency Department & Role Blueprint Lock
+
+Build 70 locks the Watchdog HQ AI Agency Department & Role Blueprint.
+
+The locked document is maintained at:
+
+`cw-content-brain/docs/WATCHDOG_HQ_AI_AGENCY_DEPARTMENT_ROLE_BLUEPRINT.md`
+
+Build 70 confirms that Watchdog HQ is being built as a full operating AI agency / AI workforce company for CryptoWatchdog, not as a loose AI content tool.
+
+The locked agency structure has 11 core departments:
+
+1. Executive Orchestration
+2. Content Operations
+3. Editorial Strategy
+4. Content Production
+5. Research & Intelligence
+6. QA & Governance
+7. SEO
+8. Media
+9. Affiliate & Commercial
+10. Analytics & Lifecycle
+11. Social & Distribution
+
+Audit / Risk / Incident Control remains a governance function under QA & Governance for now, supported by Audit Alfie, incident/rollback roles, The Gaffer, and Danny.
+
+Build 70 does not programme any role yet. No role may be programmed until Danny reviews and agrees what the role entails, including responsibilities, inputs, outputs, manager, allowed contacts, escalation rules, blocked actions, rejection reasons, and success criteria.
+
+Build 70 remains READ_ONLY_REPORT_ONLY. It does not publish, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate or download media, send outreach, send emails, approve publication, activate Safe Apply, or delete/change production data.
+
+The next build is Build 71 — Watchdog HQ Role Definition Review Pack v1.

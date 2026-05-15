@@ -464,3 +464,76 @@ Build 69 does not publish content, edit live pages, write to Supabase, insert af
 Next planned build:
 To be confirmed by Danny after Build 69 review.
 
+
+---
+
+## Build 70 — Watchdog HQ AI Agency Department & Role Blueprint v1
+
+Status: built / ready for review  
+Mode: READ_ONLY_REPORT_ONLY  
+Owner: Danny  
+Executive owner: The Gaffer  
+Governance owner: Gatekeeper Grace  
+Audit owner: Audit Alfie  
+
+Purpose:
+
+Build 70 locks the full Watchdog HQ AI Agency department and role blueprint before individual role programming begins.
+
+It confirms Watchdog HQ as a full operating AI agency / AI workforce company for CryptoWatchdog.
+
+Build 70 locks 11 core departments:
+
+1. Executive Orchestration
+2. Content Operations
+3. Editorial Strategy
+4. Content Production
+5. Research & Intelligence
+6. QA & Governance
+7. SEO
+8. Media
+9. Affiliate & Commercial
+10. Analytics & Lifecycle
+11. Social & Distribution
+
+Audit / Risk / Incident Control remains under QA & Governance for now.
+
+Build 70 names current heads, workers, required future workers, maturity statuses, role-definition gaps, QA routes, audit routes, Danny escalation routes, and blocked-action inheritance.
+
+Build 70 does not programme agents yet.
+
+No role may be programmed until Danny has reviewed and agreed what the role entails.
+
+Expected document:
+
+`cw-content-brain/docs/WATCHDOG_HQ_AI_AGENCY_DEPARTMENT_ROLE_BLUEPRINT.md`
+
+Safety:
+
+READ_ONLY_REPORT_ONLY remains active. Build 70 does not publish, edit live pages, write to Supabase, insert affiliate URLs, change trust ratings, call AI/API tools, generate or download media, send outreach, send emails, approve publication, activate Safe Apply, or delete/change production data.
+
+---
+
+## Next Planned Build — Build 71 — Watchdog HQ Role Definition Review Pack v1
+
+Purpose:
+
+Build 71 will define the review process for agreeing exact role responsibilities before programming each Watchdog HQ role.
+
+Build 71 should prepare department-by-department role definition review packs covering:
+
+- what each role entails
+- day-to-day responsibilities
+- accepted inputs
+- required outputs
+- manager
+- allowed contacts
+- blocked contacts
+- escalation routes
+- QA route
+- audit route
+- rejection reasons
+- success criteria
+- programming readiness
+
+Build 71 should not programme the roles yet.
