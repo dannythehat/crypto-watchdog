@@ -1001,3 +1001,22 @@ Build 73 does not programme agents, does not create runnable agents, does not cr
 
 No role may move to programming without Danny approval.
 READ_ONLY_REPORT_ONLY remains locked.
+
+## Build 74 lock — Content Operations Role Definition Pack v1
+
+Build 74 locks `cw-content-brain/docs/WATCHDOG_HQ_CONTENT_OPERATIONS_ROLE_DEFINITION_PACK.md` as the reviewed role definition pack for the Content Operations department under the Build 71 role review process.
+
+Build 74 defines the Content Operations roles for:
+- Content Operations Director
+- Page Inventory Manager
+- Work Queue Manager
+- Existing Page Auditor
+- Missing Page Finder
+- Page Update Planner
+- Page Rebuild Planner
+- Content Refresh Scheduler
+
+Build 74 does not programme agents, does not create runnable agents, does not create Safe Apply, and does not approve any AI role for live execution.
+
+No role may move to programming without Danny approval.
+READ_ONLY_REPORT_ONLY remains locked.

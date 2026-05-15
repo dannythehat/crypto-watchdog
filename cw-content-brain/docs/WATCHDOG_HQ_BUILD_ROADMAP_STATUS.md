@@ -605,3 +605,39 @@ Safety:
 
 Next build:
 - Build 74 — Watchdog HQ Content Operations Role Definition Pack v1
+
+## Build 74 — Watchdog HQ Content Operations Role Definition Pack v1
+
+Status: built / ready for review
+
+Purpose: define the Content Operations role definition pack using the Build 71 role review process.
+
+Output:
+- `cw-content-brain/docs/WATCHDOG_HQ_CONTENT_OPERATIONS_ROLE_DEFINITION_PACK.md`
+
+Roles covered:
+- Content Operations Director
+- Page Inventory Manager
+- Work Queue Manager
+- Existing Page Auditor
+- Missing Page Finder
+- Page Update Planner
+- Page Rebuild Planner
+- Content Refresh Scheduler
+
+Safety:
+- no runnable agents
+- no role programming
+- no Safe Apply
+- no publishing
+- no live website edits
+- no Supabase writes
+- no affiliate URL insertion
+- no trust-rating edits
+- no outreach sending
+- no email sending
+- no media generation or download
+- READ_ONLY_REPORT_ONLY remains locked
+
+Next build:
+- Build 75 — Watchdog HQ Editorial Strategy Role Definition Pack v1
