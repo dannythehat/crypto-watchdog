@@ -982,3 +982,22 @@ Build 72 does not programme agents, does not create runnable agents, does not cr
 
 No role may move to programming without Danny approval.
 READ_ONLY_REPORT_ONLY remains locked.
+
+## Build 73 lock — QA & Governance Role Definition Pack v1
+
+Build 73 locks `cw-content-brain/docs/WATCHDOG_HQ_QA_GOVERNANCE_ROLE_DEFINITION_PACK.md` as the reviewed role definition pack for the QA & Governance department under the Build 71 role review process.
+
+Build 73 defines the QA & Governance roles for:
+- Gatekeeper Grace
+- Audit Alfie
+- Incident / Rollback Controller
+- Safety Mode Controller
+- Evidence Checker
+- Claims Checker
+- QA Verdict Writer
+- Governance Escalation Controller
+
+Build 73 does not programme agents, does not create runnable agents, does not create Safe Apply, and does not approve any AI role for live execution.
+
+No role may move to programming without Danny approval.
+READ_ONLY_REPORT_ONLY remains locked.
