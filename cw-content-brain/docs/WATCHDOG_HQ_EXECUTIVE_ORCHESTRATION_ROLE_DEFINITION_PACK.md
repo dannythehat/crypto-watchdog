@@ -1134,6 +1134,8 @@ All roles remain non-runnable.
 
 All roles require Danny approval before any later programming.
 
+No role may move to programming without Danny approval.
+
 READ_ONLY_REPORT_ONLY remains locked.
 
 No role may approve publication, execute Safe Apply, edit the live website, write to Supabase, insert affiliate URLs, change trust ratings, send outreach, or bypass QA / audit / Danny approval rules.
@@ -1156,3 +1158,4 @@ Build 73 should cover:
 
 Build 73 must still not programme agents.
 Build 73 must use the Build 71 review process.
+
