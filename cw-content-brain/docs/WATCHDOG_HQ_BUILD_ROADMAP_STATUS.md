@@ -569,3 +569,39 @@ Safety:
 
 Next build:
 - Build 73 — Watchdog HQ QA & Governance Role Definition Pack v1
+
+## Build 73 — Watchdog HQ QA & Governance Role Definition Pack v1
+
+Status: built / ready for review
+
+Purpose: define the QA & Governance role definition pack using the Build 71 role review process.
+
+Output:
+- `cw-content-brain/docs/WATCHDOG_HQ_QA_GOVERNANCE_ROLE_DEFINITION_PACK.md`
+
+Roles covered:
+- Gatekeeper Grace
+- Audit Alfie
+- Incident / Rollback Controller
+- Safety Mode Controller
+- Evidence Checker
+- Claims Checker
+- QA Verdict Writer
+- Governance Escalation Controller
+
+Safety:
+- no runnable agents
+- no role programming
+- no Safe Apply
+- no publishing
+- no live website edits
+- no Supabase writes
+- no affiliate URL insertion
+- no trust-rating edits
+- no outreach sending
+- no email sending
+- no media generation or download
+- READ_ONLY_REPORT_ONLY remains locked
+
+Next build:
+- Build 74 — Watchdog HQ Content Operations Role Definition Pack v1
