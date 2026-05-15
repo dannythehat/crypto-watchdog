@@ -32,19 +32,19 @@ READ_ONLY_REPORT_ONLY
 
 Build 70 does not enable:
 
-- live publishing
-- live site edits
-- Supabase writes
-- affiliate URL insertion
-- trust-rating edits
-- AI/API calls
-- media generation or download
-- outreach
-- email sending
-- Safe Apply
-- approval for publication
-- deleting or changing production data
-- real content publishing
+- no live publishing
+- no live site edits
+- no Supabase writes
+- no affiliate URL insertion
+- no trust-rating edits
+- no AI/API calls
+- no media generation or download
+- no outreach
+- no email sending
+- no Safe Apply
+- no approval for publication
+- no deleting or changing production data
+- no real content publishing
 
 All outputs remain local, report-only, planning-only, governance-only, and subject to Danny review.
 
@@ -1218,3 +1218,4 @@ The agency will be built department by department, role by role, with heads, wor
 No role is programmed until Danny approves the role definition.
 
 Current mode remains READ_ONLY_REPORT_ONLY.
+
