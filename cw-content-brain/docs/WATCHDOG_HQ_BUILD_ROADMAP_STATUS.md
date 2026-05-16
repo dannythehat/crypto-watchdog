@@ -641,3 +641,29 @@ Safety:
 
 Next build:
 - Build 75 — Watchdog HQ Editorial Strategy Role Definition Pack v1
+
+## Build 75 — Watchdog HQ Editorial Strategy Role Definition Pack v1
+
+Status: built / ready for review
+
+Output:
+- `cw-content-brain/docs/WATCHDOG_HQ_EDITORIAL_STRATEGY_ROLE_DEFINITION_PACK.md`
+
+Roles covered:
+- Editorial Strategy Director
+- Page Format Architect
+- Content Brief Strategist
+- Internal Linking Strategist
+- External Source Strategist
+- Brand Voice Strategist
+- Serious Content Exception Handler
+- Final Word Strategist
+
+Safety:
+- no runnable agents
+- no role programming
+- no Safe Apply
+- READ_ONLY_REPORT_ONLY remains locked
+
+Next build:
+- Build 76 — Watchdog HQ Research & Intelligence Role Definition Pack v1

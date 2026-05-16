@@ -1020,3 +1020,12 @@ Build 74 does not programme agents, does not create runnable agents, does not cr
 
 No role may move to programming without Danny approval.
 READ_ONLY_REPORT_ONLY remains locked.
+
+## Build 75 lock — Editorial Strategy Role Definition Pack v1
+
+Build 75 locks `cw-content-brain/docs/WATCHDOG_HQ_EDITORIAL_STRATEGY_ROLE_DEFINITION_PACK.md` as the reviewed role definition pack for the Editorial Strategy department under the Build 71 role review process.
+
+Build 75 does not programme agents, does not create runnable agents, does not create Safe Apply, and does not approve any AI role for live execution.
+
+No role may move to programming without Danny approval.
+READ_ONLY_REPORT_ONLY remains locked.
