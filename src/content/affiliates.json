@@ -5,10 +5,10 @@
     "category": "ai-yield-wealth",
     "reviewSlug": "aurum-foundation",
     "rating": "green",
-    "status": "needs_signup",
-    "network": "",
-    "commissionType": "",
-    "affiliateUrl": "",
+    "status": "active",
+    "network": "Aurum (referral)",
+    "commissionType": "existing link",
+    "affiliateUrl": "https://app.aurum-foundation.com/registration?ref=cryptowatchdog",
     "homepage": "https://backoffice.aurum.foundation/u/PKK5U0",
     "displayUrl": "backoffice.aurum.foundation",
     "signupUrl": "",
@@ -22,7 +22,7 @@
     "blockedPageTypes": [
       "warnings"
     ],
-    "lastChecked": null,
+    "lastChecked": "2026-06-16",
     "notes": "Check whether an affiliate/referral program exists."
   },
   {
@@ -513,10 +513,10 @@
     "category": "ai-finance",
     "reviewSlug": "moneyflare",
     "rating": "green",
-    "status": "needs_signup",
-    "network": "",
-    "commissionType": "",
-    "affiliateUrl": "",
+    "status": "active",
+    "network": "MoneyFlare (referral)",
+    "commissionType": "existing link",
+    "affiliateUrl": "https://www.moneyflare.com/signup?inviter_code=R4U5SD",
     "homepage": "https://www.moneyflare.com/signup?inviter_code=R4U5SD",
     "displayUrl": "moneyflare.com",
     "signupUrl": "",
@@ -530,7 +530,7 @@
     "blockedPageTypes": [
       "warnings"
     ],
-    "lastChecked": null,
+    "lastChecked": "2026-06-16",
     "notes": "Check whether an affiliate/referral program exists."
   },
   {
@@ -539,10 +539,10 @@
     "category": "centralized-exchanges",
     "reviewSlug": "kraken",
     "rating": "green",
-    "status": "needs_signup",
-    "network": "Kraken (direct)",
+    "status": "active",
+    "network": "Kraken (referral)",
     "commissionType": "20% lifetime fees (up to 40% Pro)",
-    "affiliateUrl": "",
+    "affiliateUrl": "https://invite.kraken.com/JDNW/sr4l7hjh",
     "homepage": "https://invite.kraken.com/JDNW/sr4l7hjh",
     "displayUrl": "invite.kraken.com",
     "signupUrl": "https://www.kraken.com/affiliate",
@@ -556,7 +556,7 @@
     "blockedPageTypes": [
       "warnings"
     ],
-    "lastChecked": null,
+    "lastChecked": "2026-06-16",
     "notes": "Known affiliate program — apply."
   },
   {
@@ -591,10 +591,10 @@
     "category": "hardware-wallets",
     "reviewSlug": "trezor",
     "rating": "green",
-    "status": "needs_signup",
-    "network": "Trezor (direct)",
+    "status": "active",
+    "network": "Trezor affiliate",
     "commissionType": "12–15% per sale (EUR or BTC)",
-    "affiliateUrl": "",
+    "affiliateUrl": "https://affil.trezor.io/aff_c?offer_id=133&aff_id=141550",
     "homepage": "https://affil.trezor.io/aff_c?offer_id=133&aff_id=141550",
     "displayUrl": "affil.trezor.io",
     "signupUrl": "https://partners.trezor.io/",
@@ -608,7 +608,7 @@
     "blockedPageTypes": [
       "warnings"
     ],
-    "lastChecked": null,
+    "lastChecked": "2026-06-16",
     "notes": "Known affiliate program — apply."
   },
   {
@@ -972,10 +972,10 @@
     "category": "centralized-exchanges",
     "reviewSlug": "bitget",
     "rating": "orange",
-    "status": "needs_signup",
-    "network": "Bitget (direct)",
+    "status": "active",
+    "network": "Bitget (referral)",
     "commissionType": "40–50% trading-fee rebate",
-    "affiliateUrl": "",
+    "affiliateUrl": "https://www.bitget.com/referral/register?clacCode=90ED7DAM&from=%2Fevents%2Freferral-all-program&source=events&utmSource=PremierInviter",
     "homepage": "https://bitget.com",
     "displayUrl": "bitget.com",
     "signupUrl": "https://www.bitget.com/affiliate",
@@ -989,7 +989,7 @@
     "blockedPageTypes": [
       "warnings"
     ],
-    "lastChecked": null,
+    "lastChecked": "2026-06-16",
     "notes": "Apply with 100+ social followers; reviewed within 24h."
   },
   {
@@ -1528,5 +1528,31 @@
     ],
     "lastChecked": null,
     "notes": "Red-rated platform — never monetise."
+  },
+  {
+    "id": "tangem",
+    "brand": "Tangem",
+    "category": "hardware-wallets",
+    "reviewSlug": "tangem-pay-decentralized-debit-card-review-2026",
+    "rating": "green",
+    "status": "active",
+    "network": "Tangem (referral)",
+    "commissionType": "existing link",
+    "affiliateUrl": "https://tangem.com/invite/EX9G5P",
+    "homepage": "https://tangem.com",
+    "displayUrl": "tangem.com",
+    "signupUrl": "",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": "2026-06-16",
+    "notes": "Existing referral link (from blog content)."
   }
 ]
