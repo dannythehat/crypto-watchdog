@@ -5,7 +5,7 @@ slug: "before-you-click-approve-a-plain-english-guide-to-vetting-a-smart-contrac
 summary: "*   **Verify the Code:** Always check the contract on a block explorer like Etherscan. A green tick for \"Verified Source Code\" is the bare minimum, but it doesn't mean the code is safe, only that it's transparent."
 category: "DeFi"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog/before-you-click-approve-a-plain-english-guide-to-vetting-a-smart-contract-1778824855131.png"
-published: true
+published: false
 auto_generated: true
 published_at: "2026-05-15T06:00:55.356+00:00"
 updated_at: "2026-05-15T06:00:55.387599+00:00"

@@ -5,7 +5,7 @@ slug: "sim-swap-scams-how-criminals-steal-your-crypto-and-how-to-stop-them-2026-
 summary: "*   **What it is:** A SIM swap is when a criminal tricks your mobile phone provider into transferring your phone number to a SIM card they control."
 category: "Education"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog/sim-swap-scams-how-criminals-steal-your-crypto-and-how-to-stop-them-1777788040163.png"
-published: true
+published: false
 auto_generated: true
 published_at: "2026-05-03T06:00:40.607+00:00"
 updated_at: "2026-05-03T06:00:40.639865+00:00"
