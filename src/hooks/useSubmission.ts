@@ -12,6 +12,9 @@ interface SubmissionData {
 export const useSubmission = () =>
   useMutation({
     mutationFn: async (data: SubmissionData) => {
+      if (!supabase) {
+        throw new Error("Submissions are temporarily unavailable. Please try again later.");
+      }
       const { error } = await supabase.from("submissions").insert(data);
       if (error) throw error;
     },
