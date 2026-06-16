@@ -1581,57 +1581,5 @@
     ],
     "lastChecked": null,
     "notes": "Tokenised gold/silver with referral program — apply."
-  },
-  {
-    "id": "realt",
-    "brand": "RealT",
-    "category": "tokenization-realestate",
-    "reviewSlug": "realt",
-    "rating": null,
-    "status": "needs_signup",
-    "network": "RealT (referral)",
-    "commissionType": "Referral commission",
-    "affiliateUrl": "",
-    "homepage": "https://realt.co",
-    "displayUrl": "realt.co",
-    "signupUrl": "https://realt.co/",
-    "hasKnownProgram": true,
-    "offerText": "Fractional US rental property from $50, daily stablecoin dividends",
-    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
-    "allowedRatings": [
-      "green",
-      "orange"
-    ],
-    "blockedPageTypes": [
-      "warnings"
-    ],
-    "lastChecked": null,
-    "notes": "Tokenised real estate referral program — apply. Note past Detroit tenant-management issues."
-  },
-  {
-    "id": "lofty",
-    "brand": "Lofty",
-    "category": "tokenization-realestate",
-    "reviewSlug": "lofty-ai",
-    "rating": null,
-    "status": "needs_signup",
-    "network": "Lofty (referral)",
-    "commissionType": "Referral gift certificate",
-    "affiliateUrl": "",
-    "homepage": "https://www.lofty.ai",
-    "displayUrl": "lofty.ai",
-    "signupUrl": "https://www.lofty.ai/",
-    "hasKnownProgram": true,
-    "offerText": "Fractional US real estate from $50 with instant liquidity (AMM)",
-    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
-    "allowedRatings": [
-      "green",
-      "orange"
-    ],
-    "blockedPageTypes": [
-      "warnings"
-    ],
-    "lastChecked": null,
-    "notes": "Tokenised real estate referral program — apply."
   }
 ]

@@ -4,7 +4,7 @@ Generated 2026-06-16
 Hi Danny — please sign up to the programs below (ranked by earning potential).
 For each one: open the link, apply, then send me your tracking link and I'll wire it into the site. The moment you do, that platform's CTAs start earning.
 
-## Sign up for these (12)
+## Sign up for these (10)
 
 ### 1. BingX
 - **Apply:** https://bingx.com/en/partner/
@@ -65,18 +65,6 @@ For each one: open the link, apply, then send me your tracking link and I'll wir
 - **Commission:** Referral yield share
 - **Note:** Tokenised gold/silver with referral program — apply.
 - **Reply with:** your Kinesis Money affiliate/tracking link
-
-### 11. Lofty
-- **Apply:** https://www.lofty.ai/
-- **Commission:** Referral gift certificate
-- **Note:** Tokenised real estate referral program — apply.
-- **Reply with:** your Lofty affiliate/tracking link
-
-### 12. RealT
-- **Apply:** https://realt.co/
-- **Commission:** Referral commission
-- **Note:** Tokenised real estate referral program — apply. Note past Detroit tenant-management issues.
-- **Reply with:** your RealT affiliate/tracking link
 
 ## Money status
 - Earnings logged: £0.00
