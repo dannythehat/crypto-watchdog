@@ -74,9 +74,16 @@ If you're still deciding whether you even need cold storage, start with our guid
 
 ## Why a hardware wallet beats leaving crypto on an exchange
 
-It's tempting to leave everything on Binance, Coinbase or Kraken because it's convenient. But "not your keys, not your coins" is not a slogan — it's a description of legal reality. When your crypto sits on an exchange, the exchange controls the private keys; you hold an IOU. If the platform is hacked, freezes withdrawals, becomes insolvent, or restricts your account, your access depends entirely on them. History from Mt. Gox to FTX shows how that ends.
+"Not your keys, not your coins" isn't a slogan — it's the legal reality. When your crypto sits on an exchange, **the exchange holds the private keys; you just hold an IOU.**
 
-A hardware wallet moves the private keys offline, into a device that signs transactions without ever exposing those keys to your internet-connected computer or phone. Even malware on your laptop can't extract them. That single shift — from custodial to self-custody — eliminates the largest category of catastrophic loss. Both Ledger and Trezor do this well; the choice between them is secondary to actually making the move.
+That means your access depends entirely on them staying solvent and honest:
+
+- **Hacks** — exchange hot wallets are prime targets.
+- **Withdrawal freezes** — common in a crisis, exactly when you want out.
+- **Insolvency** — Mt. Gox and FTX showed how that ends.
+- **Account restrictions** — locked out through no fault of your own.
+
+A hardware wallet moves your keys **offline**, signing transactions without ever exposing them to your computer or phone. Even malware on your laptop can't reach them. That one shift — custodial to self-custody — removes the biggest category of catastrophic loss. Both Ledger and Trezor do this well; choosing between them is the smaller decision.
 
 ## Setting up your hardware wallet safely (5 steps)
 
@@ -114,7 +121,14 @@ One emerging differentiator worth noting for long-term holders. Trezor has begun
 
 ## How we assessed this
 
-CryptoWatchdog compares hardware wallets on the factors that actually protect (or endanger) your funds: the chip and firmware security model, how the company has handled past incidents, supply-chain integrity, recovery design, coin support, and real-world usability. We weight **track record under pressure** heavily — how a company responds to a breach or a controversy tells you more than a spec sheet. We do not rank by affiliate commission, and where a wallet has a genuine weakness (Trezor's older non-secure-element history, Ledger's closed-source firmware and Recover episode), we say so plainly. Prices, model line-ups and coin counts change, so always confirm the current details on the official site before buying.
+We compare hardware wallets on what actually protects (or endangers) your funds:
+
+- **Chip & firmware security model** — secure element, open vs closed source.
+- **Track record under pressure** — how they handled past breaches/controversies (weighted heavily; it tells you more than a spec sheet).
+- **Supply-chain integrity** and **recovery design**.
+- **Coin support** and **real-world usability**.
+
+We **don't rank by commission**, and we flag genuine weaknesses plainly — Trezor's older non-secure-element history, Ledger's closed-source firmware and the Recover episode. Prices, models and coin counts change, so always confirm current details on the official site before buying.
 
 ## Frequently asked questions
 
