@@ -1,0 +1,29 @@
+---
+type: "review"
+name: "Paid Crypto Signal Groups (Category Warning)"
+slug: "crypto-signal-services-general"
+rating: "red"
+trust_score: 18
+summary: "A blanket assessment of the paid Telegram/Discord crypto signal industry. Not a single platform — a warning about an entire category dominated by scams."
+verdict: "The overwhelming majority of paid signal groups are scams or pump-and-dump schemes. Operators front-run their own subscribers, cherry-pick screenshots, and disappear when the inevitable losses pile up. We have not found a single signal service we can recommend. If you want trade ideas, learn to read the market yourself."
+category_id: "cdb990ef-5202-4934-b03e-037446aa46b4"
+website_url: null
+logo_url: null
+social_image_url: null
+pros: ["(None — this category is overwhelmingly predatory)"]
+cons: ["Operators routinely front-run their own subscribers","Win-rate screenshots are almost always cherry-picked or fabricated","Many groups run pump-and-dump schemes on low-cap tokens","No regulation, no recourse when funds are lost","\"Lifetime VIP\" pitches are a classic red flag","Survivorship bias — failed callers vanish, leaving only the lucky ones"]
+fees_info: null
+withdrawal_info: null
+deposit_info: null
+video_url: null
+detailed_audit: {"scoring":{"fees":"See breakdown","team":"Opaque or absent","custody":"Fail","recourse":"Effectively none","regulation":"Concerning","transparency":"Fail","security_history":"User losses","product_integrity":"Mis-sold or structurally flawed"},"last_tested":"2026-04-21","review_date":"2026-04-21","scam_or_legit":"High risk (Red)","framework_version":"8-point v2026.04"}
+rich_content: {"faq":[{"answer":"We rate Paid Crypto Signal Groups (Category Warning) as high-risk. Whether it meets the legal definition of a scam varies by jurisdiction; either way we do not recommend participation.","question":"Is Paid Crypto Signal Groups (Category Warning) a scam?"},{"answer":"No. We rate it RED and recommend avoiding new deposits. Existing users should review the alternatives section and plan an exit strategy.","question":"Is Paid Crypto Signal Groups (Category Warning) safe to use in 2026?"},{"answer":"Custody model is detailed in the audit section. If you cannot answer this question in one sentence about any platform, do not deposit.","question":"Who holds custody of my funds?"},{"answer":"See the fees and revenue breakdown in the audit. Understanding the business model is the single best fraud-detection tool for any platform.","question":"How does Paid Crypto Signal Groups (Category Warning) make money?"},{"answer":"Using our public 8-point framework: custody, transparency, regulation, security, fees, recourse, team, and product integrity. Full methodology at /methodology.","question":"How was this trust score calculated?"},{"answer":"Last audited April 2026. We re-audit on incident, on material disclosure changes, and at least every 6 months.","question":"When was this review last updated?"}],"stats":[{"label":"Trust Score","value":"18 / 100"},{"label":"Rating","value":"RED"},{"label":"Last Audited","value":"Apr 2026"},{"label":"Framework","value":"8-point"}],"tagline":"Independent Paid Crypto Signal Groups (Category Warning) audit · CryptoWatchdog 8-point framework","red_flags":["Material structural risk identified","No realistic recourse for users in dispute","Track record includes user-impacting failures","We do not recommend new deposits"],"green_flags":["None material to retail safety"],"who_its_for":"Not recommended for retail users. Existing users should review safer alternatives below and plan accordingly.","key_features":[{"icon":"🔐","title":"Security & Custody","description":"Custody arrangements show material weakness. User funds or data face structural risk that simple due-diligence cannot mitigate."},{"icon":"📜","title":"Transparency & Reporting","description":"Disclosure is missing, contradictory, or unverifiable. Marketing claims do not match what we could confirm from primary sources."},{"icon":"⚖️","title":"Regulatory Posture","description":"Active enforcement, sanctions, jurisdictional avoidance, or unlicensed offering of regulated products. Not safe for retail in most regions."},{"icon":"🧪","title":"Operational Track Record","description":"Track record includes user losses, paused withdrawals, defaulted obligations, or undisclosed losses that materially harm participants."},{"icon":"💸","title":"Fees, Spreads & Hidden Costs","description":"We checked headline fees against effective costs (spread, slippage, withdrawal mins, FX markups). Full numbers are in the breakdown below."},{"icon":"🆘","title":"User Recourse","description":"Recourse is effectively absent. There is no realistic path to recover funds in dispute or insolvency scenarios."}],"hero_subtitle":"High-risk · we recommend avoiding or exiting positions.","methodology_note":"Scored against the public CryptoWatchdog 8-point framework: custody, transparency, regulation, security history, fees, recourse, team, and product-market integrity. See /methodology.","verify_dont_trust":"Always confirm the official URL, never share seed phrases or private keys, and treat any unsolicited DM about Paid Crypto Signal Groups (Category Warning) as a phishing attempt by default."}
+published: true
+published_at: "2026-04-21T12:36:56.92192+00:00"
+updated_at: "2026-04-21T13:10:55.319844+00:00"
+meta_title: null
+meta_description: null
+---
+A blanket assessment of the paid Telegram/Discord crypto signal industry. Not a single platform — a warning about an entire category dominated by scams.
+
+The overwhelming majority of paid signal groups are scams or pump-and-dump schemes. Operators front-run their own subscribers, cherry-pick screenshots, and disappear when the inevitable losses pile up. We have not found a single signal service we can recommend. If you want trade ideas, learn to read the market yourself.

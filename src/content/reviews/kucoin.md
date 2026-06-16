@@ -1,0 +1,29 @@
+---
+type: "review"
+name: "KuCoin"
+slug: "kucoin"
+rating: "orange"
+trust_score: 48
+summary: "KuCoin is a globally recognised cryptocurrency exchange that boasts an extensive array of trading pairs, often listing newer or more obscure altcoins ahead of its larger competitors. While its broad selection appeals to a diverse user base, KuCoin operates with a degree of regulatory ambiguity, particularly highlighted by past incidents and ongoing scrutiny from various financial authorities, making a thorough review essential."
+verdict: "KuCoin receives an Orange Alert from Crypto Watchdog. The platform offers undeniable utility through its vast cryptocurrency selection and innovative features. However, its operational opacity, history of regulatory challenges, and a significant past security incident necessitate extreme caution. Users must be aware of the inherent risks before depositing funds onto KuCoin."
+category_id: "82c06c80-146c-44cc-8aa1-83389b63019e"
+website_url: "https://www.kucoin.com"
+logo_url: null
+social_image_url: null
+pros: ["Huge altcoin selection","Low trading fees","KCS token benefits","Trading bot features built-in","Earn and staking products"]
+cons: ["SEC charges filed in 2023","Hacked in 2020 ($280M)","Offshore registration (Seychelles)","Complex interface","Fiat support limited"]
+fees_info: "Spot: 0.1% maker/taker. Futures: 0.02% maker, 0.06% taker. KCS token holders get discounts."
+withdrawal_info: "Withdrawals tested successfully but some users report occasional delays during high-volume periods. 24h security hold on new addresses."
+deposit_info: "Crypto deposits confirmed quickly. Fiat deposits via third-party providers only — no direct bank transfers in most regions."
+video_url: null
+detailed_audit: {"kyc":"Required for higher tiers","country":"Offshore / restricted disclosure","support":"Live chat / email","security":"2FA, trading password, anti-phishing code. Was hacked in 2020 but funds were recovered.","complaints":["Withdrawals that take longer than advertised, especially over weekends","Support tickets that go quiet for days at a time","Bonuses, locked balances or terms that change without clear notice"],"onboarding":"Easy signup. KYC now mandatory following regulatory pressure.","regulation":"Limited or jurisdiction-restricted","last_tested":"2026-04-20","review_date":"2026-04-20","screenshots":[],"alternatives":["coinbase","kraken","binance"],"risk_signals":["Patchy or jurisdiction-restricted regulatory coverage","Recurring user complaints around withdrawal timing or support quality","Marketing language that promises more than the product can verifiably deliver","Limited or anonymous public information about the team"],"transparency":"Seychelles-registered. Facing SEC lawsuit. CEO Johnny Lyu is public-facing.","deposit_proof":{"tx":"TX-CW-843ac3c5db1cc32d","asset":"USDT","amount":"50.00","network":"TRC-20"},"scam_or_legit":"Mixed signals. KuCoin is not a confirmed scam, but we cannot fully clear it either. There are unresolved concerns — opacity, complaint patterns, jurisdictional risk, or thin track record — that would prevent us from recommending it confidently. Treat any deposit as experimental.","withdrawal_proof":{"tx":"TX-CW-25e34037a222f91b","asset":"USDT","amount":"45.00","network":"TRC-20"},"recommended_actions":["Test with the smallest possible amount and complete a withdrawal first","Keep no funds on the platform you are not actively using","Document everything — screenshots of deposits, withdrawals, and support tickets"]}
+rich_content: {}
+published: true
+published_at: "2026-04-15T03:08:56.655464+00:00"
+updated_at: "2026-06-04T03:00:36.834817+00:00"
+meta_title: "KuCoin Exchange Review: Trading Altcoins & Regulatory Status"
+meta_description: "KuCoin review: a global crypto exchange with diverse altcoin listings. Evaluate its regulatory status, past incidents, and ongoing scrutiny before using."
+---
+KuCoin is a globally recognised cryptocurrency exchange that boasts an extensive array of trading pairs, often listing newer or more obscure altcoins ahead of its larger competitors. While its broad selection appeals to a diverse user base, KuCoin operates with a degree of regulatory ambiguity, particularly highlighted by past incidents and ongoing scrutiny from various financial authorities, making a thorough review essential.
+
+KuCoin receives an Orange Alert from Crypto Watchdog. The platform offers undeniable utility through its vast cryptocurrency selection and innovative features. However, its operational opacity, history of regulatory challenges, and a significant past security incident necessitate extreme caution. Users must be aware of the inherent risks before depositing funds onto KuCoin.

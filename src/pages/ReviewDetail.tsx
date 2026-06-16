@@ -5,8 +5,10 @@ import Footer from "@/components/Footer";
 import SectionWrapper from "@/components/SectionWrapper";
 import RatingBadge from "@/components/RatingBadge";
 import TrustScore from "@/components/TrustScore";
+import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { useReview } from "@/hooks/useReviews";
+import { breadcrumbJsonLd, reviewJsonLd } from "@/lib/seo";
 
 const ReviewDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -43,9 +45,34 @@ const ReviewDetail = () => {
   }
 
   const auditData = review.detailed_audit as Record<string, any> | null;
+  const path = `/reviews/${review.slug}`;
 
   return (
     <>
+      <Seo
+        title={(review as any).meta_title || `${review.name} Review`}
+        description={(review as any).meta_description || review.summary || undefined}
+        path={path}
+        image={review.logo_url || (review as any).social_image_url}
+        type="article"
+        jsonLd={[
+          reviewJsonLd({
+            name: review.name,
+            description: review.summary || undefined,
+            path,
+            rating: review.rating,
+            trustScore: review.trust_score,
+            image: review.logo_url || (review as any).social_image_url,
+            publishedAt: (review as any).published_at,
+            modifiedAt: (review as any).updated_at,
+          }),
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Reviews", path: "/reviews" },
+            { name: review.name, path },
+          ]),
+        ]}
+      />
       <Navbar />
       <main>
         <SectionWrapper className="pt-28 md:pt-36">

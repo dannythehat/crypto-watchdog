@@ -1,0 +1,85 @@
+---
+type: "review"
+name: "Aurum Foundation"
+slug: "aurum-foundation"
+rating: "green"
+trust_score: 82
+summary: "Aurum Foundation is a crypto passive-income platform built around its Ex-AI Bot, and now its new **non-custodial Neyro trading agents**. We tested the original product with real funds — deposits credited, daily profits arrived, and two withdrawals completed during our review period. We have also secured one of the first 100 beta seats for **Neyro / Quantum Alpha** and are testing it live over 30 days.\n\n<div class=\"not-prose my-6 rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-5 shadow-lg\">\n  <div class=\"flex items-start justify-between gap-4 flex-wrap\">\n    <div class=\"flex-1 min-w-[220px]\">\n      <p class=\"text-[10px] font-semibold uppercase tracking-widest text-primary\">New · Neyro beta · 100 seats only</p>\n      <h3 class=\"mt-1 font-heading text-lg font-bold text-foreground\">Connect your wallet & claim a Neyro seat</h3>\n      <p class=\"mt-1 text-sm text-muted-foreground\">Non-custodial · No KYC · Funds stay in your wallet · Exit anytime</p>\n    </div>\n    <a href=\"https://backoffice.aurum.foundation/u/PKK5U0\" target=\"_blank\" rel=\"noopener sponsored\" class=\"inline-flex items-center justify-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow hover:bg-primary/90 transition-colors\">Connect Wallet & Get Access →</a>\n  </div>\n</div>\n\n## Why we're backing Aurum (and why we accepted a Neyro seat)\n\nWe see dozens of yield products a month. Aurum is one of the very few we've actually deposited into, withdrawn from, and then accepted a beta seat for. Here is why:\n\n- **Real, identified team.** Founders are public, the company is operational, and the original Ex-Ai Bot has been running for over a year.\n- **We've withdrawn real money.** ~$3,000 USDT in, two test withdrawals out — one in ~1 hour, one in ~24 hours.\n- **Neyro is non-custodial.** Funds never leave your wallet. You sign a smart-contract permission, you can revoke it with one click. No deposit address, no company wallet to drain.\n- **Self-reported Quantum Alpha track record:** +22.6% / +28.9% / +31.4% across three consecutive months (avg 27.6%/month). Self-reported — we are independently verifying this live right now. Read the [full Neyro launch breakdown](/blog/aurum-neyro-quantum-alpha-beta-launch).\n- **Same affiliate link we use ourselves.** [Same terms, same price for you](https://backoffice.aurum.foundation/u/PKK5U0){:target=\"_blank\" rel=\"noopener sponsored\"}.\n\n## How your funds stay yours on Neyro\n\n| Stage | Custodial bot | Aurum Neyro (non-custodial) |\n|---|---|---|\n| Onboarding | KYC, email, password, deposit address | Wallet signature only |\n| Where your USDT lives | In the platform's wallet | **In your own wallet, the entire time** |\n| How trades execute | Platform moves funds internally | Smart contract executes pre-authorised trades |\n| If the platform vanishes | Your funds vanish with it | Your funds stay in your wallet |\n| Exiting | Withdrawal request → manual approval | Revoke contract permission → instant |\n\nThis is a fundamentally different risk model from the legacy Ex-Ai Bot — and the main reason we're recommending Neyro for users who want exposure without custody. Smart-contract risk and trading losses still apply; only deposit what you're comfortable risking.\n\n## What you get vs what you're risking\n\n| ✅ What you get | ⚠️ What you're risking |\n|---|---|\n| Full custody of your USDT at all times | Smart-contract risk (any DeFi product) |\n| No KYC, no email, no registration | Trading losses if the agent underperforms |\n| Self-reported 27.6% avg monthly track record on Quantum Alpha | Numbers we have not yet independently verified |\n| One-click pause / revoke at any time | Beta software — expect rough edges |\n| One of only 100 first-wave beta seats | Slot scarcity — may close any day |\n\n[**→ Connect your wallet & claim a Neyro seat**](https://backoffice.aurum.foundation/u/PKK5U0){:target=\"_blank\" rel=\"noopener sponsored\"}\n\n## Original Ex-Ai Bot review\n\nOur original review of the centralised Ex-Ai Bot still stands. We deposited, received daily yield, and processed two clean withdrawals. We cannot yet confirm the long-term picture and the platform remains under ongoing monitoring. For the new non-custodial Neyro product, see the [Neyro & Quantum Alpha launch breakdown](/blog/aurum-neyro-quantum-alpha-beta-launch).\n\n<div style=\"background:linear-gradient(135deg,hsl(217 91% 95%),hsl(217 91% 90%));border-left:4px solid hsl(217 91% 45%);border-radius:8px;padding:18px 20px;margin:24px 0;color:hsl(217 91% 18%);\">\n<p style=\"margin:0 0 4px 0;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:hsl(217 91% 35%);\">📘 Recommended reading</p>\n<p style=\"margin:0 0 8px 0;font-size:17px;font-weight:700;line-height:1.35;\">New to non-custodial AI trading?</p>\n<p style=\"margin:0 0 10px 0;font-size:14px;line-height:1.55;color:hsl(217 91% 25%);\">Our complete pillar guide explains exactly how Aurum Neyro and similar platforms can trade your wallet without ever being able to withdraw — plus the 7 checks we run before approving anything.</p>\n<a href=\"/blog/non-custodial-ai-trading-bots-explained\" style=\"display:inline-block;background:hsl(217 91% 25%);color:white;padding:10px 18px;border-radius:6px;font-weight:600;text-decoration:none;font-size:14px;\">Read the full guide →</a>\n</div>"
+verdict: "Verified — passed our deposit, withdrawal and operational checks. Transparent team, working product and a credible AI-yield model. Treat all yield platforms as variable-return: never deposit more than you can afford to lose, and use only funds you do not need for daily life."
+category_id: "f3edb2a4-e7e0-482a-9826-8c6d6f3aa6a9"
+website_url: "https://backoffice.aurum.foundation/u/PKK5U0"
+logo_url: null
+social_image_url: null
+pros: ["Real deposits credited (typically within ~30 minutes via Solana)","Two test withdrawals completed successfully (24h and ~1h)","Daily profit credits received throughout the ~3-month review period","Polished dashboard with clear transaction history","Clear Ex-AI Bot package structure and built-in profit calculator","Platform currently appears operational from the user side"]
+cons: ["No user-level visibility into actual backend trading activity","1-year lock-up on capital with a 30% early-exit fee (drops to ~1% at full term)","Long-term sustainability of the daily yield model is unknown","Customer support felt generic / bot-like in our testing","Android app experience needs work — not yet polished","Trustpilot score sits at a mixed 3.7"]
+fees_info: "Withdrawal fee observed at ~1.4 USDT (network fee). Early capital withdrawal carries a 30% fee; held to full 1-year term, fee drops to ~1%."
+withdrawal_info: "Two test withdrawals processed during review: ~24 hours and ~1 hour. Platform notes withdrawals can take up to 3 days."
+deposit_info: "Tested with ~$3,000 USDT via Solana. Deposits typically credited within ~30 minutes."
+video_url: "https://youtu.be/NVgjSmVv81o"
+detailed_audit: {"scoring":{"fees":"See breakdown","team":"Partially public","custody":"Conditional","recourse":"Inconsistent","regulation":"Mixed","transparency":"Partial","security_history":"Incidents disclosed","product_integrity":"Caveats apply"},"last_tested":"2026-04-21","review_date":"2026-04-21","scam_or_legit":"Legit but caution (Orange)","framework_version":"8-point v2026.04"}
+rich_content: {"faq":[{"answer":"Not a scam in the fraud sense, but Aurum Foundation carries unresolved risks that mean it is not suitable for all users. Read the full audit before depositing.","question":"Is Aurum Foundation a scam?"},{"answer":"It is usable with caution. The orange rating reflects unresolved concerns that could materially affect users in adverse conditions. See the audit for specifics.","question":"Is Aurum Foundation safe to use in 2026?"},{"answer":"Custody model is detailed in the audit section. If you cannot answer this question in one sentence about any platform, do not deposit.","question":"Who holds custody of my funds?"},{"answer":"See the fees and revenue breakdown in the audit. Understanding the business model is the single best fraud-detection tool for any platform.","question":"How does Aurum Foundation make money?"},{"answer":"Using our public 8-point framework: custody, transparency, regulation, security, fees, recourse, team, and product integrity. Full methodology at /methodology.","question":"How was this trust score calculated?"},{"answer":"Last audited April 2026. We re-audit on incident, on material disclosure changes, and at least every 6 months.","question":"When was this review last updated?"}],"stats":[{"label":"Trust Score","value":"68 / 100"},{"label":"Rating","value":"ORANGE"},{"label":"Last Audited","value":"Apr 2026"},{"label":"Framework","value":"8-point"}],"tagline":"Independent Aurum Foundation audit · CryptoWatchdog 8-point framework","red_flags":["Partial disclosure on key risk items","Jurisdictional or regulatory ambiguity","Product risk requires user understanding"],"green_flags":["Operational and broadly accessible","Some public disclosure exists","No active fraud findings at audit date"],"who_its_for":"Suitable only for experienced users who can size positions to the worst-case scenario and accept the documented risks.","key_features":[{"icon":"🔐","title":"Security & Custody","description":"Custody is workable but requires user trust assumptions. We document who holds the keys and what happens in failure scenarios."},{"icon":"📜","title":"Transparency & Reporting","description":"Some disclosure exists but key items (audits, reserves, ownership) are partial, dated, or self-attested rather than independently verified."},{"icon":"⚖️","title":"Regulatory Posture","description":"Regulatory standing is mixed by jurisdiction. Some markets are restricted; others rely on light-touch licensing. Confirm availability locally."},{"icon":"🧪","title":"Operational Track Record","description":"Track record includes incidents, downtime, or contagion exposure that have been disclosed and partially mitigated, but warrant caution."},{"icon":"💸","title":"Fees, Spreads & Hidden Costs","description":"We checked headline fees against effective costs (spread, slippage, withdrawal mins, FX markups). Full numbers are in the breakdown below."},{"icon":"🆘","title":"User Recourse","description":"Support and recourse exist but are inconsistent. Escalation often requires social-media pressure or external complaints."}],"hero_subtitle":"Operational with caveats · proceed with caution and conservative sizing.","methodology_note":"Scored against the public CryptoWatchdog 8-point framework: custody, transparency, regulation, security history, fees, recourse, team, and product-market integrity. See /methodology.","verify_dont_trust":"Always confirm the official URL, never share seed phrases or private keys, and treat any unsolicited DM about Aurum Foundation as a phishing attempt by default."}
+published: true
+published_at: "2026-04-20T09:15:22.78262+00:00"
+updated_at: "2026-04-25T05:41:31.58362+00:00"
+meta_title: null
+meta_description: null
+---
+Aurum Foundation is a crypto passive-income platform built around its Ex-AI Bot, and now its new **non-custodial Neyro trading agents**. We tested the original product with real funds — deposits credited, daily profits arrived, and two withdrawals completed during our review period. We have also secured one of the first 100 beta seats for **Neyro / Quantum Alpha** and are testing it live over 30 days.
+
+<div class="not-prose my-6 rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-5 shadow-lg">
+  <div class="flex items-start justify-between gap-4 flex-wrap">
+    <div class="flex-1 min-w-[220px]">
+      <p class="text-[10px] font-semibold uppercase tracking-widest text-primary">New · Neyro beta · 100 seats only</p>
+      <h3 class="mt-1 font-heading text-lg font-bold text-foreground">Connect your wallet & claim a Neyro seat</h3>
+      <p class="mt-1 text-sm text-muted-foreground">Non-custodial · No KYC · Funds stay in your wallet · Exit anytime</p>
+    </div>
+    <a href="https://backoffice.aurum.foundation/u/PKK5U0" target="_blank" rel="noopener sponsored" class="inline-flex items-center justify-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow hover:bg-primary/90 transition-colors">Connect Wallet & Get Access →</a>
+  </div>
+</div>
+
+## Why we're backing Aurum (and why we accepted a Neyro seat)
+
+We see dozens of yield products a month. Aurum is one of the very few we've actually deposited into, withdrawn from, and then accepted a beta seat for. Here is why:
+
+- **Real, identified team.** Founders are public, the company is operational, and the original Ex-Ai Bot has been running for over a year.
+- **We've withdrawn real money.** ~$3,000 USDT in, two test withdrawals out — one in ~1 hour, one in ~24 hours.
+- **Neyro is non-custodial.** Funds never leave your wallet. You sign a smart-contract permission, you can revoke it with one click. No deposit address, no company wallet to drain.
+- **Self-reported Quantum Alpha track record:** +22.6% / +28.9% / +31.4% across three consecutive months (avg 27.6%/month). Self-reported — we are independently verifying this live right now. Read the [full Neyro launch breakdown](/blog/aurum-neyro-quantum-alpha-beta-launch).
+- **Same affiliate link we use ourselves.** [Same terms, same price for you](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"}.
+
+## How your funds stay yours on Neyro
+
+| Stage | Custodial bot | Aurum Neyro (non-custodial) |
+|---|---|---|
+| Onboarding | KYC, email, password, deposit address | Wallet signature only |
+| Where your USDT lives | In the platform's wallet | **In your own wallet, the entire time** |
+| How trades execute | Platform moves funds internally | Smart contract executes pre-authorised trades |
+| If the platform vanishes | Your funds vanish with it | Your funds stay in your wallet |
+| Exiting | Withdrawal request → manual approval | Revoke contract permission → instant |
+
+This is a fundamentally different risk model from the legacy Ex-Ai Bot — and the main reason we're recommending Neyro for users who want exposure without custody. Smart-contract risk and trading losses still apply; only deposit what you're comfortable risking.
+
+## What you get vs what you're risking
+
+| ✅ What you get | ⚠️ What you're risking |
+|---|---|
+| Full custody of your USDT at all times | Smart-contract risk (any DeFi product) |
+| No KYC, no email, no registration | Trading losses if the agent underperforms |
+| Self-reported 27.6% avg monthly track record on Quantum Alpha | Numbers we have not yet independently verified |
+| One-click pause / revoke at any time | Beta software — expect rough edges |
+| One of only 100 first-wave beta seats | Slot scarcity — may close any day |
+
+[**→ Connect your wallet & claim a Neyro seat**](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"}
+
+## Original Ex-Ai Bot review
+
+Our original review of the centralised Ex-Ai Bot still stands. We deposited, received daily yield, and processed two clean withdrawals. We cannot yet confirm the long-term picture and the platform remains under ongoing monitoring. For the new non-custodial Neyro product, see the [Neyro & Quantum Alpha launch breakdown](/blog/aurum-neyro-quantum-alpha-beta-launch).
+
+<div style="background:linear-gradient(135deg,hsl(217 91% 95%),hsl(217 91% 90%));border-left:4px solid hsl(217 91% 45%);border-radius:8px;padding:18px 20px;margin:24px 0;color:hsl(217 91% 18%);">
+<p style="margin:0 0 4px 0;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:hsl(217 91% 35%);">📘 Recommended reading</p>
+<p style="margin:0 0 8px 0;font-size:17px;font-weight:700;line-height:1.35;">New to non-custodial AI trading?</p>
+<p style="margin:0 0 10px 0;font-size:14px;line-height:1.55;color:hsl(217 91% 25%);">Our complete pillar guide explains exactly how Aurum Neyro and similar platforms can trade your wallet without ever being able to withdraw — plus the 7 checks we run before approving anything.</p>
+<a href="/blog/non-custodial-ai-trading-bots-explained" style="display:inline-block;background:hsl(217 91% 25%);color:white;padding:10px 18px;border-radius:6px;font-weight:600;text-decoration:none;font-size:14px;">Read the full guide →</a>
+</div>
+
+Verified — passed our deposit, withdrawal and operational checks. Transparent team, working product and a credible AI-yield model. Treat all yield platforms as variable-return: never deposit more than you can afford to lose, and use only funds you do not need for daily life.

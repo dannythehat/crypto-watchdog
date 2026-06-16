@@ -1,0 +1,380 @@
+[
+  {
+    "id": "7fac02cc-b735-42eb-aa63-cd0050759a11",
+    "name": "Exchanges",
+    "slug": "exchanges",
+    "description": "Cryptocurrency exchanges and trading platforms",
+    "icon_name": "ArrowLeftRight",
+    "parent_id": null,
+    "sort_order": 10
+  },
+  {
+    "id": "84a219ba-2959-48fe-aae6-b5a349d90e91",
+    "name": "Wallets",
+    "slug": "wallets",
+    "description": "Crypto wallets and custody solutions",
+    "icon_name": "Wallet",
+    "parent_id": null,
+    "sort_order": 20
+  },
+  {
+    "id": "c07fd9a1-df1f-40bb-8cd4-8b7fd66ddecf",
+    "name": "DeFi",
+    "slug": "defi",
+    "description": "Decentralized finance protocols and platforms",
+    "icon_name": "Layers",
+    "parent_id": null,
+    "sort_order": 40
+  },
+  {
+    "id": "0269466e-301f-4017-b678-b1b22b152b67",
+    "name": "Ecosystems & Chains",
+    "slug": "ecosystems-chains",
+    "description": "Layer 1 and Layer 2 blockchains, app-chains, and bridges",
+    "icon_name": null,
+    "parent_id": null,
+    "sort_order": 50
+  },
+  {
+    "id": "845012d6-4f5e-47da-8d7c-a166691a26f2",
+    "name": "AI Finance",
+    "slug": "ai-finance",
+    "description": "AI-powered crypto platforms — trading agents, yield optimisers, quant funds, signal services and AI-managed wealth products. The fastest-growing and most scam-prone niche in crypto.",
+    "icon_name": "BrainCircuit",
+    "parent_id": null,
+    "sort_order": 6
+  },
+  {
+    "id": "f3edb2a4-e7e0-482a-9826-8c6d6f3aa6a9",
+    "name": "AI Yield & Wealth",
+    "slug": "ai-yield-wealth",
+    "description": "AI-managed yield, savings and wealth platforms.",
+    "icon_name": "TrendingUp",
+    "parent_id": "845012d6-4f5e-47da-8d7c-a166691a26f2",
+    "sort_order": 1
+  },
+  {
+    "id": "6a417dca-1c4a-4201-87ba-6620e1948c81",
+    "name": "AI Quant Funds",
+    "slug": "ai-quant-funds",
+    "description": "AI/quantitative crypto funds and managed strategies.",
+    "icon_name": "LineChart",
+    "parent_id": "845012d6-4f5e-47da-8d7c-a166691a26f2",
+    "sort_order": 2
+  },
+  {
+    "id": "3a7c28f2-9586-457f-bdc2-847697e1084d",
+    "name": "Trading & Bots",
+    "slug": "trading-bots",
+    "description": "Automated trading, AI agents, copy trading, and signal services",
+    "icon_name": "Bot",
+    "parent_id": null,
+    "sort_order": 30
+  },
+  {
+    "id": "de3d2b25-089d-4c3a-89bf-45fe8dc7854a",
+    "name": "Mining & Node Services",
+    "slug": "mining",
+    "description": "Mining pools, cloud mining, and node infrastructure",
+    "icon_name": "Pickaxe",
+    "parent_id": null,
+    "sort_order": 60
+  },
+  {
+    "id": "f559c173-0c8b-4ae8-bc43-2efee3954ecb",
+    "name": "Education & Tools",
+    "slug": "education",
+    "description": "Courses, analytics, portfolio trackers, and tax tools",
+    "icon_name": "GraduationCap",
+    "parent_id": null,
+    "sort_order": 70
+  },
+  {
+    "id": "6a6ad342-5677-477b-b218-6025977333b3",
+    "name": "NFT & Gaming",
+    "slug": "nft-platforms",
+    "description": "NFT marketplaces, GameFi, and digital collectibles",
+    "icon_name": "Image",
+    "parent_id": null,
+    "sort_order": 80
+  },
+  {
+    "id": "22381b54-382d-41c5-9954-40e8c7284516",
+    "name": "Copy Trading",
+    "slug": "copy-trading",
+    "description": "Signal services and copy trading platforms",
+    "icon_name": "Users",
+    "parent_id": "3a7c28f2-9586-457f-bdc2-847697e1084d",
+    "sort_order": 20
+  },
+  {
+    "id": "438da118-5c40-4605-8b36-96695920cb5b",
+    "name": "Staking",
+    "slug": "staking",
+    "description": "Staking platforms and yield services",
+    "icon_name": "Coins",
+    "parent_id": "c07fd9a1-df1f-40bb-8cd4-8b7fd66ddecf",
+    "sort_order": 20
+  },
+  {
+    "id": "9c109dd9-0f48-437b-a653-17aad9dd21dc",
+    "name": "Recovery Services",
+    "slug": "recovery-services",
+    "description": "Crypto recovery and scam-adjacent services",
+    "icon_name": "LifeBuoy",
+    "parent_id": "f559c173-0c8b-4ae8-bc43-2efee3954ecb",
+    "sort_order": 20
+  },
+  {
+    "id": "82c06c80-146c-44cc-8aa1-83389b63019e",
+    "name": "Centralized Exchanges (CEX)",
+    "slug": "centralized-exchanges",
+    "description": "Custodial exchanges like Binance, Coinbase, Kraken",
+    "icon_name": null,
+    "parent_id": "7fac02cc-b735-42eb-aa63-cd0050759a11",
+    "sort_order": 10
+  },
+  {
+    "id": "e2dc552c-ea25-470c-b087-d1de0ccfd17b",
+    "name": "Decentralized Exchanges (DEX)",
+    "slug": "decentralized-exchanges",
+    "description": "On-chain swap protocols like Uniswap and PancakeSwap",
+    "icon_name": null,
+    "parent_id": "7fac02cc-b735-42eb-aa63-cd0050759a11",
+    "sort_order": 20
+  },
+  {
+    "id": "6a794c1e-7506-4ece-87cd-f3a7b493a860",
+    "name": "P2P Exchanges",
+    "slug": "p2p-exchanges",
+    "description": "Peer-to-peer marketplaces for buying and selling crypto",
+    "icon_name": null,
+    "parent_id": "7fac02cc-b735-42eb-aa63-cd0050759a11",
+    "sort_order": 30
+  },
+  {
+    "id": "0bd0b2b6-5ab0-4ca9-bffd-0ce68e303f81",
+    "name": "Brokers",
+    "slug": "crypto-brokers",
+    "description": "Crypto brokerage platforms and CFD providers",
+    "icon_name": null,
+    "parent_id": "7fac02cc-b735-42eb-aa63-cd0050759a11",
+    "sort_order": 40
+  },
+  {
+    "id": "d0526e19-e642-4ccb-aa40-bfb00825ee4d",
+    "name": "Hot Wallets",
+    "slug": "hot-wallets",
+    "description": "Software wallets connected to the internet",
+    "icon_name": null,
+    "parent_id": "84a219ba-2959-48fe-aae6-b5a349d90e91",
+    "sort_order": 10
+  },
+  {
+    "id": "29d57d1f-6f36-47d8-8d54-b0e3bb2facbc",
+    "name": "Hardware Wallets",
+    "slug": "hardware-wallets",
+    "description": "Cold storage devices like Ledger and Trezor",
+    "icon_name": null,
+    "parent_id": "84a219ba-2959-48fe-aae6-b5a349d90e91",
+    "sort_order": 20
+  },
+  {
+    "id": "054b7595-4a8a-444b-83e5-c4bceb94b90b",
+    "name": "Smart Contract Wallets",
+    "slug": "smart-contract-wallets",
+    "description": "Account-abstraction and multi-sig wallets",
+    "icon_name": null,
+    "parent_id": "84a219ba-2959-48fe-aae6-b5a349d90e91",
+    "sort_order": 30
+  },
+  {
+    "id": "b637a608-8d81-4fd9-b25b-1cafddcf8f5c",
+    "name": "Custodial Wallets",
+    "slug": "custodial-wallets",
+    "description": "Wallets where a third party holds your keys",
+    "icon_name": null,
+    "parent_id": "84a219ba-2959-48fe-aae6-b5a349d90e91",
+    "sort_order": 40
+  },
+  {
+    "id": "cdb990ef-5202-4934-b03e-037446aa46b4",
+    "name": "Signal Services",
+    "slug": "signal-services",
+    "description": "Paid trading signals and alert providers",
+    "icon_name": null,
+    "parent_id": "3a7c28f2-9586-457f-bdc2-847697e1084d",
+    "sort_order": 30
+  },
+  {
+    "id": "bbcbe91c-ddaf-44e2-ba77-b3f5ba8dd60d",
+    "name": "Grid & DCA Bots",
+    "slug": "grid-dca-bots",
+    "description": "Grid trading and dollar-cost-averaging automation",
+    "icon_name": null,
+    "parent_id": "3a7c28f2-9586-457f-bdc2-847697e1084d",
+    "sort_order": 40
+  },
+  {
+    "id": "007f8c6b-fe29-45d1-8436-2f0bd1caaaa8",
+    "name": "Lending Protocols",
+    "slug": "lending-protocols",
+    "description": "On-chain lending and borrowing platforms",
+    "icon_name": null,
+    "parent_id": "c07fd9a1-df1f-40bb-8cd4-8b7fd66ddecf",
+    "sort_order": 10
+  },
+  {
+    "id": "857ffa99-c621-466f-92fd-99937fa57f40",
+    "name": "Yield Farming",
+    "slug": "yield-farming",
+    "description": "Liquidity mining and yield aggregators",
+    "icon_name": null,
+    "parent_id": "c07fd9a1-df1f-40bb-8cd4-8b7fd66ddecf",
+    "sort_order": 30
+  },
+  {
+    "id": "e44a1339-eedb-474e-808c-b746b39218a4",
+    "name": "DeFi Derivatives",
+    "slug": "defi-derivatives",
+    "description": "On-chain perpetuals, options, and synthetic assets",
+    "icon_name": null,
+    "parent_id": "c07fd9a1-df1f-40bb-8cd4-8b7fd66ddecf",
+    "sort_order": 40
+  },
+  {
+    "id": "87e046bb-a363-4a7b-9211-9c7b6cbdaaa0",
+    "name": "Layer 1 Blockchains",
+    "slug": "layer-1-blockchains",
+    "description": "Base-layer chains like Ethereum, Solana, Aurum Network",
+    "icon_name": null,
+    "parent_id": "0269466e-301f-4017-b678-b1b22b152b67",
+    "sort_order": 10
+  },
+  {
+    "id": "fd699df0-a17c-41c9-b5c3-f213c3df5c36",
+    "name": "Layer 2 Scaling",
+    "slug": "layer-2-scaling",
+    "description": "Rollups and scaling solutions like Arbitrum and Optimism",
+    "icon_name": null,
+    "parent_id": "0269466e-301f-4017-b678-b1b22b152b67",
+    "sort_order": 20
+  },
+  {
+    "id": "b7ed3673-0f02-4884-b93e-83881a5a8b78",
+    "name": "Bridges",
+    "slug": "crypto-bridges",
+    "description": "Cross-chain bridges and interoperability protocols",
+    "icon_name": null,
+    "parent_id": "0269466e-301f-4017-b678-b1b22b152b67",
+    "sort_order": 30
+  },
+  {
+    "id": "9a79437a-540b-49b8-9fe1-4d51ce5828be",
+    "name": "PoW Mining",
+    "slug": "pow-mining",
+    "description": "Proof-of-work mining hardware and pools",
+    "icon_name": null,
+    "parent_id": "de3d2b25-089d-4c3a-89bf-45fe8dc7854a",
+    "sort_order": 10
+  },
+  {
+    "id": "f335e25b-62f7-423d-88e2-aff79aedd292",
+    "name": "Cloud Mining",
+    "slug": "cloud-mining",
+    "description": "Cloud-based and hosted mining services",
+    "icon_name": null,
+    "parent_id": "de3d2b25-089d-4c3a-89bf-45fe8dc7854a",
+    "sort_order": 20
+  },
+  {
+    "id": "03a98169-940f-4d00-a9f6-5f3165d4b228",
+    "name": "Node Providers",
+    "slug": "node-providers",
+    "description": "RPC and node-as-a-service providers",
+    "icon_name": null,
+    "parent_id": "de3d2b25-089d-4c3a-89bf-45fe8dc7854a",
+    "sort_order": 30
+  },
+  {
+    "id": "2e7d0032-5f60-4f0b-8156-cb28283df743",
+    "name": "Validators",
+    "slug": "validators",
+    "description": "Proof-of-stake validators and validator-as-a-service",
+    "icon_name": null,
+    "parent_id": "de3d2b25-089d-4c3a-89bf-45fe8dc7854a",
+    "sort_order": 40
+  },
+  {
+    "id": "89293646-ec5a-4d9e-a383-6201039a7529",
+    "name": "Courses & Mentorship",
+    "slug": "courses-mentorship",
+    "description": "Paid crypto courses, mentorship and trading academies",
+    "icon_name": null,
+    "parent_id": "f559c173-0c8b-4ae8-bc43-2efee3954ecb",
+    "sort_order": 10
+  },
+  {
+    "id": "789c939e-cb73-4284-bb5f-da2d033b1038",
+    "name": "Analytics Tools",
+    "slug": "analytics-tools",
+    "description": "On-chain analytics, charting, and research platforms",
+    "icon_name": null,
+    "parent_id": "f559c173-0c8b-4ae8-bc43-2efee3954ecb",
+    "sort_order": 30
+  },
+  {
+    "id": "f262885b-4ba5-415a-8079-d04beba96f04",
+    "name": "Portfolio Trackers",
+    "slug": "portfolio-trackers",
+    "description": "Portfolio and tax-tracking tools",
+    "icon_name": null,
+    "parent_id": "f559c173-0c8b-4ae8-bc43-2efee3954ecb",
+    "sort_order": 40
+  },
+  {
+    "id": "b5796a41-939d-4da9-91b1-7f3bb06d802b",
+    "name": "NFT Marketplaces",
+    "slug": "nft-marketplaces",
+    "description": "Marketplaces for buying and selling NFTs",
+    "icon_name": null,
+    "parent_id": "6a6ad342-5677-477b-b218-6025977333b3",
+    "sort_order": 10
+  },
+  {
+    "id": "b32f8402-9525-447d-9256-ad95883cf9b9",
+    "name": "GameFi",
+    "slug": "gamefi",
+    "description": "Play-to-earn games and on-chain gaming",
+    "icon_name": null,
+    "parent_id": "6a6ad342-5677-477b-b218-6025977333b3",
+    "sort_order": 20
+  },
+  {
+    "id": "29b65ab5-0f7f-41e7-bc34-c6df3f2667a3",
+    "name": "Digital Collectibles",
+    "slug": "digital-collectibles",
+    "description": "Collectible NFT projects and art platforms",
+    "icon_name": null,
+    "parent_id": "6a6ad342-5677-477b-b218-6025977333b3",
+    "sort_order": 30
+  },
+  {
+    "id": "34875eb1-e3c2-477f-8e60-23433c691765",
+    "name": "AI Signals & Research",
+    "slug": "ai-signals-research",
+    "description": "AI-driven trade signals, market intelligence and research tools.",
+    "icon_name": "Radar",
+    "parent_id": "845012d6-4f5e-47da-8d7c-a166691a26f2",
+    "sort_order": 3
+  },
+  {
+    "id": "0890e437-1120-409d-955a-8aab1546f15f",
+    "name": "AI Trading Agents",
+    "slug": "ai-trading-agents",
+    "description": "AI-driven trading agents and autonomous bots like Aurum Neyro",
+    "icon_name": null,
+    "parent_id": "845012d6-4f5e-47da-8d7c-a166691a26f2",
+    "sort_order": 0
+  }
+]

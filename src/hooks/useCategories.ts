@@ -1,15 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import { supabase } from "@/integrations/supabase/client";
+import { categories } from "@/content";
 
+// Content is bundled from the repo (src/content) — no network call.
 export const useCategories = () =>
-  useQuery({
-    queryKey: ["categories"],
-    queryFn: async () => {
-      const { data, error } = await supabase
-        .from("categories")
-        .select("*")
-        .order("name");
-      if (error) throw error;
-      return data ?? [];
-    },
-  });
+  useQuery({ queryKey: ["categories"], queryFn: async () => categories });
