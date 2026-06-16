@@ -541,7 +541,7 @@
     "rating": "green",
     "status": "active",
     "network": "Kraken (referral)",
-    "commissionType": "20% lifetime fees (up to 40% Pro)",
+    "commissionType": "referral (verify pays commission)",
     "affiliateUrl": "https://invite.kraken.com/JDNW/sr4l7hjh",
     "homepage": "https://invite.kraken.com/JDNW/sr4l7hjh",
     "displayUrl": "invite.kraken.com",
@@ -557,7 +557,7 @@
       "warnings"
     ],
     "lastChecked": "2026-06-16",
-    "notes": "Known affiliate program — apply."
+    "notes": "VERIFY: invite.kraken.com may be a non-paying referral — swap for the paying affiliate link from the Kraken affiliate dashboard."
   },
   {
     "id": "topone-futures",
