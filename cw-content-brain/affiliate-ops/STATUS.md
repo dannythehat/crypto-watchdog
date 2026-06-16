@@ -1,12 +1,12 @@
 # Affiliate Status — live dashboard
-Updated 2026-06-16T17:21:31.433Z · run `node cw-content-brain/scripts/audit_affiliates.mjs`
+Updated 2026-06-16T17:38:37.168Z · run `node cw-content-brain/scripts/audit_affiliates.mjs`
 
 | Metric | Value |
 |---|---|
-| Monetisable platforms (non-red) | 51 |
-| **Active** (earning links live) | **8** |
-| Monetisation coverage | **16%** |
-| Known programs not yet signed up | 11 |
+| Monetisable platforms (non-red) | 54 |
+| **Active** (earning links live) | **9** |
+| Monetisation coverage | **17%** |
+| Known programs not yet signed up | 13 |
 | Links overdue a check (>30d) | 0 |
 | Earnings logged | 0.00 |
 | Claimed | 0.00 |
@@ -22,10 +22,12 @@ Updated 2026-06-16T17:21:31.433Z · run `node cw-content-brain/scripts/audit_aff
 | BingX | centralized-exchanges | https://bingx.com/en/partner/ | needs_signup |
 | eToro | crypto-brokers | https://www.etoro.com/partners/ | needs_signup |
 | Pionex | grid-dca-bots | https://www.pionex.com/en/affiliate | needs_signup |
-| Cryptohopper | grid-dca-bots | https://www.cryptohopper.com/affiliate | needs_signup |
 | 3Commas | grid-dca-bots | https://3commas.io/affiliate | needs_signup |
 | eToro CopyTrader | copy-trading | https://www.etoro.com/partners/ | needs_signup |
 | Coinbase (Custodial Account) | custodial-wallets | _find program_ | needs_signup |
+| Kinesis Money | tokenization-gold | https://kinesis.money/ | needs_signup |
+| RealT | tokenization-realestate | https://realt.co/ | needs_signup |
+| Lofty | tokenization-realestate | https://www.lofty.ai/ | needs_signup |
 
 ## ✅ Active programs
 - Aurum Foundation (Aurum (referral), existing link)
@@ -34,6 +36,7 @@ Updated 2026-06-16T17:21:31.433Z · run `node cw-content-brain/scripts/audit_aff
 - MoneyFlare (MoneyFlare (referral), existing link)
 - Kraken (Kraken (referral), referral (verify pays commission))
 - Trezor (Trezor affiliate, 12–15% per sale (EUR or BTC))
+- Cryptohopper (Cryptohopper (affiliate), Up to 15% recurring (+50% sub))
 - Bitget (Bitget (referral), 40–50% trading-fee rebate)
 - Tangem (Tangem (referral), existing link)
 
