@@ -4,7 +4,7 @@ Generated 2026-06-16
 Hi Danny — please sign up to the programs below (ranked by earning potential).
 For each one: open the link, apply, then send me your tracking link and I'll wire it into the site. The moment you do, that platform's CTAs start earning.
 
-## Sign up for these (10)
+## Sign up for these (9)
 
 ### 1. BingX
 - **Apply:** https://bingx.com/en/partner/
@@ -59,12 +59,6 @@ For each one: open the link, apply, then send me your tracking link and I'll wir
 - **Commission:** ~25% revenue share (CPA available)
 - **Note:** Known affiliate program — apply.
 - **Reply with:** your eToro CopyTrader affiliate/tracking link
-
-### 10. Kinesis Money
-- **Apply:** https://kinesis.money/
-- **Commission:** Referral yield share
-- **Note:** Tokenised gold/silver with referral program — apply.
-- **Reply with:** your Kinesis Money affiliate/tracking link
 
 ## Money status
 - Earnings logged: £0.00
