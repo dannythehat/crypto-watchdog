@@ -103,7 +103,7 @@ const BlogPost = () => {
               <img
                 src={post.image_url}
                 alt={post.title}
-                className="mt-6 w-full rounded-xl border border-border"
+                className="mt-6 w-full rounded-2xl border border-border shadow-2xl ring-1 ring-foreground/5"
                 loading="eager"
               />
             )}
