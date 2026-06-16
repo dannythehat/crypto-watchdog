@@ -1,0 +1,103 @@
+# CryptoWatchdog — affiliate sign-up list
+Generated 2026-06-16
+
+Hi Danny — please sign up to the programs below (ranked by earning potential).
+For each one: open the link, apply, then send me your tracking link and I'll wire it into the site. The moment you do, that platform's CTAs start earning.
+
+## Sign up for these (15)
+
+### 1. Binance
+- **Apply:** https://www.binance.com/en/activity/affiliate
+- **Commission:** Up to 50% lifetime (spot + futures)
+- **Note:** Apply: needs ~5,000+ social followers or 5,000 daily visits. Approval in a few days.
+- **Reply with:** your Binance affiliate/tracking link
+
+### 2. BingX
+- **Apply:** https://bingx.com/en/partner/
+- **Commission:** Up to 50% trading-fee rebate
+- **Note:** Known affiliate program — apply.
+- **Reply with:** your BingX affiliate/tracking link
+
+### 3. Bitget
+- **Apply:** https://www.bitget.com/affiliate
+- **Commission:** 40–50% trading-fee rebate
+- **Note:** Apply with 100+ social followers; reviewed within 24h.
+- **Reply with:** your Bitget affiliate/tracking link
+
+### 4. Bybit
+- **Apply:** https://affiliates.bybit.com/
+- **Commission:** Up to 50% of referral trading fees
+- **Note:** Known affiliate program — apply.
+- **Reply with:** your Bybit affiliate/tracking link
+
+### 5. Coinbase
+- **Apply:** https://www.coinbase.com/affiliates
+- **Commission:** 50% of fees for first 3 months
+- **Note:** Known affiliate program — apply.
+- **Reply with:** your Coinbase affiliate/tracking link
+
+### 6. Kraken
+- **Apply:** https://www.kraken.com/affiliate
+- **Commission:** 20% lifetime fees (up to 40% Pro)
+- **Note:** Known affiliate program — apply.
+- **Reply with:** your Kraken affiliate/tracking link
+
+### 7. KuCoin
+- **Apply:** https://www.kucoin.com/affiliate
+- **Commission:** 40–60% trading-fee rev share (+5% sub)
+- **Note:** Known affiliate program — apply.
+- **Reply with:** your KuCoin affiliate/tracking link
+
+### 8. OKX
+- **Apply:** https://www.okx.com/affiliate
+- **Commission:** Referral commission (mystery box / rev share)
+- **Note:** Known affiliate program — apply.
+- **Reply with:** your OKX affiliate/tracking link
+
+### 9. eToro
+- **Apply:** https://www.etoro.com/partners/
+- **Commission:** ~25% revenue share (CPA available)
+- **Note:** Known affiliate program — apply.
+- **Reply with:** your eToro affiliate/tracking link
+
+### 10. Ledger Nano X
+- **Apply:** https://affiliate.ledger.com/
+- **Commission:** 10% per sale (CPS), paid in BTC or fiat via Impact
+- **Note:** Known affiliate program — apply.
+- **Reply with:** your Ledger Nano X affiliate/tracking link
+
+### 11. Trezor
+- **Apply:** https://partners.trezor.io/
+- **Commission:** 12–15% per sale (EUR or BTC)
+- **Note:** Known affiliate program — apply.
+- **Reply with:** your Trezor affiliate/tracking link
+
+### 12. 3Commas
+- **Apply:** https://3commas.io/affiliate
+- **Commission:** Up to 40% recurring (not available in EEA)
+- **Note:** Known affiliate program — apply.
+- **Reply with:** your 3Commas affiliate/tracking link
+
+### 13. Cryptohopper
+- **Apply:** https://www.cryptohopper.com/affiliate
+- **Commission:** Up to 15% recurring (+50% sub)
+- **Note:** Known affiliate program — apply.
+- **Reply with:** your Cryptohopper affiliate/tracking link
+
+### 14. Pionex
+- **Apply:** https://www.pionex.com/en/affiliate
+- **Commission:** ~20% trading-fee rebate
+- **Note:** Known affiliate program — apply.
+- **Reply with:** your Pionex affiliate/tracking link
+
+### 15. eToro CopyTrader
+- **Apply:** https://www.etoro.com/partners/
+- **Commission:** ~25% revenue share (CPA available)
+- **Note:** Known affiliate program — apply.
+- **Reply with:** your eToro CopyTrader affiliate/tracking link
+
+## Money status
+- Earnings logged: £0.00
+- Outstanding (owed to us): £0.00
+
+Once you've applied to a few, reply with the links — I'll do the rest.
