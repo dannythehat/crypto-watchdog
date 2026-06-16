@@ -1,21 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Ledger vs Trezor 2026: Which Hardware Wallet Is Safest?">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0C0E14"/>
-      <stop offset="1" stop-color="#141A2B"/>
+      <stop offset="0" stop-color="#0A0C12"/>
+      <stop offset="0.55" stop-color="#10162A"/>
+      <stop offset="1" stop-color="#0A0C12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.18" r="0.6">
+      <stop offset="0" stop-color="#2662D9" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2662D9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2662D9"/>
+      <stop offset="1" stop-color="#5B8DEF"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="0" y="0" width="12" height="630" fill="#2662D9"/>
-  <!-- brand -->
-  <g transform="translate(80,90)">
-    <path d="M0 0 L34 0 L34 22 C34 38 18 46 17 46 C16 46 0 38 0 22 Z" fill="#2662D9"/>
-    <text x="48" y="32" font-family="'Space Grotesk', Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">Crypto<tspan fill="#2662D9">Watchdog</tspan></text>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1200" height="6" fill="url(#accent)"/>
+  <!-- shield watermark -->
+  <g transform="translate(815,150) scale(7)" opacity="0.06">
+    <path d="M30 0 L60 12 L60 36 C60 62 30 78 30 78 C30 78 0 62 0 36 L0 12 Z" fill="#5B8DEF"/>
   </g>
-  <text x="80" y="200" font-family="Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3" fill="#2662D9">WALLETS</text>
-  <text x="80" y="218" font-family="'Space Grotesk', Arial, sans-serif" font-size="56" font-weight="700" fill="#FFFFFF">Ledger vs Trezor</text>
-  <text x="80" y="286" font-family="'Space Grotesk', Arial, sans-serif" font-size="56" font-weight="700" fill="#FFFFFF">2026: Which</text>
-  <text x="80" y="354" font-family="'Space Grotesk', Arial, sans-serif" font-size="56" font-weight="700" fill="#FFFFFF">Hardware Wallet Is</text>
-  <text x="80" y="422" font-family="'Space Grotesk', Arial, sans-serif" font-size="56" font-weight="700" fill="#FFFFFF">Safest?</text>
-  <text x="80" y="560" font-family="Arial, sans-serif" font-size="22" fill="#8a93a6">Independent, evidence-led crypto safety reviews</text>
+  <!-- brand -->
+  <g transform="translate(80,84)">
+    <path d="M0 0 L30 12 L30 30 C30 50 15 60 15 60 C15 60 0 50 0 30 Z" fill="url(#accent)"/>
+    <text x="46" y="40" font-family="'Space Grotesk',Arial,sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">Crypto<tspan fill="#5B8DEF">Watchdog</tspan></text>
+  </g>
+  <!-- category pill -->
+  <g transform="translate(80,210)">
+    <rect width="153" height="44" rx="22" fill="#2662D9" fill-opacity="0.16" stroke="#2662D9" stroke-opacity="0.5"/>
+    <text x="24" y="29" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#7FA7F5">WALLETS</text>
+  </g>
+  <text x="80" y="284" font-family="'Space Grotesk',Arial,sans-serif" font-size="62" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Ledger vs Trezor 2026:</text>
+  <text x="80" y="360" font-family="'Space Grotesk',Arial,sans-serif" font-size="62" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Which Hardware Wallet</text>
+  <text x="80" y="436" font-family="'Space Grotesk',Arial,sans-serif" font-size="62" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Is Safest?</text>
+  <line x1="80" y1="540" x2="180" y2="540" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+  <text x="80" y="578" font-family="Arial,sans-serif" font-size="22" fill="#9AA4B8">Independent, evidence-led crypto safety reviews</text>
 </svg>

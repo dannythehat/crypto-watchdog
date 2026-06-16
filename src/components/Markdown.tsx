@@ -41,7 +41,7 @@ function renderInline(text: string, keyBase: string): ReactNode[] {
     const key = `${keyBase}-i${i}`;
     if (m[2] !== undefined && m[1] !== undefined && m[0].startsWith("!")) {
       out.push(
-        <img key={key} src={m[2]} alt={m[1]} loading="lazy" className="my-6 w-full rounded-lg border border-border" />,
+        <img key={key} src={m[2]} alt={m[1]} loading="lazy" className="my-7 w-full rounded-2xl border border-border shadow-lg ring-1 ring-foreground/5" />,
       );
     } else if (m[3] !== undefined && m[4] !== undefined) {
       const href = m[4];
@@ -97,7 +97,7 @@ const Markdown = ({ content }: { content: string }) => {
   const flushQuote = () => {
     if (quote.length) {
       const key = `q${k++}`;
-      blocks.push(<blockquote key={key} className="mb-4 border-l-4 border-primary/40 pl-4 italic text-muted-foreground">{renderInline(quote.join(" "), key)}</blockquote>);
+      blocks.push(<blockquote key={key} className="my-6 rounded-xl border border-primary/20 border-l-4 border-l-primary bg-primary/[0.06] px-5 py-4 text-muted-foreground backdrop-blur">{renderInline(quote.join(" "), key)}</blockquote>);
       quote = [];
     }
   };
@@ -124,21 +124,23 @@ const Markdown = ({ content }: { content: string }) => {
       }
       const key = `tbl${k++}`;
       blocks.push(
-        <div key={key} className="my-6 overflow-x-auto">
-          <table className="w-full border-collapse text-sm">
-            <thead>
-              <tr className="border-b border-border">
-                {header.map((c, i) => <th key={i} className="px-3 py-2 text-left font-semibold text-foreground">{renderInline(c, `${key}-h${i}`)}</th>)}
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((r, ri) => (
-                <tr key={ri} className="border-b border-border/60">
-                  {r.map((c, ci) => <td key={ci} className="px-3 py-2 align-top text-muted-foreground">{renderInline(c, `${key}-${ri}-${ci}`)}</td>)}
+        <div key={key} className="my-8 overflow-hidden rounded-2xl border border-border bg-card/60 shadow-lg backdrop-blur-md">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr className="bg-gradient-to-r from-primary/20 via-primary/10 to-transparent">
+                  {header.map((c, i) => <th key={i} className="px-4 py-3.5 text-left font-heading text-sm font-semibold text-foreground">{renderInline(c, `${key}-h${i}`)}</th>)}
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {rows.map((r, ri) => (
+                  <tr key={ri} className="border-t border-border/50 transition-colors hover:bg-foreground/[0.03]">
+                    {r.map((c, ci) => <td key={ci} className={`px-4 py-3 align-top ${ci === 0 ? "font-medium text-foreground" : "text-muted-foreground"}`}>{renderInline(c, `${key}-${ri}-${ci}`)}</td>)}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>,
       );
       continue;
