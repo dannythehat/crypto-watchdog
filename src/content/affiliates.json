@@ -898,10 +898,10 @@
     "category": "grid-dca-bots",
     "reviewSlug": "cryptohopper",
     "rating": "orange",
-    "status": "needs_signup",
-    "network": "Cryptohopper (direct)",
+    "status": "active",
+    "network": "Cryptohopper (affiliate)",
     "commissionType": "Up to 15% recurring (+50% sub)",
-    "affiliateUrl": "",
+    "affiliateUrl": "https://www.cryptohopper.com/?atid=38251",
     "homepage": "https://www.cryptohopper.com",
     "displayUrl": "cryptohopper.com",
     "signupUrl": "https://www.cryptohopper.com/affiliate",
@@ -915,8 +915,8 @@
     "blockedPageTypes": [
       "warnings"
     ],
-    "lastChecked": null,
-    "notes": "Known affiliate program — apply."
+    "lastChecked": "2026-06-16",
+    "notes": "Active. Affiliate link (atid=38251)."
   },
   {
     "id": "3commas",
@@ -1555,5 +1555,83 @@
     ],
     "lastChecked": "2026-06-16",
     "notes": "Existing referral link (from blog content)."
+  },
+  {
+    "id": "kinesis",
+    "brand": "Kinesis Money",
+    "category": "tokenization-gold",
+    "reviewSlug": "kinesis-money",
+    "rating": null,
+    "status": "needs_signup",
+    "network": "Kinesis (referral)",
+    "commissionType": "Referral yield share",
+    "affiliateUrl": "",
+    "homepage": "https://kinesis.money",
+    "displayUrl": "kinesis.money",
+    "signupUrl": "https://kinesis.money/",
+    "hasKnownProgram": true,
+    "offerText": "Buy gold- and silver-backed tokens (KAU/KAG) with a yield",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Tokenised gold/silver with referral program — apply."
+  },
+  {
+    "id": "realt",
+    "brand": "RealT",
+    "category": "tokenization-realestate",
+    "reviewSlug": "realt",
+    "rating": null,
+    "status": "needs_signup",
+    "network": "RealT (referral)",
+    "commissionType": "Referral commission",
+    "affiliateUrl": "",
+    "homepage": "https://realt.co",
+    "displayUrl": "realt.co",
+    "signupUrl": "https://realt.co/",
+    "hasKnownProgram": true,
+    "offerText": "Fractional US rental property from $50, daily stablecoin dividends",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Tokenised real estate referral program — apply. Note past Detroit tenant-management issues."
+  },
+  {
+    "id": "lofty",
+    "brand": "Lofty",
+    "category": "tokenization-realestate",
+    "reviewSlug": "lofty-ai",
+    "rating": null,
+    "status": "needs_signup",
+    "network": "Lofty (referral)",
+    "commissionType": "Referral gift certificate",
+    "affiliateUrl": "",
+    "homepage": "https://www.lofty.ai",
+    "displayUrl": "lofty.ai",
+    "signupUrl": "https://www.lofty.ai/",
+    "hasKnownProgram": true,
+    "offerText": "Fractional US real estate from $50 with instant liquidity (AMM)",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Tokenised real estate referral program — apply."
   }
 ]

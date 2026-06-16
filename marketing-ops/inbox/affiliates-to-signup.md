@@ -4,7 +4,7 @@ Generated 2026-06-16
 Hi Danny — please sign up to the programs below (ranked by earning potential).
 For each one: open the link, apply, then send me your tracking link and I'll wire it into the site. The moment you do, that platform's CTAs start earning.
 
-## Sign up for these (10)
+## Sign up for these (12)
 
 ### 1. BingX
 - **Apply:** https://bingx.com/en/partner/
@@ -48,23 +48,35 @@ For each one: open the link, apply, then send me your tracking link and I'll wir
 - **Note:** Known affiliate program — apply.
 - **Reply with:** your 3Commas affiliate/tracking link
 
-### 8. Cryptohopper
-- **Apply:** https://www.cryptohopper.com/affiliate
-- **Commission:** Up to 15% recurring (+50% sub)
-- **Note:** Known affiliate program — apply.
-- **Reply with:** your Cryptohopper affiliate/tracking link
-
-### 9. Pionex
+### 8. Pionex
 - **Apply:** https://www.pionex.com/en/affiliate
 - **Commission:** ~20% trading-fee rebate
 - **Note:** Known affiliate program — apply.
 - **Reply with:** your Pionex affiliate/tracking link
 
-### 10. eToro CopyTrader
+### 9. eToro CopyTrader
 - **Apply:** https://www.etoro.com/partners/
 - **Commission:** ~25% revenue share (CPA available)
 - **Note:** Known affiliate program — apply.
 - **Reply with:** your eToro CopyTrader affiliate/tracking link
+
+### 10. Kinesis Money
+- **Apply:** https://kinesis.money/
+- **Commission:** Referral yield share
+- **Note:** Tokenised gold/silver with referral program — apply.
+- **Reply with:** your Kinesis Money affiliate/tracking link
+
+### 11. Lofty
+- **Apply:** https://www.lofty.ai/
+- **Commission:** Referral gift certificate
+- **Note:** Tokenised real estate referral program — apply.
+- **Reply with:** your Lofty affiliate/tracking link
+
+### 12. RealT
+- **Apply:** https://realt.co/
+- **Commission:** Referral commission
+- **Note:** Tokenised real estate referral program — apply. Note past Detroit tenant-management issues.
+- **Reply with:** your RealT affiliate/tracking link
 
 ## Money status
 - Earnings logged: £0.00
