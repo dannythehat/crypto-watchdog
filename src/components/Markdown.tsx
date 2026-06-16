@@ -103,11 +103,46 @@ const Markdown = ({ content }: { content: string }) => {
   };
   const flushAll = () => { flushPara(); flushList(); flushQuote(); };
 
-  for (const raw of lines) {
+  const splitRow = (row: string) => row.replace(/^\s*\|/, "").replace(/\|\s*$/, "").split("|").map((c) => c.trim());
+
+  for (let li = 0; li < lines.length; li++) {
+    const raw = lines[li];
     const line = raw.trimEnd();
     const trimmed = line.trim();
 
     if (trimmed === "") { flushAll(); continue; }
+
+    // GFM table: header row followed by a |---|---| separator
+    if (trimmed.includes("|") && /^\|?\s*:?-{1,}:?\s*(\|\s*:?-{1,}:?\s*)+\|?$/.test((lines[li + 1] || "").trim())) {
+      flushAll();
+      const header = splitRow(trimmed);
+      li += 1; // skip separator
+      const rows: string[][] = [];
+      while (li + 1 < lines.length && lines[li + 1].includes("|") && lines[li + 1].trim() !== "") {
+        li += 1;
+        rows.push(splitRow(lines[li].trim()));
+      }
+      const key = `tbl${k++}`;
+      blocks.push(
+        <div key={key} className="my-6 overflow-x-auto">
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr className="border-b border-border">
+                {header.map((c, i) => <th key={i} className="px-3 py-2 text-left font-semibold text-foreground">{renderInline(c, `${key}-h${i}`)}</th>)}
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r, ri) => (
+                <tr key={ri} className="border-b border-border/60">
+                  {r.map((c, ci) => <td key={ci} className="px-3 py-2 align-top text-muted-foreground">{renderInline(c, `${key}-${ri}-${ci}`)}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>,
+      );
+      continue;
+    }
 
     if (/^(-{3,}|\*{3,})$/.test(trimmed)) { flushAll(); blocks.push(<hr key={`hr${k++}`} className="my-8 border-border" />); continue; }
 

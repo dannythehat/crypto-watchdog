@@ -4,7 +4,7 @@ title: "Ledger vs Trezor 2026: Which Hardware Wallet Is Safest?"
 slug: "best-hardware-wallet-2026-ledger-vs-trezor"
 summary: "A no-hype, evidence-led comparison of Ledger and Trezor in 2026 — security models, the controversies, coin support, price and which wallet is best for you."
 category: "Wallets"
-image_url: null
+image_url: "/blog-images/best-hardware-wallet-2026-ledger-vs-trezor.svg"
 published: true
 auto_generated: false
 published_at: "2026-06-16T06:00:00Z"
@@ -32,6 +32,8 @@ This guide compares them honestly: the security models, the controversies each c
 | A card-style, ultra-simple device | **Tangem** | Tap-to-sign card, no seed phrase to write down |
 
 [Check Trezor (official)](/go/trezor) · [Check Ledger (official)](/go/ledger) · [Check Tangem (official)](/go/tangem)
+
+![Ledger vs Trezor at a glance scorecard](/blog-images/ledger-vs-trezor-scorecard.svg)
 
 ## How they actually differ: the security models
 
