@@ -17,7 +17,7 @@ Make CryptoWatchdog money via evidence-led content, SEO, links, images, social a
 - **Affiliates live (10, ~19% coverage):** Kraken, Bitget, Binance, Cryptohopper, Kinesis, Ledger, Trezor, Tangem, MoneyFlare, Aurum. (Kraken link = verify it's the paying affiliate.)
 
 ## 🚧 Active blockers
-1. **GitHub account suspended / GitHub status RED (2026-06-16 eve).** Cannot push/merge. 3 commits queued locally (Kinesis, smart-contract pass, sitemap/robots). Resolve via support.github.com appeal OR wait for outage to clear, then push.
+1. **GitHub account suspended (2026-06-16 eve).** Cannot push/merge. **Support APPEAL TICKET FILED — awaiting reinstatement.** ~5 commits queued locally (Kinesis, smart-contract pass, sitemap/robots, CONTROL.md, AGENTS.md). FIRST ACTION tomorrow: test `git push`; if it works, push the queue, then resume rewrites.
 2. **Domain** `cryptowatchdog.net` not connected (Cloudflare → project → Custom domains). Independent of GitHub.
 3. **GA4 not collecting** — need a `G-XXXX` Measurement ID from Danny, set as `VITE_GA_MEASUREMENT_ID`.
 4. **Email automation** needs `MAIL_USERNAME/PASSWORD/TO` secrets (Gmail app password).
