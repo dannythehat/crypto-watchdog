@@ -1,12 +1,12 @@
 # Affiliate Status — live dashboard
-Updated 2026-06-16T13:55:08.879Z · run `node cw-content-brain/scripts/audit_affiliates.mjs`
+Updated 2026-06-16T17:21:31.433Z · run `node cw-content-brain/scripts/audit_affiliates.mjs`
 
 | Metric | Value |
 |---|---|
 | Monetisable platforms (non-red) | 51 |
-| **Active** (earning links live) | **7** |
-| Monetisation coverage | **14%** |
-| Known programs not yet signed up | 12 |
+| **Active** (earning links live) | **8** |
+| Monetisation coverage | **16%** |
+| Known programs not yet signed up | 11 |
 | Links overdue a check (>30d) | 0 |
 | Earnings logged | 0.00 |
 | Claimed | 0.00 |
@@ -15,7 +15,6 @@ Updated 2026-06-16T13:55:08.879Z · run `node cw-content-brain/scripts/audit_aff
 ## 🎯 Apply for these (known programs, ranked)
 | Brand | Category | Apply at | Status |
 |---|---|---|---|
-| Binance | centralized-exchanges | https://www.binance.com/en/activity/affiliate | needs_signup |
 | KuCoin | centralized-exchanges | https://www.kucoin.com/affiliate | needs_signup |
 | Coinbase | centralized-exchanges | https://www.coinbase.com/affiliates | needs_signup |
 | OKX | centralized-exchanges | https://www.okx.com/affiliate | needs_signup |
@@ -30,6 +29,7 @@ Updated 2026-06-16T13:55:08.879Z · run `node cw-content-brain/scripts/audit_aff
 
 ## ✅ Active programs
 - Aurum Foundation (Aurum (referral), existing link)
+- Binance (Binance (CPA referral), Up to 50% (CPA))
 - Ledger Nano X (Ledger affiliate, 10% per sale (CPS))
 - MoneyFlare (MoneyFlare (referral), existing link)
 - Kraken (Kraken (referral), referral (verify pays commission))
