@@ -5,7 +5,7 @@ slug: "ai-trading-bots-your-guide-to-separating-genuine-tools-from-get-rich-quic
 summary: "At Crypto Watchdog, we’ve seen countless investors burned by schemes dressed up in fancy \"AI\" clothing. This guide will help you distinguish a potentially useful tool from an outright scam designed to drain your accounts."
 category: "Scam Alert"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog/ai-trading-bots-your-guide-to-separating-genuine-tools-from-get-rich-quick-scams-1779688858210.png"
-published: true
+published: false
 auto_generated: true
 published_at: "2026-05-25T06:00:58.572+00:00"
 updated_at: "2026-05-25T06:00:58.863591+00:00"
