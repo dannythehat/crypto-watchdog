@@ -9,7 +9,7 @@ FAQ, schema) with affiliate CTAs via `/go/:id`.
 | Article | Affiliates it monetises | Status |
 |---|---|---|
 | Best Crypto Exchange UK 2026 (hub) | Kraken, Bitget, Binance, Coinbase, Bybit, KuCoin | ⬜ |
-| Best Hardware Wallet 2026: Ledger vs Trezor vs Tangem | Trezor✅, Tangem✅, Ledger | ⬜ |
+| Best Hardware Wallet 2026: Ledger vs Trezor vs Tangem | Trezor✅, Tangem✅, Ledger | 🔁 (Ledger vs Trezor shipped) |
 | Ledger vs Trezor — head to head | Trezor✅, Ledger | ⬜ |
 | Best Crypto Trading Bot 2026: 3Commas vs Cryptohopper vs Pionex | 3Commas, Cryptohopper, Pionex | ⬜ |
 | Binance vs Coinbase | Binance, Coinbase | ⬜ |
