@@ -1,8 +1,10 @@
+import { useEffect } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { trackEvent } from "@/lib/analytics";
 import Index from "./pages/Index";
 import Reviews from "./pages/Reviews";
 import ReviewDetail from "./pages/ReviewDetail";
@@ -12,9 +14,19 @@ import Warnings from "./pages/Warnings";
 import WarningDetail from "./pages/WarningDetail";
 import Submit from "./pages/Submit";
 import About from "./pages/About";
+import Go from "./pages/Go";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+
+// Sends a GA4 page_view on SPA route changes (initial load is handled by config).
+const RouteAnalytics = () => {
+  const location = useLocation();
+  useEffect(() => {
+    trackEvent("page_view", { page_path: location.pathname + location.search });
+  }, [location.pathname, location.search]);
+  return null;
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -22,6 +34,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <RouteAnalytics />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/reviews" element={<Reviews />} />
@@ -32,6 +45,7 @@ const App = () => (
           <Route path="/warnings/:slug" element={<WarningDetail />} />
           <Route path="/submit" element={<Submit />} />
           <Route path="/about" element={<About />} />
+          <Route path="/go/:id" element={<Go />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

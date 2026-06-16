@@ -8,6 +8,10 @@ This is a Lovable-generated Vite, React, and TypeScript app for CryptoWatchdog. 
 
 The `cw-content-brain/` directory contains standalone local scripts and planning assets for editorial research, review drafting, warning triage, site audits, and content governance. It is intentionally separate from the production app.
 
+## Marketing / SEO / Monetisation role
+
+If the task involves content, SEO, affiliates, offers, social, or making money, **read `cw-content-brain/MARKETING_OPERATING_MODEL.md` first** — it is the operating brain (mission, jobs, cadence, and workflows). Sessions are ephemeral, so that file is the persistent memory of how we operate.
+
 ## Operating Rules
 
 - Do not add secrets, API keys, tokens, private credentials, or live database URLs.

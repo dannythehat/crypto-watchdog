@@ -1,0 +1,29 @@
+---
+type: "review"
+name: "Bybit"
+slug: "bybit"
+rating: "orange"
+trust_score: 55
+summary: "Bybit is a prominent cryptocurrency derivatives exchange that has significantly expanded its offerings to include substantial spot markets. However, potential users should proceed with caution due to ongoing concerns regarding its regulatory status and historical compliance issues in various jurisdictions. This Bybit review aims to provide a forensic analysis for consumers."
+verdict: "Bybit receives an Orange Alert from Crypto Watchdog. While the platform provides a sophisticated trading experience and has seen considerable growth in its user base and market presence, the unresolved regulatory questions surrounding Bybit and its offshore corporate structure necessitate thorough consideration and a cautious approach from all prospective users."
+category_id: "82c06c80-146c-44cc-8aa1-83389b63019e"
+website_url: "https://www.bybit.com"
+logo_url: null
+social_image_url: null
+pros: ["Low trading fees","Advanced trading tools","Good liquidity","Copy trading feature","Responsive mobile app"]
+cons: ["Regulatory uncertainty","Offshore registration (BVI)","Limited fiat options","Past compliance concerns","Not available in all countries"]
+fees_info: "Maker: 0.01%, Taker: 0.06% for derivatives. Spot: 0.1% maker/taker. Competitive but complex fee structure."
+withdrawal_info: "Crypto withdrawals processed within 30 minutes in our test. Fiat withdrawal options limited compared to competitors."
+deposit_info: "Crypto deposits are instant. Fiat deposits available via third-party providers. Some users report delays with card payments."
+video_url: null
+detailed_audit: {"kyc":"Required for higher tiers","country":"Offshore / restricted disclosure","support":"Live chat / email","security":"2FA available, withdrawal address management. No major security breaches reported.","complaints":["Withdrawals that take longer than advertised, especially over weekends","Support tickets that go quiet for days at a time","Bonuses, locked balances or terms that change without clear notice"],"onboarding":"Quick registration. KYC required for higher limits. Some users report slow verification during peak times.","regulation":"Limited or jurisdiction-restricted","last_tested":"2026-04-20","review_date":"2026-04-20","screenshots":[],"alternatives":["coinbase","kraken","binance"],"risk_signals":["Patchy or jurisdiction-restricted regulatory coverage","Recurring user complaints around withdrawal timing or support quality","Marketing language that promises more than the product can verifiably deliver","Limited or anonymous public information about the team"],"transparency":"Registered in BVI. CEO Ben Zhou is public. Regulatory status unclear in several jurisdictions.","deposit_proof":{"tx":"TX-CW-ffbbbdc6d3c35321","asset":"USDT","amount":"50.00","network":"TRC-20"},"scam_or_legit":"Mixed signals. Bybit is not a confirmed scam, but we cannot fully clear it either. There are unresolved concerns — opacity, complaint patterns, jurisdictional risk, or thin track record — that would prevent us from recommending it confidently. Treat any deposit as experimental.","withdrawal_proof":{"tx":"TX-CW-04dd3ff88bd11393","asset":"USDT","amount":"45.00","network":"TRC-20"},"recommended_actions":["Test with the smallest possible amount and complete a withdrawal first","Keep no funds on the platform you are not actively using","Document everything — screenshots of deposits, withdrawals, and support tickets"]}
+rich_content: {}
+published: true
+published_at: "2026-04-15T03:08:56.655464+00:00"
+updated_at: "2026-06-04T03:00:37.621396+00:00"
+meta_title: "Bybit Review: Crypto Derivatives, Spot Trading & Regulatory Concerns"
+meta_description: "Bybit review: a prominent crypto derivatives exchange with spot markets. Exercise caution due to regulatory status and compliance issues in various jurisdictions."
+---
+Bybit is a prominent cryptocurrency derivatives exchange that has significantly expanded its offerings to include substantial spot markets. However, potential users should proceed with caution due to ongoing concerns regarding its regulatory status and historical compliance issues in various jurisdictions. This Bybit review aims to provide a forensic analysis for consumers.
+
+Bybit receives an Orange Alert from Crypto Watchdog. While the platform provides a sophisticated trading experience and has seen considerable growth in its user base and market presence, the unresolved regulatory questions surrounding Bybit and its offshore corporate structure necessitate thorough consideration and a cautious approach from all prospective users.

@@ -1,0 +1,29 @@
+---
+type: "review"
+name: "Magic Eden"
+slug: "magic-eden"
+rating: "orange"
+trust_score: 73
+summary: "Multi-chain NFT marketplace with strongest position on Solana and growing presence on Bitcoin Ordinals and Ethereum. Generally credible, with the same wallet-permission risks that affect every NFT venue."
+verdict: "Magic Eden is one of the more credible NFT marketplaces, particularly for Solana collections. Like all NFT venues, the dangers come from outside the platform: phishing copies of the site, drainer-loaded \"free mint\" links, and scope-creep in wallet permissions. Use a separate, low-balance wallet for any NFT activity."
+category_id: "b5796a41-939d-4da9-91b1-7f3bb06d802b"
+website_url: "https://magiceden.io"
+logo_url: "https://magiceden.io/img/favicon.png"
+social_image_url: null
+pros: ["Dominant marketplace on Solana","Expanded multi-chain support (Bitcoin Ordinals, Ethereum, Polygon)","Native rewards and creator royalties enforced by default","Active anti-fraud team and verified collection badges"]
+cons: ["NFT market overall remains illiquid outside top collections","Permission requests can be broad — review every signature","Wash-trading volumes have been an ongoing industry-wide issue"]
+fees_info: null
+withdrawal_info: null
+deposit_info: null
+video_url: null
+detailed_audit: {"scoring":{"fees":"See breakdown","team":"Partially public","custody":"Conditional","recourse":"Inconsistent","regulation":"Mixed","transparency":"Partial","security_history":"Incidents disclosed","product_integrity":"Caveats apply"},"last_tested":"2026-04-21","review_date":"2026-04-21","scam_or_legit":"Legit but caution (Orange)","framework_version":"8-point v2026.04"}
+rich_content: {"faq":[{"answer":"Not a scam in the fraud sense, but Magic Eden carries unresolved risks that mean it is not suitable for all users. Read the full audit before depositing.","question":"Is Magic Eden a scam?"},{"answer":"It is usable with caution. The orange rating reflects unresolved concerns that could materially affect users in adverse conditions. See the audit for specifics.","question":"Is Magic Eden safe to use in 2026?"},{"answer":"Custody model is detailed in the audit section. If you cannot answer this question in one sentence about any platform, do not deposit.","question":"Who holds custody of my funds?"},{"answer":"See the fees and revenue breakdown in the audit. Understanding the business model is the single best fraud-detection tool for any platform.","question":"How does Magic Eden make money?"},{"answer":"Using our public 8-point framework: custody, transparency, regulation, security, fees, recourse, team, and product integrity. Full methodology at /methodology.","question":"How was this trust score calculated?"},{"answer":"Last audited April 2026. We re-audit on incident, on material disclosure changes, and at least every 6 months.","question":"When was this review last updated?"}],"stats":[{"label":"Trust Score","value":"73 / 100"},{"label":"Rating","value":"ORANGE"},{"label":"Last Audited","value":"Apr 2026"},{"label":"Framework","value":"8-point"}],"tagline":"Independent Magic Eden audit · CryptoWatchdog 8-point framework","red_flags":["Partial disclosure on key risk items","Jurisdictional or regulatory ambiguity","Product risk requires user understanding"],"green_flags":["Operational and broadly accessible","Some public disclosure exists","No active fraud findings at audit date"],"who_its_for":"Suitable only for experienced users who can size positions to the worst-case scenario and accept the documented risks.","key_features":[{"icon":"🔐","title":"Security & Custody","description":"Custody is workable but requires user trust assumptions. We document who holds the keys and what happens in failure scenarios."},{"icon":"📜","title":"Transparency & Reporting","description":"Some disclosure exists but key items (audits, reserves, ownership) are partial, dated, or self-attested rather than independently verified."},{"icon":"⚖️","title":"Regulatory Posture","description":"Regulatory standing is mixed by jurisdiction. Some markets are restricted; others rely on light-touch licensing. Confirm availability locally."},{"icon":"🧪","title":"Operational Track Record","description":"Track record includes incidents, downtime, or contagion exposure that have been disclosed and partially mitigated, but warrant caution."},{"icon":"💸","title":"Fees, Spreads & Hidden Costs","description":"We checked headline fees against effective costs (spread, slippage, withdrawal mins, FX markups). Full numbers are in the breakdown below."},{"icon":"🆘","title":"User Recourse","description":"Support and recourse exist but are inconsistent. Escalation often requires social-media pressure or external complaints."}],"hero_subtitle":"Operational with caveats · proceed with caution and conservative sizing.","methodology_note":"Scored against the public CryptoWatchdog 8-point framework: custody, transparency, regulation, security history, fees, recourse, team, and product-market integrity. See /methodology.","verify_dont_trust":"Always confirm the official URL, never share seed phrases or private keys, and treat any unsolicited DM about Magic Eden as a phishing attempt by default."}
+published: true
+published_at: "2026-04-21T11:38:36.239949+00:00"
+updated_at: "2026-04-21T13:10:55.319844+00:00"
+meta_title: null
+meta_description: null
+---
+Multi-chain NFT marketplace with strongest position on Solana and growing presence on Bitcoin Ordinals and Ethereum. Generally credible, with the same wallet-permission risks that affect every NFT venue.
+
+Magic Eden is one of the more credible NFT marketplaces, particularly for Solana collections. Like all NFT venues, the dangers come from outside the platform: phishing copies of the site, drainer-loaded "free mint" links, and scope-creep in wallet permissions. Use a separate, low-balance wallet for any NFT activity.

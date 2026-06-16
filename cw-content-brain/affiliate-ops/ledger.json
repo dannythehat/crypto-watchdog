@@ -1,0 +1,17 @@
+{
+  "currency": "GBP",
+  "note": "Log affiliate earnings here as you see them in each network dashboard. 'claimed' = money actually received/paid out. The auditor sums earned vs claimed to show what we're owed.",
+  "entries": [
+    {
+      "_example": true,
+      "month": "2026-06",
+      "network": "Binance Affiliate",
+      "brand": "Binance",
+      "amount": 0,
+      "clicks": 0,
+      "signups": 0,
+      "claimed": false,
+      "notes": "Replace with real figures once a program is live."
+    }
+  ]
+}

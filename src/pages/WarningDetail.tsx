@@ -3,8 +3,11 @@ import { ArrowLeft, AlertTriangle } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionWrapper from "@/components/SectionWrapper";
+import Markdown from "@/components/Markdown";
+import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { useWarning } from "@/hooks/useWarnings";
+import { articleJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 const WarningDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -40,8 +43,31 @@ const WarningDetail = () => {
     );
   }
 
+  const path = `/warnings/${warning.slug}`;
+
   return (
     <>
+      <Seo
+        title={warning.title}
+        description={warning.summary ?? undefined}
+        path={path}
+        type="article"
+        jsonLd={[
+          articleJsonLd({
+            title: warning.title,
+            description: warning.summary ?? undefined,
+            path,
+            publishedAt: warning.published_at,
+            modifiedAt: warning.updated_at,
+            section: "Scam Warning",
+          }),
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Warnings", path: "/warnings" },
+            { name: warning.title, path },
+          ]),
+        ]}
+      />
       <Navbar />
       <main>
         <SectionWrapper className="pt-28 md:pt-36">
@@ -67,13 +93,8 @@ const WarningDetail = () => {
               </p>
             )}
 
-            <div className="prose prose-neutral dark:prose-invert mt-8 max-w-none">
-              {warning.content.split("\n").map((line: string, i: number) => {
-                if (line.startsWith("## ")) return <h2 key={i} className="mt-8 mb-3 font-heading text-xl font-semibold">{line.slice(3)}</h2>;
-                if (line.startsWith("- ")) return <li key={i} className="ml-4 text-muted-foreground">{line.slice(2)}</li>;
-                if (line.trim() === "") return <br key={i} />;
-                return <p key={i} className="mb-3 text-muted-foreground">{line}</p>;
-              })}
+            <div className="mt-8 max-w-none">
+              <Markdown content={warning.content} />
             </div>
 
             <div className="mt-10 rounded-lg border border-rating-red/20 bg-rating-red/5 p-5 text-sm text-muted-foreground">

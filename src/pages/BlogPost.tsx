@@ -3,8 +3,11 @@ import { ArrowLeft, CalendarDays } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionWrapper from "@/components/SectionWrapper";
+import Markdown from "@/components/Markdown";
+import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { useBlogPost } from "@/hooks/useBlogPosts";
+import { articleJsonLd, breadcrumbJsonLd, extractFaq, faqJsonLd } from "@/lib/seo";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -40,8 +43,35 @@ const BlogPost = () => {
     );
   }
 
+  const path = `/blog/${post.slug}`;
+  const faqs = extractFaq(post.content);
+
   return (
     <>
+      <Seo
+        title={post.title}
+        description={post.summary ?? undefined}
+        path={path}
+        image={post.image_url}
+        type="article"
+        jsonLd={[
+          articleJsonLd({
+            title: post.title,
+            description: post.summary ?? undefined,
+            path,
+            image: post.image_url,
+            publishedAt: post.published_at,
+            modifiedAt: post.updated_at,
+            section: post.category,
+          }),
+          faqJsonLd(faqs),
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Blog", path: "/blog" },
+            { name: post.title, path },
+          ]),
+        ]}
+      />
       <Navbar />
       <main>
         <SectionWrapper className="pt-28 md:pt-36">
@@ -69,18 +99,17 @@ const BlogPost = () => {
               </div>
             )}
 
-            {/* Render content - supports markdown-like line breaks and ## headers */}
-            <div className="prose prose-neutral dark:prose-invert mt-8 max-w-none">
-              {post.content.split("\n").map((line, i) => {
-                if (line.startsWith("## ")) {
-                  return <h2 key={i} className="mt-8 mb-3 font-heading text-xl font-semibold">{line.slice(3)}</h2>;
-                }
-                if (line.startsWith("- ")) {
-                  return <li key={i} className="ml-4 text-muted-foreground">{line.slice(2)}</li>;
-                }
-                if (line.trim() === "") return <br key={i} />;
-                return <p key={i} className="mb-3 text-muted-foreground">{line}</p>;
-              })}
+            {post.image_url && (
+              <img
+                src={post.image_url}
+                alt={post.title}
+                className="mt-6 w-full rounded-xl border border-border"
+                loading="eager"
+              />
+            )}
+
+            <div className="mt-8 max-w-none">
+              <Markdown content={post.content} />
             </div>
 
             <div className="mt-10 rounded-lg border border-border bg-muted/50 p-5 text-xs text-muted-foreground">

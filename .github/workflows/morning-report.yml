@@ -1,0 +1,48 @@
+name: Morning report
+
+# Emails Danny a daily roundup ~6am UK. Needs secrets MAIL_USERNAME,
+# MAIL_PASSWORD (Gmail app password), MAIL_TO.
+
+on:
+  schedule:
+    - cron: "0 5 * * *" # 05:00 UTC ≈ 06:00 UK (BST)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate today's social queue (for the report)
+        run: node cw-content-brain/scripts/build_social_posts.mjs
+
+      - name: Build morning report
+        run: node cw-content-brain/scripts/build_morning_report.mjs
+
+      - name: Load report into env
+        run: |
+          { echo "REPORT<<EOF"; cat "marketing-ops/reports/$(date -u +%F).md"; echo "EOF"; } >> "$GITHUB_ENV"
+
+      - name: Email report
+        if: ${{ secrets.MAIL_USERNAME != '' }}
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: CryptoWatchdog <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ secrets.MAIL_TO }}
+          subject: "☕ CryptoWatchdog morning report"
+          body: ${{ env.REPORT }}
+          convert_markdown: true
