@@ -4,7 +4,7 @@ Generated 2026-06-16
 Hi Danny — please sign up to the programs below (ranked by earning potential).
 For each one: open the link, apply, then send me your tracking link and I'll wire it into the site. The moment you do, that platform's CTAs start earning.
 
-## Sign up for these (12)
+## Sign up for these (11)
 
 ### 1. Binance
 - **Apply:** https://www.binance.com/en/activity/affiliate
@@ -48,31 +48,25 @@ For each one: open the link, apply, then send me your tracking link and I'll wir
 - **Note:** Known affiliate program — apply.
 - **Reply with:** your eToro affiliate/tracking link
 
-### 8. Ledger Nano X
-- **Apply:** https://affiliate.ledger.com/
-- **Commission:** 10% per sale (CPS), paid in BTC or fiat via Impact
-- **Note:** Known affiliate program — apply.
-- **Reply with:** your Ledger Nano X affiliate/tracking link
-
-### 9. 3Commas
+### 8. 3Commas
 - **Apply:** https://3commas.io/affiliate
 - **Commission:** Up to 40% recurring (not available in EEA)
 - **Note:** Known affiliate program — apply.
 - **Reply with:** your 3Commas affiliate/tracking link
 
-### 10. Cryptohopper
+### 9. Cryptohopper
 - **Apply:** https://www.cryptohopper.com/affiliate
 - **Commission:** Up to 15% recurring (+50% sub)
 - **Note:** Known affiliate program — apply.
 - **Reply with:** your Cryptohopper affiliate/tracking link
 
-### 11. Pionex
+### 10. Pionex
 - **Apply:** https://www.pionex.com/en/affiliate
 - **Commission:** ~20% trading-fee rebate
 - **Note:** Known affiliate program — apply.
 - **Reply with:** your Pionex affiliate/tracking link
 
-### 12. eToro CopyTrader
+### 11. eToro CopyTrader
 - **Apply:** https://www.etoro.com/partners/
 - **Commission:** ~25% revenue share (CPA available)
 - **Note:** Known affiliate program — apply.

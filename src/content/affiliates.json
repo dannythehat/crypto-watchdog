@@ -254,15 +254,15 @@
     "notes": "Check whether an affiliate/referral program exists."
   },
   {
-    "id": "ledger-nano-x",
+    "id": "ledger",
     "brand": "Ledger Nano X",
     "category": "hardware-wallets",
     "reviewSlug": "ledger-nano-x",
     "rating": "green",
-    "status": "needs_signup",
-    "network": "Ledger direct / Impact",
-    "commissionType": "10% per sale (CPS), paid in BTC or fiat via Impact",
-    "affiliateUrl": "",
+    "status": "active",
+    "network": "Ledger affiliate",
+    "commissionType": "10% per sale (CPS)",
+    "affiliateUrl": "https://shop.ledger.com/?r=c298a67c627f&tracker=MY_TRACKER",
     "homepage": "https://www.ledger.com",
     "displayUrl": "ledger.com",
     "signupUrl": "https://affiliate.ledger.com/",
@@ -276,8 +276,9 @@
     "blockedPageTypes": [
       "warnings"
     ],
-    "lastChecked": null,
-    "notes": "Known affiliate program — apply."
+    "lastChecked": "2026-06-16",
+    "notes": "Active. NOTE: tracker=MY_TRACKER is the default placeholder — rename in the Ledger dashboard for sub-tracking (the r= ref is what earns).",
+    "dashboard": "https://affiliate.ledger.com/profile#"
   },
   {
     "id": "bitconnect-2",

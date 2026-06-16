@@ -1,12 +1,12 @@
 # Affiliate Status — live dashboard
-Updated 2026-06-16T13:40:51.370Z · run `node cw-content-brain/scripts/audit_affiliates.mjs`
+Updated 2026-06-16T13:55:08.879Z · run `node cw-content-brain/scripts/audit_affiliates.mjs`
 
 | Metric | Value |
 |---|---|
 | Monetisable platforms (non-red) | 51 |
-| **Active** (earning links live) | **6** |
-| Monetisation coverage | **12%** |
-| Known programs not yet signed up | 13 |
+| **Active** (earning links live) | **7** |
+| Monetisation coverage | **14%** |
+| Known programs not yet signed up | 12 |
 | Links overdue a check (>30d) | 0 |
 | Earnings logged | 0.00 |
 | Claimed | 0.00 |
@@ -22,7 +22,6 @@ Updated 2026-06-16T13:40:51.370Z · run `node cw-content-brain/scripts/audit_aff
 | Bybit | centralized-exchanges | https://affiliates.bybit.com/ | needs_signup |
 | BingX | centralized-exchanges | https://bingx.com/en/partner/ | needs_signup |
 | eToro | crypto-brokers | https://www.etoro.com/partners/ | needs_signup |
-| Ledger Nano X | hardware-wallets | https://affiliate.ledger.com/ | needs_signup |
 | Pionex | grid-dca-bots | https://www.pionex.com/en/affiliate | needs_signup |
 | Cryptohopper | grid-dca-bots | https://www.cryptohopper.com/affiliate | needs_signup |
 | 3Commas | grid-dca-bots | https://3commas.io/affiliate | needs_signup |
@@ -31,8 +30,9 @@ Updated 2026-06-16T13:40:51.370Z · run `node cw-content-brain/scripts/audit_aff
 
 ## ✅ Active programs
 - Aurum Foundation (Aurum (referral), existing link)
+- Ledger Nano X (Ledger affiliate, 10% per sale (CPS))
 - MoneyFlare (MoneyFlare (referral), existing link)
-- Kraken (Kraken (referral), 20% lifetime fees (up to 40% Pro))
+- Kraken (Kraken (referral), referral (verify pays commission))
 - Trezor (Trezor affiliate, 12–15% per sale (EUR or BTC))
 - Bitget (Bitget (referral), 40–50% trading-fee rebate)
 - Tangem (Tangem (referral), existing link)
