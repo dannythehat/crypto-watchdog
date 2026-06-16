@@ -3,6 +3,7 @@
 // Supabase / Lovable dependency for content.
 
 import categoriesJson from "./categories.json";
+import affiliatesJson from "./affiliates.json";
 
 export interface Category {
   id: string; name: string; slug: string; description: string | null;
@@ -88,6 +89,28 @@ export const reviews: Review[] = load<Review>(reviewRaw)
 export const warnings: Warning[] = load<Warning>(warningRaw)
   .filter((w) => w.published)
   .sort((a, b) => byDateDesc(a.published_at, b.published_at));
+
+export interface Affiliate {
+  id: string; brand: string; category: string | null; reviewSlug: string;
+  rating: string | null;
+  status: "active" | "needs_signup" | "pending" | "paused" | "blocked";
+  network: string; commissionType: string;
+  affiliateUrl: string; homepage: string | null; displayUrl: string | null;
+  signupUrl: string; hasKnownProgram: boolean;
+  offerText: string; disclosure: string;
+  allowedRatings: string[]; blockedPageTypes: string[];
+  lastChecked: string | null; notes: string;
+}
+
+export const affiliates: Affiliate[] = affiliatesJson as Affiliate[];
+const affiliateById = new Map(affiliates.map((a) => [a.id, a]));
+const affiliateByReview = new Map(affiliates.map((a) => [a.reviewSlug, a]));
+
+export const getAffiliate = (id: string) => affiliateById.get(id) ?? null;
+export const getAffiliateByReviewSlug = (slug: string) => affiliateByReview.get(slug) ?? null;
+// True only when there's a usable, non-blocked affiliate link to send traffic through.
+export const isMonetisable = (a?: Affiliate | null): a is Affiliate =>
+  !!a && a.status !== "blocked";
 
 export const getBlogPost = (slug: string) => blogPosts.find((p) => p.slug === slug) ?? null;
 export const getReview = (slug: string) => reviews.find((r) => r.slug === slug) ?? null;

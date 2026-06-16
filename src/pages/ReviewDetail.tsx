@@ -6,8 +6,10 @@ import SectionWrapper from "@/components/SectionWrapper";
 import RatingBadge from "@/components/RatingBadge";
 import TrustScore from "@/components/TrustScore";
 import Seo from "@/components/Seo";
+import AffiliateCTA from "@/components/AffiliateCTA";
 import { Button } from "@/components/ui/button";
 import { useReview } from "@/hooks/useReviews";
+import { getAffiliateByReviewSlug, isMonetisable } from "@/content";
 import { breadcrumbJsonLd, reviewJsonLd } from "@/lib/seo";
 
 const ReviewDetail = () => {
@@ -101,15 +103,19 @@ const ReviewDetail = () => {
 
             <p className="mt-6 text-lg text-muted-foreground">{review.summary}</p>
 
-            {review.website_url && (
-              <a
-                href={review.website_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-1.5 text-sm text-primary hover:underline"
-              >
-                Visit website <ExternalLink className="h-3.5 w-3.5" />
-              </a>
+            {isMonetisable(getAffiliateByReviewSlug(review.slug)) ? (
+              <AffiliateCTA reviewSlug={review.slug} label={`Visit ${review.name}`} />
+            ) : (
+              review.website_url && (
+                <a
+                  href={review.website_url}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="mt-4 inline-flex items-center gap-1.5 text-sm text-primary hover:underline"
+                >
+                  Visit website <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              )
             )}
 
             {/* Verdict */}

@@ -1,0 +1,1532 @@
+[
+  {
+    "id": "aurum-foundation",
+    "brand": "Aurum Foundation",
+    "category": "ai-yield-wealth",
+    "reviewSlug": "aurum-foundation",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://backoffice.aurum.foundation/u/PKK5U0",
+    "displayUrl": "backoffice.aurum.foundation",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "thomas-crypto-signals",
+    "brand": "Thomas Crypto Signals",
+    "category": "signal-services",
+    "reviewSlug": "thomas-crypto-signals",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://t.me/futuresxsignals",
+    "displayUrl": "t.me",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "blockfi",
+    "brand": "BlockFi (Defunct)",
+    "category": "lending-protocols",
+    "reviewSlug": "blockfi",
+    "rating": "red",
+    "status": "blocked",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": null,
+    "displayUrl": null,
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Red-rated platform — never monetise."
+  },
+  {
+    "id": "binance",
+    "brand": "Binance",
+    "category": "centralized-exchanges",
+    "reviewSlug": "binance",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "Binance (direct)",
+    "commissionType": "Up to 50% lifetime (spot + futures)",
+    "affiliateUrl": "",
+    "homepage": "https://www.binance.com",
+    "displayUrl": "binance.com",
+    "signupUrl": "https://www.binance.com/en/activity/affiliate",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Apply: needs ~5,000+ social followers or 5,000 daily visits. Approval in a few days."
+  },
+  {
+    "id": "kucoin",
+    "brand": "KuCoin",
+    "category": "centralized-exchanges",
+    "reviewSlug": "kucoin",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.kucoin.com",
+    "displayUrl": "kucoin.com",
+    "signupUrl": "",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "crypto-recovery-pro",
+    "brand": "CryptoRecoveryPro",
+    "category": "recovery-services",
+    "reviewSlug": "crypto-recovery-pro",
+    "rating": "red",
+    "status": "blocked",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": null,
+    "displayUrl": null,
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Red-rated platform — never monetise."
+  },
+  {
+    "id": "lido-finance",
+    "brand": "Lido Finance",
+    "category": "validators",
+    "reviewSlug": "lido-finance",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://lido.fi",
+    "displayUrl": "lido.fi",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "arbitrum",
+    "brand": "Arbitrum",
+    "category": "layer-2-scaling",
+    "reviewSlug": "arbitrum",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://arbitrum.io",
+    "displayUrl": "arbitrum.io",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "rocket-pool",
+    "brand": "Rocket Pool",
+    "category": "staking",
+    "reviewSlug": "rocket-pool",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://rocketpool.net",
+    "displayUrl": "rocketpool.net",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "optimism",
+    "brand": "Optimism (OP Mainnet)",
+    "category": "layer-2-scaling",
+    "reviewSlug": "optimism",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.optimism.io",
+    "displayUrl": "optimism.io",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "ledger-nano-x",
+    "brand": "Ledger Nano X",
+    "category": "hardware-wallets",
+    "reviewSlug": "ledger-nano-x",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "Ledger direct / Impact",
+    "commissionType": "10% per sale (CPS), paid in BTC or fiat via Impact",
+    "affiliateUrl": "",
+    "homepage": "https://www.ledger.com",
+    "displayUrl": "ledger.com",
+    "signupUrl": "https://affiliate.ledger.com/",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "bitconnect-2",
+    "brand": "BitConnect 2.0",
+    "category": "lending-protocols",
+    "reviewSlug": "bitconnect-2",
+    "rating": "red",
+    "status": "blocked",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": null,
+    "displayUrl": null,
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Red-rated platform — never monetise."
+  },
+  {
+    "id": "uniswap",
+    "brand": "Uniswap",
+    "category": "decentralized-exchanges",
+    "reviewSlug": "uniswap",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://app.uniswap.org",
+    "displayUrl": "app.uniswap.org",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "aave",
+    "brand": "Aave",
+    "category": "yield-farming",
+    "reviewSlug": "aave",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://aave.com",
+    "displayUrl": "aave.com",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "zapper",
+    "brand": "Zapper",
+    "category": "portfolio-trackers",
+    "reviewSlug": "zapper",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://zapper.xyz",
+    "displayUrl": "zapper.xyz",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "yieldmax-ai",
+    "brand": "YieldMax AI",
+    "category": "ai-trading-agents",
+    "reviewSlug": "yieldmax-ai",
+    "rating": "red",
+    "status": "blocked",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": null,
+    "displayUrl": null,
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Red-rated platform — never monetise."
+  },
+  {
+    "id": "xt-com",
+    "brand": "XT.com",
+    "category": "centralized-exchanges",
+    "reviewSlug": "xt-com",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.xt.com/ref/6ZHLI9",
+    "displayUrl": "xt.com",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "kinesis-money",
+    "brand": "Kinesis Money",
+    "category": "exchanges",
+    "reviewSlug": "kinesis-money",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://kinesis.money",
+    "displayUrl": "kinesis.money",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "etoro-copytrader",
+    "brand": "eToro CopyTrader",
+    "category": "copy-trading",
+    "reviewSlug": "etoro-copytrader",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.etoro.com",
+    "displayUrl": "etoro.com",
+    "signupUrl": "",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "zulutrade",
+    "brand": "ZuluTrade",
+    "category": "copy-trading",
+    "reviewSlug": "zulutrade",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.zulutrade.com",
+    "displayUrl": "zulutrade.com",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "moneyflare",
+    "brand": "MoneyFlare",
+    "category": "ai-finance",
+    "reviewSlug": "moneyflare",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.moneyflare.com/signup?inviter_code=R4U5SD",
+    "displayUrl": "moneyflare.com",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "kraken",
+    "brand": "Kraken",
+    "category": "centralized-exchanges",
+    "reviewSlug": "kraken",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://invite.kraken.com/JDNW/sr4l7hjh",
+    "displayUrl": "invite.kraken.com",
+    "signupUrl": "",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "topone-futures",
+    "brand": "TopOneFutures",
+    "category": "crypto-brokers",
+    "reviewSlug": "topone-futures",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://toponefutures.com/?linkId=lp_707970&sourceId=dannythehat&tenantId=toponefutures",
+    "displayUrl": "toponefutures.com",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "trezor",
+    "brand": "Trezor",
+    "category": "hardware-wallets",
+    "reviewSlug": "trezor",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://affil.trezor.io/aff_c?offer_id=133&aff_id=141550",
+    "displayUrl": "affil.trezor.io",
+    "signupUrl": "",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "bitconnect",
+    "brand": "BitConnect",
+    "category": "lending-protocols",
+    "reviewSlug": "bitconnect",
+    "rating": "red",
+    "status": "blocked",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": null,
+    "displayUrl": null,
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Red-rated platform — never monetise."
+  },
+  {
+    "id": "bitcoin",
+    "brand": "Bitcoin",
+    "category": "layer-1-blockchains",
+    "reviewSlug": "bitcoin",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://bitcoin.org",
+    "displayUrl": "bitcoin.org",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "coinbase",
+    "brand": "Coinbase",
+    "category": "centralized-exchanges",
+    "reviewSlug": "coinbase",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.coinbase.com",
+    "displayUrl": "coinbase.com",
+    "signupUrl": "",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "okx",
+    "brand": "OKX",
+    "category": "centralized-exchanges",
+    "reviewSlug": "okx",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "OKX (direct)",
+    "commissionType": "Referral commission (mystery box / rev share)",
+    "affiliateUrl": "",
+    "homepage": "https://www.okx.com",
+    "displayUrl": "okx.com",
+    "signupUrl": "https://www.okx.com/affiliate",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "bybit",
+    "brand": "Bybit",
+    "category": "centralized-exchanges",
+    "reviewSlug": "bybit",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "Bybit (direct)",
+    "commissionType": "Up to 50% of referral trading fees",
+    "affiliateUrl": "",
+    "homepage": "https://www.bybit.com",
+    "displayUrl": "bybit.com",
+    "signupUrl": "https://affiliates.bybit.com/",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "metamask",
+    "brand": "MetaMask",
+    "category": "hot-wallets",
+    "reviewSlug": "metamask",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://metamask.io",
+    "displayUrl": "metamask.io",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "phantom",
+    "brand": "Phantom Wallet",
+    "category": "hot-wallets",
+    "reviewSlug": "phantom",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://phantom.app",
+    "displayUrl": "phantom.app",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "trust-wallet",
+    "brand": "Trust Wallet",
+    "category": "hot-wallets",
+    "reviewSlug": "trust-wallet",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://trustwallet.com",
+    "displayUrl": "trustwallet.com",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "pancakeswap",
+    "brand": "PancakeSwap",
+    "category": "decentralized-exchanges",
+    "reviewSlug": "pancakeswap",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://pancakeswap.finance",
+    "displayUrl": "pancakeswap.finance",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "anchor-protocol",
+    "brand": "Anchor Protocol (Defunct)",
+    "category": "lending-protocols",
+    "reviewSlug": "anchor-protocol",
+    "rating": "red",
+    "status": "blocked",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": null,
+    "displayUrl": null,
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Red-rated platform — never monetise."
+  },
+  {
+    "id": "pionex",
+    "brand": "Pionex",
+    "category": "grid-dca-bots",
+    "reviewSlug": "pionex",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.pionex.com",
+    "displayUrl": "pionex.com",
+    "signupUrl": "",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "cryptohopper",
+    "brand": "Cryptohopper",
+    "category": "grid-dca-bots",
+    "reviewSlug": "cryptohopper",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.cryptohopper.com",
+    "displayUrl": "cryptohopper.com",
+    "signupUrl": "",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "3commas",
+    "brand": "3Commas",
+    "category": "grid-dca-bots",
+    "reviewSlug": "3commas",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://3commas.io",
+    "displayUrl": "3commas.io",
+    "signupUrl": "",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "shadowtradebot",
+    "brand": "ShadowTradeBot",
+    "category": "ai-trading-agents",
+    "reviewSlug": "shadowtradebot",
+    "rating": "red",
+    "status": "blocked",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": null,
+    "displayUrl": null,
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Red-rated platform — never monetise."
+  },
+  {
+    "id": "bitget",
+    "brand": "Bitget",
+    "category": "centralized-exchanges",
+    "reviewSlug": "bitget",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "Bitget (direct)",
+    "commissionType": "40–50% trading-fee rebate",
+    "affiliateUrl": "",
+    "homepage": "https://bitget.com",
+    "displayUrl": "bitget.com",
+    "signupUrl": "https://www.bitget.com/affiliate",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Apply with 100+ social followers; reviewed within 24h."
+  },
+  {
+    "id": "defillama",
+    "brand": "DeFiLlama",
+    "category": "analytics-tools",
+    "reviewSlug": "defillama",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://defillama.com",
+    "displayUrl": "defillama.com",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "bingx",
+    "brand": "BingX",
+    "category": "centralized-exchanges",
+    "reviewSlug": "bingx",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://bingx.com",
+    "displayUrl": "bingx.com",
+    "signupUrl": "",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "safe-gnosis",
+    "brand": "Safe (formerly Gnosis Safe)",
+    "category": "smart-contract-wallets",
+    "reviewSlug": "safe-gnosis",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://safe.global",
+    "displayUrl": "safe.global",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "argent-wallet",
+    "brand": "Argent",
+    "category": "smart-contract-wallets",
+    "reviewSlug": "argent-wallet",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.argent.xyz",
+    "displayUrl": "argent.xyz",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "coinbase-wallet-custodial",
+    "brand": "Coinbase (Custodial Account)",
+    "category": "custodial-wallets",
+    "reviewSlug": "coinbase-wallet-custodial",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.coinbase.com",
+    "displayUrl": "coinbase.com",
+    "signupUrl": "",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "across-protocol",
+    "brand": "Across Protocol",
+    "category": "crypto-bridges",
+    "reviewSlug": "across-protocol",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://across.to",
+    "displayUrl": "across.to",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "gmx",
+    "brand": "GMX",
+    "category": "defi-derivatives",
+    "reviewSlug": "gmx",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://gmx.io",
+    "displayUrl": "gmx.io",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "axie-infinity",
+    "brand": "Axie Infinity",
+    "category": "gamefi",
+    "reviewSlug": "axie-infinity",
+    "rating": "red",
+    "status": "blocked",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://axieinfinity.com",
+    "displayUrl": "axieinfinity.com",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Red-rated platform — never monetise."
+  },
+  {
+    "id": "rarible",
+    "brand": "Rarible",
+    "category": "digital-collectibles",
+    "reviewSlug": "rarible",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://rarible.com",
+    "displayUrl": "rarible.com",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "bisq",
+    "brand": "Bisq",
+    "category": "p2p-exchanges",
+    "reviewSlug": "bisq",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://bisq.network",
+    "displayUrl": "bisq.network",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "etoro",
+    "brand": "eToro",
+    "category": "crypto-brokers",
+    "reviewSlug": "etoro",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.etoro.com",
+    "displayUrl": "etoro.com",
+    "signupUrl": "",
+    "hasKnownProgram": true,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Known affiliate program — apply."
+  },
+  {
+    "id": "crypto-signal-services-general",
+    "brand": "Paid Crypto Signal Groups (Category Warning)",
+    "category": "signal-services",
+    "reviewSlug": "crypto-signal-services-general",
+    "rating": "red",
+    "status": "blocked",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": null,
+    "displayUrl": null,
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Red-rated platform — never monetise."
+  },
+  {
+    "id": "nicehash",
+    "brand": "NiceHash",
+    "category": "pow-mining",
+    "reviewSlug": "nicehash",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.nicehash.com",
+    "displayUrl": "nicehash.com",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "alchemy",
+    "brand": "Alchemy",
+    "category": "node-providers",
+    "reviewSlug": "alchemy",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://www.alchemy.com",
+    "displayUrl": "alchemy.com",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "ethereum",
+    "brand": "Ethereum",
+    "category": "layer-1-blockchains",
+    "reviewSlug": "ethereum",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://ethereum.org",
+    "displayUrl": "ethereum.org",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "solana",
+    "brand": "Solana",
+    "category": "layer-1-blockchains",
+    "reviewSlug": "solana",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://solana.com",
+    "displayUrl": "solana.com",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "curve-finance",
+    "brand": "Curve Finance",
+    "category": "decentralized-exchanges",
+    "reviewSlug": "curve-finance",
+    "rating": "green",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://curve.fi",
+    "displayUrl": "curve.fi",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "magic-eden",
+    "brand": "Magic Eden",
+    "category": "nft-marketplaces",
+    "reviewSlug": "magic-eden",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://magiceden.io",
+    "displayUrl": "magiceden.io",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "blur",
+    "brand": "Blur",
+    "category": "nft-marketplaces",
+    "reviewSlug": "blur",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://blur.io",
+    "displayUrl": "blur.io",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "opensea",
+    "brand": "OpenSea",
+    "category": "nft-marketplaces",
+    "reviewSlug": "opensea",
+    "rating": "orange",
+    "status": "needs_signup",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": "https://opensea.io",
+    "displayUrl": "opensea.io",
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [
+      "green",
+      "orange"
+    ],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Check whether an affiliate/referral program exists."
+  },
+  {
+    "id": "cryptomine-pro",
+    "brand": "CryptoMine Pro",
+    "category": "cloud-mining",
+    "reviewSlug": "cryptomine-pro",
+    "rating": "red",
+    "status": "blocked",
+    "network": "",
+    "commissionType": "",
+    "affiliateUrl": "",
+    "homepage": null,
+    "displayUrl": null,
+    "signupUrl": "",
+    "hasKnownProgram": false,
+    "offerText": "",
+    "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
+    "allowedRatings": [],
+    "blockedPageTypes": [
+      "warnings"
+    ],
+    "lastChecked": null,
+    "notes": "Red-rated platform — never monetise."
+  }
+]
