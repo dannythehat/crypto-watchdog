@@ -111,15 +111,15 @@ Already been targeted? Our guide on [vetting smart-contract approvals](/blog/bef
 
 ## So, which should you buy?
 
-- **Choose Trezor** if open-source transparency and verifiable security are what let you sleep, or you want the best-value secure-element device going (the Safe 3). [See current Trezor models](/go/trezor).
-- **Choose Ledger** if you hold a wide spread of coins or want the most polished, hand-holding beginner experience with mobile support. [See current Ledger models](/go/ledger).
-- **Choose Tangem** if you want the simplest self-custody on the planet with nothing to write down. [See Tangem](/go/tangem).
+- **Choose Trezor** if open-source transparency and verifiable security matter most to you, or you want the best-value secure-element device available (the Safe 3). [See current Trezor models](/go/trezor).
+- **Choose Ledger** if you hold a wide spread of coins or want the most polished beginner experience with mobile support. [See current Ledger models](/go/ledger).
+- **Choose Tangem** if you want the simplest self-custody with nothing to write down. [See Tangem](/go/tangem).
 
-Whatever you land on: **buy direct from the manufacturer**, set it up yourself, write your recovery phrase on paper (never a photo, never the cloud), and never, ever share it with anyone — and yes, that includes whoever's emailing you calling themselves "support."
+Whatever you choose: **buy direct from the manufacturer**, set it up yourself, write your recovery phrase on paper (never a photo, never the cloud), and never share it with anyone — including whoever's emailing you calling themselves "support."
 
 ## Looking ahead: quantum readiness
 
-One emerging difference worth a glance if you're in this for the long haul. Trezor has started talking publicly about a route toward **post-quantum cryptography** and independently verifiable components, chip to firmware, pitching its newer hardware as built with the next decade in mind. Ledger, for now, hasn't announced a comparable quantum-ready roadmap — though its secure elements carry that high-grade CC EAL5+/EAL6+ certification today. In practical terms, a quantum attack on Bitcoin or Ethereum isn't knocking on the door in 2026, so don't lose sleep. But if you plan to hold for ten years or more, a company being upfront about the long-term plan is a fair thing to factor in. And if any product slaps "quantum-proof" on the box right now? Raise an eyebrow and check the specifics. That's marketing, not a guarantee.
+One emerging difference worth a look if you're in this for the long term. Trezor has started talking publicly about a route toward **post-quantum cryptography** and independently verifiable components, chip to firmware, positioning its newer hardware as built with the next decade in mind. Ledger, for now, hasn't announced a comparable quantum-ready roadmap — though its secure elements carry that high-grade CC EAL5+/EAL6+ certification today. In practical terms, a quantum attack on Bitcoin or Ethereum isn't a 2026 concern. But if you plan to hold for ten years or more, a company being upfront about the long-term plan is worth factoring in. And if any product claims to be "quantum-proof" right now, be sceptical and check the specifics. That's marketing, not a guarantee.
 
 ## How we assessed this
 

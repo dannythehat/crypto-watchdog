@@ -82,17 +82,17 @@ This is your long-term money, the stuff you're not touching for years. It lives 
 
 ### 2. The Hot Wallet (10 to 20 percent)
 
-This is your everyday spending money: a mobile or browser wallet for DeFi, staking, the odd NFT. The word "hot" means it's connected to the internet, which means it's exposed. So keep only what you'd shrug off losing in here. Before you connect to a shiny new marketplace, run through our [NFT safety guide](/blog/nft-safety-guide-2026), because "new marketplace" and "drained wallet" go together far too often.
+This is your everyday spending money: a mobile or browser wallet for DeFi, staking, the odd NFT. The word "hot" means it's connected to the internet, which means it's exposed. So keep only what you could afford to lose in here. Before you connect to a new marketplace, run through our [NFT safety guide](/blog/nft-safety-guide-2026), because new marketplaces and drained wallets go together far too often.
 
 ### 3. The Exchange Account (5 to 10 percent)
 
-A modest float on a reputable exchange, parked there for fast trades and easy cash-outs. Bonus: it keeps your tax paperwork from turning into a December nightmare. We walk through how that side of things works in our [CoinLedger crypto tax software review](/blog/coinledger-review-2026-best-crypto-tax-software). The taxman doesn't accept "the blockchain ate my records" as an excuse.
+A modest float on a reputable exchange, parked there for fast trades and easy cash-outs. It also keeps your tax paperwork manageable, since the exchange tracks most of it for you. We walk through how that side of things works in our [CoinLedger crypto tax software review](/blog/coinledger-review-2026-best-crypto-tax-software). Good records now save you a real headache at filing time.
 
 ## Smart contract wallets: The middle ground
 
-By 2026, there's a genuine third door. Smart contract wallets run on code instead of leaning on one fragile private key. The headline feature is social recovery: lose access, and a handful of trusted friends or backup devices can vouch you back in. No single point of failure dangling your savings over a cliff.
+By 2026, there's a genuine third option. Smart contract wallets run on code instead of relying on one fragile private key. The headline feature is social recovery: lose access, and a handful of trusted friends or backup devices can vouch you back in. There's no single point of failure holding your savings hostage.
 
-They can also enforce spending limits and bake two-factor authentication right into the blockchain itself. In effect, they borrow the safety rails of an exchange while keeping the control of self custody. They're not magic. The code can have bugs, and bugs in money software are no joke. But for the average user, that trade is often the safer bet.
+They can also enforce spending limits and build two-factor authentication right into the blockchain itself. In effect, they borrow the safety rails of an exchange while keeping the control of self custody. They're not perfect: the code can have bugs, and a bug in money software can be expensive. But for the average user, that trade is often the safer bet.
 
 ## Essential rules for self custody
 
