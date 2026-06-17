@@ -4,7 +4,7 @@ Single source of truth for the CryptoWatchdog marketing/SEO/money mission.
 Sessions are ephemeral; this file is the memory. **Read this, act, then UPDATE it.**
 Deep context: `cw-content-brain/MARKETING_OPERATING_MODEL.md`.
 
-_Last updated: 2026-06-16 (overnight content sprint)_
+_Last updated: 2026-06-17 (repo reconnected to Cloudflare; triggering deploy)_
 
 ## Mission (one line)
 Make CryptoWatchdog money via evidence-led content, SEO, links, images, social and affiliates. Not a charity. Never monetise scams. Quality bar: 2,000+ words, images, internal + external/citation links, FAQ, schema. Rank by evidence, never commission.
