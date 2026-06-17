@@ -50,62 +50,62 @@ Neither philosophy is the "correct" one. Open-source gives you trust you can *ve
 
 ## The controversies — because you should know them
 
-A scam-watchdog comparison that pretends both companies have spotless records isn't a comparison, it's a brochure. So here's the dirt. Both have been put through the wringer.
+A comparison that pretends both companies have spotless records isn't a comparison. So here's the full picture. Both have been through it.
 
-**Ledger Recover (2023).** Ledger launched a paid service that backs up your seed phrase by encrypting it, slicing it up, and parking the pieces with third-party custodians. The community went up like a bonfire — and you can see why. The entire promise of a hardware wallet is that your seed *never leaves the device*, and here was a feature whose whole job was making it leave. Ledger paused the rollout and open-sourced the code so people could vet it, as [CoinDesk reported](https://www.coindesk.com/tech/2023/05/16/ledger-bats-back-criticism-of-new-wallet-recovery-service). The fallout? Per [CryptoSlate](https://cryptoslate.com/trezor-sales-soar-900-amid-ledgers-seed-recovery-controversy/), **Trezor's sales rocketed around 900%** that week. Recover is opt-in and entirely optional. But for a lot of users, it quietly chipped a crack in Ledger's "your keys never leave the device" line, and that crack hasn't fully sealed.
+**Ledger Recover (2023).** Ledger launched a paid service that backs up your seed phrase by encrypting it, splitting it up, and parking the pieces with third-party custodians. The community reaction was furious — and you can see why. The entire promise of a hardware wallet is that your seed *never leaves the device*, and here was a feature whose whole job was making it leave. Ledger paused the rollout and open-sourced the code so people could vet it, as [CoinDesk reported](https://www.coindesk.com/tech/2023/05/16/ledger-bats-back-criticism-of-new-wallet-recovery-service). The fallout was real: per [CryptoSlate](https://cryptoslate.com/trezor-sales-soar-900-amid-ledgers-seed-recovery-controversy/), **Trezor's sales rose around 900%** that week. Recover is opt-in and entirely optional. But for a lot of users it dented Ledger's "your keys never leave the device" line, and that hasn't fully recovered.
 
-**Trezor's 2024 data breach.** In January 2024 Trezor owned up to a third-party support breach that exposed the contact details of roughly **66,000 users**. The good news, and it's genuinely important: **no funds were touched.** No seed phrases, no crypto, no drained wallets. The bad news is that even the careful companies spring leaks, and once your email is out, it lands on a phishing list with your name on it. Which brings us to the scammers — keep reading, because that 66,000 figure becomes their starter pistol.
+**Trezor's 2024 data breach.** In January 2024 Trezor disclosed a third-party support breach that exposed the contact details of roughly **66,000 users**. The important part: **no funds were touched.** No seed phrases, no crypto, no drained wallets. The downside is that even careful companies spring leaks, and once your email is out, it lands on a phishing list with your name on it. That 66,000 figure matters for the scam tactics later in this guide.
 
-**Trezor Safe 3 supply-chain finding.** Here's an odd one. Ledger's own security crew (Donjon) went public to flag that the **Trezor Safe 3** could still be exposed to a known physical supply-chain attack, which [The Block covered](https://www.theblock.co/post/346018/trezor-discloses-vulnerability-safe-3-crypto-wallet-rival-ledger). Rivals knifing each other? Not quite — Trezor acknowledged it, and the two firms actually worked together on the disclosure. Civilised, for once. The takeaway for you is blunt: **only ever buy a hardware wallet straight from the manufacturer.** Never a random marketplace seller. A "great deal" on a tampered device is the most expensive bargain you'll ever find.
+**Trezor Safe 3 supply-chain finding.** Ledger's own security team (Donjon) went public to flag that the **Trezor Safe 3** could still be exposed to a known physical supply-chain attack, which [The Block covered](https://www.theblock.co/post/346018/trezor-discloses-vulnerability-safe-3-crypto-wallet-rival-ledger). This wasn't just rivals scoring points — Trezor acknowledged it, and the two firms worked together on the disclosure. The takeaway for you is blunt: **only ever buy a hardware wallet straight from the manufacturer.** Never a random marketplace seller. A "great deal" on a tampered device is the most expensive bargain you'll ever find.
 
 ## Coin support
 
-Hold a sprawling bag of altcoins? This one's for you. **Ledger supports 5,500+ assets**; **Trezor supports ~1,400**. For Bitcoin, Ethereum and the big-name tokens, both have you covered and you can stop worrying. It's the obscure chains where the gap shows — so if your portfolio includes something niche, check Ledger first. (Figures come from the comparisons above; always confirm your specific coin on the official site before you part with any cash.)
+If you hold a lot of altcoins, this matters. **Ledger supports 5,500+ assets**; **Trezor supports ~1,400**. For Bitcoin, Ethereum and the big-name tokens, both have you covered. It's the obscure chains where the gap shows — so if your portfolio includes something niche, check Ledger first. (Figures come from the comparisons above; always confirm your specific coin on the official site before you buy.)
 
 ## The current models
 
-- **Ledger:** Nano S Plus (budget), Nano X (Bluetooth/mobile), and the touchscreen **Flex** and **Stax** (the Stax sports a 3.7-inch E-Ink display and magnetic stacking, for the magpies among us).
-- **Trezor:** Model One (the old-timer), **Safe 3** (secure element, cracking value), and the touchscreen **Safe 5**.
-- **Tangem:** a completely different animal — a **tap-to-sign NFC card** with no seed phrase to scribble down (you get a backup set of cards instead). It's the gentlest on-ramp for beginners, though you trade away some of the flexibility a full device gives you.
+- **Ledger:** Nano S Plus (budget), Nano X (Bluetooth/mobile), and the touchscreen **Flex** and **Stax** (the Stax has a 3.7-inch E-Ink display and magnetic stacking).
+- **Trezor:** Model One (the original), **Safe 3** (secure element, strong value), and the touchscreen **Safe 5**.
+- **Tangem:** a different approach — a **tap-to-sign NFC card** with no seed phrase to write down (you get a backup set of cards instead). It's the simplest on-ramp for beginners, though you trade away some of the flexibility a full device gives you.
 
 ## Price and ease of use
 
-Trezor's **Safe 3** and Ledger's **Nano S Plus** are your value entry points; the touchscreen models ask for more money. On day-to-day usability, **Ledger Live** is the more polished app, and the Nano X tucks in Bluetooth for using your phone — which is why we nudge beginners toward Ledger. Don't write off Trezor Suite, mind. It's excellent, and being open-source, it's catnip for the privacy-conscious.
+Trezor's **Safe 3** and Ledger's **Nano S Plus** are the value entry points; the touchscreen models cost more. On day-to-day usability, **Ledger Live** is the more polished app, and the Nano X adds Bluetooth for using your phone — which is why we point beginners toward Ledger. Don't write off Trezor Suite, though. It's excellent, and being open-source, it appeals to the privacy-conscious.
 
 Not sure you even need cold storage yet? Start with our guide to [hot wallets vs cold storage](/blog/hot-wallets-vs-cold-storage-your-2026-guide-to-not-losing-everything-2026-04-28), then read why [self-custody beats leaving funds on a platform](/blog/self-custody-vs-custodial-wallets-2026). Want the full checklist before you buy? Our [2026 hardware wallet buyer's guide](/blog/hardware-wallets-2026-buyers-guide) has it.
 
 ## Why a hardware wallet beats leaving crypto on an exchange
 
-"Not your keys, not your coins" gets eye-rolls because it's printed on so many hoodies. Ignore the hoodie. It's the plain legal reality. When your crypto lives on an exchange, **the exchange holds the private keys, and you hold an IOU.** A receipt. A polite promise.
+"Not your keys, not your coins" is a worn-out slogan, but it's the plain legal reality. When your crypto lives on an exchange, **the exchange holds the private keys, and you hold an IOU.**
 
-Which means your access hangs entirely on them staying solvent and honest:
+Which means your access depends entirely on them staying solvent and honest:
 
-- **Hacks** — an exchange's hot wallet is a honeypot, and thieves know exactly where it is.
+- **Hacks** — an exchange's hot wallet is a large, well-known target.
 - **Withdrawal freezes** — they tend to appear in a crisis, which is the precise moment you want your money out.
-- **Insolvency** — Mt. Gox and FTX wrote that grim chapter for everyone.
+- **Insolvency** — Mt. Gox and FTX showed everyone how that ends.
 - **Account restrictions** — locked out, no explanation, nothing you did.
 
-A hardware wallet drags your keys **offline** and signs transactions without ever showing them to your computer or phone. Malware riddling your laptop? It still can't reach into the device and grab them. That one move — custodial to self-custody — wipes out the biggest category of "lost it all overnight" disasters. Both Ledger and Trezor pull it off well. Choosing between the two is honestly the smaller worry.
+A hardware wallet keeps your keys **offline** and signs transactions without ever showing them to your computer or phone. Even if malware is running on your laptop, it can't reach into the device and grab them. That one move — custodial to self-custody — removes the biggest category of "lost it all overnight" disasters. Both Ledger and Trezor do this well. Choosing between the two is honestly the smaller worry.
 
 ## Setting up your hardware wallet safely (5 steps)
 
-A hardware wallet set up badly is just an expensive paperweight that lulls you into a false sense of safety. Whichever you buy, do this:
+A hardware wallet set up badly gives you a false sense of safety, which is worse than none at all. Whichever you buy, do this:
 
-1. **Buy direct from the manufacturer.** Not a marketplace reseller. Not "barely used, my mate sold it me." Supply-chain tampering is real and documented — that's the whole point of the Trezor Safe 3 disclosure above.
-2. **Set it up yourself.** A genuine device turns up uninitialised and generates a brand-new recovery phrase right in front of your eyes. If yours arrives with a phrase already filled in or a "your PIN is…" card, it's a scam. Send it back and don't look back.
-3. **Write the recovery phrase on paper, by hand.** Not a photo. Not typed into your phone. Not a password manager, not the cloud, not a cheeky note to yourself in your email drafts. Anyone holding those 12–24 words owns your funds outright — no device required.
-4. **Set a strong PIN, and weigh up a passphrase.** Both wallets do PINs; both also offer an optional passphrase (a "25th word") that spins up a hidden wallet for advanced users. Only touch this if you truly get how it works — lose the passphrase and those funds are gone for good.
+1. **Buy direct from the manufacturer.** Not a marketplace reseller, and not second-hand from someone you know. Supply-chain tampering is real and documented — that's the whole point of the Trezor Safe 3 disclosure above.
+2. **Set it up yourself.** A genuine device arrives uninitialised and generates a brand-new recovery phrase in front of you. If yours arrives with a phrase already filled in or a "your PIN is…" card, it's a scam. Send it back.
+3. **Write the recovery phrase on paper, by hand.** Not a photo. Not typed into your phone. Not a password manager, not the cloud, not a note to yourself in your email drafts. Anyone holding those 12–24 words owns your funds outright — no device required.
+4. **Set a strong PIN, and consider a passphrase.** Both wallets do PINs; both also offer an optional passphrase (a "25th word") that creates a hidden wallet for advanced users. Only use this if you fully understand it — lose the passphrase and those funds are gone for good.
 5. **Test with a small amount first.** Send a tiny transfer, check you can receive and send, and rehearse a recovery on a spare device or the official simulator before you trust it with anything that'd hurt to lose.
 
 ## Common mistakes that lose people money
 
-Here's the uncomfortable truth: most hardware-wallet losses aren't the hardware failing. They're someone being talked, tricked or rushed into handing over the keys. The scammers know this, and they're patient. Here's how they get people — so they don't get you.
+Most hardware-wallet losses aren't the hardware failing. They're someone being talked, tricked or rushed into handing over the keys. The scammers know this, and they're patient. Here's how they get people, so they don't get you.
 
-- **Typing your recovery phrase into a website or app.** No legit wallet, exchange or "support agent" will ever ask for it. Not once. Every single one that does is a thief in a nice font. This is the number-one way people get cleaned out.
-- **Buying second-hand or off a marketplace.** See the supply-chain tampering above. That discount has teeth.
-- **Storing the seed phrase digitally.** A snap in your camera roll or a note in the cloud quietly cancels out everything the device was protecting.
-- **Falling for fake "wallet update" or "validation" emails.** Remember those 66,000 leaked Trezor contacts, and the Ledger 2020 data leak before it? This is what they're for. The scammers buy the list, dress up an email to look official, and wait for one panicked click. Treat any unsolicited wallet email as hostile until proven otherwise — which it almost never is.
-- **Tapping "approve" without reading the device screen.** The entire security model rests on you eyeballing the address and amount *on the hardware screen itself*, not just the prettier version on your computer. Read it every time. The thirty seconds is the cheapest insurance you'll ever buy.
+- **Typing your recovery phrase into a website or app.** No legitimate wallet, exchange or "support agent" will ever ask for it. Not once. Anyone who does is a thief. This is the number-one way people get cleaned out.
+- **Buying second-hand or off a marketplace.** See the supply-chain tampering above. The discount isn't worth the risk.
+- **Storing the seed phrase digitally.** A photo in your camera roll or a note in the cloud quietly cancels out everything the device was protecting.
+- **Falling for fake "wallet update" or "validation" emails.** Remember those 66,000 leaked Trezor contacts, and the Ledger 2020 data leak before it? This is what they're for. The scammers buy the list, dress up an email to look official, and wait for one panicked click. Treat any unsolicited wallet email as hostile until proven otherwise.
+- **Tapping "approve" without reading the device screen.** The entire security model rests on you checking the address and amount *on the hardware screen itself*, not just the version shown on your computer. Read it every time. Those thirty seconds are the cheapest insurance you'll ever buy.
 
 Already been targeted? Our guide on [vetting smart-contract approvals](/blog/before-you-ape-in-a-deep-dive-on-defi-protocol-risks-2026-04-21) covers a cousin of this problem: malicious approvals that drain wallets even when your keys are perfectly safe.
 

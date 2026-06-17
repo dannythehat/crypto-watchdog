@@ -92,7 +92,7 @@ Platforms that brag about skipping KYC, or that hide behind a shell company you 
 
 ### Deposits and withdrawals
 
-A platform can look flawless right up until the second you try to take your money out. We weight this heavily, because frozen withdrawals are the single most common pattern in the complaints that land in our inbox. The classic tell? A demand for an upfront "tax", "fee" or "deposit" before your balance is "released". That's not a legitimate process. That's the trap closing.
+A platform can look flawless right up until the second you try to take your money out. We weight this heavily, because frozen withdrawals are the single most common pattern in the complaints that land in our inbox. The classic tell is a demand for an upfront "tax", "fee" or "deposit" before your balance is "released". That isn't a legitimate process — it's how the scam extracts a second payment.
 
 ### Security and technology
 
@@ -100,8 +100,8 @@ Strip away the branding and a crypto platform is a tech company holding other pe
 
 - **Third-party audits.** Has the code actually been picked apart by an established security firm? Independent auditors review a system's architecture and codebase and publish what they find — firms like OpenZeppelin have built much of the open-source tooling the rest of the industry leans on ([OpenZeppelin — security audits](https://www.openzeppelin.com/security-audits)). We want a recent, readable report. A logo slapped on a homepage doesn't count.
 - **Proof of reserves.** After FTX imploded, proof of reserves went from nice-to-have to bare minimum. It uses cryptographic techniques — usually a Merkle tree of customer balances checked against on-chain holdings — to show an exchange genuinely holds customer assets. It has real limits, mind: snapshots go stale fast, and liabilities are hard to verify in full ([MoonPay — What is proof of reserves?](https://www.moonpay.com/learn/cryptocurrency/what-is-a-proof-of-reserves-por)).
-- **Cold storage.** Keep the bulk of funds offline and you take them off the menu for online attackers.
-- **Bug bounties.** Paying ethical hackers to find the holes before the crooks do is the mark of a grown-up, security-first outfit.
+- **Cold storage.** Keeping the bulk of funds offline puts them out of reach of online attackers.
+- **Bug bounties.** Paying ethical hackers to find the holes before criminals do is a sign of a serious, security-first operation.
 
 For anything you're holding long term, the safest move is often to take the platform out of the equation altogether. That's the whole point of self-custody: with your own keys, no third party can freeze, lose or run off with your funds for you ([ethereum.org — Ethereum wallets](https://ethereum.org/en/wallets/)). We dig into the trade-offs in our guides to [self-custody versus custodial wallets](/blog/self-custody-vs-custodial-wallets-2026) and the [best hardware wallets of 2026](/blog/best-hardware-wallet-2026-ledger-vs-trezor).
 
@@ -127,7 +127,7 @@ Let's make it concrete. Picture the two ends of the spectrum.
 
 A platform like the one in our [Kraken review](/reviews/kraken) sits comfortably in green: registrations across multiple jurisdictions, published proof-of-reserves attestations, the bulk of assets in cold storage, leadership you can name. None of that makes it risk-free — but every critical pillar has hard evidence behind it. Our [Bitget review](/reviews/bitget) walks through a similar industry-grade assessment in full.
 
-Now picture the opposite. A "yield" product promising a fixed 3% daily return, run by founders nobody can name, on a domain registered last month, demanding a "withdrawal tax" before it pays a soul. That's red across the board. The maths gives it away on its own — 3% a day compounds into pure fantasy within months — which means the "returns" can only be coming from new depositors, not real activity. That's the bones of a Ponzi scheme, and it pins the score near zero no matter how clean the website looks.
+Now picture the opposite. A "yield" product promising a fixed 3% daily return, run by founders nobody can name, on a domain registered last month, demanding a "withdrawal tax" before it pays a soul. That's red across the board. The maths gives it away on its own: 3% a day compounds into impossible numbers within months, which means the "returns" can only be coming from new depositors, not real activity. That's the basic structure of a Ponzi scheme, and it pins the score near zero no matter how clean the website looks.
 
 *Affiliate disclosure: some review pages we link to may contain affiliate links, meaning we could earn a commission at no extra cost to you. This never affects a platform's Trust Score, which is determined solely by our audit.*
 
@@ -141,7 +141,7 @@ Trust Scores aren't frozen. We revisit a rating whenever something material happ
 - A pattern of new user complaints, especially about withdrawals.
 - On-chain or corporate findings that quietly contradict earlier claims.
 
-Clean up your act and the score can climb. Let it slip — an audit allowed to lapse, silence during a crisis, withdrawals that suddenly take "a few more days" — and it'll fall. The colour you're looking at is the most recent honest read, not a verdict chiselled into granite.
+Clean up your act and the score can climb. Let it slip — an audit allowed to lapse, silence during a crisis, withdrawals that suddenly take "a few more days" — and it'll fall. The colour you're looking at is the most recent honest read, not a permanent verdict.
 
 ## How to read a score before you deposit
 

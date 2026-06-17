@@ -81,11 +81,11 @@ What it doesn't show is the other half of the balance sheet — the liabilities.
 
 The fee schedule in the marketing and the fee you actually pay are rarely the same number. Here are the five spots where exchanges quietly skim more than the headline:
 
-1. **Spreads on "instant buy" buttons.** Often 1.5%–2.5% stacked on top of the headline trading fee. Use the spot order book, not the one-tap convenience widget designed to fleece you.
+1. **Spreads on "instant buy" buttons.** Often 1.5%–2.5% stacked on top of the headline trading fee. Use the spot order book, not the one-tap convenience widget.
 2. **Conversion fees** when you deposit an unsupported fiat and the exchange auto-converts it. Up to 3% in some cases.
-3. **Network fee mark-ups** on withdrawals. Some charge 2–3× the real on-chain fee, especially on slower chains where they bank on you not checking.
-4. **Inactivity fees.** Rare, but a handful of platforms now ping dormant accounts for the cheek of not trading.
-5. **"Free" card deposits** that quietly bury 1.8%–3.5% inside the spread. Free, the way a free puppy is free.
+3. **Network fee mark-ups** on withdrawals. Some charge 2–3× the real on-chain fee, especially on slower chains where most people won't check.
+4. **Inactivity fees.** Rare, but a handful of platforms now charge dormant accounts simply for not trading.
+5. **"Free" card deposits** that quietly bury 1.8%–3.5% inside the spread. The cost is still there; it's just moved somewhere you won't see it.
 
 A sensible all-in cost for spot trading on a major exchange in 2026 sits around **0.10%–0.20% per trade** at normal volume tiers. If your blended cost is comfortably above that, you're paying for something. Go find out what.
 
@@ -109,10 +109,10 @@ For most people in 2026, the honest answer is **both**. Use a regulated CEX for 
 
 None of these are rare edge cases. They're the same fingerprints we find at the scene of nearly every post-mortem we write — and we spot fresh ones every week over in our [scam alerts feed](/warnings).
 
-- **Bonus / deposit-match offers with hidden volume requirements.** A "100% deposit match" almost always handcuffs the bonus *and* your own principal behind a trading volume you'd need a second life to hit.
+- **Bonus / deposit-match offers with hidden volume requirements.** A "100% deposit match" almost always locks both the bonus *and* your own principal behind a trading volume most users will never realistically hit.
 - **Withdrawals "temporarily disabled"** mid sell-off. Ask why, loudly. The honest answer is almost never "routine system upgrade."
 - **Anonymous founders,** or a CEO whose last company has been scrubbed off the internet. Hold that up against Coinbase or Kraken — public, named, traceable. Or against the faceless operator we pinned down in the [Aurum Foundation review](/reviews/aurum-foundation).
-- **Yield products dangling well above DeFi-native rates.** If an exchange waves 8% APY on USDC while on-chain lending pays 4%, that 4% gap is a risk premium someone is shouldering. Spoiler: it's you, and nobody asked first. The [BlockFi post-mortem](/reviews/blockfi) is the ghost-of-Christmas-future on this one.
+- **Yield products dangling well above DeFi-native rates.** If an exchange offers 8% APY on USDC while on-chain lending pays 4%, that 4% gap is a risk premium someone is taking on. That someone is you, whether or not you were told. The [BlockFi post-mortem](/reviews/blockfi) shows where that can end.
 - **Pushy "account managers"** nudging you to deposit more, switch products, or crank up the leverage. Real exchanges don't have account managers. They have support tickets. If someone's personally invested in your trading, they're invested in *your money*.
 
 ## A short, defensible setup

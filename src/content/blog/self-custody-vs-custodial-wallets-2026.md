@@ -36,49 +36,49 @@ Plenty of newcomers get burned simply because self custody is fiddly. They mispl
 
 ## When custodial wallets make sense
 
-Let's say the quiet part loudly: for small amounts, a custodial wallet is often the sensible call. If your crypto stash is under a couple of grand, splashing out on a hardware wallet is a bit like fitting a vault door to a piggy bank. Exchanges also do the boring admin for you, with tax reporting tools that beat spreadsheet hell.
+For small amounts, a custodial wallet is often the sensible call. If your crypto stash is under a couple of grand, the cost and hassle of a hardware wallet may not be worth it yet. Exchanges also handle the boring admin for you, with tax reporting tools that save you a lot of spreadsheet time.
 
-If you're a buy-and-hold type sticking to the big names like Bitcoin or Ethereum, a regulated exchange may be plenty. Many cover fiat balances with some form of insurance, and the decent ones earn their keep, which is why we put platforms through proper [vetted crypto platform reviews](/reviews) before recommending anything. Handy for active traders, too, who need to move quickly without juggling private keys mid-trade.
+If you're a buy-and-hold type sticking to the big names like Bitcoin or Ethereum, a regulated exchange may be plenty. Many cover fiat balances with some form of insurance, and the decent ones earn their keep, which is why we put platforms through proper [vetted crypto platform reviews](/reviews) before recommending anything. It also suits active traders, who need to move quickly without juggling private keys mid-trade.
 
 ### The benefits of professional custody
 
-*   **Account Recovery:** Forgot your password? Reset it by email or ID check. Try doing that with a lost seed phrase.
-*   **Simplicity:** No gas fees to fathom, no "wait, which network?" panic before you hit send.
-*   **Security Layers:** Big exchanges run institutional-grade vaults and custody setups most of us couldn't replicate in a lifetime.
-*   **Fiat Ramps:** Cashing out to your actual bank account is a few taps, not a treasure hunt.
+*   **Account Recovery:** Forgot your password? Reset it by email or ID check. There's no equivalent for a lost seed phrase.
+*   **Simplicity:** No gas fees to work out, no checking which network you're on before you hit send.
+*   **Security Layers:** Big exchanges run institutional-grade vaults and custody setups most individuals couldn't replicate.
+*   **Fiat Ramps:** Cashing out to your bank account is a few taps.
 
 ### The dangers of professional custody
 
-*   **Counterparty Risk:** The exchange can go bust or freeze withdrawals, and your "balance" becomes a number on someone else's broken screen. Ask anyone who used FTX.
-*   **Censorship:** Platforms answer to local laws and can lock your account without so much as a heads-up.
-*   **Limited Access:** Fancy poking around decentralised finance (DeFi, the catch-all term for apps that swap and lend without a middleman) or minting an NFT? Good luck doing much of that from a custodial account.
+*   **Counterparty Risk:** The exchange can go bust or freeze withdrawals, and your "balance" becomes a number you can't actually touch. Ask anyone who used FTX.
+*   **Censorship:** Platforms answer to local laws and can lock your account without warning.
+*   **Limited Access:** Want to use decentralised finance (DeFi, the catch-all term for apps that swap and lend without a middleman) or mint an NFT? You can't do much of that from a custodial account.
 
 ## The case for self custody
 
-Once you're holding serious money, though, self custody stops being optional. It's the only setup where no exchange founder can quietly hop on a private jet with your savings. It also throws open the doors to the whole blockchain, no permission slips required.
+Once you're holding serious money, though, self custody stops being optional. It's the only setup where no exchange can fail, freeze, or run off with your savings. It also gives you direct access to the whole blockchain, without asking anyone's permission.
 
-The catch is discipline. This freedom comes with chores: managing your own backups, staying sharp, and knowing the playbook in our [crypto scam guides](/scam-guides) before the scammers run it on you. One careless click on a dodgy link can empty a self custody wallet in the time it takes to sip your tea. The blockchain doesn't do "undo".
+The catch is discipline. This freedom comes with work: managing your own backups, staying alert, and knowing the playbook in our [crypto scam guides](/scam-guides) before the scammers run it on you. One careless click on a dodgy link can empty a self custody wallet in seconds, and the blockchain has no undo button.
 
 ### Why people choose self custody
 
 *   **Asset Ownership:** The coins are yours, full stop. Not an IOU from a company hoping to stay solvent.
 *   **Privacy:** No handing your passport to a firm just to hold your own money.
-*   **Interoperability:** One wallet works across thousands of apps and protocols, like a key that fits a million doors.
+*   **Interoperability:** One wallet works across thousands of apps and protocols.
 *   **Permissionless:** Nobody can stop you sending your funds, anywhere, any time. For better and occasionally for worse.
 
 ### The hidden costs of being your own bank
 
-*   **No Safety Net:** Send funds to the wrong address and there's no one to call. The money just lives somewhere you can't reach now.
-*   **Phishing Vulnerability:** You become the bullseye. The polished con artists aim their social engineering straight at you.
-*   **Physical Risk:** If a thief grabs your hardware wallet and your PIN, the device does exactly what it's told. By them.
+*   **No Safety Net:** Send funds to the wrong address and there's no one to call. The money just sits somewhere you can't reach.
+*   **Phishing Vulnerability:** You become the target. The con artists aim their social engineering straight at you.
+*   **Physical Risk:** If a thief gets hold of your hardware wallet and your PIN, the device does exactly what they tell it to.
 
 ## The 80/20 strategy for 2026
 
-Here's the thing the loudest voices won't tell you: most seasoned holders don't pick a side. They run both. The trick is splitting your money by job, not by ideology. Think of it like your own finances offline, where you don't keep your life savings in the same pocket as your bus fare. Three buckets, three purposes.
+Here's the thing the loudest voices won't tell you: most seasoned holders don't pick a side. They run both. The trick is splitting your money by job, not by ideology, the same way you wouldn't keep your life savings in the same account you use for day-to-day spending. Three buckets, three purposes.
 
 ### 1. The Cold Storage Vault (60 to 80 percent)
 
-This is your long-game money, the stuff you're not touching for years. It lives on a hardware wallet that stays offline, gathering metaphorical dust. The golden rule: this wallet never, ever shakes hands with a new or unverified website. Treat it like the safe in the floor, not the wallet in your jeans. Our [hardware wallet safety guide](/blog/your-hardware-wallet-won-t-save-you-a-2026-security-guide-2026-04-22) goes deeper, including the ways even a hardware wallet can let you down if you get cocky.
+This is your long-term money, the stuff you're not touching for years. It lives on a hardware wallet that stays offline. The golden rule: this wallet never connects to a new or unverified website. Our [hardware wallet safety guide](/blog/your-hardware-wallet-won-t-save-you-a-2026-security-guide-2026-04-22) goes deeper, including the ways even a hardware wallet can let you down if you get careless.
 
 ### 2. The Hot Wallet (10 to 20 percent)
 
