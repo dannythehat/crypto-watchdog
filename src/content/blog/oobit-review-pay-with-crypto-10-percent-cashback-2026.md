@@ -1,179 +1,156 @@
 ---
 type: "blog"
-title: "Oobit Review 2026: Pay With Crypto Anywhere & Earn Up to 10% Cashback in USDT"
+title: "Oobit Review 2026: Pay With Crypto, and the Truth About That 10% Cashback"
 slug: "oobit-review-pay-with-crypto-10-percent-cashback-2026"
-summary: "Oobit is the Tether-backed mobile payments app that converts your crypto to fiat at the checkout — not before. Spend USDT, BTC and ETH at 150M+ Visa merchants and earn up to 10% instant cashback. Full features, stats, daily perks and honest verdict."
+summary: "Oobit lets you spend crypto at Visa terminals and converts at the till, not before. The headline is 10% cashback. The reality is 2% for most people unless you hold OOB. Here's our honest, evidence-led Oobit review: how it works, the fees, who it suits, and what to check first."
 category: "Wallets"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/oobit%2Foobit-hero.jpg"
 published: true
 auto_generated: false
 published_at: "2026-04-25T08:51:18.939154+00:00"
-updated_at: "2026-05-10T04:15:51.096111+00:00"
-meta_title: null
-meta_description: null
+updated_at: "2026-06-17T22:30:00Z"
+meta_title: "Oobit Review 2026: Pay With Crypto, 10% Cashback Tested"
+meta_description: "Our honest Oobit review for 2026: pay-with-crypto at Visa terminals, the real cashback tiers (2% base, up to 10%), the 1% fee, custody and who it suits."
+primary_keyword: "Oobit review"
 ---
-## Why "Pay With Crypto" Finally Works in 2026
+## The pitch, and the part the ads skip
 
-For a decade, "pay with crypto" was a meme. You had to sell your coins on an exchange, withdraw to a bank, wait days, then spend. Most cards quietly converted your stack the moment you topped up.
+For years, "pay with crypto" mostly meant selling your coins first, waiting for the cash to land, then spending like normal. Oobit's idea is different, and genuinely clever: your crypto stays as crypto until the moment you tap to pay, and the conversion to local currency happens at the checkout rather than before it. The shop gets paid in pounds, euros or dollars and never has to think about blockchains.
 
-Oobit flips that model. Your crypto stays *as crypto* in your own wallet until the exact second you tap to pay. Conversion to fiat happens at checkout — per transaction, on demand. You stay in BTC, ETH or USDT until the merchant gets paid.
+That part is real, and it's the reason Oobit gets talked about. But the marketing leads with "up to 10% cashback," and if you stop reading there you'll get the wrong idea. For most people, most of the time, the number is 2%. There's also a fee the ads are quiet about. So this Oobit review does the boring, useful thing: it separates what Oobit does well from what it dresses up, and tells you who should actually bother.
 
-That single design decision is why Oobit is becoming the go-to app for everyday crypto spending — and why it's worth a serious look from anyone holding stablecoins.
+We'll cover how the payment flow works, the real cashback tiers, the fees, custody, where it's available, and the honest verdict. No price predictions, no promises about returns, and a few things we'd want you to double-check before you deposit a penny.
 
-## What Is Oobit, in One Sentence
+## What Oobit is, plainly
 
-Oobit is a Tether-backed mobile crypto payments app that lets you spend USDT, Bitcoin, Ethereum and other major coins anywhere Visa is accepted — at over 150 million merchants worldwide — with up to 10% cashback paid in USDT.
+Oobit is a mobile crypto payments app. You hold or connect crypto, then tap your phone at a contactless Visa terminal the same way you'd use Apple Pay or Google Pay. Behind the scenes, your crypto is converted to fiat at that moment and the merchant is paid in their local currency.
 
-It is not a debit card you load and forget. It is a wallet-first payment rail. The card and tap-to-pay are simply the *output* — the actual value sits in crypto until checkout.
+The company was founded in 2017 and is headquartered in Singapore; its consumer app launched in 2022, according to the company's own newsroom and several startup-profile sources. In February 2024 it raised a $25 million Series A led by Tether, the issuer of the USDT stablecoin, with co-investors including CMCC Global's Titan Fund, 468 Capital and Solana co-founder Anatoly Yakovenko. That's documented by [CoinDesk](https://www.coindesk.com/business/2024/02/05/crypto-payments-app-oobit-raises-25m-in-series-a-funding-round-led-by-tether) and [Tether's own announcement](https://tether.io/news/tether-leads-oobits-25m-series-a-funding-round-to-propel-crypto-adoption/).
 
-## The Numbers That Actually Matter
+The simplest way to think about it: Oobit isn't a card you load and forget. It's a payment rail with a tap-to-pay front end. The value sits in crypto right up to the till.
 
-Before we go feature-by-feature, here is the hard data investors and reviewers keep citing.
+## How the payment actually works
 
-- **$25 million** Series A funding round closed February 2024
-- **Lead investor:** Tether (the issuer of USDT)
-- **Co-investors:** CMCC Global Titan Fund, 468 Capital, and Anatoly Yakovenko (Solana co-founder)
-- **Founded:** 2017 (8+ years operating in crypto payments)
-- **App ratings:** 4.8★ on App Store (22,000+ reviews), 4.7★ on Google Play (25,000+ reviews)
-- **Acceptance:** 150 million+ Visa merchants globally
-- **Cashback ceiling:** Up to 10% per eligible transaction, credited instantly in USDT
-- **U.S. expansion:** Launched late 2025 with regulatory partner Bakkt
+The mechanic is less complicated than most write-ups make it sound.
 
-These are not marketing fluff numbers. They are publicly verifiable on [Tether's official news page](https://tether.io/news/tether-leads-oobits-25m-series-a-funding-round-to-propel-crypto-adoption/), [CoinDesk](https://www.coindesk.com/business/2024/02/05/crypto-payments-app-oobit-raises-25m-in-series-a-funding-round-led-by-tether/), and the Apple and Google app stores.
+1. Hold crypto inside Oobit, or connect your own external wallet through Oobit's DePay system.
+2. Tap your phone at any contactless Visa terminal.
+3. Oobit converts your crypto to fiat at the point of sale, at the live market rate.
+4. The merchant receives local currency and is none the wiser.
+5. Eligible cashback is credited to your balance.
 
-![Oobit tap-to-pay at a food truck](https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/oobit%2Foobit-tap-pay.jpg)
+The interesting engineering is in DePay, Oobit's settlement layer. According to Oobit's newsroom and independent coverage from [Crypto.news](https://crypto.news/oobit-brings-self-custody-wallets-to-the-checkout-counter/), DePay performs just-in-time token swaps at the moment of authorisation across networks including Ethereum (ERC-20), Tron (TRC-20), BNB Chain, Solana and Polygon. There's no prefunding required when you use a connected wallet: you stay on-chain until the payment clears, and supported wallets include MetaMask, Phantom and Trust Wallet, among others.
 
-## How Oobit Actually Works (Step by Step)
+The point-of-sale conversion is the genuine selling point. Many older crypto cards make you convert to fiat or a stablecoin at top-up, which means you sell early and sit in cash until you spend. Oobit lets you hold your position until the moment of purchase. Whether that's good or bad depends on which way the market moves, which nobody can tell you in advance. It's flexibility, not free money.
 
-The mechanic is simpler than most reviews make it sound.
+## The cashback: what "up to 10%" really means
 
-1. **Hold crypto in Oobit** (or connect an external non-custodial wallet via DePay).
-2. **Tap your phone** at any contactless Visa terminal — same gesture as Apple Pay or Google Pay.
-3. **Oobit converts your crypto to fiat at the moment of sale** at the live market rate.
-4. **The merchant is paid in their local currency.** They never know — and never need to know — that crypto was involved.
-5. **Cashback hits your USDT balance instantly.** No 30-day waiting period. No points to redeem.
+Here's the bit the headline glosses over. The "up to 10%" figure is real, but it's conditional, and for the average user the everyday rate is 2%.
 
-The point-of-sale conversion is the killer feature. Old-school crypto cards force you to top up in fiat first, meaning you sell at the worst possible moment. Oobit lets you ride your position right up to the checkout beep.
+Based on independent reviews and Oobit's own materials, the structure works roughly like this:
 
-## The Cashback System: Up to 10% Explained Honestly
+- **Standard tier (2%):** most users earn 2% cashback on eligible purchases, paid in USDT or OOB, with no minimum spend on the base tier.
+- **OOB Rewards tier (up to 10%):** the higher rate is unlocked by holding OOB, Oobit's native token, and taking part in its rewards programme. Some coverage notes you can also swap into OOB right before checkout to access the top rate on that transaction.
+- **Fee discounts:** paying with OOB can also cut transaction fees, with some sources citing discounts of up to 50%.
 
-The "up to 10%" headline is real, but it is tiered. Here is how rewards actually scale on the Oobit Crypto Card:
+Two honest caveats. First, reaching 10% means taking on OOB, a volatile token whose price can fall. So the headline rate comes with exposure that the base 2% does not, and we'd treat any "10%" claim as the ceiling, not the norm. Second, rewards paid in USDT are genuinely useful because a stablecoin is easy to hold or sell; rewards paid in OOB are only worth what OOB is worth on the day. We can't predict that, and neither can anyone else.
 
-- Base tier: meaningful cashback on every eligible Visa transaction
-- Higher tiers: unlocked by holding or staking **OOB** (Oobit's native token) and by transaction volume
-- Maximum tier: up to 10% cashback per transaction, paid out in **USDT**
+For context, a typical fiat rewards card pays around 1–2% in points. Oobit's base 2% in stablecoins is competitive. The 10% is a different animal, and you should only chase it if you actively want OOB exposure for your own reasons.
 
-Two details people miss. First, rewards are paid in stablecoins — not in a custom token you cannot easily sell. Second, they post **instantly** to your account, not at the end of the month.
+## The fee the ads don't lead with
 
-For comparison: most fiat credit cards cap rewards at 1.5–2% in points that expire. Oobit's structure is materially better for anyone who already holds crypto and spends regularly on groceries, fuel, dining or travel.
+A detail the original marketing tends to skip: card payments carry a **1% transaction fee**, per multiple independent reviews and Oobit's own card materials. International purchases may also pick up foreign-exchange costs depending on the transaction.
 
-![Oobit cashback system illustration](https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/oobit%2Foobit-cashback.jpg)
+That matters for the maths. On the standard tier, 2% cashback minus a 1% fee nets you closer to 1% in practice on an eligible spend. Still positive, still better than nothing, but a long way from the "10%" you might have walked in expecting. Account creation, crypto deposits and receiving payments are described as free, and there's no annual card fee, which is fair.
 
-## Backed by Tether: Why That Matters for Trust
+## Oobit at a glance
 
-Most crypto payment apps blow up because their treasury is unstable, their banking partners ghost them, or their funding runs dry. Oobit's $25M Series A was led by **Tether** — the issuer of USDT, the largest stablecoin by market cap.
-
-That matters for three concrete reasons.
-
-First, **deep stablecoin liquidity**. USDT settlement is native, not bolted on. When you spend USDT through Oobit, you are inside Tether's home rails.
-
-Second, **regulatory and banking gravitas**. Tether's name opens doors to merchant acquirers and card issuers that small fintechs cannot reach alone. The U.S. launch through Bakkt in late 2025 is a direct downstream effect.
-
-Third, **investor signalling**. When the largest company in crypto puts $25M behind a payments app and brings in Solana's co-founder, it is voting with its wallet that this is the rail it wants for everyday spending.
-
-For an independent breakdown of why we weight backing and partnerships heavily in our [trust scoring methodology](/methodology), see how Oobit stacks up against weaker competitors below.
-
-## Daily Perks Beyond Cashback
-
-Cashback is the headline. The daily-use features are why people keep the app installed.
-
-- **Send money internationally with zero fees** — settles in seconds, not days
-- **Pay with your existing external wallet** via DePay (no custody handover required)
-- **Multi-coin support** — BTC, ETH, USDT, USDC, and a growing list of major assets
-- **In-app top-ups** from card, bank transfer, or direct on-chain deposit
-- **Instant settlement** for both you and the merchant
-- **Mobile-first controls** — freeze the card, set spending limits, view every conversion rate live
-- **Tap-to-pay on iOS and Android** without a physical card needed
-
-The "send money" piece quietly competes with Wise and Western Union. If you have ever paid 6–8% to remit money to family, sending stablecoins peer-to-peer through Oobit is dramatically cheaper.
-
-## Who Should Get an Oobit Account
-
-Oobit is the right tool if you fit *any* of these profiles.
-
-- You hold a meaningful USDT, BTC or ETH balance and want to spend it without selling on an exchange first.
-- You travel internationally and hate FX markups from traditional bank cards.
-- You want crypto cashback in stablecoins (not in a volatile reward token you cannot easily exit).
-- You send remittances and refuse to keep paying 5%+ in fees and FX.
-- You hold crypto in a [non-custodial wallet](/reviews/trust-wallet) and want a way to spend without handing custody over.
-
-It is **not** the right tool if you only want to HODL and never touch your stack, or if you live in a jurisdiction Oobit does not yet support (check the [official availability page](https://www.oobit.com/faq) before signing up).
-
-<div class="not-prose my-8 rounded-xl border border-primary/30 bg-gradient-to-br from-primary/10 to-primary/5 p-6 shadow-sm"><p class="text-xs font-semibold uppercase tracking-wider text-primary">Ready to Spend Smarter?</p><p class="mt-2 font-heading text-xl font-bold leading-tight">Download Oobit and unlock crypto-native everyday spending</p><p class="mt-2 text-sm text-muted-foreground">4.8★ on App Store. 4.7★ on Google Play. Backed by Tether. Used in 150M+ stores.</p><a href="https://get.oobit.app/25kmm2" target="_blank" rel="noopener noreferrer sponsored" class="mt-4 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90">Get Oobit (Verified Link) →</a></div>
-
-## Oobit vs Traditional Crypto Cards
-
-Most "crypto cards" on the market today are actually fiat cards in disguise. You preload them with stablecoins or BTC and the issuer immediately converts everything to USD or EUR sitting in a custodial account. You are no longer in crypto.
-
-Oobit's architecture is fundamentally different.
-
-| Feature | Traditional Crypto Card | Oobit |
+| Feature | Detail | Our note |
 |---|---|---|
-| When does crypto convert to fiat? | At top-up (you sell early) | At point-of-sale (you stay in crypto) |
-| Cashback currency | Points or proprietary token | **USDT (stablecoin)** |
-| Max cashback | Typically 1–4% | **Up to 10%** |
-| Cashback timing | Monthly statement | **Instant** |
-| External wallet support | No | **Yes (via DePay)** |
-| Backed by | Variable | **Tether ($25M Series A)** |
+| Conversion point | At checkout (point of sale) | The genuine differentiator |
+| Base cashback | ~2%, in USDT or OOB | The number most people will actually get |
+| Max cashback | Up to 10% via OOB Rewards | Conditional; requires OOB exposure |
+| Card transaction fee | ~1% | Eats into the 2% base; factor it in |
+| Custody | Custodial in-app, or non-custodial via DePay | Your choice changes the risk |
+| Networks | ETH, Tron, BNB Chain, Solana, Polygon | Multi-chain through DePay |
+| Acceptance | Anywhere Visa contactless works | Oobit markets 100M+ merchants; treat exact figures as marketing |
+| Backing | $25M Series A led by Tether (Feb 2024) | Verifiable via CoinDesk and Tether |
+| Founded | 2017, Singapore; app launched 2022 | Eight-plus years in the space |
 
-If you understand why this matters, you understand why Oobit is being pushed hard by people who actually live in crypto — not just trade it.
+## Custody: the question that decides your risk
 
-## Safety, Custody and What You Should Know
+There are two ways to use Oobit, and they're not equal.
 
-Two things to be honest about.
+If you keep funds inside Oobit's app balance, **Oobit is custodying your money**, the same as any payment app. That's convenient, and it's also a trust assumption: you're relying on the company to hold and return your funds.
 
-**On custody.** When you keep funds inside Oobit's app balance, Oobit is custodying them — like any payment app. If you prefer self-custody, use the DePay flow with your own [hot wallet](/reviews/trust-wallet) and let Oobit be a payment rail rather than a vault.
+If you connect your own wallet through DePay, you keep self-custody and Oobit acts purely as the payment rail. No prefunding, no handing over your keys. If self-custody matters to you, that's the flow to use. Our [crypto wallets](/crypto-wallets) guide walks through the custody trade-offs properly, and it's worth ten minutes before you decide which mode suits you.
 
-**On regulation.** Crypto payments sit in a moving regulatory landscape. Oobit holds the relevant licensing for the markets it operates in, and partnered with Bakkt for U.S. launch — Bakkt is a NYSE-listed regulated entity. Always check local rules before depositing serious money.
+Neither choice is "wrong." But they carry different risks, and you should pick deliberately rather than by accident.
 
-For a primer on spotting payment-platform red flags, read our [step-by-step guide to crypto damage control](/blog/crypto-scammed-your-step-by-step-guide-to-damage-control-2026-04-24) and our [guide to vetting new crypto products](/blog/before-you-ape-in-a-journalist-s-guide-to-vetting-new-crypto-tokens-2026-04-25).
+## Where you can actually use it
 
-## SEO and Search-Intent Snapshot
+Availability is the part people forget to check, and it changes fast. Oobit launched wallet-native payments in the United States in December 2025 through a partnership with Bakkt, a publicly listed US company with money-transmitter licensing across all 50 states, as reported by [The Block](https://www.theblock.co/post/381730/tether-backed-payments-startup-oobit-expands-into-us). In Europe it operates under MiCA via a StablR partnership, and coverage lists active markets including Brazil, South Korea, the Philippines and Thailand, with Argentina added in early 2026.
 
-If you searched any of these terms, this article is for you.
+Regulation here is still moving, and what's available in one country may not be in the next. Check Oobit's own [availability page](https://support.oobit.com/hc/en-us/articles/10112751291165-Countries-or-regions-where-you-can-use-Oobit) for your jurisdiction before you sign up, because a great app you can't legally use is no use to you.
 
-- pay with crypto
-- best crypto card 2026
-- USDT debit card
-- spend Bitcoin in store
-- crypto cashback card
-- Oobit review
-- Oobit cashback
-- Tap to pay with crypto
-- Tether-backed payment app
-- non-custodial crypto card
+## How it stacks up against a traditional crypto card
 
-Bookmark this page and revisit before your next checkout. Then use our internal hub for [crypto wallets](/categories/wallets), [exchanges](/categories/centralized-exchanges) and [DeFi platforms](/categories/defi) to round out your stack.
+Most products sold as "crypto cards" convert everything to fiat or a stablecoin the moment you top up. From that point you're not really in crypto. Oobit's at-checkout conversion is a real design difference, and it's the thing that sets it apart.
 
-## Final Verdict: Should You Use Oobit?
+| | Typical crypto card | Oobit |
+|---|---|---|
+| When crypto converts | At top-up (you sell early) | At point of sale |
+| Cashback currency | Points or a proprietary token | USDT or OOB |
+| Base cashback | Often 1–2% | ~2% |
+| Headline max | Varies | Up to 10% (needs OOB) |
+| External wallet support | Rare | Yes, via DePay |
+| Card fee | Varies | ~1% per transaction |
 
-**Yes — if you hold crypto and spend money.** That is the simplest framing.
+If you want a like-for-like on the self-custody side, our [Tangem Pay review](/blog/tangem-pay-decentralized-debit-card-review-2026) covers a card built around a hardware wallet, which is a different way of solving the same "spend without giving up custody" problem. And our broader [crypto cards](/crypto-cards) guide explains the conversion spreads and tier games that catch people out across the whole category.
 
-The combination of point-of-sale conversion, up-to-10% cashback paid instantly in USDT, Tether backing, and 150M+ merchant acceptance puts Oobit in a category of its own. The user reviews back it up: 4.8★ on iOS and 4.7★ on Android across nearly 50,000 ratings is not something you can fake.
+## Who Oobit actually suits
 
-If you have ever tried to actually *use* your crypto and given up — Oobit is the app that fixed that problem.
+It's a reasonable fit if any of these sound like you:
 
-<div class="not-prose my-8 rounded-xl border border-primary/30 bg-gradient-to-br from-primary/10 to-primary/5 p-6 shadow-sm"><p class="text-xs font-semibold uppercase tracking-wider text-primary">Final Step</p><p class="mt-2 font-heading text-xl font-bold leading-tight">Activate your Oobit account with our verified partner link</p><p class="mt-2 text-sm text-muted-foreground">Free download. KYC takes a few minutes. Start earning USDT cashback on the same day.</p><a href="https://get.oobit.app/25kmm2" target="_blank" rel="noopener noreferrer sponsored" class="mt-4 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90">Open Oobit →</a></div>
+- You hold USDT, BTC or ETH and want to spend it without selling on an exchange first.
+- You'd rather take cashback in a stablecoin than in points that expire.
+- You want the option of self-custody at the till via DePay.
+- You travel and want to spend crypto wherever Visa contactless works.
 
-## Related Reading
+It's probably not for you if you only want to hold and never spend, if the 1% fee bothers you more than the 2% cashback rewards you, or if you live somewhere Oobit isn't yet licensed. And if you're only interested because of the "10%," be honest with yourself about whether you actually want to hold OOB. If you don't, the number that applies to you is 2%, minus the fee.
 
-- [Top crypto wallet features for safety and usability](/blog/top-crypto-wallet-features-safety-usability)
-- [Types of crypto exchanges explained: how to choose](/blog/types-of-crypto-exchanges-explained-how-to-choose)
-- [Trust Wallet review](/reviews/trust-wallet) — pair with Oobit DePay for fully self-custodial spending
-- [Phantom Wallet review](/reviews/phantom) — Solana-native wallet, complements Oobit's multi-chain support
-- [Before You Ape In: vetting new crypto products](/blog/before-you-ape-in-a-journalist-s-guide-to-vetting-new-crypto-tokens-2026-04-25)
-- [Crypto Scammed? Damage control guide](/blog/crypto-scammed-your-step-by-step-guide-to-damage-control-2026-04-24)
+If you're still weighing up where to keep and move funds before you spend them, our guides to [crypto exchanges](/crypto-exchanges) and [crypto wallets](/crypto-wallets) cover the custody and security questions that sit underneath all of this.
+
+## A note on those star ratings
+
+Oobit's marketing cites high App Store and Google Play ratings across tens of thousands of reviews. App-store scores are a signal, not proof: they're easy to read and hard to verify line by line, and ratings shift over time. By all means look them up before you download, but weigh them alongside the things you can check independently, like the funding, the partnerships and the fee schedule, rather than treating a star count as the whole story.
+
+## Our verdict
+
+Oobit does the headline thing well. Converting at the checkout, rather than at top-up, is a real advantage, and the DePay self-custody route is a genuine answer to the "I don't want to hand over my keys" objection. The Tether-led funding and the Bakkt-backed US launch give it more institutional weight than most apps in this corner.
+
+The marketing oversells one number. For the average user the cashback is 2%, not 10%, and a 1% card fee trims that further. The 10% is real but conditional on holding a volatile token, which is a trade-off, not a freebie. Take Oobit for the payment experience and the stablecoin cashback, go in with the fee and the tiers clear in your head, choose your custody mode on purpose, and confirm it's available and licensed where you live. Do that and it's a solid tool. Walk in chasing the headline and you'll be slightly disappointed by the maths.
+
+## Frequently asked questions
+
+**Is Oobit's 10% cashback real?**
+The 10% rate exists, but it's the top of a tiered system, not the standard rate. Most users earn around 2% on eligible purchases. Reaching 10% requires holding OOB, Oobit's own token, and joining its rewards programme, which means taking on OOB price exposure. Treat 10% as a conditional ceiling, not what you'll typically get.
+
+**Are there fees?**
+Yes. Card payments carry roughly a 1% transaction fee, and international purchases may incur foreign-exchange costs. Account creation, deposits and receiving payments are described as free, with no annual card fee. Factor the 1% in when you compare it against the cashback you'll actually earn.
+
+**Is Oobit custodial or non-custodial?**
+Both, depending on how you use it. Funds kept in the Oobit app balance are custodied by Oobit. If you connect your own wallet through DePay, you keep self-custody and Oobit only acts as the payment rail. Choose deliberately based on how much control you want.
+
+**Who's behind Oobit, and is it backed?**
+Oobit was founded in 2017 and is based in Singapore. In February 2024 it raised a $25 million Series A led by Tether, with co-investors including CMCC Global's Titan Fund, 468 Capital and Solana co-founder Anatoly Yakovenko. The round is documented by CoinDesk and Tether's own announcement.
+
+**Where can I use Oobit?**
+It works wherever Visa contactless is accepted, but availability of the app itself depends on your country. It launched in the US in late 2025 via Bakkt, operates in the EU under MiCA through a StablR partnership, and is live in markets including Brazil, South Korea, the Philippines, Thailand and Argentina. Check Oobit's official availability page for your jurisdiction first.
+
+**Should I hold OOB to get the higher cashback?**
+Only if you'd want OOB exposure anyway. Chasing the higher tier means holding a volatile token whose price can fall, so the extra cashback comes with risk the base 2% doesn't carry. We don't make price predictions on OOB or any token; decide based on your own risk appetite, not the headline number.
 
 ---
 
-*Disclosure: The Oobit links in this article are partner links. If you sign up through them, Crypto Watchdog may earn a referral commission at no extra cost to you. This does not influence our editorial verdict — we only recommend products we have independently researched and would use ourselves. Read our full [editorial policy](/editorial-policy) and [affiliate disclosure](/affiliate-disclosure).*
+*Disclosure: some Oobit links in this article may be partner links. If you sign up through them, Crypto Watchdog may earn a referral commission at no extra cost to you. This doesn't influence our verdict — we only cover products we've independently researched. Read our full [editorial policy](/editorial-policy) and [affiliate disclosure](/affiliate-disclosure).*

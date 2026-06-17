@@ -1,166 +1,131 @@
 ---
 type: "blog"
-title: "NEYRO Just Quietly Rewrote the Rules of Crypto Trading — And Almost Nobody Has Noticed Yet"
+title: "Non-Custodial AI Trading Agents: What Aurum's NEYRO Is, and How to Judge It"
 slug: "neyro-aurum-full-presentation-non-custodial-ai-trading-agents-2026"
-summary: "Hedge-fund execution, wallet-level custody, and a live AI agent up +31.4% in 30 days. Our editorial take on why NEYRO is the most important Aurum launch yet — and why the first 100 wallets get it for 0% fee."
+summary: "Aurum's NEYRO is pitched as a non-custodial AI trading agent that never touches your keys. We explain what that actually means, where the real risks sit, and how to evaluate it — including the regulator warnings against the wider Aurum brand that anyone reading the marketing deck deserves to see first."
 category: "AI Trading Agents"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/neyro-deck/cover.jpg"
 published: true
 auto_generated: false
 published_at: "2026-04-28T11:57:39.133601+00:00"
-updated_at: "2026-05-11T04:24:41.104299+00:00"
-meta_title: null
-meta_description: null
+updated_at: "2026-06-17T22:30:00Z"
+meta_title: "Non-Custodial AI Trading Agents: Aurum NEYRO Examined"
+meta_description: "What non-custodial AI trading agents really are, the genuine risks, and how to evaluate them — with Aurum's NEYRO and the regulator warnings as a worked example."
+primary_keyword: "non-custodial AI trading agents"
 ---
-# NEYRO Just Quietly Rewrote the Rules of Crypto Trading — And Almost Nobody Has Noticed Yet
 
-> Hedge-fund execution. Wallet-level custody. A live AI agent printing **+31.4% in the last 30 days**. The first 100 wallets get it for **zero performance fee**. This is our unfiltered take on why NEYRO is the most important launch in the Aurum ecosystem since day one.
+# Non-Custodial AI Trading Agents: What Aurum's NEYRO Is, and How to Judge It
 
-![NEYRO by Aurum — non-custodial AI trading agents](https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/neyro-deck/cover.jpg)
+A new product category is being sold hard right now: **non-custodial AI trading agents**. The pitch is seductive. A machine watches the market for you, trades on your behalf, and — this is the clever part — never holds your money. Your funds stay in a wallet you control. The agent just gets permission to act.
 
-## Why this isn't just "another trading bot"
+Aurum's NEYRO is one of the loudest examples. We'll use it as our worked case throughout, because it's a partner brand of ours and you deserve to know exactly where we stand. Aurum is one of our affiliates. That doesn't earn it a free pass. If anything it raises the bar, because the only thing this site is worth is being honest even when it costs us a commission.
 
-Most "AI trading bots" are the same recycled stack: a centralised exchange, a wrapper around a Telegram signal group, and a custody promise that lasts until it doesn't. NEYRO is structurally different — and once you see *how* different, the rest of the market starts to look dated.
+So here's the honest version up front, before the explainer: several financial regulators have published public warnings about the wider **Aurum Foundation** brand, including the Bank of Russia, which placed it on its list of entities showing "signs of a financial pyramid." We'll get to the detail, with links, further down. Read that section. Then decide.
 
-It collapses three things into one product: an **AI agent** that thinks, a **non-custodial smart contract** that holds your money, and a **transparent on-chain venue** that executes the trades. You never wire funds to a company. You never hand over keys. You never trust a screenshot.
+This piece does three things. It explains what non-custodial AI trading agents actually are, in plain English. It lays out the genuine risks — the ones that survive even a perfect non-custodial design. And it gives you a checklist for evaluating any product in this category, using NEYRO as the example, hype stripped out.
 
-<figure class="not-prose my-10">
-  <div class="overflow-hidden rounded-3xl border border-border shadow-2xl">
-    <img src="https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/neyro-deck/architecture.jpg" alt="AI brain connected to a self-custodial crypto wallet" class="w-full h-auto" loading="lazy" />
-  </div>
-  <figcaption class="mt-3 text-xs text-muted-foreground italic text-center">The NEYRO architecture: an AI brain that thinks, a smart contract that holds, an on-chain venue that executes.</figcaption>
-</figure>
+## What "non-custodial AI trading agent" actually means
 
-That single architectural choice is why we're paying attention.
+Three words, three separate ideas. Take them one at a time.
 
-## The five features that make it groundbreaking
+**Non-custodial** means nobody else holds your private keys. In crypto, whoever controls the keys controls the coins. A custodial service — most centralised exchanges, most "managed" trading schemes — takes your money into accounts they control. You're trusting them to give it back. A non-custodial setup keeps the keys with you. Your funds sit in your own wallet, or in a smart contract you approved, and the operator can't simply wire them out. Ledger's primer on [custodial versus non-custodial wallets](https://www.ledger.com/academy/topics/security/custodial-vs-non-custodial-wallets) is a solid plain-English starting point if the distinction is new to you.
 
-## The track record that started the conversation
+**AI** means a model — usually a large language model wired to live market data and a set of tools — makes or proposes the trading decisions. Instead of a human or a fixed rule-based script, you've got software that reads signals and reacts.
 
-Quantum Alpha is the first agent on the platform. It's been live since **17 January 2026**. These are the audited monthly returns in our own dashboard:
+**Agent** means it acts, not just advises. A pure signal service tells you what it would do. An agent does it, within whatever permissions you've granted, without asking each time.
 
-<figure class="not-prose my-8">
-  <div class="overflow-hidden rounded-3xl border border-border shadow-xl">
-    <img src="https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/neyro-deck/performance.jpg" alt="Quantum Alpha three-month performance curve" class="w-full h-auto" loading="lazy" />
-  </div>
-  <figcaption class="mt-3 text-xs text-muted-foreground italic text-center">Three consecutive months of compounding double-digit returns.</figcaption>
-</figure>
+Put together, the category promises a real improvement over the previous decade of "trust me" trading products. Custodial managers and influencer call-groups have drained a lot of wallets. A genuinely non-custodial design removes one specific, very common failure mode: the operator running off with the float. That's a real benefit, and we won't pretend otherwise.
 
-We're not pretending that continues forever — drawdown months are mathematically certain. But the *direction* of the curve, paired with the non-custodial setup, is what makes this worth a serious look rather than a polite dismissal.
+But it removes one failure mode. Not all of them. That's the part the marketing tends to skate over.
 
-## "Where's the risk?" — let's actually talk about it
+## How NEYRO describes itself
 
-This is the question we get on every Aurum article, so let's be blunt.
+Here's what Aurum publishes about NEYRO and its lead agent, "Quantum Alpha." We're reporting these as the company's own claims, not as verified fact. According to [CoinCodex's write-up of the platform](https://coincodex.com/article/84946/neyro-inside-aurums-non-custodial-ai-trading-agent-platform/), NEYRO is built by a corporation registered in British Columbia, Canada, and positions itself as a non-custodial layer where an AI agent executes trades on-chain via smart contracts while your capital stays under your control.
 
-<figure class="not-prose my-8">
-  <div class="overflow-hidden rounded-3xl border border-border shadow-xl">
-    <img src="https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/neyro-deck/risk.jpg" alt="Risk shield protecting a self-custodial wallet" class="w-full h-auto" loading="lazy" />
-  </div>
-  <figcaption class="mt-3 text-xs text-muted-foreground italic text-center">Custody risk and counterparty risk — the two killers in crypto — are designed out at the architecture level.</figcaption>
-</figure>
+The headline numbers from the deck:
 
-<div class="not-prose my-8 border-l-4 border-primary bg-primary/5 px-6 py-5 rounded-r-2xl">
-  <p class="text-xl md:text-2xl font-heading font-semibold leading-snug">"NEYRO removes the risks that have killed more crypto users than every market crash combined. What's left is honest market risk — the only kind worth taking."</p>
-</div>
+| Claim (as marketed) | What Aurum says | Our note |
+|---|---|---|
+| Lead agent | "Quantum Alpha," live since 17 January 2026 | Short track record. Roughly five months at time of writing. |
+| Performance | ~27.6% average monthly return over three months of testing | Self-reported. We've seen no independent third-party audit of these figures. |
+| Custody | Non-custodial; funds locked in a smart contract you approve | The model is plausible; the contract itself would need an independent audit to confirm. |
+| Beta access | First 100 wallets, 0% performance fee | A scarcity-and-discount offer. Treat urgency as a sales tactic, not a reason. |
+| Minimum entry | 5,000 USDT | Not a trivial sum to put behind an unaudited track record. |
+| Fees after beta | 15% rising to 30% of profits | Standard performance-fee territory if the returns are real. |
 
-## The economic offer the deck buries on slide 13
+Two things to hold in your head at once. The *architecture* — an agent that proposes trades, a smart contract that holds funds, an on-chain venue that executes — is a legitimate design pattern that genuinely exists in 2026. And the *performance claims* attached to it are unverified marketing until someone independent checks the chain. Both can be true. A sound design wrapped around numbers nobody has audited is exactly the thing you have to learn to evaluate on its own merits.
 
-<div class="not-prose my-8 rounded-3xl border-2 border-primary bg-gradient-to-br from-primary/15 via-card to-card p-8 shadow-2xl">
-  <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-primary mb-2">Beta Economics</p>
-  <h3 class="text-2xl md:text-3xl font-heading font-bold mb-5">100% of profits, zero performance fee — for the first 100 wallets only.</h3>
-  <div class="grid gap-4 md:grid-cols-2">
-    <div class="rounded-xl bg-background/60 border border-emerald-500/30 p-5">
-      <div class="text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-1">During Beta (now)</div>
-      <div class="text-4xl font-heading font-bold mb-1">0%</div>
-      <p class="text-sm text-muted-foreground">Performance fee on all profits. You keep everything Quantum Alpha generates.</p>
-    </div>
-    <div class="rounded-xl bg-background/60 border border-amber-500/30 p-5">
-      <div class="text-xs font-semibold uppercase tracking-wider text-amber-600 dark:text-amber-400 mb-1">After Public Launch</div>
-      <div class="text-4xl font-heading font-bold mb-1">15% → 30%</div>
-      <p class="text-sm text-muted-foreground">15% from day one, rising to 30% from day 31. Same agent, very different economics.</p>
-    </div>
-  </div>
-  <div class="mt-5 grid gap-3 sm:grid-cols-2 text-sm">
-    <div class="rounded-xl bg-background/40 border border-border px-4 py-3"><strong class="text-foreground">Minimum entry:</strong> 5,000 USDT</div>
-    <div class="rounded-xl bg-background/40 border border-border px-4 py-3"><strong class="text-foreground">Hard cap:</strong> first 100 beta wallets</div>
-  </div>
-  <a href="https://backoffice.aurum.foundation/u/PKK5U0" target="_blank" rel="noopener noreferrer sponsored" class="mt-6 inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-primary-foreground shadow-lg hover:opacity-90 transition">Take a Beta Wallet Slot →</a>
-</div>
+A 27.6% monthly return, if real and sustained, would compound to something no hedge fund on earth has reliably produced. We're not saying it's fabricated. We're saying any return that good demands proof in proportion, and right now the proof is a self-reported dashboard. Drawdown months are mathematically certain in any real strategy, and three good months tells you very little about the fourth.
 
-## 🇺🇸🇨🇦 In the US or Canada? Read this first.
+## The regulator warnings you need to see
 
-NEYRO's execution venue is geo-blocked in the US and Canada only. Everywhere else (UK, EU, LATAM, Asia, Middle East) you can sign up directly — no VPN needed. If you're in the US or Canada, it's a simple IP check, not deep inspection. Any VPN — even a free one — gets you in. Three clicks:
+This is the section the marketing deck doesn't include, and it's the most important one on the page.
 
-<div class="not-prose my-6 grid gap-3 md:grid-cols-3">
-  <div class="rounded-2xl border border-border bg-card p-5">
-    <div class="text-3xl font-heading font-bold text-primary mb-1">1</div>
-    <p class="text-sm font-semibold mb-1">Grab a VPN</p>
-    <p class="text-xs text-muted-foreground"><a href="https://nordvpn.com/" target="_blank" rel="noopener noreferrer" class="text-primary underline">NordVPN</a> or any free option you trust like Proton VPN.</p>
-  </div>
-  <div class="rounded-2xl border border-border bg-card p-5">
-    <div class="text-3xl font-heading font-bold text-primary mb-1">2</div>
-    <p class="text-sm font-semibold mb-1">Switch country</p>
-    <p class="text-xs text-muted-foreground">UK, Germany, Canada or Switzerland — all unlock the backoffice.</p>
-  </div>
-  <div class="rounded-2xl border border-primary/40 bg-gradient-to-br from-primary/10 to-transparent p-5">
-    <div class="text-3xl font-heading font-bold text-primary mb-1">3</div>
-    <p class="text-sm font-semibold mb-1">Sign up</p>
-    <p class="text-xs text-muted-foreground"><a href="https://backoffice.aurum.foundation/u/PKK5U0" target="_blank" rel="noopener noreferrer sponsored" class="text-primary underline font-semibold">Open Aurum here</a>, claim your seat. Done.</p>
-  </div>
-</div>
+The **Bank of Russia** added Aurum Foundation to its public warning list of entities showing "signs of a financial pyramid." The warning, published around July 2025, names several Aurum-associated websites. You can read the regulator's own [warning-list entry](https://cbr.ru/eng/inside/warning-list/detail/?id=39074) directly. A "financial pyramid" classification means the regulator believes returns may be paid from new participants' deposits rather than genuine trading — the defining feature of a Ponzi structure.
 
-<div class="not-prose my-6 rounded-2xl border border-amber-500/40 bg-gradient-to-br from-amber-500/10 to-background p-6">
-  <div class="text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400 mb-2">🛡 Any VPN works for NEYRO access</div>
-  <h3 class="text-xl font-heading font-bold mb-2">Free or paid — even a basic VPN unlocks it</h3>
-  <p class="text-sm text-muted-foreground mb-4">It's a basic IP-region check. Free Proton VPN, Windscribe, or a paid option like NordVPN — all of them work. Always check your local regulations first. Nothing here is financial advice.</p>
-  <a href="https://nordvpn.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-foreground px-6 py-3 text-sm font-bold text-background hover:opacity-90 transition">Get NordVPN →</a>
-</div>
+New Zealand's **Financial Markets Authority** has also flagged the brand. Its [unregistered-businesses listing for Aurum Foundation](https://www.fma.govt.nz/library/unregistered-businesses/aurum-foundation/) warns New Zealand consumers about overseas regulator warnings of "pyramid-type scheme" characteristics and social-media promotion of its AI trading services. The FMA listing also signals that Aurum is not a registered financial service provider in New Zealand.
 
-## How it actually feels to set up
+Independent scam-investigation outlets, including BehindMLM and others, have separately described Aurum Foundation as a multi-level-marketing structure with referral-based recruitment incentives and reported difficulties withdrawing funds. We'd treat those write-ups as serious leads rather than settled fact — they're journalism, not regulatory findings — but the consistency across several independent sources is itself a signal worth weighing.
 
-<figure class="not-prose my-8">
-  <div class="overflow-hidden rounded-3xl border border-border shadow-xl">
-    <img src="https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/neyro-deck/setup.jpg" alt="NEYRO setup flow on mobile, smart contract, and execution venue" class="w-full h-auto" loading="lazy" />
-  </div>
-  <figcaption class="mt-3 text-xs text-muted-foreground italic text-center">Eleven slides, one sentence: log in, connect wallet, pick agent, approve.</figcaption>
-</figure>
+To be precise and fair: these warnings target the wider **Aurum Foundation** brand and its compensation structure, not a specific technical finding that the NEYRO smart contract is fraudulent. It's possible to have a genuinely non-custodial agent attached to a business whose surrounding model regulators distrust. But you cannot evaluate the agent in isolation from the company collecting your 5,000 USDT and running the referral program. The two come as a package. A regulator calling the parent brand a suspected pyramid is not a footnote. It's the headline.
 
-Eleven steps from the deck collapse into one sentence: **log into Aurum → open Financial Proposals → Neyro → connect a BNB-chain wallet (MetaMask, Trust, Binance Wallet) → click Get Access → choose Quantum Alpha → enter your USDT amount → approve the contract.**
+If you want our running file on platforms with active red flags, it lives in our [warnings hub](/warnings).
 
-That's it. Funds never leave your wallet's custody — they're locked into a smart contract you signed. We've published a full screenshot-by-screenshot walkthrough in our [11-step Quantum Alpha setup guide](/blog/self-custody-ai-crypto-trading-aurum-neyro) if you want to see every click before you make it.
+## The risks that survive a perfect non-custodial design
 
-<div class="not-prose my-10 rounded-2xl border border-border bg-card p-6 flex flex-wrap items-center justify-between gap-4">
-  <div>
-    <p class="text-xs font-bold uppercase tracking-widest text-primary mb-1">Inline CTA</p>
-    <p class="font-heading text-lg font-semibold">Ready to skip the screenshots and try it live?</p>
-  </div>
-  <a href="https://backoffice.aurum.foundation/u/PKK5U0" target="_blank" rel="noopener noreferrer sponsored" class="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-bold text-primary-foreground shadow-lg hover:opacity-90 transition">Open Aurum →</a>
-</div>
+Suppose, for argument's sake, the custody model is exactly as advertised and the smart contract is flawless. You'd still be carrying real risk. Here's what doesn't go away.
 
-## Why we think this is the most important launch of the year
+**Smart-contract risk.** "Non-custodial" usually means you *approve* a contract to move your funds within set rules. If that contract has a bug — or a backdoor — the protection is only as good as the code. Approving a malicious or buggy contract can drain a wallet just as thoroughly as handing over your keys. Before you click approve on anything, our guide to [vetting a smart contract in plain English](/blog/before-you-click-approve-a-plain-english-guide-to-vetting-a-smart-contract-2026-05-15) walks through what to check. The single most important question: has the contract been audited by a reputable independent firm, and can you read that report?
 
-Crypto has had two bad decades of "trust me" bots, custodial managers and influencer call groups. NEYRO is the first product we've audited that combines **institutional-grade execution**, **AI-driven strategy** and **wallet-level custody** in a single, regulated package — and then *gives the first hundred users the upside for free*.
+**Execution risk.** The agent can simply be wrong. It acts on bad data, a misconfigured strategy, or a market regime it wasn't trained for, and it loses money inside the rules you granted. Non-custodial doesn't mean loss-proof. It means the losses are yours, on-chain, by your own authorisation.
 
-If we're wrong, it costs the cost of a smart-contract approval and the discipline to size sensibly. If we're right, this is the template every serious trading product copies for the next five years.
+**Permission risk.** An agent needs permission to trade. The broader those permissions — unlimited token approvals, no spending cap, no whitelist — the more damage a compromised or misbehaving agent can do. The safe default is the narrowest permission that lets the thing function, and read-only access before you ever enable execution.
 
-Either way, you want a seat to find out — not a screenshot of someone else's.
+**Security risk at the "brain."** Through 2026, security researchers documented attacks aimed not at custody but at the agents themselves — their memory, and the protocols connecting them to trading tools. Industry reporting put AI-agent-related security incidents in the tens of millions of dollars for the year. Custody being safe doesn't help if the decision-making layer gets manipulated into making bad trades.
 
-<div class="not-prose my-10 rounded-3xl border border-primary/40 bg-gradient-to-br from-primary/20 via-primary/5 to-background p-8 shadow-xl text-center">
-  <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-primary mb-3">Final Step</p>
-  <h3 class="text-2xl md:text-3xl font-heading font-bold mb-3">Open AURUM, connect a wallet, copy Quantum Alpha.</h3>
-  <p class="text-muted-foreground text-base mb-6 max-w-xl mx-auto">Beta is hard-capped at 100 wallets. Once they're filled, the 30% performance fee is permanent.</p>
-  <div class="flex flex-wrap justify-center gap-3">
-    <a href="https://backoffice.aurum.foundation/u/PKK5U0" target="_blank" rel="noopener noreferrer sponsored" class="inline-flex items-center gap-2 rounded-xl bg-primary px-7 py-3 text-sm font-bold text-primary-foreground shadow-lg hover:opacity-90 transition">Open AURUM Backoffice →</a>
-    <a href="https://nordvpn.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-7 py-3 text-sm font-semibold hover:bg-muted transition">Get NordVPN (US/Canada only)</a>
-  </div>
-</div>
+**Counterparty and business risk.** This is where the Aurum warnings bite. Even a clean contract sits inside a business that sets the minimum deposit, runs the referral scheme, and controls the front end you log into. If that business is a suspected pyramid, the technical elegance of the custody layer is not the thing that determines whether you get your money back.
 
-## Related Reading
+## How to evaluate any non-custodial AI trading agent
 
-- [Aurum Foundation Review — Trust Score 82/100](/reviews/aurum-foundation) — full audit of the parent ecosystem
-- [Aurum Neyro & Quantum Alpha: Inside the First 100 Beta Wallets](/blog/aurum-neyro-quantum-alpha-beta-launch) — our launch coverage
-- [The 11-Step Self-Custody AI Trading Setup Guide](/blog/self-custody-ai-crypto-trading-aurum-neyro) — every screen, every click
-- [Aurum EX Bot: How the 0.5%/Day Bot Actually Works](/blog/aurum-ex-bot-how-it-works-step-by-step)
-- [MoneyFlare UK Crypto Trading Review 2026](/blog/moneyflare-uk-crypto-trading-review-trustpilot-withdrawals-2026-04-28)
-- [Hot Wallets vs Cold Storage: 2026 Guide](/blog/hot-wallets-vs-cold-storage-2026)
-- [Scam-Spotting Checklist](/scam-guides) · [Education Hub](/education)
+Strip away the brand and you can apply the same test to NEYRO or to any competitor. Here's the checklist we use.
+
+1. **Is the custody claim verifiable on-chain?** "Non-custodial" should be provable. You should be able to see the contract address, confirm funds are held there under rules you approved, and verify the operator can't unilaterally withdraw. If you can't independently check it, treat the claim as marketing.
+
+2. **Is the smart contract independently audited?** By a named, reputable firm, with a report you can actually read. "Audited" with no link is not audited. Open-source code helps but doesn't guarantee anyone reviewed it.
+
+3. **Is the performance independently verified?** Self-reported dashboards prove nothing. Look for an on-chain track record anyone can replicate, or a third-party performance audit. A 30% monthly return with no independent proof is the loudest red flag in the room. Our piece on [crypto performance audits](/blog/crypto-performance-audits-explained-the-investors-guide) explains what real verification looks like.
+
+4. **Does the AI claim survive scrutiny, or is it AI-washing?** Regulators have started fining firms for overstating their use of AI. The US **SEC** brought its first such cases in March 2024, settling with two advisers — Delphia and Global Predictions — for a combined $400,000 over false AI claims, per the [SEC's own announcement](https://www.sec.gov/newsroom/press-releases/2024-36). If a product leans on "AI" as a mystique word with no detail on what the model does, be sceptical. We wrote a whole guide on [how to spot AI-washing in crypto](/blog/how-to-spot-ai-washing-crypto) for exactly this.
+
+5. **What do regulators say about the operator?** Search the company name against the warning lists of the FCA, the SEC, the Bank of Russia, New Zealand's FMA and others. For Aurum, as covered above, that search returns hits. That alone would stop us recommending it.
+
+6. **What's the exit story?** Can you withdraw freely, today, with no lock-up games? Reported withdrawal difficulties are one of the most consistent early signals of a failing or fraudulent scheme. If real users describe funds getting "stuck," believe them.
+
+7. **Is urgency being manufactured?** "First 100 wallets," "fee rises after launch," "seats filling fast." Genuine opportunities don't usually need a countdown. Treat scarcity framing as a sales tool and slow down.
+
+For the wider context on this whole category — what's a real tool versus a wrapper around a signal group — our hubs on [AI in finance](/ai-finance) and [crypto trading bots](/crypto-trading-bots) collect our tested, sourced coverage in one place.
+
+## Our honest verdict
+
+The non-custodial AI trading agent category is real, and the best version of it is a genuine improvement on the custodial managers and influencer call-groups that came before. We're glad to see the design pattern exist.
+
+NEYRO presents that pattern well. But the performance figures are unverified, we've seen no public independent audit of the contract, and — the part you can't wave away — the parent Aurum brand carries active warnings from at least two financial regulators, including a Bank of Russia classification as a suspected financial pyramid.
+
+So where do we land? We can't recommend it. As a partner of Aurum, we'd lose nothing by staying quiet and a little by saying this out loud. We're saying it anyway, because that's the entire point of this site. If you're considering NEYRO, treat the regulator warnings as the headline, demand independent proof of every number before you commit a penny, and never deposit money you'd be unwilling to lose entirely. Nothing here is financial advice.
+
+## Frequently asked questions
+
+**What is a non-custodial AI trading agent, in one sentence?**
+It's software that makes and executes crypto trades on your behalf while your funds stay in a wallet or smart contract you control, so the operator never holds your keys.
+
+**Does non-custodial mean my money is safe?**
+No. It removes the risk of the operator stealing the float, which is real and valuable. It does not remove smart-contract bugs, bad trades, over-broad permissions, attacks on the AI itself, or the risk that the surrounding business is a scam. Non-custodial is one protection, not a guarantee.
+
+**Is Aurum's NEYRO a scam?**
+We can't make that determination, and we won't fake one. What we can tell you is verifiable: the wider Aurum Foundation brand is on the Bank of Russia's warning list under "signs of a financial pyramid," New Zealand's FMA has flagged it, and NEYRO's performance claims are self-reported with no independent audit we could find. Those facts are why we don't recommend it. Disclosure: Aurum is one of our affiliate partners, which is exactly why we're being this blunt.
+
+**Aurum is your partner — why publish this?**
+Because our credibility is the only thing we sell. A review that goes soft on a partner is worthless to you and, frankly, to us. We'd rather lose a commission than a reader's trust. If a partner platform has regulator warnings against it, you get to know.
+
+**How do I check the regulator warnings myself?**
+Search the company name on the official warning lists: the [Bank of Russia warning list](https://cbr.ru/eng/inside/warning-list/detail/?id=39074), New Zealand's [FMA unregistered-businesses register](https://www.fma.govt.nz/library/unregistered-businesses/aurum-foundation/), and your own country's regulator (the FCA in the UK, the SEC in the US). For the AI-claims angle specifically, the [SEC's AI-washing cases](https://www.sec.gov/newsroom/press-releases/2024-36) are a useful reference point. Do the search before you deposit, not after.
