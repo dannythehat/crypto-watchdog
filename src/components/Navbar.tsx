@@ -40,6 +40,10 @@ const Navbar = () => {
                     <span className="block truncate text-xs text-muted-foreground">{h.metaTitle}</span>
                   </Link>
                 ))}
+                <Link to="/crypto-casinos" className="block rounded-lg px-3 py-2 text-sm transition-colors hover:bg-card hover:text-primary">
+                  <span className="font-medium">Casinos &amp; Sportsbooks</span>
+                  <span className="block truncate text-xs text-muted-foreground">Best Crypto Casinos &amp; Sportsbooks 2026</span>
+                </Link>
               </div>
             </div>
           </li>
