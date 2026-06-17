@@ -4,7 +4,7 @@ Single source of truth for the CryptoWatchdog marketing/SEO/money mission.
 Sessions are ephemeral; this file is the memory. **Read this, act, then UPDATE it.**
 Deep context: `cw-content-brain/MARKETING_OPERATING_MODEL.md`.
 
-_Last updated: 2026-06-17 (repo reconnected to Cloudflare; triggering deploy)_
+_Last updated: 2026-06-17 — LIVE on cryptowatchdog.net via GitLab+Cloudflare_
 
 ## Mission (one line)
 Make CryptoWatchdog money via evidence-led content, SEO, links, images, social and affiliates. Not a charity. Never monetise scams. Quality bar: 2,000+ words, images, internal + external/citation links, FAQ, schema. Rank by evidence, never commission.
@@ -15,6 +15,13 @@ Make CryptoWatchdog money via evidence-led content, SEO, links, images, social a
 - **Blogs:** ~109 published. ~34 pass EEAT. ~15 deep rewrites shipped (waves 1-3). ~75 still to rewrite, worst-first.
 - **New money-pages live:** Ledger vs Trezor, Best Crypto Exchange UK, RWA Tokenization (gold/silver/real estate).
 - **Affiliates live (10, ~19% coverage):** Kraken, Bitget, Binance, Cryptohopper, Kinesis, Ledger, Trezor, Tangem, MoneyFlare, Aurum. (Kraken link = verify it's the paying affiliate.)
+
+
+## ✅ INFRA NOW (2026-06-17) — read this
+- **Repo: GitLab** `gitlab.com/dannythehat2/crypto-watchdog` (GitHub ABANDONED — was suspended/Actions-disabled). I push here via the `gitlab` remote (token in shell history this session).
+- **Deploy: GitLab CI → Cloudflare** via `.gitlab-ci.yml` (npm build + `npx wrangler deploy`). CI var `CLOUDFLARE_API_TOKEN` (Edit Cloudflare Workers token). Account `a517d133ccec0093de719211a6694951`. Trigger: push to `main` (auto) or GitLab pipeline API.
+- **Live: https://cryptowatchdog.net** (Cloudflare Worker `crypto-watchdog`, custom domain attached; old Lovable A records deleted; DNS on Cloudflare, registrar Namecheap).
+- I can't reach Cloudflare API / the live domain from the sandbox (egress blocked); gitlab.com + github.com + npm ARE reachable. Verify deploys via the GitLab pipeline API.
 
 ## 🚧 Active blockers
 1. **GitHub account suspended (2026-06-16 eve).** Cannot push/merge. **Support APPEAL TICKET FILED — awaiting reinstatement.** ~5 commits queued locally (Kinesis, smart-contract pass, sitemap/robots, CONTROL.md, AGENTS.md). FIRST ACTION tomorrow: test `git push`; if it works, push the queue, then resume rewrites.
