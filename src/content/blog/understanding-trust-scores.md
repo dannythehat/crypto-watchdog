@@ -2,105 +2,200 @@
 type: "blog"
 title: "Understanding Crypto Trust Scores: How We Rate Platforms"
 slug: "understanding-trust-scores"
-summary: "Learn how Crypto Watchdog calculates Trust Scores and what different score ranges mean for your safety."
+summary: "A plain-English walkthrough of how CryptoWatchdog builds its 0-100 Trust Score: the green, orange and red alerts, the multi-point audit behind every rating, and how to read a score before you deposit a penny."
 category: "Education"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog/understanding-crypto-trust-scores-how-we-rate-platforms-1776666412480.png"
 published: true
 auto_generated: false
 published_at: "2026-04-13T04:08:35.252561+00:00"
-updated_at: "2026-04-26T07:11:18.856422+00:00"
-meta_title: null
-meta_description: null
+updated_at: "2026-06-17T16:40:00Z"
+meta_title: "How CryptoWatchdog Trust Scores Work"
+meta_description: "How CryptoWatchdog builds its 0-100 crypto Trust Score: the green/orange/red alerts, the audit behind every rating, and how to read a score before depositing."
+primary_keyword: "crypto trust score"
+meta_title_len: 33
 ---
+
 # Understanding Crypto Trust Scores: How We Rate Platforms
 
-The world of cryptocurrency is often compared to the Wild West, and for good reason. For every legitimate project, there are a dozen pitfalls, scams, and poorly run platforms waiting to part you from your funds.
+When you land on a CryptoWatchdog review, the first thing you see is a number and a colour: a Trust Score out of 100, sat behind a green, orange or red alert. That single signal is meant to do one job well — give you a fast, honest read on how much risk a platform carries before you hand over any money.
 
-Here at Crypto Watchdog, our mission is to help you navigate this treacherous landscape, which is why we developed our proprietary Trust Score—a single, easy-to-understand rating that summarises our in-depth investigative findings.
+But a number is only as good as the work behind it. This page explains exactly how we build that score: what we check, how we weigh it, what the colours mean, and — just as importantly — what the score cannot tell you. We would rather you trust our method than trust us on faith.
 
-## TL;DR
+Nothing here is financial advice. A Trust Score is a research and safety tool, not a buy or sell signal. Markets, teams and regulations change, and so do our scores.
 
-*   Our Crypto Watchdog Trust Score is a comprehensive rating system designed to assess the relative safety and reliability of cryptocurrency exchanges, wallets, and services.
-*   The score is not financial advice but an investigative tool based on five core pillars: Regulation & Legal, Security & Tech, Team & Transparency, Financial Health, and User Experience.
-*   We analyse everything from a company's registration with financial authorities to the anonymity of its founders and the sustainability of its business model.
-*   A low Trust Score serves as a significant red flag, indicating high risk, while a high score suggests a platform has met our stringent criteria for safety and transparency.
-*   Scores are dynamic and are regularly reviewed and updated in light of new audits, security incidents, regulatory actions, or user reports.
+## What the Trust Score is (and is not)
 
-## Pillar 1: Regulation & Legal Standing
+The Trust Score is a 0-100 rating that summarises our investigation into a crypto exchange, wallet, broker, bot or yield platform. It compresses a lot of evidence — registrations, audits, ownership records, on-chain activity, user reports — into one comparable figure.
 
-The first question we ask when conducting a platform review is simple: who holds this company accountable? In a borderless digital world, a platform's legal and regulatory framework is its anchor to reality. An absence of oversight is one of the biggest red flags in this industry.
+Here is what it **is**:
 
-We scrutinise where a company is legally incorporated and which financial authorities it is registered with. A platform like [Kraken](/reviews/kraken), for instance, holds numerous licences and registrations across the globe, including with the UK's Financial Conduct Authority (FCA) and FinCEN in the United States.
+- A snapshot of *relative* safety and reliability at the time we last reviewed the platform.
+- An evidence-led summary, with the reasoning shown in the full review so you can check our working.
+- A living rating that we revisit when something material changes.
 
-This means it is subject to anti-money laundering (AML) laws, capital requirements, and regular reporting. While this doesn't eliminate all risk, it provides a crucial layer of accountability and a legal avenue for recourse if things go badly wrong.
+Here is what it is **not**:
 
-Contrast this with an exchange registered in a jurisdiction known for lax oversight, or worse, one with no clear corporate structure at all. The catastrophic collapse of FTX in 2022 serves as a stark reminder of this danger.
+- A guarantee. No score, however high, means a platform is risk-free.
+- A price prediction or a recommendation to invest.
+- A permanent verdict. A platform that scores well today can fail tomorrow, and a low score can rise if a team genuinely fixes its problems.
 
-The firm was headquartered in the Bahamas, a jurisdiction with a far more permissive regulatory environment, which allowed it to engage in reckless practices like commingling customer funds with its sister trading firm, Alameda Research. When the house of cards fell, customers were left with little to no protection.
+If you take one thing away: a high score lowers your odds of an obvious disaster, but it never removes your responsibility to do your own checks.
 
-A clear, robust regulatory footing in a reputable jurisdiction is a non-negotiable for a high trust score.
+## The three-colour alert system
 
-## Pillar 2: Security & Technical Audits
+Before you even reach the number, the colour tells you how to feel about a platform. We use a simple traffic-light system because most people make a gut decision in seconds, and we would rather that gut decision be informed.
 
-A crypto platform is, at its core, a technology company. Its ability to safeguard digital assets from hackers, exploits, and internal threats is paramount. Our technical assessment goes far beyond marketing claims of "bank-grade security." We demand evidence.
+| Alert | Score band | What it signals | What to do |
+| --- | --- | --- | --- |
+| Green | 70-100 | Met our core safety and transparency bar. Regulated or clearly accountable, audited, public team, sustainable model. | Reasonable starting point. Still do your own checks and never deposit more than you can afford to lose. |
+| Orange | 40-69 | Mixed picture. Some genuine strengths, but real gaps — missing audits, thin disclosure, jurisdiction concerns, or unresolved complaints. | Proceed with caution. Read the full review, understand the specific gaps, and consider safer alternatives first. |
+| Red | 0-39 | Serious red flags. Anonymous operators, unverifiable claims, "guaranteed" returns, withdrawal complaints, or signs of an outright scam. | Treat as high risk. In many red cases we advise avoiding the platform entirely. |
 
-Our investigation looks for several key indicators of technical competence:
-*   **Third-Party Audits:** Has the platform’s code been audited by reputable cybersecurity firms like Trail of Bits, OpenZeppelin, or CertiK?
+The colour and the number always agree — they are two views of the same finding. The colour is the quick read; the number lets you compare two green platforms against each other.
 
-We look for recently published, comprehensive audits, not just a logo on a webpage.
-*   **Proof of Reserves (PoR):** After the FTX debacle, PoR audits became essential. We check if a platform regularly proves, via cryptographic means, that it holds customer assets 1:1.
+## How the 0-100 score is built
 
-This is a vital check against the fractional reserve practices that have toppled so many exchanges.
-*   **Fund Security:** We verify that the vast majority of customer funds (typically 95% or more) are held in offline "cold storage," insulating them from online hacks that plagued early exchanges like Mt.
+The headline number is the product of a multi-point audit grouped into core pillars. No single pillar can carry a platform on its own — a flashy app means little if the operators are anonymous, and a famous founder means little if customer funds are not actually there.
 
-Gox.
-*   **Bug Bounty Programmes:** A mature platform encourages ethical hackers to find and report vulnerabilities in exchange for rewards. This proactive approach to security is a strong positive signal.
+The pillars we weigh:
 
-The threat isn't just external. Users themselves are often the target. We constantly monitor for threats like the [fake airdrop wallet drainer attacks](/warnings/fake-airdrop-wallet-drainer) that trick users into signing malicious transactions. A platform with a high trust score will actively educate its users on how to spot and avoid these dangers.
+- **Regulation and legal standing** — who holds this company accountable?
+- **Security and technology** — can it actually keep funds safe?
+- **Team and transparency** — who is behind it, and what is on the record?
+- **Financial health and business model** — where does the money come from, and is it sustainable?
+- **Deposits, withdrawals and support** — can you get your money in, out, and a human when it goes wrong?
+- **Claims versus reality** — do the marketing promises survive contact with the evidence?
 
-## Pillar 3: Team & Transparency
+A serious failure in a critical pillar — an anonymous team running a yield product promising fixed daily returns, say — caps the score hard, regardless of how polished everything else looks. We would rather under-rate a slick scam than over-rate it.
 
-Who is behind the curtain? In an industry rife with anonymity, knowing the people running a platform is critical. An anonymous or pseudonymous team is an immediate cause for suspicion. If the founders have nothing to lose by disappearing, you should assume they eventually will.
+> Want to see the framework applied step by step? Our guide to the [questions to ask before using any crypto platform](/blog/best-crypto-exchange-uk-2026) walks through the same checks we run, in the order we run them.
 
-We conduct background checks on the key leadership. Do they have a public profile, such as a verifiable LinkedIn account? What is their professional history? Have they been involved in failed or dubious projects in the past?
+## The multi-point audit, factor by factor
 
-The leadership team of a reputable company like [Coinbase](/reviews/coinbase) is public knowledge; you know exactly who is in charge.
+This is the heart of the methodology. Each review runs through the same checklist so our scores stay consistent and comparable. Below is what each factor means and roughly what moves it up or down.
 
-This transparency must extend to company communications. How does the platform communicate during a crisis, a market crash, or a security breach? Do they provide clear, honest updates, or do they resort to silence and platitudes?
+| Audit factor | What we examine | Pushes the score up | Pushes the score down |
+| --- | --- | --- | --- |
+| KYC and registration | Where the firm is incorporated; which regulators it is registered with; AML/KYC processes | FCA/recognised regulator registration; clear corporate entity; real identity verification | No registration; opaque shell company; "no KYC needed" as a selling point |
+| Deposits and withdrawals | Whether users can actually get funds in and, crucially, out | Smooth, well-documented withdrawals; no pattern of complaints | Stuck withdrawals; surprise "fees" or "taxes" demanded before payout |
+| Security and tech | Cold storage, third-party audits, proof of reserves, bug bounties | Published audits from reputable firms; majority of funds in cold storage; PoR | Unaudited code; history of breaches; vague "bank-grade security" claims with no evidence |
+| Team and transparency | Identity, track record and public profile of leadership | Named, verifiable founders with checkable history | Anonymous or pseudonymous operators; fake or borrowed personas |
+| Claims versus reality | Marketing promises tested against verifiable facts | Modest, evidence-backed claims | "Guaranteed" or "risk-free" high returns; fabricated partnerships or licences |
+| Customer support | Whether real help exists when something breaks | Responsive, human support; clear complaint routes | Ghost support; only a chatbot or a Telegram admin |
+| Backend investigation | On-chain wallet flows, domain age, hosting, corporate filings, reused scam templates | Clean on-chain history; established domain; consistent records | Freshly registered domain; on-chain links to known scams; recycled scam-site templates |
 
-The handling of the Celsius Network collapse, where users were locked out of their funds with little communication before a bankruptcy filing, is a textbook example of poor transparency.
+### KYC and registration
 
-This is where we learn lessons from history's most infamous scams. The founders of [BitConnect](/reviews/bitconnect) were largely anonymous or used fake personas, hosting lavish events to build a cult of personality while obscuring the fact that there was no real substance.
+The first question on every review is simple: who can hold this company accountable? In the UK, firms providing cryptoasset services generally must register with the Financial Conduct Authority for anti-money-laundering supervision and meet AML and customer due-diligence requirements ([FCA — Cryptoassets: AML / CTF regime](https://www.fca.org.uk/firms/financial-crime/cryptoassets-aml-ctf-regime)). Registration is not a quality stamp, but it means a real entity has been checked and can be held responsible.
 
-If you can't find the names and professional histories of the people you're trusting with your money, you are taking on an unacceptable level of risk.
+Platforms that wave KYC away as a feature, or that hide behind an untraceable shell, lose points immediately. Accountability is the anchor to reality in a borderless market.
 
-## Pillar 4: Financial Health & Business Model
+### Deposits and withdrawals
 
-"If you don't know what the product is, you are the product." This old adage is doubly true in crypto. We rigorously analyse how a platform makes money. If its business model seems unsustainable or too good to be true, it almost certainly is.
+A platform can look perfect right up to the moment you try to withdraw. We weight this heavily because frozen withdrawals are the single most common pattern in the complaints we receive. A classic scam tell is a demand for an upfront "tax", "fee" or "deposit" before your balance can be released — that is never how legitimate withdrawals work.
 
-A legitimate exchange makes money from transparent trading fees. A lending platform earns a spread between the interest it pays to depositors and what it charges to borrowers. These are understandable, sustainable business models.
+### Security and technology
 
-The danger lies with platforms promising impossibly high and "guaranteed" returns. This is the classic hallmark of a Ponzi scheme, where returns for early investors are paid using the capital of new investors.
+A crypto platform is, at its core, a technology company holding other people's money. We look for evidence, not adjectives:
 
-The Terra/Luna ecosystem's Anchor Protocol, which offered a 20% annual yield on a stablecoin, is a prime example. The yield was artificial and unsustainable, leading to a multi-billion dollar death spiral.
+- **Third-party audits.** Has the code been reviewed by an established security firm? Independent auditors review a system's architecture and codebase and publish their findings — firms like OpenZeppelin have built much of the open-source tooling the wider industry relies on ([OpenZeppelin — security audits](https://www.openzeppelin.com/security-audits)). We want a recent, readable report, not a logo on a homepage.
+- **Proof of reserves.** After FTX, proof of reserves became a baseline expectation. It uses cryptographic techniques — typically a Merkle tree of customer balances checked against on-chain holdings — to show an exchange actually holds customer assets, though it has real limits, such as snapshots ageing quickly and liabilities being hard to verify in full ([MoonPay — What is proof of reserves?](https://www.moonpay.com/learn/cryptocurrency/what-is-a-proof-of-reserves-por)).
+- **Cold storage.** Keeping the majority of funds offline insulates them from online hacks.
+- **Bug bounties.** Paying ethical hackers to find holes is a sign of a mature, security-first culture.
 
-When we review a platform like the one flagged in our `YieldMax AI` review, we ask: where does the "guaranteed" 3% daily return come from? If the platform cannot provide a verifiable, logical explanation for its yield generation, we assume it's a Ponzi scheme until proven otherwise.
+For long-term holdings, the safest answer is often to remove the platform from the equation entirely. That is the logic of self-custody: with your own keys, no third party can freeze or lose your funds for you ([ethereum.org — Ethereum wallets](https://ethereum.org/en/wallets/)). We cover the trade-offs in our guides to [self-custody versus custodial wallets](/blog/self-custody-vs-custodial-wallets-2026) and the [best hardware wallets of 2026](/blog/best-hardware-wallet-2026-ledger-vs-trezor).
 
-The answer to the question "is YieldMax AI safe?" is a resounding no, precisely because its business model is a fantasy.
+### Team and transparency
 
-## Safer Alternatives
+Who is behind the curtain? An anonymous or pseudonymous team is an immediate cause for concern — if founders have nothing to lose by disappearing, you should assume some eventually will. We look for named leadership with a verifiable, checkable history, and we look at how a platform communicates during a crisis. Honest, timely updates score well; silence and platitudes do not.
 
-While no platform is without risk, our research has identified several that meet our high standards for security, regulation, and transparency. These services have earned our highest trust scores.
+### Claims versus reality
 
-*   **Centralised Exchanges:** For those new to crypto or who prefer a straightforward user experience, regulated exchanges are the best entry point. Platforms like **[Kraken](/reviews/kraken)** and **[Coinbase](/reviews/coinbase)** have operated for years, comply with strict regulations, and have robust security measures.
-*   **Self-Custody Hardware Wallets:** For long-term holding, nothing beats taking control of your own keys. Hardware wallets like the **[Ledger Nano X](/reviews/ledger-nano-x)** and the **Trezor Model T** keep your private keys completely offline, making them immune to online hacks. This is the gold standard for asset security.
-*   **Decentralised Finance (DeFi):** For more advanced users, battle-tested DeFi protocols offer financial services without a central intermediary. Protocols like **[Aave](/reviews/aave)** for lending/borrowing and **[Uniswap](/reviews/uniswap)** for token swaps have billions in locked value and have withstood the test of time and market volatility. However, they carry their own unique technical risks and require more user knowledge.
+This is where marketing meets evidence. We take each headline promise — a licence, a partnership, a return figure — and try to verify it independently. Claims that cannot be verified are treated as false until proven otherwise. "Guaranteed" or "risk-free" high yields are among the most reliable warning signs in the entire industry.
 
-## Your Action Checklist Before Using Any Platform
+### Customer support
 
-Before you deposit a single pound on any crypto platform, run through this checklist. It could save you from financial disaster.
+When something goes wrong, can you reach a human? We test whether support is responsive and whether there is a real complaints route, or whether the only "support" is a chatbot or an anonymous admin in a chat group.
 
-*   **Check the Trust Score:** Start by looking up the platform in our `/reviews` section. See if we have already done the heavy lifting for you.
-*   **Identify the Founders
+### Backend investigation
 
-> **See trust scores in action:** Our [practical checklist for vetting a crypto exchange](/blog/how-to-pick-safe-crypto-exchange-2026) shows the same framework applied step-by-step. The [$RAVE token collapse case study](/blog/rave-token-collapse-binance-market-maker-scam-2026) walks through how a Binance-listed asset still failed our scoring rubric. And our recent [Bitget 2026 audit (92/100)](/blog/bitget-2026-review-universal-exchange-rwa) shows what an industry-benchmark score looks like in detail.
+This is the work you do not see on the surface. We look at on-chain wallet flows, the age of the domain, where the site is hosted, corporate filings, and whether the platform reuses a template we have already seen on other scam sites. A freshly minted domain wired to wallets with links to known fraud is damning, however polished the front end looks. Our [CryptoMine Pro scam warning](/warnings/cryptomine-pro-scam-warning) shows this kind of backend digging in practice.
+
+## A worked example: green versus red
+
+To make this concrete, compare two ends of the spectrum.
+
+A platform like the one in our [Kraken review](/reviews/kraken) sits in green territory: it carries registrations across multiple jurisdictions, publishes proof-of-reserves attestations, holds the bulk of assets in cold storage, and runs with named leadership. None of that makes it risk-free — but every critical pillar has evidence behind it. Our [Bitget review](/reviews/bitget) walks through a similar industry-grade assessment in detail.
+
+Now picture a "yield" product promising a fixed 3% daily return, run by founders no one can name, on a domain registered last month, demanding a "withdrawal tax" before paying anyone out. That is a red across the board. The maths alone — 3% a day compounds to absurd figures within months — tells you the returns must come from new depositors, not real activity. That is the structure of a Ponzi scheme, and it caps the score near zero no matter how clean the website looks.
+
+*Affiliate disclosure: some review pages we link to may contain affiliate links, meaning we could earn a commission at no extra cost to you. This never affects a platform's Trust Score, which is determined solely by our audit.*
+
+## How scores change over time
+
+Trust Scores are dynamic. We revisit a rating when something material happens, including:
+
+- A new or expired regulatory registration.
+- A fresh security audit — or a security breach.
+- A change of ownership or leadership.
+- A pattern of new user complaints, especially about withdrawals.
+- On-chain or corporate findings that contradict earlier claims.
+
+A platform that cleans up its act can earn a higher score. One that slips — lets an audit lapse, goes quiet during a crisis, or starts stalling withdrawals — will see its score fall. The colour you see is the most recent honest read, not a verdict carved in stone.
+
+## How to read a score before you deposit
+
+Use the Trust Score as the start of your own process, not the end of it. Before committing funds to any platform:
+
+1. **Read the full review, not just the number.** The colour tells you the headline; the body tells you *why*, and the why is what matters for your situation.
+2. **Check the date.** Look at when the review was last updated. The older it is, the more you should verify things yourself.
+3. **Find the operators.** If you cannot identify and verify the people running a platform, treat that as a serious risk on its own.
+4. **Test a small withdrawal early.** Before depositing meaningfully, confirm you can actually take money out.
+5. **Be ruthless about "guaranteed" returns.** Sustainable yield is explainable. If no one can tell you exactly where the money comes from, assume it does not exist.
+6. **Match the tool to the job.** For long-term holdings, self-custody on a reputable hardware wallet removes platform risk altogether.
+
+## What a Trust Score cannot do for you
+
+We are deliberate about the limits of this system, because over-trusting any single signal is itself a risk:
+
+- It cannot see the future. A clean platform today can be mismanaged tomorrow.
+- It cannot price market risk. Even the safest exchange cannot stop the assets you hold from losing value.
+- It cannot protect you from yourself. Most losses we see start with a user being rushed, greedy or scared into a bad decision. A calm, sceptical mindset is the best wallet protection there is.
+
+Treat the Trust Score as a smart, well-researched second opinion — one that does a lot of the heavy lifting, but never replaces your own judgement.
+
+## Frequently asked questions
+
+**Is a high Trust Score a guarantee that a platform is safe?**
+
+No. A high score means a platform met our core safety and transparency criteria at the time we reviewed it, which lowers the odds of an obvious disaster. It does not remove market risk, future mismanagement risk, or your responsibility to do your own checks. No score is a guarantee.
+
+**What do the green, orange and red alerts actually mean?**
+
+Green (70-100) means the platform cleared our core bar and is a reasonable starting point with normal caution. Orange (40-69) means a mixed picture with real gaps worth understanding before you commit. Red (0-39) means serious red flags — often a recommendation to avoid the platform entirely.
+
+**How often are Trust Scores updated?**
+
+There is no fixed schedule. We revisit a score whenever something material changes — a new audit, a security incident, a regulatory action, a change of ownership, or a pattern of user complaints. Always check the "updated" date on a review before relying on it.
+
+**Why does an anonymous team lower the score so much?**
+
+Because accountability depends on knowing who is responsible. If the people running a platform cannot be identified and have nothing to lose by disappearing, there is no realistic route to recourse if things go wrong. Anonymity is one of the strongest risk signals we track.
+
+**Does proof of reserves mean my money is completely safe?**
+
+No. Proof of reserves is a valuable check that an exchange holds customer assets, but it has limits: snapshots can be out of date quickly, and total liabilities are hard to verify in full. It is one positive signal among several, not a guarantee on its own.
+
+**Do affiliate links influence a platform's Trust Score?**
+
+No. Scores come solely from our audit. Some review pages may contain affiliate links that earn us a commission at no extra cost to you, but that commercial relationship never changes the rating or the evidence behind it.
+
+**Is the Trust Score financial advice?**
+
+No. It is a research and safety tool designed to help you assess risk. It is not a recommendation to buy, sell or invest, and it is not a substitute for professional advice or your own due diligence.
+
+## The bottom line
+
+The Trust Score exists to turn hours of investigation — registrations, audits, on-chain forensics, complaint patterns — into one honest signal you can read in seconds. The colour gives you the gut check; the number lets you compare; the full review shows our working so you never have to take it on faith.
+
+Use it as the start of your own diligence, keep more of your long-term holdings in [self-custody](/blog/self-custody-vs-custodial-wallets-2026), and stay sceptical of anything promising guaranteed returns. That combination — a researched second opinion plus your own calm judgement — is the most reliable protection you have.
