@@ -1,14 +1,14 @@
-Somewhere right now, a piece of software is buying and selling crypto while its owner sleeps. That's the pitch behind crypto trading bots: hand off the twitchy parts of trading to a program that watches charts and places orders without panicking. Some genuinely do that job. Others are plain old investment fraud in a lab coat made of jargon. What tells them apart almost never comes down to how slick the software looks. It comes down to one question: who's actually holding your money?
+Somewhere right now, a piece of software is buying and selling crypto while its owner sleeps. That's the pitch behind crypto trading bots: hand off the twitchy parts of trading to a program that watches charts and places orders without panicking. Some genuinely do that job. Others are just investment fraud dressed up in jargon. What tells them apart almost never comes down to how slick the software looks. It comes down to one question: who's actually holding your money?
 
 This guide covers how crypto trading bots work, the main types you'll meet, the single red flag that splits a real tool from a con, and how to set one up safely. We don't predict prices, and we won't pretend a bot is a sure bet. We'll help you dodge the setups built to take your funds and run.
 
 ## What a crypto trading bot actually is
 
-Peel off the branding and a crypto trading bot is just software that places buy and sell orders on an exchange according to rules. The rules can be dead simple ("buy a little every day") or fiddlier ("stack a ladder of orders across a price range"), but the bot is a doer, not a fortune teller. It follows instructions, steadier than any human at 3am.
+Peel off the branding and a crypto trading bot is just software that places buy and sell orders on an exchange according to rules. The rules can be dead simple ("buy a little every day") or fiddlier ("stack a ladder of orders across a price range"), but the bot only does what it's told. It follows instructions, and it does so consistently, without getting tired or emotional.
 
 Here's the part that matters most. A legitimate bot doesn't need to hold your coins. It plugs into your exchange account through an API key and places orders for you. Your assets stay put, in your name. The bot can trade them and nothing else. Hang on to that, because it's the test this whole guide keeps circling back to.
 
-A bot can't conjure profit the strategy underneath it doesn't already contain. Feed it weak logic and all you've built is a machine that loses money more reliably. Past performance promises nothing about what comes next.
+A bot can't conjure profit the strategy underneath it doesn't already contain. Feed it weak logic and all you've done is automate your losses. Past performance promises nothing about what comes next.
 
 ## Types of trading bot
 
@@ -24,7 +24,7 @@ Dollar-cost averaging bots buy a fixed amount on a schedule, or top up a positio
 
 ### AI / signal bots
 
-These reckon they can read the market and trade off predictions or third-party signals. Some honestly automate a documented strategy. Plenty just slap "AI" on the box to dress up forecasts no public retail tool can make. Treat confident predictions like a stranger flogging a "sure thing" at the pub, and see our wider [AI finance](/ai-finance) coverage. The label tells you little; the mechanics tell you everything.
+These reckon they can read the market and trade off predictions or third-party signals. Some honestly automate a documented strategy. Plenty just slap "AI" on the box to dress up forecasts no public retail tool can make. Be sceptical of any confident prediction here, and see our wider [AI finance](/ai-finance) coverage. The label tells you little; the mechanics tell you everything.
 
 ### Copy-trading bots
 
@@ -34,7 +34,7 @@ Copy-trading bots mirror someone else's trades automatically. Done properly, the
 
 This beats any feature list or glossy dashboard. A legitimate crypto trading bot connects to your exchange account and trades there. A scam asks you to deposit your money into its own wallet, platform or "trading pool", usually dangling fixed or suspiciously juicy returns.
 
-The second your funds sit in someone else's wallet, you've stopped trading and started trusting. The classic con runs beat for beat: deposit, watch a dashboard of made-up gains climb, then find the withdrawal button does precisely nothing while the real money's long gone. The promise is the bait. Custody is the hook.
+The second your funds sit in someone else's wallet, you've stopped trading and started trusting. The classic con runs the same way every time: you deposit, you watch a dashboard of made-up gains climb, then you find the withdrawal button does nothing while the real money's long gone.
 
 The rule is blunt. If a bot wants you to send it your coins, walk. If it trades through an API key on your own account, it's cleared the one hurdle that counts. When something matches the deposit-and-promise pattern, check our [scam warnings](/warnings), and read our investigation into [whether Telegram trading bots are safe](/blog/are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09) for the messaging-app version.
 
@@ -49,7 +49,7 @@ When we size up a crypto trading bot, custody leads.
 - **Company footprint.** Is there a real, named operator, clear terms, and a regulatory posture you can check?
 - **Exchange compatibility.** Reputable bots plug into established venues. If you're shopping around, our [crypto exchanges](/crypto-exchanges) coverage is a good place to start.
 
-A tool can be straight as a die and still lose money in a rotten market. Our rating judges integrity and safety, never returns.
+An honest tool can still lose money in a bad market. Our rating judges integrity and safety, never returns.
 
 ## How to start safely (API keys, no withdrawal permissions)
 
@@ -62,4 +62,4 @@ Picked a bot that passes the custody test? Set it up like you expect it to misbe
 5. **Start small and watch closely.** Begin with an amount you could lose without losing sleep, and confirm the bot behaves before scaling up.
 6. **Review and revoke regularly**, binning keys you no longer use.
 
-Get these basics right and the worst a bot can do is trade badly, not rob you blind. That won't hand you returns, but it removes the one risk that turns a dud tool into a catastrophe.
+Get these basics right and the worst a bot can do is trade badly, not empty your account. That won't hand you returns, but it removes the one risk that turns a dud tool into a catastrophe.

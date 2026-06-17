@@ -1,4 +1,4 @@
-Buying, selling and minting NFTs is easier than it's ever been. Staying safe while you do it? That's where people come unstuck. Most folks agonise over which platform to use, when the platform is almost never the thing that empties their wallet. This guide covers how NFT trading actually works and the habits that keep your assets yours. It's principle-based, so it should still stand long after today's hot collection is tomorrow's punchline.
+Buying, selling and minting NFTs is easier than it's ever been. Staying safe while you do it? That's where people come unstuck. Most folks agonise over which platform to use, when the platform is almost never the thing that empties their wallet. This guide covers how NFT trading actually works and the habits that keep your assets yours. It's principle-based, so it should still stand long after today's hot collection has been forgotten.
 
 ## What an NFT marketplace does
 
@@ -20,7 +20,7 @@ Chain-specific marketplaces live on a single network, tuned to its fee model, wa
 
 ### GameFi & play-to-earn
 
-GameFi and play-to-earn platforms tie NFTs to in-game items, characters or land. The NFT is meant to be used, not admired in a drawer, and its value rides on a living game economy and an active player base. These markets swing hard and lean heavily on one project staying healthy. We make no predictions about the value. Treat the "earn" promises with a sceptical eyebrow, read the documentation, and only commit money you can afford to lose.
+GameFi and play-to-earn platforms tie NFTs to in-game items, characters or land. The NFT is meant to be used, not admired in a drawer, and its value rides on a living game economy and an active player base. These markets swing hard and lean heavily on one project staying healthy. We make no predictions about the value. Treat the "earn" promises with caution, read the documentation, and only commit money you can afford to lose.
 
 ### Digital collectibles
 
@@ -29,15 +29,15 @@ Digital collectibles cover art, profile pictures, music and memorabilia, often s
 
 ## NFT scams & wallet drainers (the real danger)
 
-This is where the money disappears, and almost none of it is the marketplace's fault. The pattern is depressingly consistent: a malicious transaction or approval you're tricked into signing, and then your assets walk out the door. Here's what the chancers are running:
+This is where the money disappears, and almost none of it is the marketplace's fault. The pattern is depressingly consistent: a malicious transaction or approval you're tricked into signing, and then your assets walk out the door. Here's what to watch for:
 
 - **Fake mints and lookalike collections.** Scammers clone a project's art, name and imagery, then push a "mint" on a fraudulent site. Always reach a mint through the project's own verified channels, never a link from a DM or reply.
 - **"Free NFT" and airdrop drainers.** A mystery NFT lands in your wallet, inviting you somewhere to "claim" more. Connect and sign, and you may hand over sweeping permissions you never meant to give. Our guidance on [crypto freebies and airdrops](/freebies) explains why "free" is so often the bait.
-- **Malicious approvals and `setApprovalForAll`.** One broad approval can let a contract move your entire collection. That's not a feature, that's a back door. Read what each one actually grants.
+- **Malicious approvals and `setApprovalForAll`.** One broad approval can let a contract move your entire collection. Read what each one actually grants before you sign.
 - **Blind-signing prompts.** If a signature request is gibberish or won't say what it's for, don't sign it. Legitimate actions can be explained plainly.
 - **Fake support and "verification" agents.** No genuine team will ever ask for your secret recovery phrase or rush you into signing. Urgency is the tell.
 
-If you spot a dodgy mint, or you've already been caught, our [scam warnings](/warnings) lay out what to do next. And give a wide berth to "recovery" services that demand fees upfront. Same con, different hat.
+If you spot a dodgy mint, or you've already been caught, our [scam warnings](/warnings) lay out what to do next. And give a wide berth to "recovery" services that demand fees upfront. They're usually just another scam targeting people who've already lost money.
 
 ## How we rate NFT marketplaces
 

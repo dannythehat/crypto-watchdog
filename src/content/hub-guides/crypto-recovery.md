@@ -13,8 +13,8 @@ This doesn't mean nothing can ever be done. The honest answer is "it depends, an
 Recovery fraud gets called the "second scam" because it targets people already defrauded once. The playbook is grimly predictable:
 
 - **They find you when you're vulnerable.** They buy or scrape lists of victims, lurk on complaint forums and social media, and cold-contact anyone who's posted about a loss. Your pain is their lead generation.
-- **They pose as authority.** Fake "blockchain forensics firms", bogus law enforcement, pretend regulators, imitation lawyers. The whole costume box, borrowed to look respectable.
-- **They show you "proof".** A dashboard that seems to display your recovered funds, fabricated case numbers, screenshots of seizures that never happened. It's stagecraft, every pixel.
+- **They pose as authority.** Fake "blockchain forensics firms", bogus law enforcement, pretend regulators, imitation lawyers. Borrowed credibility, chosen to look respectable.
+- **They show you "proof".** A dashboard that seems to display your recovered funds, fabricated case numbers, screenshots of seizures that never happened. None of it is real.
 - **They ask for money to release the money.** First an "upfront fee", then a "tax", a "release charge", a "wallet activation cost", maybe a "bribe for the exchange". The demands never stop while you keep paying.
 - **They ask for access.** Some go for your seed phrase, wallet passwords, or remote control of your device, which lets them empty whatever you've managed to hang onto.
 

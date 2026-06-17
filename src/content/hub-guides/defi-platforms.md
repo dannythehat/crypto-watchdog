@@ -1,15 +1,15 @@
-A bank with no manager, no branch and no one to phone when it all goes sideways. That's DeFi: lending, trading and saving run by public code instead of a company you're forced to trust. The openness is the pitch, and the trap. The same smart contracts that cut out the middleman can freeze your funds, hide a bug, or be rigged to fatten their creators while you foot the bill.
+DeFi is lending, trading and saving run by public code instead of a company you're forced to trust. The openness is the pitch, and the trap. The same smart contracts that cut out the middleman can freeze your funds, hide a bug, or be rigged to pay their creators while you foot the bill.
 
 This guide does one job: help you tell the genuinely useful from the doomed. It won't pick a token, and it makes zero price predictions. People searching for the "best defi platforms" think they want a ranking; what they need is a way to dig for themselves.
 
 ## What is DeFi (and what makes a protocol trustworthy)
 
-DeFi is financial apps on public blockchains, where smart contracts enforce the rules rather than a bloke in a back office. You deal with it from your own wallet.
+DeFi is financial apps on public blockchains, where smart contracts enforce the rules rather than a company behind the scenes. You deal with it from your own wallet.
 
 Trustworthy protocols share a few habits. None is a golden ticket alone, but stack them up and a picture forms:
 
 - **Transparent, audited code.** Contracts are public, reviewed by reputable independent firms, with reports there to read. A real report, not just a logo.
-- **A business model you can explain in one breath.** If you can't say where the yield comes from in a sentence, that's not a clever mystery. It's a red flag in a tuxedo.
+- **A business model you can explain simply.** If you can't say where the yield comes from in a sentence, that's not a clever mystery. It's a warning sign.
 - **A track record.** It's survived volatile markets without freezing withdrawals or rewriting the terms.
 - **Sensible governance.** Admin keys, upgrade powers and treasury controls are disclosed, ideally behind time-locks and multi-sig rather than one anonymous person.
 - **Honest communication.** The team flags the risks plainly and never reaches for "guaranteed" or "risk-free".
@@ -34,7 +34,7 @@ Staking secures certain blockchains and pays rewards from network issuance and t
 
 ### Derivatives
 
-Perpetual futures, options and synthetic-asset platforms let you take leveraged or hedged positions on-chain. They're the deep end. Leverage magnifies losses, funding rates nibble at positions, and these tangled contracts are a favourite snack for exploiters. For experienced hands only.
+Perpetual futures, options and synthetic-asset platforms let you take leveraged or hedged positions on-chain. They're the riskiest category here. Leverage magnifies losses, funding rates erode positions over time, and these complex contracts are a frequent target for exploiters. For experienced hands only.
 
 ### Analytics and tools
 
@@ -44,11 +44,11 @@ Dashboards, block explorers and portfolio trackers don't hold a penny, but they'
 
 The most useful skill in DeFi is asking one rude question: where does this return actually come from? "Real yield" is paid out of genuine activity, trading fees, borrowing interest, network rewards. It's variable and unglamorous, because real revenue is limited.
 
-"Ponzi yield" is paid mostly from new deposits, or by printing more of the protocol's own token. It dazzles, then folds the instant new money slows. Tells that a yield is running on fumes:
+"Ponzi yield" is paid mostly from new deposits, or by printing more of the protocol's own token. It looks impressive, then collapses the instant new money slows. Signs that a yield isn't sustainable:
 
 - Advertised returns far above what lending, trading or staking could realistically produce.
 - Rewards paid mostly in a token the project mints itself, with barely any outside demand.
-- Pressure to recruit mates, or bonuses for referrals. That's a downline, not a yield.
+- Pressure to recruit other people, or bonuses for referrals. The returns depend on more sign-ups, not real activity.
 - Vague hand-waving about secret "arbitrage" or "AI" strategies.
 - Returns sold as fixed or "guaranteed" whatever the market's doing.
 
@@ -63,7 +63,7 @@ No checklist kills risk dead, but these deserve a hard squint. Several together 
 - **Suspicious TVL.** A towering total value locked can be puffed up by the project's own token or by wash trading. Look at what it's made of, not the number.
 - **Excessive admin power.** Upgradeable contracts with no time-lock, or a single key that can move user funds, are structural risks whatever the intentions.
 - **Locked or delayed withdrawals.** Trouble getting your money out is one of the earliest signs the wheels are coming off.
-- **Manufactured urgency.** Countdown timers, limited "allocations" and frantic launches exist to rush you past the bit where you think.
+- **Manufactured urgency.** Countdown timers, limited "allocations" and frantic launches exist to rush you into deciding before you've thought it through.
 
 Plenty of these turn up in collapses we've documented; our [scam warnings](/warnings) list is worth a look before you commit funds. The mechanics of an exit scam are laid bare in our [seven on-chain signals of a rug pull](/blog/anatomy-of-a-rug-pull-7-on-chain-signals-2026).
 

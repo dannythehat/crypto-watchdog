@@ -1,4 +1,4 @@
-Every token you buy and every transfer you make, something underneath quietly writes it down and swears it's true. That something is a blockchain — the part most people use constantly and understand least. A bit like driving daily without clocking how the brakes work. Let's fix that. This guide covers how crypto blockchains differ, what makes one sturdier than the next, and why a well-established chain shaves off some risk without excusing you from vetting the token you're handing money to.
+Every token you buy and every transfer you make, something underneath quietly writes it down and swears it's true. That something is a blockchain — the part most people use constantly and understand least. This guide covers how crypto blockchains differ, what makes one sturdier than the next, and why a well-established chain shaves off some risk without excusing you from vetting the token you're handing money to.
 
 ## What a blockchain is and why the chain matters
 
@@ -20,13 +20,13 @@ Designs differ. Some chase decentralisation and security and shrug off speed; ot
 
 ### Layer 2 scaling networks
 
-Layer 2 networks sit on top of a Layer 1 to make transactions faster and cheaper while, in theory, borrowing the base chain's security. They handle most activity off the main chain, then post compressed proofs back to the Layer 1 that anchors them. Think express checkout that still reports to head office.
+Layer 2 networks sit on top of a Layer 1 to make transactions faster and cheaper while, in theory, borrowing the base chain's security. They handle most activity off the main chain, then post compressed proofs back to the Layer 1 that anchors them. Most of the work happens off-chain, but the base chain is still what settles it.
 
 The draw is obvious: lower fees, quicker confirmations. That's why so much [DeFi platform](/defi-platforms) activity has shifted onto Layer 2s. But mind the small print. Not every Layer 2 inherits security to the same degree, some still lean on a single operator to order transactions, and the tech's younger than the Layer 1s beneath it. Give one the same hard look you'd give any chain.
 
 ### Bridges (and bridge risk)
 
-Bridges connect separate chains so assets can hop between them — say, Layer 1 to Layer 2. Handy. They've also been one of the most exploited bits of crypto going, because a bridge sits on a fat pile of locked funds. To an attacker, that's a piñata.
+Bridges connect separate chains so assets can hop between them — say, Layer 1 to Layer 2. Handy. They've also been one of the most exploited bits of crypto going, because a bridge sits on a large pool of locked funds, which makes it a prime target for attackers.
 
 When you bridge, you're trusting the bridge's smart contracts and operators, not just the chains at either end. Stick to bridges that are well audited, long-running and widely used, and move small amounts first. And "wrapped" tokens on the far side are only ever as sound as the bridge backing them. If the bridge cracks, so do they.
 

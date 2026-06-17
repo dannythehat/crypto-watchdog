@@ -1,10 +1,10 @@
-Most "ways to earn" in crypto are smoke and mirrors. Crypto staking is one of the rare exceptions, because the money traces back to something real: the work of keeping a blockchain honest. The catch? The word "staking" has been nicked by platforms paying from somewhere else. That gap, between the real thing and the costume version, is where most people get fleeced.
+Most "ways to earn" in crypto don't hold up to scrutiny. Crypto staking is one of the rare exceptions, because the money traces back to something real: the work of keeping a blockchain honest. The problem is that the word "staking" gets borrowed by platforms paying from somewhere else entirely. That gap, between the real thing and the imitation, is where most people get hurt.
 
-This guide explains how crypto staking actually works, the honest ways to do it, and the risks the marketing leaves out. No price predictions, no anointed winners. One idea for your back pocket: real staking pays modest, single-digit rewards funded by the network itself. Fixed, double-digit "staking" returns are usually a riskier product in staking's clothes.
+This guide explains how crypto staking actually works, the honest ways to do it, and the risks the marketing leaves out. No price predictions, no anointed winners. The key thing to hold onto: real staking pays modest, single-digit rewards funded by the network itself. Fixed, double-digit "staking" returns are usually a riskier product wearing the label.
 
 ## What staking actually is (where the yield comes from)
 
-Loads of blockchains secure themselves through proof of stake. Instead of miners torching electricity, participants lock up the network's own token to back validators, the machines that propose and confirm blocks. Do the job honestly, earn rewards. Misbehave, get penalised. Staking is committing your tokens to that process, directly or through a service.
+Loads of blockchains secure themselves through proof of stake. Instead of miners burning electricity, participants lock up the network's own token to back validators, the machines that propose and confirm blocks. Do the job honestly, earn rewards. Misbehave, get penalised. Staking is committing your tokens to that process, directly or through a service.
 
 The rewards come from two honest sources:
 
@@ -23,7 +23,7 @@ You run your own validator and stake directly. Maximum control, minimum middleme
 
 ### Liquid staking
 
-A protocol stakes for you and hands back a tradable token for your position. You can put it to work elsewhere while still earning rewards. Genuinely handy. It also stacks on exposure: you're leaning on the protocol's smart contracts, and that token can trade below the asset it stands for. Reuse it across other platforms and you're piling risk on risk like a Jenga tower. Plenty of liquid staking services sit inside the wider [DeFi platforms](/defi-platforms) ecosystem, with its own homework.
+A protocol stakes for you and hands back a tradable token for your position. You can put it to work elsewhere while still earning rewards. Genuinely handy. It also adds exposure: you're leaning on the protocol's smart contracts, and that token can trade below the asset it stands for. Reuse it across other platforms and each layer adds its own risk on top. Plenty of liquid staking services sit inside the wider [DeFi platforms](/defi-platforms) ecosystem, with its own homework.
 
 ### Exchange staking
 
@@ -47,7 +47,7 @@ Because so much of this lives in custody and keys, your security habits matter. 
 
 ## Real yields vs "too good to be true"
 
-This is where the real damage gets done. Genuine staking yields are modest and move with the network, because issuance and fees are finite by design. A platform waving a high, fixed return and calling it "staking" is almost always doing something else, and that's usually the trapdoor.
+This is where the real damage gets done. Genuine staking yields are modest and move with the network, because issuance and fees are finite by design. A platform offering a high, fixed return and calling it "staking" is almost always doing something else, and that's usually where the losses start.
 
 Tells that a "staking" return is something else:
 
