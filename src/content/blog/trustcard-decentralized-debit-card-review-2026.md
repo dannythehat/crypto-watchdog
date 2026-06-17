@@ -1,140 +1,159 @@
 ---
 type: "blog"
-title: "TrustCard Review (Pre-Beta): The World's First Decentralized Debit Card — No KYC, No Spying, 8% Cashback"
+title: "TrustCard Review (2026): The 'Decentralized, No-KYC, 8% Cashback' Card — What's Real and What Isn't"
 slug: "trustcard-decentralized-debit-card-review-2026"
-summary: "TrustCard is pitched as the world's first self-custody Visa debit card — zero KYC, up to 8% crypto cashback, Apple Pay on day one. We applied for beta access. Here is everything we know so far and why we are excited."
+summary: "TrustCard is pitched as the world's first self-custody, zero-KYC Visa card with up to 8% cashback. We dug in. The big claims don't survive contact with how regulated card networks actually work — here's our balanced, evidence-led TrustCard review."
 category: "Wallets"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog%2Ftrustcard-hero.jpg"
 published: true
 auto_generated: false
 published_at: "2026-05-06T05:02:37.392791+00:00"
-updated_at: "2026-05-10T04:15:50.083409+00:00"
-meta_title: null
-meta_description: null
+updated_at: "2026-06-17T22:00:00Z"
+meta_title: "TrustCard Review 2026: No-KYC Card Claims Tested"
+meta_description: "Our TrustCard review weighs the no-KYC, self-custody and 8% cashback claims against how regulated Visa cards actually work in 2026. Evidence-led and balanced."
+primary_keyword: "TrustCard review"
 ---
-## TrustCard: The World's First Truly Decentralized Debit Card Is Coming
+> **Crypto Watchdog verdict (pre-launch): unverified — treat the headline claims with caution.** TrustCard is marketed as the world's first decentralized, zero-KYC Visa debit card paying up to 8% cashback. We could not find a single independent source confirming the product, the company behind it, or its card issuer. Several of the central claims clash with how regulated card networks work in 2026. Until that changes, we'd put your passport — and your crypto — nowhere near it.
 
-We'll be honest — we don't get excited about every crypto card that lands in our inbox. Most are just prepaid Visas with a thin self-custody wrapper, KYC-heavy, and quietly custodial under the hood.
+## What TrustCard claims to be
 
-**[TrustCard](https://gettrustcard.com/trustcard#waitlist)** feels different. It's pitched as the **world's first decentralized debit card** — a self-custody bank card from the Trust Wallet ecosystem that lets you tap to pay anywhere Visa is accepted, **without handing over your passport, your selfies, or your spending history** to a bank.
+There's a particular kind of crypto pitch that ticks every box at once: self-custody, no identity checks, instant Apple Pay, fat cashback, a metal card, a ticking waitlist counter. TrustCard ticks all of them.
 
-We've already applied for closed beta access. If we're picked, you'll get one of the most thorough hands-on reviews on the internet — fees, latency, chargebacks, the lot. Until then, here's everything we know so far, and why this one is on our watchlist.
+According to its own site, [TrustCard](https://gettrustcard.com/trustcard#waitlist) is the "world's first decentralized debit card" — a self-custody Visa card tied to your existing crypto wallet that lets you tap to pay anywhere Visa is accepted, with **zero KYC**, **up to 8% cashback**, **0% FX fees**, and Apple Pay and Google Pay from day one. The homepage shows a limited closed beta of 500 seats and a public waitlist running past 12,000 sign-ups.
 
-> **Crypto Watchdog verdict (pre-beta):** Promising. Self-custody + zero KYC + Apple Pay on day one is a genuinely new combination. We're cautiously excited — and watching for regulatory friction.
+It's a great pitch. That's exactly the problem. When a product promises everything that's normally in tension — privacy *and* a Visa card, self-custody *and* instant fiat spending, no paperwork *and* a regulated payment rail — the right reaction isn't excitement. It's a list of hard questions. This TrustCard review is that list, with answers where we could verify them and honest flags where we couldn't.
 
-## What Is TrustCard?
+We have no relationship with TrustCard, paid or otherwise. We don't earn a penny if you join the waitlist. So we'll just tell you what we found.
 
-TrustCard is a **non-custodial Visa debit card** built around your existing crypto wallet. Instead of depositing funds into a bank account that issues the card, you keep your assets in your own wallet and TrustCard pulls liquidity at the point of sale.
+## The first red flag: nobody can confirm it exists
 
-The headline features from the official site:
+Before the fees and the cashback, start with the most basic question. Is this a real, operating product?
 
-- **Zero KYC** — sign up with just an email and a wallet address. No passport, no proof of address, no selfie.
-- **Up to 8% cashback** — paid in BTC, ETH, or stablecoins on every swipe.
-- **0% FX fees** — spend in 150+ currencies at the real interbank rate.
-- **Apple Pay & Google Pay from day one** — virtual card issued instantly, physical metal card for beta testers.
+We went looking. We searched independent crypto press, card-comparison sites, regulator registers and consumer forums. We found extensive coverage of *Trust Wallet* — the 200-million-user self-custody wallet originally built by Viktor Radchenko and acquired by Binance in 2018 — and of its separate Trust Wallet Card. We found detailed reviews of rival non-custodial cards like Oobit and [Gnosis Pay](https://gnosispay.com/). We found regulator guidance and card-network rules.
 
-If those numbers hold up in the wild, this is one of the most aggressive crypto-card propositions we've seen since the early [Crypto.com Visa days](/blog/crypto-com-2026-ecosystem-review-fees-support-verdict) — and unlike that one, **you keep your keys**.
+What we did not find was a single independent source confirming "TrustCard" at gettrustcard.com as a genuine, issued product. No reputable review. No named card issuer or Visa BIN sponsor. No registered company, no licence number, no regulator listing. Nothing but the marketing site itself and its countdown timer.
 
-## Why "Decentralized" Actually Matters Here
+That absence isn't proof of fraud. New products are sometimes genuinely early. But for anything that touches your identity documents and your crypto, "we can't verify it exists" is not a neutral finding — it's a reason to stop. A countdown clock and a "216 of 500 spots left" counter are the oldest urgency tricks in the book, and they cost nothing to fake. We'd want hard, third-party confirmation before treating any of the claims below as real.
 
-Most "crypto cards" are nothing of the sort. You deposit USDC into a custodial account, the issuer holds the funds, and a bank somewhere prints the plastic. If the issuer freezes your account, your money is gone — and we've covered plenty of those incidents in our [scam alerts feed](/warnings).
+**Unverified, and worth saying plainly:** everything in the next sections is what TrustCard *claims*. We have not been able to confirm any of it independently.
 
-TrustCard's pitch flips that model:
+## "Zero KYC" on a Visa card: this is the big one
 
-1. **Your wallet stays yours.** Funds never leave self-custody until the moment a transaction is authorized.
-2. **No central spending ledger.** Because there's no KYC tying your identity to every coffee you buy, **no government, bank, or third party can build a profile of what you spend, where, and with whom**.
-3. **No paperwork freeze risk.** There's no account to suspend, because there's no account in the traditional sense.
+Here's the claim that should make you put your wallet away.
 
-For privacy-minded users — especially those in countries where political dissent gets you de-banked — that's a meaningful shift. We cover the broader threat model in our guide to [staying private and safe in crypto](/education).
+TrustCard says you can get a Visa debit card with no KYC at all — email and a wallet address, no passport, no proof of address, no selfie. Spend anywhere Visa is accepted, no identity attached.
 
-## How TrustCard Works (Step by Step)
+In 2026, that combination is very hard to deliver legally, and that's not our opinion — it's how the rules are written. Visa and Mastercard do not permit anonymous card issuance in regulated markets, and card programmes run through regulated issuing partners who are bound by anti-money-laundering law. In the EU, the Markets in Crypto-Assets regulation (MiCA) is now the binding framework. Under MiCA, crypto-asset service providers must verify customer identity before onboarding using government-issued documents, run ongoing transaction monitoring, and comply with the Travel Rule on transfers — with the [European Securities and Markets Authority](https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica) (ESMA) as the EU coordinating regulator. The transition period has a hard outer boundary of **1 July 2026**, after which a provider operating in the EU must hold MiCA authorisation or stop, as compliance specialists like [Sumsub](https://sumsub.com/blog/crypto-regulations-in-the-european-union-markets-in-crypto-assets-mica/) lay out in detail.
 
-![How TrustCard works — wallet to tap to cashback](https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog%2Ftrustcard-howitworks.jpg)
+The plain-English version: a genuine, legal Visa card that asks for *nothing* about who you are basically doesn't exist in regulated markets right now. Industry analysis of the no-KYC card category is blunt about it — cards marketed as "no-KYC" tend to rely on tiered limits, grey-area resale schemes or offshore structures, and they have a habit of shutting down and freezing user funds, as [CryptoSlate's roundup of no-KYC cards](https://cryptoslate.com/crypto-cards/no-kyc-cards/) documents.
 
-The flow, based on the [official documentation](https://gettrustcard.com/trustcard#waitlist), is refreshingly simple:
+So a "zero-KYC Visa card" lands in one of three places, and none of them is good:
 
-**1. Connect your wallet.** Drop in an email address and link your existing self-custody wallet. No documents, no waiting period.
+1. It quietly **does** collect KYC at some later step (so the headline is misleading).
+2. It operates **outside regulated rails** in a grey area that tends to collapse, taking customer funds with it.
+3. It isn't a real, working Visa product at all.
 
-**2. Get your virtual card instantly.** A virtual Visa is issued straight to Apple Pay or Google Pay so you can spend before the metal card even ships.
+Compare that with a card we've actually rated well. [Tangem Pay](/blog/tangem-pay-decentralized-debit-card-review-2026) is about as self-custodial as a card gets — your USDC stays in your own hardware wallet until you tap — and even Tangem makes you complete KYC once to activate, because a regulated EU issuer is in the loop. Tangem is honest about that trade-off. TrustCard's pitch is that it has somehow escaped a rule that a strong, shipping competitor openly obeys. We'd want to see exactly how before believing it.
 
-**3. Top up from your wallet.** Move BTC, ETH, or stablecoins into the spend balance whenever you need. You stay in control of the keys.
+## How a non-custodial crypto card is supposed to work
 
-**4. Tap to pay anywhere.** At checkout, the card draws on your wallet balance. Visa handles the rails. Settlement happens in the background.
+To judge TrustCard's "decentralized" claim, it helps to know how the legitimate version of this actually works, because the mechanics are real even if TrustCard's version isn't verified.
 
-**5. Earn cashback in crypto.** Up to 8% back on every swipe, paid in your asset of choice. No points, no airline miles, no expiry.
+On a genuine non-custodial card — the model Oobit and Gnosis Pay use — you keep your private keys, and the funds stay in your wallet until the instant of a transaction. At the till, the card pulls stablecoins from your wallet, converts them to fiat through the payment network, and the merchant receives ordinary euros or dollars. The "self-custody" part is true right up to the swipe; the conversion and settlement are handled by a regulated party in the background. Gnosis Pay, live since 2023, links a Visa card directly to a self-custodial smart-contract wallet rather than holding your money for you, and it's a useful real-world proof that non-custodial cards *can* work.
 
-## When Will TrustCard Launch?
+Two things follow from that, and they matter for TrustCard:
 
-Based on the official site, TrustCard is currently in a **limited closed beta**, with **500 seats** allocated to early testers. As of writing, **216 of 500 beta spots remain** and the public waitlist counter is climbing past 12,400 sign-ups.
+- **Something always authorises the transaction in real time.** Even with a self-custody balance, a regulated entity sits in the settlement path. That entity is the bit that has to do compliance. You can't make it vanish just by calling the card "decentralized".
+- **Conversion happens at the point of sale.** Your crypto becomes fiat the moment you pay. That's normal — but it's also where fees, FX spreads and the "0% FX" claim need real-world testing, not a marketing number.
 
-The waitlist countdown on the homepage points to a rolling launch window — invites are being shipped **in waves throughout 2026**, region by region, as banking partners and Visa BIN sponsors come online country by country.
+None of this is exotic. It's how the working cards do it. TrustCard's materials gesture at the same flow, which is fine — but the flow itself is what makes a truly zero-KYC version so doubtful.
 
-Beta testers receive:
+## TrustCard's claims vs. how regulated cards actually work
 
-- A **free metal card** shipped worldwide
-- A permanent **+2% lifetime cashback boost**
-- Access to a **private founder Discord**
-- Voting rights on which features ship next
+Here's the same set of claims, side by side with what we can verify about the wider market. Treat the right-hand column as the reality check.
 
-We've put our application in. If we get the green light, expect a full unboxing, fee teardown, and stress test on this site within days of activation.
+| TrustCard claim | What we can verify / reality check |
+| --- | --- |
+| "World's first decentralized debit card" | Not first, and "decentralized" is doing a lot of work. Gnosis Pay (2023) and Tangem Pay already ship self-custodial Visa cards. Unverified for TrustCard. |
+| Zero KYC — email + wallet only | Regulated Visa programmes require identity verification; MiCA mandates it in the EU. A truly no-KYC legal Visa card is not a thing in 2026. **High-risk claim.** |
+| Up to 8% cashback in crypto | Among the highest advertised rates anywhere. We can't verify the funding model. Unusually high cashback is often introductory, capped, or unsustainable. |
+| 0% FX fees, 150+ currencies | "0% FX" claims usually hide a conversion spread elsewhere. Untested; needs real receipts to confirm. |
+| Apple Pay & Google Pay from day one | Plausible technically, but depends entirely on a real issuer. Unverified. |
+| 500 beta seats / 12,000+ waitlist | Classic scarcity counters. Trivial to fabricate; no independent confirmation. |
+| Free metal card + lifetime +2% cashback for testers | Common pre-launch incentive. Worthless if the product never ships. |
 
-## No Government Spying on What You Spend
+If you want cards that you can actually use today, our [crypto cards hub](/crypto-cards) tracks the ones we've rated, and the general [CoinGecko crypto-card overview](https://www.coingecko.com/learn/top-crypto-cards) is a reasonable starting map of the live market.
 
-This is the part that genuinely matters.
+## The cashback maths deserve a hard look
 
-Every traditional debit card you've ever owned generates a complete, time-stamped log of your life: where you eat, who you donate to, where you travel, what medications you buy. Banks share that data with regulators, marketers, and — in some jurisdictions — political operators.
+Eight percent back, in crypto, on every swipe, forever. Set the privacy questions aside for a second and just look at that number.
 
-TrustCard's zero-KYC, self-custody architecture is designed so that **no single party holds that ledger**. There's no compliance team flagging your transactions, no "know your customer" file with your face attached, and no government pipeline into your spending history.
+Card cashback is funded by interchange — the small fee a merchant's bank pays when you tap. In most regions interchange on debit is a fraction of a percent to low single digits. Paying out 8% on every transaction is far more than a typical interchange take, which means the money has to come from somewhere else: a token the company prints, venture funding it's burning, fees hidden elsewhere, or new sign-ups paying for old ones. We're not saying which. We're saying an 8% perpetual rate is, on its face, hard to fund honestly, and the burden is on TrustCard to show the unit economics — not on you to assume they exist.
 
-We'll stress-test this claim heavily during our review. Privacy promises are easy to make and hard to keep — especially when Visa's network is involved. But the architecture, on paper, is the most aggressive we've seen yet. For more on why this matters, see our explainer on [stablecoin privacy and self-custody](/blog).
+We've watched this pattern before with custodial cards that dangled big rewards and then quietly cut them once the marketing budget ran dry. When you see a cashback number that's well above everyone else's, the realistic outcomes are: it's introductory and gets cut, it's capped so low the headline barely applies, or it's subsidised in a way that can't last. "Sustainable and market-beating" is the rare exception, and it's never the safe assumption. No price predictions from us, and no promises about rewards — just arithmetic that doesn't obviously close.
 
-## Why We're Excited (And Where We're Cautious)
+## Where your money — and your data — would actually sit
 
-We're going to be straight with you: **we are excited about this one**. The combination of self-custody, no KYC, instant Apple Pay, and 8% cashback is genuinely new. If TrustCard delivers half of what's promised, it changes the conversation around crypto spending.
+The marketing leans hard on privacy: no central spending ledger, no government pipeline into what you buy, no compliance team flagging your coffees. For a lot of people that's an emotional pitch, and we understand why. Financial surveillance is real, and being de-banked for your politics is a genuine fear in some places.
 
-That said, our caution list is real:
+But here's the uncomfortable bit. The moment your transaction touches Visa's network — which TrustCard says it does — that transaction is processed by regulated infrastructure that keeps records. You don't get Visa's global acceptance *and* a transaction history that exists nowhere. Those two things are in direct tension. A card that genuinely left no trace anywhere wouldn't be running on Visa rails in the first place.
 
-- **Regulatory pressure.** Zero-KYC card products face heavy headwinds in the EU, UK, and US. The launch map will tell us a lot.
-- **Cashback sustainability.** 8% is aggressive. We want to see the unit economics before we call it durable.
-- **Custody at point-of-sale.** Even with self-custody balances, *something* has to authorize the Visa transaction in real time. We'll dig into exactly what that "something" is during the beta.
-- **Recovery flow.** If you lose your wallet, what happens to your card? This is the question we'll hammer hardest.
+That's the same point we made about [Tangem Pay](/blog/tangem-pay-decentralized-debit-card-review-2026): a regulated card can be impressively self-custodial on the *balance* side while still being fully traceable on the *payment* side. Anyone telling you a Visa card lets you spend totally under the radar is selling you a story. If true off-grid privacy is your actual goal, a Visa card — any Visa card — is the wrong tool, and a [self-custody wallet](/crypto-wallets) used carefully is a more honest conversation.
 
-None of these are dealbreakers — they're the standard set of questions every new card product needs to answer. We'll have answers for you the moment beta access lands.
+There's a sharper risk too. To "verify your wallet" or "activate" a no-KYC card, some schemes ask you to connect your wallet or sign a transaction. That is exactly the mechanic wallet-drainer scams use. We're not accusing TrustCard of this — we have no evidence either way — but the no-KYC card space attracts that playbook, and a related scam pattern (fake Trust Wallet "card" and KYC offers) has already been flagged publicly. Connect nothing and sign nothing until a product is independently verified.
 
-## Keywords & Topics We're Tracking
+## How we'd review TrustCard properly — and what would change our mind
 
-For readers who found this through search, here's the broader topic map this article sits inside: **decentralized debit card, self-custody Visa card, no-KYC crypto card, Trust Wallet card, crypto cashback card 2026, non-custodial bank card, privacy crypto card, Apple Pay crypto card, TrustCard beta access, TrustCard launch date, TrustCard review**.
+We rate platforms on real testing, not vibes. For a card, our [crypto exchanges and platform reviews](/crypto-exchanges) and our broader methodology lean on the same checks. If TrustCard turns out to be real and we could test it, here's what we'd demand before changing this verdict:
 
-If you're researching alternatives while you wait for an invite, our [exchange and broker reviews](/reviews) cover every major platform that currently offers a crypto card today.
+- **A named, licensed card issuer and Visa BIN sponsor**, verifiable on a regulator's register.
+- **A registered company and jurisdiction**, with real terms and conditions you can read before signing up.
+- **Honest KYC disclosure** — and if it genuinely collects none, a clear, lawful explanation of how.
+- **Independent coverage** from sources that aren't the company itself.
+- **Real spending receipts** showing the actual FX spread behind "0% FX" and where the 8% cashback truly comes from.
+- **A recovery story** — if you lose your wallet, what happens to the card and the balance?
 
-## We've Applied for Beta — Stay Tuned
+Until those exist, the rating stays where it is. Promising architecture on a slide deck is not a product. For now, if you want a self-custodial card you can use this week, start with options that actually ship and disclose their trade-offs, like the ones in our [crypto cards hub](/crypto-cards).
 
-We've submitted our beta application and we'll update this article the moment we hear back. If we get picked, expect:
+## Frequently asked questions
 
-- A full unboxing of the metal card
-- Real-world spending tests across multiple currencies
-- A latency and fee benchmark vs. [Crypto.com](/blog/crypto-com-2026-ecosystem-review-fees-support-verdict), Wirex, and Gnosis Pay
-- A privacy audit of what data actually leaves your device
-- A trust-score rating against our [8-point review framework](/about)
+### Is TrustCard legit?
 
-In the meantime, **[lock in your spot on the TrustCard waitlist](https://gettrustcard.com/trustcard#waitlist)** — every day you wait is another 1,000 people ahead of you.
+We can't confirm it is. As of this TrustCard review we found no independent verification of the product, no named card issuer, and no regulatory listing — only the marketing site. That's not proof it's a scam, but for anything involving your ID and your crypto, "unverifiable" should be read as "don't proceed yet".
 
-## Related Reading
+### Can you really get a Visa card with zero KYC in 2026?
 
-- [What Is RWA Tokenization? The Complete Guide](/rwa-tokenization)
-- [Digital Gold in 2026: The Complete Guide to Tokenized Gold](/blog/digital-gold-2026-tokenized-gold-physically-backed-tokens-guide)
-- [Crypto Wallet Reviews — Hot, Cold & Self-Custody](/reviews)
-- [Scam Alerts & Platform Warnings](/warnings)
-- [Our Review Methodology](/about)
+In regulated markets, almost certainly not in the way TrustCard implies. Visa and Mastercard don't allow anonymous card issuance, and EU rules under MiCA require identity verification by the providers in the chain. A "zero-KYC" card usually either collects KYC at a later step, runs in a grey area that tends to collapse, or isn't a working product. The card networks' own rules are the ceiling here, not the marketing copy.
+
+### Is 8% crypto cashback sustainable?
+
+Be sceptical. Eight percent is well above typical card interchange, so the rewards have to be subsidised somehow — a printed token, investor cash, hidden fees or new sign-ups. High advertised rates are frequently introductory, capped, or cut later. We make no promises about any rewards, and neither should anyone else.
+
+### Is TrustCard the same as Trust Wallet's card?
+
+We found no evidence that they're the same thing. Trust Wallet is a well-known self-custody wallet with its own separate card programme. TrustCard at gettrustcard.com appears to be a distinct, unverified product. Don't assume a familiar-sounding name means an established company is behind it — that confusion is exactly how lookalike products get traction.
+
+### What's a safer way to spend crypto with self-custody today?
+
+Look at cards that actually ship and are honest about their trade-offs. We rate [Tangem Pay](/blog/tangem-pay-decentralized-debit-card-review-2026) well because your funds stay in your own hardware wallet until you tap — though, like every regulated card, it does require KYC once to activate. Compare the live options in our [crypto cards hub](/crypto-cards) and keep your long-term holdings in a [self-custody wallet](/crypto-wallets) you control.
+
+### Should I join the TrustCard waitlist?
+
+Joining a waitlist with an email costs little. The real risk starts if you're asked to connect a wallet, sign a transaction, hand over ID, or pay anything — don't, until the product is independently verified. Countdown timers and "spots remaining" counters are pressure tactics, not facts.
+
+## Our verdict for now
+
+TrustCard is selling the dream the whole sector wishes were true: a Visa card with self-custody, no paperwork, and cashback that beats everyone. We'd love that card to exist. But the headline claims run straight into how regulated card networks and EU rules actually work in 2026, the cashback maths don't obviously add up, and — most telling — we can't independently confirm the product or the company at all.
+
+That makes this an easy verdict for now: **unverified, high-caution, hands off until it proves itself.** Real cards have named issuers, readable terms, regulator footprints and honest disclosures about KYC. When TrustCard shows us those, we'll test it properly and update this page. Until then, do your own research, and spend your crypto on rails you can actually verify.
+
+## Related reading
+
+- [Crypto cards we rate — the live market](/crypto-cards)
+- [Tangem Pay Review 2026 — a self-custody card that ships](/blog/tangem-pay-decentralized-debit-card-review-2026)
+- [Crypto wallets we trust — hardware & self-custody](/crypto-wallets)
+- [Crypto exchanges — safe vs risky](/crypto-exchanges)
 
 ---
 
-*This article is educational and not financial advice. TrustCard is a pre-launch product; details may change before public release. We have no commercial relationship with TrustCard at the time of publication. We will disclose if and when one exists.*
-
----
-
-**Related reading:** Looking for a card that ships *today*? Read our [Tangem Pay 2026 review](/blog/tangem-pay-decentralized-debit-card-review-2026) — the most self-custodial Visa debit card actually live in 42 countries.
-
----
-
-**Related reading:** Need to file your crypto taxes? Read our [CoinLedger 2026 review](/blog/coinledger-review-2026-best-crypto-tax-software) — the #1 crypto tax software with TurboTax integration and 1,000+ supported wallets and exchanges.
+*This article is educational and not financial advice. TrustCard is presented here as a pre-launch, unverified product; details may change. We have no commercial relationship with TrustCard at the time of publication and will disclose if one ever exists. Always verify a card's issuer, licensing and terms with primary sources before sharing identity documents or connecting a wallet.*

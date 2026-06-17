@@ -2,120 +2,147 @@
 type: "blog"
 title: "5 Questions to Ask Before Using Any New Crypto Platform"
 slug: "5-questions-before-using-crypto-platform"
-summary: "Five essential questions you should ask before depositing funds into any crypto platform. Simple but effective due diligence."
+summary: "Five plain questions that tell you whether a crypto platform is safe before you deposit a penny: who runs it, how it really earns, who holds your coins, what the audits say, and how you get your money back out."
 category: "Education"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog/5-questions-to-ask-before-using-any-new-crypto-platform-1776666218166.png"
 published: true
 auto_generated: false
 published_at: "2026-04-13T04:08:35.252561+00:00"
-updated_at: "2026-04-26T07:11:18.856422+00:00"
-meta_title: null
-meta_description: null
+updated_at: "2026-06-17T22:00:00Z"
+meta_title: "Is a Crypto Platform Safe? 5 Questions to Ask First"
+meta_description: "Is a crypto platform safe? Run five plain checks on the team, yield, custody, audits and withdrawals before you deposit. A calm due-diligence guide."
+primary_keyword: "is a crypto platform safe"
 ---
 # 5 Questions to Ask Before Using Any New Crypto Platform
 
-The crypto landscape is littered with the ghosts of platforms that promised the world and delivered financial ruin. Every week, it seems, a new exchange, DeFi protocol, or AI trading bot emerges, flashing tantalising returns and revolutionary technology.
+A new exchange, lending app or "AI trading" product launches almost every week, and most of them want one thing from you on day one: a deposit. The honest answer to "is a crypto platform safe?" is rarely a clean yes or no. It's a judgement you make from a handful of facts you can actually check. This guide gives you five of them.
 
-But as the multi-billion-pound collapses of FTX, Celsius, and Terra/Luna taught us, trust is a currency far more valuable than any token, and it is earned through transparency, not hype.
+We're not going to tell you any single platform is bulletproof. Nobody can. What we can do is hand you the questions that have separated the survivors from the disasters, over and over again. The big collapses of recent years weren't unknowable. The warning signs were there for anyone who stopped to ask.
 
-Before you entrust a single satoshi to the latest "next big thing," you must become your own investigator. Asking the right questions can be the difference between finding a reliable service and becoming another cautionary tale. Here is a breakdown of the essential due diligence every crypto user must perform.
+The scale of the problem is real. The FBI's Internet Crime Complaint Center reported that Americans lost about **$9.3 billion to crypto-related fraud in 2024**, a 66% jump on the year before, across nearly 150,000 complaints ([FBI press release](https://www.fbi.gov/news/press-releases/cryptocurrency-and-ai-scams-bilk-americans-of-billions)). Older adults were hit hardest, losing roughly $2.8 billion of that total. Those numbers are reported losses from one country's complaint system, so the true global figure is almost certainly higher. The point isn't to scare you off crypto. It's to make the case that five minutes of checking is cheap insurance.
 
-## TL;DR
+## The short version
 
-*   **Who is behind the platform?** Anonymity is a major red flag. Look for public, experienced teams with a verifiable track record, not faceless avatars.
-*   **How does it *really* make money?** If a platform offers returns that seem too good to be true, they almost certainly are. Understand the business model and be sceptical of "magic" yields.
-*   **Where are my assets actually held?** The phrase "not your keys, not your coins" is a law of nature in crypto. Know whether you are handing over custody of your assets or retaining control.
-*   **What are independent experts saying?** Ignore the paid influencers and marketing hype. Seek out independent security audits, genuine user reviews, and critical analysis from trusted sources.
-*   **What is the exit plan?** Before you put money in, figure out how you will get it out. Investigate withdrawal limits, fees, lock-up periods, and test the process yourself.
+If you only remember one thing from each question, remember these.
 
-## 1. Who Are the People Behind It?
+| Question | What you're really checking | Biggest red flag |
+| --- | --- | --- |
+| Who runs it? | Accountability | A fully anonymous team asking for your money |
+| How does it earn? | Whether the yield is real | "Guaranteed" returns nobody can explain |
+| Who holds the coins? | Custody and counterparty risk | You hand over keys with no audit or insurance |
+| What do audits say? | Independent verification | No audit, or a "passed" badge with no report |
+| How do you get out? | Liquidity and honesty | Easy to deposit, hard to withdraw |
 
-In an industry born from cypherpunk anonymity, this question can feel counterintuitive. Yet, it is the most crucial one.
+Work through all five before you fund an account. None of them needs technical skill. They need about half an hour and a willingness to walk away if the answers are bad.
 
-When you use a centralised exchange or a DeFi protocol, you are placing trust not just in the code, but in the people who wrote it, maintain it, and control the administrative keys.
+## 1. Who is actually behind it?
 
-An anonymous team is an unaccountable one. If things go wrong—a hack, an exploit, or a simple rug pull—there is no one to hold responsible. We saw this with the infamous Squid Game token, where anonymous developers simply vanished with millions of pounds from investors. Contrast this with established projects.
+Crypto grew out of a culture that prized anonymity, so this question can feel almost rude. Ask it anyway. When you use an exchange or a protocol, you're trusting the people who built it, run it and hold the admin keys, not just the code.
 
-The team behind the DeFi lending protocol [Aave](/reviews/aave), for instance, is public. Their reputations are on the line, creating a powerful incentive to act in the best interests of the platform and its users.
+An anonymous team is an unaccountable one. If there's a hack, an exploit or a straight rug pull, there's nobody to name, sue or even call. The Squid Game token in 2021 is the blunt version of this: anonymous developers built a token, watched it spike, then drained it and disappeared with investors' money. There was no team to chase because there was never a real team at all.
 
-**How to investigate the team:**
+Compare that to a project with a public team whose names and reputations are attached to the work. Public founders can still fail you, but they have something to lose, and that changes how they behave.
 
-*   **Check the "About Us" or "Team" page.** Does it exist? Are the people listed real?
-*   **Verify identities.** Look for LinkedIn profiles. Do they have a history in software development, finance, or cybersecurity? A founder with a decade of experience at a major tech firm is a better sign than one whose only public profile is a brand-new Twitter account with a cartoon avatar.
-*   **Examine their track record.** Have they been involved in previous successful projects? Or is their history littered with failed or questionable ventures? A quick search for a founder's name plus terms like "scam" or "controversy" is a basic, but necessary, step.
+Here's how to check, in order of effort:
 
-If the team is anonymous, you must ask why. While there can be legitimate privacy concerns, for a platform asking for your money, anonymity is a luxury it cannot afford and a risk you should not be willing to take.
+- **Find the team page.** Does one exist? Are there real names, not just first names and cartoon avatars?
+- **Verify the people.** Search LinkedIn and past projects. A founder with a decade in finance, security or engineering is a different proposition from an account created last month.
+- **Search their history.** Put each founder's name next to words like "scam," "lawsuit" or "rug." If something ugly comes up, read it before you decide.
 
-## 2. How Does It *Actually* Make Money?
+If the team is anonymous, ask yourself why. There are legitimate privacy reasons to stay pseudonymous in crypto. But a platform asking you to deposit real money is asking for trust, and anonymity and trust pull in opposite directions. Our own [Trust Scores explainer](/blog/understanding-trust-scores) walks through how we weigh team transparency against the rest of a platform's profile.
 
-"Guaranteed high returns" is the oldest siren song in finance, and it has found a new and fertile home in cryptocurrency. Platforms offering impossibly high Annual Percentage Yields (APYs) should be met with extreme scepticism.
+## 2. How does it actually make money?
 
-If you can't understand where the yield is coming from in simple terms, you are likely the source of that yield.
+"High returns, paid reliably, every month" is the line that has emptied more wallets than any hack. If a platform can't explain where the yield comes from in language you understand, treat the yield as a warning, not a feature. Often, the answer is uncomfortable: the returns are funded by new deposits, which is the definition of a Ponzi scheme.
 
-The collapse of Celsius Network is a textbook example. It promised users "market-beating yields" by lending out their deposits. However, its strategies were opaque, high-risk, and ultimately unsustainable, leading to a complete loss for depositors.
+Two collapses make the lesson concrete.
 
-Similarly, the Terra/Luna ecosystem was propped up by the Anchor Protocol's 20% APY on its UST stablecoin—a rate that was artificially subsidised and destined to fail. This is the modern face of the Ponzi scheme, a structure first made infamous in crypto by [BitConnect](/reviews/bitconnect).
+Celsius Network promised users market-beating yields by lending out their deposits. The strategies behind those yields were opaque and far riskier than customers were told, and when the model broke, depositors were left with catastrophic losses. The founder was later charged with fraud.
 
-A legitimate platform has a clear, understandable business model:
+Terra and its UST stablecoin were propped up by Anchor Protocol's roughly 20% yield, a rate that was subsidised rather than earned. When confidence cracked in May 2022, UST lost its dollar peg and the linked Luna token entered a death spiral, **wiping out about $40 billion of value within days** and helping trigger the wider 2022 crash ([The Block](https://www.theblock.co/post/382204/terraform-labs-founder-do-kwon-sentenced-to-15-years-over-40-billion-terra-luna-collapse-inner-city-press)). Founder Do Kwon was later sentenced to 15 years after pleading guilty to fraud charges; a judge estimated there may have been up to a million victims.
 
-*   **Exchanges** like [Kraken](/reviews/kraken) or Binance make money from trading fees.
-*   **Lending protocols** like Aave generate revenue by taking a small percentage of the interest paid by borrowers.
-*   **Staking services** earn a commission on the staking rewards generated by the underlying blockchain network.
+A legitimate platform can tell you, simply, where its money comes from:
 
-If a platform's explanation for its profits involves convoluted terms, "proprietary AI trading algorithms," or simply hand-waving, be warned. Legitimate yield comes from transparent economic activity, not a black box.
+- **Exchanges** earn trading and withdrawal fees.
+- **Lending protocols** take a cut of the interest borrowers pay.
+- **Staking services** earn a commission on the rewards the underlying blockchain pays out.
 
-Be especially wary of services that promise to recover stolen funds, as many are simply fronts for [recovery scams targeting crypto victims](/warnings/recovery-scam-targeting-victims).
+If the explanation involves "proprietary algorithms," a black box, or a number that never seems to move regardless of the market, slow down. Steady, guaranteed-feeling returns in a market this volatile are a signal that something is being hidden or invented. Be especially wary of services promising to recover funds you've already lost, since many of those are themselves [recovery scams targeting victims](/warnings).
 
-## 3. Where Are My Coins *Really* Held?
+## 3. Where are your coins really held?
 
-This question cuts to the core of crypto's value proposition: ownership. When you hold cryptocurrency in your own wallet, where you control the private keys, you have true ownership. When you deposit it onto a centralised exchange or custodial platform, you are trading ownership for convenience.
+This is the question that separates owning crypto from holding a promise of crypto. When you control your own private keys, you own the asset. When you deposit onto a custodial platform, you own a balance in their database and a claim against the company. Those are not the same thing, and the difference only becomes visible when something goes wrong.
 
-You hold an IOU, not the asset itself.
+FTX is the case everyone now knows. It collapsed in November 2022 after a wave of withdrawals exposed a roughly **$8 billion hole** in its accounts; customer funds had been quietly funnelled to its affiliated trading firm. Years of bankruptcy work have since recovered billions, and most creditors are being repaid based on November 2022 dollar values plus interest ([Washington Post](https://www.washingtonpost.com/business/2024/05/08/ftx-bankruptcy-recovery-customers/)). That's a better outcome than Mt. Gox's victims ever got, but "you might be made whole years later, at the old price" is not the same as "your money was safe." It never was.
 
-The implosions of Mt. Gox and, more recently, FTX, are brutal lessons in the danger of custodial risk. In both cases, users thought their funds were safe in their accounts, but the assets were being misused, mishandled, or stolen behind the scenes. When the platforms collapsed, the funds were gone.
+Custody comes in two broad shapes:
 
-**Understanding Custody:**
+| | Custodial | Non-custodial |
+| --- | --- | --- |
+| Who holds the keys | The platform | You |
+| Examples | Most centralised exchanges | Self-custody wallets, many DEXs |
+| Your main risk | The company fails, freezes, or misuses funds | You lose your keys, or a smart-contract bug drains them |
+| Your protection | Their security, insurance, regulation | Your own discipline |
 
-*   **Custodial:** The platform holds your private keys. Most centralised exchanges (CEXs) like Coinbase and Binance operate this way. You are trusting them to secure your funds. While many are heavily regulated and have insurance, they remain a single point of failure.
-*   **Non-Custodial:** You hold your own private keys, typically via a software wallet like MetaMask or a hardware wallet. Decentralised exchanges (DEXs) like Uniswap and hardware wallets like the [Ledger Nano X](/reviews/ledger-nano-x) are non-custodial. You have full control, but also full responsibility for securing your keys.
+If a platform is custodial, your safety question becomes a question about the company: is it regulated, is it insured, what's its track record, and does it publish meaningful proof of its reserves? "Proof of Reserves" attestations help, but they're a snapshot on a chosen day and don't prove the platform's liabilities, so treat them as one data point, not a clean bill of health.
 
-When evaluating a new platform, determine its custody model. If it's custodial, your "is X safe" review must focus on its security, insurance, regulatory status, and history. Many now offer "Proof of Reserves" audits, but these are merely a snapshot in time and not a guarantee against fraud or incompetence.
+If it's non-custodial, the risk moves to the code. Even holding your own keys won't save you if the protocol's smart contracts have a flaw, or if you're tricked into signing a malicious transaction by a fake browser extension or a phishing site. Our [scam warnings hub](/warnings) tracks the live ones.
 
-If the platform is non-custodial, your focus shifts to the security of its smart contracts. Even with your own keys, a vulnerability in the protocol's code could lead to a drain of funds. Also, be vigilant against scams like [fake MetaMask Chrome extensions](/warnings/fake-metamask-extensions) that aim to steal your keys directly.
+## 4. What do independent experts and audits say?
 
-## 4. What Are Independent Experts and Audits Saying?
+A platform's own marketing exists to sell you. That's not a criticism; it's just its job. Your job is to find the analysis that wasn't paid for by the people who want your deposit.
 
-Do not trust a project's own marketing. Their job is to sell you on their platform, not to provide a balanced risk assessment. Your job is to seek out independent, critical, and evidence-based analysis.
+For any DeFi protocol, an independent security audit is a baseline, not a gold star. Firms like Trail of Bits, OpenZeppelin and CertiK review smart-contract code for vulnerabilities. The badge on the homepage is the least useful part. The useful part is the report: how many issues were found, how serious they were, and whether the team actually fixed them. An audit is a health check on a specific date, not a permanent certificate, and audited protocols still get exploited.
 
-A professional security audit is a minimum requirement for any DeFi protocol. Reputable auditing firms like Trail of Bits, OpenZeppelin, or CertiK will scrutinise a platform's smart contracts for vulnerabilities. However, reading the audit report is key. Don't just look for a "passed" stamp.
+Then widen the net:
 
-Look at the number and severity of issues found, and whether the development team has fixed them. An audit is not a permanent certificate of safety; it's a health check at a specific moment.
+- **Read critical reviews,** not just glowing ones. A good review covers the team, the model, the tech and the trade-offs, not only the upside.
+- **Check the regulator.** In the UK, you can confirm whether a firm is authorised or registered using the [FCA's official register](https://www.fca.org.uk/consumers/how-check-firm-individual-authorised). If a firm isn't properly registered, you typically lose access to the Financial Ombudsman and the Financial Services Compensation Scheme, which means little recourse if it fails.
+- **Search for the complaints.** The platform's name next to "scam," "hack" or "withdrawal" will surface Reddit threads and reviews that never appear in the marketing.
 
-Beyond audits, look for in-depth reviews from trusted, independent sources (like this publication). A good "X review" will analyse the team, the technology, the business model, and the risks. Look for a balanced perspective that discusses trade-offs, not just the potential upside.
+Aggregate ratings and trust scores are a useful sanity check on community sentiment, but they can be gamed, so weigh them alongside everything else rather than treating them as the verdict. You can compare what we've found on the platforms we've reviewed across our [exchange listings](/crypto-exchanges).
 
-Our own negative review of the fraudulent service [CryptoMine Pro](/reviews/cryptomine-pro) is an example of what to look for when identifying a dangerous platform.
+## 5. What's your exit plan?
 
-Searching for a platform's name alongside terms like "scam," "hack," or "withdrawal issues" can surface user complaints on forums like Reddit or Trustpilot that won't appear in glossy marketing materials.
+Before you deposit anything meaningful, know exactly how you'll get it out, and test it. A platform that makes depositing frictionless but withdrawing painful is showing you something important about itself.
 
-A platform's "trust score" on various crypto rating sites can also provide a useful aggregate of community sentiment, though these too can be manipulated.
+What to check before you commit:
 
-## 5. What's My Exit Plan?
+- **Fees.** Are withdrawal fees reasonable, or quietly punishing? Some platforms lure you with low trading fees and recoup it on the way out.
+- **Limits.** Are there daily or monthly caps? They can be a genuine security control, or a sign the platform doesn't have the liquidity to let everyone leave at once.
+- **Lock-ups.** Does earning yield require locking your funds, and for how long? An unexpected lock-up can trap money you needed.
+- **Process.** Is a withdrawal instant and automated, or a multi-day manual approval that can stall whenever the platform chooses?
 
-Before you deposit a significant amount of capital onto a platform, you must have a clear and tested plan for getting it out. A platform that makes it easy to deposit but difficult to withdraw is a giant red flag.
+The single best test costs almost nothing. Deposit a small amount, then immediately withdraw it. You'll see the real fees, the real timing and the real friction before any serious money is on the line. If a tiny withdrawal is slow or sticky, a large one will be worse. Sudden delays or "temporary" pauses on payouts are one of the most reliable early signs that a platform is in trouble, and by the time they're public, the queue is usually already forming.
 
-**Key withdrawal factors to investigate:**
+## Putting it together
 
-*   **Fees:** Are withdrawal fees reasonable or exorbitant? Some shady platforms lure users in with low trading fees, only to charge a fortune to get their money out.
-*   **Limits:** Are there daily or monthly withdrawal limits? These might be a security feature, but they can also be a sign of liquidity problems.
-*   **Lock-up Periods:** Does the platform require you to lock your funds for a specific period to earn yield? Understand these terms completely. Unexpectedly long lock-ups can turn a good investment into a nightmare.
-*   **Process:** Is the withdrawal process simple and fast, or is it a multi-day ordeal requiring manual approval?
+You don't need all five answers to be perfect. You need them to add up. A public team with a clear business model, real audits, sane custody and clean withdrawals is a different risk from an anonymous team paying suspiciously steady "guaranteed" yields. Most genuinely dangerous platforms fail two or three of these questions at once, which is exactly why running all five catches more than running one.
 
-The best practice is to always perform a small test transaction first. Deposit a minimal amount, and then immediately try to withdraw it. This allows you to experience the entire process, verify the fees, and time the transaction from start to finish.
+If you do get caught out despite doing the checks, you're not stupid and you're not alone. These operations are designed to be convincing. Move quickly, document everything, and read our [crypto recovery guide](/crypto-recovery) before you engage anyone promising to get your money back, because that promise is itself one of the most common second scams.
 
-If you encounter any problems or unexpected delays with a small amount, you can be sure they will only be magnified with a larger sum. Reports of platforms suddenly halting or delaying payouts, like the [withdrawal issues reported for ShadowTrade Bot](/warnings/shadowtrade-withdrawal-issues-reported), are often the first sign of a sinking ship.
+## Frequently asked questions
 
-## Safer Alternatives
+### Is a crypto platform safe just because it's popular or has a slick app?
 
-Navigating the crypto world doesn't have to be a minefield. By sticking to established, well-vetted platforms, you can
+No. Popularity and a polished interface tell you about marketing budget, not solvency or honesty. FTX and Celsius were both large, well-known and heavily promoted right up until they collapsed. Judge a platform on the five questions above, not on its follower count.
 
-> **Topic-specific question sets:** If the platform is a trading bot, run our [step-by-step crypto bot audit guide](/blog/crypto-trading-bot-audit-step-by-step-guide). If it's a DeFi protocol, work through [our deep-dive on DeFi protocol risks before aping in](/blog/before-you-ape-in-a-deep-dive-on-defi-protocol-risks-2026-04-21). And before storing serious money anywhere, read [the honest 2026 hardware wallet buyer's guide](/blog/hardware-wallets-2026-buyers-guide).
+### How can I tell if a crypto exchange is legitimate and regulated?
+
+Check the relevant regulator's official register directly. In the UK, use the [FCA's firm checker](https://www.fca.org.uk/consumers/how-check-firm-individual-authorised). Confirm the exact legal entity name and registration number on the regulator's own site, not via a link the platform gives you, since fake "regulated" claims and cloned firm pages are common.
+
+### What does "not your keys, not your coins" actually mean?
+
+It means that if a platform holds your private keys, you don't directly own the crypto, you own a claim against that company. If the company fails, freezes withdrawals or misuses funds, your access depends entirely on it. Holding your own keys removes that counterparty risk, but it shifts the responsibility for security onto you.
+
+### Are audited DeFi platforms safe to use?
+
+An audit lowers risk but doesn't remove it. It's a review of the code at one point in time by one firm, and audited protocols are still exploited regularly. Read the actual report for the number and severity of findings and whether they were fixed, and treat an audit as one input rather than a guarantee.
+
+### Why should I make a small test withdrawal first?
+
+Because it surfaces problems while your exposure is tiny. A test deposit and immediate withdrawal shows you the real fees, the real processing time and any hidden friction before you commit serious money. If a small withdrawal is delayed or blocked, that's the clearest signal there is to stop.
+
+### Is any crypto platform completely safe?
+
+No, and you should be wary of anyone who says otherwise. Even well-run, regulated platforms carry custody, market and operational risk, and self-custody carries the risk of human error. The realistic goal isn't zero risk. It's choosing platforms whose risks you understand and can live with, and never depositing more than you can afford to lose.
