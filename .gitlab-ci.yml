@@ -1,0 +1,14 @@
+# Builds the site and deploys to the existing Cloudflare Worker via the API token.
+# No GitHub, no Cloudflare git-connection. Needs CI/CD variable: CLOUDFLARE_API_TOKEN
+image: node:20
+
+deploy:
+  stage: deploy
+  variables:
+    CLOUDFLARE_ACCOUNT_ID: "a517d133ccec0093de719211a6694951"
+  script:
+    - npm install
+    - npm run build
+    - npx wrangler deploy
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
