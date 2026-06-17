@@ -4,7 +4,7 @@
 export const SITE = {
   name: "CryptoWatchdog",
   baseUrl: "https://cryptowatchdog.net",
-  logo: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg",
+  logo: "https://cryptowatchdog.net/cryptowatchdog-logo.png",
   twitter: "@cryptowatchdog",
 } as const;
 
