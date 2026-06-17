@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ExternalLink, ShieldCheck, ShieldAlert, ShieldX } from "lucide-react";
 import { getReview, getAffiliateByReviewSlug, isMonetisable } from "@/content";
@@ -43,6 +44,7 @@ const TrustRing = ({ score, hex }: { score: number | null; hex: string }) => {
 
 const PlatformCard = ({ slug, variant }: { slug: string; variant: Variant }) => {
   const review = getReview(slug);
+  const [logoOk, setLogoOk] = useState(true);
   if (!review) return null;
   const s = STYLE[variant];
   const aff = getAffiliateByReviewSlug(slug);
@@ -55,8 +57,8 @@ const PlatformCard = ({ slug, variant }: { slug: string; variant: Variant }) => 
 
       <div className="relative flex items-start gap-3">
         <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-background/70">
-          {review.logo_url ? (
-            <img src={review.logo_url} alt={`${review.name} logo`} loading="lazy" className="h-full w-full object-contain p-1.5" />
+          {review.logo_url && logoOk ? (
+            <img src={review.logo_url} alt={`${review.name} logo`} loading="lazy" onError={() => setLogoOk(false)} className="h-full w-full object-contain p-1.5" />
           ) : (
             <span className="font-heading text-lg font-bold text-muted-foreground">{initial}</span>
           )}

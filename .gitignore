@@ -28,3 +28,6 @@ dist-ssr
 
 # Generated audit/report artifacts (regenerated on demand)
 data/reports/
+
+# Local screenshot/debug tooling (ephemeral)
+_*.mjs
