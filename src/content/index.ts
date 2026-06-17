@@ -115,5 +115,26 @@ export const isMonetisable = (a?: Affiliate | null): a is Affiliate =>
 export const getBlogPost = (slug: string) => blogPosts.find((p) => p.slug === slug) ?? null;
 export const getReview = (slug: string) => reviews.find((r) => r.slug === slug) ?? null;
 export const getWarning = (slug: string) => warnings.find((w) => w.slug === slug) ?? null;
+
+// Related posts for on-page navigation/internal linking: same category first,
+// then most recent, excluding the current post.
+const tokenize = (s: string) => new Set((s || "").toLowerCase().match(/[a-z0-9]+/g) || []);
+export function getRelatedPosts(slug: string, n = 6): BlogPost[] {
+  const post = getBlogPost(slug);
+  if (!post) return [];
+  const myWords = tokenize(post.title + " " + (post.summary || ""));
+  return blogPosts
+    .filter((p) => p.slug !== slug)
+    .map((p) => {
+      const words = tokenize(p.title + " " + (p.summary || ""));
+      let overlap = 0;
+      myWords.forEach((w) => { if (w.length > 3 && words.has(w)) overlap++; });
+      const score = (p.category && p.category === post.category ? 5 : 0) + overlap;
+      return { p, score };
+    })
+    .sort((a, b) => b.score - a.score || byDateDesc(a.p.published_at, b.p.published_at))
+    .slice(0, n)
+    .map((x) => x.p);
+}
 export const getReviewsByCategory = (slug?: string) =>
   slug ? reviews.filter((r) => r.categories?.slug === slug) : reviews;
