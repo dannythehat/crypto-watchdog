@@ -48,7 +48,7 @@ Brokers sell you crypto directly at a quoted price instead of matching you again
 
 The same patterns turn up across every platform that's gone bad. Treat any of these as a reason to stop and verify before another penny goes in:
 
-- Withdrawals that drag, get capped, or suddenly demand extra verification nobody mentioned.
+- Withdrawals that drag, get capped, or suddenly demand verification nobody mentioned.
 - Pressure to deposit more before you can withdraw, or "fees" and "taxes" to "release" your funds. That's not a process. That's a scam.
 - Promises of fixed or outsized returns, locked-in profits, or anything sold to you as a sure thing. Run.
 - Faceless operators, no verifiable legal entity, or a registration the regulator can't confirm.
@@ -76,6 +76,6 @@ Start by matching the model to your goal. Want self-custody? Lean toward a DEX w
 2. Make a small trade.
 3. **Withdraw to an external wallet** and watch it clear.
 
-That third step is the one almost everyone skips, and the one that tells you most. For a local view, see our write-ups on [the best crypto exchange options in the UK for 2026](/blog/best-crypto-exchange-uk-2026) and [how to pick a safe crypto exchange in 2026](/blog/how-to-pick-safe-crypto-exchange-2026).
+That third step is the one almost everyone skips, and it tells you most. For a local view, see our write-ups on [the best crypto exchange options in the UK for 2026](/blog/best-crypto-exchange-uk-2026) and [how to pick a safe crypto exchange in 2026](/blog/how-to-pick-safe-crypto-exchange-2026).
 
 No platform is without risk, and the picture shifts. Re-check custody, regulatory standing and withdrawal performance now and then, keep only what you need on any exchange, and move long-term holdings to self-custody where you can.

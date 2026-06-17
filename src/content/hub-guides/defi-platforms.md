@@ -4,9 +4,9 @@ This guide does one job: help you tell the genuinely useful from the doomed. It 
 
 ## What is DeFi (and what makes a protocol trustworthy)
 
-DeFi is financial apps on public blockchains, where smart contracts enforce the rules rather than a bloke in a back office. You deal with it straight from your own wallet.
+DeFi is financial apps on public blockchains, where smart contracts enforce the rules rather than a bloke in a back office. You deal with it from your own wallet.
 
-Trustworthy protocols share a few habits. None is a golden ticket alone, but stack them up and a picture emerges:
+Trustworthy protocols share a few habits. None is a golden ticket alone, but stack them up and a picture forms:
 
 - **Transparent, audited code.** Contracts are public, reviewed by reputable independent firms, with reports there to read. A real report, not just a logo.
 - **A business model you can explain in one breath.** If you can't say where the yield comes from in a sentence, that's not a clever mystery. It's a red flag in a tuxedo.
@@ -30,7 +30,7 @@ DEXs let you swap tokens with no intermediary, often by supplying liquidity to a
 
 ### Staking and liquid staking
 
-Staking secures certain blockchains and pays rewards from network issuance and transaction fees. Liquid staking hands you a tradable token standing in for your staked position. The rewards are genuine, but stacking that token across protocol after protocol multiplies your exposure with every hop. Our [crypto staking](/crypto-staking) guide covers lock-ups, slashing and validators.
+Staking secures certain blockchains and pays rewards from network issuance and transaction fees. Liquid staking hands you a tradable token standing in for your staked position. The rewards are genuine, but stacking that token across protocols multiplies your exposure with every hop. Our [crypto staking](/crypto-staking) guide covers lock-ups, slashing and validators.
 
 ### Derivatives
 
@@ -56,14 +56,14 @@ For the long version with worked examples, see our analysis of [real yield versu
 
 ## Red flags: audits, TVL and anonymous teams
 
-No checklist kills risk dead, but these deserve a hard squint. Several together are usually a deal-breaker:
+No checklist kills risk dead, but these deserve a hard squint. Several together are usually disqualifying:
 
 - **No audit, or a vanity one.** No independent review, or a shiny logo with nothing readable behind it. Check who did it and what they found.
 - **Anonymous, unaccountable teams.** Anonymity is normal in crypto, but it strips away your recourse. If admins can drain the pot and nobody's identifiable, you're trusting strangers with the keys.
 - **Suspicious TVL.** A towering total value locked can be puffed up by the project's own token or by wash trading. Look at what it's made of, not the headline.
 - **Excessive admin power.** Upgradeable contracts with no time-lock, or a single key that can move user funds, are structural risks whatever the team's intentions.
 - **Locked or delayed withdrawals.** Trouble getting your money out is one of the earliest signs the wheels are coming off.
-- **Manufactured urgency.** Countdown timers, limited "allocations" and frantic launches exist to rush you past the part where you think.
+- **Manufactured urgency.** Countdown timers, limited "allocations" and frantic launches exist to rush you past the bit where you think.
 
 Plenty of these turn up in collapses we've documented; our [scam warnings](/warnings) list is worth a look before you commit funds. The mechanics of an exit scam are laid bare in our [seven on-chain signals of a rug pull](/blog/anatomy-of-a-rug-pull-7-on-chain-signals-2026).
 
@@ -75,6 +75,6 @@ We don't rank by advertised yield, and we won't wave "best defi platforms" aroun
 - **Transparency:** disclosure of teams, governance, admin powers and treasury holdings.
 - **Yield sustainability:** whether returns trace to real activity rather than emissions or fresh deposits.
 - **Track record:** behaviour under stress, including whether withdrawals stayed open when markets got ugly.
-- **Recourse:** clear docs, honest fees, and what happens when something breaks.
+- **Recourse:** clear docs, honest fees, and what happens when things break.
 
 Where the evidence is thin, we say so rather than guess. DeFi rewards a sceptic. Treat outsized, unexplained yield as a question, check claims against on-chain data, and never deposit more than you can afford to lose.
