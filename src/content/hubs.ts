@@ -47,7 +47,7 @@ export const hubs: Hub[] = [
     heroSeed: 31,
     intro:
       "“AI” is the most abused word in crypto right now. For every genuine tool that uses machine learning to manage risk, there are a dozen **AI-washed** schemes that slap a chatbot on a Ponzi and promise guaranteed daily returns.\n\nWe test these platforms the same way we test everything: who runs it, where the money actually goes, and whether you can get it back out. Below are the AI finance platforms we currently **endorse**, the ones that need **caution**, and the ones to **avoid outright**. Start with our guide on [how to spot AI-washing](/blog/how-to-spot-ai-washing-crypto).",
-    trusted: ["moneyflare", "aurum-foundation", "topone-futures", "kinesis-money"],
+    trusted: ["moneyflare", "topone-futures"],
     caution: ["pionex", "3commas", "cryptohopper"],
     avoid: ["yieldmax-ai", "shadowtradebot", "crypto-signal-services-general"],
     warnings: ["yieldmax-ai-scam-warning", "telegram-investment-bot-scams", "cryptomine-pro-scam-warning"],
@@ -125,7 +125,7 @@ export const hubs: Hub[] = [
     heroSeed: 34,
     intro:
       "Copy trading sounds perfect: link your account, mirror a proven trader, and let the profits roll in. In reality, past performance is easy to fake, leverage quietly amplifies losses, and 'signal groups' are riddled with paid shillers.\n\nThere are legitimate, regulated copy-trading platforms — and a lot that aren't. Here's where we land on the main players, plus the [Telegram trading-bot investigation](/blog/are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09) everyone considering this should read.",
-    trusted: ["topone-futures"],
+    trusted: ["topone-futures", "aurum-foundation"],
     caution: ["etoro-copytrader", "zulutrade", "thomas-crypto-signals", "3commas"],
     avoid: ["crypto-signal-services-general", "shadowtradebot"],
     warnings: ["telegram-investment-bot-scams", "recovery-scam-wave-2026"],
@@ -203,7 +203,7 @@ export const hubs: Hub[] = [
     heroSeed: 71,
     intro:
       "Real-world asset (RWA) tokenization is the bridge between traditional finance and crypto — and one of the biggest narratives heading into the bull run, with tens of billions already on-chain. It lets you own a slice of **gold, US Treasuries or property** as a blockchain token.\n\nThe upside is real, but so is the risk: a token is only as good as the asset and issuer behind it. Below are the tokenization platforms we trust, the ones that need caution, and the guides to read first — starting with our [tokenized gold guide](/blog/digital-gold-2026-tokenized-gold-physically-backed-tokens-guide).",
-    trusted: ["pax-gold", "ondo-finance", "kinesis-money", "aurum-foundation", "tether-gold"],
+    trusted: ["pax-gold", "ondo-finance", "kinesis-money", "tether-gold"],
     caution: ["realt"],
     avoid: [],
     warnings: [],
