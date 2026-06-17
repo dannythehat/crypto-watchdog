@@ -58,7 +58,7 @@ const Index = () => {
                 <span className="bg-gradient-to-r from-primary to-[#5B8DEF] bg-clip-text text-transparent">Verify.</span>
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-                We put crypto exchanges, wallets, bots and DeFi platforms through their paces — real deposits, real withdrawals, our own money on the line — so you find out what's safe <em>before</em> your cash does. Evidence over hype. Nobody pays for a good score.
+                We test crypto exchanges, wallets, bots and DeFi platforms with real money — real deposits, real withdrawals — so you know what's safe <em>before</em> you risk a penny. Independent and evidence-led. We don't take payment for ratings.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <Button asChild size="lg" className="shadow-lg shadow-primary/20">
@@ -223,7 +223,7 @@ const Index = () => {
             {[
               { icon: ShieldCheck, color: "text-rating-green", ring: "hover:border-rating-green/40", glow: "bg-rating-green/10", title: "🟢 Green — Broadly Credible", desc: "The good stuff. A team you can actually find, a product that works, withdrawals that clear, and a track record that holds up. Still crypto — so still do your homework." },
               { icon: ShieldAlert, color: "text-rating-orange", ring: "hover:border-rating-orange/40", glow: "bg-rating-orange/10", title: "🟠 Orange — Caution Required", desc: "Mixed signals. A murky past, thin disclosure, or a few too many unanswered questions. Fine for some — eyes open, and only money you can afford to risk." },
-              { icon: ShieldX, color: "text-rating-red", ring: "hover:border-rating-red/40", glow: "bg-rating-red/10", title: "🔴 Red — Serious Warning", desc: "Hard no. Confirmed scams, misleading claims, or red flags you can spot from space. Walk away — or run." },
+              { icon: ShieldX, color: "text-rating-red", ring: "hover:border-rating-red/40", glow: "bg-rating-red/10", title: "🔴 Red — Serious Warning", desc: "Hard no. Confirmed scams, misleading claims, or serious red flags we couldn't look past. Steer well clear." },
             ].map((item) => (
               <div key={item.title} className={`group relative overflow-hidden rounded-2xl border border-border bg-card/60 p-6 backdrop-blur transition-all hover:shadow-lg ${item.ring}`}>
                 <div className={`absolute -right-8 -top-8 h-24 w-24 rounded-full blur-2xl ${item.glow}`} />
@@ -364,9 +364,9 @@ const Index = () => {
           <SectionWrapper>
             <div className="mx-auto max-w-2xl text-center">
               <Send className="mx-auto h-12 w-12 text-primary" />
-              <h2 className="mt-4 font-heading text-3xl font-bold md:text-4xl">Got a platform you want us to put on trial?</h2>
+              <h2 className="mt-4 font-heading text-3xl font-bold md:text-4xl">Got a platform you're not sure about?</h2>
               <p className="mt-4 text-muted-foreground">
-                Wallet, exchange, bot, DeFi protocol, dodgy "AI" thing your mate won't stop banging on about — send it over. We'll run it through the full audit and tell you straight.
+                A wallet, exchange, bot, DeFi protocol, or an "AI" platform you've got a bad feeling about — send it over, and we'll put it through the full audit and tell you straight.
               </p>
               <div className="mt-6 flex flex-wrap justify-center gap-3">
                 <Button asChild size="lg" className="shadow-lg shadow-primary/20"><Link to="/submit">Submit a Platform</Link></Button>

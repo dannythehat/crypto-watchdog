@@ -1,8 +1,8 @@
-Every token you buy and every transfer you make, something underneath quietly writes it down and swears it's true. That something is a blockchain — the part most people use constantly and understand least. A bit like driving daily without clocking how the brakes work. So let's fix that. This guide covers how crypto blockchains differ, what makes one sturdier than the next, and why a well-established chain shaves off some risk without excusing you from vetting the token you're handing money to.
+Every token you buy and every transfer you make, something underneath quietly writes it down and swears it's true. That something is a blockchain — the part most people use constantly and understand least. A bit like driving daily without clocking how the brakes work. Let's fix that. This guide covers how crypto blockchains differ, what makes one sturdier than the next, and why a well-established chain shaves off some risk without excusing you from vetting the token you're handing money to.
 
 ## What a blockchain is and why the chain matters
 
-A blockchain is a shared ledger kept by loads of independent computers instead of one company in an office somewhere. Transactions get bundled into blocks, cryptographically chained, and confirmed by the network under rules everyone's agreed on. Once enough of the network signs off, rewriting that block becomes monstrously hard. That's the whole point.
+A blockchain is a shared ledger kept by loads of independent computers instead of one company in an office somewhere. Transactions get bundled into blocks, cryptographically chained, and confirmed by the network under rules everyone's agreed on. Once enough of it signs off, rewriting that block becomes monstrously hard. That's the whole point.
 
 The chain matters because it sets the rules you're playing under: how fast transactions settle, what you pay in fees, how exposed you are when things wobble. A chain with thousands of validators scattered across the planet behaves nothing like one run by a handful of mates who answer to the same boss — even if both slap "decentralised" on the tin.
 
@@ -14,9 +14,9 @@ Crypto blockchains get sorted by the job they do. Knowing the categories helps y
 
 ### Layer 1 blockchains
 
-A Layer 1 is a base chain that settles its own transactions and provides its own security. Bitcoin and Ethereum are the usual names here. Layer 1s carry the full load of validating everything, which makes them the most battle-tested of the lot — and also why they can grind slow and turn pricey when the whole world piles on.
+A Layer 1 is a base chain that settles its own transactions and provides its own security. Bitcoin and Ethereum are the usual names here. Layer 1s carry the full load of validating everything, which makes them the most battle-tested of the lot — and also why they grind slow and turn pricey when the whole world piles on.
 
-Designs differ. Some chase decentralisation and security and shrug off speed; others go for high throughput and low fees by leaning on a smaller, more concentrated validator set. Neither is automatically the winner, but the trade-off is real and you should know which side you're on. Holding assets long term? The security and maturity of the Layer 1 ought to weigh heavily — and you'll want a [crypto wallet](/crypto-wallets) that genuinely supports it.
+Designs differ. Some chase decentralisation and security and shrug off speed; others go for high throughput and low fees by leaning on a smaller, more concentrated validator set. Neither is the automatic winner, but the trade-off is real and you should know which side you're on. Holding assets long term? The security and maturity of the Layer 1 ought to weigh heavily — and you'll want a [crypto wallet](/crypto-wallets) that genuinely supports it.
 
 ### Layer 2 scaling networks
 
@@ -40,13 +40,13 @@ No chain is flawless, so judging crypto blockchains is about resilience, not per
 - **Transparency.** Is the code open, development active, and governance clear — not steered by a few anonymous figures?
 - **Ecosystem health.** Reliable infrastructure, reputable apps and honest docs are good signs.
 
-Rule of thumb: more decentralised, longer-running chains tend to make safer foundations than shiny new networks with the controls held by a tight little circle. A tendency, not a promise. And even the most established chain can't vouch for whatever someone bolts on top of it.
+Rule of thumb: more decentralised, longer-running chains tend to make safer foundations than shiny new networks with the controls held by a tight circle. A tendency, not a promise. And even the most established chain can't vouch for whatever someone bolts on top of it.
 
 ## Risks that affect your safety (congestion, scam tokens, bridges)
 
 Some chain-level risks hit you directly, even when you've done nothing wrong:
 
-- **Congestion and fees.** When a network's slammed, fees spike and transactions stall — frozen out exactly when you most need to move.
+- **Congestion and fees.** When a network's slammed, fees spike and transactions stall — frozen out exactly when you need to move.
 - **Scam tokens.** Anyone can mint a token on a major chain. The chain's good name lends it zero credibility. Verify contract addresses from official sources, and be wary of anything you can't confirm.
 - **Bridge exploits.** As above — cross-chain bridges have been a recurring blow-up. Keep as little in transit as you can.
 - **Smart-contract risk.** Apps can carry bugs or malicious code no matter how solid the chain is — lending, swapping and [crypto staking](/crypto-staking) protocols alike.
@@ -56,4 +56,4 @@ Some chain-level risks hit you directly, even when you've done nothing wrong:
 
 We assess crypto blockchains on evidence, not promotion, and we flag uncertainty plainly where the information's patchy. Our review leans on the same five tests above: decentralisation, security and consensus, track record, transparency, and the health of the ecosystem built on top.
 
-We make no price predictions. We never call anything a sure thing or a safe bet, because in crypto there's no such animal. And we never push chains or projects showing scam traits. Above all, we treat the chain as one input among many. The Layer 1 vs Layer 2 question is worth getting right, but a sound chain is no substitute for doing the homework on the specific token, platform or app you're about to trust with your cash.
+We make no price predictions. We never call anything a sure thing or a safe bet, because in crypto there's no such animal. And we never push chains or projects showing scam traits. Above all, we treat the chain as one input among many. The Layer 1 vs Layer 2 question is worth getting right, but a sound chain is no substitute for doing the homework on the token, platform or app you're about to trust with your cash.

@@ -4,10 +4,10 @@ Pick the wrong wallet and you can lose everything while doing nothing wrong. Tha
 
 Search for the best crypto wallets and you'll expect one champion to step forward. It doesn't work like that. The right pick depends on your balance, your confidence with tech, and how often you move funds. The safety basics barely change between good wallets:
 
-- **Self-custody clarity.** You should know, with zero squinting, whether you hold the private keys or someone else does. "Not your keys, not your coins" became a slogan because too many people learned it the hard way.
+- **Self-custody clarity.** You should know whether you hold the private keys or someone else does. "Not your keys, not your coins" became a slogan because too many people learned it the hard way.
 - **A recovery process that's written down and makes sense** — and never asks you to hand over your secret recovery phrase.
 - **Open or audited code, or a real security track record.** Independent audits and responsible disclosure tell you someone's watching.
-- **Wide device and asset support, plus someone still maintaining it.** Abandoned software is a leak waiting to happen.
+- **Wide device and asset support, plus an active maintainer.** Abandoned software is a leak waiting to happen.
 
 Still chewing on whether to hold your own keys at all? Our explainer on [self-custody versus custodial wallets](/blog/self-custody-vs-custodial-wallets-2026) is a good place to start.
 
@@ -31,13 +31,13 @@ The price is exposure: because the device is online, malware, dodgy extensions a
 
 Smart-contract wallets (you'll also hear "account-abstraction wallets") swap a single private key for programmable on-chain logic. That opens doors: social recovery, spending limits, multiple approvers — softening the brutal "one slip and it's gone forever" reality of old-school keys.
 
-Promising stuff. But safety now rides on the quality of that contract code and how you set recovery up. Stick to versions with reputable audits, and treat brand-new designs with a raised eyebrow.
+Promising stuff. But safety now rides on the contract code and how you set recovery up. Stick to versions with reputable audits, and treat brand-new designs with a raised eyebrow.
 
 ### Custodial wallets
 
 With a custodial wallet, a company holds the keys for you, roughly the way a bank holds your cash — it's how your funds usually sit on an exchange. The perks are genuine: password resets, support staff, a login you won't forget.
 
-The bill comes due as control. You're exposed to the custodian's solvency, security and house rules, and access can be frozen. If you go this way, weigh the provider's reputation when you [compare crypto exchanges](/crypto-exchanges), and keep only what you're actively trading there.
+The bill comes due as control. You're exposed to the custodian's solvency, security and house rules, and access can be frozen. If you go this way, weigh the provider's reputation when you [compare crypto exchanges](/crypto-exchanges), and keep only what you're trading there.
 
 ## Red flags & common mistakes
 
@@ -55,7 +55,7 @@ Spotted something suspicious, or already been targeted? Our [scam warnings](/war
 
 ## How we rate wallets
 
-We judge wallets against safety-first criteria instead of hype, weighing:
+We judge wallets against safety-first criteria, not hype, weighing:
 
 - **Key control and custody model** — who holds the keys, and how plainly that's spelled out.
 - **Security architecture** — audits, secure-element hardware where relevant, and the disclosure track record.
@@ -69,6 +69,6 @@ We don't do price predictions, and we never call any wallet risk-free, because s
 
 Start with how you actually use crypto. Holding a meaningful sum for the long haul? A hardware wallet for the bulk and a hot wallet for day-to-day is the well-worn setup. Dipping a toe in? A reputable software wallet may be plenty while you find your feet.
 
-Three honest questions sort it. How much am I storing? How often will I move it, and on which chains? How comfortable am I babysitting a recovery phrase? Your answers point to the right category better than any ranking.
+Three honest questions sort it. How much am I storing? How often will I move it, on which chains? How comfortable am I babysitting a recovery phrase? Your answers point to the right category better than any ranking.
 
-Whatever you land on, the fundamentals don't budge: control your keys where you can, guard that recovery phrase, verify every download and counterparty, and move slowly on purpose. Holding newer instruments? Our guide to [tokenised assets](/tokenized-assets) covers custody quirks worth knowing. Calm and sceptical beats clever and rushed every time.
+Whatever you land on, the fundamentals don't budge: control your keys where you can, guard that recovery phrase, verify every download and counterparty, and move slowly on purpose. Holding newer instruments? Our guide to [tokenised assets](/tokenized-assets) covers custody quirks worth knowing. Calm and sceptical beats clever and rushed.

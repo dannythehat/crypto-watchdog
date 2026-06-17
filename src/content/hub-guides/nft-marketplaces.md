@@ -16,7 +16,7 @@ General marketplaces try to list a bit of everything across one or more popular 
 
 ### Chain-specific marketplaces
 
-Chain-specific marketplaces live on a single network, tuned to its fee model, wallet standards and community. Less friction, faster discovery of native projects, a crowd that speaks the local dialect. The price you pay is portability: your assets and habits may not travel cleanly if you later jump networks. Still deciding which chains to back? Our explainer on [blockchains](/blockchains) breaks down the real differences in fees, speed and tooling.
+Chain-specific marketplaces live on a single network, tuned to its fee model, wallet standards and community. Less friction, faster discovery of native projects, a crowd that speaks the local dialect. The price you pay is portability: your assets and habits may not travel cleanly if you later jump networks. Still deciding which chains to back? Our explainer on [blockchains](/blockchains) covers the real differences in fees, speed and tooling.
 
 ### GameFi & play-to-earn
 
@@ -34,21 +34,21 @@ This is where the money disappears, and almost none of it is the marketplace's f
 - **Fake mints and lookalike collections.** Scammers clone a project's art, name and imagery, then push a "mint" on a fraudulent site. Always reach a mint through the project's own verified channels, never a link from a DM or reply.
 - **"Free NFT" and airdrop drainers.** A mystery NFT lands in your wallet, inviting you somewhere to "claim" more. Connect and sign, and you may hand over sweeping permissions you never meant to give. Our guidance on [crypto freebies and airdrops](/freebies) explains why "free" is so often the bait.
 - **Malicious approvals and `setApprovalForAll`.** One broad approval can let a contract move your entire collection. That's not a feature, that's a back door. Read what each one actually grants.
-- **Blind-signing prompts.** If a signature request is gibberish or won't say what it's for, don't sign it. Legitimate actions can be explained in plain English.
+- **Blind-signing prompts.** If a signature request is gibberish or won't say what it's for, don't sign it. Legitimate actions can be explained plainly.
 - **Fake support and "verification" agents.** No genuine team will ever ask for your secret recovery phrase or rush you into signing. Urgency is the tell.
 
-If you spot a dodgy mint, or you've already been caught, our [scam warnings](/warnings) lay out what to do next. And give a wide berth to "recovery" services that demand fees upfront. That's the same con in a different hat.
+If you spot a dodgy mint, or you've already been caught, our [scam warnings](/warnings) lay out what to do next. And give a wide berth to "recovery" services that demand fees upfront. Same con, different hat.
 
 ## How we rate NFT marketplaces
 
 We judge platforms against consistent, safety-first criteria, not hype or trading volume. We weigh:
 
-- **Custody and signing clarity** — does it keep you in self-custody and make each transaction and approval understandable?
+- **Custody and signing clarity** — does it keep you in self-custody and make each approval understandable?
 - **Verification and anti-fraud measures** — how well it flags official collections and how fast it stamps on counterfeits.
 - **Transparency** — clear fees, documented contracts, honest communication.
 - **Security track record** — audits where they apply, and a history of responsible disclosure.
 
-We don't do price predictions, and we'll never promise any venue is perfectly safe. It isn't, and it can't be. Safety always depends partly on how you behave. Where the evidence is thin, we'll say so.
+We don't do price predictions, and we'll never promise any venue is perfectly safe. It isn't, and it can't be. Safety always depends partly on how you behave. Where evidence is thin, we'll say so.
 
 ## How to trade NFTs safely (approvals, revoking, verifying)
 

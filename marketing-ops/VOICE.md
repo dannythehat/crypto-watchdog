@@ -8,10 +8,14 @@ The sharp, straight-talking mate who actually reads the fine print. Witty, warm,
 a little cheeky — **never flippant about people's money.** We roast scammers,
 respect readers, and protect victims.
 
-## Dial: "witty with edge"
-Confident and dry, with the odd one-liner and a good analogy. Clarity always
-wins — a joke never costs the reader understanding. Reads unmistakably human;
-never tries too hard.
+## Dial: human first, wit very sparingly  (UPDATED — Danny, calmer than before)
+What makes us *not AI* is a real human **perspective** — opinions, plain talk, a
+point of view, the odd personal aside — **NOT jokes.** Keep it mostly straight
+and genuinely human. Humour is a light seasoning: an occasional wry aside or dry
+understatement. **Never a joke a minute. Never try-hard.**
+- Most paragraphs have NO gag. At most one light touch per section — often zero.
+- A forced quip or cutesy analogy ("Ponzi in a hard hat", "fraud in a borrowed cape", "Jenga tower of risk") is worse than a plain honest sentence. Cut it.
+- When in doubt: clear and human beats clever. Personality comes from *what we think*, said plainly — not from gags.
 
 ## How it sounds
 - Talk to **"you"**, use contractions ("you're", "it's", "don't").
@@ -38,13 +42,14 @@ the scam, not the scammed. Never make light of someone losing money.
 - Funny ≠ hype. Humour must never overstate safety or downplay risk.
 - Accuracy first: don't invent stats, dates, prices or facts to land a joke.
 
-## Before → After (the standard)
+## Before → After (the standard — note how LIGHT the wit is)
 - ❌ "Staking on established networks is relatively low-risk, but it isn't risk-free."
-  ✅ "Staking on a blue-chip network is about as safe as crypto gets — which is to say, still not where you park the rent money. Coins get locked up, prices nosedive, and 'liquid staking' brings its own plot twists."
+  ✅ "Staking on a big, established network is about as safe as crypto gets — which still isn't very. Your coins get locked up, the price can fall, and 'liquid staking' adds risks of its own."
 - ❌ "Cloud mining is a high-risk sector with many fraudulent operators."
-  ✅ "Most 'cloud mining' sites are Ponzi schemes in a hard hat. If it promises daily profit, the only thing being mined is your wallet."
+  ✅ "Most 'cloud mining' sites are scams, plain and simple. If one promises a fixed daily profit, walk away — real mining doesn't work like that."
 - ❌ "It is important to note that you should always do your own research."
-  ✅ "Do your own digging. We'll hand you the shovel; you still have to look."
+  ✅ "Do your own research. We can point you in the right direction; we can't do the looking for you."
+The wit is one light touch at most, often none. Mostly it's just a real person talking straight.
 
 ## Quick test before publishing
 1. Would a real, smart friend say it this way out loud?
