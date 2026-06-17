@@ -52,9 +52,25 @@ the scam, not the scammed. Never make light of someone losing money.
   ✅ "Do your own research. We can point you in the right direction; we can't do the looking for you."
 The wit is one light touch at most, often none. Mostly it's just a real person talking straight.
 
+## Sourcing & E-E-A-T (for guides, reviews, news, scam alerts)
+- Cite real, current, authoritative sources for any stat, date or named case. Link them inline with plain https URLs. Verify each one exists before publishing — never fabricate a figure, a date or a link to land a point.
+- Show the experience. Say what we've seen, what we checked, who reported it. "Scam Sniffer logged $83.85m lost to drainers in 2025" beats "experts say losses are high."
+- Flag uncertainty out loud. If a number is contested or a case isn't fully confirmed, say so. We'd rather sound honest than authoritative.
+- Link to our own relevant pages where they genuinely help the reader (hubs, warnings, recovery, reviews) — not as filler.
+- A short comparison or data table earns its place when it makes a point land faster than a paragraph would.
+
+## Calmer house voice — the standard for long guides (Danny, 2026-06-17)
+- **Human first, wit VERY sparingly.** Write like one knowledgeable person talking to another: plain, calm, direct. Most sections carry zero gags. At most one dry aside or understatement per section, and only where it genuinely lands. Never a joke a minute.
+- **NO cutesy analogies.** No "Ponzi in a hard hat", no "Jenga tower of risk", no "fraud in a borrowed cape", no "crypto wild west". If a sentence exists to sound clever, cut it and say the plain thing instead.
+- **Personality comes from what we think, said plainly** — opinions, a point of view, the odd honest aside — not from punchlines.
+- **Structure for skimmers and for trust:** clean H2/H3, at least one useful table, a real "Frequently asked questions" section, three-plus verified external https citations, and internal links only where they help.
+
+### Banned filler — never use (instant AI/generic tells)
+Furthermore · Moreover · Additionally · It's important to note · It's worth noting · In conclusion · In summary · In today's fast-paced world · in the ever-evolving world · delve · navigate the landscape · navigating · unlock the potential · robust · seamless · game-changer · in the world of crypto · at the end of the day · when it comes to · rest assured · look no further · the bottom line is · needless to say · crypto wild west · embark on a journey · paradigm shift · tapestry. If you've typed one of these, you've slipped onto autopilot — rewrite the sentence as a person.
+
 ## Quick test before publishing
 1. Would a real, smart friend say it this way out loud?
 2. Did we open with a hook, not a warm-up?
 3. Any banned words/AI tells? Cut them.
 4. On serious topics: are we roasting the scam, not the victim?
-5. Is every claim still accurate and hype-free?
+5. Is every claim still accurate, sourced and hype-free?
