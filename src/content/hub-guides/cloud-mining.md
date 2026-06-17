@@ -68,7 +68,7 @@ When we size up a cloud mining service, the structure of the offer tells us more
 - **Return claims.** Market-tied, or fixed and guaranteed? Guaranteed yield is pass-or-fail, and it fails.
 - **Proof of operation.** Verifiable real hardware, or just stock imagery and adjectives?
 - **Operator transparency.** A named, traceable company with a checkable footprint?
-- **Incentive design.** Does it run on referrals and reinvestment pressure?
-- **Withdrawals.** Can people get their funds out, on consistent terms?
+- **Incentive design.** Does it run on referrals and reinvestment?
+- **Withdrawals.** Can people get funds out, on consistent terms?
 
 A service can be genuine and still earn next to nothing in a rough market, because that's the honest nature of mining. Our rating speaks to integrity and safety, not expected profit. And if you've already sent money to a platform that's gone quiet, you're not daft; you got targeted by people who do this for a living. Our [crypto recovery](/crypto-recovery) guidance covers realistic next steps, including the recovery scams that circle back to hit victims a second time.

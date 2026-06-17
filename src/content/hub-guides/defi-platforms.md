@@ -14,7 +14,7 @@ Trustworthy protocols share a few habits. None is a golden ticket alone, but sta
 - **Sensible governance.** Admin keys, upgrade powers and treasury controls are disclosed, ideally behind time-locks and multi-sig rather than one anonymous person.
 - **Honest communication.** The team flags the risks plainly and never reaches for "guaranteed" or "risk-free".
 
-Because you're plugging in from your own wallet, your security habits count as much as the protocol's. Our [crypto wallets](/crypto-wallets) guide covers custody, seed-phrase hygiene and revoking stale token approvals.
+Because you connect from your own wallet, your security habits count as much as the protocol's. Our [crypto wallets](/crypto-wallets) guide covers custody, seed-phrase hygiene and revoking stale token approvals.
 
 ## Types of DeFi platform
 
@@ -22,11 +22,11 @@ DeFi isn't one thing. The categories carry wildly different risks, so know what 
 
 ### Lending and borrowing
 
-You supply assets to earn interest, or post collateral to borrow against. The returns come from borrowers paying to use the pool. The catches: liquidations if your collateral drops, lurching rates, and the chance of a contract breaking. Yields here are modest and move with demand. Boring is healthy.
+You supply assets to earn interest, or post collateral to borrow against. The returns come from borrowers paying to use the pool. The catches: liquidations if your collateral drops, lurching rates, and a contract breaking. Yields here are modest and move with demand. Boring is healthy.
 
 ### Decentralised exchanges (DEXs)
 
-DEXs let you swap tokens with no intermediary, often by supplying liquidity to a pool and earning a slice of the fees. The trap is impermanent loss, where just holding the two assets would've left you better off. The fees are real, just rarely as juicy as the headline once that loss bites.
+DEXs let you swap tokens with no intermediary, often by supplying liquidity to a pool for a slice of the fees. The trap is impermanent loss, where just holding the two assets would've left you better off. The fees are real, just rarely as juicy as the headline once that loss bites.
 
 ### Staking and liquid staking
 
@@ -38,13 +38,13 @@ Perpetual futures, options and synthetic-asset platforms let you take leveraged 
 
 ### Analytics and tools
 
-Dashboards, block explorers and portfolio trackers don't hold a penny, but they're how you fact-check everyone else. Total value locked, contract age, holder spread and audit history let you check the marketing against on-chain reality. Our [blockchains](/blockchains) overview lays out how the big chains differ.
+Dashboards, block explorers and portfolio trackers don't hold a penny, but they're how you fact-check everyone else. Total value locked, contract age, holder spread and audit history let you check marketing against on-chain reality. Our [blockchains](/blockchains) overview lays out how the big chains differ.
 
 ## Real yield vs ponzi yield
 
 The most useful skill in DeFi is asking one rude question: where does this return actually come from? "Real yield" is paid out of genuine activity, trading fees, borrowing interest, network rewards. It's variable and unglamorous, because real revenue is limited.
 
-"Ponzi yield" is paid mostly from new deposits, or by printing ever more of the protocol's own token. It dazzles, then folds the instant new money slows. Tells that a yield is running on fumes:
+"Ponzi yield" is paid mostly from new deposits, or by printing more of the protocol's own token. It dazzles, then folds the instant new money slows. Tells that a yield is running on fumes:
 
 - Advertised returns far above what lending, trading or staking could realistically produce.
 - Rewards paid mostly in a token the project mints itself, with barely any outside demand.
@@ -69,12 +69,12 @@ Plenty of these turn up in collapses we've documented; our [scam warnings](/warn
 
 ## How we rate DeFi platforms
 
-We don't rank by advertised yield, and we won't wave around "best defi platforms" as a marketing line. We weigh evidence instead:
+We don't rank by advertised yield, and we won't wave "best defi platforms" around as a marketing line. We weigh evidence instead:
 
 - **Security and audits:** quality and recency of independent reviews, and how the protocol handled past incidents.
 - **Transparency:** disclosure of teams, governance, admin powers and treasury holdings.
-- **Yield sustainability:** whether returns trace to real activity rather than token emissions or fresh deposits.
+- **Yield sustainability:** whether returns trace to real activity rather than emissions or fresh deposits.
 - **Track record:** behaviour under stress, including whether withdrawals stayed open when markets got ugly.
-- **User experience and recourse:** clear docs, honest fees, and what happens when something breaks.
+- **Recourse:** clear docs, honest fees, and what happens when something breaks.
 
-Where the evidence is thin, we say so rather than guess. DeFi rewards a sceptic. Treat outsized, unexplained yield as a question, check claims against on-chain data, and never deposit more than you can afford to wave goodbye to.
+Where the evidence is thin, we say so rather than guess. DeFi rewards a sceptic. Treat outsized, unexplained yield as a question, check claims against on-chain data, and never deposit more than you can afford to lose.
