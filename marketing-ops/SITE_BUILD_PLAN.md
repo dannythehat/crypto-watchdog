@@ -43,7 +43,9 @@ Status key: [ ] todo · [~] in progress · [x] done & live
 ## PHASE 4 — Content depth on hubs
 - [ ] Per-hub 800–1,200 word SEO intro (keyword-targeted)
 - [ ] Sub-hubs: AI Yield, AI Quant, AI Signals; CEX vs DEX; Hardware vs Hot
-- [ ] "Daily & Ongoing Freebies" page
+- [x] "Daily & Ongoing Freebies" page (/freebies) + homepage strip + nav
+- [ ] Refresh /freebies daily with researched offers
+- [ ] Latest crypto news section (repo-driven, refreshed daily) — needs build
 
 ## PHASE 5 — Money plumbing
 - [ ] Affiliate CTA on every endorsed card where we have a link

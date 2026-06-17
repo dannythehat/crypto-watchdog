@@ -8,7 +8,9 @@ import ReviewCard from "@/components/ReviewCard";
 import BlogCard from "@/components/BlogCard";
 import AuroraBackdrop from "@/components/AuroraBackdrop";
 import WatchdogMascot from "@/components/WatchdogMascot";
+import OfferCard from "@/components/OfferCard";
 import { hubs } from "@/content/hubs";
+import { offersByDateDesc } from "@/content/offers";
 import { useReviews } from "@/hooks/useReviews";
 import { useBlogPosts } from "@/hooks/useBlogPosts";
 import { useWarnings } from "@/hooks/useWarnings";
@@ -110,6 +112,29 @@ const Index = () => {
                 </div>
               </Link>
             ))}
+          </div>
+        </SectionWrapper>
+
+        {/* Vetted offers & freebies */}
+        <SectionWrapper className="border-y border-border bg-card">
+          <div className="flex items-end justify-between">
+            <div>
+              <div className="mb-2 inline-flex items-center gap-2 text-rating-green">
+                <span className="text-lg">🎁</span>
+                <span className="text-sm font-semibold uppercase tracking-wider">Daily & ongoing</span>
+              </div>
+              <h2 className="font-heading text-3xl font-bold md:text-4xl">Freebies &amp; offers</h2>
+              <p className="mt-2 max-w-2xl text-muted-foreground">Bonuses and deals — but only from platforms we've actually vetted. No red-rated platforms, ever.</p>
+            </div>
+            <Link to="/freebies" className="hidden items-center gap-1 text-sm font-medium text-primary hover:underline md:flex">
+              All offers <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {offersByDateDesc.slice(0, 3).map((o) => <OfferCard key={o.id} offer={o} />)}
+          </div>
+          <div className="mt-6 text-center md:hidden">
+            <Button asChild variant="outline"><Link to="/freebies">See all offers</Link></Button>
           </div>
         </SectionWrapper>
 
