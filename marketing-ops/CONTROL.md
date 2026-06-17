@@ -56,6 +56,7 @@ Cross-cutting: **news + offers should link to our own content** (reviews, guides
 6. Hero focal visual + reviews-list premium tiles + spacing/typography polish pass.
 
 ## 🧠 Key decisions (don't relitigate)
+- **BRAND MASCOT = the CryptoWatchdog DOBERMAN dog.** NEVER a robot. Image served via `WatchdogMascot.tsx` (`BRAND_IMG` = legacy Supabase `…/organization-27129/1776712114820_cryptowatchdog.jpg`). TODO: get a transparent PNG from Danny and self-host in `public/`. Use the dog everywhere a mascot appears.
 - Repo-as-CMS (`src/content/`), Lovable phased out for content.
 - Rank by FCA/safety/evidence, never affiliate commission. Never monetise red-rated/scam pages. No "guaranteed"/"risk-free", no price predictions.
 - Hold content to 2k EEAT bar; retire dated/duplicate pages, never pad.
