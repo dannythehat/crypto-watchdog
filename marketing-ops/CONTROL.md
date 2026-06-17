@@ -58,6 +58,7 @@ Cross-cutting: **news + offers should link to our own content** (reviews, guides
 6. Hero focal visual + reviews-list premium tiles + spacing/typography polish pass.
 
 ## 🧠 Key decisions (don't relitigate)
+- **HOUSE VOICE is locked — see `marketing-ops/VOICE.md`. Write EVERYTHING to it** (witty with edge, human, British; roast scammers, never victims; banned AI-filler list). All content (hubs, guides, reviews, blog, warnings, homepage) is being humanised to this voice.
 - **BRAND MASCOT = the CryptoWatchdog DOBERMAN dog** (BLUE/silver version, the correct brand colour — not the gold one). NEVER a robot. Self-hosted transparent PNG at `public/cryptowatchdog-logo.png`, served via `BRAND_IMG` in `WatchdogMascot.tsx` (used by navbar Logo, hero mascots, favicon, OG image, JSON-LD). Swap that one file to update everywhere.
 - Repo-as-CMS (`src/content/`), Lovable phased out for content.
 - Rank by FCA/safety/evidence, never affiliate commission. Never monetise red-rated/scam pages. No "guaranteed"/"risk-free", no price predictions.

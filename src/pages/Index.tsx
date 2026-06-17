@@ -58,7 +58,7 @@ const Index = () => {
                 <span className="bg-gradient-to-r from-primary to-[#5B8DEF] bg-clip-text text-transparent">Verify.</span>
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-                We test crypto exchanges, wallets, trading bots and DeFi platforms — with real deposits and withdrawals — so you know what's safe <em>before</em> your money leaves your hands. Evidence-led. No sponsorships.
+                We put crypto exchanges, wallets, bots and DeFi platforms through their paces — real deposits, real withdrawals, our own money on the line — so you find out what's safe <em>before</em> your cash does. Evidence over hype. Nobody pays for a good score.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <Button asChild size="lg" className="shadow-lg shadow-primary/20">
@@ -216,14 +216,14 @@ const Index = () => {
           <div className="text-center">
             <h2 className="font-heading text-3xl font-bold md:text-4xl">Our alert system</h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              Every platform gets a clear, colour-coded alert after our multi-point audit — plus a Trust Score out of 100.
+              Every platform gets a colour — green, amber or red — after our multi-point audit, plus a Trust Score out of 100. No fence-sitting.
             </p>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
-              { icon: ShieldCheck, color: "text-rating-green", ring: "hover:border-rating-green/40", glow: "bg-rating-green/10", title: "🟢 Green — Broadly Credible", desc: "Strong signs of legitimacy. Transparent team, working product, verifiable track record, healthy withdrawal reports, and lower apparent risk." },
-              { icon: ShieldAlert, color: "text-rating-orange", ring: "hover:border-rating-orange/40", glow: "bg-rating-orange/10", title: "🟠 Orange — Caution Required", desc: "Mixed signals. Unresolved concerns, key limitations, insufficient data, or past incidents that need watching. Proceed carefully." },
-              { icon: ShieldX, color: "text-rating-red", ring: "hover:border-rating-red/40", glow: "bg-rating-red/10", title: "🔴 Red — Serious Warning", desc: "Major unresolved issues, misleading behaviour, confirmed scam reports, or critical red flags. Avoid or proceed at extreme risk." },
+              { icon: ShieldCheck, color: "text-rating-green", ring: "hover:border-rating-green/40", glow: "bg-rating-green/10", title: "🟢 Green — Broadly Credible", desc: "The good stuff. A team you can actually find, a product that works, withdrawals that clear, and a track record that holds up. Still crypto — so still do your homework." },
+              { icon: ShieldAlert, color: "text-rating-orange", ring: "hover:border-rating-orange/40", glow: "bg-rating-orange/10", title: "🟠 Orange — Caution Required", desc: "Mixed signals. A murky past, thin disclosure, or a few too many unanswered questions. Fine for some — eyes open, and only money you can afford to risk." },
+              { icon: ShieldX, color: "text-rating-red", ring: "hover:border-rating-red/40", glow: "bg-rating-red/10", title: "🔴 Red — Serious Warning", desc: "Hard no. Confirmed scams, misleading claims, or red flags you can spot from space. Walk away — or run." },
             ].map((item) => (
               <div key={item.title} className={`group relative overflow-hidden rounded-2xl border border-border bg-card/60 p-6 backdrop-blur transition-all hover:shadow-lg ${item.ring}`}>
                 <div className={`absolute -right-8 -top-8 h-24 w-24 rounded-full blur-2xl ${item.glow}`} />
@@ -240,7 +240,7 @@ const Index = () => {
           <div className="text-center">
             <h2 className="font-heading text-3xl font-bold md:text-4xl">How we audit</h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              Our reviews go far deeper than a surface-level check — every one follows a strict, repeatable framework.
+              We dig way past the homepage. Every review runs through the same strict checklist — the boring, repeatable kind that actually catches the liars.
             </p>
           </div>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -307,7 +307,7 @@ const Index = () => {
           <div className="flex items-end justify-between">
             <div>
               <h2 className="font-heading text-3xl font-bold md:text-4xl">Latest reviews</h2>
-              <p className="mt-2 text-muted-foreground">Recently audited platforms.</p>
+              <p className="mt-2 text-muted-foreground">Fresh off the audit bench.</p>
             </div>
             <Link to="/reviews" className="hidden items-center gap-1 text-sm font-medium text-primary hover:underline md:flex">
               View all <ArrowRight className="h-4 w-4" />
@@ -337,7 +337,7 @@ const Index = () => {
           <div className="flex items-end justify-between">
             <div>
               <h2 className="font-heading text-3xl font-bold md:text-4xl">From the blog</h2>
-              <p className="mt-2 text-muted-foreground">Crypto safety guides and comparisons.</p>
+              <p className="mt-2 text-muted-foreground">Safety guides and no-nonsense comparisons.</p>
             </div>
             <Link to="/blog" className="hidden items-center gap-1 text-sm font-medium text-primary hover:underline md:flex">
               All posts <ArrowRight className="h-4 w-4" />
@@ -364,9 +364,9 @@ const Index = () => {
           <SectionWrapper>
             <div className="mx-auto max-w-2xl text-center">
               <Send className="mx-auto h-12 w-12 text-primary" />
-              <h2 className="mt-4 font-heading text-3xl font-bold md:text-4xl">Want us to investigate a platform?</h2>
+              <h2 className="mt-4 font-heading text-3xl font-bold md:text-4xl">Got a platform you want us to put on trial?</h2>
               <p className="mt-4 text-muted-foreground">
-                If there's a wallet, exchange, bot, or DeFi protocol you want us to investigate, submit it — we'll put it through our full audit process.
+                Wallet, exchange, bot, DeFi protocol, dodgy "AI" thing your mate won't stop banging on about — send it over. We'll run it through the full audit and tell you straight.
               </p>
               <div className="mt-6 flex flex-wrap justify-center gap-3">
                 <Button asChild size="lg" className="shadow-lg shadow-primary/20"><Link to="/submit">Submit a Platform</Link></Button>

@@ -1,0 +1,54 @@
+# 🗣️ CryptoWatchdog House Voice — write EVERYTHING like this
+
+Locked 2026-06-17 (Danny). Apply to all content: hubs, guides, reviews, blog,
+warnings, homepage, offers, news. Every writer/agent must follow this.
+
+## Who we are
+The sharp, straight-talking mate who actually reads the fine print. Witty, warm,
+a little cheeky — **never flippant about people's money.** We roast scammers,
+respect readers, and protect victims.
+
+## Dial: "witty with edge"
+Confident and dry, with the odd one-liner and a good analogy. Clarity always
+wins — a joke never costs the reader understanding. Reads unmistakably human;
+never tries too hard.
+
+## How it sounds
+- Talk to **"you"**, use contractions ("you're", "it's", "don't").
+- **Vary rhythm:** short punchy lines next to longer ones. A one-word sentence is allowed. Really.
+- Vivid, everyday analogies over jargon. If a technical term is unavoidable, explain it in plain English once.
+- A dry aside or gentle roast where it lands. British wit, British spelling (organise, colour, licence).
+- Open strong — a hook, not a throat-clear. Lead with the point.
+- Confident verdicts: we tested it, we'll tell you straight.
+
+## The one guardrail (applies everywhere)
+Wit punches **up at scammers and bad actors — never down at victims.** On scam
+warnings, recovery, responsible-gambling and the founder story: keep the
+personality and the bite, but stay genuinely empathetic about real losses. Roast
+the scam, not the scammed. Never make light of someone losing money.
+
+## Banned (instant "AI/generic" tells — never use)
+- Hype: "guaranteed", "risk-free", "to the moon", "100x", "next big thing", "don't miss out".
+- AI filler: "Furthermore", "Moreover", "It's important to note", "It's worth noting", "In conclusion", "In today's fast-paced world", "delve", "navigate the landscape", "unlock the potential", "robust", "seamless", "game-changer", "in the world of crypto".
+- Empty hedging and throat-clearing intros ("When it comes to…").
+- Em-dash overload and three-item lists on autopilot. Mix it up.
+
+## Still non-negotiable (brand rules)
+- Evidence-led. No price predictions. Never promise returns. Never monetise red-rated/scam platforms.
+- Funny ≠ hype. Humour must never overstate safety or downplay risk.
+- Accuracy first: don't invent stats, dates, prices or facts to land a joke.
+
+## Before → After (the standard)
+- ❌ "Staking on established networks is relatively low-risk, but it isn't risk-free."
+  ✅ "Staking on a blue-chip network is about as safe as crypto gets — which is to say, still not where you park the rent money. Coins get locked up, prices nosedive, and 'liquid staking' brings its own plot twists."
+- ❌ "Cloud mining is a high-risk sector with many fraudulent operators."
+  ✅ "Most 'cloud mining' sites are Ponzi schemes in a hard hat. If it promises daily profit, the only thing being mined is your wallet."
+- ❌ "It is important to note that you should always do your own research."
+  ✅ "Do your own digging. We'll hand you the shovel; you still have to look."
+
+## Quick test before publishing
+1. Would a real, smart friend say it this way out loud?
+2. Did we open with a hook, not a warm-up?
+3. Any banned words/AI tells? Cut them.
+4. On serious topics: are we roasting the scam, not the victim?
+5. Is every claim still accurate and hype-free?
