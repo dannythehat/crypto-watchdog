@@ -54,3 +54,13 @@ LESSON: never add scheduled workflows that can fail without secrets; only add a
 workflow when its secrets are set AND Danny has approved it; `secrets` context is
 NOT valid in `if:` conditions. Re-introduce social/email/report automation later
 as ONE manually-triggered (workflow_dispatch) workflow, guarded, after secrets exist.
+
+
+## 📈 PROGRESS (2026-06-17 content sprint)
+- Site-wide **Related-articles navigation** live (every blog auto-links related posts).
+- Red `[!DANGER]` admonition support added to renderer.
+- **MoneyFlare reversed** → scam-watch warning, added to /warnings, affiliate BLOCKED.
+- EEAT rewrites shipped: waves 1+2 (11) + last night (15) + money-pages (3) ≈ **~46 blogs now passing**.
+- **Remaining ≈63 'failing'**: roughly ~32 genuinely thin (need full rewrites) + ~31 that are long+cited but light on in-body internal links (already covered by the Related-nav component; add 2-3 contextual links to fully pass).
+- NEXT: keep running rewrite waves (6 parallel agents) worst-first; for the long int=0 set, a lighter pass adding contextual in-body links + relevant CTAs.
+- Affiliates active: 10 (Kraken, Bitget, Binance, Cryptohopper, Kinesis, Ledger, Trezor, Tangem, Aurum) — MoneyFlare removed.
