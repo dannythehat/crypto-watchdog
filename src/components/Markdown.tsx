@@ -95,11 +95,23 @@ const Markdown = ({ content }: { content: string }) => {
     }
   };
   const flushQuote = () => {
-    if (quote.length) {
-      const key = `q${k++}`;
-      blocks.push(<blockquote key={key} className="my-6 rounded-xl border border-primary/20 border-l-4 border-l-primary bg-primary/[0.06] px-5 py-4 text-muted-foreground backdrop-blur">{renderInline(quote.join(" "), key)}</blockquote>);
-      quote = [];
+    if (!quote.length) return;
+    const key = `q${k++}`;
+    const lines = [...quote];
+    // GitHub-style admonitions: > [!WARNING] / [!DANGER] / [!CAUTION] => red; [!NOTE]/[!TIP]/[!INFO] => blue
+    const m = lines[0].match(/^\[!(WARNING|DANGER|CAUTION|NOTE|TIP|INFO)\]\s*(.*)$/i);
+    let danger = false;
+    if (m) {
+      const kind = m[1].toUpperCase();
+      danger = kind === "WARNING" || kind === "DANGER" || kind === "CAUTION";
+      lines[0] = m[2];
+      if (!lines[0]) lines.shift();
     }
+    const cls = danger
+      ? "my-6 rounded-xl border border-rating-red/40 border-l-4 border-l-rating-red bg-rating-red/10 px-5 py-4 font-medium text-foreground backdrop-blur"
+      : "my-6 rounded-xl border border-primary/20 border-l-4 border-l-primary bg-primary/[0.06] px-5 py-4 text-muted-foreground backdrop-blur";
+    blocks.push(<blockquote key={key} className={cls}>{renderInline(lines.join(" "), key)}</blockquote>);
+    quote = [];
   };
   const flushAll = () => { flushPara(); flushList(); flushQuote(); };
 

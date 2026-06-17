@@ -513,26 +513,23 @@
     "brand": "MoneyFlare",
     "category": "ai-finance",
     "reviewSlug": "moneyflare",
-    "rating": "green",
-    "status": "active",
+    "rating": "red",
+    "status": "blocked",
     "network": "MoneyFlare (referral)",
     "commissionType": "existing link",
-    "affiliateUrl": "https://www.moneyflare.com/signup?inviter_code=R4U5SD",
+    "affiliateUrl": "",
     "homepage": "https://www.moneyflare.com/signup?inviter_code=R4U5SD",
     "displayUrl": "moneyflare.com",
     "signupUrl": "",
     "hasKnownProgram": false,
     "offerText": "",
     "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
-    "allowedRatings": [
-      "green",
-      "orange"
-    ],
+    "allowedRatings": [],
     "blockedPageTypes": [
       "warnings"
     ],
-    "lastChecked": "2026-06-16",
-    "notes": "Check whether an affiliate/referral program exists."
+    "lastChecked": "2026-06-17",
+    "notes": "BLOCKED — scam-watch list (withdrawal red flags, deposit-to-withdraw). Do not monetise."
   },
   {
     "id": "kraken",
