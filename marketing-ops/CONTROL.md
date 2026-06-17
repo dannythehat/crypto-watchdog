@@ -43,3 +43,14 @@ Make CryptoWatchdog money via evidence-led content, SEO, links, images, social a
 - Plans/logs: `marketing-ops/` (content-plan.md, keyword-research.md, reports/, inbox/)
 - Scripts: `cw-content-brain/scripts/` (audit_eeat, build_hero_svg, render_preview, build_signup_digest, build_morning_report, social, audit_affiliates)
 - Renderer/SEO: `src/components/Markdown.tsx`, `src/components/Seo.tsx`, `src/lib/seo.ts`
+
+
+## ⚠️ INCIDENT (2026-06-17): email spam from failing Actions
+The 3 scheduled workflows (morning-report, email-digest, social-daily) FAILED on
+schedule (missing secrets + invalid `if: secrets.*` condition) and GitHub emailed
+a "Run failed" notice each time → mass emails to Danny. **All 3 workflows DELETED
+from main** (via GitHub MCP API, which still works during the git-push suspension).
+LESSON: never add scheduled workflows that can fail without secrets; only add a
+workflow when its secrets are set AND Danny has approved it; `secrets` context is
+NOT valid in `if:` conditions. Re-introduce social/email/report automation later
+as ONE manually-triggered (workflow_dispatch) workflow, guarded, after secrets exist.
