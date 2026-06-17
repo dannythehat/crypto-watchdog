@@ -7,6 +7,7 @@ import Markdown from "@/components/Markdown";
 import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { useBlogPost } from "@/hooks/useBlogPosts";
+import { getRelatedPosts } from "@/content";
 import { articleJsonLd, breadcrumbJsonLd, extractFaq, faqJsonLd } from "@/lib/seo";
 
 const BlogPost = () => {
@@ -45,6 +46,7 @@ const BlogPost = () => {
 
   const path = `/blog/${post.slug}`;
   const faqs = extractFaq(post.content);
+  const related = getRelatedPosts(post.slug, 6);
 
   return (
     <>
@@ -118,6 +120,25 @@ const BlogPost = () => {
                 This content is for informational purposes only and does not constitute financial advice. Always do your own research.
               </p>
             </div>
+
+            {related.length > 0 && (
+              <section className="mt-12">
+                <h2 className="mb-4 font-heading text-2xl font-semibold text-foreground">Related guides</h2>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {related.map((r) => (
+                    <Link
+                      key={r.slug}
+                      to={`/blog/${r.slug}`}
+                      className="group rounded-xl border border-border bg-card/60 p-4 backdrop-blur transition hover:border-primary/40 hover:bg-card"
+                    >
+                      {r.category && <span className="text-xs font-medium text-primary">{r.category}</span>}
+                      <p className="mt-1 font-heading font-semibold leading-snug text-foreground group-hover:text-primary">{r.title}</p>
+                      {r.summary && <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">{r.summary}</p>}
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            )}
           </article>
         </SectionWrapper>
       </main>
