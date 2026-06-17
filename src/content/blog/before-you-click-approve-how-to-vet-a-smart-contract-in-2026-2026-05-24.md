@@ -11,7 +11,7 @@ auto_generated: false
 published_at: "2026-05-24T06:00:47.675+00:00"
 updated_at: "2026-06-16T18:00:00Z"
 meta_title: "How to Vet a Smart Contract in 2026 (Before You Approve)"
-meta_description: "Before you click Approve, learn how to vet a smart contract in 2026: verify code, read audits, check token approvals and revoke risky permissions safely."
+meta_description: "Before you click Approve, learn how to vet a smart contract in 2026: verify code, read audits, check token approvals and revoke risky permissions to stop drainers."
 ---
 
 ## The short answer
