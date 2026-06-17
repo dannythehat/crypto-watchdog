@@ -4,11 +4,11 @@ This guide explains how crypto trading bots work, the main types you will meet, 
 
 ## What a crypto trading bot actually is
 
-Strip away the branding and a crypto trading bot is software that places buy and sell orders on an exchange according to rules. The rules might be simple ("buy a little every day") or more involved ("place a ladder of orders across a price range"), but the bot is an executor, not an oracle. It follows instructions faster and more consistently than a human can, and it does not get bored, tired or greedy.
+Strip away the branding and a crypto trading bot is software that places buy and sell orders on an exchange according to rules. The rules might be simple ("buy a little every day") or more involved ("place a ladder of orders across a price range"), but the bot is an executor, not an oracle. It follows instructions faster and more consistently than a human can.
 
-Crucially, a legitimate bot does not need to hold your coins. It connects to your account on an exchange you already trust through an API key, then places orders on your behalf. Your assets stay on the exchange, in your name. The bot is given permission to trade them, nothing more. Hold on to that idea, because it is the test everything else in this guide returns to.
+Crucially, a legitimate bot does not need to hold your coins. It connects to your exchange account through an API key, then places orders on your behalf. Your assets stay on the exchange, in your name. The bot is given permission to trade them, nothing more. Hold on to that idea, because it is the test everything else in this guide returns to.
 
-A bot cannot invent profit that the underlying strategy does not contain. If the logic is weak, automation simply loses money more reliably. Past performance is never a promise of future results.
+A bot cannot invent profit that the underlying strategy does not contain. If the logic is weak, automation simply loses money more reliably, and past performance is never a promise of future results.
 
 ## Types of trading bot
 
@@ -21,27 +21,27 @@ A grid bot places a series of buy and sell orders at set intervals above and bel
 
 ### DCA bots
 
-Dollar-cost averaging bots buy a fixed amount on a schedule, or add to a position as the price falls, smoothing out your entry over time. The appeal is discipline rather than cleverness. The risk to watch is "averaging down" indefinitely into an asset that keeps falling, which can quietly grow a position far beyond what you intended.
+Dollar-cost averaging bots buy a fixed amount on a schedule, or add to a position as the price falls, smoothing out your entry over time. The appeal is discipline rather than cleverness. The risk to watch is "averaging down" indefinitely into an asset that keeps falling, quietly growing a position far beyond what you intended.
 
 ### AI / signal bots
 
-These claim to read the market and trade on predictions or third-party signals. Some are honest tools that automate a documented strategy; many lean on "AI" as marketing for forecasts that no public retail tool can reliably make. Treat confident predictions with scepticism, and see our wider [AI finance](/ai-finance) coverage. The label tells you little; the mechanics tell you everything.
+These claim to read the market and trade on predictions or third-party signals. Some honestly automate a documented strategy; many lean on "AI" as marketing for forecasts that no public retail tool can reliably make. Treat confident predictions with scepticism, and see our wider [AI finance](/ai-finance) coverage. The label tells you little; the mechanics tell you everything.
 
 ### Copy-trading bots
 
-Copy-trading bots mirror another account's trades automatically. Done properly, they still run on trade-only permissions on your own exchange. The uncertainty here is human: you are trusting a stranger's judgement and incentives, which may not match yours. We cover how to vet this model in our guide to [copy-trading](/copy-trading).
+Copy-trading bots mirror another account's trades automatically. Done properly, they still run on trade-only permissions on your own exchange. The uncertainty here is human: you are trusting a stranger's judgement and incentives. We cover how to vet this model in our guide to [copy-trading](/copy-trading).
 
 ## The #1 red flag (custody of your funds)
 
 Here is the line that matters more than any feature list. A legitimate crypto trading bot connects to your existing exchange account and trades there. A scam asks you to deposit your money into its own wallet, platform or "trading pool", often alongside a promise of fixed or unusually high returns.
 
-Once your funds sit in someone else's wallet, you are no longer trading, you are trusting. Nothing technical stops the operator from showing you a dashboard full of imaginary gains while the underlying money is spent or simply gone. The classic fraud pattern is exactly this: deposit with us, watch the numbers climb, and discover the withdrawal never completes. Promises of profit are the bait; custody of your funds is the mechanism.
+Once your funds sit in someone else's wallet, you are no longer trading, you are trusting. Nothing stops the operator from showing you a dashboard full of imaginary gains while the money is spent or gone. The classic fraud pattern is exactly this: deposit with us, watch the numbers climb, and discover the withdrawal never completes. Promises of profit are the bait; custody of your funds is the mechanism.
 
-So the rule is blunt. If a bot needs you to send it your coins, walk away. If it trades through an API key on your own account, it has cleared the most important hurdle. When something matches the deposit-and-promise pattern, check our [scam warnings](/warnings), and for the messaging-app version of this trap, see our investigation into [whether Telegram trading bots are safe](/blog/are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09).
+So the rule is blunt. If a bot needs you to send it your coins, walk away. If it trades through an API key on your own account, it has cleared the most important hurdle. When something matches the deposit-and-promise pattern, check our [scam warnings](/warnings), and see our investigation into [whether Telegram trading bots are safe](/blog/are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09) for the messaging-app version of the trap.
 
 ## How we rate trading bots
 
-When we assess a crypto trading bot, custody comes first and everything else follows.
+When we assess a crypto trading bot, custody comes first.
 
 - **Custody model.** Does it trade via trade-only API keys on a reputable exchange, or does it take deposits? This is pass-or-fail.
 - **API key permissions.** Can you connect with trading enabled but withdrawals disabled? Good tools expect this.
@@ -59,10 +59,8 @@ If you have chosen a bot that passes the custody test, set it up defensively.
 1. **Use a reputable exchange you already use.** Do not open a new account purely on a bot's recommendation, especially an obscure one.
 2. **Create a dedicated API key for the bot.** Most exchanges let you generate keys per application, so you can revoke this one without disturbing anything else.
 3. **Enable trading only, never withdrawals.** This is the single most important setting. A trade-only key cannot move funds off the exchange, so even a compromised bot cannot drain you.
-4. **Restrict by IP where possible.** Many exchanges let you bind a key to specific addresses, narrowing the attack surface.
+4. **Restrict by IP where possible**, binding the key to specific addresses to narrow the attack surface.
 5. **Start small and watch closely.** Begin with an amount you can afford to lose, and confirm the bot behaves as described before scaling up.
-6. **Review and revoke regularly.** Check your API keys periodically and remove any you no longer use.
+6. **Review and revoke regularly**, removing any keys you no longer use.
 
-Get these basics right and the worst-case outcome from a bot itself is poor trading, not theft. That is the whole point of trade-only access: it keeps the bot in the role it should never leave, an executor of your instructions, while you keep control of your money.
-
-No bot can promise returns, and a good strategy can still lose money in a bad market. But by separating execution from custody, you remove the one risk that turns a disappointing tool into a catastrophic one.
+Get these basics right and the worst-case outcome from a bot itself is poor trading, not theft. That is the whole point of trade-only access: it keeps the bot as an executor of your instructions while you keep control of your money. No bot can promise returns, but separating execution from custody removes the one risk that turns a disappointing tool into a catastrophic one.

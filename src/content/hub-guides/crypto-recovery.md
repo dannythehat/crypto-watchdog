@@ -4,9 +4,9 @@ If you have lost money to a crypto scam, the pain is real and the instinct to ge
 
 When funds leave your wallet or are sent to a fraudulent platform, they usually move across the blockchain very quickly, often through mixers, bridges and exchanges in other jurisdictions. Once that has happened, reversing it is extremely difficult and frequently impossible. There is no undo button and no central authority that can claw a confirmed transaction back.
 
-That reality is the foundation for one simple rule: **no legitimate service can guarantee recovery, and no legitimate service charges you an upfront fee to get your money back.** Anyone promising otherwise is either misinformed or lying. The people who understand blockchain best are usually the most cautious about what is realistically achievable.
+That reality is the foundation for one simple rule: **no legitimate service can guarantee recovery, and no legitimate service charges you an upfront fee to get your money back.** Anyone promising otherwise is either misinformed or lying.
 
-This does not mean nothing can ever be done. It means the honest answer is "it depends, and often the answer is no" rather than "yes, pay us and we will fix it." The people who understand blockchain best are usually the most cautious about what is achievable.
+This does not mean nothing can ever be done. The honest answer is "it depends, and often it is no" rather than "yes, pay us and we will fix it." The people who understand blockchain best are usually the most cautious about what is achievable.
 
 ## How recovery scams work (the second scam)
 

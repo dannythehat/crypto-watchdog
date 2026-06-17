@@ -8,13 +8,13 @@ That distinction matters. When you list, buy or mint, you are not handing assets
 
 ## Types of NFT platform
 
-There is no single best NFT marketplace for everyone. The right venue depends on the chain you use, the kind of NFTs you want, and how much you value liquidity versus curation. Below is how the main categories compare.
+There is no single best NFT marketplace for everyone. The right venue depends on the chain you use, the NFTs you want, and how much you value liquidity versus curation. Below is how the main categories compare.
 
 ### General marketplaces
 
 General marketplaces aim to list a broad range of collections across one or more popular chains. They tend to offer the deepest liquidity, the widest selection and familiar tooling such as offers, auctions and collection statistics.
 
-The trade-off is that breadth invites noise. Open listing policies mean lookalike and counterfeit collections appear alongside genuine ones, so verification badges and official collection links become essential signals to check before you transact.
+The trade-off is that breadth invites noise. Open listing policies mean lookalike and counterfeit collections appear alongside genuine ones, so verification badges and official collection links are essential signals to check before you transact.
 
 ### Chain-specific marketplaces
 
@@ -42,9 +42,9 @@ Watch for these tactics:
 - **"Free NFT" and airdrop drainers.** An unexpected NFT lands in your wallet inviting you to a site to "claim" more. Connecting and signing can grant sweeping permissions. Our guidance on [crypto freebies and airdrops](/freebies) explains why "free" is so often the bait.
 - **Malicious approvals and `setApprovalForAll`.** A single broad approval can authorise a contract to move an entire collection from your wallet. Read what each approval actually grants.
 - **Blind-signing prompts.** If a signature request is unreadable or its purpose is unclear, do not sign. Legitimate actions can be explained in plain terms.
-- **Fake support and "verification" agents.** No genuine team will ask for your secret recovery phrase or push you to sign something urgently.
+- **Fake support and "verification" agents.** No genuine team will ask for your secret recovery phrase or push you to sign urgently.
 
-If you encounter a suspicious mint or have already been targeted, our [scam warnings](/warnings) set out what to check and what to do next. Be wary, too, of "recovery" services demanding upfront fees, which is a known follow-up scam.
+If you encounter a suspicious mint or have already been targeted, our [scam warnings](/warnings) set out what to do next. Be wary, too, of "recovery" services demanding upfront fees, which is a known follow-up scam.
 
 ## How we rate NFT marketplaces
 
@@ -59,14 +59,14 @@ We avoid price predictions and never describe any venue as guaranteed or risk-fr
 
 ## How to trade NFTs safely (approvals, revoking, verifying)
 
-The fundamentals are simple to state and worth repeating, because discipline here prevents the large majority of losses.
+The fundamentals are simple to state and worth repeating, because discipline here prevents most losses.
 
 - **Verify before you connect.** Confirm the collection's official contract address through the project's own verified channels, not search ads or social replies.
 - **Never sign a transaction you do not understand.** If the prompt is vague, close it. Clarity is non-negotiable.
-- **Be sparing with approvals.** Prefer per-item actions over blanket `setApprovalForAll` permissions wherever you can.
+- **Be sparing with approvals.** Prefer per-item actions over blanket `setApprovalForAll` permissions.
 - **Revoke old approvals regularly.** Use a reputable approvals-management tool to review and revoke permissions you no longer need; stale approvals are a standing liability.
 - **Use a separate "minting" wallet.** Keep a small balance there for new mints and untrusted sites, and hold your main collection elsewhere.
-- **Ignore unsolicited NFTs.** Do not interact with surprise drops; treat the "claim" link as hostile by default.
+- **Ignore unsolicited NFTs.** Treat any surprise drop's "claim" link as hostile by default.
 
 For a fuller, scenario-by-scenario walkthrough, see our companion piece on [NFT safety in 2026](/blog/nft-safety-guide-2026).
 
