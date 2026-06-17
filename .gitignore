@@ -25,3 +25,6 @@ dist-ssr
 
 .env
 .env.local
+
+# Generated audit/report artifacts (regenerated on demand)
+data/reports/
