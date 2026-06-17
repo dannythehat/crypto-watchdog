@@ -1,6 +1,6 @@
 Link your account to a sharper trader, mirror their every move automatically, and let their skill carry you while you make a brew. That's the pitch behind crypto copy trading, and on paper it's lovely. The catch? The same automation that lets you follow a genius lets you follow a fraud in a borrowed cape just as easily.
 
-So let's pull the curtain back. This guide covers how crypto copy trading works, the flavours you'll meet, and why a glossy "proven track record" should make you reach for your reading glasses, not your wallet. The usual line holds: past performance is cheap to fake, leverage punishes you as eagerly as it rewards, and copying an anonymous stranger is a gamble no marketing copy can talk away.
+So let's pull the curtain back. This guide covers how crypto copy trading works, the flavours you'll meet, and why a glossy "proven track record" should make you reach for your reading glasses, not your wallet. The usual line holds: past performance is cheap to fake, leverage punishes as eagerly as it rewards, and copying an anonymous stranger is a gamble no marketing copy can talk away.
 
 ## How copy trading works
 
@@ -17,7 +17,7 @@ That gap between the headline figure and what lands in your account is the whole
 
 ## Types of copy trading
 
-Not every copy-trading offer is cut from the same cloth. The structure behind it tells you a lot about how much cover you've got when things go sideways. And they do go sideways.
+Not every copy-trading offer is cut from the same cloth. The structure behind it tells you a lot about how much cover you've got when things go sideways.
 
 ### Regulated copy-trading platforms
 
@@ -31,7 +31,7 @@ Our overview of [crypto exchanges](/crypto-exchanges) spells out what credible r
 
 ### Signal / Telegram groups
 
-Here a channel fires off "buy" and "sell" calls, and you execute them by hand or via a connected bot. The admins are often anonymous, which alone should slow you down.
+Here a channel fires off "buy" and "sell" calls, and you execute them by hand or via a connected bot. The admins are often anonymous.
 
 - There's usually no verifiable record of past calls, because messages can be edited or quietly deleted.
 - The "winners" get screenshotted and pinned. The losers? They evaporate.
@@ -49,7 +49,7 @@ Proprietary ("prop") firms offer to fund traders who pass an evaluation, sometim
 
 ### AI copy bots
 
-These market themselves as algorithms that follow "smart money" or trade autonomously using artificial intelligence. Impressive, until you ask a follow-up question.
+These market themselves as algorithms that follow "smart money" or trade autonomously using artificial intelligence. Impressive, until you ask a follow-up.
 
 - The "AI" label is often pure decoration. Ask what the thing actually does and how it's tested.
 - Backtested or simulated returns are not the same as live, audited results. Not even close.
@@ -64,27 +64,27 @@ A track record is only as good as the proof behind it. In crypto copy trading, t
 - **Survivorship bias.** Launch many accounts, advertise the one that happened to win, bin the rest.
 - **Cherry-picked windows.** Show the flattering month, hide the bloodbath either side of it.
 - **Edited screenshots.** A profit screenshot takes seconds to fake and can't be audited.
-- **Hidden leverage.** A modest move shown as a huge percentage gain, with the borrowed exposure left off the label.
+- **Hidden leverage.** A modest move shown as a huge percentage gain, with the borrowed exposure hidden.
 - **Demo versus live.** Practice-account results paraded as though real money was on the line.
 
-The honest answer is uncertainty. Unless returns are independently verified, net of fees, and shown with full drawdown over a meaningful stretch, treat them as marketing, not evidence. No track record can promise tomorrow, and we never pretend a strategy carries no risk.
+The honest answer is uncertainty. Unless returns are independently verified, net of fees, and shown with full drawdown over a meaningful stretch, treat them as marketing. No track record can promise tomorrow, and we never pretend a strategy carries no risk.
 
 ## Red flags
 
-Some warning signs show up so often they work as a quick filter. Spot a few together and walk.
+Some warning signs recur often enough to work as a quick filter. Spot a few together and walk.
 
 - **Promises of fixed or certain returns.** Markets don't do certainty. That language is the smell of fraud.
 - **Heavy leverage waved off as normal.** It magnifies losses as hard as gains and can empty an account in one move.
 - **Unverifiable returns.** No audited history, no named team, no way to check a single claim.
-- **Anonymous lead traders.** Can't say who you're copying? Then you can't judge whether they're any good.
+- **Anonymous lead traders.** Can't say who you're copying? Then you can't judge them.
 - **Paid shills and pressure tactics.** Influencer plugs, countdown timers and "only three spots left" exist to rush you past your own judgement.
 - **Requests to move funds off-platform** or into wallets you don't control. That's the door, not the deal.
 
-Run into an operator flashing these signs? Our [scam warnings](/warnings) hub may already have the file open.
+Run into an operator flashing these signs? Our [scam warnings](/warnings) hub may already have it documented.
 
 ## How we rate copy-trading platforms
 
-We judge copy-trading services against consistent, evidence-led criteria, not whoever shouts the biggest number:
+We judge copy-trading services against consistent, evidence-led criteria, not headline returns:
 
 - **Transparency.** Is the operating company named, contactable and verifiable?
 - **Regulation and custody.** Is there a genuine licence, and where are client funds held?
@@ -92,4 +92,4 @@ We judge copy-trading services against consistent, evidence-led criteria, not wh
 - **Risk disclosure.** Are leverage, fees and the chance of total loss stated plainly, or buried?
 - **Reputation.** What do independent reviews, on-chain data and our own checks turn up?
 
-Copy trading can genuinely be a way to learn, provided you start small, use only money you can afford to lose, and back accountable, regulated platforms over anonymous promises. The traders worth copying are honest about their losses, not just their highlight reel.
+Copy trading can be a way to learn, provided you start small, use only money you can afford to lose, and favour accountable, regulated platforms over anonymous promises. The traders worth copying are honest about their losses, not just their highlight reel.

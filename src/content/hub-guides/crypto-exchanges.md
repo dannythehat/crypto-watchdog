@@ -2,31 +2,31 @@ Pick the wrong exchange and the slick app won't save you. The platform you choos
 
 ## What to look for in the best crypto exchanges
 
-Search for the best crypto exchanges and most people start counting fees and coins. Fair enough, those count. But they're the wallpaper, not the foundations. The questions that keep you whole are duller: who holds your keys, and whether you can take your money out when you ask.
+Search for the best crypto exchanges and most people start counting fees and coins. Fair enough, those count. But they're the wallpaper, not the foundations. The questions that keep you whole are duller: who holds your keys, and whether you can get your money out when you ask.
 
 A few things worth tattooing somewhere visible:
 
 - **Not your keys, not your coins.** If a platform holds your private keys, you're betting on that company staying solvent and honest. Both. Forever. Move to self-custody in a dedicated [crypto wallet](/crypto-wallets) and that dependency vanishes, but now you're the security team, with nobody to ring if it goes wrong.
-- **Withdrawals are the only test that doesn't lie.** A platform can look glossy while quietly turning the cash-out tap tighter every week. Money leaving smoothly, every time you ask, is the clearest sign of a healthy exchange.
+- **Withdrawals are the only test that doesn't lie.** A platform can look glossy while quietly turning the cash-out tap tighter every week. Money leaving smoothly, every time, is the clearest sign of a healthy exchange.
 - **Regulation is a floor, not a hug.** A licence trims some risks. It does not make a platform safe, and anyone telling you it does is selling something.
 
-So when we talk about the best crypto exchanges, we mean the ones with believable custody, honest disclosures, and a boring habit of letting customers walk off with their own money whenever they like.
+So when we talk about the best crypto exchanges, we mean the ones with believable custody, honest disclosures, and a boring habit of letting customers walk off with their own money on demand.
 
 ## What makes a crypto exchange safe
 
 No exchange is without risk, so "safe" here means well-run, honest and hard to topple, not bulletproof. What separates the sturdy from the wobbly:
 
-- **Custody and reserves.** Does it explain how your assets are held and kept separate, and publish proof-of-reserves or independent attestations? Or does it just say "trust us" in a nice font?
-- **Regulatory standing.** Is it actually registered with the right authority where you live, and is that registration current, not just a logo nicked off a website?
+- **Custody and reserves.** Does it explain how your assets are held and kept separate, and publish proof-of-reserves or independent attestations? Or just say "trust us" in a nice font?
+- **Regulatory standing.** Is it actually registered with the right authority where you live, and is that registration current, not just a logo nicked off a site?
 - **Withdrawal reliability.** A real history of paying people out, especially when markets are on fire, beats any marketing line.
 - **Security practices.** Two-factor authentication, withdrawal allowlists, sensible key storage and a clean incident record all say grown-ups are running the place.
-- **Operational transparency.** Clear fees, named humans in charge, a real legal entity, support that replies. Dull as ditchwater. Tells you everything.
+- **Operational transparency.** Clear fees, named humans in charge, a real legal entity, support that replies. Dull as ditchwater, and it tells you everything.
 
 A working sense of how [blockchains](/blockchains) settle transactions helps too. It's the difference between nodding along to an exchange's claims about speed and fees and spotting the nonsense.
 
 ## Types of crypto exchange
 
-Different models, different headaches. Each trades convenience against custody and counterparty risk its own way.
+Different models, different headaches. Each trades convenience against custody and counterparty risk.
 
 ### Centralised exchanges (CEX)
 
@@ -34,11 +34,11 @@ The familiar one. A company runs the order book, holds the funds, matches buyers
 
 ### Decentralised exchanges (DEX)
 
-Here you trade straight from your own wallet through smart contracts, no middleman holding the bag. You keep your keys throughout, killing off one big way to lose everything. In return, you pick up smart-contract risk, the chore of running your own wallet, and a learning curve that bites beginners. If you fancy this route, our rundown of [DeFi platforms](/defi-platforms) lays out how these protocols work and where the trapdoors are.
+Here you trade straight from your own wallet through smart contracts, no middleman holding the bag. You keep your keys throughout, killing off one big way to lose everything. In return, you pick up smart-contract risk, the chore of running your own wallet, and a learning curve that bites beginners. If you fancy this route, our rundown of [DeFi platforms](/defi-platforms) shows how these protocols work and where the trapdoors are.
 
 ### P2P exchanges
 
-Peer-to-peer marketplaces put individual buyers and sellers together, often with the platform just holding the funds in escrow. Handy for flexible payment methods and regions where banking is patchy. The trade-off: all your risk now sits on the stranger across the table. Reputation scores, escrow and confirming the payment landed aren't optional here.
+Peer-to-peer marketplaces put individual buyers and sellers together, often with the platform just holding the funds in escrow. Handy for flexible payment methods and regions where banking is patchy. The trade-off: all your risk now sits on the stranger across the table. Reputation scores, escrow and confirming the payment landed aren't optional.
 
 ### Brokers
 
@@ -48,7 +48,7 @@ Brokers sell you crypto directly at a quoted price instead of matching you again
 
 The same patterns turn up across every platform that's gone bad. Treat any of these as a reason to stop and verify before another penny goes in:
 
-- Withdrawals that drag, get capped, or suddenly demand extra verification nobody mentioned before.
+- Withdrawals that drag, get capped, or suddenly demand extra verification nobody mentioned.
 - Pressure to deposit more before you can withdraw, or "fees" and "taxes" you must pay to "release" your funds. That's not a process. That's a scam.
 - Promises of fixed or outsized returns, locked-in profits, or anything sold to you as a sure thing. Run.
 - Faceless operators, no verifiable legal entity, or a registration the regulator's never heard of.
@@ -58,7 +58,7 @@ If a withdrawal stalls, screenshot everything and stop topping up. Our [scam war
 
 ## How we rate exchanges
 
-We judge platforms on evidence, not their press release, and we'll happily admit what we can't confirm. Our review digs into five areas:
+We judge platforms on evidence, not their press release. Our review digs into five areas:
 
 - **Withdrawal track record:** can people reliably get funds out, including when markets are ugly.
 - **Custody and reserves:** how assets are held and what's independently verifiable.
@@ -68,14 +68,15 @@ We judge platforms on evidence, not their press release, and we'll happily admit
 
 When we can't verify a claim, we say so instead of dressing it up as fact. We don't do price predictions, and we won't push any platform flashing the warning signs above. Not for any fee.
 
+
 ## How to choose
 
-Start by matching the model to what you're trying to do. Want self-custody? Lean toward a DEX with a wallet you control. Want simplicity and easy fiat access? A regulated CEX or broker might suit, as long as you've made peace with the trade-off. Then, before trusting anyone with real money, run a tiny dry run:
+Start by matching the model to your goal. Want self-custody? Lean toward a DEX with a wallet you control. Want simplicity and easy fiat access? A regulated CEX or broker might suit, as long as you've made peace with the trade-off. Then, before trusting anyone with real money, run a tiny dry run:
 
 1. Deposit a modest amount.
 2. Make a small trade.
 3. **Withdraw to an external wallet** and watch it clear.
 
-That third step is the one almost everyone skips, and the one that tells you the most. For a local view, see our write-ups on [the best crypto exchange options in the UK for 2026](/blog/best-crypto-exchange-uk-2026) and [how to pick a safe crypto exchange in 2026](/blog/how-to-pick-safe-crypto-exchange-2026).
+That third step is the one almost everyone skips, and the one that tells you most. For a local view, see our write-ups on [the best crypto exchange options in the UK for 2026](/blog/best-crypto-exchange-uk-2026) and [how to pick a safe crypto exchange in 2026](/blog/how-to-pick-safe-crypto-exchange-2026).
 
-No platform is without risk, and the picture shifts. Re-check custody, regulatory standing and withdrawal performance now and then, keep only what you need on any exchange, and move long-term holdings to self-custody wherever you can. Future you will be grateful.
+No platform is without risk, and the picture shifts. Re-check custody, regulatory standing and withdrawal performance now and then, keep only what you need on any exchange, and move long-term holdings to self-custody where you can. Future you will be grateful.
