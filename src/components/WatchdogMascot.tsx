@@ -13,7 +13,7 @@ import { Shield } from "lucide-react";
 
 export type MascotMood = "approve" | "caution" | "alert" | "scan";
 
-const BRAND_IMG =
+export const BRAND_IMG =
   "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg";
 
 const RING: Record<MascotMood, string> = {
