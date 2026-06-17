@@ -116,6 +116,16 @@ export const getBlogPost = (slug: string) => blogPosts.find((p) => p.slug === sl
 export const getReview = (slug: string) => reviews.find((r) => r.slug === slug) ?? null;
 export const getWarning = (slug: string) => warnings.find((w) => w.slug === slug) ?? null;
 
+// Long-form, expandable SEO "buyer's guide" content for each hub page. Stored as
+// plain markdown in ./hub-guides/<hubSlug>.md and rendered behind a "Read the
+// full guide" expander on the hub.
+const hubGuideRaw = import.meta.glob("./hub-guides/*.md", { as: "raw", eager: true }) as Record<string, string>;
+export const getHubGuide = (slug: string): string | null => {
+  const entry = Object.entries(hubGuideRaw).find(([p]) => p.endsWith(`/${slug}.md`));
+  if (!entry) return null;
+  return entry[1].replace(/^---[\s\S]*?---\n/, "").trim() || null;
+};
+
 // Related posts for on-page navigation/internal linking: same category first,
 // then most recent, excluding the current post.
 const tokenize = (s: string) => new Set((s || "").toLowerCase().match(/[a-z0-9]+/g) || []);

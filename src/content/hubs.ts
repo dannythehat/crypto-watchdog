@@ -29,6 +29,10 @@ export interface Hub {
   warnings: string[];     // warning slugs (active scam alerts)
   relatedPosts: string[]; // blog slugs
   faq: HubFaq[];
+  // Optional type-grouped sections (e.g. wallets → Hardware / Software / …).
+  // When present, the hub renders these grouped tables/cards as the primary
+  // platform display; each card's colour is derived from its review rating.
+  groups?: { title: string; subtitle?: string; slugs: string[] }[];
 }
 
 export const hubs: Hub[] = [
@@ -83,6 +87,12 @@ export const hubs: Hub[] = [
       { q: "Are big exchanges safer than small ones?", a: "Usually, but not always — size didn't save FTX. We weigh regulation, transparency and a verifiable withdrawal track record over brand recognition." },
       { q: "Should I leave my crypto on an exchange?", a: "For long-term holdings, no. An exchange holds the keys, which means you're trusting them to stay solvent. For anything you can't afford to lose, move it to a wallet you control." },
     ],
+    groups: [
+      { title: "Centralised exchanges (CEX)", subtitle: "Custodial platforms to buy, sell and trade with fiat on-ramps.", slugs: ["kraken", "coinbase", "binance", "xt-com", "okx", "bitget", "bybit", "kucoin", "bingx"] },
+      { title: "Decentralised exchanges (DEX)", subtitle: "On-chain swaps where you keep custody of your funds.", slugs: ["uniswap", "pancakeswap", "curve-finance"] },
+      { title: "P2P exchanges", subtitle: "Peer-to-peer trading with no central custodian.", slugs: ["bisq"] },
+      { title: "Brokers", subtitle: "Simplified buy/sell apps and CFD providers.", slugs: ["etoro"] },
+    ],
   },
   {
     slug: "crypto-wallets",
@@ -108,6 +118,12 @@ export const hubs: Hub[] = [
       { q: "Hardware or software wallet — which should I use?", a: "For meaningful amounts, a hardware wallet (cold storage) like Ledger or Trezor is the gold standard. A reputable software wallet is fine for small, everyday amounts you actively use." },
       { q: "How do fake wallet scams work?", a: "Scammers publish lookalike apps and browser extensions, or run fake 'wallet support' that asks for your seed phrase. No real wallet will ever ask for your recovery phrase — that request is always a scam." },
       { q: "What's the one rule that keeps a wallet safe?", a: "Never type or photograph your seed phrase anywhere digital, and never share it. Whoever has the seed phrase has the coins." },
+    ],
+    groups: [
+      { title: "Hardware (cold storage)", subtitle: "Offline devices — the gold standard for serious amounts.", slugs: ["ledger-nano-x", "trezor"] },
+      { title: "Software / hot wallets", subtitle: "Self-custody apps for everyday, on-chain use.", slugs: ["metamask", "phantom", "trust-wallet"] },
+      { title: "Smart-contract wallets", subtitle: "Account-abstraction & multi-sig for advanced security.", slugs: ["safe-gnosis", "argent"] },
+      { title: "Custodial wallets", subtitle: "A third party holds your keys — convenient, higher trust risk.", slugs: ["coinbase-wallet-custodial"] },
     ],
   },
   {
