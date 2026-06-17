@@ -9,8 +9,10 @@ import BlogCard from "@/components/BlogCard";
 import AuroraBackdrop from "@/components/AuroraBackdrop";
 import WatchdogMascot from "@/components/WatchdogMascot";
 import OfferCard from "@/components/OfferCard";
+import NewsCard from "@/components/NewsCard";
 import { hubs } from "@/content/hubs";
 import { offersByDateDesc } from "@/content/offers";
+import { newsByDateDesc } from "@/content/news";
 import { useReviews } from "@/hooks/useReviews";
 import { useBlogPosts } from "@/hooks/useBlogPosts";
 import { useWarnings } from "@/hooks/useWarnings";
@@ -74,6 +76,29 @@ const Index = () => {
             </div>
           </SectionWrapper>
         </section>
+
+        {/* Latest crypto news */}
+        <SectionWrapper>
+          <div className="flex items-end justify-between">
+            <div>
+              <div className="mb-2 inline-flex items-center gap-2 text-primary">
+                <span className="text-lg">📰</span>
+                <span className="text-sm font-semibold uppercase tracking-wider">Fresh today</span>
+              </div>
+              <h2 className="font-heading text-3xl font-bold md:text-4xl">Latest crypto news</h2>
+              <p className="mt-2 max-w-2xl text-muted-foreground">The headlines that matter — with our safety-first take on each.</p>
+            </div>
+            <Link to="/news" className="hidden items-center gap-1 text-sm font-medium text-primary hover:underline md:flex">
+              All news <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {newsByDateDesc.slice(0, 3).map((item) => <NewsCard key={item.id} item={item} />)}
+          </div>
+          <div className="mt-6 text-center md:hidden">
+            <Button asChild variant="outline"><Link to="/news">See all news</Link></Button>
+          </div>
+        </SectionWrapper>
 
         {/* Browse by category — hub landing pages */}
         <SectionWrapper>

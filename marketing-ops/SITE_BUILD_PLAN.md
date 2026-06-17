@@ -45,7 +45,9 @@ Status key: [ ] todo · [~] in progress · [x] done & live
 - [ ] Sub-hubs: AI Yield, AI Quant, AI Signals; CEX vs DEX; Hardware vs Hot
 - [x] "Daily & Ongoing Freebies" page (/freebies) + homepage strip + nav
 - [ ] Refresh /freebies daily with researched offers
-- [ ] Latest crypto news section (repo-driven, refreshed daily) — needs build
+- [x] Latest crypto news section (/news) + homepage strip + nav (repo-driven)
+- [ ] Wire /news to Free Crypto News API connector for daily auto-refresh
+- [ ] Wire Pollinations Flux connector → generate + commit brand imagery
 
 ## PHASE 5 — Money plumbing
 - [ ] Affiliate CTA on every endorsed card where we have a link

@@ -16,6 +16,7 @@ import Submit from "./pages/Submit";
 import About from "./pages/About";
 import Go from "./pages/Go";
 import Freebies from "./pages/Freebies";
+import News from "./pages/News";
 import CategoryHub from "./pages/CategoryHub";
 import NotFound from "./pages/NotFound";
 
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/submit" element={<Submit />} />
           <Route path="/about" element={<About />} />
           <Route path="/freebies" element={<Freebies />} />
+          <Route path="/news" element={<News />} />
           <Route path="/go/:id" element={<Go />} />
           {/* Category hub landing pages (clean root slugs, e.g. /ai-finance).
               Static routes above rank higher, so this only catches hub slugs. */}

@@ -9,6 +9,7 @@ import { hubs } from "@/content/hubs";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Reviews", href: "/reviews" },
+  { label: "News", href: "/news" },
   { label: "Warnings", href: "/warnings" },
   { label: "Freebies", href: "/freebies" },
   { label: "Blog", href: "/blog" },
