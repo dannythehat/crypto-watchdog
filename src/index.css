@@ -102,3 +102,43 @@
     font-family: var(--font-heading);
   }
 }
+
+/* ---- Cinematic backdrop + motion (CryptoWatchdog) ---- */
+@layer utilities {
+  @keyframes cw-drift {
+    0%   { transform: translate3d(0,0,0) scale(1); }
+    33%  { transform: translate3d(6%, -4%, 0) scale(1.12); }
+    66%  { transform: translate3d(-5%, 5%, 0) scale(0.95); }
+    100% { transform: translate3d(0,0,0) scale(1); }
+  }
+  @keyframes cw-drift-2 {
+    0%   { transform: translate3d(0,0,0) scale(1.05); }
+    50%  { transform: translate3d(-7%, 6%, 0) scale(0.9); }
+    100% { transform: translate3d(0,0,0) scale(1.05); }
+  }
+  @keyframes cw-pan {
+    from { background-position: 0 0; }
+    to   { background-position: 880px 880px; }
+  }
+  @keyframes cw-float {
+    0%,100% { transform: translateY(0); opacity: 0.5; }
+    50%     { transform: translateY(-26px); opacity: 1; }
+  }
+  @keyframes cw-sheen {
+    0%   { background-position: -150% 0; }
+    100% { background-position: 250% 0; }
+  }
+  .cw-aurora-1 { animation: cw-drift 22s ease-in-out infinite; }
+  .cw-aurora-2 { animation: cw-drift-2 28s ease-in-out infinite; }
+  .cw-aurora-3 { animation: cw-drift 34s ease-in-out infinite reverse; }
+  .cw-gridpan  { animation: cw-pan 60s linear infinite; }
+  .cw-float    { animation: cw-float 7s ease-in-out infinite; }
+  .cw-sheen {
+    background-image: linear-gradient(110deg, transparent 30%, hsl(var(--primary)/0.18) 50%, transparent 70%);
+    background-size: 200% 100%;
+    animation: cw-sheen 6s linear infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cw-aurora-1,.cw-aurora-2,.cw-aurora-3,.cw-gridpan,.cw-float,.cw-sheen { animation: none; }
+  }
+}

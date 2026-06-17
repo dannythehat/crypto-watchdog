@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 import SectionWrapper from "@/components/SectionWrapper";
 import ReviewCard from "@/components/ReviewCard";
 import BlogCard from "@/components/BlogCard";
+import AuroraBackdrop from "@/components/AuroraBackdrop";
+import WatchdogMascot from "@/components/WatchdogMascot";
+import { hubs } from "@/content/hubs";
 import { useReviews } from "@/hooks/useReviews";
 import { useBlogPosts } from "@/hooks/useBlogPosts";
 import { useWarnings } from "@/hooks/useWarnings";
@@ -26,14 +29,11 @@ const Index = () => {
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden">
-          <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-background via-background to-card" />
-          <div className="pointer-events-none absolute -top-32 left-[10%] -z-10 h-[28rem] w-[28rem] rounded-full bg-primary/25 blur-[130px]" />
-          <div className="pointer-events-none absolute top-10 right-[8%] -z-10 h-80 w-80 rounded-full bg-rating-green/15 blur-[130px]" />
-          <div
-            className="pointer-events-none absolute inset-0 -z-10 opacity-[0.04]"
-            style={{ backgroundImage: "linear-gradient(currentColor 1px, transparent 1px), linear-gradient(90deg, currentColor 1px, transparent 1px)", backgroundSize: "44px 44px" }}
-          />
+          <AuroraBackdrop accent="#4F8BFF" variant="hero" />
           <SectionWrapper className="pb-16 pt-32 md:pt-44">
+            <div className="mx-auto mb-10 w-40 cw-float md:hidden">
+              <WatchdogMascot mood="approve" title="CryptoWatchdog mascot" />
+            </div>
             <div className="mx-auto max-w-3xl text-center">
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary backdrop-blur">
                 <Shield className="h-4 w-4" />
@@ -72,6 +72,46 @@ const Index = () => {
             </div>
           </SectionWrapper>
         </section>
+
+        {/* Browse by category — hub landing pages */}
+        <SectionWrapper>
+          <div className="text-center">
+            <span className="text-sm font-semibold uppercase tracking-wider text-primary">Endorsed vs avoid</span>
+            <h2 className="mt-2 font-heading text-3xl font-bold md:text-4xl">Browse by category</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+              Curated landing pages for every corner of crypto — the platforms we trust, the ones to watch, and the ones to avoid. Pick your battleground.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {hubs.map((h) => (
+              <Link
+                key={h.slug}
+                to={`/${h.slug}`}
+                className="group relative overflow-hidden rounded-2xl border border-border bg-card/60 p-6 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl"
+              >
+                <div
+                  className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full blur-2xl transition-opacity group-hover:opacity-80"
+                  style={{ background: h.accent, opacity: 0.18 }}
+                />
+                <div className="relative flex items-start justify-between gap-3">
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-primary">{h.eyebrow}</span>
+                    <h3 className="mt-1 font-heading text-lg font-semibold leading-snug">{h.title.split(":")[0]}</h3>
+                  </div>
+                  <div className="h-16 w-16 shrink-0 transition-transform group-hover:scale-110">
+                    <WatchdogMascot mood={h.mood} title={h.eyebrow} />
+                  </div>
+                </div>
+                <div className="relative mt-4 flex flex-wrap gap-2 text-xs font-semibold">
+                  <span className="inline-flex items-center gap-1 rounded-full bg-rating-green/15 px-2 py-0.5 text-rating-green"><ShieldCheck className="h-3 w-3" />{h.trusted.length}</span>
+                  <span className="inline-flex items-center gap-1 rounded-full bg-rating-orange/15 px-2 py-0.5 text-rating-orange"><ShieldAlert className="h-3 w-3" />{h.caution.length}</span>
+                  <span className="inline-flex items-center gap-1 rounded-full bg-rating-red/15 px-2 py-0.5 text-rating-red"><ShieldX className="h-3 w-3" />{h.avoid.length + h.warnings.length}</span>
+                  <span className="ml-auto inline-flex items-center gap-1 text-primary opacity-0 transition-opacity group-hover:opacity-100">Explore <ArrowRight className="h-3.5 w-3.5" /></span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </SectionWrapper>
 
         {/* Our Story - founder's note */}
         <SectionWrapper className="border-y border-border bg-card">

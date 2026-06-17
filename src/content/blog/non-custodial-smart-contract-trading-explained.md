@@ -8,7 +8,7 @@ image_url: "/blog/non-custodial-trading-hero.jpg"
 published: true
 auto_generated: false
 published_at: "2026-04-26T04:47:56.504189+00:00"
-updated_at: "2026-05-11T04:24:41.104299+00:00"
+updated_at: "2026-06-17T17:10:00Z"
 meta_title: null
 meta_description: null
 ---
@@ -57,7 +57,7 @@ You use a wallet you control: MetaMask, Rabby, Trust Wallet, a hardware wallet l
 
 ### Step 2 — You approve a smart contract, not a deposit
 
-Instead of sending coins to the platform, you grant the trading smart contract a specific permission. Typically this is a *spend allowance* limited to a single token (often a stablecoin like USDC) and a maximum amount. The contract address is public and verifiable on-chain.
+Instead of sending coins to the platform, you grant the trading smart contract a specific permission. Typically this is a *spend allowance* — the same <a href="https://ethereum.org/developers/docs/standards/tokens/erc-20/" target="_blank" rel="noopener noreferrer">ERC-20 `approve`/`allowance` mechanism documented on ethereum.org</a> — limited to a single token (often a stablecoin like USDC) and a maximum amount. The contract address is public and verifiable on-chain.
 
 ### Step 3 — The contract is configured to mirror a strategy
 
@@ -65,7 +65,7 @@ The smart contract is hard-wired to execute a defined trading strategy — for e
 
 ### Step 4 — Trades happen on decentralised exchanges
 
-When the strategy fires, the contract swaps your tokens through on-chain venues like Uniswap, Curve or 1inch — the same [decentralised exchanges (DEXs) we explain here](/blog/what-is-a-decentralized-exchange-dex-explained). Your funds never leave the wallet ecosystem you control. Every trade is a transparent transaction you can audit on a block explorer.
+When the strategy fires, the contract swaps your tokens through on-chain venues like Uniswap, Curve or 1inch — the same [decentralised exchanges (DEXs) we explain here](/blog/what-is-a-decentralized-exchange-dex-explained). These swaps run against automated-market-maker liquidity pools rather than an order book, as the <a href="https://support.uniswap.org/hc/en-us/articles/8671577468813-How-does-the-Uniswap-protocol-work" target="_blank" rel="noopener noreferrer">official Uniswap protocol documentation</a> describes. Your funds never leave the wallet ecosystem you control. Every trade is a transparent transaction you can audit on a block explorer.
 
 ### Step 5 — You withdraw your allowance any time
 
@@ -118,7 +118,7 @@ This is a level of transparency that *no* centralised platform can offer, no mat
 
 ### 5. Smart contracts are open to third-party security review
 
-Reputable non-custodial trading platforms publish their contract source code and pay specialist firms — Trail of Bits, OpenZeppelin, Quantstamp, CertiK — to perform formal audits. The audit reports are public. You can read them yourself before connecting a single dollar.
+Reputable non-custodial trading platforms publish their contract source code and pay specialist firms — Trail of Bits, <a href="https://www.openzeppelin.com/security-audits" target="_blank" rel="noopener noreferrer">OpenZeppelin</a>, Quantstamp, CertiK — to perform formal audits. The audit reports are public. You can read them yourself before connecting a single dollar.
 
 ## Why this matters more than ever in 2026
 
@@ -155,7 +155,7 @@ Non-custodial doesn't automatically mean "safe." A poorly-written contract is st
 
 ### The contract source code is public and verified
 
-Open the contract address on a block explorer. The "Contract" tab should show *Verified* with the full Solidity (or Vyper) source visible. Anything else means you are trusting opaque bytecode — never do this.
+Open the contract address on a block explorer. The "Contract" tab should show *Verified* with the full Solidity (or Vyper) source visible — Etherscan documents <a href="https://info.etherscan.com/how-to-verify-contracts/" target="_blank" rel="noopener noreferrer">exactly how this verification works</a>, and ethereum.org explains <a href="https://ethereum.org/developers/docs/smart-contracts/verifying/" target="_blank" rel="noopener noreferrer">why source verification matters</a>. Anything else means you are trusting opaque bytecode — never do this.
 
 ### A reputable firm has audited the contract
 
@@ -163,7 +163,7 @@ Look for an audit report from Trail of Bits, OpenZeppelin, ConsenSys Diligence, 
 
 ### The spend allowance is bounded
 
-When you approve the contract in your wallet, your wallet should show a specific token and a specific maximum amount. **Avoid contracts that ask for an unlimited (max uint256) approval** unless you fully trust the team and plan to revoke immediately after each session. Tools like [revoke.cash](https://revoke.cash) make this trivial.
+When you approve the contract in your wallet, your wallet should show a specific token and a specific maximum amount. **Avoid contracts that ask for an unlimited (max uint256) approval** unless you fully trust the team and plan to revoke immediately after each session. Over-broad approvals are exactly what <a href="https://www.chainalysis.com/blog/what-is-approval-phishing/" target="_blank" rel="noopener noreferrer">approval-phishing and wallet-drainer attacks abuse</a>, a category Chainalysis has tied to more than a billion dollars in losses. Tools like [revoke.cash](https://revoke.cash) make limiting and revoking those approvals trivial.
 
 ### Admin keys are time-locked or renounced
 
@@ -218,6 +218,15 @@ Non-custodial smart contract trading is not a marketing buzzword. It is a struct
 The model isn't perfect. Smart contracts can have bugs. Strategies can underperform. Markets can move against you. But you keep your keys, you keep your coins, and you can walk away in one click. That is a foundation no custodial platform can match.
 
 If you want to see what this looks like in practice, start with our [Aurum Foundation review](/reviews/aurum-foundation), check out the broader [AI Finance category](/ai-finance), and read our [scam guides](/scam-guides) to make sure you can spot the difference between a legitimate non-custodial operator and an "AI bot" wearing the same costume.
+
+## Sources & further reading
+
+- <a href="https://ethereum.org/developers/docs/standards/tokens/erc-20/" target="_blank" rel="noopener noreferrer">ethereum.org — ERC-20 token standard, including the `approve`/`allowance` spending model</a>
+- <a href="https://ethereum.org/developers/docs/smart-contracts/verifying/" target="_blank" rel="noopener noreferrer">ethereum.org — Verifying smart contracts and why published source code matters</a>
+- <a href="https://info.etherscan.com/how-to-verify-contracts/" target="_blank" rel="noopener noreferrer">Etherscan Information Center — How contract source-code verification works</a>
+- <a href="https://www.openzeppelin.com/security-audits" target="_blank" rel="noopener noreferrer">OpenZeppelin — Smart contract security audits and methodology</a>
+- <a href="https://support.uniswap.org/hc/en-us/articles/8671577468813-How-does-the-Uniswap-protocol-work" target="_blank" rel="noopener noreferrer">Uniswap Labs — How the Uniswap protocol and on-chain swaps work</a>
+- <a href="https://www.chainalysis.com/blog/what-is-approval-phishing/" target="_blank" rel="noopener noreferrer">Chainalysis — Approval-phishing and wallet-drainer scams explained</a>
 
 ---
 

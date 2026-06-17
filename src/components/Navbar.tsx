@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
+import { hubs } from "@/content/hubs";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -25,6 +26,21 @@ const Navbar = () => {
         </Link>
 
         <ul className="hidden items-center gap-6 md:flex">
+          <li className="relative group">
+            <button className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+              Categories <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" />
+            </button>
+            <div className="invisible absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-3 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
+              <div className="overflow-hidden rounded-2xl border border-border bg-background/95 p-2 shadow-xl backdrop-blur-lg">
+                {hubs.map((h) => (
+                  <Link key={h.slug} to={`/${h.slug}`} className="block rounded-lg px-3 py-2 text-sm transition-colors hover:bg-card hover:text-primary">
+                    <span className="font-medium">{h.eyebrow}</span>
+                    <span className="block truncate text-xs text-muted-foreground">{h.metaTitle}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </li>
           {navLinks.map((l) => (
             <li key={l.href}>
               <Link
@@ -70,6 +86,18 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            <li className="pt-1">
+              <span className="block text-xs font-semibold uppercase tracking-wider text-primary">Categories</span>
+              <ul className="mt-2 flex flex-col gap-2 border-l border-border pl-3">
+                {hubs.map((h) => (
+                  <li key={h.slug}>
+                    <Link to={`/${h.slug}`} onClick={() => setOpen(false)} className="block text-sm text-muted-foreground transition-colors hover:text-foreground">
+                      {h.eyebrow}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
             <li>
               <Button asChild size="sm" className="w-full">
                 <Link to="/submit" onClick={() => setOpen(false)}>
