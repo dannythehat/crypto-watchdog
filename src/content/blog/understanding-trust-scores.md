@@ -8,7 +8,7 @@ image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/bl
 published: true
 auto_generated: false
 published_at: "2026-04-13T04:08:35.252561+00:00"
-updated_at: "2026-06-17T20:00:00Z"
+updated_at: "2026-06-17T21:00:00Z"
 meta_title: "How CryptoWatchdog Trust Scores Work"
 meta_description: "How CryptoWatchdog builds its 0-100 crypto Trust Score: the green/orange/red alerts, the audit behind every rating, and how to read a score before depositing."
 primary_keyword: "crypto trust score"
@@ -19,7 +19,7 @@ meta_title_len: 33
 
 A number and a colour. That's the first thing you see on any CryptoWatchdog review — a crypto Trust Score out of 100, sat behind a green, orange or red alert. It's built to do one job, and do it well: tell you in a heartbeat how much risk a platform carries before you send it a single coin.
 
-But a number is only as honest as the graft behind it. So this page lifts the bonnet. What we check. How we weigh it. What the colours mean. And — the bit most rating systems quietly skip — what the score flat-out can't tell you. We'd rather earn your trust by showing the working than ask you to take our word for it.
+But a number is only as honest as the work behind it. So this page shows how it's made. What we check. How we weigh it. What the colours mean. And the bit most rating systems skip over: what the score can't tell you. We'd rather earn your trust by showing the working than ask you to take our word for it.
 
 None of this is financial advice. A Trust Score is a research and safety tool, not a buy or sell signal. Markets shift, teams change, regulators move the goalposts — and our scores move with them.
 
@@ -55,7 +55,7 @@ The colour and the number never disagree — they're two angles on the same find
 
 ## How the 0-100 score is built
 
-The headline number falls out of a multi-point audit, grouped into core pillars. No single pillar gets to save a platform on its own. A gorgeous app counts for nothing if the operators are ghosts, and a celebrity founder counts for nothing if customer funds aren't actually where they're meant to be.
+The headline number comes out of a multi-point audit, grouped into core pillars. No single pillar can save a platform on its own. A polished app counts for nothing if you can't find out who runs it, and a well-known founder counts for nothing if customer funds aren't where they're meant to be.
 
 The pillars we weigh:
 
@@ -88,7 +88,7 @@ This is the engine room. Every review runs the same checklist, so our scores sta
 
 Every review opens with the same blunt question: who can hold this company accountable? In the UK, firms offering cryptoasset services generally have to register with the Financial Conduct Authority for anti-money-laundering supervision and meet AML and customer due-diligence requirements ([FCA — Cryptoassets: AML / CTF regime](https://www.fca.org.uk/firms/financial-crime/cryptoassets-aml-ctf-regime)). Registration isn't a gold star for quality. It just means a real entity has been checked, and there's someone to point at when things go wrong.
 
-Platforms that brag about skipping KYC, or that hide behind a shell company you can't trace, drop points on the spot. In a market with no borders, accountability is the rope tying a platform back to reality. Cut it, and there's nothing to hold.
+Platforms that brag about skipping KYC, or that hide behind a shell company you can't trace, drop points on the spot. In a market with no borders, accountability is often the only thing tying a platform to anyone you could actually hold responsible.
 
 ### Deposits and withdrawals
 
@@ -111,7 +111,7 @@ Who's behind the curtain? An anonymous or pseudonymous team rings the alarm imme
 
 ### Claims versus reality
 
-This is where the marketing meets the maths. We take each big promise — a licence, a partnership, a return figure — and try to verify it ourselves, independently. Anything we can't confirm gets treated as false until proven otherwise. And "guaranteed" or "risk-free" high yields? Among the most dependable warning lights in the entire industry. If a return can't fail, it isn't a return. It's bait.
+This is where the marketing meets the maths. We take each big promise — a licence, a partnership, a return figure — and try to verify it ourselves, independently. Anything we can't confirm gets treated as false until proven otherwise. "Guaranteed" or "risk-free" high yields are among the most reliable warning signs in the industry. A return that genuinely can't fail doesn't exist; if a platform promises one, treat it as a sales pitch, not a fact.
 
 ### Customer support
 

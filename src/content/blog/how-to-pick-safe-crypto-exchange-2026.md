@@ -8,7 +8,7 @@ image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/bl
 published: true
 auto_generated: false
 published_at: "2026-04-21T08:56:46.183808+00:00"
-updated_at: "2026-06-17T20:00:00Z"
+updated_at: "2026-06-17T21:00:00Z"
 meta_title: null
 meta_description: null
 ---
@@ -24,7 +24,7 @@ New to all this? Start gentler with [5 questions to ask before using any platfor
 
 A centralised crypto exchange wears three hats at once. It holds your money. It matches buyers and sellers. And it processes the deposits and withdrawals moving in and out. That's a strange amount of power to hand one company.
 
-In normal finance, those three jobs live at three separate firms, each with its own regulator breathing down its neck. In crypto they're crammed into one outfit, usually in one jurisdiction, often with one CEO who — as a depressing run of bankruptcies has proven — can shuffle customer funds around like a card sharp at a folding table.
+In normal finance, those three jobs live at three separate firms, each with its own regulator watching it. In crypto they're crammed into one outfit, usually in one jurisdiction, often with one CEO who — as a depressing run of bankruptcies has proven — can move customer funds around with very little stopping them.
 
 That's the structural risk. Everything else in this guide flows straight from it.
 
@@ -34,7 +34,7 @@ Want the wider map? This rundown of how [exchange types differ](https://bitdegre
 
 ## The five things that actually matter
 
-Strip away the marketing and credible exchanges separate from dodgy ones on five fronts. Trading volume on CoinGecko isn't one of them — a busy casino is still a casino.
+Strip away the marketing and credible exchanges separate from dodgy ones on five fronts. Trading volume on CoinGecko isn't one of them — plenty of doomed platforms were busy right up to the end.
 
 | Signal | What "safe" looks like | What "risky" looks like |
 |---|---|---|
@@ -44,11 +44,11 @@ Strip away the marketing and credible exchanges separate from dodgy ones on five
 | **Operator transparency** | Named, identifiable executives with traceable career history | Anonymous or rotating leadership; promo-tweet CEOs only |
 | **Insurance & user protection** | Real, audited insurance fund with clear loss-coverage rules | "SAFU"-style funds with no audit and unclear payout mechanics |
 
-The withdrawal one carries the most weight. As we've banged on about in [why withdrawal testing is the most important part of any review](/blog/why-withdrawal-testing-matters), an exchange that can't hand your money back on demand isn't a financial venue. It's a museum. Lovely to look at; you're not taking anything home.
+The withdrawal one carries the most weight. As we've covered in [why withdrawal testing is the most important part of any review](/blog/why-withdrawal-testing-matters), an exchange that can't hand your money back on demand isn't really a place to keep your money. Everything else is secondary to that.
 
 ## The regulators that actually matter (and the ones that don't)
 
-There's a world of difference between a real licence and a regulatory garnish. A registration number from some Caribbean micro-state doesn't mean the exchange got audited. It means the exchange filled in a form. The licences that genuinely keep an operator on a lead in 2026 are these:
+There's a world of difference between a real licence and a registration that just looks like one. A registration number from some Caribbean micro-state doesn't mean the exchange got audited. It means the exchange filled in a form. The licences that genuinely hold an operator to account in 2026 are these:
 
 - **EU — MiCA** (Markets in Crypto-Assets Regulation, fully in force since Dec 2024). Capital requirements, reserve segregation, governance standards — all mandatory. The most consequential crypto regime on the planet right now.
 - **UK — FCA** crypto-asset registration plus the newer financial-promotions regime. Narrow in scope, but the teeth are real.

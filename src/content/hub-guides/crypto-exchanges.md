@@ -49,12 +49,12 @@ Brokers sell you crypto directly at a quoted price instead of matching you again
 The same patterns turn up across every platform that's gone bad. Treat any of these as a reason to stop and verify before another penny goes in:
 
 - Withdrawals that drag, get capped, or suddenly demand verification nobody mentioned.
-- Pressure to deposit more before you can withdraw, or "fees" and "taxes" to "release" your funds. That's not a process. That's a scam.
-- Promises of fixed or outsized returns, locked-in profits, or anything sold to you as a sure thing. Run.
+- Pressure to deposit more before you can withdraw, or "fees" and "taxes" to "release" your funds. That isn't a real process; it's a scam.
+- Promises of fixed or outsized returns, locked-in profits, or anything sold to you as a sure thing.
 - Faceless operators, no verifiable legal entity, or a registration the regulator can't confirm.
-- Reviews complaining, specifically, that people can't get their money out. Believe them.
+- Reviews complaining, specifically, that people can't get their money out. Take those seriously.
 
-If a withdrawal stalls, screenshot everything and stop topping up. Our [scam warnings](/warnings) section tracks the tactics these outfits use, and the moves rhyme even when the branding gets a fresh coat of paint.
+If a withdrawal stalls, screenshot everything and stop topping up. Our [scam warnings](/warnings) section tracks the tactics these outfits use, and the patterns stay much the same even when the branding changes.
 
 ## How we rate exchanges
 
