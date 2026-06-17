@@ -15,62 +15,90 @@ const Index = () => {
   const { data: posts } = useBlogPosts();
   const { data: warnings } = useWarnings();
 
+  const reviewCount = reviews?.length ?? 0;
+  const warningCount = warnings?.length ?? 0;
+  const postCount = posts?.length ?? 0;
+  const round = (n: number) => (n >= 10 ? `${Math.floor(n / 10) * 10}+` : `${n}`);
+
   return (
     <>
       <Navbar />
       <main>
         {/* Hero */}
-        <SectionWrapper id="hero" className="pt-32 md:pt-40">
-          <div className="mx-auto max-w-3xl text-center">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-sm text-primary">
-              <Shield className="h-4 w-4" />
-              Independent Crypto Safety Reviews
-            </div>
-            <h1 className="text-4xl leading-tight md:text-5xl lg:text-6xl">
-              Don't trust. <span className="text-primary">Verify.</span>
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-              We audit crypto wallets, exchanges, trading bots, and DeFi platforms so you can make informed decisions. Transparent ratings. No sponsorships. No hidden agendas.
-            </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <Button asChild size="lg">
-                <Link to="/reviews">
-                  <Search className="mr-2 h-4 w-4" />
-                  Browse Reviews
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link to="/warnings">
-                  <AlertTriangle className="mr-2 h-4 w-4" />
-                  Scam Alerts
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </SectionWrapper>
+        <section className="relative overflow-hidden">
+          <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-background via-background to-card" />
+          <div className="pointer-events-none absolute -top-32 left-[10%] -z-10 h-[28rem] w-[28rem] rounded-full bg-primary/25 blur-[130px]" />
+          <div className="pointer-events-none absolute top-10 right-[8%] -z-10 h-80 w-80 rounded-full bg-rating-green/15 blur-[130px]" />
+          <div
+            className="pointer-events-none absolute inset-0 -z-10 opacity-[0.04]"
+            style={{ backgroundImage: "linear-gradient(currentColor 1px, transparent 1px), linear-gradient(90deg, currentColor 1px, transparent 1px)", backgroundSize: "44px 44px" }}
+          />
+          <SectionWrapper className="pb-16 pt-32 md:pt-44">
+            <div className="mx-auto max-w-3xl text-center">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary backdrop-blur">
+                <Shield className="h-4 w-4" />
+                Independent crypto safety reviews
+              </div>
+              <h1 className="font-heading text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
+                Don't trust.<br />
+                <span className="bg-gradient-to-r from-primary to-[#5B8DEF] bg-clip-text text-transparent">Verify.</span>
+              </h1>
+              <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
+                We test crypto exchanges, wallets, trading bots and DeFi platforms — with real deposits and withdrawals — so you know what's safe <em>before</em> your money leaves your hands. Evidence-led. No sponsorships.
+              </p>
+              <div className="mt-8 flex flex-wrap justify-center gap-3">
+                <Button asChild size="lg" className="shadow-lg shadow-primary/20">
+                  <Link to="/reviews"><Search className="mr-2 h-4 w-4" />Browse Reviews</Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="backdrop-blur">
+                  <Link to="/warnings"><AlertTriangle className="mr-2 h-4 w-4" />Scam Alerts</Link>
+                </Button>
+              </div>
 
-        {/* Our Story - brief version */}
-        <SectionWrapper className="bg-card">
-          <div className="mx-auto max-w-3xl">
-            <h2 className="text-center text-3xl md:text-4xl">Why We Exist</h2>
-            <div className="mt-8 space-y-4 text-muted-foreground">
-              <p>
-                Before building Crypto Watchdog, our founder worked at Crypto.com as a Complaints Manager — seeing the devastating
-                fallout of scams and misleading crypto activity every single day. People lost homes, savings, and life-changing
-                amounts of money. In one case, the damage was so severe that the person later took his own life.
-              </p>
-              <p>
-                That experience made it impossible to treat crypto risk as theory or internet drama. <strong className="text-foreground">The damage is real, personal, and often devastating.</strong>
-              </p>
-              <p>
-                Crypto Watchdog is not a hype brand. It's a response to seeing what happens when people trust the wrong platform.
-                We test, expose, warn, and help people make safer decisions <em>before</em> money leaves their hands.
-              </p>
+              {/* Trust stats */}
+              <div className="mx-auto mt-12 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
+                {[
+                  { n: round(reviewCount), l: "Platforms audited" },
+                  { n: round(warningCount), l: "Scam alerts" },
+                  { n: round(postCount), l: "Safety guides" },
+                  { n: "100%", l: "Independent" },
+                ].map((s) => (
+                  <div key={s.l} className="rounded-xl border border-border bg-card/60 p-4 backdrop-blur">
+                    <div className="font-heading text-2xl font-bold text-foreground">{s.n}</div>
+                    <div className="mt-0.5 text-xs text-muted-foreground">{s.l}</div>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="mt-6 text-center">
-              <Button asChild variant="outline">
-                <Link to="/about">Read Our Full Story <ArrowRight className="ml-1 h-4 w-4" /></Link>
-              </Button>
+          </SectionWrapper>
+        </section>
+
+        {/* Our Story - founder's note */}
+        <SectionWrapper className="border-y border-border bg-card">
+          <div className="mx-auto max-w-5xl">
+            <div className="grid gap-10 md:grid-cols-5 md:items-center">
+              <div className="md:col-span-2">
+                <span className="text-sm font-semibold uppercase tracking-wider text-primary">Our mission</span>
+                <h2 className="mt-2 font-heading text-3xl font-bold leading-tight md:text-4xl">Why we exist</h2>
+                <blockquote className="mt-6 rounded-r-xl border-l-4 border-primary bg-primary/5 py-3 pl-5 pr-4 font-heading text-xl font-semibold leading-snug text-foreground">
+                  "The damage is real, personal, and often devastating."
+                </blockquote>
+              </div>
+              <div className="space-y-4 leading-relaxed text-muted-foreground md:col-span-3">
+                <p>
+                  Before building CryptoWatchdog, our founder worked at Crypto.com as a Complaints Manager — seeing the
+                  devastating fallout of scams every single day. People lost homes, savings, and life-changing sums. In one
+                  case the damage was so severe the person later took his own life.
+                </p>
+                <p>
+                  That made it impossible to treat crypto risk as theory or internet drama. CryptoWatchdog isn't a hype brand —
+                  it's a response. We <strong className="text-foreground">test, expose, warn</strong> and help people make safer
+                  decisions <em>before</em> money leaves their hands. No sponsorships, no hidden agendas.
+                </p>
+                <Button asChild variant="outline" className="mt-2">
+                  <Link to="/about">Read our full story <ArrowRight className="ml-1 h-4 w-4" /></Link>
+                </Button>
+              </div>
             </div>
           </div>
         </SectionWrapper>
@@ -78,56 +106,36 @@ const Index = () => {
         {/* Rating System Explainer */}
         <SectionWrapper>
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl">Our Alert System</h2>
+            <h2 className="font-heading text-3xl font-bold md:text-4xl">Our alert system</h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              Every product gets a clear, colour-coded alert signal after our multi-point audit process, plus a Trust Score out of 100.
+              Every platform gets a clear, colour-coded alert after our multi-point audit — plus a Trust Score out of 100.
             </p>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
-              {
-                icon: ShieldCheck,
-                color: "text-rating-green",
-                bg: "bg-rating-green/10 border-rating-green/20",
-                title: "🟢 Green Alert — Broadly Credible",
-                desc: "Strong signs of legitimacy. Transparent team, working product, verifiable track record, healthy withdrawal reports, and lower apparent risk.",
-              },
-              {
-                icon: ShieldAlert,
-                color: "text-rating-orange",
-                bg: "bg-rating-orange/10 border-rating-orange/20",
-                title: "🟠 Orange Alert — Caution Required",
-                desc: "Mixed signals. Unresolved concerns, key limitations, insufficient data, or past incidents that need watching. Proceed carefully.",
-              },
-              {
-                icon: ShieldX,
-                color: "text-rating-red",
-                bg: "bg-rating-red/10 border-rating-red/20",
-                title: "🔴 Red Alert — Serious Warning",
-                desc: "Major unresolved issues, misleading behaviour, confirmed scam reports, or critical red flags. Avoid or proceed at extreme risk.",
-              },
+              { icon: ShieldCheck, color: "text-rating-green", ring: "hover:border-rating-green/40", glow: "bg-rating-green/10", title: "🟢 Green — Broadly Credible", desc: "Strong signs of legitimacy. Transparent team, working product, verifiable track record, healthy withdrawal reports, and lower apparent risk." },
+              { icon: ShieldAlert, color: "text-rating-orange", ring: "hover:border-rating-orange/40", glow: "bg-rating-orange/10", title: "🟠 Orange — Caution Required", desc: "Mixed signals. Unresolved concerns, key limitations, insufficient data, or past incidents that need watching. Proceed carefully." },
+              { icon: ShieldX, color: "text-rating-red", ring: "hover:border-rating-red/40", glow: "bg-rating-red/10", title: "🔴 Red — Serious Warning", desc: "Major unresolved issues, misleading behaviour, confirmed scam reports, or critical red flags. Avoid or proceed at extreme risk." },
             ].map((item) => (
-              <div
-                key={item.title}
-                className={`rounded-lg border p-6 ${item.bg}`}
-              >
-                <item.icon className={`h-10 w-10 ${item.color}`} />
-                <h3 className="mt-4 font-heading text-lg font-semibold">{item.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{item.desc}</p>
+              <div key={item.title} className={`group relative overflow-hidden rounded-2xl border border-border bg-card/60 p-6 backdrop-blur transition-all hover:shadow-lg ${item.ring}`}>
+                <div className={`absolute -right-8 -top-8 h-24 w-24 rounded-full blur-2xl ${item.glow}`} />
+                <item.icon className={`relative h-10 w-10 ${item.color}`} />
+                <h3 className="relative mt-4 font-heading text-lg font-semibold">{item.title}</h3>
+                <p className="relative mt-2 text-sm leading-relaxed text-muted-foreground">{item.desc}</p>
               </div>
             ))}
           </div>
         </SectionWrapper>
 
         {/* How We Audit */}
-        <SectionWrapper className="bg-card">
+        <SectionWrapper className="border-y border-border bg-card">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl">How We Audit</h2>
+            <h2 className="font-heading text-3xl font-bold md:text-4xl">How we audit</h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              Our reviews go far deeper than a surface-level check. Every review follows a strict, repeatable framework.
+              Our reviews go far deeper than a surface-level check — every one follows a strict, repeatable framework.
             </p>
           </div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { icon: "🔑", title: "Onboarding & KYC", desc: "Sign-up flow, identity checks, friction — is the platform serious from day one?" },
               { icon: "💸", title: "Deposits & Withdrawals", desc: "Real funding tests. Speed, limits, hidden conditions, and what happens to your money." },
@@ -138,25 +146,25 @@ const Index = () => {
               { icon: "🔍", title: "Backend Investigation", desc: "Domain age, company records, regulatory filings, complaint patterns, and tech stack." },
               { icon: "📹", title: "Under the Bonnet", desc: "Live platform testing, interviews with founders, and video walkthroughs." },
             ].map((item) => (
-              <div key={item.title} className="rounded-lg border border-border bg-background p-6">
+              <div key={item.title} className="rounded-2xl border border-border bg-background/60 p-5 backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md">
                 <span className="text-3xl">{item.icon}</span>
                 <h3 className="mt-3 font-heading font-semibold">{item.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{item.desc}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.desc}</p>
               </div>
             ))}
           </div>
         </SectionWrapper>
 
         {/* Active Warnings */}
-        {(warnings ?? []).length > 0 && (
+        {warningCount > 0 && (
           <SectionWrapper className="bg-rating-red/5">
             <div className="flex items-end justify-between">
               <div>
                 <div className="mb-2 inline-flex items-center gap-2 text-rating-red">
                   <AlertTriangle className="h-5 w-5" />
-                  <span className="text-sm font-semibold uppercase tracking-wider">Active Warnings</span>
+                  <span className="text-sm font-semibold uppercase tracking-wider">Active warnings</span>
                 </div>
-                <h2 className="text-3xl md:text-4xl">Scam Alerts</h2>
+                <h2 className="font-heading text-3xl font-bold md:text-4xl">Scam alerts</h2>
                 <p className="mt-2 text-muted-foreground">Urgent risk warnings — check before you deposit.</p>
               </div>
               <Link to="/warnings" className="hidden items-center gap-1 text-sm font-medium text-primary hover:underline md:flex">
@@ -166,11 +174,11 @@ const Index = () => {
             <div className="mt-8 space-y-3">
               {(warnings ?? []).slice(0, 3).map((w: any) => (
                 <Link
-                  key={w.id}
+                  key={w.id ?? w.slug}
                   to={`/warnings/${w.slug}`}
-                  className="block rounded-lg border border-rating-red/20 bg-card p-5 transition-all hover:border-rating-red/40 hover:shadow-md"
+                  className="block rounded-xl border border-rating-red/20 bg-card p-5 transition-all hover:border-rating-red/40 hover:shadow-md"
                 >
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between gap-3">
                     <div>
                       <span className="text-xs font-semibold uppercase text-rating-red">
                         {w.severity === "critical" ? "🔴 Critical" : "🟠 High Risk"}
@@ -178,7 +186,7 @@ const Index = () => {
                       <h3 className="mt-1 font-heading font-semibold">{w.title}</h3>
                       {w.platform_name && <span className="text-sm text-muted-foreground">{w.platform_name}</span>}
                     </div>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground" />
+                    <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground" />
                   </div>
                 </Link>
               ))}
@@ -190,7 +198,7 @@ const Index = () => {
         <SectionWrapper>
           <div className="flex items-end justify-between">
             <div>
-              <h2 className="text-3xl md:text-4xl">Latest Reviews</h2>
+              <h2 className="font-heading text-3xl font-bold md:text-4xl">Latest reviews</h2>
               <p className="mt-2 text-muted-foreground">Recently audited platforms.</p>
             </div>
             <Link to="/reviews" className="hidden items-center gap-1 text-sm font-medium text-primary hover:underline md:flex">
@@ -200,7 +208,7 @@ const Index = () => {
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {(reviews ?? []).slice(0, 6).map((r: any) => (
               <ReviewCard
-                key={r.id}
+                key={r.id ?? r.slug}
                 name={r.name}
                 slug={r.slug}
                 rating={r.rating}
@@ -212,18 +220,16 @@ const Index = () => {
             ))}
           </div>
           <div className="mt-6 text-center md:hidden">
-            <Button asChild variant="outline">
-              <Link to="/reviews">View all reviews</Link>
-            </Button>
+            <Button asChild variant="outline"><Link to="/reviews">View all reviews</Link></Button>
           </div>
         </SectionWrapper>
 
         {/* Latest Blog Posts */}
-        <SectionWrapper className="bg-card">
+        <SectionWrapper className="border-y border-border bg-card">
           <div className="flex items-end justify-between">
             <div>
-              <h2 className="text-3xl md:text-4xl">From the Blog</h2>
-              <p className="mt-2 text-muted-foreground">Daily crypto safety insights, updated automatically.</p>
+              <h2 className="font-heading text-3xl font-bold md:text-4xl">From the blog</h2>
+              <p className="mt-2 text-muted-foreground">Crypto safety guides and comparisons.</p>
             </div>
             <Link to="/blog" className="hidden items-center gap-1 text-sm font-medium text-primary hover:underline md:flex">
               All posts <ArrowRight className="h-4 w-4" />
@@ -232,7 +238,7 @@ const Index = () => {
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {(posts ?? []).slice(0, 3).map((p: any) => (
               <BlogCard
-                key={p.id}
+                key={p.id ?? p.slug}
                 title={p.title}
                 slug={p.slug}
                 summary={p.summary}
@@ -244,23 +250,23 @@ const Index = () => {
         </SectionWrapper>
 
         {/* CTA */}
-        <SectionWrapper className="bg-primary/5">
-          <div className="mx-auto max-w-2xl text-center">
-            <Send className="mx-auto h-12 w-12 text-primary" />
-            <h2 className="mt-4 text-3xl md:text-4xl">Want us to investigate a platform?</h2>
-            <p className="mt-4 text-muted-foreground">
-              If there's a wallet, exchange, bot, or DeFi protocol you want us to investigate, submit it. We'll put it through our full audit process.
-            </p>
-            <div className="mt-6 flex flex-wrap justify-center gap-3">
-              <Button asChild size="lg">
-                <Link to="/submit">Submit a Platform</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link to="/about">Learn Our Process</Link>
-              </Button>
+        <section className="relative overflow-hidden">
+          <div className="pointer-events-none absolute inset-0 -z-10 bg-primary/5" />
+          <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-64 w-[40rem] -translate-x-1/2 rounded-full bg-primary/20 blur-[120px]" />
+          <SectionWrapper>
+            <div className="mx-auto max-w-2xl text-center">
+              <Send className="mx-auto h-12 w-12 text-primary" />
+              <h2 className="mt-4 font-heading text-3xl font-bold md:text-4xl">Want us to investigate a platform?</h2>
+              <p className="mt-4 text-muted-foreground">
+                If there's a wallet, exchange, bot, or DeFi protocol you want us to investigate, submit it — we'll put it through our full audit process.
+              </p>
+              <div className="mt-6 flex flex-wrap justify-center gap-3">
+                <Button asChild size="lg" className="shadow-lg shadow-primary/20"><Link to="/submit">Submit a Platform</Link></Button>
+                <Button asChild variant="outline" size="lg"><Link to="/about">Learn Our Process</Link></Button>
+              </div>
             </div>
-          </div>
-        </SectionWrapper>
+          </SectionWrapper>
+        </section>
       </main>
       <Footer />
     </>
