@@ -10,7 +10,7 @@ Trustworthy protocols share a few habits. None is a golden ticket alone, but sta
 
 - **Transparent, audited code.** Contracts are public, reviewed by reputable independent firms, with reports there to read. A real report, not just a logo.
 - **A business model you can explain in one breath.** If you can't say where the yield comes from in a sentence, that's not a clever mystery. It's a red flag in a tuxedo.
-- **A track record.** It's survived volatile markets without freezing withdrawals or quietly rewriting the terms.
+- **A track record.** It's survived volatile markets without freezing withdrawals or rewriting the terms.
 - **Sensible governance.** Admin keys, upgrade powers and treasury controls are disclosed, ideally behind time-locks and multi-sig rather than one anonymous person.
 - **Honest communication.** The team flags the risks plainly and never reaches for "guaranteed" or "risk-free".
 
@@ -18,7 +18,7 @@ Because you connect from your own wallet, your security habits count as much as 
 
 ## Types of DeFi platform
 
-DeFi isn't one thing. The categories carry wildly different risks, so know what you're holding.
+DeFi isn't one thing. The categories carry wildly different risks, so know what you hold.
 
 ### Lending and borrowing
 
@@ -60,8 +60,8 @@ No checklist kills risk dead, but these deserve a hard squint. Several together 
 
 - **No audit, or a vanity one.** No independent review, or a shiny logo with nothing readable behind it. Check who did it and what they found.
 - **Anonymous, unaccountable teams.** Anonymity is normal in crypto, but it strips away your recourse. If admins can drain the pot and nobody's identifiable, you're trusting strangers with the keys.
-- **Suspicious TVL.** A towering total value locked can be puffed up by the project's own token or by wash trading. Look at what it's made of, not the headline.
-- **Excessive admin power.** Upgradeable contracts with no time-lock, or a single key that can move user funds, are structural risks whatever the team's intentions.
+- **Suspicious TVL.** A towering total value locked can be puffed up by the project's own token or by wash trading. Look at what it's made of, not the number.
+- **Excessive admin power.** Upgradeable contracts with no time-lock, or a single key that can move user funds, are structural risks whatever the intentions.
 - **Locked or delayed withdrawals.** Trouble getting your money out is one of the earliest signs the wheels are coming off.
 - **Manufactured urgency.** Countdown timers, limited "allocations" and frantic launches exist to rush you past the bit where you think.
 
