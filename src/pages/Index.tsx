@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Shield, Search, FileCheck, ArrowRight, ShieldCheck, ShieldAlert, ShieldX, AlertTriangle, Send } from "lucide-react";
+import { Shield, Search, FileCheck, ArrowRight, ShieldCheck, ShieldAlert, ShieldX, AlertTriangle, Send, BrainCircuit, ArrowLeftRight, Wallet, Users, Layers, Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -16,6 +16,15 @@ import { useLiveNews } from "@/hooks/useLiveNews";
 import { useReviews } from "@/hooks/useReviews";
 import { useBlogPosts } from "@/hooks/useBlogPosts";
 import { useWarnings } from "@/hooks/useWarnings";
+
+const HUB_ICONS: Record<string, typeof BrainCircuit> = {
+  "ai-finance": BrainCircuit,
+  "crypto-exchanges": ArrowLeftRight,
+  "crypto-wallets": Wallet,
+  "copy-trading": Users,
+  "defi-platforms": Layers,
+  "crypto-trading-bots": Bot,
+};
 
 const Index = () => {
   const { data: reviews } = useReviews();
@@ -34,12 +43,7 @@ const Index = () => {
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden">
-          <AuroraBackdrop
-            accent="#4F8BFF"
-            variant="hero"
-            imagePrompt="a sleek chrome robotic guardian dog with glowing electric-blue eyes standing watch over a vast dark futuristic vault of floating holographic crypto charts and golden bitcoin coins, volumetric teal and electric-blue light, emerald accents, cinematic, ultra detailed, dramatic rim lighting"
-            imageSeed={21}
-          />
+          <AuroraBackdrop accent="#4F8BFF" variant="hero" />
           <SectionWrapper className="pb-16 pt-32 md:pt-44">
             <div className="mx-auto mb-10 w-40 cw-float md:hidden">
               <WatchdogMascot mood="approve" title="CryptoWatchdog mascot" />
@@ -131,9 +135,17 @@ const Index = () => {
                     <span className="text-xs font-semibold uppercase tracking-wider text-primary">{h.eyebrow}</span>
                     <h3 className="mt-1 font-heading text-lg font-semibold leading-snug">{h.title.split(":")[0]}</h3>
                   </div>
-                  <div className="h-16 w-16 shrink-0 transition-transform group-hover:scale-110">
-                    <WatchdogMascot mood={h.mood} title={h.eyebrow} />
-                  </div>
+                  {(() => {
+                    const Icon = HUB_ICONS[h.slug] ?? Shield;
+                    return (
+                      <div
+                        className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border transition-transform group-hover:scale-110"
+                        style={{ borderColor: `${h.accent}55`, background: `${h.accent}14` }}
+                      >
+                        <Icon className="h-7 w-7" style={{ color: h.accent }} />
+                      </div>
+                    );
+                  })()}
                 </div>
                 <div className="relative mt-4 flex flex-wrap gap-2 text-xs font-semibold">
                   <span className="inline-flex items-center gap-1 rounded-full bg-rating-green/15 px-2 py-0.5 text-rating-green"><ShieldCheck className="h-3 w-3" />{h.trusted.length}</span>

@@ -45,7 +45,7 @@ const AuroraBackdrop = ({ accent = "#4F8BFF", variant = "hero", imagePrompt, ima
           alt=""
           loading="eager"
           onError={() => setImgOk(false)}
-          className="absolute inset-0 h-full w-full object-cover opacity-60"
+          className="absolute inset-0 h-full w-full object-cover opacity-40 saturate-[1.15]"
           style={{ display: imgOk ? undefined : "none" }}
         />
       )}
@@ -78,7 +78,7 @@ const AuroraBackdrop = ({ accent = "#4F8BFF", variant = "hero", imagePrompt, ima
 
       {/* readability overlay: darker when a photo is present */}
       {showImg ? (
-        <div className="absolute inset-0 bg-gradient-to-b from-background/55 via-background/35 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/75 via-background/45 to-background" />
       ) : (
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,hsl(var(--background))_92%)]" />
       )}

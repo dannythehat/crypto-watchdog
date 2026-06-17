@@ -15,6 +15,10 @@ const pick = (o: any, keys: string[]): string | undefined => {
   return undefined;
 };
 
+// The free feed mixes in general UK/finance stories — keep only crypto-relevant.
+const CRYPTO_RE = /\b(crypto|bitcoin|btc|ethereum|eth|blockchain|defi|stablecoin|altcoin|token|nft|web3|binance|coinbase|kraken|solana|xrp|ripple|memecoin|on-chain|wallet|exchange|airdrop|staking|halving|sec\s|etf)\b/i;
+const isCrypto = (text: string) => CRYPTO_RE.test(text);
+
 const tagFor = (text: string): NewsTag => {
   const t = text.toLowerCase();
   if (/(hack|exploit|scam|drain|breach|phish|stolen|rug)/.test(t)) return "Security";
@@ -60,7 +64,8 @@ export function useLiveNews(): { items: NewsItem[]; live: boolean } {
         const list: any[] = Array.isArray(data)
           ? data
           : data.data || data.news || data.articles || data.results || data.items || [];
-        const mapped = list.map(normalize).filter(Boolean) as NewsItem[];
+        const mapped = (list.map(normalize).filter(Boolean) as NewsItem[])
+          .filter((m) => isCrypto(`${m.title} ${m.summary}`));
         if (mapped.length >= 3) {
           // keep our curated items (with Watchdog takes) on top, then fresh API items
           const seen = new Set(newsByDateDesc.map((n) => n.url));

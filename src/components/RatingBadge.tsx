@@ -3,17 +3,17 @@ import { ShieldCheck, ShieldAlert, ShieldX } from "lucide-react";
 
 const config = {
   green: {
-    label: "Seems Legit",
+    label: "Trusted",
     icon: ShieldCheck,
     className: "bg-rating-green/10 text-rating-green border-rating-green/30",
   },
   orange: {
-    label: "On The Fence",
+    label: "Caution",
     icon: ShieldAlert,
     className: "bg-rating-orange/10 text-rating-orange border-rating-orange/30",
   },
   red: {
-    label: "Untrusted",
+    label: "High Risk",
     icon: ShieldX,
     className: "bg-rating-red/10 text-rating-red border-rating-red/30",
   },
