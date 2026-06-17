@@ -112,21 +112,21 @@ Before you tap "confirm", read the address and the amount again. Then read them 
 
 ## How to spot a wallet scam
 
-The app stores and search results are crawling with counterfeit wallets that look pixel-for-pixel like the real thing. They buy sponsored ad slots so they sit right at the top, looking respectable, and they lurk in unofficial stores. The whole point is to harvest your seed phrase the instant you type it in. Convincing logo, identical layout, one job: rob you.
+The app stores and search results are full of counterfeit wallets that look identical to the real thing. They buy sponsored ad slots so they sit right at the top, looking respectable, and they show up in unofficial stores. The whole point is to harvest your seed phrase the instant you type it in. Convincing logo, identical layout, one job: to rob you.
 
-So download wallet software from the official project site, every time, even if it's the boring extra step. And burn this into memory: a genuine wallet will never ask for your seed phrase to "update", "verify" or "sync" anything. That request is the scam announcing itself. Not sure about a link or an app? Run it through our [free crypto safety check](/ai-evaluator) before you trust it with a single coin.
+So download wallet software from the official project site, every time, even if it's an extra step. And remember this: a genuine wallet will never ask for your seed phrase to "update", "verify" or "sync" anything. That request is the scam giving itself away. Not sure about a link or an app? Run it through our [free crypto safety check](/ai-evaluator) before you trust it with a single coin.
 
 ## What to do if things go wrong
 
 If you think your wallet has been compromised, move whatever's left to a fresh address right now, before you finish reading this sentence. Speed matters. And if you've been robbed, none of it is your fault for getting tricked by people who do this professionally. When you're ready, [report a crypto scam](/submit) so the next person gets the warning you didn't. It's also worth filing with the [FBI Internet Crime Complaint Center](@@P2@@).
 
-Then brace yourself for the second wave. Anyone who slides into your messages promising to recover your lost funds for an upfront fee is, almost without exception, running a recovery scam: vultures who circle people already hurting and charge them for the privilege of being robbed twice. It's a grim, calculated con. Our [crypto recovery scam warning](/blog/crypto-recovery-scams-warning) lays out exactly how these predators work, so they don't get a second bite of you.
+Then brace yourself for the second wave. Anyone who messages you promising to recover your lost funds for an upfront fee is, almost without exception, running a recovery scam: people who target those already hurting and charge them for the privilege of being robbed twice. It's a calculated con. Our [crypto recovery scam warning](/blog/crypto-recovery-scams-warning) lays out exactly how they work, so they don't get a second go at you.
 
 ## The final verdict
 
 So, [self custody versus custodial wallets](/blog/self-custody-vs-custodial-wallets-2026)? It comes down to two honest questions: how confident are you with the tech, and how much are you holding? For most people, the answer isn't one or the other. It's a sensible blend, taking the convenience of professional custody and the genuine ownership of holding your own keys.
 
-And don't let some online "maximalist" shame you into yanking your money into a system you don't yet understand. That's how the careful become the burned. Security is a habit you build, not a gadget you buy. Start small, get comfortable, top up your know-how with our [crypto safety education](/education), and dial up your self custody only as fast as your confidence genuinely earns it. There's no prize for rushing.
+And don't let an online "maximalist" shame you into moving your money into a system you don't yet understand. That's how careful people get burned. Security is a habit you build, not a gadget you buy. Start small, get comfortable, top up your know-how with our [crypto safety education](/education), and increase your self custody only as fast as your confidence genuinely earns it. There's no prize for rushing.
 
 ## Checklist for your 2026 wallet setup
 
