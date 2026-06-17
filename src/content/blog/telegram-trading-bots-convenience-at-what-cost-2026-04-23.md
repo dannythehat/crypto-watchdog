@@ -5,7 +5,8 @@ slug: "telegram-trading-bots-convenience-at-what-cost-2026-04-23"
 summary: "*   Telegram trading bots are applications within Telegram that let you trade cryptocurrencies, often on decentralised exchanges (DEXs)."
 category: "Scam Alert"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog/telegram-trading-bots-convenience-at-what-cost-1776924049833.png"
-published: true
+published: false
+canonical_url: "/blog/are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09"
 auto_generated: true
 published_at: "2026-04-23T06:00:50.203+00:00"
 updated_at: "2026-05-11T04:24:41.104299+00:00"
