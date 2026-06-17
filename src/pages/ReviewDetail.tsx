@@ -7,6 +7,7 @@ import RatingBadge from "@/components/RatingBadge";
 import TrustScore from "@/components/TrustScore";
 import Seo from "@/components/Seo";
 import AffiliateCTA from "@/components/AffiliateCTA";
+import Markdown from "@/components/Markdown";
 import { Button } from "@/components/ui/button";
 import { useReview } from "@/hooks/useReviews";
 import { getAffiliateByReviewSlug, isMonetisable } from "@/content";
@@ -101,7 +102,9 @@ const ReviewDetail = () => {
               </div>
             </div>
 
-            <p className="mt-6 text-lg text-muted-foreground">{review.summary}</p>
+            <div className="mt-6 max-w-none">
+              <Markdown content={review.summary || ""} />
+            </div>
 
             {isMonetisable(getAffiliateByReviewSlug(review.slug)) ? (
               <AffiliateCTA reviewSlug={review.slug} label={`Visit ${review.name}`} />
@@ -126,7 +129,7 @@ const ReviewDetail = () => {
                 "border-rating-orange/30 bg-rating-orange/5"
               }`}>
                 <h2 className="font-heading text-xl font-semibold">Our Verdict</h2>
-                <p className="mt-3 text-muted-foreground">{review.verdict}</p>
+                <div className="mt-3 max-w-none"><Markdown content={review.verdict || ""} /></div>
               </div>
             )}
 
@@ -135,19 +138,19 @@ const ReviewDetail = () => {
               {review.deposit_info && (
                 <div className="rounded-lg border border-border bg-card p-5">
                   <h3 className="font-heading font-semibold">📥 Deposits</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{review.deposit_info}</p>
+                  <div className="mt-2 text-sm"><Markdown content={review.deposit_info || ""} /></div>
                 </div>
               )}
               {review.withdrawal_info && (
                 <div className="rounded-lg border border-border bg-card p-5">
                   <h3 className="font-heading font-semibold">📤 Withdrawals</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{review.withdrawal_info}</p>
+                  <div className="mt-2 text-sm"><Markdown content={review.withdrawal_info || ""} /></div>
                 </div>
               )}
               {review.fees_info && (
                 <div className="rounded-lg border border-border bg-card p-5">
                   <h3 className="font-heading font-semibold">💸 Fees</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{review.fees_info}</p>
+                  <div className="mt-2 text-sm"><Markdown content={review.fees_info || ""} /></div>
                 </div>
               )}
               {review.interview_url && (

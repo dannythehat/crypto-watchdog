@@ -2,6 +2,17 @@ import { Link } from "react-router-dom";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import RatingBadge from "./RatingBadge";
 
+// Strip markdown to a clean plain-text preview for cards.
+const toExcerpt = (s = "", n = 160): string => {
+  const plain = s
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/[#>*_`~|]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  return plain.length > n ? plain.slice(0, n - 1).trimEnd() + "…" : plain;
+};
+
 interface Props {
   name: string;
   slug: string;
@@ -32,7 +43,7 @@ const ReviewCard = ({ name, slug, rating, summary, categoryName, websiteUrl, tru
         <RatingBadge rating={rating} />
       </div>
     </div>
-    <p className="flex-1 text-sm text-muted-foreground">{summary}</p>
+    <p className="flex-1 text-sm text-muted-foreground">{toExcerpt(summary)}</p>
     <div className="mt-4 flex items-center justify-between">
       <Link
         to={`/reviews/${slug}`}
