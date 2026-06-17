@@ -22,7 +22,12 @@ const Freebies = () => (
     <Navbar />
     <main>
       <section className="relative overflow-hidden">
-        <AuroraBackdrop accent="#16C784" variant="hero" />
+        <AuroraBackdrop
+          accent="#16C784"
+          variant="hero"
+          imagePrompt="a friendly chrome robot guardian dog holding a glowing gift box with golden crypto coins spilling out, emerald and gold volumetric light, dark cinematic background, ultra detailed, joyful"
+          imageSeed={41}
+        />
         <SectionWrapper className="pb-12 pt-32 md:pt-40">
           <div className="grid items-center gap-8 md:grid-cols-5">
             <div className="md:col-span-3">

@@ -20,6 +20,8 @@ export interface Hub {
   keyword: string;
   mood: MascotMood;       // mascot mood on the hero
   accent: string;         // hex used for hero glow
+  heroPrompt: string;     // Pollinations FLUX prompt for the hero image
+  heroSeed: number;       // fixed seed → stable image
   intro: string;          // markdown, rendered under the hero
   trusted: string[];      // review slugs (green)
   caution: string[];      // review slugs (orange)
@@ -40,6 +42,9 @@ export const hubs: Hub[] = [
     keyword: "ai crypto finance",
     mood: "scan",
     accent: "#4F8BFF",
+    heroPrompt:
+      "dark cinematic cyber trading floor with a glowing blue AI neural-network brain made of circuitry hovering above holographic candlestick charts, electric blue and violet volumetric light, ultra detailed, futuristic, octane render",
+    heroSeed: 31,
     intro:
       "“AI” is the most abused word in crypto right now. For every genuine tool that uses machine learning to manage risk, there are a dozen **AI-washed** schemes that slap a chatbot on a Ponzi and promise guaranteed daily returns.\n\nWe test these platforms the same way we test everything: who runs it, where the money actually goes, and whether you can get it back out. Below are the AI finance platforms we currently **endorse**, the ones that need **caution**, and the ones to **avoid outright**. Start with our guide on [how to spot AI-washing](/blog/how-to-spot-ai-washing-crypto).",
     trusted: ["moneyflare", "aurum-foundation", "topone-futures", "kinesis-money"],
@@ -63,6 +68,9 @@ export const hubs: Hub[] = [
     keyword: "best crypto exchanges",
     mood: "approve",
     accent: "#16C784",
+    heroPrompt:
+      "a secure futuristic crypto exchange vault, glowing emerald shields and golden bitcoin coins, holographic trading screens, deep teal and electric blue volumetric light, cinematic, ultra detailed",
+    heroSeed: 32,
     intro:
       "An exchange is where most people's crypto journey starts — and where a lot of it ends badly. The difference between a well-run exchange and a risky one shows up exactly when it matters: **when you try to withdraw**.\n\nWe rate exchanges on security, regulation, transparency and real deposit/withdrawal testing. Here are the exchanges we currently trust, the ones to approach carefully, and the guides to read before you sign up — starting with [how to pick a safe crypto exchange](/blog/how-to-pick-safe-crypto-exchange-2026).",
     trusted: ["kraken", "coinbase", "binance", "xt-com", "okx", "bisq"],
@@ -86,6 +94,9 @@ export const hubs: Hub[] = [
     keyword: "best crypto wallets",
     mood: "approve",
     accent: "#16C784",
+    heroPrompt:
+      "a glowing hardware crypto wallet device on a pedestal inside a dark vault, protective blue energy shields and a luminous key of light, emerald and electric blue, cinematic, ultra detailed",
+    heroSeed: 33,
     intro:
       "Not your keys, not your coins. A wallet you truly control is the single biggest upgrade you can make to your crypto security — but only if it's the real thing. Fake wallet apps and malicious browser extensions are one of the most common ways people get drained.\n\nBelow are the wallets we trust across hardware and software, plus the impostors to watch for. New to self-custody? Read [self-custody vs custodial wallets](/blog/self-custody-vs-custodial-wallets-2026) first.",
     trusted: ["ledger-nano-x", "trezor", "metamask", "phantom", "argent", "safe-gnosis", "trust-wallet"],
@@ -109,6 +120,9 @@ export const hubs: Hub[] = [
     keyword: "crypto copy trading",
     mood: "caution",
     accent: "#F5A524",
+    heroPrompt:
+      "a futuristic trading dashboard with mirrored glowing trader silhouettes and flowing data streams, warm amber and electric blue light, dark cyber floor, cinematic, ultra detailed",
+    heroSeed: 34,
     intro:
       "Copy trading sounds perfect: link your account, mirror a proven trader, and let the profits roll in. In reality, past performance is easy to fake, leverage quietly amplifies losses, and 'signal groups' are riddled with paid shillers.\n\nThere are legitimate, regulated copy-trading platforms — and a lot that aren't. Here's where we land on the main players, plus the [Telegram trading-bot investigation](/blog/are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09) everyone considering this should read.",
     trusted: ["topone-futures"],
@@ -132,6 +146,9 @@ export const hubs: Hub[] = [
     keyword: "best defi platforms",
     mood: "scan",
     accent: "#4F8BFF",
+    heroPrompt:
+      "an abstract decentralized finance network of glowing interconnected nodes and liquidity pools floating in dark space, electric blue and violet energy, cinematic, ultra detailed",
+    heroSeed: 35,
     intro:
       "DeFi removes the middleman — and the safety net. The best protocols are audited, battle-tested and transparent about where yield comes from. The worst dress up unsustainable token emissions as 'real yield' until the music stops.\n\nHere's our current read on the major DeFi platforms, plus the collapses worth studying. Before chasing a headline APY, read [real yield vs ponzi yield](/blog/defi-lending-real-yield-vs-ponzi-yield-2026).",
     trusted: ["aave", "uniswap", "curve-finance", "pancakeswap", "rocket-pool", "defillama", "zapper"],
@@ -155,6 +172,9 @@ export const hubs: Hub[] = [
     keyword: "crypto trading bots",
     mood: "caution",
     accent: "#F5A524",
+    heroPrompt:
+      "a sleek robotic trading-bot arm interacting with floating holographic candlestick charts, amber and electric blue glow, dark cyber background, cinematic, ultra detailed",
+    heroSeed: 36,
     intro:
       "A trading bot is just software that executes a strategy for you. Good ones are transparent tools you stay in control of. Bad ones are black boxes that ask you to deposit funds into *their* account and promise guaranteed profit — a classic setup for disappearing with your money.\n\nHere's how the main bots stack up, plus the [hidden costs of leverage](/blog/the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18) that automation can quietly amplify.",
     trusted: ["pionex"],

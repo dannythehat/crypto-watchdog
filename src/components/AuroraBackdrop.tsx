@@ -1,10 +1,15 @@
-// Cinematic animated backdrop: drifting aurora blobs + parallax grid + floating
+// Cinematic animated backdrop: optional AI hero image (Pollinations FLUX, free &
+// keyless) layered under drifting aurora blobs + parallax grid + floating
 // particles. GPU-friendly (transform/opacity only) and respects reduced-motion.
-// `variant="page"` is a subtle site-wide layer; `variant="hero"` is dramatic.
+// If the AI image fails to load, it silently falls back to the pure-CSS scene.
+
+import { useState } from "react";
 
 interface Props {
-  accent?: string;      // hex, the lead colour for the scene
+  accent?: string;       // hex, the lead colour for the scene
   variant?: "page" | "hero";
+  imagePrompt?: string;  // when set, renders a Pollinations FLUX image layer
+  imageSeed?: number;    // fixed seed → stable image across reloads
   className?: string;
 }
 
@@ -19,27 +24,36 @@ const PARTICLES = [
   { l: "55%", t: "82%", s: 5, d: "0.9s" },
 ];
 
-const AuroraBackdrop = ({ accent = "#4F8BFF", variant = "hero", className }: Props) => {
+const pollinations = (prompt: string, seed: number) =>
+  `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=1280&height=720&seed=${seed}&nologo=true&model=flux`;
+
+const AuroraBackdrop = ({ accent = "#4F8BFF", variant = "hero", imagePrompt, imageSeed = 7, className }: Props) => {
   const hero = variant === "hero";
-  const o = hero ? 1 : 0.5;
+  const [imgOk, setImgOk] = useState(true);
+  const showImg = hero && !!imagePrompt && imgOk;
+  const o = hero ? (showImg ? 0.55 : 1) : 0.5; // dial aurora back when a photo is present
+
   return (
     <div className={`pointer-events-none absolute inset-0 -z-10 overflow-hidden ${className ?? ""}`} aria-hidden>
       {/* deep base wash */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card" />
 
+      {/* AI hero image */}
+      {hero && imagePrompt && (
+        <img
+          src={pollinations(imagePrompt, imageSeed)}
+          alt=""
+          loading="eager"
+          onError={() => setImgOk(false)}
+          className="absolute inset-0 h-full w-full object-cover opacity-60"
+          style={{ display: imgOk ? undefined : "none" }}
+        />
+      )}
+
       {/* aurora blobs */}
-      <div
-        className="cw-aurora-1 absolute -left-[12%] -top-[18%] h-[42rem] w-[42rem] rounded-full blur-[120px]"
-        style={{ background: accent, opacity: 0.28 * o }}
-      />
-      <div
-        className="cw-aurora-2 absolute right-[-10%] top-[8%] h-[34rem] w-[34rem] rounded-full blur-[120px]"
-        style={{ background: "#16C784", opacity: 0.18 * o }}
-      />
-      <div
-        className="cw-aurora-3 absolute bottom-[-20%] left-[28%] h-[40rem] w-[40rem] rounded-full blur-[140px]"
-        style={{ background: "#8B5CF6", opacity: 0.16 * o }}
-      />
+      <div className="cw-aurora-1 absolute -left-[12%] -top-[18%] h-[42rem] w-[42rem] rounded-full blur-[120px]" style={{ background: accent, opacity: 0.28 * o }} />
+      <div className="cw-aurora-2 absolute right-[-10%] top-[8%] h-[34rem] w-[34rem] rounded-full blur-[120px]" style={{ background: "#16C784", opacity: 0.18 * o }} />
+      <div className="cw-aurora-3 absolute bottom-[-20%] left-[28%] h-[40rem] w-[40rem] rounded-full blur-[140px]" style={{ background: "#8B5CF6", opacity: 0.16 * o }} />
 
       {/* parallax grid */}
       <div
@@ -54,25 +68,20 @@ const AuroraBackdrop = ({ accent = "#4F8BFF", variant = "hero", className }: Pro
       />
 
       {/* floating particles */}
-      {hero &&
-        PARTICLES.map((p, i) => (
-          <span
-            key={i}
-            className="cw-float absolute rounded-full"
-            style={{
-              left: p.l,
-              top: p.t,
-              height: p.s,
-              width: p.s,
-              background: accent,
-              boxShadow: `0 0 12px 2px ${accent}`,
-              animationDelay: p.d,
-            }}
-          />
-        ))}
+      {hero && PARTICLES.map((p, i) => (
+        <span
+          key={i}
+          className="cw-float absolute rounded-full"
+          style={{ left: p.l, top: p.t, height: p.s, width: p.s, background: accent, boxShadow: `0 0 12px 2px ${accent}`, animationDelay: p.d }}
+        />
+      ))}
 
-      {/* vignette + top fade so content stays readable */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,hsl(var(--background))_92%)]" />
+      {/* readability overlay: darker when a photo is present */}
+      {showImg ? (
+        <div className="absolute inset-0 bg-gradient-to-b from-background/55 via-background/35 to-background" />
+      ) : (
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,hsl(var(--background))_92%)]" />
+      )}
     </div>
   );
 };

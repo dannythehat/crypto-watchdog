@@ -6,10 +6,12 @@ import Seo from "@/components/Seo";
 import AuroraBackdrop from "@/components/AuroraBackdrop";
 import WatchdogMascot from "@/components/WatchdogMascot";
 import NewsCard from "@/components/NewsCard";
-import { newsByDateDesc } from "@/content/news";
+import { useLiveNews } from "@/hooks/useLiveNews";
 import { breadcrumbJsonLd } from "@/lib/seo";
 
-const News = () => (
+const News = () => {
+  const { items, live } = useLiveNews();
+  return (
   <>
     <Seo
       title="Latest Crypto News & Safety Take — CryptoWatchdog"
@@ -21,7 +23,12 @@ const News = () => (
     <Navbar />
     <main>
       <section className="relative overflow-hidden">
-        <AuroraBackdrop accent="#4F8BFF" variant="hero" />
+        <AuroraBackdrop
+          accent="#4F8BFF"
+          variant="hero"
+          imagePrompt="a futuristic holographic crypto news hub with floating glowing headlines and a sleek robotic watchdog observing the data streams, electric blue volumetric light, dark cinematic background, ultra detailed"
+          imageSeed={51}
+        />
         <SectionWrapper className="pb-12 pt-32 md:pt-40">
           <div className="grid items-center gap-8 md:grid-cols-5">
             <div className="md:col-span-3">
@@ -44,8 +51,17 @@ const News = () => (
       </section>
 
       <SectionWrapper>
+        {live && (
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-rating-green/30 bg-rating-green/10 px-3 py-1 text-xs font-semibold text-rating-green">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-rating-green opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-rating-green" />
+            </span>
+            Live feed
+          </div>
+        )}
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {newsByDateDesc.map((item) => <NewsCard key={item.id} item={item} />)}
+          {items.map((item) => <NewsCard key={item.id} item={item} />)}
         </div>
         <p className="mt-8 text-center text-xs text-muted-foreground">
           Headlines link to original sources. CryptoWatchdog summarises and adds safety context; we don't republish full articles.
@@ -53,7 +69,8 @@ const News = () => (
       </SectionWrapper>
     </main>
     <Footer />
-  </>
-);
+    </>
+  );
+};
 
 export default News;

@@ -46,8 +46,10 @@ Status key: [ ] todo · [~] in progress · [x] done & live
 - [x] "Daily & Ongoing Freebies" page (/freebies) + homepage strip + nav
 - [ ] Refresh /freebies daily with researched offers
 - [x] Latest crypto news section (/news) + homepage strip + nav (repo-driven)
-- [ ] Wire /news to Free Crypto News API connector for daily auto-refresh
-- [ ] Wire Pollinations Flux connector → generate + commit brand imagery
+- [x] /news pulls LIVE from free keyless crypto-news API (graceful fallback)
+- [x] Pollinations FLUX AI hero images on homepage + all hubs + news + freebies
+- [ ] Confirm live API CORS works in browser; if blocked, refresh feed via daily commits
+- [ ] Tune image prompts/seeds after eyeballing them live
 
 ## PHASE 5 — Money plumbing
 - [ ] Affiliate CTA on every endorsed card where we have a link

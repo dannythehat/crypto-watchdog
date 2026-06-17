@@ -12,7 +12,7 @@ import OfferCard from "@/components/OfferCard";
 import NewsCard from "@/components/NewsCard";
 import { hubs } from "@/content/hubs";
 import { offersByDateDesc } from "@/content/offers";
-import { newsByDateDesc } from "@/content/news";
+import { useLiveNews } from "@/hooks/useLiveNews";
 import { useReviews } from "@/hooks/useReviews";
 import { useBlogPosts } from "@/hooks/useBlogPosts";
 import { useWarnings } from "@/hooks/useWarnings";
@@ -21,6 +21,7 @@ const Index = () => {
   const { data: reviews } = useReviews();
   const { data: posts } = useBlogPosts();
   const { data: warnings } = useWarnings();
+  const { items: newsItems } = useLiveNews();
 
   const reviewCount = reviews?.length ?? 0;
   const warningCount = warnings?.length ?? 0;
@@ -33,7 +34,12 @@ const Index = () => {
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden">
-          <AuroraBackdrop accent="#4F8BFF" variant="hero" />
+          <AuroraBackdrop
+            accent="#4F8BFF"
+            variant="hero"
+            imagePrompt="a sleek chrome robotic guardian dog with glowing electric-blue eyes standing watch over a vast dark futuristic vault of floating holographic crypto charts and golden bitcoin coins, volumetric teal and electric-blue light, emerald accents, cinematic, ultra detailed, dramatic rim lighting"
+            imageSeed={21}
+          />
           <SectionWrapper className="pb-16 pt-32 md:pt-44">
             <div className="mx-auto mb-10 w-40 cw-float md:hidden">
               <WatchdogMascot mood="approve" title="CryptoWatchdog mascot" />
@@ -93,7 +99,7 @@ const Index = () => {
             </Link>
           </div>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {newsByDateDesc.slice(0, 3).map((item) => <NewsCard key={item.id} item={item} />)}
+            {newsItems.slice(0, 3).map((item) => <NewsCard key={item.id} item={item} />)}
           </div>
           <div className="mt-6 text-center md:hidden">
             <Button asChild variant="outline"><Link to="/news">See all news</Link></Button>
