@@ -121,6 +121,10 @@
     to   { background-position: 880px 880px; }
   }
   @keyframes cw-float {
+    0%,100% { transform: translateY(0); }
+    50%     { transform: translateY(-18px); }
+  }
+  @keyframes cw-twinkle {
     0%,100% { transform: translateY(0); opacity: 0.5; }
     50%     { transform: translateY(-26px); opacity: 1; }
   }
@@ -133,12 +137,13 @@
   .cw-aurora-3 { animation: cw-drift 34s ease-in-out infinite reverse; }
   .cw-gridpan  { animation: cw-pan 60s linear infinite; }
   .cw-float    { animation: cw-float 7s ease-in-out infinite; }
+  .cw-twinkle  { animation: cw-twinkle 7s ease-in-out infinite; }
   .cw-sheen {
     background-image: linear-gradient(110deg, transparent 30%, hsl(var(--primary)/0.18) 50%, transparent 70%);
     background-size: 200% 100%;
     animation: cw-sheen 6s linear infinite;
   }
   @media (prefers-reduced-motion: reduce) {
-    .cw-aurora-1,.cw-aurora-2,.cw-aurora-3,.cw-gridpan,.cw-float,.cw-sheen { animation: none; }
+    .cw-aurora-1,.cw-aurora-2,.cw-aurora-3,.cw-gridpan,.cw-float,.cw-twinkle,.cw-sheen { animation: none; }
   }
 }

@@ -71,7 +71,7 @@ const AuroraBackdrop = ({ accent = "#4F8BFF", variant = "hero", imagePrompt, ima
       {hero && PARTICLES.map((p, i) => (
         <span
           key={i}
-          className="cw-float absolute rounded-full"
+          className="cw-twinkle absolute rounded-full"
           style={{ left: p.l, top: p.t, height: p.s, width: p.s, background: accent, boxShadow: `0 0 12px 2px ${accent}`, animationDelay: p.d }}
         />
       ))}
