@@ -8,7 +8,7 @@ image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/bl
 published: true
 auto_generated: false
 published_at: "2026-05-05T08:36:54.421826+00:00"
-updated_at: "2026-05-10T04:15:50.52077+00:00"
+updated_at: "2026-06-17T17:10:00Z"
 meta_title: null
 meta_description: null
 ---
@@ -46,7 +46,7 @@ Not all "gold tokens" are equal. Before you click buy, know which type you're lo
 
 These are the gold standard, literally. Each token corresponds to a fixed weight of allocated bullion held in an insured vault — typically in London, Zurich, or Singapore — by a regulated custodian.
 
-The biggest names in this category are **PAX Gold (PAXG)** issued by Paxos and **Tether Gold (XAUT)** issued by TG Commodities. Both publish vault attestations and serial-numbered bar lists.
+The biggest names in this category are **[PAX Gold (PAXG)](https://www.paxos.com/pax-gold)** issued by Paxos and **[Tether Gold (XAUT)](https://gold.tether.to)** issued by TG Commodities. Both publish vault attestations and serial-numbered bar lists.
 
 Smaller but credible entrants include **Kinesis Gold (KAU)**, **Cache Gold (CGT)**, **Aurus Gold (AWG)**, and **Perth Mint Gold Token (PMGT)**. Each has slightly different redemption mechanics worth reading before depositing serious money.
 
@@ -68,7 +68,7 @@ When the peg mechanism breaks, the token can depeg violently. We saw the same pa
 
 Three structural reasons keep showing up in our reader emails.
 
-**Inflation hedge with crypto-native UX.** Gold has historically held purchasing power across decades. A token version lets you buy $25 worth at 2 a.m. on a Sunday from a phone — something no traditional bullion dealer offers.
+**Inflation hedge with crypto-native UX.** Gold has historically held purchasing power across decades, a case the [World Gold Council](https://www.gold.org/) documents in depth. A token version lets you buy $25 worth at 2 a.m. on a Sunday from a phone — something no traditional bullion dealer offers.
 
 **Diversification away from stablecoins.** After the depegs of 2022–2024, a lot of crypto users want a stable asset that isn't tied to a single bank or treasury portfolio. Gold tokens add a non-USD anchor.
 
@@ -84,7 +84,7 @@ Under the hood, every credible **physically backed gold token** follows roughly 
 
 ### Step 1 — Sourcing and vaulting
 
-The issuer (Paxos, Tether, Kinesis, etc.) buys LBMA Good Delivery bars from accredited refiners. Each bar has a unique serial number, refiner mark, and assay weight. Bars are deposited in an allocated account at a vault operator like Brink's, Loomis, or Malca-Amit.
+The issuer (Paxos, Tether, Kinesis, etc.) buys [LBMA Good Delivery](https://www.lbma.org.uk/good-delivery/about-good-delivery) bars from accredited refiners. Each bar has a unique serial number, refiner mark, and assay weight. Bars are deposited in an allocated account at a vault operator like Brink's, Loomis, or Malca-Amit.
 
 "Allocated" matters. It means the bars are legally yours, not a generic claim against the vault's pool. If the custodian goes bankrupt, allocated metal is segregated.
 
@@ -211,7 +211,7 @@ The risks are real but knowable. Here's what to watch.
 
 **Frozen redemptions.** Some issuers reserve the right to pause minting or redemption in extreme conditions. Read the terms.
 
-**Regulatory whiplash.** Tokenized commodities sit in evolving legal territory. Your local rules may change. Keep an eye on official communications.
+**Regulatory whiplash.** Tokenized commodities sit in evolving legal territory. Your local rules may change. Keep an eye on official communications — for example, the UK's [FCA warns](https://www.fca.org.uk/news/news-stories/fca-warns-consumers-risks-investments-advertising-high-returns-based-cryptoassets) that cryptoasset investments are high risk and typically fall outside the Financial Ombudsman Service and Financial Services Compensation Scheme.
 
 **Smart-contract exploits.** Rare for established gold tokens but never zero. Diversify across two issuers if you're holding meaningful size.
 
@@ -313,6 +313,14 @@ The catch is the same as with everything in crypto: trust nothing, verify everyt
 We'll keep auditing platforms in this space and adding them here as our reviews go live. Until then, bookmark the verification checklist above — it's the same one we use internally.
 
 Stay safe, stay skeptical, and remember: the only gold that's truly yours is the gold you can prove exists.
+
+## Sources & further reading
+
+- [Paxos — PAX Gold (PAXG)](https://www.paxos.com/pax-gold) — the official issuer page, including the bar-allocation lookup tool and redemption details.
+- [Tether Gold (XAU₮) transparency page](https://gold.tether.to) — daily-updated reserves and attestation reports for XAUT.
+- [LBMA — About Good Delivery](https://www.lbma.org.uk/good-delivery/about-good-delivery) — the London Bullion Market Association's standard for accredited refiners and Good Delivery bars.
+- [World Gold Council](https://www.gold.org/) — independent research and data on gold as a long-term store of value.
+- [FCA — consumer warning on cryptoasset investments](https://www.fca.org.uk/news/news-stories/fca-warns-consumers-risks-investments-advertising-high-returns-based-cryptoassets) — UK regulator guidance on the risks of crypto-based investments.
 
 ## Related Reading
 
