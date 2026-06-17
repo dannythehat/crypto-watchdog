@@ -32,7 +32,8 @@ Cross-cutting: **news + offers should link to our own content** (reviews, guides
 - **Sandbox egress is allowlisted:** gitlab.com + github.com + npm reachable; Cloudflare API, the live domain, pollinations.ai, cryptocurrency.cv, Google Fonts, Playwright CDN are BLOCKED from sandbox. (So AI images / live news only render in the *visitor's* browser, not mine.)
 
 ## 🧱 What's BUILT (2026-06-17 big build)
-- **6 category hub pages** (`/ai-finance`, `/crypto-exchanges`, `/crypto-wallets`, `/copy-trading`, `/defi-platforms`, `/crypto-trading-bots`) — endorsed vs caution vs avoid, PlatformCard w/ trust rings + affiliate CTAs, FAQ, schema. Config: `src/content/hubs.ts`. Page: `src/pages/CategoryHub.tsx`. Route `/:hubSlug`.
+- **13 category hub pages** via `src/content/hubs.ts` + `CategoryHub.tsx` (route `/:hubSlug`): ai-finance, crypto-exchanges, crypto-wallets, copy-trading, defi-platforms, crypto-trading-bots, **tokenized-assets, nft-marketplaces, crypto-cards, blockchains, crypto-staking, cloud-mining, crypto-recovery**. Each: endorsed/caution/avoid PlatformCards (trust rings + affiliate CTAs), FAQ, schema, AI hero image. PLUS the flagship **/crypto-casinos** (bespoke `CryptoCasinos.tsx` = the premium TEMPLATE: featured pick + comparison table w/ Welcome-Offer column + Claim CTAs + responsible-gambling box w/ mascot speech bubble + help-org links). `casinos.ts` keeps offer text updatable while `affiliateUrl` stays stable.
+- **Deferred hubs:** Airdrops (= Freebies/offers system), Stablecoins (= guide cluster). Next: roll the casino-template polish (featured pick, comparison table, offers/claim CTAs) across the 13 CategoryHub pages.
 - **/news** — live feed via free keyless API `cryptocurrency.cv/api/news` (`src/hooks/useLiveNews.ts`, crypto-filtered, falls back to curated `src/content/news.ts`). Homepage strip + nav.
 - **/freebies** — vetted offers (`src/content/offers.ts`, `OfferCard`). Homepage strip + nav.
 - **Visual system:** `AuroraBackdrop` (animated, optional Pollinations FLUX hero image at low opacity w/ CSS fallback), `WatchdogMascot` (SVG, moods approve/caution/alert/scan). Homepage category grid uses distinct lucide icons (NOT repeated mascots).
@@ -56,7 +57,7 @@ Cross-cutting: **news + offers should link to our own content** (reviews, guides
 6. Hero focal visual + reviews-list premium tiles + spacing/typography polish pass.
 
 ## 🧠 Key decisions (don't relitigate)
-- **BRAND MASCOT = the CryptoWatchdog DOBERMAN dog.** NEVER a robot. Image served via `WatchdogMascot.tsx` (`BRAND_IMG` = legacy Supabase `…/organization-27129/1776712114820_cryptowatchdog.jpg`). TODO: get a transparent PNG from Danny and self-host in `public/`. Use the dog everywhere a mascot appears.
+- **BRAND MASCOT = the CryptoWatchdog DOBERMAN dog** (BLUE/silver version, the correct brand colour — not the gold one). NEVER a robot. Self-hosted transparent PNG at `public/cryptowatchdog-logo.png`, served via `BRAND_IMG` in `WatchdogMascot.tsx` (used by navbar Logo, hero mascots, favicon, OG image, JSON-LD). Swap that one file to update everywhere.
 - Repo-as-CMS (`src/content/`), Lovable phased out for content.
 - Rank by FCA/safety/evidence, never affiliate commission. Never monetise red-rated/scam pages. No "guaranteed"/"risk-free", no price predictions.
 - Hold content to 2k EEAT bar; retire dated/duplicate pages, never pad.
