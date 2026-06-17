@@ -1,73 +1,73 @@
-Buying, selling and minting non-fungible tokens has become far easier than it was a few years ago, but the safety picture is widely misunderstood. Most people fixate on which platform to use, when the platform itself is rarely where things go wrong. This guide walks through how NFT trading actually works and the specific behaviours that keep your wallet intact. We keep it principle-based and evergreen, so the advice should hold up as products and collections come and go.
+Buying, selling and minting NFTs is easier than it's ever been. Staying safe while you do it? That's where people come unstuck. Most folks agonise over which platform to use, when the platform is almost never the thing that empties their wallet. This guide is about how NFT trading actually works and the handful of habits that keep your assets yours. It's principle-based and built to last, so the advice should still stand long after today's hot collection is tomorrow's punchline.
 
 ## What an NFT marketplace does
 
-An NFT marketplace is a venue that lets you browse, buy, sell and sometimes mint tokens that represent ownership of a specific item recorded on a blockchain. Crucially, the marketplace is mostly a shop window and a matching engine. The actual transfer of ownership happens on-chain through your own wallet, which you connect and use to sign transactions.
+An NFT marketplace is a venue where you browse, buy, sell and sometimes mint tokens that record ownership of a specific item on a blockchain. Here's the bit people miss: the marketplace is basically a shop window with a till. It doesn't hold your stuff. The actual transfer of ownership happens on-chain, through your own wallet, when you connect it and sign a transaction.
 
-That distinction matters. When you list, buy or mint, you are not handing assets to the marketplace; you are authorising on-chain actions yourself. The signature you approve is what moves value, which is why understanding what you are signing is the heart of NFT safety. If you are new to connecting a wallet to on-chain services, our overview of [crypto wallets](/crypto-wallets) explains the custody basics first.
+That difference is everything. When you list, buy or mint, you're not handing your assets to the marketplace. You're authorising on-chain actions yourself. The signature you approve is what moves the value, which is precisely why knowing what you're signing is the whole ball game in NFT safety. New to plugging a wallet into on-chain services? Our overview of [crypto wallets](/crypto-wallets) covers the custody basics first.
 
 ## Types of NFT platform
 
-There is no single best NFT marketplace for everyone. The right venue depends on the chain you use, the NFTs you want, and how much you value liquidity versus curation. Below is how the main categories compare.
+There's no single best NFT marketplace for everyone, and anyone who tells you otherwise is selling something. The right venue depends on the chain you're on, the NFTs you're after, and how you weigh liquidity against curation. Here's how the main categories stack up.
 
 ### General marketplaces
 
-General marketplaces aim to list a broad range of collections across one or more popular chains. They tend to offer the deepest liquidity, the widest selection and familiar tooling such as offers, auctions and collection statistics.
+General marketplaces try to list a bit of everything across one or more popular chains. They usually have the deepest liquidity, the widest selection and the comfortable tooling you'd expect: offers, auctions, collection stats.
 
-The trade-off is that breadth invites noise. Open listing policies mean lookalike and counterfeit collections appear alongside genuine ones, so verification badges and official collection links are essential signals to check before you transact.
+The catch? Breadth invites noise. Open listing policies mean counterfeit and lookalike collections sit right next to the real ones, pretending to be twins. So verification badges and official collection links aren't optional extras. Check them before you part with a penny.
 
 ### Chain-specific marketplaces
 
-Chain-specific marketplaces focus on a single network and are often tuned to its fee model, wallet standards and community. They can offer lower friction and faster discovery of native projects.
+Chain-specific marketplaces live on a single network and are usually tuned to its fee model, wallet standards and community. Less friction, faster discovery of native projects, a crowd that speaks the local dialect.
 
-The cost is portability: assets and habits may not transfer cleanly if you later move to another network. If you are weighing which chains to commit to, our explainer on [blockchains](/blockchains) covers the practical differences in fees, speed and tooling.
+The price you pay is portability. Your assets and your muscle memory may not travel cleanly if you later jump to another network. Still deciding which chains to back? Our explainer on [blockchains](/blockchains) breaks down the real differences in fees, speed and tooling.
 
 ### GameFi & play-to-earn
 
-GameFi and play-to-earn platforms tie NFTs to in-game items, characters or land. Here the NFT is meant to be used, not just held, and value is linked to an active game economy and player base.
+GameFi and play-to-earn platforms tie NFTs to in-game items, characters or land. The NFT is meant to be used, not just admired in a drawer, and its value rides on a living game economy and an active player base.
 
-These markets can be volatile and depend heavily on a single project remaining healthy. We make no predictions about their value. Treat "earn" mechanics with measured caution, and read the project's documentation before committing funds you cannot afford to lose.
+These markets swing hard, and they lean heavily on one project staying healthy. We make no predictions about where the value goes. Treat the "earn" promises with a sceptical eyebrow, read the project's documentation, and only commit money you can genuinely afford to lose.
 
 ### Digital collectibles
 
-Digital collectibles cover art, profile pictures, music and memorabilia, often sold as numbered editions or one-off pieces. Provenance and authenticity are the whole point, so confirming that a collection's contract is the official one is the single most important step. Buy what you value, verify what you buy, and do not assume scarcity alone implies future demand.
+Digital collectibles cover art, profile pictures, music and memorabilia, often sold as numbered editions or one-off pieces. Provenance and authenticity are the entire point here, so confirming a collection's contract is the official one is the single most important thing you'll do. Buy what you actually value, verify what you buy, and don't kid yourself that scarcity alone guarantees anyone will want it later.
 
 ## NFT scams & wallet drainers (the real danger)
 
-This is where most losses occur, and almost none are the marketplace's fault. The recurring pattern is a malicious transaction or approval you are tricked into signing, after which your assets are drained.
+This is where the money disappears, and almost none of it is the marketplace's fault. The pattern is depressingly consistent: a malicious transaction or approval you've been tricked into signing, and then your assets walk out the door.
 
-Watch for these tactics:
+Here's what the chancers are running:
 
-- **Fake mints and lookalike collections.** Scammers clone a popular project's art, name and imagery, then promote a "mint" on a fraudulent site. Always reach the mint through the project's own verified channels, never a link from a DM or reply.
-- **"Free NFT" and airdrop drainers.** An unexpected NFT lands in your wallet inviting you to a site to "claim" more. Connecting and signing can grant sweeping permissions. Our guidance on [crypto freebies and airdrops](/freebies) explains why "free" is so often the bait.
-- **Malicious approvals and `setApprovalForAll`.** A single broad approval can authorise a contract to move an entire collection from your wallet. Read what each approval actually grants.
-- **Blind-signing prompts.** If a signature request is unreadable or its purpose is unclear, do not sign. Legitimate actions can be explained in plain terms.
-- **Fake support and "verification" agents.** No genuine team will ask for your secret recovery phrase or push you to sign urgently.
+- **Fake mints and lookalike collections.** Scammers clone a popular project's art, name and imagery, then push a "mint" on a fraudulent site. Always reach a mint through the project's own verified channels. Never a link from a DM or a random reply.
+- **"Free NFT" and airdrop drainers.** A mystery NFT appears in your wallet, inviting you somewhere to "claim" more. Connect and sign, and you may hand over sweeping permissions you never meant to give. Our guidance on [crypto freebies and airdrops](/freebies) explains why "free" is so often the hook.
+- **Malicious approvals and `setApprovalForAll`.** One broad approval can let a contract move your entire collection. That's not a feature, that's a back door. Read what each approval actually grants.
+- **Blind-signing prompts.** If a signature request is gibberish or won't tell you what it's for, don't sign it. A legitimate action can always be explained in plain English.
+- **Fake support and "verification" agents.** No genuine team will ever ask for your secret recovery phrase or rush you into signing. Urgency is the tell.
 
-If you encounter a suspicious mint or have already been targeted, our [scam warnings](/warnings) set out what to do next. Be wary, too, of "recovery" services demanding upfront fees, which is a known follow-up scam.
+If you spot a dodgy mint, or you've already been caught, our [scam warnings](/warnings) lay out what to do next. And give a very wide berth to "recovery" services that demand fees upfront. That's just the same con wearing a different hat.
 
 ## How we rate NFT marketplaces
 
-We assess platforms against consistent, safety-first criteria rather than hype or trading volume alone. Our process weighs:
+We judge platforms against consistent, safety-first criteria, not hype or trading volume. Our process weighs:
 
-- **Custody and signing clarity** — whether the platform keeps you in self-custody and makes each transaction and approval understandable.
-- **Verification and anti-fraud measures** — how it flags official collections and how quickly it acts on counterfeits.
-- **Transparency** — clear fees, documented contracts and honest communication.
-- **Security track record** — audits where applicable and a history of responsible disclosure.
+- **Custody and signing clarity** — does it keep you in self-custody, and does it make each transaction and approval understandable?
+- **Verification and anti-fraud measures** — how well it flags official collections, and how fast it stamps on counterfeits.
+- **Transparency** — clear fees, documented contracts, honest communication.
+- **Security track record** — audits where they apply, and a history of responsible disclosure.
 
-We avoid price predictions and never describe any venue as guaranteed or risk-free; safety always depends partly on your own behaviour. Where evidence is thin or a platform is new, we say so rather than overstate confidence.
+We don't do price predictions, and we'll never promise any venue is perfectly safe. It isn't, and it can't be. Safety always depends partly on how you behave. Where the evidence is thin or a platform is brand new, we'll say so rather than pretend we know more than we do.
 
 ## How to trade NFTs safely (approvals, revoking, verifying)
 
-The fundamentals are simple to state and worth repeating, because discipline here prevents most losses.
+The basics are easy to say and worth repeating, because the discipline is what saves you.
 
-- **Verify before you connect.** Confirm the collection's official contract address through the project's own verified channels, not search ads or social replies.
-- **Never sign a transaction you do not understand.** If the prompt is vague, close it. Clarity is non-negotiable.
-- **Be sparing with approvals.** Prefer per-item actions over blanket `setApprovalForAll` permissions.
-- **Revoke old approvals regularly.** Use a reputable approvals-management tool to review and revoke permissions you no longer need; stale approvals are a standing liability.
-- **Use a separate "minting" wallet.** Keep a small balance there for new mints and untrusted sites, and hold your main collection elsewhere.
-- **Ignore unsolicited NFTs.** Treat any surprise drop's "claim" link as hostile by default.
+- **Verify before you connect.** Confirm the collection's official contract address through the project's own verified channels. Not a search ad, not a social reply.
+- **Never sign a transaction you don't understand.** If the prompt is vague, close it. No exceptions.
+- **Go easy on approvals.** Favour per-item actions over blanket `setApprovalForAll` permissions.
+- **Revoke old approvals regularly.** Use a reputable approvals-management tool to review and clear out permissions you no longer need. Stale approvals are a liability just sitting there.
+- **Use a separate "minting" wallet.** Keep a small balance for new mints and untrusted sites, and stash your main collection somewhere else entirely.
+- **Ignore unsolicited NFTs.** Treat any surprise drop's "claim" link as hostile until proven otherwise. It usually is.
 
 For a fuller, scenario-by-scenario walkthrough, see our companion piece on [NFT safety in 2026](/blog/nft-safety-guide-2026).
 
-Whatever venue you choose, the marketplace is seldom the threat. The danger lives in the transactions you are persuaded to sign. Verify the collection, read every approval, revoke what you no longer use, and slow down whenever something feels urgent. A calm, sceptical approach is your strongest protection.
+Whatever venue you land on, the marketplace is rarely the threat. The danger lives in the transactions you're talked into signing. Verify the collection, read every approval, revoke what you've stopped using, and slow right down the moment something feels urgent. Calm and sceptical beats fast and trusting every single time.
