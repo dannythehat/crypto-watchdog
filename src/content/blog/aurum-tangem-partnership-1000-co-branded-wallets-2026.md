@@ -2,95 +2,161 @@
 type: "blog"
 title: "Aurum Foundation × Tangem: 1,000 Co-Branded Self-Custody Wallets Drop For The Community"
 slug: "aurum-tangem-partnership-1000-co-branded-wallets-2026"
-summary: "Aurum Foundation has partnered with Swiss hardware-wallet maker Tangem to allocate 1,000 co-branded self-custody wallet cards — paired with Tangem Pay Visa — to its community. Here is what is shipping, why Tangem, and how we score it from a safety standpoint."
+summary: "Aurum Foundation has teamed up with Swiss-engineered hardware-wallet maker Tangem to allocate 1,000 co-branded self-custody wallet cards to its community, paired with Tangem Pay. Here is how Tangem cards actually keep keys offline, what the partnership means for users, and how we score it for safety."
 category: "Wallets"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog%2Faurum-tangem-hero.jpg"
 published: true
 auto_generated: false
 published_at: "2026-05-26T08:01:17.199124+00:00"
-updated_at: "2026-05-26T08:01:17.199124+00:00"
-meta_title: null
-meta_description: null
+updated_at: "2026-06-17T12:00:00Z"
+meta_title: "Aurum × Tangem: 1,000 Co-Branded Wallets Explained"
+meta_description: "Aurum Foundation and Tangem are dropping 1,000 co-branded self-custody wallet cards. How Tangem keeps keys offline, what it means for users, and our safety verdict."
+primary_keyword: "Aurum Tangem partnership"
 ---
-On 26 May 2026, [Aurum Foundation](https://aurum.foundation/en) confirmed a new partnership with Swiss hardware-wallet maker [Tangem](https://tangem.com/en/), allocating **1,000 co-branded Tangem wallet cards** to its global community as part of a limited activation campaign.
 
-The deal is more than a marketing drop. It pairs Aurum's existing AI-trading and yield ecosystem with **true self-custody hardware** and a **Tangem Pay virtual Visa card**, giving members a way to hold their crypto on a physical card *and* spend it anywhere Visa is accepted — without routing through a centralised exchange first.
+Aurum Foundation has announced a partnership with hardware-wallet maker [Tangem](https://tangem.com/en/), allocating **1,000 co-branded self-custody wallet cards** to its community as part of a limited activation campaign. The cards are paired with **Tangem Pay**, a Visa-linked spending product that lets people use self-custodied stablecoins for everyday purchases.
 
-For our existing readers following the [Aurum Foundation review](/reviews/aurum-foundation) and the [Tangem Pay deep-dive](/blog/tangem-pay-decentralized-debit-card-review-2026), this is one of the more meaningful announcements of the year. Here is what's actually shipping, what it changes for users, and how we're scoring it from a safety perspective.
+On the surface this looks like a marketing drop. Underneath, it touches something we care about a lot at CryptoWatchdog: getting more people onto **true self-custody hardware** instead of leaving funds parked on an exchange or a custodial app. That is a genuine safety improvement — if users understand what they are holding and how to back it up.
 
-## The Headline: 1,000 Co-Branded Wallets For The Aurum Community
+This guide is deliberately evergreen. Instead of treating the announcement as a one-day headline, we explain how Tangem hardware actually works, what the Aurum tie-up does and does not change, and the questions you should ask before claiming a card. Affiliate note up front: **both Aurum and Tangem are active CryptoWatchdog partners, and the Tangem links below are affiliate links.** That does not change our safety assessment, and we flag uncertainty wherever the partnership details are not independently confirmed.
 
-Aurum Foundation has reserved **1,000 limited-edition co-branded Tangem hardware wallets** for distribution to its active community members. The campaign is positioned as a "tangible rollout" rather than another utility teaser.
+## What was actually announced
 
-The cards function as full Tangem hardware wallets — meaning private keys are generated and stored offline on the secure element chip, never touching the internet. They can also be paired with **Tangem Pay**, the virtual Visa card from Tangem available in eligible regions.
+According to crypto trade press covering the launch, Aurum allocated **1,000 co-branded Tangem wallet cards** to its community in a limited campaign, positioned as a bridge between self-custodied holdings and real-world spending without forcing users to off-ramp through an exchange first ([Bitcoin Ethereum News](https://bitcoinethereumnews.com/tech/aurum-partners-with-tangem-allocating-1000-co-branded-wallets-to-its-community/)).
 
-That combination is what makes this announcement interesting. Most "crypto debit cards" custody your funds on the issuer's books. This setup keeps funds in self-custody on the Tangem card *until the moment of spending* — closer to true non-custodial payments than anything currently on the market.
+Here is what we can say with confidence, and what we are hedging:
 
-> "The crypto industry is gradually moving beyond the era of fancy utility showcase to tangible rollout of products that can make a difference. Our rollout of self-custody wallets in partnership with Tangem is in alignment with our goals to enable easy access to innovative financial services for users with no geographical barriers."
-> — Andrew Isaacs, COO, Aurum Foundation
+- **Confirmed by the vendors / press:** a co-branded card allocation of 1,000 units, distributed through Aurum's existing community channels, paired with Tangem hardware and Tangem Pay.
+- **Hedged (verify before relying on it):** exact eligibility rules, distribution timing, regional availability of Tangem Pay for any given recipient, and any fees. These can change, and co-branded promotions often carry conditions that are not in the headline. **Always confirm current terms on the official Aurum and Tangem channels before acting.**
 
-## Why Tangem, Specifically?
+We are not making price predictions, and we are not vouching for the returns of any product attached to the Aurum ecosystem. The thing worth evaluating here is the **hardware and custody model**, which is concrete and testable.
 
-There are dozens of hardware-wallet vendors. Aurum picked Tangem for three reasons that matter from a security standpoint.
+## How a Tangem wallet actually works
 
-**1. Multi-card backup architecture.** Tangem wallets ship in **sets of three identical cards**. Each card holds the same private key, so if one is lost or destroyed, the other two still recover the wallet. No 24-word seed phrase to write down, lose, or have photographed by someone over your shoulder.
+If you have only used phone-based "hot" wallets, the card format can be confusing. A Tangem wallet is a small card (the same size as a bank card) with a chip inside. There is no screen, no cable, no battery.
 
-**2. Audited secure element.** Tangem uses a CC EAL6+ certified Samsung S3D350A secure element — the same class of chip used in passports and bank cards. The firmware is open-source and has been independently audited by [Kudelski Security](https://www.tangem.com/en/blog/post/kudelski-security-audit/).
+The core idea is simple:
 
-**3. NFC-only operation.** No cables, no Bluetooth, no batteries. The card communicates with the Tangem mobile app over NFC only when you physically tap it. That dramatically shrinks the attack surface compared to USB- or Bluetooth-based competitors.
+1. The card contains a **secure element chip** that generates your private key directly on the chip.
+2. That private key **never leaves the chip**. It cannot be exported or read out.
+3. The card talks to the Tangem mobile app over **NFC** — the same contactless "tap" technology used by payment cards — and only when you physically tap it.
+4. When you send crypto, the app builds the transaction and shows you the details; the card **signs** it on the chip when tapped. The signature leaves the card; the key does not.
 
-![Three matte-black Tangem cards in a fan layout — the multi-card backup architecture](https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog%2Ftangem-3card-backup.jpg)
+Because there is no battery and no permanent connection, the card is effectively an air-gapped signer that wakes up only for the moment of a tap. Independent reviews describe the same model: the key is generated by the secure element, stays inside it, and signing happens via NFC ([CEX.IO University](https://university.cex.io/tangem-wallet-review/)).
 
-## How Tangem Pay Fits In
+### The secure element and audits
 
-For readers new to the ecosystem it's worth separating the two products clearly.
+Tangem uses a Samsung secure element certified to **EAL6+**, a chip-security grade also used in passports and high-security payment systems. The firmware is flashed at the factory and is intentionally **not user-upgradable**, which removes a class of "malicious update" attacks but also means you trust the factory firmware as shipped.
 
-**Tangem (the hardware wallet)** is a self-custody vault. It stores crypto. It has no payment functionality on its own.
+On the audit side, Tangem's firmware has been reviewed by independent security firms — **Kudelski Security** (an early code review) and **Riscure** (a later, deeper review of code, architecture and the NFC-exposed commands), with neither reporting backdoors or key-exposure issues ([CryptoSlate](https://cryptoslate.com/crypto-wallets/tangem-wallet-review/)). Audits reduce risk; they never eliminate it, and they reflect the firmware version reviewed at the time.
 
-**Tangem Pay (the optional spending layer)** is a virtual Visa card issued through the Tangem app, available to users in [eligible regions](https://tangem.com/en/). It links to your self-custodied holdings on the Tangem card, converts at the point of sale, and works wherever Visa is accepted. It also integrates with Apple Pay and Google Pay for contactless and online checkout.
+### The multi-card backup model
 
-The flow looks like this: your USDC (or other supported assets) sits on your Tangem hardware wallet under your keys. When you tap to pay, the app authorises a settlement transaction from your wallet to the card processor, which then settles the merchant in fiat. You never pre-load a custodial balance.
+This is Tangem's signature feature and the one most relevant to everyday safety.
 
-That's the part most "crypto debit cards" get wrong — and it's the part Aurum members get right out of the gate with this partnership. We covered the underlying mechanics in our full [Tangem Pay review](/blog/tangem-pay-decentralized-debit-card-review-2026) earlier this year.
+Most hardware wallets give you a **24-word seed phrase** to write down. That phrase is your single point of failure: lose it and you lose your funds; let someone photograph it and they can drain you.
 
-<div class="not-prose my-8 rounded-lg border-2 border-primary/30 bg-primary/5 p-6">
-  <h3 class="text-xl font-semibold mb-2">Want a co-branded card?</h3>
-  <p class="text-sm text-muted-foreground mb-4">The 1,000-unit allocation is limited and being distributed through Aurum's existing community channels. Active members will be eligible first.</p>
-  <a href="https://aurum.foundation/en" target="_blank" rel="noopener noreferrer sponsored" class="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90">Visit Aurum Foundation →</a>
-</div>
+Tangem ships in sets of **two or three identical cards**. During setup you back the same private key onto the other cards. If one card is lost or damaged, another recovers the wallet. A seed phrase remains **optional** for advanced users who want one ([Tangem](https://tangem.com/en/blog/post/before-buying-tangem/)).
 
-## What This Changes For Aurum Users
+| Setup style | What you back up | Main failure mode | Who it suits |
+| --- | --- | --- | --- |
+| Traditional seed-phrase wallet | 24 words on paper/metal | Phrase lost, copied, or photographed | Users comfortable managing secrets |
+| Tangem 2-card set | One backup card | Both cards lost/destroyed | Most everyday users |
+| Tangem 3-card set | Two backup cards | All three lost/destroyed | Higher balances, geographic spread |
+| Tangem + optional seed | Cards plus a phrase | Phrase exposure reintroduced | Advanced users wanting portability |
 
-The Aurum ecosystem already includes the [Ex-AI Bot trading product](/blog/aurum-ex-bot-how-it-works-step-by-step) and the newer [NEYRO Quantum Alpha](/blog/neyro-aurum-full-presentation-non-custodial-ai-trading-agents-2026) self-custody AI trading agent. The Tangem partnership adds a third leg — **a hardware-backed spending rail**.
+The trade-off is real: the multi-card model removes the seed-phrase footgun, but it asks you to **store the spare cards securely and separately**. If you keep all three cards in one drawer, you have undone the benefit. For a broader comparison of backup philosophies, see our [Ledger vs Trezor hardware-wallet guide](/blog/best-hardware-wallet-2026-ledger-vs-trezor).
 
-In plain terms: a member can now run AI-driven yield strategies on the Aurum side, settle proceeds into stablecoins, hold those stablecoins on a Tangem card under their own keys, and spend them at the corner shop. All without an exchange off-ramp in the middle.
+## How Tangem Pay fits in
 
-That's a meaningful reduction in counterparty risk for the *spending* portion of the stack. It does not change the risk profile of the underlying yield product itself — see our [Aurum Foundation review](/reviews/aurum-foundation) for that breakdown.
+It is worth separating the two products clearly, because they do different jobs.
 
-## The Bigger Picture: Why Crypto Payments Are Heating Up
+**Tangem (the hardware wallet)** is a self-custody vault. It stores crypto and signs transactions. On its own it has no payment functionality.
 
-This partnership doesn't exist in a vacuum. According to [Grand View Research](https://www.grandviewresearch.com/industry-analysis/cryptocurrency-payment-apps-market-report), the crypto payment apps market is projected to grow at a 17.8% CAGR through 2033, reaching $2.4 billion. Visa itself reported [over $1 billion spent on crypto-linked cards](https://corporate.visa.com/en/sites/visa-perspectives/trends-insights/crypto-linked-cards-see-continued-growth.html) in just the first half of 2021, with volumes climbing steadily through 2025.
+**Tangem Pay (the spending layer)** is a Visa-linked card product inside the Tangem app. It is designed to let users spend on-chain stablecoins — starting with **USDC** — through Visa's network, with funds staying on-chain and under the user's control until the moment of payment, then converting to fiat at checkout so the merchant is paid normally ([Bitcoin.com News](https://news.bitcoin.com/tangem-announces-self-custodial-visa-card-using-cold-wallet-chip/)). It also works with Apple Pay and Google Pay.
 
-Stablecoins did **$27.6 trillion in transfer volume in 2024** according to [CEX.IO research](https://blog.cex.io/ecosystem/stablecoin-landscape-34864), and real-world-asset tokenisation crossed [$20 billion in on-chain value](https://thedefiant.io/news/defi/tokenized-real-world-assets-cross-usd20-billion-in-onchain-value) in January 2026. The infrastructure for "crypto as everyday money" is finally being built — and regulation in the EU (MiCA) and the US (stablecoin frameworks) is catching up.
+A few important, hedged points:
 
-Partnerships like Aurum × Tangem are how that infrastructure actually reaches end users. Not as a press release. As a card in a wallet.
+- **Availability is regional and rolling.** Press coverage described a phased country rollout with further regions planned, so whether *you* can use Tangem Pay depends on your location and the current rollout. Check the official Tangem site for your country before assuming access.
+- **KYC applies to the card account, not the wallet.** Reporting indicates identity checks attach to the spending/card balance rather than to your self-custodied holdings. Treat the exact KYC scope as something to confirm directly with Tangem.
+- **"Self-custodial until you spend" is the key claim.** Most crypto debit cards custody your balance on the issuer's books. Tangem Pay's design keeps funds on-chain until the transaction. That is a meaningfully better posture — but it is still a payment product with counterparties (the card issuer, the network), so it is not the same risk profile as cold storage you never touch.
 
-## Our Take From A Safety Standpoint
+If the custody distinction is new to you, our explainer on [self-custody vs custodial wallets](/blog/self-custody-vs-custodial-wallets-2026) walks through why "who holds the keys" is the question that matters most.
 
-A few quick verdicts from the CryptoWatchdog desk:
+## What the partnership changes for users
 
-**On the Tangem hardware side:** unambiguously a good move. Tangem is one of the most security-respected hardware wallet vendors on the market, the chip is properly certified, the firmware is audited, and the multi-card backup model eliminates the single biggest UX failure of competing wallets (lost seed phrases).
+For the 1,000 community members who receive a co-branded card, the practical upgrade is straightforward: they get a **properly engineered cold-storage device** and an optional spending rail, rather than leaving balances on a hot wallet or exchange.
 
-**On the Tangem Pay side:** still one of the closest things to a truly decentralised debit card actually shipping in 2026. Regional availability is the main caveat — check the [Tangem site](https://tangem.com/en/) for your country.
+In plain terms, a member can hold stablecoins on a Tangem card under their own keys and spend them where Visa is accepted, without a manual exchange off-ramp in the middle. That reduces counterparty exposure for the **spending** portion of their setup.
 
-**On the Aurum side:** this partnership doesn't materially change our existing trust assessment of the Aurum yield products themselves. Self-custody for *spending* is great. The underlying yield engine still carries the same counterparty and sustainability risks we flagged in the [full review](/reviews/aurum-foundation). Treat the two layers separately.
+What it does **not** change:
 
-For the 1,000 members who actually receive a co-branded card, this is a genuine upgrade to the day-to-day experience — and a quiet step forward for the broader category.
+- It does not alter the risk profile of any yield or trading product attached to the wider Aurum ecosystem. Self-custody for spending is a separate question from whether an investment product is sustainable. **Evaluate those layers independently.**
+- It does not make hardware foolproof. A Tangem card protects keys; it does not protect you from approving a malicious transaction, a phishing app, or a fake "support" agent. The signing step still shows you what you are approving — read it.
 
-## Related Reading
+> Treat a co-branded card as a free upgrade to your custody, not as an endorsement of everything attached to the brand offering it.
 
-- [Aurum Foundation Full Review 2026](/reviews/aurum-foundation) — our hands-on safety audit
-- [Tangem Pay Review: The Most Decentralized Crypto Debit Card](/blog/tangem-pay-decentralized-debit-card-review-2026)
-- [Aurum Ex-AI Bot: How The 0.5%/Day Trading Bot Actually Works](/blog/aurum-ex-bot-how-it-works-step-by-step)
-- [Aurum Neyro Quantum Alpha: Self-Custody AI Trading Setup Guide](/blog/self-custody-ai-crypto-trading-aurum-neyro)
-- [Best Crypto Wallets — Hardware vs Hot vs Smart-Contract](/categories/hardware-wallets)
+## The bigger picture: crypto payments and stablecoins
+
+This kind of partnership lands during a real shift toward stablecoins as payment infrastructure. Industry research put stablecoin transfer volume at roughly **$27.6 trillion in 2024**, though the same analysis cautions that a large share of raw on-chain volume is automated/bot activity rather than organic payments ([CEX.IO research](https://blog.cex.io/ecosystem/stablecoin-landscape-34864)). The honest read: the rails are scaling fast, but headline volume numbers should be read with a pinch of salt.
+
+The relevant trend for everyday users is the move toward **spending crypto without giving up custody**, alongside the slower mainstreaming of tokenized assets. If that broader theme interests you, our overview of [real-world asset tokenization in gold, silver and real estate](/blog/rwa-tokenization-gold-silver-real-estate-2026) covers where on-chain ownership is actually being used.
+
+## Our safety verdict
+
+A few plain-English verdicts from the CryptoWatchdog desk.
+
+**On the Tangem hardware:** positive. The secure-element grade is appropriate, the firmware has been independently audited, and the multi-card backup model removes the single biggest cause of lost funds for ordinary users — the mishandled seed phrase. As cold-storage hardware, it is a sound choice.
+
+**On Tangem Pay:** cautiously positive. The "self-custodial until you spend" design is genuinely better than typical custodial crypto cards. The caveats are regional availability, the card-account KYC, and the fact that it is still a payment product with its own counterparties. Confirm current terms for your country.
+
+**On the Aurum tie-up:** neutral-to-positive on the *custody* angle, and unchanged on everything else. Getting community members onto real self-custody hardware is good. It tells you nothing about the safety or sustainability of any investment product attached to the brand — judge those on their own merits.
+
+**Net:** the hardware is the strong part of this story. If you receive a card, set it up properly, store the spare cards separately, and keep your spending balance modest until you have tested a small transaction end to end.
+
+## How to evaluate before you claim a card
+
+A short checklist you can apply to this and any co-branded wallet promotion:
+
+- **Confirm the device is a genuine, sealed unit** from the official supply chain — never use a hardware wallet that arrives pre-initialized or with a "pre-set" recovery code.
+- **Set up the wallet yourself** so the keys are generated on your card, in your hands.
+- **Store backup cards in separate, secure locations.** Two cards in one drawer is one point of failure.
+- **Test with a small amount first.** Send a little in, spend a little, confirm recovery works before moving real money.
+- **Separate "spending" funds from "savings" funds.** Keep only what you plan to spend on the payment layer; keep long-term holdings in cold storage you rarely touch.
+- **Verify Tangem Pay availability and fees for your country** before relying on it.
+
+If you are weighing alternatives, compare against our reviews of the [Ledger Nano X](/reviews/ledger-nano-x) and [Trezor](/reviews/trezor), and — if you also buy through an exchange — our guide to the [best crypto exchange in the UK for 2026](/blog/best-crypto-exchange-uk-2026).
+
+**[Explore Tangem](/go/tangem)** — affiliate link. Tangem is an active CryptoWatchdog partner; we may earn a commission if you buy through it, at no extra cost to you. It does not change our safety assessment above.
+
+## Frequently asked questions
+
+**Is the Aurum × Tangem co-branded card a real Tangem hardware wallet?**
+Based on vendor and press descriptions, yes — the co-branded cards function as standard Tangem hardware wallets, with keys generated and stored on the secure-element chip. The branding is cosmetic; the security model is the same as a regular Tangem card. Confirm specifics on the official channels before relying on them.
+
+**How do I get one of the 1,000 cards?**
+Reporting indicates the limited allocation is distributed through Aurum's existing community channels, with active members eligible first. Exact eligibility and timing are not something we can confirm independently, so check Aurum's official channels directly and be wary of any third party claiming to "sell" allocations.
+
+**Does Tangem use a seed phrase?**
+By default, no — Tangem relies on a multi-card backup model where two or three identical cards hold the same key. A seed phrase is available as an option for advanced users who want one, but it reintroduces the usual seed-exposure risks.
+
+**What happens if I lose a Tangem card?**
+If you lose one card from a set, another card recovers the wallet. If you lose every card in the set and did not set up an optional seed phrase, the funds are not recoverable. That is why storing the spare cards separately matters.
+
+**Is Tangem Pay available everywhere?**
+No. It is rolling out by region and supports specific assets (starting with USDC). Whether you can use it depends on your country and the current rollout. Check the official Tangem site for availability and fees where you live.
+
+**Is my crypto self-custodied when I use Tangem Pay?**
+Tangem Pay is designed so funds stay on-chain under your control until the moment of payment, then convert to fiat at checkout. That is closer to self-custody than typical custodial cards, but it is still a payment product with counterparties — treat your spending balance as separate from long-term cold storage.
+
+**Does this partnership mean Aurum's investment products are safe?**
+No. The hardware-and-custody side of this announcement is separate from any yield or trading product. Getting onto self-custody hardware is a good thing; it does not validate the risk or sustainability of other products. Evaluate those independently.
+
+## Related reading
+
+- [Best Hardware Wallet 2026: Ledger vs Trezor](/blog/best-hardware-wallet-2026-ledger-vs-trezor)
+- [Self-Custody vs Custodial Wallets in 2026](/blog/self-custody-vs-custodial-wallets-2026)
+- [RWA Tokenization: Gold, Silver and Real Estate](/blog/rwa-tokenization-gold-silver-real-estate-2026)
+- [Best Crypto Exchange UK 2026](/blog/best-crypto-exchange-uk-2026)
+- [Ledger Nano X Review](/reviews/ledger-nano-x)
+- [Trezor Review](/reviews/trezor)
