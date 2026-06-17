@@ -10,7 +10,11 @@ The `cw-content-brain/` directory contains standalone local scripts and planning
 
 ## Marketing / SEO / Monetisation role
 
-If the task involves content, SEO, affiliates, offers, social, or making money, **read `cw-content-brain/MARKETING_OPERATING_MODEL.md` first** — it is the operating brain (mission, jobs, cadence, and workflows). Sessions are ephemeral, so that file is the persistent memory of how we operate.
+If the task involves content, SEO, affiliates, offers, social, or making money:
+1. **Read `marketing-ops/CONTROL.md` FIRST** — the live state, blockers, next actions and decisions log. Read it, act, then UPDATE it before ending the session.
+2. Then `cw-content-brain/MARKETING_OPERATING_MODEL.md` for the deeper operating brain (mission, jobs, cadence, workflows).
+
+Sessions are ephemeral, so these files are the persistent memory of where we are and how we operate.
 
 ## Operating Rules
 

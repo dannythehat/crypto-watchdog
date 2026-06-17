@@ -1562,10 +1562,10 @@
     "category": "tokenization-gold",
     "reviewSlug": "kinesis-money",
     "rating": null,
-    "status": "needs_signup",
+    "status": "active",
     "network": "Kinesis (referral)",
     "commissionType": "Referral yield share",
-    "affiliateUrl": "",
+    "affiliateUrl": "https://kms.kinesis.money/signup/KM00143747",
     "homepage": "https://kinesis.money",
     "displayUrl": "kinesis.money",
     "signupUrl": "https://kinesis.money/",
@@ -1579,7 +1579,7 @@
     "blockedPageTypes": [
       "warnings"
     ],
-    "lastChecked": null,
-    "notes": "Tokenised gold/silver with referral program — apply."
+    "lastChecked": "2026-06-16",
+    "notes": "Active. Gold/silver-backed tokens (KAU/KAG) with yield. Referral link."
   }
 ]

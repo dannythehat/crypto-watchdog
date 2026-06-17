@@ -1,12 +1,12 @@
 # Affiliate Status — live dashboard
-Updated 2026-06-16T17:38:37.168Z · run `node cw-content-brain/scripts/audit_affiliates.mjs`
+Updated 2026-06-16T18:10:25.790Z · run `node cw-content-brain/scripts/audit_affiliates.mjs`
 
 | Metric | Value |
 |---|---|
-| Monetisable platforms (non-red) | 54 |
-| **Active** (earning links live) | **9** |
-| Monetisation coverage | **17%** |
-| Known programs not yet signed up | 13 |
+| Monetisable platforms (non-red) | 52 |
+| **Active** (earning links live) | **10** |
+| Monetisation coverage | **19%** |
+| Known programs not yet signed up | 10 |
 | Links overdue a check (>30d) | 0 |
 | Earnings logged | 0.00 |
 | Claimed | 0.00 |
@@ -25,9 +25,6 @@ Updated 2026-06-16T17:38:37.168Z · run `node cw-content-brain/scripts/audit_aff
 | 3Commas | grid-dca-bots | https://3commas.io/affiliate | needs_signup |
 | eToro CopyTrader | copy-trading | https://www.etoro.com/partners/ | needs_signup |
 | Coinbase (Custodial Account) | custodial-wallets | _find program_ | needs_signup |
-| Kinesis Money | tokenization-gold | https://kinesis.money/ | needs_signup |
-| RealT | tokenization-realestate | https://realt.co/ | needs_signup |
-| Lofty | tokenization-realestate | https://www.lofty.ai/ | needs_signup |
 
 ## ✅ Active programs
 - Aurum Foundation (Aurum (referral), existing link)
@@ -39,4 +36,5 @@ Updated 2026-06-16T17:38:37.168Z · run `node cw-content-brain/scripts/audit_aff
 - Cryptohopper (Cryptohopper (affiliate), Up to 15% recurring (+50% sub))
 - Bitget (Bitget (referral), 40–50% trading-fee rebate)
 - Tangem (Tangem (referral), existing link)
+- Kinesis Money (Kinesis (referral), Referral yield share)
 
