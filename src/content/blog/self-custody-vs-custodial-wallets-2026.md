@@ -135,7 +135,7 @@ And don't let an online "maximalist" shame you into moving your money into a sys
 *   [ ] 2FA switched on everywhere, using an authenticator app rather than SMS (SIM-swappers love SMS)?
 *   [ ] Cleared out old token permissions with a tool like [Revoke cash](@@P3@@)?
 *   [ ] Sent a tiny test transaction first, before trusting an address with the big one?
-*   [ ] Could a trusted family member actually reach your funds if you couldn't? Sobering question. Ask it anyway.
+*   [ ] Could a trusted family member actually reach your funds if you couldn't? It's a hard question, but worth asking.
 
 ## Related reading
 
