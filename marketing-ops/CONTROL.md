@@ -49,6 +49,19 @@ Cross-cutting: **news + offers should link to our own content** (reviews, guides
 - Screenshot scripts: `_shotsec.mjs` (per-section, clean), `_shot3.mjs` (dark-mode fullpage). gitignored (`_*.mjs`).
 - ⚠️ fullPage capture + heavy `blur-[120px]` = blank-gap artifact; capture per-section or per-viewport instead. Emulate `prefers-color-scheme: dark` (site default for users is dark).
 
+## 🌙 OVERNIGHT JOB (2026-06-17, Danny → "redo all articles, don't stop")
+Redo ALL 109 published blogs in the CALMER house voice (`VOICE.md`) + full EEAT:
+2,000+ words, primary keyword, 3+ real external citations, 3+ internal links, a
+"## Frequently asked questions" section, and at least ONE markdown comparison
+TABLE each. Worst/thinnest first (see `node` inventory). Process in waves of ~8
+parallel agents; commit+push after each wave (`git add src/content/blog/` → push
+gitlab HEAD:main). DON'T STOP until all done. Visuals: tables (verified) + hero
+image_url; "graphs" = data tables; do NOT use blind AI images (must be able to
+review). Watch cannibalisation in the scam/seed-phrase/token-vetting clusters —
+give each a distinct keyword; flag true dupes for Danny (don't unpublish without OK).
+THEN: screenshot EVERY article via the puppeteer pipeline and review each — nothing
+ships unless it's genuinely good. Report progress each milestone.
+
 ## ▶️ Next actions (priority)
 1. **SITE SEARCH** (pillar #2) — search box → find our verdict for any platform. HIGH.
 2. Keep EEAT rewrites worst-first (~20 thin blogs left). Fix `non-custodial-smart-contract` citations (agent miscounted).
