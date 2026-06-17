@@ -40,10 +40,10 @@ export const hubs: Hub[] = [
     slug: "ai-finance",
     eyebrow: "AI Finance",
     title: "AI Crypto Finance: Which Platforms Are Real — and Which Are Scams",
-    metaTitle: "AI Crypto Finance 2026: Real Platforms vs Scams",
+    metaTitle: "AI Crypto Trading 2026: Best Platforms vs Scams",
     metaDescription:
-      "AI trading agents, yield bots and 'quant funds' are the most scam-prone niche in crypto. See which AI finance platforms we endorse — and which to avoid.",
-    keyword: "ai crypto finance",
+      "AI crypto trading bots, agents and 'quant funds' are the most scam-prone niche in crypto. See which AI trading platforms we endorse — and which to avoid.",
+    keyword: "ai crypto trading platforms",
     mood: "scan",
     accent: "#4F8BFF",
     heroPrompt:
@@ -285,11 +285,11 @@ export const hubs: Hub[] = [
   {
     slug: "blockchains",
     eyebrow: "Blockchains",
-    title: "Crypto Blockchains 2026: Layer 1 & Layer 2 Networks Rated",
-    metaTitle: "Crypto Blockchains 2026: L1 & L2 Networks Rated",
+    title: "Best Crypto Blockchains 2026: Layer 1 vs Layer 2, Rated",
+    metaTitle: "Layer 1 vs Layer 2: Best Blockchains 2026",
     metaDescription:
-      "Bitcoin, Ethereum, Solana, Arbitrum and more — CryptoWatchdog rates the major Layer 1 and Layer 2 blockchains on security, decentralisation and track record.",
-    keyword: "crypto blockchains rated",
+      "Layer 1 vs Layer 2 compared — Bitcoin, Ethereum, Solana, Arbitrum and more, rated on security, decentralisation and track record. See which blockchains we trust.",
+    keyword: "layer 1 vs layer 2 blockchains",
     mood: "scan",
     accent: "#4F8BFF",
     heroPrompt:
