@@ -96,19 +96,19 @@ They can also enforce spending limits and build two-factor authentication right 
 
 ## Essential rules for self custody
 
-Decided to take the keys yourself? Then there are rules, and they're not negotiable. Almost every self custody loss traces back to the same thing: someone cut a corner. Here's the mindset that keeps you out of the warnings page. Your seed phrase is not a password. It's the master key to a vault holding every penny you own, and anyone who copies it owns it too.
+Decided to take the keys yourself? Then there are rules, and they're not negotiable. Almost every self custody loss traces back to the same thing: someone cut a corner. Here's the mindset that keeps you off the warnings page. Your seed phrase is not a password. It's the master key to everything you own, and anyone who copies it owns it too.
 
 ### Never store your seed phrase digitally
 
-No photos. No screenshots. No tucking them into a cloud note or a password manager "just for now". Attackers actively comb leaked data for exactly these patterns, and a string of twelve or twenty-four dictionary words sticks out like a sore thumb. Write them on paper, or stamp them into a steel plate that laughs at house fires. Old-fashioned, yes. Also unhackable from the other side of the planet.
+No photos. No screenshots. No tucking them into a cloud note or a password manager "just for now". Attackers actively comb leaked data for exactly these patterns, and a string of twelve or twenty-four dictionary words is easy to spot. Write them on paper, or stamp them into a steel plate that survives a house fire. It's low-tech, but it can't be reached by anyone on the other side of the planet.
 
 ### Use a dedicated device
 
-Where you can, handle your crypto on a device that never touches your usual chaotic browsing. A clean laptop, or a cheap dedicated tablet, slashes your malware exposure. It's the digital version of not eating off the floor. Many [Scam Sniffer wallet drainer reports](@@P1@@) show exactly how malware lurks in the background and hijacks browser wallet interactions, swapping out details right as you approve them.
+Where you can, handle your crypto on a device that never touches your usual everyday browsing. A clean laptop, or a cheap dedicated tablet, cuts your malware exposure sharply. Many [Scam Sniffer wallet drainer reports](@@P1@@) show exactly how malware lurks in the background and hijacks browser wallet interactions, swapping out details right as you approve them.
 
 ### Verify every transaction
 
-Before you tap "confirm", read the address and the amount again. Then read them once more. Scammers love a trick called "address poisoning": they salt your transaction history with a lookalike address that matches the first and last few characters of one you've used, betting you'll lazily copy the wrong one. So check the destination on your hardware wallet's own screen, not just the app. The little screen is the bit they can't fake.
+Before you tap "confirm", read the address and the amount again. Then read them once more. Scammers love a trick called "address poisoning": they seed your transaction history with a lookalike address that matches the first and last few characters of one you've used, betting you'll copy the wrong one without checking. So verify the destination on your hardware wallet's own screen, not just the app. That screen is the part they can't fake.
 
 ## How to spot a wallet scam
 
