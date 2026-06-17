@@ -33,9 +33,10 @@ the scam, not the scammed. Never make light of someone losing money.
 
 ## Banned (instant "AI/generic" tells — never use)
 - Hype: "guaranteed", "risk-free", "to the moon", "100x", "next big thing", "don't miss out".
-- AI filler: "Furthermore", "Moreover", "It's important to note", "It's worth noting", "In conclusion", "In today's fast-paced world", "delve", "navigate the landscape", "unlock the potential", "robust", "seamless", "game-changer", "in the world of crypto".
-- Empty hedging and throat-clearing intros ("When it comes to…").
+- AI filler: "Furthermore", "Moreover", "Additionally", "It's important to note", "It's worth noting", "In conclusion", "In today's fast-paced world", "ever-evolving", "delve", "navigate the landscape", "unlock the potential", "robust", "seamless", "game-changer", "in the world of crypto", "in the realm of", "when it comes to", "needless to say", "rest assured", "the bottom line", "at the end of the day", "look no further", "that being said".
+- Empty hedging and throat-clearing intros ("When it comes to…", "In an era where…").
 - Em-dash overload and three-item lists on autopilot. Mix it up.
+- Cutesy analogies and forced metaphors. No "Ponzi in a hard hat", no "Jenga tower of risk", no "house of cards", no "wolf in sheep's clothing". If a sentence reaches for a costume metaphor, replace it with the plain fact.
 
 ## Still non-negotiable (brand rules)
 - Evidence-led. No price predictions. Never promise returns. Never monetise red-rated/scam platforms.
