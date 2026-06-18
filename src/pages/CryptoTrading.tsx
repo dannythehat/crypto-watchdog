@@ -12,7 +12,7 @@ import { breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 
 // Sub-categories of Crypto Trading. Each is its own final platform page.
 const SUBS: { slug: string; label: string; blurb: string; icon: typeof Bot; accent: string; image?: string }[] = [
-  { slug: "ai-trading-bots", label: "AI Trading Bots", blurb: "Bots that claim to adapt to the market — a few genuine, many AI-washed scams. Rated on evidence.", icon: BrainCircuit, accent: "#4F8BFF" },
+  { slug: "ai-trading-bots", label: "AI Trading Bots", blurb: "Bots that claim to adapt to the market — a few genuine, many AI-washed scams. Rated on evidence.", icon: BrainCircuit, accent: "#4F8BFF", image: "/ai-trading-bots/hero.png" },
   { slug: "trading-bots", label: "Trading Bots", blurb: "Rule-based automation — grid, DCA, rebalancing. Transparent tools you stay in control of.", icon: Bot, accent: "#F5A524", image: "/trading-bots/hero.png" },
   { slug: "copy-trading", label: "Copy Trading", blurb: "Mirror proven traders automatically — the safe way, without the fake gurus.", icon: Users, accent: "#F5A524", image: "/copy-trading/hero.png" },
   { slug: "crypto-exchanges", label: "Exchanges", blurb: "Where you buy, sell and trade yourself — and where we test withdrawals for real.", icon: Building2, accent: "#16C784", image: "/crypto-exchanges/hero.png" },

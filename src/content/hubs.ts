@@ -197,6 +197,7 @@ export const hubs: Hub[] = [
     heroPrompt:
       "dark cinematic cyber trading floor with a glowing blue AI neural-network brain made of circuitry above holographic candlestick charts, electric blue and violet volumetric light, ultra detailed",
     heroSeed: 31,
+    heroImage: "/ai-trading-bots/hero.png",
     intro:
       "An AI trading bot claims to *adapt* — reading the market and adjusting its own strategy, rather than following fixed rules. A handful are genuine tools. Many more are the oldest scam in crypto with a chatbot bolted on: **\"our AI guarantees daily profit, just deposit here.\"**\n\nWe judge every one on the same three things — who holds your money, whether the returns are verifiable, and whether the strategy is ever actually explained. Start with [how to spot AI-washing](/blog/how-to-spot-ai-washing-crypto).",
     trusted: ["topone-futures"],
