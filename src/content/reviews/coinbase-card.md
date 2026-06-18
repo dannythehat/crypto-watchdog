@@ -24,6 +24,8 @@ meta_title: "Coinbase Card Review 2026: Is It Safe? Fees & Cashback"
 meta_description: "Coinbase Card review: Visa debit backed by a regulated exchange, crypto cashback, fees, tax considerations and how it compares to Crypto.com. Evidence-led."
 ---
 
+> 📌 **This is our focused review of the Coinbase Card.** For the full platform verdict — the exchange, fees, security and the 2022-era track record — read our [complete Coinbase review](/reviews/coinbase).
+
 ## Coinbase Card, assessed
 
 The **Coinbase Card** is the low-drama option in crypto cards: a **Visa debit** that spends your Coinbase balance, pays a bit of **crypto cashback**, has **no annual fee**, and is backed by a **regulated, NASDAQ-listed** exchange. You manage it from the Coinbase app, including an instant freeze.
