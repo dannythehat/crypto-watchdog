@@ -195,6 +195,7 @@ export const hubs: Hub[] = [
     heroPrompt:
       "an abstract decentralized finance network of glowing interconnected nodes and liquidity pools floating in dark space, electric blue and violet energy, cinematic, ultra detailed",
     heroSeed: 35,
+    heroImage: "/defi-platforms/hero.png",
     intro:
       "DeFi removes the middleman — and the safety net. The best protocols are audited, battle-tested and transparent about where yield comes from. The worst dress up unsustainable token emissions as 'real yield' until the music stops.\n\nHere's our current read on the major DeFi platforms, plus the collapses worth studying. Before chasing a headline APY, read [real yield vs ponzi yield](/blog/defi-lending-real-yield-vs-ponzi-yield-2026).",
     trusted: ["aave", "uniswap", "curve-finance", "pancakeswap", "rocket-pool", "defillama", "zapper"],

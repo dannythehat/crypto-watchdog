@@ -32,7 +32,7 @@ const CATS: { label: string; about: string; to: string; image?: string; icon: ty
   { label: "AI Finance", about: "AI trading, bots & agents — what's real, and what's a scam in a chatbot costume.", to: "/ai-finance", image: "/ai-finance/hero.png", icon: BrainCircuit, accent: "#4F8BFF" },
   { label: "Exchanges", about: "Where you buy, sell and trade — and where we test withdrawals for real.", to: "/crypto-exchanges", image: "/crypto-exchanges/hero.png", icon: ArrowLeftRight, accent: "#16C784" },
   { label: "Wallets", about: "Self-custody and hot wallets we actually trust — plus the fakes to avoid.", to: "/crypto-wallets", image: "/crypto-wallets/hero.png", icon: Wallet, accent: "#16C784" },
-  { label: "DeFi", about: "Real yield vs Ponzi yield — protocols rated on what's verifiable on-chain.", to: "/defi-platforms", icon: Layers, accent: "#4F8BFF" },
+  { label: "DeFi", about: "Real yield vs Ponzi yield — protocols rated on what's verifiable on-chain.", to: "/defi-platforms", image: "/defi-platforms/hero.png", icon: Layers, accent: "#4F8BFF" },
   { label: "Tokenized Assets", about: "Gold, US treasuries and property, brought on-chain (RWA).", to: "/tokenized-assets", image: "/tokenized-assets/hero.png", icon: BrainCircuit, accent: "#A78BFA" },
   { label: "NFT Marketplaces", about: "Where to mint and trade collectibles — minus the wallet drainers.", to: "/nft-marketplaces", image: "/nft-marketplaces/hero.png", icon: BrainCircuit, accent: "#A78BFA" },
   { label: "Casinos & Sportsbooks", about: "Vetted crypto casinos and Bitcoin sportsbooks, scored out of 100.", to: "/crypto-casinos", image: "/crypto-casinos/hero.png", icon: Shield, accent: "#F5A524" },

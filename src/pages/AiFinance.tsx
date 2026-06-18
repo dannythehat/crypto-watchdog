@@ -21,7 +21,7 @@ const SECTORS: { slug: string; label: string; blurb: string; icon: typeof Bot; a
   { slug: "crypto-trading-bots", label: "Trading Bots", blurb: "Automated strategies you stay in control of.", icon: Bot, accent: "#4F8BFF", image: "/crypto-trading-bots/hero.png" },
   { slug: "crypto-exchanges", label: "Exchanges", blurb: "Where you buy, sell and trade — and where withdrawals get tested.", icon: Building2, accent: "#16C784", image: "/crypto-exchanges/hero.png" },
   { slug: "crypto-wallets", label: "Wallets", blurb: "Self-custody and hot wallets we actually trust.", icon: Wallet, accent: "#16C784", image: "/crypto-wallets/hero.png" },
-  { slug: "defi-platforms", label: "DeFi Platforms", blurb: "Real yield vs Ponzi yield — protocols rated on evidence.", icon: Network, accent: "#4F8BFF" },
+  { slug: "defi-platforms", label: "DeFi Platforms", blurb: "Real yield vs Ponzi yield — protocols rated on evidence.", icon: Network, accent: "#4F8BFF", image: "/defi-platforms/hero.png" },
   { slug: "crypto-staking", label: "Staking", blurb: "Earn genuine network rewards without the traps.", icon: Coins, accent: "#16C784" },
   { slug: "tokenized-assets", label: "Tokenized Assets (RWA)", blurb: "Gold, treasuries and property, on-chain.", icon: Gem, accent: "#A78BFA", image: "/tokenized-assets/hero.png" },
   { slug: "nft-marketplaces", label: "NFT Marketplaces", blurb: "Where to mint and trade — minus the drainers.", icon: ImageIcon, accent: "#A78BFA", image: "/nft-marketplaces/hero.png" },
