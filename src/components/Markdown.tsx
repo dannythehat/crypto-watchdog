@@ -54,7 +54,7 @@ function renderInline(text: string, keyBase: string): ReactNode[] {
         ),
       );
     } else if (m[5] !== undefined) {
-      out.push(<strong key={key} className="font-semibold text-foreground">{renderInline(m[5], key)}</strong>);
+      out.push(<strong key={key} className="font-semibold text-primary">{renderInline(m[5], key)}</strong>);
     } else if (m[6] !== undefined) {
       out.push(<em key={key}>{renderInline(m[6], key)}</em>);
     } else if (m[7] !== undefined) {
@@ -78,7 +78,7 @@ const Markdown = ({ content }: { content: string }) => {
   const flushPara = () => {
     if (para.length) {
       const key = `p${k++}`;
-      blocks.push(<p key={key} className="mb-4 leading-relaxed text-muted-foreground">{renderInline(para.join(" "), key)}</p>);
+      blocks.push(<p key={key} className="mb-4 leading-relaxed text-foreground/80">{renderInline(para.join(" "), key)}</p>);
       para = [];
     }
   };
@@ -88,8 +88,8 @@ const Markdown = ({ content }: { content: string }) => {
       const items = list.items.map((it, idx) => <li key={`${key}-${idx}`} className="leading-relaxed">{renderInline(it, `${key}-${idx}`)}</li>);
       blocks.push(
         list.ordered
-          ? <ol key={key} className="mb-4 ml-6 list-decimal space-y-1.5 text-muted-foreground">{items}</ol>
-          : <ul key={key} className="mb-4 ml-6 list-disc space-y-1.5 text-muted-foreground">{items}</ul>,
+          ? <ol key={key} className="mb-4 ml-6 list-decimal space-y-1.5 text-foreground/80">{items}</ol>
+          : <ul key={key} className="mb-4 ml-6 list-disc space-y-1.5 text-foreground/80">{items}</ul>,
       );
       list = null;
     }
@@ -109,7 +109,7 @@ const Markdown = ({ content }: { content: string }) => {
     }
     const cls = danger
       ? "my-6 rounded-xl border border-rating-red/40 border-l-4 border-l-rating-red bg-rating-red/10 px-5 py-4 font-medium text-foreground backdrop-blur"
-      : "my-6 rounded-xl border border-primary/20 border-l-4 border-l-primary bg-primary/[0.06] px-5 py-4 text-muted-foreground backdrop-blur";
+      : "my-6 rounded-xl border border-primary/20 border-l-4 border-l-primary bg-primary/[0.06] px-5 py-4 text-foreground/85 backdrop-blur";
     blocks.push(<blockquote key={key} className={cls}>{renderInline(lines.join(" "), key)}</blockquote>);
     quote = [];
   };
@@ -147,7 +147,7 @@ const Markdown = ({ content }: { content: string }) => {
               <tbody>
                 {rows.map((r, ri) => (
                   <tr key={ri} className="border-t border-border/50 transition-colors hover:bg-foreground/[0.03]">
-                    {r.map((c, ci) => <td key={ci} className={`px-4 py-3 align-top ${ci === 0 ? "font-medium text-foreground" : "text-muted-foreground"}`}>{renderInline(c, `${key}-${ri}-${ci}`)}</td>)}
+                    {r.map((c, ci) => <td key={ci} className={`px-4 py-3 align-top ${ci === 0 ? "font-medium text-foreground" : "text-foreground/80"}`}>{renderInline(c, `${key}-${ri}-${ci}`)}</td>)}
                   </tr>
                 ))}
               </tbody>

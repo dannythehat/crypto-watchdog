@@ -99,6 +99,13 @@ It cleared, too. The same transaction shows a **Success** status, a confirmed bl
 
 This doesn't prove payouts continue forever or that the model is sustainable. It proves one concrete thing: a real stablecoin payment landed in the user's wallet and is verifiable on BscScan.
 
+<div class="not-prose my-8 overflow-hidden rounded-2xl border border-primary/30 bg-primary/10 p-6 shadow-lg ring-1 ring-white/10 backdrop-blur-xl">
+  <p class="text-xs font-bold uppercase tracking-widest text-primary">Join Aurum here</p>
+  <h3 class="mt-1 font-heading text-2xl font-bold text-foreground">Want to follow the same on-chain trail yourself?</h3>
+  <p class="mt-2 text-sm text-foreground/80">Connect a wallet and see the self-custody flow first-hand. Non-custodial · your funds stay in your wallet · only ever use money you can afford to lose.</p>
+  <a href="https://backoffice.aurum.foundation/u/PKK5U0" target="_blank" rel="noopener noreferrer sponsored" class="mt-4 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-md transition hover:bg-primary/90">Join Aurum →</a>
+</div>
+
 ### Exhibit 4 — The paying wallet isn't a throwaway
 
 Next: where did the money come from? The sending address (`0x92b7807b…`) wasn't an empty wallet topped up for a screenshot. On its token holder page it showed roughly **38.7 million BSC-USD** and **more than 100,000 transactions**.
@@ -196,6 +203,13 @@ The payout token was **Binance-Peg BSC-USD**, a mainstream BEP-20 stablecoin on 
 </div>
 
 One practical note while we're here: BEP-20 tokens use approvals and allowances. Connecting a wallet isn't the same as granting a spending approval, but a DeFi workflow can involve approvals or contract deposits. Whatever platform you use, check what you've approved and to whom, and inspect your activation transaction where you can.
+
+<div class="not-prose my-8 overflow-hidden rounded-2xl border border-primary/30 bg-primary/10 p-6 shadow-lg ring-1 ring-white/10 backdrop-blur-xl">
+  <p class="text-xs font-bold uppercase tracking-widest text-primary">Join Aurum here</p>
+  <h3 class="mt-1 font-heading text-2xl font-bold text-foreground">Ready to try Aurum Neyro for yourself?</h3>
+  <p class="mt-2 text-sm text-foreground/80">Sign up through our link, start small, and verify every payment on-chain like we did. It's the same link we use ourselves — and you can join Danny's classroom once you're in.</p>
+  <a href="https://backoffice.aurum.foundation/u/PKK5U0" target="_blank" rel="noopener noreferrer sponsored" class="mt-4 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-md transition hover:bg-primary/90">Join Aurum →</a>
+</div>
 
 ## Security and the smart-contract audit
 
