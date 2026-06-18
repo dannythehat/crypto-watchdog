@@ -11,6 +11,8 @@ import Markdown from "@/components/Markdown";
 import { Button } from "@/components/ui/button";
 import { useReview } from "@/hooks/useReviews";
 import { getAffiliateByReviewSlug, isMonetisable } from "@/content";
+import { getCasino, claimUrl } from "@/content/casinos";
+import { trackEvent } from "@/lib/analytics";
 import { breadcrumbJsonLd, reviewJsonLd, faqJsonLd } from "@/lib/seo";
 
 const ReviewDetail = () => {
@@ -55,6 +57,8 @@ const ReviewDetail = () => {
   // structure (headings) — keeps the 78 short legacy reviews unaffected.
   const body = ((review as any).content || "") as string;
   const hasLongForm = /(^|\n)#{1,6}\s/.test(body);
+  // Casino/sportsbook affiliate banner (clickable → claim link). Invisible until a banner is set.
+  const casino = getCasino(review.slug);
 
   return (
     <>
@@ -108,6 +112,18 @@ const ReviewDetail = () => {
                 <RatingBadge rating={review.rating as "green" | "orange" | "red"} size="md" />
               </div>
             </div>
+
+            {casino?.banner && (
+              <a
+                href={claimUrl(casino)}
+                target="_blank"
+                rel="sponsored noopener noreferrer nofollow"
+                onClick={() => trackEvent("casino_claim_click", { casino: casino.slug, placement: "review_banner" })}
+                className="mt-6 block overflow-hidden rounded-2xl border border-border shadow-lg ring-1 ring-white/10 transition-transform hover:-translate-y-0.5"
+              >
+                <img src={casino.banner} alt={`${review.name} — visit site`} className="w-full" loading="eager" />
+              </a>
+            )}
 
             <div className="mt-6 max-w-none">
               <Markdown content={review.summary || ""} />

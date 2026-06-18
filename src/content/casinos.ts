@@ -29,6 +29,7 @@ export interface Casino {
   special?: CasinoSpecial;  // timely promo, e.g. "US Open: £100 free bet" (updatable)
   affiliateUrl?: string;    // STABLE money link; empty = no deal yet
   logo?: string;            // self-hosted brand logo (e.g. /brands/stake.png); falls back to Clearbit
+  banner?: string;          // wide affiliate banner (e.g. /brands/stake-banner.jpg); shown on the review page
   accent: string;
   featured?: boolean;
 }
@@ -50,5 +51,6 @@ export const casinos: Casino[] = [
 export const claimUrl = (c: Casino): string => c.affiliateUrl || `https://${c.domain}`;
 export const hasAffiliate = (c: Casino): boolean => !!c.affiliateUrl;
 
+export const getCasino = (slug?: string): Casino | undefined => casinos.find((c) => c.slug === slug);
 export const featuredCasino = casinos.find((c) => c.featured) ?? casinos[0];
 export const casinosRanked = [...casinos].sort((a, b) => b.trustScore - a.trustScore);
