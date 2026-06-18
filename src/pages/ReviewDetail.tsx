@@ -11,7 +11,7 @@ import Markdown from "@/components/Markdown";
 import { Button } from "@/components/ui/button";
 import { useReview } from "@/hooks/useReviews";
 import { getAffiliateByReviewSlug, isMonetisable } from "@/content";
-import { getCasino, claimUrl } from "@/content/casinos";
+import { getCasino, claimUrl, hasAffiliate } from "@/content/casinos";
 import { trackEvent } from "@/lib/analytics";
 import { breadcrumbJsonLd, reviewJsonLd, faqJsonLd } from "@/lib/seo";
 
@@ -129,7 +129,17 @@ const ReviewDetail = () => {
               <Markdown content={review.summary || ""} />
             </div>
 
-            {isMonetisable(getAffiliateByReviewSlug(review.slug)) ? (
+            {casino && hasAffiliate(casino) ? (
+              <a
+                href={claimUrl(casino)}
+                target="_blank"
+                rel="sponsored noopener noreferrer nofollow"
+                onClick={() => trackEvent("casino_claim_click", { casino: casino.slug, placement: "review_cta" })}
+                className="mt-4 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-rating-green to-emerald-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-rating-green/20 transition-transform hover:-translate-y-0.5"
+              >
+                Claim offer at {review.name} <ExternalLink className="h-4 w-4" />
+              </a>
+            ) : isMonetisable(getAffiliateByReviewSlug(review.slug)) ? (
               <AffiliateCTA reviewSlug={review.slug} label={`Visit ${review.name}`} />
             ) : (
               review.website_url && (
