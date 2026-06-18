@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 import SectionWrapper from "@/components/SectionWrapper";
 import ReviewCard from "@/components/ReviewCard";
 import { Button } from "@/components/ui/button";
@@ -32,6 +33,12 @@ const Reviews = () => {
 
   return (
     <>
+      <Seo
+        title="Crypto Platform Reviews & Trust Scores"
+        description="Independent, evidence-led reviews and Trust Scores for crypto exchanges, wallets, AI bots, DeFi and more. Search and filter by category or alert level."
+        path="/reviews"
+        type="website"
+      />
       <Navbar />
       <main>
         <SectionWrapper className="pt-28 md:pt-36">

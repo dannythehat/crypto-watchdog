@@ -5,8 +5,24 @@
 /blog/why-crypto-platform-trust-is-key-to-your-security /blog/how-to-choose-safer-crypto-platforms-and-protect-your-assets 301
 /blog/how-to-review-crypto-platforms-safely-and-avoid-scams /blog/how-to-choose-safer-crypto-platforms-and-protect-your-assets 301
 /blog/demystifying-crypto-platform-transparency-for-safer-trading /blog/how-crypto-exchange-trust-frameworks-help-you-trade-safely 301
-/blog/cryptobit-live-alternatives-6 /blog/cryptobit-live-alternatives-5 301
 /blog/how-to-identify-and-avoid-crypto-scams-investor-guide /blog/how-to-spot-crypto-scam-2026 301
+
+# Removed competitor-brand "alternatives" doorway pages (301 -> reviews hub)
+/blog/crypto-watchdog-com-alternatives-5 /reviews 301
+/blog/cryptobit-live-alternatives-5 /reviews 301
+/blog/cryptobit-live-alternatives-6 /reviews 301
+/blog/cryptodan-net-alternatives-4 /reviews 301
+/blog/crytowatch-com-alternatives-6 /reviews 301
+
+# Old taxonomy/category URLs -> current hubs
+/categories/nft-platforms /nft-marketplaces 301
+/categories/ai-finance /ai-finance 301
+/categories/crypto-exchanges /crypto-exchanges 301
+/categories/crypto-wallets /crypto-wallets 301
+/categories/defi-platforms /defi-platforms 301
+/categories/* /ai-finance 301
+
+# Old top-level slugs (301)
 /trading /ai-finance 301
 /crypto-trading-bots /trading-bots 301
 /ai-trading-platforms /ai-trading-bots 301
