@@ -108,9 +108,11 @@ const affiliateByReview = new Map(affiliates.map((a) => [a.reviewSlug, a]));
 
 export const getAffiliate = (id: string) => affiliateById.get(id) ?? null;
 export const getAffiliateByReviewSlug = (slug: string) => affiliateByReview.get(slug) ?? null;
-// True only when there's a usable, non-blocked affiliate link to send traffic through.
+// True only when there's a REAL affiliate link to send traffic through — i.e. an
+// actual deal exists. "needs_signup" entries (no affiliateUrl yet) and blocked
+// ones are NOT monetisable, so we never show an affiliate CTA we can't honour.
 export const isMonetisable = (a?: Affiliate | null): a is Affiliate =>
-  !!a && a.status !== "blocked";
+  !!a && a.status !== "blocked" && !!a.affiliateUrl;
 
 export const getBlogPost = (slug: string) => blogPosts.find((p) => p.slug === slug) ?? null;
 export const getReview = (slug: string) => reviews.find((r) => r.slug === slug) ?? null;
