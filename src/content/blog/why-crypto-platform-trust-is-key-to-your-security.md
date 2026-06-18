@@ -42,6 +42,8 @@ Before we talk about how to check trust, it helps to be clear about what we're a
 
 In traditional finance, trust comes from things you rarely think about: government-backed deposit insurance, regulators with teeth, and decades of institutions being held to account. Crypto has none of those guarantees by default. A platform can disappear overnight, freeze withdrawals with no warning, or take a breach that wipes out user funds and leaves no one to sue. That isn't a fringe scenario. It's the everyday reality for anyone holding money on a centralised exchange, a DeFi protocol, or even an audited wallet app.
 
+That's why crypto platform trust has to be treated as something you verify, not something you feel. A clean interface, a big logo, and a confident tone tell you a company can hire designers. They tell you nothing about where your funds sit, who can move them, or what happens on the day something breaks. The rest of this guide is about closing that gap with evidence.
+
 Trust in a crypto platform comes down to four things you can actually measure. Each one needs verifying rather than assuming:
 
 | Pillar | What it means | How to verify it |

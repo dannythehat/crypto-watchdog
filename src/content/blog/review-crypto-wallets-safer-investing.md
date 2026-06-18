@@ -17,6 +17,8 @@ Most people who lose crypto did not pick the wrong chain or misread the market. 
 
 So let's slow it down. This guide shows you how to review a crypto wallet before you trust it with anything you'd hate to lose, from the prep work through to a hands-on test you run yourself. Nothing flashy. Just the checks that actually keep funds where they belong.
 
+The order matters. Each step narrows down what you need to look at next, so by the time you move real money you already know how the wallet handles the things that tend to go wrong. Work through it once and the routine becomes second nature for the next wallet you assess.
+
 ## Table of Contents
 
 - [What to gather before you start: tools, information and wallet types](#what-to-gather-before-you-start%3A-tools%2C-information-and-wallet-types)
@@ -50,7 +52,7 @@ Have these ready before you start your review:
 - **Fee schedule** from the wallet's official documentation
 - **Intended use case** written down clearly (daily trading, long-term storage, DeFi interaction)
 
-A simple spreadsheet does the job here. Scoring each wallet against the same criteria stops you from deciding based on a polished landing page rather than verified facts. It's worth reading the [self-custody vs custodial wallets](https://cryptowatchdog.net/blog/self-custody-vs-custodial-wallets-2026) distinction carefully too, because that single choice decides who legally owns your assets.
+A simple spreadsheet does the job here. Scoring each wallet against the same criteria stops you from deciding based on a polished landing page rather than verified facts. It also keeps you honest when you compare two options that both look fine in isolation but differ once you put their numbers side by side. It's worth reading the [self-custody vs custodial wallets](https://cryptowatchdog.net/blog/self-custody-vs-custodial-wallets-2026) distinction carefully too, because that single choice decides who legally owns your assets, and it's the one decision you can't quietly reverse later.
 
 ![Infographic of core crypto wallet review steps](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1777256828814_Infographic-of-core-crypto-wallet-review-steps.jpeg)
 
@@ -106,7 +108,7 @@ Track records from established wallets give you useful benchmarks. ZenGo has rec
 | Independent audits | Varies | Common | Emerging |
 | dApp compatibility | High | Moderate | High |
 
-Be wary of [risky crypto services](https://cryptowatchdog.net/blog/why-avoid-risky-crypto-services-protect-investments) that bundle wallet functionality with exchange or staking features. Every extra feature is another way in for an attacker, on top of the wallet itself.
+Be wary of [risky crypto services](https://cryptowatchdog.net/blog/why-avoid-risky-crypto-services-protect-investments) that bundle wallet functionality with exchange or staking features. Every extra feature is another way in for an attacker, on top of the wallet itself. Convenience and security usually trade against each other, and an all-in-one product tends to sit on the convenient end of that line. That doesn't make it unusable, but it does mean you should know exactly what you're accepting before you store anything serious there.
 
 ## Step 3: Evaluate fees, user experience, and support
 
