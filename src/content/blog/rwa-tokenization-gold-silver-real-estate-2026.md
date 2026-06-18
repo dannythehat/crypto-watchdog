@@ -85,6 +85,8 @@ This is the category with the biggest pull and the longest list of caveats. The 
 
 **Our honest take: it's too early to recommend a specific platform.** The sector is young, the platforms are still finding their feet — interfaces and tooling are rough — and there have already been real wobbles. RealT, for instance, ran into **tenant-management problems in Detroit in early 2025**. A token is only ever as good as the **real-world operations** and the **legal structure** behind it. Owning a token tied to a house is not the same as owning the house. A company or SPV, a property manager and the platform all sit between you and the actual building.
 
+There's a second catch worth saying out loud: the "instant" liquidity is only as deep as the buyers on the other side. A pool that lets you exit in seconds during a calm market can dry up fast when everyone wants out at once, and a half-sold property token is a lot harder to value than a gram of vaulted gold. Promised liquidity and proven liquidity are not the same thing.
+
 So tokenized real estate goes in our **watch-and-wait** column. The opportunity looks real, and we'll cover the leading platforms as they mature and earn trust. We won't point you at one until the operations, transparency and liquidity are proven. If you want to explore it yourself, treat it as high-risk, start tiny, and read exactly what each token legally entitles you to before a penny goes in.
 
 ## How tokenization actually works
