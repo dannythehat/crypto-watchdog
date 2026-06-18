@@ -302,6 +302,7 @@ export const hubs: Hub[] = [
     heroPrompt:
       "a sleek glowing crypto debit card floating above a dark surface with bitcoin and ethereum symbols and neon payment waves, electric blue volumetric light, cinematic, ultra detailed",
     heroSeed: 73,
+    heroImage: "/crypto-cards/hero.png",
     intro:
       "Crypto cards let you spend crypto (or crypto-backed credit) anywhere that takes Visa or Mastercard — often with cashback. The catch: headline rewards usually come with **staking, lock-ups, subscriptions or token exposure**, and conversion spreads can quietly eat your returns.\n\nHere's how the main cards stack up on fees, rewards, custody and country support. Read the fine print before you lock anything up.",
     trusted: ["coinbase-card", "tangem-pay"],
