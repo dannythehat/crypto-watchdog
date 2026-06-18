@@ -8,7 +8,7 @@ summary: "The custodial side of Coinbase — your crypto sits in Coinbase's wall
 verdict: "A reasonable on-ramp for absolute beginners who aren't ready for self-custody. Regulated, insured against breaches, and easy to use. But remember: not your keys, not your coins. For long-term holdings, move to a hardware wallet."
 category_id: "b637a608-8d81-4fd9-b25b-1cafddcf8f5c"
 website_url: "https://www.coinbase.com"
-logo_url: "https://www.coinbase.com/favicon.ico"
+logo_url: "/brands/coinbase.png"
 social_image_url: null
 pros: ["Regulated US-listed company with strong compliance","98% of assets held in cold storage","Insurance against platform-side breaches","Beginner-friendly UX with fiat on/off ramps","24/7 customer support"]
 cons: ["Custodial — you don't control the private keys","Account freezes possible (regulatory or fraud reviews)","Higher fees than self-custody alternatives","History of outages during high-volatility events"]
