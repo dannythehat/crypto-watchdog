@@ -8,7 +8,7 @@ summary: "CoinPoker is the leading crypto-native online poker room — you play 
 verdict: "CoinPoker is the most credible crypto-native poker room we've looked at: real cash games and guaranteed tournaments, provably-fair dealing, crypto deposits and a multi-year track record. The trade-offs are the usual crypto-gambling ones — Curaçao licensing, regional restrictions, and CHP-token incentives that carry price risk. A solid choice for crypto poker players who play within their means. 18+. Not financial advice."
 category_id: null
 website_url: "https://www.coinpoker.com"
-logo_url: "/brands/coinpoker.png"
+logo_url: "/brands/coinpoker.webp"
 pros: ["Crypto-native poker — play in USDT, BTC, ETH or CHP","Provably-fair RNG you can verify","Large guaranteed tournaments and freerolls","Operating since 2017 with an established player base","Fast crypto deposits and withdrawals"]
 cons: ["Curaçao-licensed; restricted/illegal in many countries","CHP-token rewards carry price risk","Smaller player pool than the fiat poker giants","Gambling is high-risk — losses are the norm, not the exception"]
 fees_info: "No deposit fees for crypto; standard poker rake on cash games and tournaments, partly offset by CHP rakeback. Network withdrawal fees apply. Check current rake and rakeback on the site."
