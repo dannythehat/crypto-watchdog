@@ -16,7 +16,7 @@ import { breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 const SECTORS: { slug: string; label: string; blurb: string; icon: typeof Bot; accent: string; image?: string }[] = [
   { slug: "copy-trading", label: "Copy Trading", blurb: "Mirror proven traders automatically — link your account and follow the experts, the safe way.", icon: Users, accent: "#F5A524", image: "/copy-trading/hero.png" },
   { slug: "crypto-trading-bots", label: "Trading Bots", blurb: "Automated strategies that run 24/7 — the transparent tools you stay in control of, not black boxes.", icon: Bot, accent: "#4F8BFF" },
-  { slug: "ai-trading-platforms", label: "AI Trading Platforms", blurb: "AI agents and quant models that trade or manage liquidity for you.", icon: BrainCircuit, accent: "#4F8BFF", image: "/ai-finance/hero.png" },
+  { slug: "ai-trading-platforms", label: "AI Trading Platforms", blurb: "AI agents and quant models that trade or manage liquidity for you.", icon: BrainCircuit, accent: "#4F8BFF" },
 ];
 
 const hubCount = (slug: string): number => {
@@ -78,14 +78,11 @@ const Trading = () => {
                 <p className="mt-5 max-w-xl text-lg text-muted-foreground">Three ways to trade without staring at charts all day — <strong className="text-primary">copy trading, automated bots and AI strategies.</strong> Here's how each one works, and which platforms we actually trust.</p>
                 <div className="mt-7 flex flex-wrap gap-3 text-sm">
                   <a href="#sectors" className="inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-3 py-1.5 font-semibold text-primary">{SECTORS.length} ways to trade</a>
-                  <a href="#platforms" className="inline-flex items-center gap-1.5 rounded-full bg-rating-green/15 px-3 py-1.5 font-semibold text-rating-green"><ShieldCheck className="h-4 w-4" />Platforms rated</a>
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-rating-green/15 px-3 py-1.5 font-semibold text-rating-green"><ShieldCheck className="h-4 w-4" />Evidence-led ratings</span>
                 </div>
               </div>
-              <div className="md:col-span-2">
-                <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-2xl ring-1 ring-white/10">
-                  <img src="/copy-trading/hero.png" alt="Crypto trading — copy trading, bots and AI strategies" className="w-full" loading="eager" />
-                </div>
-                <div className="cw-float mx-auto mt-5 hidden w-28 lg:block"><WatchdogMascot mood="caution" title="CryptoWatchdog — Trading" /></div>
+              <div className="hidden md:col-span-2 md:block">
+                <div className="cw-float mx-auto w-64 max-w-full"><WatchdogMascot mood="caution" title="CryptoWatchdog — Trading" /></div>
               </div>
             </div>
           </SectionWrapper>

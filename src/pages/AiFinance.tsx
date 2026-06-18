@@ -16,7 +16,7 @@ import { breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 // Sectors that branch off AI / crypto finance. Each tile links to its hub and
 // uses its own artwork (falls back to an icon until an image is supplied).
 const SECTORS: { slug: string; label: string; blurb: string; icon: typeof Bot; accent: string; image?: string }[] = [
-  { slug: "ai-trading-platforms", label: "AI Trading Platforms", blurb: "AI agents and bots that trade or manage liquidity for you.", icon: BrainCircuit, accent: "#4F8BFF", image: "/ai-finance/hero.png" },
+  { slug: "ai-trading-platforms", label: "AI Trading Platforms", blurb: "AI agents and bots that trade or manage liquidity for you.", icon: BrainCircuit, accent: "#4F8BFF" },
   { slug: "copy-trading", label: "Copy Trading", blurb: "Mirror proven traders automatically — the safe way.", icon: Users, accent: "#F5A524", image: "/copy-trading/hero.png" },
   { slug: "crypto-trading-bots", label: "Trading Bots", blurb: "Automated strategies you stay in control of.", icon: Bot, accent: "#4F8BFF" },
   { slug: "crypto-exchanges", label: "Exchanges", blurb: "Where you buy, sell and trade — and where withdrawals get tested.", icon: Building2, accent: "#16C784", image: "/crypto-exchanges/hero.png" },
