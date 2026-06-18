@@ -55,7 +55,7 @@ export const hubs: Hub[] = [
     caution: ["pionex", "3commas", "cryptohopper"],
     avoid: ["yieldmax-ai", "shadowtradebot", "crypto-signal-services-general"],
     warnings: ["moneyflare-scam-warning", "yieldmax-ai-scam-warning", "telegram-investment-bot-scams", "cryptomine-pro-scam-warning"],
-    relatedPosts: ["how-to-spot-ai-washing-crypto", "what-is-ai-finance-crypto", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09"],
+    relatedPosts: ["aurum-neyro-bot-review-is-aurum-a-scam", "how-to-spot-ai-washing-crypto", "what-is-ai-finance-crypto", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09"],
     faq: [
       { q: "Can AI really trade crypto profitably for me?", a: "Some tools genuinely use automation and risk models that help disciplined traders. But no honest platform can promise fixed daily profits — markets don't work that way. Any 'AI bot' guaranteeing returns is the oldest scam in a new costume." },
       { q: "What is 'AI-washing'?", a: "It's when a project markets itself as AI-powered to look sophisticated, while the underlying business is just a high-yield investment scheme paying old investors with new deposits. The 'AI' is decoration." },
@@ -145,7 +145,7 @@ export const hubs: Hub[] = [
     caution: ["etoro-copytrader", "zulutrade", "thomas-crypto-signals", "3commas"],
     avoid: ["crypto-signal-services-general", "shadowtradebot"],
     warnings: ["telegram-investment-bot-scams", "recovery-scam-wave-2026"],
-    relatedPosts: ["are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09", "ai-trading-bots-your-guide-to-separating-genuine-tools-from-get-rich-quick-scams-2026-05-25", "the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18"],
+    relatedPosts: ["aurum-neyro-bot-review-is-aurum-a-scam", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09", "ai-trading-bots-your-guide-to-separating-genuine-tools-from-get-rich-quick-scams-2026-05-25", "the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18"],
     faq: [
       { q: "Is copy trading safe?", a: "It can be on a regulated platform with transparent, verified track records and sensible risk limits. It is not safe when 'returns' are unverifiable, leverage is high, or you're copying an anonymous trader in a Telegram group." },
       { q: "Why are signal groups risky?", a: "Many are pump-and-dump funnels or affiliate mills. The people posting 'winning' screenshots often profit from your subscription or from dumping a coin on you — not from the trades themselves." },
@@ -197,7 +197,7 @@ export const hubs: Hub[] = [
     caution: ["3commas", "cryptohopper"],
     avoid: ["shadowtradebot", "crypto-signal-services-general"],
     warnings: ["telegram-investment-bot-scams"],
-    relatedPosts: ["are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09", "ai-trading-bots-your-guide-to-separating-genuine-tools-from-get-rich-quick-scams-2026-05-25", "the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18"],
+    relatedPosts: ["aurum-neyro-bot-review-is-aurum-a-scam", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09", "ai-trading-bots-your-guide-to-separating-genuine-tools-from-get-rich-quick-scams-2026-05-25", "the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18"],
     faq: [
       { q: "Do crypto trading bots actually work?", a: "Legitimate bots can automate a strategy you already understand — grid trading, DCA, rebalancing. They are tools, not money machines, and they can lose money just as efficiently as they make it." },
       { q: "What's the biggest red flag with a trading bot?", a: "Being asked to deposit funds into the bot operator's wallet or account, rather than connecting via read/trade-only API keys on your own exchange. If they custody your money and promise profit, walk away." },

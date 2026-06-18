@@ -8,12 +8,12 @@
     "status": "active",
     "network": "Aurum (referral)",
     "commissionType": "existing link",
-    "affiliateUrl": "https://app.aurum-foundation.com/registration?ref=cryptowatchdog",
+    "affiliateUrl": "https://backoffice.aurum.foundation/u/PKK5U0",
     "homepage": "https://backoffice.aurum.foundation/u/PKK5U0",
     "displayUrl": "backoffice.aurum.foundation",
     "signupUrl": "",
-    "hasKnownProgram": false,
-    "offerText": "",
+    "hasKnownProgram": true,
+    "offerText": "Join Danny's Aurum classroom — sign up, then say \"Danny invited me\" and he'll catch up with you on the platform.",
     "disclosure": "CryptoWatchdog may earn a commission if you sign up through this link. It never affects our evidence-first rating.",
     "allowedRatings": [
       "green",
@@ -22,8 +22,8 @@
     "blockedPageTypes": [
       "warnings"
     ],
-    "lastChecked": "2026-06-16",
-    "notes": "Check whether an affiliate/referral program exists."
+    "lastChecked": "2026-06-18",
+    "notes": "Danny's personal referral/backoffice link. Classroom invite: users sign up via this link, join the Aurum classroom, and say 'Danny invited me'."
   },
   {
     "id": "thomas-crypto-signals",

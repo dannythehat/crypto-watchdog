@@ -71,6 +71,17 @@ This is a fundamentally different risk model from the legacy Ex-Ai Bot — and t
 
 [**→ Connect your wallet & claim a Neyro seat**](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"}
 
+## Did we follow the money? Yes — see the on-chain evidence
+
+We didn't just take Neyro's dashboard at face value. We followed the blockchain: a real BSC-USD payment confirmed on BscScan, the paying wallet holding ~38.7M BSC-USD, PancakeSwap V3 liquidity activity, and Aurum's public Hacken audit — laid out screenshot by screenshot.
+
+<div style="background:linear-gradient(135deg,hsl(217 91% 95%),hsl(217 91% 90%));border-left:4px solid hsl(217 91% 45%);border-radius:8px;padding:18px 20px;margin:24px 0;color:hsl(217 91% 18%);">
+<p style="margin:0 0 4px 0;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:hsl(217 91% 35%);">🔎 Full investigation</p>
+<p style="margin:0 0 8px 0;font-size:17px;font-weight:700;line-height:1.35;">Is Aurum a scam? What we found after following the blockchain</p>
+<p style="margin:0 0 10px 0;font-size:14px;line-height:1.55;color:hsl(217 91% 25%);">Real BscScan payments, the paying treasury wallet, PancakeSwap V3 Burn/Collect events, BSC-USD and the Hacken audit — the evidence-led case, with every transaction you can verify yourself.</p>
+<a href="/blog/aurum-neyro-bot-review-is-aurum-a-scam" style="display:inline-block;background:hsl(217 91% 25%);color:white;padding:10px 18px;border-radius:6px;font-weight:600;text-decoration:none;font-size:14px;">Read the on-chain investigation →</a>
+</div>
+
 ## Original Ex-Ai Bot review
 
 Our original review of the centralised Ex-Ai Bot still stands. We deposited, received daily yield, and processed two clean withdrawals. We cannot yet confirm the long-term picture and the platform remains under ongoing monitoring. For the new non-custodial Neyro product, see the [Neyro & Quantum Alpha launch breakdown](/blog/aurum-neyro-quantum-alpha-beta-launch).

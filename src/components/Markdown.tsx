@@ -158,6 +158,19 @@ const Markdown = ({ content }: { content: string }) => {
       continue;
     }
 
+    // Raw HTML block. Content comes from our own trusted CMS (not user input),
+    // so block-level HTML (figures, CTA cards, comparison panels) is rendered as
+    // HTML. A block starts on a line beginning with a known block-level tag and
+    // runs until the next blank line, so HTML must be written without internal
+    // blank lines. Markdown tables/paragraphs are unaffected.
+    if (/^<\/?(?:div|figure|figcaption|section|article|aside|table|thead|tbody|tr|td|th|ul|ol|li|p|img|a|span|h[1-6]|blockquote|details|summary|iframe|picture|source|video)\b/i.test(trimmed)) {
+      flushAll();
+      const htmlLines = [raw];
+      while (li + 1 < lines.length && lines[li + 1].trim() !== "") { li += 1; htmlLines.push(lines[li]); }
+      blocks.push(<div key={`html${k++}`} className="cw-html-block" dangerouslySetInnerHTML={{ __html: htmlLines.join("\n") }} />);
+      continue;
+    }
+
     if (/^(-{3,}|\*{3,})$/.test(trimmed)) { flushAll(); blocks.push(<hr key={`hr${k++}`} className="my-8 border-border" />); continue; }
 
     const heading = trimmed.match(/^(#{1,6})\s+(.*)$/);
