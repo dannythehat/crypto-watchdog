@@ -70,7 +70,12 @@ The welcome package is **up to $2,500 in cash rewards over your first 30 days**,
 ## Casino & sportsbook
 
 - **Sportsbook:** deep coverage with **70+ markets** on major events, competitive odds, and **high limits up to 12 BTC** — plus novelty markets (entertainment, politics).
+
+<figure class="my-6"><img src="/cloudbet/epl.png" alt="Cloudbet sportsbook — Premier League in-play markets" class="w-full rounded-xl border border-border" loading="lazy" /><figcaption class="mt-2 text-center text-xs text-muted-foreground">Cloudbet's sportsbook — deep in-play markets across football and 70+ sports.</figcaption></figure>
+
 - **Casino:** **3000+** games and **300+ live-dealer tables** from 100+ providers (Evolution, Pragmatic, NetEnt, Play'n GO and more), with provably-fair titles.
+
+<figure class="my-6"><img src="/cloudbet/blackjack.png" alt="Cloudbet live-dealer blackjack table" class="w-full rounded-xl border border-border" loading="lazy" /><figcaption class="mt-2 text-center text-xs text-muted-foreground">Live-dealer blackjack — part of 300+ live tables in the Cloudbet casino.</figcaption></figure>
 
 ## Security
 
