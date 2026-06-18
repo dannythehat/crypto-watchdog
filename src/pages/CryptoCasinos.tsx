@@ -60,7 +60,7 @@ const CasinoCard = ({ c, rank }: { c: Casino; rank: number }) => (
     <div className="absolute left-0 top-0 rounded-br-xl bg-foreground/5 px-2.5 py-1 text-xs font-bold text-muted-foreground">#{rank}</div>
 
     <div className="relative mt-3 flex items-start gap-3">
-      <LogoTile name={c.name} domain={c.domain} accent={c.accent} size={56} />
+      <LogoTile name={c.name} domain={c.domain} logoUrl={c.logo} accent={c.accent} size={56} />
       <div className="min-w-0 flex-1">
         <h3 className="truncate font-heading text-lg font-semibold">{c.name}</h3>
         <span className="text-xs text-muted-foreground">{c.kind}</span>
@@ -130,7 +130,7 @@ const CryptoCasinos = () => {
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden">
-          <AuroraBackdrop accent={ACCENT} variant="hero" imagePrompt="a luxurious dark futuristic crypto casino floor with glowing golden roulette and neon sportsbook screens, bitcoin chips, cinematic volumetric gold and teal light, ultra detailed" imageSeed={61} />
+          <AuroraBackdrop accent={ACCENT} variant="hero" />
           <SectionWrapper className="pb-12 pt-32 md:pt-40">
             <div className="grid items-center gap-8 md:grid-cols-5">
               <div className="md:col-span-3">
@@ -184,7 +184,7 @@ const CryptoCasinos = () => {
           <div className="relative overflow-hidden rounded-3xl border border-amber-400/30 bg-gradient-to-br from-amber-400/10 via-card/60 to-card/60 p-6 backdrop-blur-md md:p-8">
             <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-amber-400/20 blur-3xl" />
             <div className="relative flex flex-col gap-6 md:flex-row md:items-center">
-              <LogoTile name={f.name} domain={f.domain} accent={f.accent} size={88} rounded="rounded-3xl" />
+              <LogoTile name={f.name} domain={f.domain} logoUrl={f.logo} accent={f.accent} size={88} rounded="rounded-3xl" />
               <div className="flex-1">
                 <div className="flex flex-wrap items-center gap-3">
                   <h2 className="font-heading text-2xl font-bold">{f.name}</h2>
@@ -241,7 +241,7 @@ const CryptoCasinos = () => {
                     <td className="px-4 py-4 font-heading text-base font-bold text-muted-foreground">#{i + 1}</td>
                     <td className="px-4 py-4">
                       <Link to={`/reviews/${c.slug}`} className="flex items-center gap-2.5 hover:text-primary">
-                        <LogoTile name={c.name} domain={c.domain} accent={c.accent} size={36} rounded="rounded-lg" />
+                        <LogoTile name={c.name} domain={c.domain} logoUrl={c.logo} accent={c.accent} size={36} rounded="rounded-lg" />
                         <span>
                           <span className="block font-semibold">{c.name}</span>
                           <span className="block text-xs text-muted-foreground">{c.kind}</span>
@@ -352,7 +352,7 @@ const CryptoCasinos = () => {
         <SectionWrapper>
           <h2 className="font-heading text-2xl font-bold">Explore more categories</h2>
           <div className="mt-6 flex flex-wrap gap-3">
-            {hubs.map((h) => (
+            {hubs.filter((h) => !h.hidden).map((h) => (
               <Link key={h.slug} to={`/${h.slug}`} className="rounded-full border border-border bg-card/60 px-4 py-2 text-sm font-medium backdrop-blur transition-colors hover:border-primary/40 hover:text-primary">
                 {h.eyebrow}
               </Link>

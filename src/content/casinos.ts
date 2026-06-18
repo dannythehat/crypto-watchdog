@@ -10,7 +10,7 @@
 // copy changes. If `affiliateUrl` is empty we have no deal yet → the Claim CTA
 // falls back to the site (nofollow) and this brand is on the "get-affiliate" list.
 
-export type CasinoKind = "Casino" | "Sportsbook" | "Casino & Sportsbook";
+export type CasinoKind = "Casino" | "Sportsbook" | "Casino & Sportsbook" | "Poker";
 
 export interface CasinoSpecial { text: string; until?: string }
 
@@ -28,6 +28,7 @@ export interface Casino {
   offer: string;            // current welcome offer (updatable)
   special?: CasinoSpecial;  // timely promo, e.g. "US Open: £100 free bet" (updatable)
   affiliateUrl?: string;    // STABLE money link; empty = no deal yet
+  logo?: string;            // self-hosted brand logo (e.g. /brands/stake.png); falls back to Clearbit
   accent: string;
   featured?: boolean;
 }
@@ -42,6 +43,7 @@ export const casinos: Casino[] = [
   { slug: "roobet", name: "Roobet", domain: "roobet.com", kind: "Casino", rating: "orange", trustScore: 62, established: "2019", license: "Curaçao", coins: "BTC, ETH, LTC", highlight: "Popular slots-led casino with crash games.", offer: "Daily races + weekly bonuses", accent: "#ffb800" },
   { slug: "lucky-block", name: "Lucky Block", domain: "luckyblock.com", kind: "Casino & Sportsbook", rating: "orange", trustScore: 60, established: "2022", license: "Curaçao", coins: "15+ coins", highlight: "Newer all-rounder; casino + sportsbook + bonuses.", offer: "200% up to €25,000 + 50 free spins", accent: "#00c2a8" },
   { slug: "rollbit", name: "Rollbit", domain: "rollbit.com", kind: "Casino & Sportsbook", rating: "orange", trustScore: 58, established: "2020", license: "Curaçao", coins: "Major coins", highlight: "$RLB token, staking & profit-share; higher risk profile.", offer: "$RLB rewards & rakeback", accent: "#7c3aed" },
+  { slug: "coinpoker", name: "CoinPoker", domain: "coinpoker.com", kind: "Poker", rating: "green", trustScore: 80, established: "2017", license: "Curaçao", coins: "CHP, USDT, BTC, ETH", highlight: "Crypto-native poker room with its own CHP token, provably-fair RNG and big guaranteed tournaments.", offer: "Rakeback, freerolls & CHP rewards", accent: "#ff5a3c" },
 ];
 
 // True when we have a live affiliate deal for this brand.
