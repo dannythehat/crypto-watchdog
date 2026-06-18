@@ -227,11 +227,18 @@ Aurum says there are 100 slots in the first wave. If you have read the caveats a
 
 Same price for you, and it supports our independent on-chain testing. As an affiliate, we earn a commission if you sign up — which is exactly why we are holding the returns to a verification test rather than taking them on faith.
 
-<a href="https://www.skool.com/the-aurum-era/about?ref=02839a883fef44d481b88d6b865db877" target="_blank" rel="noopener noreferrer sponsored" class="not-prose group my-8 block overflow-hidden rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/15 via-background to-primary/5 p-7 shadow-lg ring-1 ring-white/10 backdrop-blur-xl transition hover:border-primary/60 hover:shadow-2xl">
-  <p class="text-xs font-bold uppercase tracking-widest text-primary">🎓 Join our community</p>
-  <h3 class="mt-1 font-heading text-2xl font-bold text-foreground">Thinking about Aurum? Join our community and say Danny invited you</h3>
-  <p class="mt-2 text-sm text-foreground/80">If you're looking to join Aurum and would like our wonderful community in your corner, come and join us in <strong class="text-primary">The Aurum Era</strong>. We'll answer all your questions, walk you through signing up safely, and look after you from day one — no question too small. Just tell them <strong class="text-primary">Danny invited you</strong> and we'll take you under our wing.</p>
-  <span class="mt-5 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-md transition group-hover:bg-primary/90">Join our community &amp; say Danny invited you →</span>
+<a href="https://www.skool.com/the-aurum-era/about?ref=02839a883fef44d481b88d6b865db877" target="_blank" rel="noopener noreferrer sponsored" class="not-prose group my-8 block overflow-hidden rounded-2xl border border-primary/30 shadow-lg ring-1 ring-white/10 transition hover:border-primary/60 hover:shadow-2xl">
+  <div class="grid items-stretch md:grid-cols-2">
+    <div class="flex items-center justify-center bg-white p-8">
+      <img src="/skool-logo.webp" alt="Skool — The Aurum Era community" class="w-full max-w-[280px]" />
+    </div>
+    <div class="bg-gradient-to-br from-primary/15 via-background to-primary/5 p-7 backdrop-blur-xl">
+      <p class="text-xs font-bold uppercase tracking-widest text-primary">Join our community · The Aurum Era</p>
+      <h3 class="mt-1 font-heading text-2xl font-bold text-foreground">Got questions about Aurum? Let's answer them together</h3>
+      <p class="mt-2 text-sm text-foreground/80">If you're thinking about joining Aurum and would like our wonderful community in your corner, come and join us on <strong class="text-primary">Skool</strong> in <strong class="text-primary">The Aurum Era</strong>. We'll answer every question and help you sign up safely — no question too small. Just tell them <strong class="text-primary">Danny invited you</strong>.</p>
+      <span class="mt-5 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-md transition group-hover:bg-primary/90">Join us on Skool →</span>
+    </div>
+  </div>
 </a>
 
 ## Related reading

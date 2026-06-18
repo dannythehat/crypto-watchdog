@@ -42,11 +42,18 @@ The common objections are all worth asking: the returns sound too high, the mark
 
 There's a difference, though, between asking hard questions and declaring something fake without checking. The screenshots below show Aurum Neyro isn't merely a number on a website. There are real transactions, a real funding wallet, real contracts and public audit material. None of that answers every risk question — but it changes the conversation from "is anything real?" to "how strong is it, and what are the risks?"
 
-<a href="https://www.skool.com/the-aurum-era/about?ref=02839a883fef44d481b88d6b865db877" target="_blank" rel="noopener noreferrer sponsored" class="not-prose group my-8 block overflow-hidden rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/15 via-background to-primary/5 p-7 shadow-lg ring-1 ring-white/10 backdrop-blur-xl transition hover:border-primary/60 hover:shadow-2xl">
-  <p class="text-xs font-bold uppercase tracking-widest text-primary">👋 Join our community</p>
-  <h3 class="mt-1 font-heading text-2xl font-bold text-foreground">New to Aurum? Come and learn with people who've been there</h3>
-  <p class="mt-2 text-sm text-foreground/80">If you're looking to join Aurum and would love a friendly community to learn the ropes with, come and join us in <strong class="text-primary">The Aurum Era</strong>. Ask anything, get honest answers, and we'll walk you through signing up step by step — and help you steer clear of the beginner mistakes. Just say <strong class="text-primary">Danny invited you</strong> when you join.</p>
-  <span class="mt-5 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-md transition group-hover:bg-primary/90">Join The Aurum Era community →</span>
+<a href="https://www.skool.com/the-aurum-era/about?ref=02839a883fef44d481b88d6b865db877" target="_blank" rel="noopener noreferrer sponsored" class="not-prose group my-8 block overflow-hidden rounded-2xl border border-primary/30 shadow-lg ring-1 ring-white/10 transition hover:border-primary/60 hover:shadow-2xl">
+  <div class="grid items-stretch md:grid-cols-2">
+    <div class="flex items-center justify-center bg-white p-8">
+      <img src="/skool-logo.webp" alt="Skool — The Aurum Era community" class="w-full max-w-[280px]" />
+    </div>
+    <div class="bg-gradient-to-br from-primary/15 via-background to-primary/5 p-7 backdrop-blur-xl">
+      <p class="text-xs font-bold uppercase tracking-widest text-primary">Join our community · The Aurum Era</p>
+      <h3 class="mt-1 font-heading text-2xl font-bold text-foreground">New to Aurum? Come and learn with people who've been there</h3>
+      <p class="mt-2 text-sm text-foreground/80">If you're looking to join Aurum and would love a friendly community to learn the ropes with, come and join us on <strong class="text-primary">Skool</strong> in <strong class="text-primary">The Aurum Era</strong>. Ask anything, get honest answers, and we'll help you sign up step by step. Just say <strong class="text-primary">Danny invited you</strong>.</p>
+      <span class="mt-5 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-md transition group-hover:bg-primary/90">Join us on Skool →</span>
+    </div>
+  </div>
 </a>
 
 ## The evidence, exhibit by exhibit
@@ -358,11 +365,18 @@ The problem was never that people warn others to be careful — that's fair. The
 
 A practical checklist if you're considering Neyro: start small, understand the contract flow, inspect token approvals, verify payments on-chain, keep records, watch the official audit links, and never risk money you can't afford to lose. That respects both halves of the truth here — the evidence is stronger than many critics admit, and it still sits squarely in high-risk DeFi.
 
-<a href="https://www.skool.com/the-aurum-era/about?ref=02839a883fef44d481b88d6b865db877" target="_blank" rel="noopener noreferrer sponsored" class="not-prose group my-8 block overflow-hidden rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/15 via-background to-primary/5 p-7 shadow-lg ring-1 ring-white/10 backdrop-blur-xl transition hover:border-primary/60 hover:shadow-2xl">
-  <p class="text-xs font-bold uppercase tracking-widest text-primary">🎓 Join our community</p>
-  <h3 class="mt-1 font-heading text-2xl font-bold text-foreground">Got questions about Aurum? Let's answer them together</h3>
-  <p class="mt-2 text-sm text-foreground/80">If you're thinking about joining Aurum and would like our wonderful community in your corner, come and join us in <strong class="text-primary">The Aurum Era</strong>. We'll answer every question, walk you through signing up safely, and look after you from day one — no question too small. Just tell them <strong class="text-primary">Danny invited you</strong> and we'll take you under our wing.</p>
-  <span class="mt-5 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-md transition group-hover:bg-primary/90">Join our community &amp; say Danny invited you →</span>
+<a href="https://www.skool.com/the-aurum-era/about?ref=02839a883fef44d481b88d6b865db877" target="_blank" rel="noopener noreferrer sponsored" class="not-prose group my-8 block overflow-hidden rounded-2xl border border-primary/30 shadow-lg ring-1 ring-white/10 transition hover:border-primary/60 hover:shadow-2xl">
+  <div class="grid items-stretch md:grid-cols-2">
+    <div class="flex items-center justify-center bg-white p-8">
+      <img src="/skool-logo.webp" alt="Skool — The Aurum Era community" class="w-full max-w-[280px]" />
+    </div>
+    <div class="bg-gradient-to-br from-primary/15 via-background to-primary/5 p-7 backdrop-blur-xl">
+      <p class="text-xs font-bold uppercase tracking-widest text-primary">Join our community · The Aurum Era</p>
+      <h3 class="mt-1 font-heading text-2xl font-bold text-foreground">Got questions about Aurum? Let's answer them together</h3>
+      <p class="mt-2 text-sm text-foreground/80">If you're thinking about joining Aurum and would like our wonderful community in your corner, come and join us on <strong class="text-primary">Skool</strong> in <strong class="text-primary">The Aurum Era</strong>. We'll answer every question and help you sign up safely — no question too small. Just tell them <strong class="text-primary">Danny invited you</strong>.</p>
+      <span class="mt-5 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-md transition group-hover:bg-primary/90">Join us on Skool →</span>
+    </div>
+  </div>
 </a>
 
 ## Final verdict
