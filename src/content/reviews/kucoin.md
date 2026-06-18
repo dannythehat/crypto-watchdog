@@ -8,7 +8,7 @@ summary: "KuCoin is a globally recognised cryptocurrency exchange that boasts an
 verdict: "KuCoin receives an Orange Alert from Crypto Watchdog. The platform offers undeniable utility through its vast cryptocurrency selection and innovative features. However, its operational opacity, history of regulatory challenges, and a significant past security incident necessitate extreme caution. Users must be aware of the inherent risks before depositing funds onto KuCoin."
 category_id: "82c06c80-146c-44cc-8aa1-83389b63019e"
 website_url: "https://www.kucoin.com"
-logo_url: null
+logo_url: "/brands/kucoin.png"
 social_image_url: null
 pros: ["Huge altcoin selection","Low trading fees","KCS token benefits","Trading bot features built-in","Earn and staking products"]
 cons: ["SEC charges filed in 2023","Hacked in 2020 ($280M)","Offshore registration (Seychelles)","Complex interface","Fiat support limited"]

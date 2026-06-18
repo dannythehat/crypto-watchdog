@@ -8,7 +8,7 @@ summary: "Uniswap is the foundational decentralised exchange (DEX) on the Ethere
 verdict: "Uniswap receives a GREEN Alert from Crypto Watchdog. As the bedrock of decentralised exchange protocols, it has established itself as a trustworthy and indispensable component of the global DeFi ecosystem. Its open-source nature, audited smart contracts, and transparent operations underscore its credibility, despite the inherent risks present in any DeFi platform, such as smart contract vulnerabilities and the need for diligent token research."
 category_id: "e2dc552c-ea25-470c-b087-d1de0ccfd17b"
 website_url: "https://app.uniswap.org"
-logo_url: null
+logo_url: "/brands/uniswap.jpg"
 social_image_url: null
 pros: ["Fully decentralized and non-custodial","Open-source and audited","Massive liquidity","No KYC required"]
 cons: ["Smart contract risk","Many scam tokens (permissionless)","Impermanent loss for LPs","High gas on Ethereum mainnet"]

@@ -8,7 +8,7 @@ summary: "BingX is a crypto exchange headquartered in Singapore that has gained 
 verdict: "BingX presents a mixed picture. While it has demonstrated a commitment to user reimbursement following a substantial hack, underlying security concerns persist. Consequently, we advise extreme caution and recommend restricting any funds held on BingX to minimal amounts for active trading only."
 category_id: "82c06c80-146c-44cc-8aa1-83389b63019e"
 website_url: "https://bingx.com"
-logo_url: null
+logo_url: "/brands/bingx.jpg"
 social_image_url: null
 pros: ["Reimbursed hack victims","Active copy-trading product","Decent liquidity"]
 cons: ["Suffered $43m hack in 2024","Limited regulatory presence","Customer service quality varies"]
