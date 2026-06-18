@@ -186,7 +186,7 @@ It removes nothing else. A few things to sit with before you fund anything:
 
 Put plainly: treat any allocation as risk capital, never more than you can afford to lose, and read AURUM's official disclaimer before funding. Trading authorities are consistent on this — the UK's [Financial Conduct Authority warns that crypto is high-risk and largely unregulated](https://www.fca.org.uk/investsmart/crypto-basics), and that holds whether a human or an AI is pulling the trigger.
 
-For our broader scam-spotting framework, see [How to Spot a Crypto Scam](/warnings) and our methodology page on [how Crypto Watchdog audits platforms](/about).
+For our broader scam-spotting framework, see [How to Spot a Crypto Scam](/warnings) and our methodology page on [how Crypto Watchdog audits platforms](/methodology).
 
 ## Frequently asked questions
 
@@ -221,4 +221,4 @@ For our broader scam-spotting framework, see [How to Spot a Crypto Scam](/warnin
   </a>
 </div>
 
-*Disclaimer: This article is educational and not financial advice. Trading crypto assets — including via AI agents — involves market risk. Always do your own research and never invest more than you can afford to lose. Crypto Watchdog may earn a commission via the AURUM affiliate link in this article. Read our [editorial policy](/about) and [affiliate disclosure](/about).*
+*Disclaimer: This article is educational and not financial advice. Trading crypto assets — including via AI agents — involves market risk. Always do your own research and never invest more than you can afford to lose. Crypto Watchdog may earn a commission via the AURUM affiliate link in this article. Read our [editorial policy](/editorial-policy) and [affiliate disclosure](/affiliate-disclosure).*

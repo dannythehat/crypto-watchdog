@@ -32,7 +32,7 @@ This incident highlights the extreme vulnerability of the Solana ecosystem to ex
 
 The loss of $1 million impacts the entire community. It erodes trust in legitimate decentralised finance projects. Furthermore, these events often lead to secondary scams. Victims are frequently targeted by fake recovery services promising to get their money back.
 
-Understanding these mechanics is vital for survival in the crypto space. You can find more information on protecting your assets in our [crypto safety education](/blog) section. Staying informed is your first line of defence against these predatory schemes.
+Understanding these mechanics is vital for survival in the crypto space. You can find more information on protecting your assets in our [crypto safety education](/education) section. Staying informed is your first line of defence against these predatory schemes.
 
 ## How the scam or exploit works
 
@@ -42,7 +42,7 @@ Second, they used a direct to wallet presale. This is a massive red flag. Legiti
 
 Third, they provided initial liquidity on a decentralised exchange. This allowed the token to be traded publicly. It gave the project an appearance of legitimacy. New investors saw the rising price and bought in, adding more SOL to the pool.
 
-Finally, the developers executed the exit. They sold their tokens for the SOL in the pool and then withdrew the remaining liquidity. This left the pool empty of value. For a deeper look at these tactics, read our [crypto scam guides](/warnings).
+Finally, the developers executed the exit. They sold their tokens for the SOL in the pool and then withdrew the remaining liquidity. This left the pool empty of value. For a deeper look at these tactics, read our [crypto scam guides](/scam-guides).
 
 ## Red flags to check first
 

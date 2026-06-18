@@ -171,4 +171,4 @@ We're scoring it **Green / 84**, with the EU/UK rollout and any rewards programm
 - [Best hardware wallet 2026: Ledger vs Trezor](/blog/best-hardware-wallet-2026-ledger-vs-trezor)
 - [Crypto exchanges hub](/crypto-exchanges)
 
-*Disclosure: Tangem links on this page are affiliate links. Commissions never affect our score or verdict — see our [methodology](/about) and [affiliate disclosure](/about).*
+*Disclosure: Tangem links on this page are affiliate links. Commissions never affect our score or verdict — see our [methodology](/methodology) and [affiliate disclosure](/affiliate-disclosure).*

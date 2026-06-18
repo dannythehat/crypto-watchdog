@@ -38,7 +38,7 @@ Phishing is a form of social engineering. The attacker likely contacted the proj
 
 This link would lead to a fake website. The owner was likely asked to sign a transaction or enter their seed phrase. Once they did this, the attacker gained full access to the wallet. This is known as a wallet drainer attack.
 
-Because the presale contract was controlled by this single wallet, the attacker had "admin" rights. They simply called the function to withdraw the funds. There were no safety checks or delays. This is why we advocate for [crypto safety education](/blog) before investing in any presale.
+Because the presale contract was controlled by this single wallet, the attacker had "admin" rights. They simply called the function to withdraw the funds. There were no safety checks or delays. This is why we advocate for [crypto safety education](/education) before investing in any presale.
 
 ## Red flags to check first
 
@@ -68,7 +68,7 @@ For those looking for more established options, we provide [vetted crypto platfo
 
 ## Related reading
 
-To stay ahead of scammers, you should constantly update your knowledge. We recommend reading our [crypto scam guides](/warnings) to learn about the different tactics used by criminals. Understanding the "why" behind these attacks can save you from future losses.
+To stay ahead of scammers, you should constantly update your knowledge. We recommend reading our [crypto scam guides](/scam-guides) to learn about the different tactics used by criminals. Understanding the "why" behind these attacks can save you from future losses.
 
 If you are interested in how professional firms track these stolen funds, check out the [Chainalysis crypto crime research](@@P3@@). They provide deep insights into how money moves through the blockchain after a major theft like the Gull Network incident.
 

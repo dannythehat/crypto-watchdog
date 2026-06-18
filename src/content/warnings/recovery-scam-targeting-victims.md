@@ -30,7 +30,7 @@ This type of fraud is particularly damaging because it hits people when they are
 
 Furthermore, these scams erode trust in legitimate security efforts. When victims are lied to by people claiming to be investigators, they become less likely to cooperate with real authorities. This makes it harder for actual police to track criminal networks.
 
-Understanding the mechanics of these frauds is essential for [crypto safety education](/blog). By learning how these predators operate, you can protect your remaining assets. It is vital to remember that legitimate recovery is exceptionally rare and never requires upfront payments.
+Understanding the mechanics of these frauds is essential for [crypto safety education](/education). By learning how these predators operate, you can protect your remaining assets. It is vital to remember that legitimate recovery is exceptionally rare and never requires upfront payments.
 
 ## How the scam or exploit works
 
@@ -70,7 +70,7 @@ If you connected your wallet to any suspicious websites, use a [Revoke cash appr
 
 The best way to avoid these traps is to remain sceptical of any unsolicited offers. Always conduct thorough research before engaging with any service. You can use our [vetted crypto platform reviews](/reviews) to find reputable tools and services in the industry.
 
-Educate yourself on how blockchains actually work. Understanding that transactions are final will help you spot the lies told by recovery scammers. Our [crypto scam guides](/warnings) provide detailed breakdowns of common tactics used by criminals to deceive investors.
+Educate yourself on how blockchains actually work. Understanding that transactions are final will help you spot the lies told by recovery scammers. Our [crypto scam guides](/scam-guides) provide detailed breakdowns of common tactics used by criminals to deceive investors.
 
 Never share your private keys or recovery phrases with anyone. No legitimate recovery service or support agent will ever ask for this information. If you are unsure about a service, you can use our [free crypto safety check](/reviews) to get an automated risk assessment.
 

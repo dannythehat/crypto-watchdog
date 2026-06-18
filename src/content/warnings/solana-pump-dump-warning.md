@@ -85,7 +85,7 @@ Stay updated by reading [vetted crypto platform reviews](/reviews) and security 
 
 ## Related reading
 
-To further your knowledge on digital asset security, explore our comprehensive [crypto scam guides](/warnings). These resources cover everything from basic phishing to complex smart contract exploits. Understanding the broader landscape helps you spot individual threats more easily.
+To further your knowledge on digital asset security, explore our comprehensive [crypto scam guides](/scam-guides). These resources cover everything from basic phishing to complex smart contract exploits. Understanding the broader landscape helps you spot individual threats more easily.
 
 For those interested in the technical side of security, the [Chainalysis crypto crime research](@@PROTECTED_4@@) offers data on global trends. This research highlights how scammers move funds and the methods used by law enforcement to track them.
 

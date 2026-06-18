@@ -233,7 +233,7 @@ Whatever the use case, size it sensibly and don't borrow to buy.
 
 ## Platforms That Offer Digital Gold (And What to Look For)
 
-We're actively reviewing partners in this category and will publish detailed audits as our [affiliate disclosures](/about) confirm. Until then, here's the checklist we use when evaluating any tokenized-gold platform.
+We're actively reviewing partners in this category and will publish detailed audits as our [affiliate disclosures](/affiliate-disclosure) confirm. Until then, here's the checklist we use when evaluating any tokenized-gold platform.
 
 ### Required boxes to tick
 

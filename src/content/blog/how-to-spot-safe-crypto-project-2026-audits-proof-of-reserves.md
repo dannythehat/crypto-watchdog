@@ -189,7 +189,7 @@ Send it through our [community submission form](/submit). We verify reports and 
 - [DeFi Platforms Hub](/defi-platforms)
 - [Live Safety Warnings Feed](/warnings)
 - [Aurum Foundation Review — Trust Score & Full Audit](/reviews/aurum-foundation)
-- [How We Audit Platforms — Our Methodology](/about)
+- [How We Audit Platforms — Our Methodology](/methodology)
 
 ---
 

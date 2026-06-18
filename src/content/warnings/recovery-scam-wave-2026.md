@@ -29,7 +29,7 @@ This trend is particularly dangerous because it targets people who are already i
 
 Legitimate blockchain recovery is an incredibly complex process that rarely involves private individuals on social media. Most successful recoveries are the result of multi year investigations by law enforcement or professional security firms. Private citizens are almost never able to reverse transactions on a public blockchain.
 
-Understanding the mechanics of these frauds is essential for [crypto safety education](/blog). When a user loses funds to a wallet drainer or a smart contract exploit, the transaction is usually final. Believing otherwise can lead to a cycle of repeated financial loss and increased emotional trauma.
+Understanding the mechanics of these frauds is essential for [crypto safety education](/education). When a user loses funds to a wallet drainer or a smart contract exploit, the transaction is usually final. Believing otherwise can lead to a cycle of repeated financial loss and increased emotional trauma.
 
 ## How this scam or exploit works
 
@@ -67,7 +67,7 @@ Gather all evidence of the interaction, including wallet addresses, transaction 
 
 The best way to stay safe is to accept that blockchain transactions are generally irreversible. Once you understand this reality, you become immune to the false promises of recovery agents. Always treat unsolicited messages offering financial help with extreme suspicion and scepticism.
 
-Educate yourself on the different types of fraud by visiting a [scam guides hub](/warnings). Knowing the patterns of common attacks makes them easier to spot in the wild. Awareness is your strongest defence against the evolving tactics used by digital criminals.
+Educate yourself on the different types of fraud by visiting a [scam guides hub](/scam-guides). Knowing the patterns of common attacks makes them easier to spot in the wild. Awareness is your strongest defence against the evolving tactics used by digital criminals.
 
 Always use official channels for support. If you are a victim of a hack on a specific platform, only communicate through their verified website or official email addresses. Never trust a link sent in a direct message or found in a social media comment section.
 

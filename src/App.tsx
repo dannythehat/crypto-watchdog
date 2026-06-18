@@ -18,6 +18,12 @@ import Go from "./pages/Go";
 import Freebies from "./pages/Freebies";
 import News from "./pages/News";
 import CryptoCasinos from "./pages/CryptoCasinos";
+import Methodology from "./pages/Methodology";
+import EditorialPolicy from "./pages/EditorialPolicy";
+import AffiliateDisclosure from "./pages/AffiliateDisclosure";
+import Contact from "./pages/Contact";
+import ScamGuides from "./pages/ScamGuides";
+import Education from "./pages/Education";
 import CategoryHub from "./pages/CategoryHub";
 import NotFound from "./pages/NotFound";
 
@@ -52,6 +58,12 @@ const App = () => (
           <Route path="/freebies" element={<Freebies />} />
           <Route path="/news" element={<News />} />
           <Route path="/crypto-casinos" element={<CryptoCasinos />} />
+          <Route path="/methodology" element={<Methodology />} />
+          <Route path="/editorial-policy" element={<EditorialPolicy />} />
+          <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/scam-guides" element={<ScamGuides />} />
+          <Route path="/education" element={<Education />} />
           <Route path="/go/:id" element={<Go />} />
           {/* Category hub landing pages (clean root slugs, e.g. /ai-finance).
               Static routes above rank higher, so this only catches hub slugs. */}

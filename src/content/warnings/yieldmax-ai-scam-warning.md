@@ -30,7 +30,7 @@ The rise of AI washing in the crypto space is a growing threat to financial secu
 
 Losing funds to a [crypto scam warning](/warnings) like this can be devastating. Beyond the immediate financial loss, victims often face secondary attacks. This includes identity theft or being targeted by recovery scammers who claim they can get the lost money back for a fee.
 
-This case highlights the importance of [crypto safety education](/blog) in an era of automated fraud. As these schemes become more convincing, the need for evidence led investigation increases. Understanding the mechanics of these frauds is the only way to protect your digital assets effectively.
+This case highlights the importance of [crypto safety education](/education) in an era of automated fraud. As these schemes become more convincing, the need for evidence led investigation increases. Understanding the mechanics of these frauds is the only way to protect your digital assets effectively.
 
 ## How the scam or exploit works
 
@@ -78,7 +78,7 @@ If you encounter a suspicious site, you should [report a crypto scam](/submit) t
 
 ## Related reading
 
-To further improve your security posture, we recommend reading our [crypto scam guides](/warnings). These documents cover everything from basic [phishing scam](/warnings) tactics to complex [wallet drainer](/warnings) scripts. Understanding the enemy is the first step toward effective personal defence.
+To further improve your security posture, we recommend reading our [crypto scam guides](/scam-guides). These documents cover everything from basic [phishing scam](/warnings) tactics to complex [wallet drainer](/warnings) scripts. Understanding the enemy is the first step toward effective personal defence.
 
 For those interested in the technical side of security, [SlowMist security reports](@@P4@@) offer deep dives into smart contract vulnerabilities. You can also find helpful tips in the [MetaMask stay safe in web3 guide](@@P5@@) to protect your browser based interactions.
 

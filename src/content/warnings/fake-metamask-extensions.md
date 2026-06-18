@@ -77,7 +77,7 @@ The most effective way to stay safe is to only install software from official li
 
 Consider using a physical device for your private keys. Reading a [hardware wallet safety guide](/blog/your-hardware-wallet-won-t-save-you-a-2026-security-guide-2026-04-22) can help you understand how to keep your seed phrase offline and away from browser based attacks.
 
-Education is your best defence against a wallet drainer. Spend time in a [crypto safety education](/blog) hub to learn the difference between legitimate requests and phishing attempts. Understanding the mechanics of self custody is vital for long term security.
+Education is your best defence against a wallet drainer. Spend time in a [crypto safety education](/education) hub to learn the difference between legitimate requests and phishing attempts. Understanding the mechanics of self custody is vital for long term security.
 
 Always double check the URL of the site you are visiting. Scammers use typosquatting to create addresses that look like the real thing. Bookmark the official sites for your wallet and exchange to ensure you never land on a fake page.
 
@@ -87,7 +87,7 @@ Finally, remember that your seed phrase is the key to your entire fortune. It sh
 
 ## Related reading
 
-To further protect your digital assets, explore our [crypto scam guides](/warnings) for detailed breakdowns of common threats. Understanding the nuances of [self custody versus custodial wallets](/blog/self-custody-vs-custodial-wallets-2026) can also help you choose the right storage method for your needs.
+To further protect your digital assets, explore our [crypto scam guides](/scam-guides) for detailed breakdowns of common threats. Understanding the nuances of [self custody versus custodial wallets](/blog/self-custody-vs-custodial-wallets-2026) can also help you choose the right storage method for your needs.
 
 For technical insights into how these attacks are coordinated, you can read [Chainalysis crypto crime research](@@PROTECTED_3@@). They provide deep dives into the movement of stolen funds across the blockchain.
 

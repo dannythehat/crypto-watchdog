@@ -24,24 +24,23 @@ const Footer = () => (
         </div>
 
         <div>
-          <h4 className="mb-3 font-heading text-sm font-semibold">Categories</h4>
+          <h4 className="mb-3 font-heading text-sm font-semibold">Learn</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><Link to="/reviews?category=exchanges" className="hover:text-foreground">Exchanges</Link></li>
-            <li><Link to="/reviews?category=wallets" className="hover:text-foreground">Wallets</Link></li>
-            <li><Link to="/reviews?category=trading-bots" className="hover:text-foreground">Trading Bots</Link></li>
-            <li><Link to="/reviews?category=defi" className="hover:text-foreground">DeFi</Link></li>
+            <li><Link to="/education" className="hover:text-foreground">Crypto Education</Link></li>
+            <li><Link to="/scam-guides" className="hover:text-foreground">Scam Guides</Link></li>
+            <li><Link to="/methodology" className="hover:text-foreground">How We Rate</Link></li>
+            <li><Link to="/freebies" className="hover:text-foreground">Crypto Freebies</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="mb-3 font-heading text-sm font-semibold">Get Involved</h4>
+          <h4 className="mb-3 font-heading text-sm font-semibold">Company</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
+            <li><Link to="/about" className="hover:text-foreground">About</Link></li>
+            <li><Link to="/contact" className="hover:text-foreground">Contact</Link></li>
             <li><Link to="/submit" className="hover:text-foreground">Submit a Platform</Link></li>
-            <li>
-              <a href="mailto:dannythehat2@gmail.com" className="hover:text-foreground">
-                Email Us
-              </a>
-            </li>
+            <li><Link to="/editorial-policy" className="hover:text-foreground">Editorial Policy</Link></li>
+            <li><Link to="/affiliate-disclosure" className="hover:text-foreground">Affiliate Disclosure</Link></li>
           </ul>
         </div>
       </div>

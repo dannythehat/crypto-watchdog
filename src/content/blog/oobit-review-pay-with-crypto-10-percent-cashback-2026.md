@@ -153,4 +153,4 @@ Only if you'd want OOB exposure anyway. Chasing the higher tier means holding a 
 
 ---
 
-*Disclosure: some Oobit links in this article may be partner links. If you sign up through them, Crypto Watchdog may earn a referral commission at no extra cost to you. This doesn't influence our verdict — we only cover products we've independently researched. Read our full [editorial policy](/about) and [affiliate disclosure](/about).*
+*Disclosure: some Oobit links in this article may be partner links. If you sign up through them, Crypto Watchdog may earn a referral commission at no extra cost to you. This doesn't influence our verdict — we only cover products we've independently researched. Read our full [editorial policy](/editorial-policy) and [affiliate disclosure](/affiliate-disclosure).*

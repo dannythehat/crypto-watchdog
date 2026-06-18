@@ -54,7 +54,7 @@ Be wary of any site that creates a sense of extreme urgency. Scammers want you t
 
 Another warning sign is a request for your seed phrase or private key. No legitimate airdrop will ever ask for these. If a website asks for your recovery words, close the tab immediately and never return.
 
-Examine the transaction details in your wallet before signing. If you see terms like "Set Approval For All" or "Increase Allowance," you are likely giving a third party control over your funds. For a deeper dive into these risks, see our [crypto scam guides](/warnings).
+Examine the transaction details in your wallet before signing. If you see terms like "Set Approval For All" or "Increase Allowance," you are likely giving a third party control over your funds. For a deeper dive into these risks, see our [crypto scam guides](/scam-guides).
 
 ## What victims should do now
 
@@ -74,7 +74,7 @@ The best defence is a healthy level of scepticism. Never click links from direct
 
 Consider using a dedicated "burner" wallet for interacting with new or unverified platforms. This wallet should only contain a small amount of funds. This way, if you encounter a drainer, your main holdings remain safe in a separate account.
 
-Education is your most powerful tool in the digital asset space. Regularly review [crypto safety education](/blog) materials to stay ahead of evolving threats. Understanding how smart contracts work can help you spot a malicious request before you sign it.
+Education is your most powerful tool in the digital asset space. Regularly review [crypto safety education](/education) materials to stay ahead of evolving threats. Understanding how smart contracts work can help you spot a malicious request before you sign it.
 
 Using a hardware wallet provides an extra layer of security, but it is not a silver bullet. You can still sign a malicious transaction on a hardware device. For a realistic look at these tools, read our [hardware wallet safety guide](/blog/your-hardware-wallet-won-t-save-you-a-2026-security-guide-2026-04-22).
 

@@ -293,7 +293,7 @@ In most jurisdictions, yes. Daily bot profits are typically treated as income. C
 - [Aurum Neyro & Quantum Alpha beta launch](/blog/aurum-neyro-quantum-alpha-beta-launch)
 - [AI Finance hub — bots, yield products & how they work](/ai-finance)
 - [Side-by-side platform comparisons](/blog)
-- [Our 8-point review methodology](/about)
+- [Our 8-point review methodology](/methodology)
 - [Crypto safety & scam-spotting guides](/warnings)
 
 <div class="not-prose my-8 rounded-xl border border-primary/30 bg-gradient-to-br from-primary/10 to-primary/5 p-6 shadow-sm"><p class="text-xs font-semibold uppercase tracking-wider text-primary">Deeper Dive</p><p class="mt-2 font-heading text-xl font-bold leading-tight">Non-custodial smart contract trading, explained end-to-end</p><p class="mt-2 text-sm text-muted-foreground">Our long-form pillar guide on how bots can trade your wallet without ever holding your funds — the architecture, the safety wins, the audit checklist, and the real-world example to study first.</p><a href="/blog/non-custodial-smart-contract-trading-explained" class="mt-4 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90">Read the full guide →</a></div>

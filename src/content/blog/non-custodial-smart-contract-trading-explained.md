@@ -171,7 +171,7 @@ This isn't a universal recommendation. Some users are genuinely better off on a 
 
 You are probably *not* a fit for non-custodial smart contract trading if: you have never set up a self-custody wallet, seed phrases feel overwhelming, you would not know how to revoke a token allowance, or your investment is small enough that custodial compliance overhead is irrelevant.
 
-If any of those describe you today, **start by reading our [non-custodial wallet guide](/crypto-wallets) and our [scam guides](/warnings) before going further.** The tools are simple, but using them safely requires a base level of literacy.
+If any of those describe you today, **start by reading our [non-custodial wallet guide](/crypto-wallets) and our [scam guides](/scam-guides) before going further.** The tools are simple, but using them safely requires a base level of literacy.
 
 ## How we'll grow this guide
 
@@ -187,7 +187,7 @@ Non-custodial smart contract trading is not a marketing buzzword. It is a struct
 
 The model isn't perfect. Smart contracts can have bugs. Strategies can underperform. Markets can move against you. But you keep your keys, you keep your coins, and you can walk away in one click. That is a foundation no custodial platform can match.
 
-If you want to see what this looks like in practice, start with our [Aurum Foundation review](/reviews/aurum-foundation), check out the broader [AI Finance category](/ai-finance), and read our [scam guides](/warnings) to make sure you can spot the difference between a legitimate non-custodial operator and an "AI bot" wearing the same costume.
+If you want to see what this looks like in practice, start with our [Aurum Foundation review](/reviews/aurum-foundation), check out the broader [AI Finance category](/ai-finance), and read our [scam guides](/scam-guides) to make sure you can spot the difference between a legitimate non-custodial operator and an "AI bot" wearing the same costume.
 
 ## Sources & further reading
 
@@ -217,4 +217,4 @@ If you want to see what this looks like in practice, start with our [Aurum Found
 - [Types of DeFi platforms for safer investing](/blog/types-of-defi-platforms-safer-investing)
 - [Aurum Foundation review — full audit](/reviews/aurum-foundation)
 - [AI Finance hub — how we audit automated trading platforms](/ai-finance)
-- [Scam guides: spotting fake AI trading platforms](/warnings)
+- [Scam guides: spotting fake AI trading platforms](/scam-guides)

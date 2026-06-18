@@ -32,7 +32,7 @@ Strip away the marketing and a hardware wallet does two things. Both are narrowe
 
 That's the whole product. The screen, the buttons, the companion app, the little recovery sheet in the box: all of it exists to support those two jobs and nothing else. And here's a point people consistently get wrong — your coins don't live on the device at all. They live on the blockchain. The wallet just guards the keys that can move them. Lose the device and your coins are fine, provided you've still got the seed. We'll come back to that, because it matters more than the hardware itself.
 
-So what doesn't it do? A hardware wallet won't stop you sending funds to the wrong address. It won't second-guess a bad decision you've made deliberately. And it absolutely will not save you if you type your seed phrase into a website because a "support agent" asked nicely. We see that exact mistake again and again in the cases we catalogue in our [scam guides](/warnings). The device is honest hardware. It can't undo a decision you made with your own fingers.
+So what doesn't it do? A hardware wallet won't stop you sending funds to the wrong address. It won't second-guess a bad decision you've made deliberately. And it absolutely will not save you if you type your seed phrase into a website because a "support agent" asked nicely. We see that exact mistake again and again in the cases we catalogue in our [scam guides](/scam-guides). The device is honest hardware. It can't undo a decision you made with your own fingers.
 
 ## The threat model: what you're actually defending against
 
@@ -82,7 +82,7 @@ If you'll be signing approvals from DeFi protocols with one of these, read our [
 
 ## How to evaluate any hardware wallet: the seven questions
 
-Whatever device you're weighing up — including the five above, or something newer that launches after we publish this — run it past these seven checks. They line up with the framework we use in our own [8-point audit methodology](/about), trimmed to the questions that matter most when you're spending your own money.
+Whatever device you're weighing up — including the five above, or something newer that launches after we publish this — run it past these seven checks. They line up with the framework we use in our own [8-point audit methodology](/methodology), trimmed to the questions that matter most when you're spending your own money.
 
 1. **Where does the secure element come from, and is it certified?** Look for EAL5+ or EAL6+ Common Criteria certification. Anything below that is a generic microcontroller dressed up as a vault, and we wouldn't trust it with serious sums.
 2. **Is the firmware reproducible and audited?** "Open-source" on its own isn't enough. You want firmware that's been independently audited and where the builds are reproducible, so the code you can read is provably the code that's actually running on the chip. Marketing copy loves the word "open"; ask for the audit.
@@ -104,7 +104,7 @@ We see the same handful of errors over and over, in [community submissions](/sub
 
 **Treating the recovery sheet like a souvenir.** That little card with 24 numbered blank lines is a cryptographic key written in plain English. People photograph it "just to back it up to iCloud" and undo the entire point of the device in a single tap. The card never touches a camera, a scanner, or the internet. Full stop. If that sounds strict, it's meant to.
 
-**Connecting to anything that asks for the seed.** Your wallet vendor will never ask for your seed phrase. Neither will their support team. Neither will the companion app, ever, under any circumstance. Anyone who does is a thief — no exceptions, no special cases, no "but they had a verified badge". This one rule is the core of half the warnings in our [scam guides](/warnings), and internalising it would save more money than any device on the market.
+**Connecting to anything that asks for the seed.** Your wallet vendor will never ask for your seed phrase. Neither will their support team. Neither will the companion app, ever, under any circumstance. Anyone who does is a thief — no exceptions, no special cases, no "but they had a verified badge". This one rule is the core of half the warnings in our [scam guides](/scam-guides), and internalising it would save more money than any device on the market.
 
 ## Hot wallets, hardware wallets, multi-sig: layering the defences
 

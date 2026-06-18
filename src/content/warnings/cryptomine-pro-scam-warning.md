@@ -71,7 +71,7 @@ Be extremely cautious of anyone claiming they can recover your lost funds. This 
 
 The best way to stay safe is to adopt a policy of zero trust. Never invest in a platform based on social media advertisements or unsolicited messages. Always conduct independent research and look for reviews from reputable third party sources.
 
-Educating yourself on the basics of blockchain security is a vital investment. Our [crypto safety education](/blog) hub provides resources to help you identify deceptive patterns. Learning how to use a block explorer to track transactions can also help you verify if a platform is actually doing what it claims.
+Educating yourself on the basics of blockchain security is a vital investment. Our [crypto safety education](/education) hub provides resources to help you identify deceptive patterns. Learning how to use a block explorer to track transactions can also help you verify if a platform is actually doing what it claims.
 
 For those holding significant amounts of capital, hardware wallets are a necessity. These devices keep your private keys offline and protected from online attacks. Consult our [hardware wallet safety guide](/blog/your-hardware-wallet-won-t-save-you-a-2026-security-guide-2026-04-22) to understand how to use them correctly.
 
@@ -83,7 +83,7 @@ If you encounter a suspicious platform, please [report a crypto scam](/submit) t
 
 For more information on staying safe in the digital asset space, please explore our other resources. We provide detailed guides on everything from basic security to advanced technical analysis of smart contracts. Knowledge is your best defence against fraud.
 
-Our [scam guides hub](/warnings) contains a comprehensive list of known tactics used by criminals. You can also learn about the differences between various storage methods in our [self custody versus custodial wallets](/blog/self-custody-vs-custodial-wallets-2026) article. Understanding where your keys are held is the first step in true security.
+Our [scam guides hub](/scam-guides) contains a comprehensive list of known tactics used by criminals. You can also learn about the differences between various storage methods in our [self custody versus custodial wallets](/blog/self-custody-vs-custodial-wallets-2026) article. Understanding where your keys are held is the first step in true security.
 
 For those using decentralised applications, we recommend using the [Revoke cash token approval checker](@@PROTECTED_3@@). This tool allows you to see which platforms have permission to move your tokens. Regularly auditing these permissions can prevent a wallet drainer from stealing your assets.
 

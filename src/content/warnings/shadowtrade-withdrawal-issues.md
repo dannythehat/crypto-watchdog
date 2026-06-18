@@ -77,7 +77,7 @@ The best way to stay safe is to adopt a sceptical mindset. Always assume a platf
 
 Use reputable sources for your investments. Stick to well known exchanges and services that have a long history of transparency. You can find a list of [vetted crypto platform reviews](/reviews) to help you choose a safer place to trade your assets.
 
-Education is your strongest defence. Learn the common patterns of fraud by visiting a [crypto safety education](/blog) hub. Understanding how scammers operate makes it much easier to spot a trap before you lose any money.
+Education is your strongest defence. Learn the common patterns of fraud by visiting a [crypto safety education](/education) hub. Understanding how scammers operate makes it much easier to spot a trap before you lose any money.
 
 Always use a hardware wallet for long term storage. Keeping your main assets offline makes them much harder to steal. Even if you interact with a malicious site, your primary holdings will remain safe. Consult a [hardware wallet safety guide](/blog/your-hardware-wallet-won-t-save-you-a-2026-security-guide-2026-04-22) to set one up correctly.
 

@@ -90,7 +90,7 @@ Copy trading on Bitget comes in three flavours:
 2. **Futures copy trading** — mirror leveraged positions with adjustable margin caps
 3. **CFD copy trading (new in 2026)** — mirror traditional-asset strategies (forex, commodities, indices)
 
-You can set per-trade margin caps, total exposure limits, and stop-loss triggers. **None of that removes risk** — leveraged copy trading can still empty an account in hours. We cover the red flags in our [scam guides hub](/warnings).
+You can set per-trade margin caps, total exposure limits, and stop-loss triggers. **None of that removes risk** — leveraged copy trading can still empty an account in hours. We cover the red flags in our [scam guides hub](/scam-guides).
 
 ### Bitget Earn
 
@@ -167,7 +167,7 @@ Security is where exchanges live or die, so here's the honest scorecard.
 
 That's why Bitget sits in caution territory in our scoring rather than a clean green. It's a credible, well-run venue with real security infrastructure, and at the same time it operates offshore, outside the biggest consumer-protection regimes, with a self-funded backstop instead of insurance. Both halves of that sentence are true, and a fair review has to hold them together.
 
-For how to think about exchange risk in general, our [scam guides](/warnings) cover the patterns that wiped out users on FTX, Celsius, Mt. Gox and others — every one of which looked solid right up until it didn't.
+For how to think about exchange risk in general, our [scam guides](/scam-guides) cover the patterns that wiped out users on FTX, Celsius, Mt. Gox and others — every one of which looked solid right up until it didn't.
 
 ## Bitget vs. the competition
 
@@ -244,7 +244,7 @@ For the beginner's explainer on what RWAs really are, read [RWA Tokenization Exp
 
 Even on a solid platform like Bitget, the biggest risk is usually **you**. The patterns that wipe out accounts are boringly consistent: over-leverage on perpetuals, blind copy-trading with no margin caps, and chasing high-APY farms without checking the reward token first.
 
-A simple rule we stand by: never keep more than **5%** of your crypto net worth on any single exchange, no matter how many monthly Proof of Reserves reports it publishes. Spread custody across cold wallets, hot wallets, and one or two CEXs. Our [education hub](/blog) goes deeper on risk frameworks.
+A simple rule we stand by: never keep more than **5%** of your crypto net worth on any single exchange, no matter how many monthly Proof of Reserves reports it publishes. Spread custody across cold wallets, hot wallets, and one or two CEXs. Our [education hub](/education) goes deeper on risk frameworks.
 
 ## Frequently asked questions
 

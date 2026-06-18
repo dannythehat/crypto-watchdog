@@ -182,7 +182,7 @@ We are not pushing you anywhere, and every option below carries its own risk. Bu
 2. **[XT.com](/reviews/xt-com) — transparent fees with a strong altcoin lineup.** XT.com shows per-network withdrawal fees up front, carries broader altcoin coverage than Crypto.com, and skips the spread-plus-conversion-plus-fee stack. Read our [full XT.com review](/reviews/xt-com) before you open an account.
 3. **Non-custodial yield, where your funds never leave your wallet.** If you want yield without handing over custody, read [non-custodial AI trading bots](/blog/non-custodial-ai-trading-bots-explained) and the [Aurum Foundation review](/reviews/aurum-foundation).
 
-None of these is a sure thing. Every platform carries risk, and you should always read our [methodology](/about) before you deposit a penny.
+None of these is a sure thing. Every platform carries risk, and you should always read our [methodology](/methodology) before you deposit a penny.
 
 <div class="not-prose my-8 rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-5 shadow-sm">
   <p class="text-[10px] font-semibold uppercase tracking-widest text-primary">Looking for a fairer fee structure?</p>

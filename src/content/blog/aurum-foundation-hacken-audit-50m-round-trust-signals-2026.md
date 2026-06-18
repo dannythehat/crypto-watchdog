@@ -48,7 +48,7 @@ Passing a Hacken engagement means a serious third party has spent weeks reviewin
 
 Here's the honest caveat. An audit is a snapshot, not a permanent guarantee. It covers a specific codebase at a specific point in time; later changes can introduce new issues, and even a clean report doesn't speak to off-chain operational risk or how the business is run. There's also a verification step still outstanding: at the time of writing, we have seen the audit referenced in Aurum's updates but the full public report had not yet been published. Until that report is live and we can read the scope and findings ourselves, treat "passed a Hacken audit" as **company-stated and pending independent confirmation** rather than fully verified.
 
-With that flagged, a Hacken sign-off is still one of the clearer *behavioural* signals we weigh under our [audit methodology](/about). It moves the needle. It does not remove risk.
+With that flagged, a Hacken sign-off is still one of the clearer *behavioural* signals we weigh under our [audit methodology](/methodology). It moves the needle. It does not remove risk.
 
 ## ✅ $50M Round, $600M Total Raised
 
@@ -124,7 +124,7 @@ The [Aurum × Tangem partnership](/blog/aurum-tangem-partnership-1000-co-branded
 
 We don't give financial advice on CryptoWatchdog. What we can do is lay out the framework we use ourselves.
 
-**On the platform side**, Aurum scores well across most of the dimensions our [methodology](/about) measures: an identifiable team, a registered entity, a third-party security audit (pending the public report), on-chain proof of withdrawals, a public roadmap, an institutional cap table, and a working self-custody pathway. "Scores well" is not "scores perfectly," and the pending items above are the gap.
+**On the platform side**, Aurum scores well across most of the dimensions our [methodology](/methodology) measures: an identifiable team, a registered entity, a third-party security audit (pending the public report), on-chain proof of withdrawals, a public roadmap, an institutional cap table, and a working self-custody pathway. "Scores well" is not "scores perfectly," and the pending items above are the gap.
 
 **On the product side**, the Ex-AI Bot is a yield-bearing product with a lock-up. That carries real risk. Capital is illiquid during the lock period, the advertised rates are targets rather than guarantees, and a crypto market drawdown will hit any strategy trading these markets. None of the trust signals above change that.
 
@@ -164,7 +164,7 @@ If you want to dig deeper, start with the [full Aurum Foundation review](/review
 
 ---
 
-*This article references publicly available information from Aurum Foundation's investor updates and our own platform testing. Aurum is an affiliate partner of CryptoWatchdog. This is not financial advice. Always test new platforms with small amounts and never deposit funds you cannot afford to lock up or lose. See our [affiliate disclosure](/about) and [editorial policy](/about) for more on how we cover platforms.*
+*This article references publicly available information from Aurum Foundation's investor updates and our own platform testing. Aurum is an affiliate partner of CryptoWatchdog. This is not financial advice. Always test new platforms with small amounts and never deposit funds you cannot afford to lock up or lose. See our [affiliate disclosure](/affiliate-disclosure) and [editorial policy](/editorial-policy) for more on how we cover platforms.*
 
 
 ## Frequently Asked Questions About Aurum Foundation

@@ -65,7 +65,7 @@ Be extremely cautious of anyone claiming they can recover your lost funds. These
 
 ## How to avoid similar crypto scams
 
-Education is your best defence against digital asset fraud. Regularly visit a [scam guides hub](/warnings) to stay informed about the latest tactics used by criminals. Knowing the patterns of a phishing scam or a Ponzi scheme makes you much harder to target.
+Education is your best defence against digital asset fraud. Regularly visit a [scam guides hub](/scam-guides) to stay informed about the latest tactics used by criminals. Knowing the patterns of a phishing scam or a Ponzi scheme makes you much harder to target.
 
 Always perform deep research before committing funds to any platform. Look for independent reviews and community feedback. If a bot or service is not listed in [vetted crypto platform reviews](/reviews), it is safer to avoid it entirely until its legitimacy can be proven.
 

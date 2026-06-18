@@ -44,7 +44,7 @@ Investors should have noticed the lack of a smart contract audit. Reputable proj
 
 Concentrated ownership was another massive warning sign. On chain data showed the deployer held a dominant percentage of the supply. When one person controls the majority of a token, they control the price. This is a primary indicator of a potential rug pull.
 
-The project lacked any real world utility or a technical whitepaper. It existed solely as a vehicle for speculation. Projects without a clear purpose often rely on hype to sustain value. You can learn more about identifying these traps in our [crypto safety education](/blog) section.
+The project lacked any real world utility or a technical whitepaper. It existed solely as a vehicle for speculation. Projects without a clear purpose often rely on hype to sustain value. You can learn more about identifying these traps in our [crypto safety education](/education) section.
 
 ## What victims should do now
 
@@ -68,7 +68,7 @@ For those who have lost funds, you should [report a crypto scam](/submit) to the
 
 To stay safe, consult our [latest crypto scam warnings](/warnings) frequently. We provide updated alerts on phishing and wallet drainers. Understanding the difference between [self custody versus custodial wallets](/blog/self-custody-vs-custodial-wallets-2026) can also help you choose the right security model for your needs.
 
-If you are moving assets to long term storage, read our [hardware wallet safety guide](/blog/your-hardware-wallet-won-t-save-you-a-2026-security-guide-2026-04-22). These devices offer better protection but require proper setup. For broader knowledge, our [crypto scam guides](/warnings) cover everything from Ponzi schemes to fake exchanges.
+If you are moving assets to long term storage, read our [hardware wallet safety guide](/blog/your-hardware-wallet-won-t-save-you-a-2026-security-guide-2026-04-22). These devices offer better protection but require proper setup. For broader knowledge, our [crypto scam guides](/scam-guides) cover everything from Ponzi schemes to fake exchanges.
 
 You may also find the [Chainalysis crypto crime research](@@P3@@) useful for understanding market trends. For those in the UK, [Action Fraud UK](@@P4@@) provides a dedicated portal for reporting financial crimes. Staying informed is the best way to navigate the volatile world of digital assets.
 
