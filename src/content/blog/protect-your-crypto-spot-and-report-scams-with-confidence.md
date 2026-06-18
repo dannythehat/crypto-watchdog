@@ -52,14 +52,14 @@ The California regulator's team has a clear rundown of the main categories, and 
 
 Spotting the warning signs early is most of the battle, and we keep a longer list in our guide to [crypto scam red flags](https://cryptowatchdog.net/blog/how-to-spot-crypto-scam-red-flags). The ones worth memorising:
 
-- **Returns that sound too good.** Fixed, high, "guaranteed" profit doesn't exist in a market that moves like this one. The promise itself is the tell.
+- **Returns that sound too good.** Fixed, high, certain-thing profit doesn't exist in a market that moves like this one. The promise itself is the tell.
 - **Pressure and a ticking clock.** "Invest now or you'll miss it" is not enthusiasm. It's a manipulation technique, and a tired one.
 - **A team you can't verify.** Anonymous founders with no traceable history is a risk you're taking entirely on faith.
 - **Anyone asking for your private keys or seed phrase.** No legitimate platform, ever, under any story, needs these. Full stop.
 - **Polished social proof.** Profit screenshots and glowing testimonials take minutes to fake. They prove nothing.
 - **Contact you didn't ask for.** An unsolicited "opportunity", however slick, earns scepticism by default, not the benefit of the doubt.
 
-> No legitimate investment is risk-free, and a platform that tells you otherwise is lying to you. Scammers lean on hope and optimism because they work, which is exactly why the too-good-to-be-true offer never goes out of fashion.
+> Every real investment carries risk, and a platform that swears yours won't is lying to you. Scammers lean on hope and optimism because they work, which is exactly why the too-good-to-be-true offer never goes out of fashion.
 
 A quick word, because we hear it a lot: if this happened to you, you are not stupid. These cons are designed by people who do this full-time, and they target sharp, careful investors as readily as new ones. The more experienced you are, the more polished the front they'll build for you, because they assume a bigger target deserves a better stage. Learning to [identify and avoid scams](https://cryptowatchdog.net/blog/how-to-identify-and-avoid-crypto-scams-investor-guide) is a habit, not a one-off lesson. And if you trade smaller-cap tokens, it's worth reading up on [pump-and-dump tactics](https://cryptowatchdog.net/blog/pump-and-dump-schemes-how-to-spot-the-crypto-scams-that-will-empty-your-wallet-2026-04-26) too, because coordinated price manipulation shows up there constantly.
 

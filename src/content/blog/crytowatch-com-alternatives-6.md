@@ -347,7 +347,7 @@ The ones that earn their place: independent audits, live transaction testing, co
 
 #### How can I ensure the safety of my funds on these alternative platforms?
 
-Before depositing anywhere, check the platform's security basics such as two-factor authentication and how it handles withdrawals, then use one of these tools to confirm its track record. Treat any "guaranteed" returns or fixed daily profits as a red flag and walk away. No monitoring tool removes all risk, so keep amounts sensible and re-check before large transfers.
+Before depositing anywhere, check the platform's security basics such as two-factor authentication and how it handles withdrawals, then use one of these tools to confirm its track record. Treat any promise of locked-in returns or fixed daily profits as a red flag and walk away. No monitoring tool removes all risk, so keep amounts sensible and re-check before large transfers.
 
 #### Are there any free options among the Crytowatch.com alternatives?
 
