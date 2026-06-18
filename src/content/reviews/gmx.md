@@ -8,7 +8,7 @@ summary: "A decentralised perpetual exchange on Arbitrum and Avalanche offering 
 verdict: "A well-established DeFi perp DEX with a unique liquidity model. Real yield from real trading fees is genuinely attractive. But the LP side carries asymmetric risk — when traders win big, LPs lose. Understand the model before depositing."
 category_id: "e44a1339-eedb-474e-808c-b746b39218a4"
 website_url: "https://gmx.io"
-logo_url: "https://gmx.io/favicon.ico"
+logo_url: "/brands/gmx.jpg"
 social_image_url: null
 pros: ["Battle-tested since 2021, no protocol exploits","Real yield distributed to GMX and GLP/GM holders","Zero price impact trades for major pairs","Decentralised — no KYC, self-custodial","Active on Arbitrum and Avalanche"]
 cons: ["LPs take the other side of trader PnL — can lose money","Oracle-dependent pricing has been exploited on smaller forks","Leverage trading is high-risk regardless of platform"]

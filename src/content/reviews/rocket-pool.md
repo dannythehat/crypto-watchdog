@@ -8,7 +8,7 @@ summary: "Rocket Pool is a decentralised Ethereum staking protocol that distingu
 verdict: "Crypto Watchdog assigns Rocket Pool a GREEN Alert rating. As a more decentralised alternative to liquid staking giants, Rocket Pool stands out for its commitment to network health. It is a trustworthy choice for users seeking to stake ETH while supporting a more robust and decentralised Ethereum ecosystem, making it a preferred option for those concerned with concentration risks."
 category_id: "438da118-5c40-4605-8b36-96695920cb5b"
 website_url: "https://rocketpool.net"
-logo_url: null
+logo_url: "/brands/rocket-pool.png"
 social_image_url: null
 pros: ["Truly decentralised staking","No minimum for liquid staking","rETH is liquid and tradeable","Multiple security audits","Permissionless node operation"]
 cons: ["Higher commission than Lido","Smart contract risk","Gas fees for staking/unstaking","Smaller than Lido in TVL","Node operation requires 8 ETH + RPL"]

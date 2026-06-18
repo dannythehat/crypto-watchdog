@@ -8,7 +8,7 @@ summary: "Aave stands as a prominent decentralised lending and borrowing protoco
 verdict: "Aave merits a Green Alert from Crypto Watchdog. Our investigation found it to be a battle-tested platform with a commendable track record since 2020. Multiple security audits, transparent governance structures, and a dedicated development team underpin its credibility, making Aave a leading example in the DeFi space, despite inherent smart contract risks."
 category_id: "857ffa99-c621-466f-92fd-99937fa57f40"
 website_url: "https://aave.com"
-logo_url: null
+logo_url: "/brands/aave.png"
 social_image_url: null
 pros: ["Battle-tested protocol since 2020","Multiple security audits","Flash loans innovation","Multi-chain deployment","Decentralised governance (AAVE token)"]
 cons: ["Smart contract risk always exists","Gas fees on Ethereum can be high","Complex for beginners","Liquidation risk for borrowers","Interest rates fluctuate"]

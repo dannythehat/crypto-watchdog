@@ -8,7 +8,7 @@ summary: "Lido Finance stands as the largest liquid staking solution within the 
 verdict: "Crypto Watchdog assigns Lido Finance an Orange Alert rating. While Lido Finance functions effectively, providing liquid staking services, its dominant market share in Ethereum staking poses a critical concentration risk for the network's decentralisation. We advise extreme caution and recommend distributing staking activities across various providers."
 category_id: "2e7d0032-5f60-4f0b-8156-cb28283df743"
 website_url: "https://lido.fi"
-logo_url: null
+logo_url: "/brands/lido-finance.png"
 social_image_url: null
 pros: ["Liquid staking — use stETH in DeFi","Consistent rewards","Audited contracts","Large validator set"]
 cons: ["Concentration risk — ~30% of staked ETH","Smart contract risk","stETH can depeg temporarily","10% reward fee above average"]

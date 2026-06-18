@@ -8,7 +8,7 @@ summary: "A multi-chain DeFi portfolio tracker and dashboard that aggregates wal
 verdict: "One of the most polished DeFi dashboards available. Read-only by default — you connect a wallet address, not sign anything — which makes it safe to use. Premium tier exists but the free version covers what most users need."
 category_id: "f262885b-4ba5-415a-8079-d04beba96f04"
 website_url: "https://zapper.xyz"
-logo_url: "https://zapper.xyz/favicon.ico"
+logo_url: "/brands/zapper.png"
 social_image_url: null
 pros: ["Read-only by default — no signing required to view","Aggregates 50+ chains and most major DeFi protocols","Tracks NFTs, DeFi positions, and transaction history","Bundle multiple wallets into one view","Long operating history, well-known team"]
 cons: ["Some advanced features gated behind paid tier","Occasional pricing/balance lag for niche protocols","As an aggregator, depends on third-party APIs being correct"]

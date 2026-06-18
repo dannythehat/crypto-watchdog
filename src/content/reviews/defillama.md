@@ -8,7 +8,7 @@ summary: "The most-trusted independent DeFi analytics platform. Tracks TVL, volu
 verdict: "The gold standard for DeFi data. DeFiLlama deliberately rejected a token launch to avoid conflicts of interest — rare integrity in this space. If you're researching any DeFi protocol, this is where you start. Cross-reference its data before trusting any project's self-reported numbers."
 category_id: "789c939e-cb73-4284-bb5f-da2d033b1038"
 website_url: "https://defillama.com"
-logo_url: "https://defillama.com/favicon.ico"
+logo_url: "/brands/defillama.png"
 social_image_url: null
 pros: ["Independent, free, no token, no paid bias","Most comprehensive TVL and volume coverage in DeFi","Open-source data — community-verifiable","Tracks unlocks, yields, fees, stablecoins, hacks","Trusted by analysts, journalists, and protocol teams alike"]
 cons: ["UI can feel dense for non-power-users","TVL methodology debates exist for some categories","As with any aggregator, edge-case protocols may lag"]
