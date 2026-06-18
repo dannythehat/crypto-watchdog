@@ -39,8 +39,8 @@ const FAQS = [
 ];
 
 const CryptoTrading = () => {
-  const guides = ["ai-trading-bots-your-guide-to-separating-genuine-tools-from-get-rich-quick-scams-2026-05-25", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09", "copy-ai-trading-explained-2026"]
-    .map(getBlogPost).filter(Boolean).slice(0, 3) as NonNullable<ReturnType<typeof getBlogPost>>[];
+  const guides = ["aurum-neyro-bot-review-is-aurum-a-scam", "ai-trading-bots-and-agents-2026-honest-guide", "what-is-copy-crypto-trading-your-2026-guide", "copy-ai-trading-explained-2026", "non-custodial-ai-trading-bots-explained", "crypto-trading-bot-audit-step-by-step-guide", "the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18", "ai-trading-bots-your-guide-to-separating-genuine-tools-from-get-rich-quick-scams-2026-05-25", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09", "crypto-trading-bot-risks-safer-trading"]
+    .map(getBlogPost).filter(Boolean).slice(0, 13) as NonNullable<ReturnType<typeof getBlogPost>>[];
 
   return (
     <>
@@ -149,12 +149,35 @@ const CryptoTrading = () => {
           <SectionWrapper>
             <div className="mb-6 inline-flex items-center gap-2 text-primary"><BookOpen className="h-5 w-5" /><span className="text-sm font-semibold uppercase tracking-wider">Go deeper</span></div>
             <h2 className="font-heading text-2xl font-bold md:text-3xl">Trading guides worth reading first</h2>
-            <div className="mt-8 grid gap-5 md:grid-cols-3">
-              {guides.map((p) => (
-                <Link key={p.slug} to={`/blog/${p.slug}`} className="group flex flex-col rounded-2xl border border-border bg-card/60 p-5 backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-lg">
-                  {p.category && <span className="text-xs font-semibold uppercase tracking-wide text-primary">{p.category}</span>}
-                  <h3 className="mt-1 font-heading font-semibold leading-snug">{p.title}</h3>
-                  <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary">Read guide <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" /></span>
+            {guides[0] && (
+              <Link to={`/blog/${guides[0].slug}`} className="group mt-8 grid overflow-hidden rounded-3xl border border-border bg-card/60 backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-2xl md:grid-cols-2">
+                {guides[0].image_url && (
+                  <div className="aspect-[16/10] w-full overflow-hidden bg-muted md:aspect-auto">
+                    <img src={guides[0].image_url} alt={guides[0].title} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </div>
+                )}
+                <div className="flex flex-col justify-center p-6 md:p-8">
+                  <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Featured guide</span>
+                  <h3 className="mt-3 font-heading text-2xl font-bold leading-tight md:text-3xl">{guides[0].title}</h3>
+                  {guides[0].summary && <p className="mt-3 text-muted-foreground">{guides[0].summary.replace(/[#>*_`~|]/g, " ").slice(0, 220)}</p>}
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">Read the full guide <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" /></span>
+                </div>
+              </Link>
+            )}
+            <div className="mt-6 grid gap-5 md:grid-cols-3">
+              {guides.slice(1).map((p) => (
+                <Link key={p.slug} to={`/blog/${p.slug}`} className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-lg">
+                  {p.image_url && (
+                    <div className="aspect-[16/9] w-full overflow-hidden bg-muted">
+                      <img src={p.image_url} alt={p.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+                  )}
+                  <div className="flex flex-1 flex-col p-5">
+                    {p.category && <span className="text-xs font-semibold uppercase tracking-wide text-primary">{p.category}</span>}
+                    <h3 className="mt-1 font-heading font-semibold leading-snug">{p.title}</h3>
+                    {p.summary && <p className="mt-2 line-clamp-3 flex-1 text-sm text-muted-foreground">{p.summary.replace(/[#>*_`~|]/g, " ").slice(0, 140)}</p>}
+                    <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary">Read guide <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" /></span>
+                  </div>
                 </Link>
               ))}
             </div>
