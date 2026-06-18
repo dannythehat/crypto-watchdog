@@ -8,7 +8,7 @@ summary: "PancakeSwap is a prominent decentralised exchange (DEX) and yield farm
 verdict: "PancakeSwap is a leading decentralised exchange on BNB Chain. While it operates effectively as a DEX, the BNB Chain itself exhibits a higher prevalence of fraudulent tokens compared to Ethereum. Therefore, while PancakeSwap is a credible platform, users must exercise extreme due diligence regarding the specific tokens they trade or invest in via PancakeSwap."
 category_id: "e2dc552c-ea25-470c-b087-d1de0ccfd17b"
 website_url: "https://pancakeswap.finance"
-logo_url: null
+logo_url: "/brands/pancakeswap.jpg"
 social_image_url: null
 pros: ["Very low fees on BNB Chain","Multiple earn features","Lottery and prediction markets","Well-audited smart contracts","Large liquidity pools"]
 cons: ["BNB Chain centralisation concerns","Impermanent loss risk in pools","Some scam tokens listed","Complex for DeFi beginners","CAKE tokenomics debated"]

@@ -8,7 +8,7 @@ summary: "Curve Finance is a leading decentralised exchange (DEX) specifically d
 verdict: "Curve Finance receives a Green Alert from Crypto Watchdog. It is established, battle-tested, and remains a vital component of the DeFi infrastructure for stablecoin operations. While inherent smart contract risks persist for all DeFi platforms, Curve Finance is recognised as a credible and reliable choice for users."
 category_id: "e2dc552c-ea25-470c-b087-d1de0ccfd17b"
 website_url: "https://curve.fi"
-logo_url: null
+logo_url: "/brands/curve-finance.png"
 social_image_url: null
 pros: ["Battle-tested since 2020","Excellent for stablecoin swaps","Mature governance via CRV/veCRV","Multi-chain"]
 cons: ["Smart-contract risk","UI is power-user oriented","Past pool exploits — niche pools"]

@@ -8,7 +8,7 @@ summary: "Binance stands as one of the pre-eminent cryptocurrency exchanges glob
 verdict: "Binance remains a leading cryptocurrency exchange, distinguished by its robust features and deep liquidity. Despite navigating a complex global regulatory landscape, the platform generally operates with a commendable degree of transparency across its serviced markets. We consider Binance a suitable choice for experienced cryptocurrency traders due to its advanced functionalities and extensive market access."
 category_id: "82c06c80-146c-44cc-8aa1-83389b63019e"
 website_url: "https://www.binance.com"
-logo_url: null
+logo_url: "/brands/binance.jpg"
 social_image_url: null
 pros: ["Massive liquidity and asset selection","Strong security with SAFU fund","Low trading fees with BNB discounts","Proof of reserves published regularly"]
 cons: ["Regulatory issues in some jurisdictions","Complex interface for beginners","Support can be slow during peak times"]

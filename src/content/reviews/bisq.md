@@ -8,7 +8,7 @@ summary: "A fully decentralised, peer-to-peer Bitcoin exchange. No KYC, no centr
 verdict: "The most ideologically pure P2P exchange in crypto. If privacy and self-sovereignty matter to you, Bisq is the gold standard. Trade-offs: clunky desktop-only UX, low liquidity, and slow trades. For most users, this is overkill — but for the right user, it's essential."
 category_id: "6a794c1e-7506-4ece-87cd-f3a7b493a860"
 website_url: "https://bisq.network"
-logo_url: "https://bisq.network/favicon.ico"
+logo_url: "/brands/bisq.png"
 social_image_url: null
 pros: ["Fully decentralised — no company can freeze your funds","No KYC, no account, no custody","Open-source and audited","Security-deposit model deters bad actors","Tor integration for privacy"]
 cons: ["Desktop-only, dated UX","Low liquidity vs centralised exchanges","Trades can take hours, not seconds","Bitcoin-focused — limited altcoin support"]
