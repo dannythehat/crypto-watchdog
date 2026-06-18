@@ -8,7 +8,7 @@ summary: "eToro CopyTrader is a global multi-asset platform that includes a copy
 verdict: "Crypto Watchdog assigns eToro CopyTrader an Orange Alert rating. The eToro platform itself is regulated in numerous regions, providing a layer of consumer protection. However, the act of copy trading crypto is fraught with significant risks, including potential losses from poor strategy, market volatility, and crypto-specific regulatory ambiguities. Proceed with extreme caution."
 category_id: "22381b54-382d-41c5-9954-40e8c7284516"
 website_url: "https://www.etoro.com"
-logo_url: null
+logo_url: "/brands/etoro.png"
 social_image_url: null
 pros: ["Regulated (FCA, CySEC, ASIC)","Easy copy trading interface","Large trader selection","Demo account available"]
 cons: ["Spread fees lack transparency","Past performance marketing misleads","Limited crypto vs pure exchanges","Inactivity fees"]

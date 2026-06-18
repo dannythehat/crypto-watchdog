@@ -8,7 +8,7 @@ summary: "A regulated multi-asset broker offering crypto, stocks, and ETFs along
 verdict: "A legitimate, regulated broker — but a poor crypto-native experience. You don't actually own the underlying coins in most jurisdictions; you hold a contract. Fine for casual exposure, wrong for anyone serious about crypto. And copy-trading features encourage the worst possible behaviour."
 category_id: "0bd0b2b6-5ab0-4ca9-bffd-0ce68e303f81"
 website_url: "https://www.etoro.com"
-logo_url: "https://www.etoro.com/favicon.ico"
+logo_url: "/brands/etoro.png"
 social_image_url: null
 pros: ["Regulated in multiple jurisdictions (FCA, CySEC, ASIC)","Publicly listed — strong financial transparency","Multi-asset platform (crypto, stocks, ETFs)","Beginner-friendly interface"]
 cons: ["Often you don't own the actual crypto — only a CFD/contract","Spreads and overnight fees are high","Copy-trading encourages reckless behaviour","Limited withdrawal options for actual coins","Customer support has a poor reputation"]

@@ -8,7 +8,7 @@ summary: "ZuluTrade is a long-standing social trading platform that includes cry
 verdict: "Crypto Watchdog assigns ZuluTrade an Orange Alert rating. The longevity of the ZuluTrade platform itself does not negate the significant risks associated with copy trading volatile cryptocurrency assets. Past performance, frequently highlighted, offers no guarantee of future results, demanding extreme caution from any user considering its services for crypto investments."
 category_id: "22381b54-382d-41c5-9954-40e8c7284516"
 website_url: "https://www.zulutrade.com"
-logo_url: null
+logo_url: "/brands/zulutrade.jpg"
 social_image_url: null
 pros: ["Long track record since 2007","Wide range of signal providers","Demo account available","Connects to multiple brokers","Crypto and forex support"]
 cons: ["Signal provider performance varies wildly","Fee transparency issues","Connected broker quality varies","Past regulatory issues","Performance claims often misleading"]
