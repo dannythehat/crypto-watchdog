@@ -84,7 +84,7 @@ export const hubs: Hub[] = [
     caution: ["bitget", "bybit", "kucoin", "bingx", "etoro"],
     avoid: [],
     warnings: ["recovery-scam-wave-2026"],
-    relatedPosts: ["best-crypto-exchange-uk-2026", "how-to-pick-safe-crypto-exchange-2026", "your-crypto-on-an-exchange-isn-t-yours-what-happens-when-it-goes-bust-2026-05-21"],
+    relatedPosts: ["how-to-pick-safe-crypto-exchange-2026", "best-crypto-exchange-uk-2026", "types-of-crypto-exchanges-explained-how-to-choose", "bitget-vs-binance-vs-bybit-2026", "how-crypto-exchange-trust-frameworks-help-you-trade-safely", "demystifying-crypto-platform-transparency-for-safer-trading", "why-crypto-platform-trust-is-key-to-your-security", "crypto-com-2026-ecosystem-review-fees-support-verdict", "bitget-2026-review-universal-exchange-rwa", "what-is-a-decentralized-exchange-dex-explained", "latest-crypto-exchange-security-incidents-what-users-need-to-know-2026-04-17", "navigating-the-shifting-sands-crypto-exchange-security-in-2026-2026-04-14", "when-the-exchange-crumbles-protecting-your-crypto-in-a-bankruptcy-2026-04-16", "your-crypto-on-an-exchange-isn-t-yours-what-happens-when-it-goes-bust-2026-05-21", "why-withdrawal-testing-matters"],
     faq: [
       { q: "What's the safest crypto exchange in 2026?", a: "There's no single 'safest' for everyone, but exchanges with strong regulation, proof-of-reserves and clean withdrawal records — like Kraken and Coinbase — score highest in our audits. The right one depends on your country and needs." },
       { q: "Are big exchanges safer than small ones?", a: "Usually, but not always — size didn't save FTX. We weigh regulation, transparency and a verifiable withdrawal track record over brand recognition." },
@@ -117,7 +117,7 @@ export const hubs: Hub[] = [
     caution: ["coinbase-wallet-custodial"],
     avoid: [],
     warnings: ["fake-metamask-extensions", "fake-airdrop-wallet-drainer"],
-    relatedPosts: ["best-hardware-wallet-2026-ledger-vs-trezor", "self-custody-vs-custodial-wallets-2026", "top-crypto-wallet-features-safety-usability"],
+    relatedPosts: ["best-hardware-wallet-2026-ledger-vs-trezor", "self-custody-vs-custodial-wallets-2026", "hardware-wallets-2026-buyers-guide", "hot-wallets-vs-cold-storage-your-2026-guide-to-not-losing-everything-2026-04-28", "top-crypto-wallet-features-safety-usability", "defi-wallet-crypto-trading-your-2026-security-guide", "custodial-wallets-security-control-and-real-risks-explained", "understand-crypto-wallets-secure-your-digital-assets", "how-to-analyse-crypto-wallets-for-security-and-transparency", "your-hardware-wallet-won-t-save-you-a-2026-security-guide-2026-04-22", "your-seed-phrase-the-keys-to-your-crypto-kingdom-and-how-to-lose-it-all-2026-05-14", "your-seed-phrase-the-one-secret-that-can-cost-you-everything-2026-04-30", "your-crypto-is-not-safe-why-two-factor-authentication-is-non-negotiable-2026-05-19", "how-to-verify-crypto-wallet-safety-and-avoid-scams"],
     faq: [
       { q: "Hardware or software wallet — which should I use?", a: "For meaningful amounts, a hardware wallet (cold storage) like Ledger or Trezor is the gold standard. A reputable software wallet is fine for small, everyday amounts you actively use." },
       { q: "How do fake wallet scams work?", a: "Scammers publish lookalike apps and browser extensions, or run fake 'wallet support' that asks for your seed phrase. No real wallet will ever ask for your recovery phrase — that request is always a scam." },
@@ -150,7 +150,7 @@ export const hubs: Hub[] = [
     caution: ["etoro-copytrader", "thomas-crypto-signals", "3commas", "zulutrade"],
     avoid: ["crypto-signal-services-general", "shadowtradebot"],
     warnings: ["telegram-investment-bot-scams", "recovery-scam-wave-2026"],
-    relatedPosts: ["aurum-neyro-bot-review-is-aurum-a-scam", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09", "ai-trading-bots-your-guide-to-separating-genuine-tools-from-get-rich-quick-scams-2026-05-25", "the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18"],
+    relatedPosts: ["what-is-copy-crypto-trading-your-2026-guide", "copy-ai-trading-explained-2026", "bitget-2026-review-universal-exchange-rwa", "the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18", "spotting-the-shills-7-warning-signs-a-crypto-influencer-is-paid-to-deceive-you-2026-05-12", "ai-trading-bots-your-guide-to-separating-genuine-tools-from-get-rich-quick-scams-2026-05-25", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09", "telegram-trading-bots-convenience-at-what-cost-2026-04-23"],
     faq: [
       { q: "Is copy trading safe?", a: "It can be on a regulated platform with transparent, verified track records and sensible risk limits. It is not safe when 'returns' are unverifiable, leverage is high, or you're copying an anonymous trader in a Telegram group." },
       { q: "Why are signal groups risky?", a: "Many are pump-and-dump funnels or affiliate mills. The people posting 'winning' screenshots often profit from your subscription or from dumping a coin on you — not from the trades themselves." },
@@ -177,7 +177,7 @@ export const hubs: Hub[] = [
     caution: ["lido-finance", "gmx"],
     avoid: ["anchor-protocol", "bitconnect", "blockfi"],
     warnings: ["solana-pump-dump-warning"],
-    relatedPosts: ["defi-lending-real-yield-vs-ponzi-yield-2026", "non-custodial-smart-contract-trading-explained", "anatomy-of-a-rug-pull-7-on-chain-signals-2026"],
+    relatedPosts: ["defi-lending-real-yield-vs-ponzi-yield-2026", "types-of-defi-platforms-safer-investing", "defi-protocols-security-transparency-and-risks-explained", "non-custodial-smart-contract-trading-explained", "how-smart-contracts-work-crypto-trading", "before-you-click-approve-how-to-vet-a-smart-contract-in-2026-2026-05-24", "before-you-click-approve-a-plain-english-guide-to-vetting-a-smart-contract-2026-05-15", "stablecoins-explained-2026", "are-your-stable-coins-really-stable-a-deep-dive-into-usdt-usdc-and-dai-2026-05-07", "before-you-ape-in-a-deep-dive-on-defi-protocol-risks-2026-04-21", "top-defi-platform-risks-every-crypto-investor-must-know", "defi-s-dangerous-allure-what-to-check-before-you-deposit-a-single-penny-2026-05-23", "anatomy-of-a-rug-pull-7-on-chain-signals-2026"],
     faq: [
       { q: "Is DeFi safe?", a: "Established, audited protocols like Aave and Uniswap have long track records, but smart-contract risk, governance risk and de-pegs are real. DeFi is 'self-driving' money — powerful, but you're responsible for the wheel." },
       { q: "What's the difference between real yield and ponzi yield?", a: "Real yield comes from genuine economic activity — lending interest, trading fees, staking rewards. Ponzi yield is paid from new investors' deposits or inflationary token printing, and it always runs out." },
@@ -250,7 +250,7 @@ export const hubs: Hub[] = [
     caution: ["3commas", "cryptohopper"],
     avoid: ["shadowtradebot"],
     warnings: ["telegram-investment-bot-scams"],
-    relatedPosts: ["ai-trading-bots-your-guide-to-separating-genuine-tools-from-get-rich-quick-scams-2026-05-25", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09", "the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18"],
+    relatedPosts: ["crypto-trading-bot-audit-step-by-step-guide", "ai-trading-bots-and-agents-2026-honest-guide", "non-custodial-ai-trading-bots-explained", "how-smart-contracts-work-crypto-trading", "the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18", "crypto-trading-bot-risks-safer-trading", "ai-trading-bots-your-guide-to-separating-genuine-tools-from-get-rich-quick-scams-2026-05-25", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09", "telegram-trading-bots-convenience-at-what-cost-2026-04-23", "how-to-spot-ai-washing-crypto"],
     faq: [
       { q: "Do crypto trading bots actually work?", a: "Legitimate bots can automate a strategy you already understand — grid, DCA, rebalancing. They're tools, not money machines, and they can lose money just as efficiently as they make it." },
       { q: "What's the biggest red flag with a trading bot?", a: "Being asked to deposit funds into the operator's wallet rather than connecting via trade-only API keys on your own exchange. If they custody your money and promise profit, walk away." },
@@ -277,7 +277,7 @@ export const hubs: Hub[] = [
     caution: ["realt"],
     avoid: [],
     warnings: [],
-    relatedPosts: ["digital-gold-2026-tokenized-gold-physically-backed-tokens-guide", "rwa-tokenization-explained-like-youre-five", "non-custodial-smart-contract-trading-explained"],
+    relatedPosts: ["digital-gold-2026-tokenized-gold-physically-backed-tokens-guide", "rwa-tokenization-explained-like-youre-five", "rwa-tokenization-gold-silver-real-estate-2026", "kinesis-money-tokenized-gold-2026-review", "non-custodial-smart-contract-trading-explained", "the-myth-of-guaranteed-returns-in-crypto-what-you-need-to-know-in-2026-2026-04-15"],
     faq: [
       { q: "What are tokenized real-world assets?", a: "They're blockchain tokens that represent ownership of a physical or traditional asset — gold, US Treasuries, real estate, or credit. The token moves on-chain while the underlying asset is held off-chain by an issuer or custodian." },
       { q: "Is tokenized gold actually backed by gold?", a: "With reputable issuers, yes — each token is redeemable for or backed by allocated physical gold, with regular attestations. The key is checking who the issuer is and whether reserves are independently verified." },
@@ -304,7 +304,7 @@ export const hubs: Hub[] = [
     caution: ["opensea", "magic-eden", "blur", "rarible"],
     avoid: ["axie-infinity"],
     warnings: ["fake-airdrop-wallet-drainer"],
-    relatedPosts: ["nft-safety-guide-2026", "how-to-spot-crypto-scam-2026"],
+    relatedPosts: ["nft-safety-guide-2026", "how-to-spot-crypto-scam-2026", "anatomy-of-a-rug-pull-7-on-chain-signals-2026", "beyond-phishing-the-sophisticated-crypto-scams-draining-wallets-this-week-2026-05-17"],
     faq: [
       { q: "Which NFT marketplace is safest?", a: "The big marketplaces (OpenSea, Magic Eden, Blur, Rarible) are established but each carries risk — mostly from scams that happen around them, not the platform itself. We rate them caution-level: usable with care, never on autopilot." },
       { q: "How do NFT scams usually work?", a: "Fake mint sites, lookalike collections, and 'free NFT' airdrops that prompt a malicious wallet approval which drains your assets. Never sign a transaction you don't understand, and revoke old approvals regularly." },
@@ -331,7 +331,7 @@ export const hubs: Hub[] = [
     caution: ["crypto-com-visa-card", "nexo-card", "oobit"],
     avoid: [],
     warnings: [],
-    relatedPosts: ["oobit-review-pay-with-crypto-10-percent-cashback-2026", "tangem-pay-decentralized-debit-card-review-2026", "trustcard-decentralized-debit-card-review-2026"],
+    relatedPosts: ["oobit-review-pay-with-crypto-10-percent-cashback-2026", "tangem-pay-decentralized-debit-card-review-2026", "trustcard-decentralized-debit-card-review-2026", "how-to-spend-crypto-without-converting-to-fiat", "aurum-tangem-partnership-1000-co-branded-wallets-2026"],
     faq: [
       { q: "Do crypto cards really pay cashback?", a: "Yes, but the best rates usually require staking or locking the platform's own token, or a paid tier. Always work out the real return after fees and spreads — and factor in the risk of the token you have to hold." },
       { q: "Are crypto debit cards safe?", a: "Cards from regulated, established providers are reasonably safe for everyday spending. Watch custody (who holds your funds), conversion fees, and whether high rewards depend on locking up volatile tokens." },
@@ -412,7 +412,7 @@ export const hubs: Hub[] = [
     caution: ["nicehash"],
     avoid: ["cryptomine-pro"],
     warnings: ["cryptomine-pro-scam-warning"],
-    relatedPosts: ["how-to-spot-crypto-scam-2026", "understanding-trust-scores"],
+    relatedPosts: ["cloud-mining-2026-why-most-of-it-is-a-scam", "the-myth-of-guaranteed-returns-in-crypto-what-you-need-to-know-in-2026-2026-04-15", "how-to-spot-crypto-scam-2026", "understanding-trust-scores"],
     faq: [
       { q: "Is cloud mining legit?", a: "A small number of services are genuine, but the category is dominated by scams. Any cloud-mining site promising fixed or guaranteed daily returns should be treated as a Ponzi until proven otherwise." },
       { q: "Why is cloud mining so scam-prone?", a: "It's the perfect cover story: 'mining' explains where the returns supposedly come from, so operators can run a deposit-driven Ponzi while looking technical. Real mining returns are variable and rarely impressive after fees." },
@@ -439,7 +439,7 @@ export const hubs: Hub[] = [
     caution: [],
     avoid: ["crypto-recovery-pro"],
     warnings: ["recovery-scam-wave-2026", "recovery-scam-targeting-victims"],
-    relatedPosts: ["crypto-scammed-your-step-by-step-guide-to-damage-control-2026-04-24", "how-to-spot-crypto-scam-2026"],
+    relatedPosts: ["crypto-recovery-scams-warning", "crypto-scammed-your-step-by-step-guide-to-damage-control-2026-04-24", "how-to-spot-crypto-scam-2026", "beyond-phishing-the-sophisticated-crypto-scams-draining-wallets-this-week-2026-05-17"],
     faq: [
       { q: "Can stolen crypto really be recovered?", a: "Occasionally, and only through legitimate law enforcement, your bank, or the exchange involved — never through a service that cold-contacts you or guarantees results for an upfront fee. On-chain tracing is not the same as recovery." },
       { q: "How do recovery scams work?", a: "They find victims (often from public complaints), pose as 'recovery experts', hackers or even officials, and charge fees, 'taxes' or 'deposits' to release your funds. It's a classic advance-fee scam aimed at people already hurting." },

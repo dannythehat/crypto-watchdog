@@ -284,9 +284,25 @@ const CategoryHub = () => {
         {/* Related guides */}
         {posts.length > 0 && (
           <SectionWrapper>
-            <Band icon={BookOpen} tone="text-primary" title="Read before you commit" subtitle="In-depth guides that go deeper on this category.">
+            <Band icon={BookOpen} tone="text-primary" title="Read before you commit" subtitle="In-depth guides that go deeper on this category — our most trusted picks first, scam warnings at the end.">
+              {/* Flagship article — featured large with image */}
+              {posts[0] && (
+                <Link to={`/blog/${posts[0].slug}`} className="group mb-6 grid overflow-hidden rounded-3xl border border-border bg-card/60 backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-2xl md:grid-cols-2">
+                  {posts[0].image_url && (
+                    <div className="aspect-[16/10] w-full overflow-hidden bg-muted md:aspect-auto">
+                      <img src={posts[0].image_url} alt={posts[0].title} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+                  )}
+                  <div className="flex flex-col justify-center p-6 md:p-8">
+                    <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">Featured guide</span>
+                    <h3 className="mt-3 font-heading text-2xl font-bold leading-tight md:text-3xl">{posts[0].title}</h3>
+                    {posts[0].summary && <p className="mt-3 text-muted-foreground">{posts[0].summary.replace(/[#>*_`~|]/g, " ").slice(0, 220)}</p>}
+                    <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">Read the full guide <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" /></span>
+                  </div>
+                </Link>
+              )}
               <div className="grid gap-5 md:grid-cols-3">
-                {posts.map((p) => (
+                {posts.slice(1).map((p) => (
                   <Link key={p.slug} to={`/blog/${p.slug}`} className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-lg">
                     {p.image_url && (
                       <div className="aspect-[16/9] w-full overflow-hidden bg-muted">

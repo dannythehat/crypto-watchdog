@@ -4,7 +4,7 @@ title: "Aurum Neyro Bot Review 2026: Is Aurum a Scam? What We Found After Follow
 slug: "aurum-neyro-bot-review-is-aurum-a-scam"
 summary: "We stopped arguing about Aurum Neyro and followed the chain instead. Real BSC-USD payments, a paying wallet holding ~38.7M, PancakeSwap V3 liquidity activity, and a public Hacken audit — here's the evidence, screenshot by screenshot, and what it does and doesn't prove."
 category: "AI Finance"
-image_url: "/aurum/hero-aurum-neyro-vs-watchdog.png"
+image_url: "/aurum/aurum-neyro-robot.jpg"
 published: true
 auto_generated: false
 published_at: "2026-06-18T08:00:00Z"
