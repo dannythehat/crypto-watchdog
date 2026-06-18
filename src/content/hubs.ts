@@ -403,6 +403,7 @@ export const hubs: Hub[] = [
     heroPrompt:
       "a warning scene of a glowing red shield blocking a phishing hook reaching for bitcoin coins, dark dramatic red and teal light, cinematic, ultra detailed",
     heroSeed: 77,
+    heroImage: "/crypto-recovery/hero.png",
     intro:
       "If you've lost crypto and you're looking for someone to 'recover' it, please read this before you pay anyone. The hard truth: the **vast majority of crypto recovery services are themselves scams** — fake firms that target victims a second time, demanding upfront fees and then disappearing.\n\nNo legitimate service can guarantee recovery, and real authorities never charge you to investigate. Here's how to protect yourself, and the honest steps that actually help in our [post-scam damage-control guide](/blog/crypto-scammed-your-step-by-step-guide-to-damage-control-2026-04-24).",
     trusted: [],

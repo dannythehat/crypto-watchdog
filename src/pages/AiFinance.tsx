@@ -16,13 +16,14 @@ import { getReview, getAffiliateByReviewSlug, isMonetisable } from "@/content";
 import { trackEvent } from "@/lib/analytics";
 import { breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 
-// Sectors that branch off AI / crypto finance. Each tile links to its hub.
-const SECTORS: { slug: string; label: string; blurb: string; icon: typeof Bot; accent: string }[] = [
-  { slug: "ai-trading-platforms", label: "AI Trading Platforms", blurb: "AI agents and bots that trade or manage liquidity for you.", icon: BrainCircuit, accent: "#4F8BFF" },
-  { slug: "copy-trading", label: "Copy Trading", blurb: "Mirror proven traders automatically — the safe way.", icon: Users, accent: "#F5A524" },
+// Sectors that branch off AI / crypto finance. Each tile links to its hub and
+// uses its own artwork (falls back to an icon until an image is supplied).
+const SECTORS: { slug: string; label: string; blurb: string; icon: typeof Bot; accent: string; image?: string }[] = [
+  { slug: "ai-trading-platforms", label: "AI Trading Platforms", blurb: "AI agents and bots that trade or manage liquidity for you.", icon: BrainCircuit, accent: "#4F8BFF", image: "/ai-finance/hero.png" },
+  { slug: "copy-trading", label: "Copy Trading", blurb: "Mirror proven traders automatically — the safe way.", icon: Users, accent: "#F5A524", image: "/copy-trading/hero.png" },
   { slug: "crypto-trading-bots", label: "Trading Bots", blurb: "Automated strategies you stay in control of.", icon: Bot, accent: "#4F8BFF" },
-  { slug: "crypto-exchanges", label: "Exchanges", blurb: "Where you buy, sell and trade — and where withdrawals get tested.", icon: Building2, accent: "#16C784" },
-  { slug: "crypto-wallets", label: "Wallets", blurb: "Self-custody and hot wallets we actually trust.", icon: Wallet, accent: "#16C784" },
+  { slug: "crypto-exchanges", label: "Exchanges", blurb: "Where you buy, sell and trade — and where withdrawals get tested.", icon: Building2, accent: "#16C784", image: "/crypto-exchanges/hero.png" },
+  { slug: "crypto-wallets", label: "Wallets", blurb: "Self-custody and hot wallets we actually trust.", icon: Wallet, accent: "#16C784", image: "/crypto-wallets/hero.png" },
   { slug: "defi-platforms", label: "DeFi Platforms", blurb: "Real yield vs Ponzi yield — protocols rated on evidence.", icon: Network, accent: "#4F8BFF" },
   { slug: "crypto-staking", label: "Staking", blurb: "Earn genuine network rewards without the traps.", icon: Coins, accent: "#16C784" },
   { slug: "tokenized-assets", label: "Tokenized Assets (RWA)", blurb: "Gold, treasuries and property, on-chain.", icon: Gem, accent: "#A78BFA" },
@@ -151,16 +152,25 @@ const AiFinance = () => {
             {SECTORS.map((s) => {
               const count = hubCount(s.slug);
               return (
-                <Link key={s.slug} to={`/${s.slug}`} className="group relative overflow-hidden rounded-2xl border border-border bg-card/60 p-6 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-2xl">
-                  <div className="pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full blur-3xl transition-opacity group-hover:opacity-80" style={{ background: `${s.accent}26` }} />
-                  <div className="relative flex h-12 w-12 items-center justify-center rounded-xl" style={{ background: `${s.accent}1f` }}>
-                    <s.icon className="h-6 w-6" style={{ color: s.accent }} />
-                  </div>
-                  <h3 className="relative mt-4 font-heading text-lg font-bold">{s.label}</h3>
-                  <p className="relative mt-1 text-sm text-muted-foreground">{s.blurb}</p>
-                  <div className="relative mt-4 flex items-center justify-between">
-                    <span className="text-xs font-semibold text-muted-foreground">{count > 0 ? `${count} reviewed` : "Guide"}</span>
-                    <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary">Explore <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" /></span>
+                <Link key={s.slug} to={`/${s.slug}`} className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-2xl">
+                  {s.image ? (
+                    <div className="relative aspect-[16/10] overflow-hidden">
+                      <img src={s.image} alt={s.label} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-card via-card/10 to-transparent" />
+                    </div>
+                  ) : (
+                    <div className="relative flex aspect-[16/10] items-center justify-center overflow-hidden" style={{ background: `linear-gradient(135deg, ${s.accent}26, transparent)` }}>
+                      <div className="pointer-events-none absolute -right-6 -top-6 h-24 w-24 rounded-full blur-3xl" style={{ background: `${s.accent}40` }} />
+                      <s.icon className="relative h-14 w-14" style={{ color: s.accent }} />
+                    </div>
+                  )}
+                  <div className="flex flex-1 flex-col p-5">
+                    <h3 className="font-heading text-lg font-bold">{s.label}</h3>
+                    <p className="mt-1 flex-1 text-sm text-muted-foreground">{s.blurb}</p>
+                    <div className="mt-4 flex items-center justify-between border-t border-border/60 pt-3">
+                      <span className="text-xs font-semibold text-muted-foreground">{count > 0 ? `${count} reviewed` : "Guide"}</span>
+                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary">Explore <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" /></span>
+                    </div>
                   </div>
                 </Link>
               );

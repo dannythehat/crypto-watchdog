@@ -32,12 +32,19 @@ const ScamGuides = () => (
     <Navbar />
     <main>
       <SectionWrapper className="pt-28 md:pt-36">
-        <div className="mx-auto max-w-3xl text-center">
-          <ShieldAlert className="mx-auto h-12 w-12 text-primary" />
-          <h1 className="mt-4 text-4xl md:text-5xl">Crypto scam guides</h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-            The scams change costume; the playbook rarely does. These guides teach you the patterns — so you can spot the next one before it spots you. No jargon, no fear-mongering, just what actually works.
-          </p>
+        <div className="grid items-center gap-8 md:grid-cols-5">
+          <div className="md:col-span-3">
+            <span className="inline-flex items-center gap-2 rounded-full border border-rating-red/30 bg-rating-red/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-rating-red"><ShieldAlert className="h-4 w-4" /> Scam prevention</span>
+            <h1 className="mt-4 text-4xl md:text-5xl">Crypto scam guides</h1>
+            <p className="mt-6 max-w-xl text-lg text-muted-foreground">
+              The scams change costume; the playbook rarely does. These guides teach you the patterns — so you can <strong className="text-foreground">spot the next one before it spots you.</strong> No jargon, no fear-mongering, just what actually works.
+            </p>
+          </div>
+          <div className="md:col-span-2">
+            <div className="relative overflow-hidden rounded-2xl border border-rating-red/30 shadow-2xl ring-1 ring-white/10">
+              <img src="/scam-guides/hero.png" alt="Crypto Watchdog — detect, verify and protect against crypto scams" className="w-full" loading="eager" />
+            </div>
+          </div>
         </div>
       </SectionWrapper>
 
