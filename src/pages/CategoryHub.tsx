@@ -58,7 +58,7 @@ const CategoryHub = () => {
   const avoid = hub.avoid.filter(getReview);
   const warnings = hub.warnings.map(getWarning).filter(Boolean) as NonNullable<ReturnType<typeof getWarning>>[];
   const posts = hub.relatedPosts.map(getBlogPost).filter(Boolean) as NonNullable<ReturnType<typeof getBlogPost>>[];
-  const otherHubs = hubs.filter((h) => h.slug !== hub.slug);
+  const otherHubs = hubs.filter((h) => h.slug !== hub.slug && !h.hidden);
   const guide = getHubGuide(hub.slug);
 
   // All listed platforms (from groups if present, else trusted+caution+avoid).

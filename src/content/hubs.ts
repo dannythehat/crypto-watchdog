@@ -23,6 +23,7 @@ export interface Hub {
   heroPrompt: string;     // Pollinations FLUX prompt for the hero image
   heroSeed: number;       // fixed seed → stable image
   heroImage?: string;     // self-hosted hero image (overrides the mascot in the hero)
+  hidden?: boolean;       // keep the page live (SEO) but exclude from nav/category tiles
   intro: string;          // markdown, rendered under the hero
   trusted: string[];      // review slugs (green)
   caution: string[];      // review slugs (orange)
@@ -319,6 +320,7 @@ export const hubs: Hub[] = [
   },
   {
     slug: "blockchains",
+    hidden: true,
     eyebrow: "Blockchains",
     title: "Best Crypto Blockchains 2026: Layer 1 vs Layer 2, Rated",
     metaTitle: "Layer 1 vs Layer 2: Best Blockchains 2026",
@@ -345,6 +347,7 @@ export const hubs: Hub[] = [
   },
   {
     slug: "crypto-staking",
+    hidden: true,
     eyebrow: "Staking",
     title: "Crypto Staking 2026: Earn Yield Without Getting Burned",
     metaTitle: "Best Crypto Staking 2026 (Safe Yield)",

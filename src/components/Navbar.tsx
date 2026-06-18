@@ -34,7 +34,7 @@ const Navbar = () => {
             </button>
             <div className="invisible absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-3 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
               <div className="overflow-hidden rounded-2xl border border-border bg-background/95 p-2 shadow-xl backdrop-blur-lg">
-                {hubs.map((h) => (
+                {hubs.filter((h) => !h.hidden).map((h) => (
                   <Link key={h.slug} to={`/${h.slug}`} className="block rounded-lg px-3 py-2 text-sm transition-colors hover:bg-card hover:text-primary">
                     <span className="font-medium">{h.eyebrow}</span>
                     <span className="block truncate text-xs text-muted-foreground">{h.metaTitle}</span>
@@ -95,7 +95,7 @@ const Navbar = () => {
             <li className="pt-1">
               <span className="block text-xs font-semibold uppercase tracking-wider text-primary">Categories</span>
               <ul className="mt-2 flex flex-col gap-2 border-l border-border pl-3">
-                {hubs.map((h) => (
+                {hubs.filter((h) => !h.hidden).map((h) => (
                   <li key={h.slug}>
                     <Link to={`/${h.slug}`} onClick={() => setOpen(false)} className="block text-sm text-muted-foreground transition-colors hover:text-foreground">
                       {h.eyebrow}
