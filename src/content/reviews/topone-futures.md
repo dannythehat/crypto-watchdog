@@ -8,7 +8,7 @@ summary: "## TopOneFutures review at a glance\n\n[TopOneFutures](https://toponef
 verdict: "TopOneFutures is one of the strongest sim-funded futures prop firms we have audited — fast payouts, transparent rules, and a serious trader-development culture."
 category_id: "0bd0b2b6-5ab0-4ca9-bffd-0ce68e303f81"
 website_url: "https://toponefutures.com/?linkId=lp_707970&sourceId=dannythehat&tenantId=toponefutures"
-logo_url: "https://cdn.prod.website-files.com/67d9f6c73e1490afc415fc90/68e4120434717d0e0adf6c3e_Logo.png"
+logo_url: null
 social_image_url: null
 pros: ["End-of-day trailing drawdown across every account type — no nasty intraday breaches","Payouts approved in under 4 hours on average; we measured 3h 36m twice","News trading allowed (FOMC, NFP, CPI) — rare in the prop-firm world","Up to 90% profit split, with a real Path-to-Live programme after 3 payouts","24/7 live chat that answers in under 60 seconds; trading academy included free","Multiple platforms: NinjaTrader, Tradovate, Quantower, TradingView, Bookmap","Crypto payouts via Riseworks (USDC) settle in under 20 minutes","13,000+ active traders, $22M+ already paid out, 3,300+ Trustpilot reviews"]
 cons: ["Sim-funded model: profits are paid from the firm's pool, not from live exchange P&L","Activation fee ($139–$359) is charged separately when you pass an evaluation","Max 3 active accounts per trader regardless of size — power scalpers may want more","Consistency rule (25–40%) means you cannot pass on a single huge winning day","Only 1 year in business as of writing — track record is shorter than Topstep or Apex"]
