@@ -30,7 +30,6 @@ const HUB_ICONS: Record<string, typeof BrainCircuit> = {
 // or its category pillar. Image-led; falls back to an icon where no art exists yet.
 const CATS: { label: string; about: string; to: string; image?: string; icon: typeof BrainCircuit; accent: string }[] = [
   { label: "AI Finance", about: "AI trading, bots & agents — what's real, and what's a scam in a chatbot costume.", to: "/ai-finance", image: "/ai-finance/hero.png", icon: BrainCircuit, accent: "#4F8BFF" },
-  { label: "Trading", about: "Copy trading, automated bots and AI strategies — rated on evidence, not hype.", to: "/trading", icon: Users, accent: "#F5A524" },
   { label: "Exchanges", about: "Where you buy, sell and trade — and where we test withdrawals for real.", to: "/crypto-exchanges", image: "/crypto-exchanges/hero.png", icon: ArrowLeftRight, accent: "#16C784" },
   { label: "Wallets", about: "Self-custody and hot wallets we actually trust — plus the fakes to avoid.", to: "/crypto-wallets", image: "/crypto-wallets/hero.png", icon: Wallet, accent: "#16C784" },
   { label: "DeFi", about: "Real yield vs Ponzi yield — protocols rated on what's verifiable on-chain.", to: "/defi-platforms", icon: Layers, accent: "#4F8BFF" },
