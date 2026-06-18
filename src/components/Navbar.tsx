@@ -16,6 +16,21 @@ const navLinks = [
   { label: "About", href: "/about" },
 ];
 
+// Curated top-level categories (the main landing pages), in order. Leaf
+// sub-categories live inside their parent landing, not in the top menu.
+const NAV_CATS = [
+  { label: "AI Finance", href: "/ai-finance", desc: "AI trading, bots, DeFi & more" },
+  { label: "Crypto Trading", href: "/crypto-trading", desc: "Bots, AI & copy trading" },
+  { label: "Exchanges", href: "/crypto-exchanges", desc: "Buy, sell & trade" },
+  { label: "Wallets", href: "/crypto-wallets", desc: "Self-custody & hot wallets" },
+  { label: "DeFi", href: "/defi-platforms", desc: "Real yield vs Ponzi yield" },
+  { label: "Tokenized Assets", href: "/tokenized-assets", desc: "Gold, treasuries, RWA" },
+  { label: "NFT Marketplaces", href: "/nft-marketplaces", desc: "Mint & trade safely" },
+  { label: "Crypto Cards", href: "/crypto-cards", desc: "Spend crypto, earn cashback" },
+  { label: "Casinos & Sportsbooks", href: "/crypto-casinos", desc: "Vetted crypto gambling" },
+  { label: "Scams & Safety", href: "/scam-guides", desc: "Spot & avoid scams" },
+];
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
@@ -34,16 +49,12 @@ const Navbar = () => {
             </button>
             <div className="invisible absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-3 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
               <div className="overflow-hidden rounded-2xl border border-border bg-background/95 p-2 shadow-xl backdrop-blur-lg">
-                {hubs.filter((h) => !h.hidden).map((h) => (
-                  <Link key={h.slug} to={`/${h.slug}`} className="block rounded-lg px-3 py-2 text-sm transition-colors hover:bg-card hover:text-primary">
-                    <span className="font-medium">{h.eyebrow}</span>
-                    <span className="block truncate text-xs text-muted-foreground">{h.metaTitle}</span>
+                {NAV_CATS.map((c) => (
+                  <Link key={c.href} to={c.href} className="block rounded-lg px-3 py-2 text-sm transition-colors hover:bg-card hover:text-primary">
+                    <span className="font-medium">{c.label}</span>
+                    <span className="block truncate text-xs text-muted-foreground">{c.desc}</span>
                   </Link>
                 ))}
-                <Link to="/crypto-casinos" className="block rounded-lg px-3 py-2 text-sm transition-colors hover:bg-card hover:text-primary">
-                  <span className="font-medium">Casinos &amp; Sportsbooks</span>
-                  <span className="block truncate text-xs text-muted-foreground">Best Crypto Casinos &amp; Sportsbooks 2026</span>
-                </Link>
               </div>
             </div>
           </li>
@@ -95,10 +106,10 @@ const Navbar = () => {
             <li className="pt-1">
               <span className="block text-xs font-semibold uppercase tracking-wider text-primary">Categories</span>
               <ul className="mt-2 flex flex-col gap-2 border-l border-border pl-3">
-                {hubs.filter((h) => !h.hidden).map((h) => (
-                  <li key={h.slug}>
-                    <Link to={`/${h.slug}`} onClick={() => setOpen(false)} className="block text-sm text-muted-foreground transition-colors hover:text-foreground">
-                      {h.eyebrow}
+                {NAV_CATS.map((c) => (
+                  <li key={c.href}>
+                    <Link to={c.href} onClick={() => setOpen(false)} className="block text-sm text-muted-foreground transition-colors hover:text-foreground">
+                      {c.label}
                     </Link>
                   </li>
                 ))}

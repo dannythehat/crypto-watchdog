@@ -19,6 +19,7 @@ import Freebies from "./pages/Freebies";
 import News from "./pages/News";
 import CryptoCasinos from "./pages/CryptoCasinos";
 import AiFinance from "./pages/AiFinance";
+import CryptoTrading from "./pages/CryptoTrading";
 import Methodology from "./pages/Methodology";
 import EditorialPolicy from "./pages/EditorialPolicy";
 import AffiliateDisclosure from "./pages/AffiliateDisclosure";
@@ -60,6 +61,7 @@ const App = () => (
           <Route path="/news" element={<News />} />
           <Route path="/crypto-casinos" element={<CryptoCasinos />} />
           <Route path="/ai-finance" element={<AiFinance />} />
+          <Route path="/crypto-trading" element={<CryptoTrading />} />
           <Route path="/methodology" element={<Methodology />} />
           <Route path="/editorial-policy" element={<EditorialPolicy />} />
           <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
