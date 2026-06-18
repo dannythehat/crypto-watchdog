@@ -151,7 +151,7 @@ A single backup in that house is gone, which is the whole argument for multiple 
 Two or three is a common, sensible range for full copies, stored in separate secure locations. More copies add redundancy but also more chances for one to be found or stolen, so don't overdo it. If you want to split the secret rather than duplicate it, Shamir lets you spread several shares around while requiring only a threshold to recover.
 
 **What's the difference between Shamir backup and multisig?**
-Shamir (SLIP-39) splits a single seed into shares and needs a threshold of them to rebuild that one secret. Multisig uses several entirely separate keys, each with its own seed, and requires a quorum to sign — there's no single master secret at any point. Multisig is generally the more robust model for large balances, but it's more complex to set up and back up, because you must also preserve the wallet configuration, not just the keys.
+Shamir (SLIP-39) splits a single seed into shares and needs a threshold of them to rebuild that one secret. Multisig uses several entirely separate keys, each with its own seed, and requires a quorum to sign — there's no single master secret at any point. Multisig is generally the more resilient model for large balances, but it's more complex to set up and back up, because you must also preserve the wallet configuration, not just the keys.
 
 **Do I need to test my backup, and how?**
 Yes. Restore your wallet from the backup onto a wiped or spare device and confirm it derives the same first receive address before you trust it with meaningful funds. An untested backup is just an assumption. Many people only discover a transcription error or a faulty share at the worst possible moment — a five-minute test now avoids that.

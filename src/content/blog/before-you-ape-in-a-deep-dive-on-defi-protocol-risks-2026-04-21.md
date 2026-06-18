@@ -36,7 +36,7 @@ When people say a protocol is "risky," they are usually blending several very di
 |---|---|---|---|
 | Smart contract bug | A flaw in the protocol's code | Funds drained via an exploit; protocol "paused" | Multiple audits, time in production, bug bounties |
 | Oracle manipulation | Feeding a contract a fake price | Bad liquidations, mispriced borrows, drained pools | Decentralised oracles (e.g. Chainlink), time-weighted prices |
-| Flash-loan attack | Borrow huge sums within one transaction to game a system | Sudden one-block exploit, often combined with an oracle attack | Robust price sources, reentrancy guards |
+| Flash-loan attack | Borrow huge sums within one transaction to game a system | Sudden one-block exploit, often combined with an oracle attack | Reliable price sources, reentrancy guards |
 | Economic / yield design | The tokenomics simply do not add up | "Stable" high APY, then a collapse | Yield you can trace to real revenue |
 | Rug pull / governance abuse | Insiders pull liquidity or change rules | Liquidity vanishes; team disappears | Doxxed teams, locked liquidity, timelocks |
 | Custody / key risk | You lose your keys or approve a malicious contract | Drained wallet from phishing or bad approvals | Hardware wallets, careful approvals |
