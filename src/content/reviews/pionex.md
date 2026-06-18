@@ -8,7 +8,7 @@ summary: "Pionex is a cryptocurrency exchange that distinguishes itself by offer
 verdict: "Pionex is a credible exchange platform that uniquely integrates a suite of automated trading bots, removing the need for external API connections. Crypto Watchdog views Pionex as a more secure model than connecting third-party bots, especially for users seeking to automate their crypto trading strategies. We recommend it for its functionality and integrated security."
 category_id: "bbcbe91c-ddaf-44e2-ba77-b3f5ba8dd60d"
 website_url: "https://www.pionex.com"
-logo_url: null
+logo_url: "/brands/pionex.png"
 social_image_url: null
 pros: ["16+ free built-in trading bots","Very low trading fees (0.05%)","Regulated in US and Singapore","Easy to use for beginners","Grid trading bot is excellent"]
 cons: ["Crypto-only (no fiat deposits)","Lower liquidity than major exchanges","Limited advanced charting","Smaller coin selection","Mobile-first — web interface basic"]

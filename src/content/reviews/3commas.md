@@ -8,7 +8,7 @@ summary: "3Commas is a well-known trading bot platform that facilitates automate
 verdict: "A platform offering useful automation for crypto trading, but the 2022 API key leak raises significant trust and security concerns. Users should proceed with extreme caution and configure API permissions stringently to mitigate potential risks. Crypto Watchdog advises a cautious approach due to these mixed signals."
 category_id: "bbcbe91c-ddaf-44e2-ba77-b3f5ba8dd60d"
 website_url: "https://3commas.io"
-logo_url: null
+logo_url: "/brands/3commas.png"
 social_image_url: null
 pros: ["Wide range of bot strategies","Connects to 18+ exchanges","SmartTrade terminal","Free tier available"]
 cons: ["2022 API key breach — initially denied","Trust recovery in progress","Complex for beginners","Performance depends on market"]

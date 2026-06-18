@@ -8,7 +8,7 @@ summary: "Cryptohopper is a cloud-based platform offering automated crypto tradi
 verdict: "Cryptohopper receives an Orange Alert rating from Crypto Watchdog. It offers genuine functionality, yet its efficacy is hampered by inflated marketing, opaque operational details, recurring subscription fees, and a pattern of mixed user sentiment regarding profitability and support. We advise extreme caution."
 category_id: "bbcbe91c-ddaf-44e2-ba77-b3f5ba8dd60d"
 website_url: "https://www.cryptohopper.com"
-logo_url: null
+logo_url: "/brands/cryptohopper.png"
 social_image_url: null
 pros: ["Cloud-based — runs 24/7","Marketplace for strategies","Backtesting available","Connects to major exchanges","Paper trading for testing"]
 cons: ["Subscription fees add up","Performance claims can be misleading","Marketplace strategies vary wildly","Learning curve is steep","Free tier very limited"]

@@ -8,7 +8,7 @@ summary: "Aurum Foundation is a crypto passive-income platform built around its 
 verdict: "Verified — passed our deposit, withdrawal and operational checks. Transparent team, working product and a credible AI-yield model. Treat all yield platforms as variable-return: never deposit more than you can afford to lose, and use only funds you do not need for daily life."
 category_id: "f3edb2a4-e7e0-482a-9826-8c6d6f3aa6a9"
 website_url: "https://backoffice.aurum.foundation/u/PKK5U0"
-logo_url: null
+logo_url: "/brands/aurum-foundation.png"
 social_image_url: null
 pros: ["Real deposits credited (typically within ~30 minutes via Solana)","Two test withdrawals completed successfully (24h and ~1h)","Daily profit credits received throughout the ~3-month review period","Polished dashboard with clear transaction history","Clear Ex-AI Bot package structure and built-in profit calculator","Platform currently appears operational from the user side"]
 cons: ["No user-level visibility into actual backend trading activity","1-year lock-up on capital with a 30% early-exit fee (drops to ~1% at full term)","Long-term sustainability of the daily yield model is unknown","Customer support felt generic / bot-like in our testing","Android app experience needs work — not yet polished","Trustpilot score sits at a mixed 3.7"]
