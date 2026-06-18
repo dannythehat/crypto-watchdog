@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import {
   ArrowRight, Bot, Building2, Wallet, Users, Network, Coins, Gem, Image as ImageIcon,
-  CreditCard, Boxes, Cpu, LifeBuoy, BrainCircuit, Database, Cog, ShieldCheck, Star, ExternalLink, Eye, Scale,
+  CreditCard, Boxes, Cpu, BrainCircuit, Database, Cog, ShieldCheck, Eye, Scale, BookOpen,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,11 +9,8 @@ import SectionWrapper from "@/components/SectionWrapper";
 import Seo from "@/components/Seo";
 import AuroraBackdrop from "@/components/AuroraBackdrop";
 import WatchdogMascot from "@/components/WatchdogMascot";
-import PlatformCard from "@/components/PlatformCard";
-import RatingBadge from "@/components/RatingBadge";
 import { getHub } from "@/content/hubs";
-import { getReview, getAffiliateByReviewSlug, isMonetisable } from "@/content";
-import { trackEvent } from "@/lib/analytics";
+import { getReview, getBlogPost } from "@/content";
 import { breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 
 // Sectors that branch off AI / crypto finance. Each tile links to its hub and
@@ -32,6 +29,24 @@ const SECTORS: { slug: string; label: string; blurb: string; icon: typeof Bot; a
   { slug: "blockchains", label: "Blockchains", blurb: "The base layers, rated by security and track record.", icon: Boxes, accent: "#4F8BFF" },
   { slug: "cloud-mining", label: "Cloud Mining", blurb: "One of crypto's scam-heaviest corners — tread carefully.", icon: Cpu, accent: "#F5A524", image: "/cloud-mining/hero.png" },
 ];
+
+// Typical risk per category (our editorial read) — powers the at-a-glance table.
+const RISK: Record<string, string> = {
+  "ai-trading-platforms": "High",
+  "copy-trading": "High",
+  "crypto-trading-bots": "High",
+  "crypto-exchanges": "Medium",
+  "crypto-wallets": "Low",
+  "defi-platforms": "High",
+  "crypto-staking": "Medium",
+  "tokenized-assets": "Medium",
+  "nft-marketplaces": "High",
+  "crypto-cards": "Low",
+  "blockchains": "Low",
+  "cloud-mining": "Very high",
+};
+const riskClass = (r: string) =>
+  r === "Low" ? "text-rating-green" : r === "Medium" ? "text-rating-orange" : "text-rating-red";
 
 const hubCount = (slug: string): number => {
   const h = getHub(slug);
@@ -71,6 +86,9 @@ const AiFinance = () => {
     const h = getHub(s.slug);
     return h ? (h.groups ? h.groups.flatMap((g) => g.slugs) : [...h.trusted, ...h.caution, ...h.avoid]) : [];
   })).size;
+
+  const guides = ["what-is-ai-finance-crypto", "how-to-spot-ai-washing-crypto", "non-custodial-ai-trading-bots-explained", "aurum-neyro-bot-review-is-aurum-a-scam", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09"]
+    .map(getBlogPost).filter(Boolean).slice(0, 3) as NonNullable<ReturnType<typeof getBlogPost>>[];
 
   return (
     <>
@@ -175,6 +193,35 @@ const AiFinance = () => {
           </div>
         </SectionWrapper>
 
+        {/* At a glance — comparison table */}
+        <SectionWrapper className="border-y border-border bg-card/40">
+          <h2 className="font-heading text-2xl font-bold md:text-3xl">AI finance categories at a glance</h2>
+          <p className="mt-2 max-w-2xl text-muted-foreground">A quick comparison of every category — what it is, how risky it tends to be, and where to dig in. <span className="md:hidden">Swipe the table sideways →</span></p>
+          <div className="mt-6 overflow-x-auto rounded-2xl border border-border bg-card/60 backdrop-blur-md">
+            <table className="w-full min-w-[640px] text-sm">
+              <thead>
+                <tr className="bg-gradient-to-r from-primary/10 to-transparent text-left">
+                  {["Category", "What it is", "Typical risk", "Reviewed", ""].map((h) => <th key={h} className="px-4 py-3 font-heading font-semibold">{h}</th>)}
+                </tr>
+              </thead>
+              <tbody>
+                {SECTORS.map((s, i) => {
+                  const risk = RISK[s.slug] || "Medium";
+                  return (
+                    <tr key={s.slug} className={`border-t border-border/60 transition-colors hover:bg-foreground/5 ${i % 2 ? "bg-foreground/[0.015]" : ""}`}>
+                      <td className="px-4 py-3"><Link to={`/${s.slug}`} className="font-semibold hover:text-primary">{s.label}</Link></td>
+                      <td className="px-4 py-3 text-muted-foreground">{s.blurb}</td>
+                      <td className={`px-4 py-3 font-semibold ${riskClass(risk)}`}>{risk}</td>
+                      <td className="px-4 py-3 text-muted-foreground">{hubCount(s.slug) || "—"}</td>
+                      <td className="px-4 py-3"><Link to={`/${s.slug}`} className="inline-flex items-center gap-1 font-semibold text-primary hover:underline">Explore <ArrowRight className="h-3.5 w-3.5" /></Link></td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </SectionWrapper>
+
         {/* How we rate */}
         <SectionWrapper>
           <div className="text-center"><h2 className="font-heading text-2xl font-bold md:text-3xl">How we rate AI finance platforms</h2><p className="mx-auto mt-3 max-w-2xl text-muted-foreground">Every platform runs through the same evidence-led checklist before it gets a score. <Link to="/methodology" className="font-medium text-primary underline underline-offset-2">See our full methodology</Link>.</p></div>
@@ -203,6 +250,24 @@ const AiFinance = () => {
                   </details>
                 ))}
               </div>
+            </div>
+          </SectionWrapper>
+        )}
+
+        {/* Related guides */}
+        {guides.length > 0 && (
+          <SectionWrapper>
+            <div className="mb-6 inline-flex items-center gap-2 text-primary"><BookOpen className="h-5 w-5" /><span className="text-sm font-semibold uppercase tracking-wider">Go deeper</span></div>
+            <h2 className="font-heading text-2xl font-bold md:text-3xl">AI finance guides worth reading first</h2>
+            <div className="mt-8 grid gap-5 md:grid-cols-3">
+              {guides.map((p) => (
+                <Link key={p.slug} to={`/blog/${p.slug}`} className="group flex flex-col rounded-2xl border border-border bg-card/60 p-5 backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-lg">
+                  {p.category && <span className="text-xs font-semibold uppercase tracking-wide text-primary">{p.category}</span>}
+                  <h3 className="mt-1 font-heading font-semibold leading-snug">{p.title}</h3>
+                  {p.summary && <p className="mt-2 line-clamp-3 flex-1 text-sm text-muted-foreground">{p.summary.replace(/[#>*_`~|]/g, " ").slice(0, 140)}</p>}
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary">Read guide <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" /></span>
+                </Link>
+              ))}
             </div>
           </SectionWrapper>
         )}
