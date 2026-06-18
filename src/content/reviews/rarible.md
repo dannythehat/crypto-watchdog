@@ -8,7 +8,7 @@ summary: "A multi-chain NFT marketplace with its own RARI governance token. Supp
 verdict: "A reasonable second-tier NFT marketplace — multi-chain support is genuinely useful, and royalties are enforced. But volume sits well behind OpenSea, Blur, and Magic Eden. Use it if you need a chain they don't serve, otherwise the bigger marketplaces have deeper liquidity."
 category_id: "29b65ab5-0f7f-41e7-bc34-c6df3f2667a3"
 website_url: "https://rarible.com"
-logo_url: "https://rarible.com/favicon.ico"
+logo_url: "/brands/rarible.png"
 social_image_url: null
 pros: ["True multi-chain support across 10+ networks","Enforces creator royalties (unlike some competitors)","Open-source protocol with aggregator features","RARI governance token aligns long-term incentives"]
 cons: ["Volume far behind OpenSea, Blur, Magic Eden","RARI token has underperformed since launch","NFT market itself remains illiquid and speculative"]

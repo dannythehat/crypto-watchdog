@@ -21,94 +21,94 @@ Bespoke page. Sector tiles → Crypto Trading, Exchanges, Wallets, DeFi, Tokeniz
 Bespoke page. Sub-tiles → AI Trading Bots, Trading Bots, Copy Trading, Exchanges.
 
 - **AI Trading Bots** — hero✅ · guide✅ · articles:18
-  - ✅ **Aurum Foundation** `aurum-foundation` · GREEN 82/100 · ◻️no-logo · 💲active
-  - ✅ **Pionex** `pionex` · GREEN 72/100 · ◻️no-logo · ○needs_signup
-  - ✅ **3Commas** `3commas` · ORANGE 52/100 · ◻️no-logo · ○needs_signup
-  - ✅ **Cryptohopper** `cryptohopper` · ORANGE 52/100 · ◻️no-logo · 💲active
+  - ✅ **Aurum Foundation** `aurum-foundation` · GREEN 82/100 · 🖼️brand · 💲active
+  - ✅ **Pionex** `pionex` · GREEN 72/100 · 🖼️brand · ○needs_signup
+  - ✅ **3Commas** `3commas` · ORANGE 52/100 · 🖼️brand · ○needs_signup
+  - ✅ **Cryptohopper** `cryptohopper` · ORANGE 52/100 · 🖼️brand · 💲active
   - ✅ **YieldMax AI** `yieldmax-ai` · RED 3/100 · ◻️no-logo · ○blocked
   - ✅ **ShadowTradeBot** `shadowtradebot` · RED null/100 · ◻️no-logo · ○blocked
   - ✅ **Paid Crypto Signal Groups (Category Warning)** `crypto-signal-services-general` · RED 18/100 · ◻️no-logo · ○blocked
 
 - **Trading Bots** — hero✅ · guide✅ · articles:10
-  - ✅ **Pionex** `pionex` · GREEN 72/100 · ◻️no-logo · ○needs_signup
-  - ✅ **3Commas** `3commas` · ORANGE 52/100 · ◻️no-logo · ○needs_signup
-  - ✅ **Cryptohopper** `cryptohopper` · ORANGE 52/100 · ◻️no-logo · 💲active
+  - ✅ **Pionex** `pionex` · GREEN 72/100 · 🖼️brand · ○needs_signup
+  - ✅ **3Commas** `3commas` · ORANGE 52/100 · 🖼️brand · ○needs_signup
+  - ✅ **Cryptohopper** `cryptohopper` · ORANGE 52/100 · 🖼️brand · 💲active
   - ✅ **ShadowTradeBot** `shadowtradebot` · RED null/100 · ◻️no-logo · ○blocked
 
 - **Copy Trading** — hero✅ · guide✅ · articles:8
-  - ✅ **eToro CopyTrader** `etoro-copytrader` · ORANGE 55/100 · ◻️no-logo · ○needs_signup
-  - ✅ **ZuluTrade** `zulutrade` · ORANGE 45/100 · ◻️no-logo · ○needs_signup
+  - ✅ **eToro CopyTrader** `etoro-copytrader` · ORANGE 55/100 · 🖼️brand · ○needs_signup
+  - ✅ **ZuluTrade** `zulutrade` · ORANGE 45/100 · 🖼️brand · ○needs_signup
   - ✅ **Bitget Copy Trading** `bitget-copy-trading` · ORANGE 68/100 · 🖼️brand · —
   - ✅ **Bybit Copy Trading** `bybit-copy-trading` · ORANGE 66/100 · 🖼️brand · —
   - ✅ **OKX Copy Trading** `okx-copy-trading` · ORANGE 70/100 · 🖼️brand · —
-  - ✅ **Aurum Foundation** `aurum-foundation` · GREEN 82/100 · ◻️no-logo · 💲active
-  - ✅ **3Commas** `3commas` · ORANGE 52/100 · ◻️no-logo · ○needs_signup
+  - ✅ **Aurum Foundation** `aurum-foundation` · GREEN 82/100 · 🖼️brand · 💲active
+  - ✅ **3Commas** `3commas` · ORANGE 52/100 · 🖼️brand · ○needs_signup
 
 - **Exchanges (also under Crypto Trading)** — hero✅ · guide✅ · articles:15
   - ✅ **Kraken** `kraken` · GREEN 98/100 · 🖼️brand · 💲active
   - ✅ **Coinbase** `coinbase` · GREEN 96/100 · 🖼️brand · ○needs_signup
-  - ✅ **Binance** `binance` · GREEN 93/100 · ◻️no-logo · 💲active
-  - ✅ **XT.com** `xt-com` · GREEN 97/100 · 🖼️ · ○needs_signup
+  - ✅ **Binance** `binance` · GREEN 93/100 · 🖼️brand · 💲active
+  - ✅ **XT.com** `xt-com` · GREEN 97/100 · 🖼️brand · ○needs_signup
   - ✅ **OKX** `okx` · GREEN 84/100 · 🖼️brand · ○needs_signup
   - ✅ **Crypto.com Exchange** `crypto-com-exchange` · GREEN 80/100 · 🖼️brand · —
   - ✅ **Bitget** `bitget` · ORANGE 56/100 · 🖼️brand · 💲active
   - ✅ **Bybit** `bybit` · ORANGE 55/100 · 🖼️brand · ○needs_signup
-  - ✅ **KuCoin** `kucoin` · ORANGE 48/100 · ◻️no-logo · ○needs_signup
-  - ✅ **BingX** `bingx` · ORANGE 50/100 · ◻️no-logo · ○needs_signup
-  - ✅ **Uniswap** `uniswap` · GREEN 92/100 · ◻️no-logo · ○needs_signup
-  - ✅ **PancakeSwap** `pancakeswap` · GREEN 74/100 · ◻️no-logo · ○needs_signup
-  - ✅ **Curve Finance** `curve-finance` · GREEN 78/100 · ◻️no-logo · ○needs_signup
-  - ✅ **Bisq** `bisq` · GREEN 82/100 · 🖼️ · ○needs_signup
-  - ✅ **eToro** `etoro` · ORANGE 68/100 · 🖼️ · ○needs_signup
+  - ✅ **KuCoin** `kucoin` · ORANGE 48/100 · 🖼️brand · ○needs_signup
+  - ✅ **BingX** `bingx` · ORANGE 50/100 · 🖼️brand · ○needs_signup
+  - ✅ **Uniswap** `uniswap` · GREEN 92/100 · 🖼️brand · ○needs_signup
+  - ✅ **PancakeSwap** `pancakeswap` · GREEN 74/100 · 🖼️brand · ○needs_signup
+  - ✅ **Curve Finance** `curve-finance` · GREEN 78/100 · 🖼️brand · ○needs_signup
+  - ✅ **Bisq** `bisq` · GREEN 82/100 · 🖼️brand · ○needs_signup
+  - ✅ **eToro** `etoro` · ORANGE 68/100 · 🖼️brand · ○needs_signup
 
 - **Wallets** — hero✅ · guide✅ · articles:14
-  - ✅ **Ledger Nano X** `ledger-nano-x` · GREEN 92/100 · ◻️no-logo · 💲active
-  - ✅ **Trezor** `trezor` · GREEN 92/100 · 🖼️ · 💲active
-  - ✅ **MetaMask** `metamask` · GREEN 91/100 · ◻️no-logo · ○needs_signup
-  - ✅ **Phantom Wallet** `phantom` · GREEN 81/100 · ◻️no-logo · ○needs_signup
-  - ✅ **Trust Wallet** `trust-wallet` · GREEN 78/100 · ◻️no-logo · ○needs_signup
-  - ✅ **Safe (formerly Gnosis Safe)** `safe-gnosis` · GREEN 92/100 · 🖼️ · ○needs_signup
-  - ✅ **Argent** `argent-wallet` · GREEN 84/100 · 🖼️ · ○needs_signup
+  - ✅ **Ledger Nano X** `ledger-nano-x` · GREEN 92/100 · 🖼️brand · 💲active
+  - ✅ **Trezor** `trezor` · GREEN 92/100 · 🖼️brand · 💲active
+  - ✅ **MetaMask** `metamask` · GREEN 91/100 · 🖼️brand · ○needs_signup
+  - ✅ **Phantom Wallet** `phantom` · GREEN 81/100 · 🖼️brand · ○needs_signup
+  - ✅ **Trust Wallet** `trust-wallet` · GREEN 78/100 · 🖼️brand · ○needs_signup
+  - ✅ **Safe (formerly Gnosis Safe)** `safe-gnosis` · GREEN 92/100 · 🖼️brand · ○needs_signup
+  - ✅ **Argent** `argent-wallet` · GREEN 84/100 · 🖼️brand · ○needs_signup
   - ✅ **Coinbase (Custodial Account)** `coinbase-wallet-custodial` · ORANGE 72/100 · 🖼️ · ○needs_signup
 
 - **DeFi** — hero✅ · guide✅ · articles:13
-  - ✅ **Aave** `aave` · GREEN 91/100 · ◻️no-logo · ○needs_signup
-  - ✅ **Uniswap** `uniswap` · GREEN 92/100 · ◻️no-logo · ○needs_signup
-  - ✅ **Curve Finance** `curve-finance` · GREEN 78/100 · ◻️no-logo · ○needs_signup
-  - ✅ **PancakeSwap** `pancakeswap` · GREEN 74/100 · ◻️no-logo · ○needs_signup
-  - ✅ **Rocket Pool** `rocket-pool` · GREEN 80/100 · ◻️no-logo · ○needs_signup
-  - ✅ **DeFiLlama** `defillama` · GREEN 95/100 · 🖼️ · ○needs_signup
-  - ✅ **Zapper** `zapper` · GREEN 84/100 · 🖼️ · ○needs_signup
-  - ✅ **Lido Finance** `lido-finance` · ORANGE 58/100 · ◻️no-logo · ○needs_signup
-  - ✅ **GMX** `gmx` · ORANGE 78/100 · 🖼️ · ○needs_signup
+  - ✅ **Aave** `aave` · GREEN 91/100 · 🖼️brand · ○needs_signup
+  - ✅ **Uniswap** `uniswap` · GREEN 92/100 · 🖼️brand · ○needs_signup
+  - ✅ **Curve Finance** `curve-finance` · GREEN 78/100 · 🖼️brand · ○needs_signup
+  - ✅ **PancakeSwap** `pancakeswap` · GREEN 74/100 · 🖼️brand · ○needs_signup
+  - ✅ **Rocket Pool** `rocket-pool` · GREEN 80/100 · 🖼️brand · ○needs_signup
+  - ✅ **DeFiLlama** `defillama` · GREEN 95/100 · 🖼️brand · ○needs_signup
+  - ✅ **Zapper** `zapper` · GREEN 84/100 · 🖼️brand · ○needs_signup
+  - ✅ **Lido Finance** `lido-finance` · ORANGE 58/100 · 🖼️brand · ○needs_signup
+  - ✅ **GMX** `gmx` · ORANGE 78/100 · 🖼️brand · ○needs_signup
   - ✅ **Anchor Protocol (Defunct)** `anchor-protocol` · RED 3/100 · ◻️no-logo · ○blocked
   - ✅ **BitConnect** `bitconnect` · RED 5/100 · ◻️no-logo · ○blocked
   - ✅ **BlockFi (Defunct)** `blockfi` · RED 5/100 · ◻️no-logo · ○blocked
 
 - **Tokenized Assets** — hero✅ · guide✅ · articles:6
-  - ✅ **PAX Gold (PAXG)** `pax-gold` · GREEN 88/100 · ◻️no-logo · —
-  - ✅ **Ondo Finance** `ondo-finance` · GREEN 85/100 · ◻️no-logo · —
-  - ✅ **Kinesis Money** `kinesis-money` · GREEN 91/100 · ◻️no-logo · 💲active
-  - ✅ **Tether Gold (XAUT)** `tether-gold` · GREEN 80/100 · ◻️no-logo · —
-  - ✅ **RealT** `realt` · ORANGE 60/100 · ◻️no-logo · —
+  - ✅ **PAX Gold (PAXG)** `pax-gold` · GREEN 88/100 · 🖼️brand · —
+  - ✅ **Ondo Finance** `ondo-finance` · GREEN 85/100 · 🖼️brand · —
+  - ✅ **Kinesis Money** `kinesis-money` · GREEN 91/100 · 🖼️brand · 💲active
+  - ✅ **Tether Gold (XAUT)** `tether-gold` · GREEN 80/100 · 🖼️brand · —
+  - ✅ **RealT** `realt` · ORANGE 60/100 · 🖼️brand · —
 
 - **NFT Marketplaces** — hero✅ · guide✅ · articles:4
   - ✅ **Crypto.com NFT** `crypto-com-nft` · ORANGE 70/100 · 🖼️brand · —
-  - ✅ **OpenSea** `opensea` · ORANGE 72/100 · 🖼️ · ○needs_signup
-  - ✅ **Magic Eden** `magic-eden` · ORANGE 73/100 · 🖼️ · ○needs_signup
-  - ✅ **Blur** `blur` · ORANGE 68/100 · 🖼️ · ○needs_signup
-  - ✅ **Rarible** `rarible` · ORANGE 70/100 · 🖼️ · ○needs_signup
+  - ✅ **OpenSea** `opensea` · ORANGE 72/100 · 🖼️brand · ○needs_signup
+  - ✅ **Magic Eden** `magic-eden` · ORANGE 73/100 · 🖼️brand · ○needs_signup
+  - ✅ **Blur** `blur` · ORANGE 68/100 · 🖼️brand · ○needs_signup
+  - ✅ **Rarible** `rarible` · ORANGE 70/100 · 🖼️brand · ○needs_signup
   - ✅ **Axie Infinity** `axie-infinity` · RED 38/100 · 🖼️ · ○blocked
 
 - **Crypto Cards** — hero✅ · guide✅ · articles:5
   - ✅ **Coinbase Card** `coinbase-card` · GREEN 86/100 · 🖼️brand · —
-  - ✅ **Tangem Pay** `tangem-pay` · GREEN 78/100 · ◻️no-logo · —
+  - ✅ **Tangem Pay** `tangem-pay` · GREEN 78/100 · 🖼️brand · —
   - ✅ **Crypto.com Visa Card** `crypto-com-visa-card` · ORANGE 72/100 · 🖼️brand · —
-  - ✅ **Nexo Card** `nexo-card` · ORANGE 66/100 · ◻️no-logo · —
-  - ✅ **Oobit** `oobit` · ORANGE 70/100 · ◻️no-logo · —
+  - ✅ **Nexo Card** `nexo-card` · ORANGE 66/100 · 🖼️brand · —
+  - ✅ **Oobit** `oobit` · ORANGE 70/100 · 🖼️brand · —
 
 - **Cloud Mining** — hero✅ · guide✅ · articles:4
-  - ✅ **NiceHash** `nicehash` · ORANGE 65/100 · 🖼️ · ○needs_signup
+  - ✅ **NiceHash** `nicehash` · ORANGE 65/100 · 🖼️brand · ○needs_signup
   - ✅ **CryptoMine Pro** `cryptomine-pro` · RED 8/100 · ◻️no-logo · ○blocked
 
 ## 3. Other top-level pages
@@ -145,66 +145,25 @@ Bespoke page. Sub-tiles → AI Trading Bots, Trading Bots, Copy Trading, Exchang
 - ⚠️ stake
 
 ### Reviews with no brand logo (using fallback — supply a logo to upgrade)
-- ◻️ 3commas
-- ◻️ aave
 - ◻️ across-protocol
 - ◻️ alchemy
 - ◻️ arbitrum
-- ◻️ argent-wallet
-- ◻️ aurum-foundation
 - ◻️ bc-game
-- ◻️ binance
-- ◻️ bingx
-- ◻️ bisq
 - ◻️ bitcasino-io
 - ◻️ bitcoin
 - ◻️ bitstarz
-- ◻️ blur
 - ◻️ cloudbet
 - ◻️ coinbase-wallet-custodial
-- ◻️ cryptohopper
-- ◻️ curve-finance
-- ◻️ defillama
 - ◻️ ethereum
-- ◻️ etoro-copytrader
-- ◻️ etoro
-- ◻️ gmx
-- ◻️ kinesis-money
-- ◻️ kucoin
-- ◻️ ledger-nano-x
-- ◻️ lido-finance
 - ◻️ lucky-block
-- ◻️ magic-eden
-- ◻️ metamask
-- ◻️ nexo-card
-- ◻️ nicehash
-- ◻️ ondo-finance
-- ◻️ oobit
-- ◻️ opensea
 - ◻️ optimism
-- ◻️ pancakeswap
-- ◻️ pax-gold
-- ◻️ phantom
-- ◻️ pionex
-- ◻️ rarible
-- ◻️ realt
-- ◻️ rocket-pool
 - ◻️ rollbit
 - ◻️ roobet
-- ◻️ safe-gnosis
 - ◻️ solana
 - ◻️ sportsbet-io
 - ◻️ stake
-- ◻️ tangem-pay
-- ◻️ tether-gold
 - ◻️ thomas-crypto-signals
 - ◻️ topone-futures
-- ◻️ trezor
-- ◻️ trust-wallet
-- ◻️ uniswap
-- ◻️ xt-com
-- ◻️ zapper
-- ◻️ zulutrade
 
 ### Hubs missing a hero image
 - none 🎉
@@ -222,42 +181,42 @@ Bespoke page. Sub-tiles → AI Trading Bots, Trading Bots, Copy Trading, Exchang
 - ⚠️ thin **Cloudbet** `cloudbet` · GREEN 84/100 · ◻️no-logo · —
 - ⚠️ thin **Sportsbet.io** `sportsbet-io` · GREEN 78/100 · ◻️no-logo · —
 - ⚠️ thin **Stake** `stake` · GREEN 82/100 · ◻️no-logo · —
-- ✅ **Aave** `aave` · GREEN 91/100 · ◻️no-logo · ○needs_signup
+- ✅ **Aave** `aave` · GREEN 91/100 · 🖼️brand · ○needs_signup
 - ✅ **Alchemy** `alchemy` · GREEN 86/100 · 🖼️ · ○needs_signup
 - ✅ **Arbitrum** `arbitrum` · GREEN 90/100 · 🖼️ · ○needs_signup
-- ✅ **Argent** `argent-wallet` · GREEN 84/100 · 🖼️ · ○needs_signup
-- ✅ **Aurum Foundation** `aurum-foundation` · GREEN 82/100 · ◻️no-logo · 💲active
-- ✅ **Binance** `binance` · GREEN 93/100 · ◻️no-logo · 💲active
-- ✅ **Bisq** `bisq` · GREEN 82/100 · 🖼️ · ○needs_signup
+- ✅ **Argent** `argent-wallet` · GREEN 84/100 · 🖼️brand · ○needs_signup
+- ✅ **Aurum Foundation** `aurum-foundation` · GREEN 82/100 · 🖼️brand · 💲active
+- ✅ **Binance** `binance` · GREEN 93/100 · 🖼️brand · 💲active
+- ✅ **Bisq** `bisq` · GREEN 82/100 · 🖼️brand · ○needs_signup
 - ✅ **Bitcoin** `bitcoin` · GREEN 95/100 · 🖼️ · ○needs_signup
 - ✅ **Coinbase Card** `coinbase-card` · GREEN 86/100 · 🖼️brand · —
 - ✅ **Coinbase** `coinbase` · GREEN 96/100 · 🖼️brand · ○needs_signup
 - ✅ **Crypto.com Exchange** `crypto-com-exchange` · GREEN 80/100 · 🖼️brand · —
 - ✅ **Crypto.com** `crypto-com` · GREEN 82/100 · 🖼️brand · —
-- ✅ **Curve Finance** `curve-finance` · GREEN 78/100 · ◻️no-logo · ○needs_signup
-- ✅ **DeFiLlama** `defillama` · GREEN 95/100 · 🖼️ · ○needs_signup
+- ✅ **Curve Finance** `curve-finance` · GREEN 78/100 · 🖼️brand · ○needs_signup
+- ✅ **DeFiLlama** `defillama` · GREEN 95/100 · 🖼️brand · ○needs_signup
 - ✅ **Ethereum** `ethereum` · GREEN 92/100 · 🖼️ · ○needs_signup
-- ✅ **Kinesis Money** `kinesis-money` · GREEN 91/100 · ◻️no-logo · 💲active
+- ✅ **Kinesis Money** `kinesis-money` · GREEN 91/100 · 🖼️brand · 💲active
 - ✅ **Kraken** `kraken` · GREEN 98/100 · 🖼️brand · 💲active
-- ✅ **Ledger Nano X** `ledger-nano-x` · GREEN 92/100 · ◻️no-logo · 💲active
-- ✅ **MetaMask** `metamask` · GREEN 91/100 · ◻️no-logo · ○needs_signup
+- ✅ **Ledger Nano X** `ledger-nano-x` · GREEN 92/100 · 🖼️brand · 💲active
+- ✅ **MetaMask** `metamask` · GREEN 91/100 · 🖼️brand · ○needs_signup
 - ✅ **OKX** `okx` · GREEN 84/100 · 🖼️brand · ○needs_signup
-- ✅ **Ondo Finance** `ondo-finance` · GREEN 85/100 · ◻️no-logo · —
+- ✅ **Ondo Finance** `ondo-finance` · GREEN 85/100 · 🖼️brand · —
 - ✅ **Optimism (OP Mainnet)** `optimism` · GREEN 92/100 · 🖼️ · ○needs_signup
-- ✅ **PAX Gold (PAXG)** `pax-gold` · GREEN 88/100 · ◻️no-logo · —
-- ✅ **PancakeSwap** `pancakeswap` · GREEN 74/100 · ◻️no-logo · ○needs_signup
-- ✅ **Phantom Wallet** `phantom` · GREEN 81/100 · ◻️no-logo · ○needs_signup
-- ✅ **Pionex** `pionex` · GREEN 72/100 · ◻️no-logo · ○needs_signup
-- ✅ **Rocket Pool** `rocket-pool` · GREEN 80/100 · ◻️no-logo · ○needs_signup
-- ✅ **Safe (formerly Gnosis Safe)** `safe-gnosis` · GREEN 92/100 · 🖼️ · ○needs_signup
-- ✅ **Tangem Pay** `tangem-pay` · GREEN 78/100 · ◻️no-logo · —
-- ✅ **Tether Gold (XAUT)** `tether-gold` · GREEN 80/100 · ◻️no-logo · —
+- ✅ **PAX Gold (PAXG)** `pax-gold` · GREEN 88/100 · 🖼️brand · —
+- ✅ **PancakeSwap** `pancakeswap` · GREEN 74/100 · 🖼️brand · ○needs_signup
+- ✅ **Phantom Wallet** `phantom` · GREEN 81/100 · 🖼️brand · ○needs_signup
+- ✅ **Pionex** `pionex` · GREEN 72/100 · 🖼️brand · ○needs_signup
+- ✅ **Rocket Pool** `rocket-pool` · GREEN 80/100 · 🖼️brand · ○needs_signup
+- ✅ **Safe (formerly Gnosis Safe)** `safe-gnosis` · GREEN 92/100 · 🖼️brand · ○needs_signup
+- ✅ **Tangem Pay** `tangem-pay` · GREEN 78/100 · 🖼️brand · —
+- ✅ **Tether Gold (XAUT)** `tether-gold` · GREEN 80/100 · 🖼️brand · —
 - ✅ **TopOneFutures** `topone-futures` · GREEN 90/100 · ◻️no-logo · ○needs_signup
-- ✅ **Trezor** `trezor` · GREEN 92/100 · 🖼️ · 💲active
-- ✅ **Trust Wallet** `trust-wallet` · GREEN 78/100 · ◻️no-logo · ○needs_signup
-- ✅ **Uniswap** `uniswap` · GREEN 92/100 · ◻️no-logo · ○needs_signup
-- ✅ **XT.com** `xt-com` · GREEN 97/100 · 🖼️ · ○needs_signup
-- ✅ **Zapper** `zapper` · GREEN 84/100 · 🖼️ · ○needs_signup
+- ✅ **Trezor** `trezor` · GREEN 92/100 · 🖼️brand · 💲active
+- ✅ **Trust Wallet** `trust-wallet` · GREEN 78/100 · 🖼️brand · ○needs_signup
+- ✅ **Uniswap** `uniswap` · GREEN 92/100 · 🖼️brand · ○needs_signup
+- ✅ **XT.com** `xt-com` · GREEN 97/100 · 🖼️brand · ○needs_signup
+- ✅ **Zapper** `zapper` · GREEN 84/100 · 🖼️brand · ○needs_signup
 
 ### 🟠 Caution (33)
 - ⚠️ thin **BC.Game** `bc-game` · ORANGE 64/100 · ◻️no-logo · —
@@ -265,34 +224,34 @@ Bespoke page. Sub-tiles → AI Trading Bots, Trading Bots, Copy Trading, Exchang
 - ⚠️ thin **Lucky Block** `lucky-block` · ORANGE 60/100 · ◻️no-logo · —
 - ⚠️ thin **Rollbit** `rollbit` · ORANGE 58/100 · ◻️no-logo · —
 - ⚠️ thin **Roobet** `roobet` · ORANGE 62/100 · ◻️no-logo · —
-- ✅ **3Commas** `3commas` · ORANGE 52/100 · ◻️no-logo · ○needs_signup
+- ✅ **3Commas** `3commas` · ORANGE 52/100 · 🖼️brand · ○needs_signup
 - ✅ **Across Protocol** `across-protocol` · ORANGE 76/100 · 🖼️ · ○needs_signup
-- ✅ **BingX** `bingx` · ORANGE 50/100 · ◻️no-logo · ○needs_signup
+- ✅ **BingX** `bingx` · ORANGE 50/100 · 🖼️brand · ○needs_signup
 - ✅ **Bitget Copy Trading** `bitget-copy-trading` · ORANGE 68/100 · 🖼️brand · —
 - ✅ **Bitget** `bitget` · ORANGE 56/100 · 🖼️brand · 💲active
-- ✅ **Blur** `blur` · ORANGE 68/100 · 🖼️ · ○needs_signup
+- ✅ **Blur** `blur` · ORANGE 68/100 · 🖼️brand · ○needs_signup
 - ✅ **Bybit Copy Trading** `bybit-copy-trading` · ORANGE 66/100 · 🖼️brand · —
 - ✅ **Bybit** `bybit` · ORANGE 55/100 · 🖼️brand · ○needs_signup
 - ✅ **Coinbase (Custodial Account)** `coinbase-wallet-custodial` · ORANGE 72/100 · 🖼️ · ○needs_signup
 - ✅ **Crypto.com NFT** `crypto-com-nft` · ORANGE 70/100 · 🖼️brand · —
 - ✅ **Crypto.com Visa Card** `crypto-com-visa-card` · ORANGE 72/100 · 🖼️brand · —
-- ✅ **Cryptohopper** `cryptohopper` · ORANGE 52/100 · ◻️no-logo · 💲active
-- ✅ **GMX** `gmx` · ORANGE 78/100 · 🖼️ · ○needs_signup
-- ✅ **KuCoin** `kucoin` · ORANGE 48/100 · ◻️no-logo · ○needs_signup
-- ✅ **Lido Finance** `lido-finance` · ORANGE 58/100 · ◻️no-logo · ○needs_signup
-- ✅ **Magic Eden** `magic-eden` · ORANGE 73/100 · 🖼️ · ○needs_signup
-- ✅ **Nexo Card** `nexo-card` · ORANGE 66/100 · ◻️no-logo · —
-- ✅ **NiceHash** `nicehash` · ORANGE 65/100 · 🖼️ · ○needs_signup
+- ✅ **Cryptohopper** `cryptohopper` · ORANGE 52/100 · 🖼️brand · 💲active
+- ✅ **GMX** `gmx` · ORANGE 78/100 · 🖼️brand · ○needs_signup
+- ✅ **KuCoin** `kucoin` · ORANGE 48/100 · 🖼️brand · ○needs_signup
+- ✅ **Lido Finance** `lido-finance` · ORANGE 58/100 · 🖼️brand · ○needs_signup
+- ✅ **Magic Eden** `magic-eden` · ORANGE 73/100 · 🖼️brand · ○needs_signup
+- ✅ **Nexo Card** `nexo-card` · ORANGE 66/100 · 🖼️brand · —
+- ✅ **NiceHash** `nicehash` · ORANGE 65/100 · 🖼️brand · ○needs_signup
 - ✅ **OKX Copy Trading** `okx-copy-trading` · ORANGE 70/100 · 🖼️brand · —
-- ✅ **Oobit** `oobit` · ORANGE 70/100 · ◻️no-logo · —
-- ✅ **OpenSea** `opensea` · ORANGE 72/100 · 🖼️ · ○needs_signup
-- ✅ **Rarible** `rarible` · ORANGE 70/100 · 🖼️ · ○needs_signup
-- ✅ **RealT** `realt` · ORANGE 60/100 · ◻️no-logo · —
+- ✅ **Oobit** `oobit` · ORANGE 70/100 · 🖼️brand · —
+- ✅ **OpenSea** `opensea` · ORANGE 72/100 · 🖼️brand · ○needs_signup
+- ✅ **Rarible** `rarible` · ORANGE 70/100 · 🖼️brand · ○needs_signup
+- ✅ **RealT** `realt` · ORANGE 60/100 · 🖼️brand · —
 - ✅ **Solana** `solana` · ORANGE 74/100 · 🖼️ · ○needs_signup
 - ✅ **Thomas Crypto Signals** `thomas-crypto-signals` · ORANGE 68/100 · 🖼️ · ○needs_signup
-- ✅ **ZuluTrade** `zulutrade` · ORANGE 45/100 · ◻️no-logo · ○needs_signup
-- ✅ **eToro CopyTrader** `etoro-copytrader` · ORANGE 55/100 · ◻️no-logo · ○needs_signup
-- ✅ **eToro** `etoro` · ORANGE 68/100 · 🖼️ · ○needs_signup
+- ✅ **ZuluTrade** `zulutrade` · ORANGE 45/100 · 🖼️brand · ○needs_signup
+- ✅ **eToro CopyTrader** `etoro-copytrader` · ORANGE 55/100 · 🖼️brand · ○needs_signup
+- ✅ **eToro** `etoro` · ORANGE 68/100 · 🖼️brand · ○needs_signup
 
 ### 🔴 Avoid / scam (11)
 - ✅ **Anchor Protocol (Defunct)** `anchor-protocol` · RED 3/100 · ◻️no-logo · ○blocked

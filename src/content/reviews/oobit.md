@@ -8,7 +8,7 @@ summary: "Oobit is a tap-to-pay app for spending crypto in stores with modest fe
 verdict: "Oobit is a tidy tap-to-pay app for spending crypto in stores with modest fees. It's a newer player, so the track record is shorter and coverage varies by region — but the core product works and the approach is sensible. A reasonable option for everyday crypto spending, with the usual newer-platform caveats. Not financial advice."
 category_id: null
 website_url: "https://oobit.com"
-logo_url: null
+logo_url: "/brands/oobit.jpg"
 pros: ["Simple tap-to-pay crypto spending","Modest fees","Clean, focused app","Growing merchant coverage"]
 cons: ["Newer player — shorter track record","Coverage/availability varies by region","Spending crypto can be a taxable event","Custodial elements — verify how funds are held"]
 fees_info: "Modest spending fees per the current terms; spending non-stablecoin crypto incurs conversion cost and can be a taxable event. Confirm the latest schedule in-app."

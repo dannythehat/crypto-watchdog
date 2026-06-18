@@ -8,7 +8,7 @@ summary: "The Nexo Card is a credit/debit hybrid that lets you spend against cry
 verdict: "The Nexo Card is convenient — spend against crypto-backed credit without selling — but that convenience adds borrowing and platform/counterparty risk on top of normal card risk. Used carefully (low loan-to-value, money you understand) it's useful; used carelessly it can trigger liquidations. Caution-rated. Not financial advice."
 category_id: null
 website_url: "https://nexo.com/nexo-card"
-logo_url: null
+logo_url: "/brands/nexo-card.jpg"
 pros: ["Spend against crypto without selling (no immediate tax event)","Debit and credit modes","Cashback in crypto","Integrated with the Nexo platform"]
 cons: ["Borrowing against crypto risks liquidation if prices fall","Platform/counterparty risk (you rely on Nexo)","Rewards/terms tied to holding NEXO tokens","Regulatory history and availability vary by region"]
 fees_info: "Credit mode charges interest based on your loan-to-value; FX and other fees apply per the current terms. Best cashback rates are tied to your NEXO token holdings/tier."

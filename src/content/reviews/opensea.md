@@ -8,7 +8,7 @@ summary: "The original mainstream NFT marketplace. Multi-chain support, deep liq
 verdict: "OpenSea is a legitimate, US-based marketplace and still a credible venue for buying and selling NFTs. The risks are external — phishing sites that mimic the OpenSea UI, drainer contracts disguised as listings, and DM scams targeting holders of valuable collections. Treat every wallet signature as if it could drain your wallet."
 category_id: "b5796a41-939d-4da9-91b1-7f3bb06d802b"
 website_url: "https://opensea.io"
-logo_url: "https://opensea.io/static/images/favicon/favicon.ico"
+logo_url: "/brands/opensea.png"
 social_image_url: null
 pros: ["Established US company with regulatory engagement","Multi-chain (Ethereum, Polygon, Solana, Base, more)","Deep secondary-market liquidity for major collections","Improved blocklist of known drainer contracts"]
 cons: ["Lost market share to Blur and Magic Eden","High volume of fake listings and impersonation attacks targeting users","Royalty enforcement has been inconsistent"]

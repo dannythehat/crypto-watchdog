@@ -8,7 +8,7 @@ summary: "A hashpower marketplace where miners rent out compute and buyers pay f
 verdict: "The dominant hashpower marketplace, useful for casual miners with consumer GPUs. But the 2017 hack — where 4,700 BTC were stolen from hot wallets — should still inform how much you trust the platform with custody. Withdraw frequently; don't use it as a savings account."
 category_id: "9a79437a-540b-49b8-9fe1-4d51ce5828be"
 website_url: "https://www.nicehash.com"
-logo_url: "https://www.nicehash.com/favicon.ico"
+logo_url: "/brands/nicehash.png"
 social_image_url: null
 pros: ["Largest hashpower marketplace globally","Easy onboarding for casual GPU miners","Auto-converts mined coins to BTC","Long operating history (since 2014)"]
 cons: ["Suffered a $64M hack in 2017","Custodial — funds sit on the platform between withdrawals","Profitability for consumer GPUs is marginal post-Ethereum-merge","Withdrawal minimums and fees can erode small earnings"]

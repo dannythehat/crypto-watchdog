@@ -8,7 +8,7 @@ summary: "Tangem Pay is a tap-to-pay card from the maker of the well-regarded Ta
 verdict: "Tangem Pay is the rare card that lets you spend while keeping self-custody of your keys, from the maker of the well-regarded Tangem hardware wallet. That's a real step forward for the 'not your keys' problem. It's newer and availability is still expanding, so check support in your country. Not financial advice."
 category_id: null
 website_url: "https://tangem.com"
-logo_url: null
+logo_url: "/brands/tangem-pay.png"
 pros: ["Self-custodial — you keep the keys while spending","From the trusted Tangem hardware-wallet maker","Tap-to-pay convenience without full custody hand-off","Simple, hardware-backed security model"]
 cons: ["Newer product — shorter track record","Availability still expanding by region","Spending crypto can be a taxable event","Feature set narrower than big-bank-style cards"]
 fees_info: "Card and FX fees apply per the current terms; spending non-stablecoin crypto incurs a conversion cost and can be a taxable event. Confirm the latest fee schedule on the official site."

@@ -8,7 +8,7 @@ summary: "Pro-trader NFT marketplace built around aggressive incentives, low fee
 verdict: "Blur is a real, well-built marketplace popular with NFT traders who prioritise speed and fees over creator economics. The platform itself is credible; the surrounding ecosystem (airdrop farming, point-loop incentives) has produced a high volume of low-quality trading. Casual collectors are usually better served elsewhere."
 category_id: "b5796a41-939d-4da9-91b1-7f3bb06d802b"
 website_url: "https://blur.io"
-logo_url: "https://blur.io/favicon.ico"
+logo_url: "/brands/blur.webp"
 social_image_url: null
 pros: ["Lowest fees of any major NFT marketplace","Pro-grade trading interface with portfolio tools","Aggregates listings across other marketplaces","Strong adoption among professional NFT traders"]
 cons: ["Royalty bypass has hurt creators and reduced collection support","Incentive programs have driven a lot of wash and farm activity","Less suitable for casual collectors than OpenSea or Magic Eden"]

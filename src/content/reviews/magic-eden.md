@@ -8,7 +8,7 @@ summary: "Multi-chain NFT marketplace with strongest position on Solana and grow
 verdict: "Magic Eden is one of the more credible NFT marketplaces, particularly for Solana collections. Like all NFT venues, the dangers come from outside the platform: phishing copies of the site, drainer-loaded \"free mint\" links, and scope-creep in wallet permissions. Use a separate, low-balance wallet for any NFT activity."
 category_id: "b5796a41-939d-4da9-91b1-7f3bb06d802b"
 website_url: "https://magiceden.io"
-logo_url: "https://magiceden.io/img/favicon.png"
+logo_url: "/brands/magic-eden.png"
 social_image_url: null
 pros: ["Dominant marketplace on Solana","Expanded multi-chain support (Bitcoin Ordinals, Ethereum, Polygon)","Native rewards and creator royalties enforced by default","Active anti-fraud team and verified collection badges"]
 cons: ["NFT market overall remains illiquid outside top collections","Permission requests can be broad — review every signature","Wash-trading volumes have been an ongoing industry-wide issue"]
