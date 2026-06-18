@@ -8,7 +8,7 @@ summary: "Tiered cashback Visa card. Headline rewards require staking/locking CR
 verdict: "Provisional rating pending our full audit. Always verify current terms, fees and availability in your country before depositing. Not financial advice."
 category_id: null
 website_url: "https://crypto.com/cards"
-logo_url: null
+logo_url: "/brands/crypto-com.png"
 pros: []
 cons: []
 published: true
@@ -17,6 +17,8 @@ updated_at: "2026-06-17T19:00:00Z"
 meta_title: "Crypto.com Visa Card Review (2026) | CryptoWatchdog"
 meta_description: "Is Crypto.com Visa Card safe and legit? CryptoWatchdog's provisional assessment — crypto cards. Full audit in progress."
 ---
+
+> 📌 **This is our focused review of the Crypto.com Visa Card.** For the full platform verdict — the exchange, NFT marketplace, wallet, the 2022 hack and proof of reserves — read our [complete Crypto.com review](/reviews/crypto-com).
 
 ## Crypto.com Visa Card — full audit in progress
 

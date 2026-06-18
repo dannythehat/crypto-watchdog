@@ -8,7 +8,7 @@ summary: "Kraken stands as one of the most established and credible cryptocurren
 verdict: "Kraken earns a Green Alert from Crypto Watchdog. It is a highly trusted exchange, demonstrating consistent adherence to regulatory frameworks and proven security measures. We consider Kraken an excellent choice for users seeking serious, reliable crypto trading and asset management, prioritising safety and operational integrity over speculative gains."
 category_id: "82c06c80-146c-44cc-8aa1-83389b63019e"
 website_url: "https://invite.kraken.com/JDNW/sr4l7hjh"
-logo_url: null
+logo_url: "/brands/kraken.jpg"
 social_image_url: null
 pros: ["Proof of reserves verified","Regulated in US, UK, EU","Strong security track record","24/7 live chat support","Wide range of crypto assets"]
 cons: ["Interface can be complex for beginners","Limited staking options in some regions","Card deposits have higher fees"]

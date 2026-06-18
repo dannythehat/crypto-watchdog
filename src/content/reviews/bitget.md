@@ -8,7 +8,7 @@ summary: "Bitget is a prominent cryptocurrency derivatives exchange, known for i
 verdict: "Bitget operates as a functional cryptocurrency exchange, particularly for derivatives trading and copy trading. However, an underlying lack of disclosure regarding its operations and aggressive marketing tactics, which often steer inexperienced users towards high-leverage products, raises significant concerns. We advise exercising considerable caution when engaging with Bitget."
 category_id: "82c06c80-146c-44cc-8aa1-83389b63019e"
 website_url: "https://bitget.com"
-logo_url: null
+logo_url: "/brands/bitget.png"
 social_image_url: null
 pros: ["Deep liquidity","Copy trading available","Active proof-of-reserves"]
 cons: ["Aggressive leverage marketing","Opaque corporate structure","Mixed complaint record"]

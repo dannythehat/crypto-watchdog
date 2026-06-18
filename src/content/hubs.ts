@@ -80,7 +80,7 @@ export const hubs: Hub[] = [
     heroImage: "/crypto-exchanges/hero.png",
     intro:
       "An exchange is where most people's crypto journey starts — and where a lot of it ends badly. The difference between a well-run exchange and a risky one shows up exactly when it matters: **when you try to withdraw**.\n\nWe rate exchanges on security, regulation, transparency and real deposit/withdrawal testing. Here are the exchanges we currently trust, the ones to approach carefully, and the guides to read before you sign up — starting with [how to pick a safe crypto exchange](/blog/how-to-pick-safe-crypto-exchange-2026).",
-    trusted: ["kraken", "coinbase", "binance", "xt-com", "okx", "bisq"],
+    trusted: ["kraken", "coinbase", "binance", "xt-com", "okx", "crypto-com-exchange", "bisq"],
     caution: ["bitget", "bybit", "kucoin", "bingx", "etoro"],
     avoid: [],
     warnings: ["recovery-scam-wave-2026"],
@@ -91,7 +91,7 @@ export const hubs: Hub[] = [
       { q: "Should I leave my crypto on an exchange?", a: "For long-term holdings, no. An exchange holds the keys, which means you're trusting them to stay solvent. For anything you can't afford to lose, move it to a wallet you control." },
     ],
     groups: [
-      { title: "Centralised exchanges (CEX)", subtitle: "Custodial platforms to buy, sell and trade with fiat on-ramps.", slugs: ["kraken", "coinbase", "binance", "xt-com", "okx", "bitget", "bybit", "kucoin", "bingx"] },
+      { title: "Centralised exchanges (CEX)", subtitle: "Custodial platforms to buy, sell and trade with fiat on-ramps.", slugs: ["kraken", "coinbase", "binance", "xt-com", "okx", "crypto-com-exchange", "bitget", "bybit", "kucoin", "bingx"] },
       { title: "Decentralised exchanges (DEX)", subtitle: "On-chain swaps where you keep custody of your funds.", slugs: ["uniswap", "pancakeswap", "curve-finance"] },
       { title: "P2P exchanges", subtitle: "Peer-to-peer trading with no central custodian.", slugs: ["bisq"] },
       { title: "Brokers", subtitle: "Simplified buy/sell apps and CFD providers.", slugs: ["etoro"] },
@@ -301,7 +301,7 @@ export const hubs: Hub[] = [
     intro:
       "NFT marketplaces are how you buy, sell and mint digital collectibles and in-game items — but they're also a top hunting ground for **wallet-drainer scams**, fake mints and malicious approvals. The marketplace itself can be fine while the links and offers around it are not.\n\nHere's how the major NFT platforms compare, plus the safety guide every collector should read: [our NFT safety guide](/blog/nft-safety-guide-2026).",
     trusted: [],
-    caution: ["opensea", "magic-eden", "blur", "rarible"],
+    caution: ["crypto-com-nft", "opensea", "magic-eden", "blur", "rarible"],
     avoid: ["axie-infinity"],
     warnings: ["fake-airdrop-wallet-drainer"],
     relatedPosts: ["nft-safety-guide-2026", "how-to-spot-crypto-scam-2026", "anatomy-of-a-rug-pull-7-on-chain-signals-2026", "beyond-phishing-the-sophisticated-crypto-scams-draining-wallets-this-week-2026-05-17"],

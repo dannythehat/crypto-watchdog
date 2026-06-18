@@ -8,7 +8,7 @@ summary: "OKX is a strong global exchange and Web3 platform with deep liquidity,
 verdict: "Positive: OKX earns a high green score for liquidity, transparent withdrawal-fee display, broad market access, and strong exchange infrastructure. Users should still check local availability and avoid overusing complex leverage products."
 category_id: "82c06c80-146c-44cc-8aa1-83389b63019e"
 website_url: "https://www.okx.com"
-logo_url: null
+logo_url: "/brands/okx.png"
 social_image_url: null
 pros: ["Proof of reserves published monthly","Advanced trading tools","Web3 wallet built-in","Good liquidity","Low fees"]
 cons: ["Regulatory uncertainty","Not available in US/UK","Complex for beginners","P2P scam risks","Past controversy"]

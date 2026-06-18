@@ -51,6 +51,10 @@ const ReviewDetail = () => {
   const rc = ((review as any).rich_content || {}) as Record<string, any>;
   const rcFaqs = Array.isArray(rc.faq) ? rc.faq.map((f: any) => ({ q: f.question || f.q, a: f.answer || f.a })).filter((f: any) => f.q && f.a) : [];
   const path = `/reviews/${review.slug}`;
+  // Long-form written review: only render the markdown body when it has real
+  // structure (headings) — keeps the 78 short legacy reviews unaffected.
+  const body = ((review as any).content || "") as string;
+  const hasLongForm = /(^|\n)#{1,6}\s/.test(body);
 
   return (
     <>
@@ -173,6 +177,13 @@ const ReviewDetail = () => {
                 </div>
               )}
             </div>
+
+            {/* Long-form written review (rendered only when the body has headings) */}
+            {hasLongForm && (
+              <article className="mt-10 max-w-none border-t border-border pt-8">
+                <Markdown content={body} />
+              </article>
+            )}
 
             {/* Detailed Audit Breakdown */}
             {auditData && Object.keys(auditData).length > 0 && (

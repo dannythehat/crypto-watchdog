@@ -8,7 +8,7 @@ summary: "Coinbase stands as a prominent cryptocurrency exchange, publicly trade
 verdict: "Coinbase has established itself as one of the most credible and safest entry points into the cryptocurrency market. Its status as a publicly listed company on NASDAQ (COIN) provides a level of accountability and transparency that is a rarity in the rapidly evolving crypto industry, making it an ideal choice for beginners."
 category_id: "82c06c80-146c-44cc-8aa1-83389b63019e"
 website_url: "https://www.coinbase.com"
-logo_url: null
+logo_url: "/brands/coinbase.png"
 social_image_url: null
 pros: ["Publicly traded — high accountability","FDIC-insured USD balances","Beginner-friendly","Strong regulatory compliance"]
 cons: ["Higher fees than competitors","Limited support options","Fewer trading pairs than Binance"]

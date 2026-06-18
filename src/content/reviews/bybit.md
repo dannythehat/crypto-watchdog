@@ -8,7 +8,7 @@ summary: "Bybit is a prominent cryptocurrency derivatives exchange that has sign
 verdict: "Bybit receives an Orange Alert from Crypto Watchdog. While the platform provides a sophisticated trading experience and has seen considerable growth in its user base and market presence, the unresolved regulatory questions surrounding Bybit and its offshore corporate structure necessitate thorough consideration and a cautious approach from all prospective users."
 category_id: "82c06c80-146c-44cc-8aa1-83389b63019e"
 website_url: "https://www.bybit.com"
-logo_url: null
+logo_url: "/brands/bybit.png"
 social_image_url: null
 pros: ["Low trading fees","Advanced trading tools","Good liquidity","Copy trading feature","Responsive mobile app"]
 cons: ["Regulatory uncertainty","Offshore registration (BVI)","Limited fiat options","Past compliance concerns","Not available in all countries"]
