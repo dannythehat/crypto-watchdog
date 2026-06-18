@@ -247,6 +247,7 @@ export const hubs: Hub[] = [
     heroPrompt:
       "a glowing golden bar of tokenized gold dissolving into blockchain data and floating coins inside a dark futuristic vault, deep gold and teal volumetric light, cinematic, ultra detailed",
     heroSeed: 71,
+    heroImage: "/tokenized-assets/hero.png",
     intro:
       "Real-world asset (RWA) tokenization is the bridge between traditional finance and crypto — and one of the biggest narratives heading into the bull run, with tens of billions already on-chain. It lets you own a slice of **gold, US Treasuries or property** as a blockchain token.\n\nThe upside is real, but so is the risk: a token is only as good as the asset and issuer behind it. Below are the tokenization platforms we trust, the ones that need caution, and the guides to read first — starting with our [tokenized gold guide](/blog/digital-gold-2026-tokenized-gold-physically-backed-tokens-guide).",
     trusted: ["pax-gold", "ondo-finance", "kinesis-money", "tether-gold"],
