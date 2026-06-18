@@ -6,7 +6,7 @@ _Generated 2026-06-18 directly from the repo. Live site: cryptowatchdog.net_
 - **Logo:** 🖼️brand = our brand logo · 🖼️ = logo set · ◻️no-logo = Clearbit/letter fallback
 - **Affiliate:** 💲active · ○needs-signup/other · — none
 
-**Totals:** 84 reviews · 118 blog posts · 41 warnings · 14 category hubs
+**Totals:** 85 reviews · 118 blog posts · 41 warnings · 14 category hubs
 
 ---
 ## 1. Homepage (/)
@@ -69,7 +69,7 @@ Bespoke page. Sub-tiles → AI Trading Bots, Trading Bots, Copy Trading, Exchang
   - ✅ **Trust Wallet** `trust-wallet` · GREEN 78/100 · 🖼️brand · ○needs_signup
   - ✅ **Safe (formerly Gnosis Safe)** `safe-gnosis` · GREEN 92/100 · 🖼️brand · ○needs_signup
   - ✅ **Argent** `argent-wallet` · GREEN 84/100 · 🖼️brand · ○needs_signup
-  - ✅ **Coinbase (Custodial Account)** `coinbase-wallet-custodial` · ORANGE 72/100 · 🖼️ · ○needs_signup
+  - ✅ **Coinbase (Custodial Account)** `coinbase-wallet-custodial` · ORANGE 72/100 · 🖼️brand · ○needs_signup
 
 - **DeFi** — hero✅ · guide✅ · articles:13
   - ✅ **Aave** `aave` · GREEN 91/100 · 🖼️brand · ○needs_signup
@@ -134,15 +134,7 @@ Bespoke page. Sub-tiles → AI Trading Bots, Trading Bots, Copy Trading, Exchang
 ## 5. ⛏️ GAPS — what we still need (the to-do list)
 
 ### Thin / provisional reviews (need full content)
-- ⚠️ bc-game
-- ⚠️ bitcasino-io
-- ⚠️ bitstarz
-- ⚠️ cloudbet
-- ⚠️ lucky-block
-- ⚠️ rollbit
-- ⚠️ roobet
-- ⚠️ sportsbet-io
-- ⚠️ stake
+- none 🎉
 
 ### Reviews with no brand logo (using fallback — supply a logo to upgrade)
 - ◻️ across-protocol
@@ -153,7 +145,6 @@ Bespoke page. Sub-tiles → AI Trading Bots, Trading Bots, Copy Trading, Exchang
 - ◻️ bitcoin
 - ◻️ bitstarz
 - ◻️ cloudbet
-- ◻️ coinbase-wallet-custodial
 - ◻️ ethereum
 - ◻️ lucky-block
 - ◻️ optimism
@@ -174,13 +165,9 @@ Bespoke page. Sub-tiles → AI Trading Bots, Trading Bots, Copy Trading, Exchang
 ### Referenced-but-missing review pages
 - none 🎉
 
-## 6. All reviews (84)
+## 6. All reviews (85)
 
-### 🟢 Trusted (40)
-- ⚠️ thin **BitStarz** `bitstarz` · GREEN 80/100 · ◻️no-logo · —
-- ⚠️ thin **Cloudbet** `cloudbet` · GREEN 84/100 · ◻️no-logo · —
-- ⚠️ thin **Sportsbet.io** `sportsbet-io` · GREEN 78/100 · ◻️no-logo · —
-- ⚠️ thin **Stake** `stake` · GREEN 82/100 · ◻️no-logo · —
+### 🟢 Trusted (41)
 - ✅ **Aave** `aave` · GREEN 91/100 · 🖼️brand · ○needs_signup
 - ✅ **Alchemy** `alchemy` · GREEN 86/100 · 🖼️ · ○needs_signup
 - ✅ **Arbitrum** `arbitrum` · GREEN 90/100 · 🖼️ · ○needs_signup
@@ -188,7 +175,10 @@ Bespoke page. Sub-tiles → AI Trading Bots, Trading Bots, Copy Trading, Exchang
 - ✅ **Aurum Foundation** `aurum-foundation` · GREEN 82/100 · 🖼️brand · 💲active
 - ✅ **Binance** `binance` · GREEN 93/100 · 🖼️brand · 💲active
 - ✅ **Bisq** `bisq` · GREEN 82/100 · 🖼️brand · ○needs_signup
+- ✅ **BitStarz** `bitstarz` · GREEN 80/100 · ◻️no-logo · —
 - ✅ **Bitcoin** `bitcoin` · GREEN 95/100 · 🖼️ · ○needs_signup
+- ✅ **Cloudbet** `cloudbet` · GREEN 84/100 · ◻️no-logo · —
+- ✅ **CoinPoker** `coinpoker` · GREEN 80/100 · 🖼️brand · —
 - ✅ **Coinbase Card** `coinbase-card` · GREEN 86/100 · 🖼️brand · —
 - ✅ **Coinbase** `coinbase` · GREEN 96/100 · 🖼️brand · ○needs_signup
 - ✅ **Crypto.com Exchange** `crypto-com-exchange` · GREEN 80/100 · 🖼️brand · —
@@ -209,6 +199,8 @@ Bespoke page. Sub-tiles → AI Trading Bots, Trading Bots, Copy Trading, Exchang
 - ✅ **Pionex** `pionex` · GREEN 72/100 · 🖼️brand · ○needs_signup
 - ✅ **Rocket Pool** `rocket-pool` · GREEN 80/100 · 🖼️brand · ○needs_signup
 - ✅ **Safe (formerly Gnosis Safe)** `safe-gnosis` · GREEN 92/100 · 🖼️brand · ○needs_signup
+- ✅ **Sportsbet.io** `sportsbet-io` · GREEN 78/100 · ◻️no-logo · —
+- ✅ **Stake** `stake` · GREEN 82/100 · ◻️no-logo · —
 - ✅ **Tangem Pay** `tangem-pay` · GREEN 78/100 · 🖼️brand · —
 - ✅ **Tether Gold (XAUT)** `tether-gold` · GREEN 80/100 · 🖼️brand · —
 - ✅ **TopOneFutures** `topone-futures` · GREEN 90/100 · ◻️no-logo · ○needs_signup
@@ -219,26 +211,24 @@ Bespoke page. Sub-tiles → AI Trading Bots, Trading Bots, Copy Trading, Exchang
 - ✅ **Zapper** `zapper` · GREEN 84/100 · 🖼️brand · ○needs_signup
 
 ### 🟠 Caution (33)
-- ⚠️ thin **BC.Game** `bc-game` · ORANGE 64/100 · ◻️no-logo · —
-- ⚠️ thin **Bitcasino.io** `bitcasino-io` · ORANGE 74/100 · ◻️no-logo · —
-- ⚠️ thin **Lucky Block** `lucky-block` · ORANGE 60/100 · ◻️no-logo · —
-- ⚠️ thin **Rollbit** `rollbit` · ORANGE 58/100 · ◻️no-logo · —
-- ⚠️ thin **Roobet** `roobet` · ORANGE 62/100 · ◻️no-logo · —
 - ✅ **3Commas** `3commas` · ORANGE 52/100 · 🖼️brand · ○needs_signup
 - ✅ **Across Protocol** `across-protocol` · ORANGE 76/100 · 🖼️ · ○needs_signup
+- ✅ **BC.Game** `bc-game` · ORANGE 64/100 · ◻️no-logo · —
 - ✅ **BingX** `bingx` · ORANGE 50/100 · 🖼️brand · ○needs_signup
+- ✅ **Bitcasino.io** `bitcasino-io` · ORANGE 74/100 · ◻️no-logo · —
 - ✅ **Bitget Copy Trading** `bitget-copy-trading` · ORANGE 68/100 · 🖼️brand · —
 - ✅ **Bitget** `bitget` · ORANGE 56/100 · 🖼️brand · 💲active
 - ✅ **Blur** `blur` · ORANGE 68/100 · 🖼️brand · ○needs_signup
 - ✅ **Bybit Copy Trading** `bybit-copy-trading` · ORANGE 66/100 · 🖼️brand · —
 - ✅ **Bybit** `bybit` · ORANGE 55/100 · 🖼️brand · ○needs_signup
-- ✅ **Coinbase (Custodial Account)** `coinbase-wallet-custodial` · ORANGE 72/100 · 🖼️ · ○needs_signup
+- ✅ **Coinbase (Custodial Account)** `coinbase-wallet-custodial` · ORANGE 72/100 · 🖼️brand · ○needs_signup
 - ✅ **Crypto.com NFT** `crypto-com-nft` · ORANGE 70/100 · 🖼️brand · —
 - ✅ **Crypto.com Visa Card** `crypto-com-visa-card` · ORANGE 72/100 · 🖼️brand · —
 - ✅ **Cryptohopper** `cryptohopper` · ORANGE 52/100 · 🖼️brand · 💲active
 - ✅ **GMX** `gmx` · ORANGE 78/100 · 🖼️brand · ○needs_signup
 - ✅ **KuCoin** `kucoin` · ORANGE 48/100 · 🖼️brand · ○needs_signup
 - ✅ **Lido Finance** `lido-finance` · ORANGE 58/100 · 🖼️brand · ○needs_signup
+- ✅ **Lucky Block** `lucky-block` · ORANGE 60/100 · ◻️no-logo · —
 - ✅ **Magic Eden** `magic-eden` · ORANGE 73/100 · 🖼️brand · ○needs_signup
 - ✅ **Nexo Card** `nexo-card` · ORANGE 66/100 · 🖼️brand · —
 - ✅ **NiceHash** `nicehash` · ORANGE 65/100 · 🖼️brand · ○needs_signup
@@ -247,6 +237,8 @@ Bespoke page. Sub-tiles → AI Trading Bots, Trading Bots, Copy Trading, Exchang
 - ✅ **OpenSea** `opensea` · ORANGE 72/100 · 🖼️brand · ○needs_signup
 - ✅ **Rarible** `rarible` · ORANGE 70/100 · 🖼️brand · ○needs_signup
 - ✅ **RealT** `realt` · ORANGE 60/100 · 🖼️brand · —
+- ✅ **Rollbit** `rollbit` · ORANGE 58/100 · ◻️no-logo · —
+- ✅ **Roobet** `roobet` · ORANGE 62/100 · ◻️no-logo · —
 - ✅ **Solana** `solana` · ORANGE 74/100 · 🖼️ · ○needs_signup
 - ✅ **Thomas Crypto Signals** `thomas-crypto-signals` · ORANGE 68/100 · 🖼️ · ○needs_signup
 - ✅ **ZuluTrade** `zulutrade` · ORANGE 45/100 · 🖼️brand · ○needs_signup
