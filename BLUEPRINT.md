@@ -207,7 +207,7 @@ Bespoke page. Sub-tiles → AI Trading Bots, Trading Bots, Copy Trading, Exchang
 - ◻️ zulutrade
 
 ### Hubs missing a hero image
-- 🖼️ ai-finance
+- none 🎉
 
 ### Hubs missing a buyer's guide
 - none 🎉
