@@ -10,6 +10,8 @@ import AuroraBackdrop from "@/components/AuroraBackdrop";
 import WatchdogMascot from "@/components/WatchdogMascot";
 import OfferCard from "@/components/OfferCard";
 import NewsCard from "@/components/NewsCard";
+import Seo from "@/components/Seo";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 import { hubs } from "@/content/hubs";
 import { offersByDateDesc } from "@/content/offers";
 import { useLiveNews } from "@/hooks/useLiveNews";
@@ -52,6 +54,13 @@ const Index = () => {
 
   return (
     <>
+      <Seo
+        title="CryptoWatchdog — Independent Crypto Safety Reviews & Ratings"
+        description="Independent, evidence-led reviews and Trust Scores for crypto exchanges, wallets, AI trading bots, DeFi and casinos — plus live scam alerts."
+        path="/"
+        type="website"
+        jsonLd={[organizationJsonLd(), websiteJsonLd()]}
+      />
       <Navbar />
       <main>
         {/* Hero */}

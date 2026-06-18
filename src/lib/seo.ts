@@ -18,6 +18,24 @@ const organization = {
   logo: SITE.logo,
 };
 
+// Standalone JSON-LD for the homepage: brand identity + site entity.
+export const organizationJsonLd = (): Record<string, unknown> => ({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE.name,
+  url: SITE.baseUrl,
+  logo: SITE.logo,
+  description: "Independent, evidence-led crypto safety reviews, Trust Scores and scam alerts.",
+  sameAs: ["https://twitter.com/cryptowatchdog"],
+});
+
+export const websiteJsonLd = (): Record<string, unknown> => ({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE.name,
+  url: SITE.baseUrl,
+});
+
 interface ArticleInput {
   title: string;
   description?: string;
