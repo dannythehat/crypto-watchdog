@@ -132,7 +132,7 @@ You hold the keys, so disconnecting, revoking, and going back to using your wall
 
 ## The risks that don't go away
 
-Non-custodial doesn't mean risk-free, and anyone telling you it does is selling something. The model fixes the trust problem. It doesn't touch the market problem, and it introduces a couple of its own.
+Non-custodial doesn't mean free of risk, and anyone telling you it does is selling something. The model fixes the trust problem. It doesn't touch the market problem, and it introduces a couple of its own.
 
 ### Smart-contract risk
 
@@ -168,7 +168,7 @@ Skipping step 7 is the single most common mistake we see. Five minutes of patien
 
 If you want to follow the exact path we use, here's the full flow from a cold start to a funded, running Neyro agent. The first two steps happen inside the Aurum dashboard. From step 3 onwards, your funds stay in your own DeFi wallet.
 
-> **Watchdog note.** Advertised yields (target ~15% monthly) are <em>not guaranteed</em>. Test with a small allocation first, withdraw once to confirm the off-ramp works for you, and only then scale up. Read our [guide on guaranteed-return claims](/blog/the-myth-of-guaranteed-returns-in-crypto-what-you-need-to-know-in-2026-2026-04-15) before committing larger sums.
+> **Watchdog note.** Advertised yields (target ~15% monthly) are a target, not a promise, and the market can take them away. Test with a small allocation first, withdraw once to confirm the off-ramp works for you, and only then scale up. Read our [guide on promised-return claims](/blog/the-myth-of-guaranteed-returns-in-crypto-what-you-need-to-know-in-2026-2026-04-15) before committing larger sums.
 
 ## What we use ourselves
 
