@@ -8,7 +8,7 @@ image_url: "/blog/non-custodial-trading-hero.jpg"
 published: true
 auto_generated: false
 published_at: "2026-04-26T04:47:56.504189+00:00"
-updated_at: "2026-06-17T17:10:00Z"
+updated_at: "2026-06-18T12:00:00Z"
 meta_title: null
 meta_description: null
 ---
@@ -33,9 +33,24 @@ Custody is just a fancy word for *who is holding the keys*. In crypto, whoever h
 
 In a **custodial** setup — every centralised exchange, every "AI yield" platform, every CeFi lender — you deposit crypto into a wallet they own. Your balance becomes a number in their database. If they get hacked, freeze withdrawals or quietly run a Ponzi, your money is gone.
 
-In a **non-custodial** setup, you keep the private keys. Your funds sit in your own wallet on the blockchain. Smart contracts can be granted *narrow, specific permissions* to act on those funds — but they cannot withdraw them to a third-party address.
+In a **non-custodial** setup, you keep the private keys. Your funds sit in your own wallet on the blockchain. Smart contracts can be granted *narrow, specific permissions* to act on those funds — but they cannot withdraw them to a third-party address. <a href="https://www.ledger.com/academy/topics/security/custodial-vs-non-custodial-wallets" target="_blank" rel="noopener noreferrer">Ledger's own breakdown of custodial versus non-custodial wallets</a> puts it plainly: with self-custody, only you decide how and when your funds move.
 
 That single architectural change is the difference between "trust the company" and "trust the math."
+
+Here is how the two models compare on the things that actually decide whether you get your money back:
+
+| What matters | Custodial trading platform | Non-custodial smart contract trading |
+| --- | --- | --- |
+| Who holds your keys | The platform | You |
+| Where your funds sit | The platform's wallet / database | Your own wallet, on-chain |
+| Can the operator withdraw your funds | Yes | No — no such function exists |
+| Withdrawal freezes possible | Yes (the classic failure mode) | No — you revoke access yourself |
+| Transparency of activity | Curated dashboards, screenshots | Every trade public on a block explorer |
+| How the operator earns | Often on your deposit, regardless of profit | Performance fee on new profit only |
+| What happens if the site goes dark | Funds may be stuck or lost | Funds stay in your wallet |
+| Main residual risk | Insolvency, fraud, hacks of their wallets | Smart-contract bugs, strategy losses |
+
+Neither column is "risk-free" — note the bottom row. Non-custodial removes custody risk; it does not remove market risk or the chance of a flawed contract.
 
 <figure class="my-8">
   <img src="/blog/non-custodial-architecture.jpg" alt="Three-part architecture: self-custody wallet sends permission to a smart contract, which sends trade signals to a DEX, profits return to the wallet" loading="lazy" class="rounded-lg border border-border w-full" />
@@ -124,7 +139,7 @@ Reputable non-custodial trading platforms publish their contract source code and
 
 Three trends are converging that make non-custodial trading the natural default for retail crypto users.
 
-**Wallet UX has finally caught up.** Smart accounts (ERC-4337), gas sponsorship, and one-click wallet connections have removed the friction that pushed everyone to custodial exchanges in the first place. You no longer need to be a power user to interact with a smart contract safely.
+**Wallet UX has finally caught up.** Smart accounts (<a href="https://ethereum.org/roadmap/account-abstraction/" target="_blank" rel="noopener noreferrer">account abstraction, as ethereum.org explains it</a>), gas sponsorship, and one-click wallet connections have removed the friction that pushed everyone to custodial exchanges in the first place. You no longer need to be a power user to interact with a smart contract safely.
 
 **Regulators are pushing custodial platforms harder.** The EU's <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica" target="_blank" rel="noopener noreferrer">MiCA framework</a>, the UK's <a href="https://www.fca.org.uk/firms/cryptoassets" target="_blank" rel="noopener noreferrer">FCA crypto regime</a>, and tightening US rules all add friction, KYC requirements and reporting burdens to custodial venues. Non-custodial models sidestep most of this because *the platform never holds your money in the first place*.
 
@@ -223,6 +238,8 @@ If you want to see what this looks like in practice, start with our [Aurum Found
 
 - <a href="https://ethereum.org/developers/docs/standards/tokens/erc-20/" target="_blank" rel="noopener noreferrer">ethereum.org — ERC-20 token standard, including the `approve`/`allowance` spending model</a>
 - <a href="https://ethereum.org/developers/docs/smart-contracts/verifying/" target="_blank" rel="noopener noreferrer">ethereum.org — Verifying smart contracts and why published source code matters</a>
+- <a href="https://ethereum.org/roadmap/account-abstraction/" target="_blank" rel="noopener noreferrer">ethereum.org — Account abstraction (ERC-4337) and smart accounts</a>
+- <a href="https://www.ledger.com/academy/topics/security/custodial-vs-non-custodial-wallets" target="_blank" rel="noopener noreferrer">Ledger Academy — Custodial vs non-custodial wallets, explained</a>
 - <a href="https://info.etherscan.com/how-to-verify-contracts/" target="_blank" rel="noopener noreferrer">Etherscan Information Center — How contract source-code verification works</a>
 - <a href="https://www.openzeppelin.com/security-audits" target="_blank" rel="noopener noreferrer">OpenZeppelin — Smart contract security audits and methodology</a>
 - <a href="https://support.uniswap.org/hc/en-us/articles/8671577468813-How-does-the-Uniswap-protocol-work" target="_blank" rel="noopener noreferrer">Uniswap Labs — How the Uniswap protocol and on-chain swaps work</a>
