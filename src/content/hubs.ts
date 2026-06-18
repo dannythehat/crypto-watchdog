@@ -145,9 +145,9 @@ export const hubs: Hub[] = [
     heroSeed: 34,
     heroImage: "/copy-trading/hero.png",
     intro:
-      "Copy trading sounds perfect: link your account, mirror a proven trader, and let the profits roll in. In reality, past performance is easy to fake, leverage quietly amplifies losses, and 'signal groups' are riddled with paid shillers.\n\nThere are legitimate, regulated copy-trading platforms — and a lot that aren't. Here's where we land on the main players, plus the [Telegram trading-bot investigation](/blog/are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09) everyone considering this should read.",
-    trusted: ["aurum-foundation", "topone-futures"],
-    caution: ["etoro-copytrader", "thomas-crypto-signals", "3commas", "zulutrade"],
+      "Copy trading sounds perfect: link your account, mirror a proven trader, and let the profits roll in. In reality, past performance is easy to fake, leverage quietly amplifies losses, and 'signal groups' are riddled with paid shillers.\n\n**There are two different things people call 'copy trading', and we keep them separate below.** The first is **mirroring real human traders** (eToro, ZuluTrade, and the big exchange copy desks) — you're trusting a person's judgement. The second is **AI / automated copy trading**, where you mirror an algorithm or AI strategy rather than a person — a different risk profile entirely. Don't conflate them. Start with the [Telegram trading-bot investigation](/blog/are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09) everyone considering either should read.",
+    trusted: ["aurum-foundation"],
+    caution: ["etoro-copytrader", "zulutrade", "bitget-copy-trading", "bybit-copy-trading", "okx-copy-trading", "3commas"],
     avoid: ["crypto-signal-services-general", "shadowtradebot"],
     warnings: ["telegram-investment-bot-scams", "recovery-scam-wave-2026"],
     relatedPosts: ["what-is-copy-crypto-trading-your-2026-guide", "copy-ai-trading-explained-2026", "bitget-2026-review-universal-exchange-rwa", "the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18", "spotting-the-shills-7-warning-signs-a-crypto-influencer-is-paid-to-deceive-you-2026-05-12", "ai-trading-bots-your-guide-to-separating-genuine-tools-from-get-rich-quick-scams-2026-05-25", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09", "telegram-trading-bots-convenience-at-what-cost-2026-04-23"],
@@ -155,6 +155,11 @@ export const hubs: Hub[] = [
       { q: "Is copy trading safe?", a: "It can be on a regulated platform with transparent, verified track records and sensible risk limits. It is not safe when 'returns' are unverifiable, leverage is high, or you're copying an anonymous trader in a Telegram group." },
       { q: "Why are signal groups risky?", a: "Many are pump-and-dump funnels or affiliate mills. The people posting 'winning' screenshots often profit from your subscription or from dumping a coin on you — not from the trades themselves." },
       { q: "Can I lose more than I invest copying a trader?", a: "With leveraged copy trading, yes — losses can exceed your initial stake. Always check whether a platform uses leverage and what the maximum drawdown could be." },
+      { q: "What's the difference between copy trading and AI copy trading?", a: "Normal copy trading mirrors a real human trader's positions — you're betting on their judgement. AI copy trading mirrors an algorithm or AI strategy instead of a person. Both automate trades for you, but you vet them differently: a human's drawdown history versus an algorithm's strategy, custody and track record." },
+    ],
+    groups: [
+      { title: "Copy trading — mirror real traders", subtitle: "Pick a verified human trader and copy their trades automatically. You're trusting their judgement, so check drawdowns, not just headline returns.", slugs: ["etoro-copytrader", "zulutrade", "bitget-copy-trading", "bybit-copy-trading", "okx-copy-trading"] },
+      { title: "AI / automated copy trading", subtitle: "Mirror an algorithm or AI strategy rather than a person — a different risk profile. Judge the strategy, custody and verifiable track record.", slugs: ["aurum-foundation", "3commas"] },
     ],
   },
   {
