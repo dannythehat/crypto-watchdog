@@ -8,7 +8,7 @@ image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/bl
 published: true
 auto_generated: false
 published_at: "2026-04-13T04:08:35.252561+00:00"
-updated_at: "2026-06-17T21:00:00Z"
+updated_at: "2026-06-18T12:00:00Z"
 meta_title: null
 meta_description: null
 ---
@@ -29,6 +29,22 @@ For every honest project out there, several rotten ones are circling, waiting fo
 *   **Pressure Is a Weapon:** Countdown timers, "exclusive spots", offers ending at midnight — that's not generosity, it's pressure designed to stop you thinking it through. A sound investment is happy to wait.
 *   **If It Seems Too Complex, It Probably Is:** "Quantum AI arbitrage" and similar word salad exist to make you feel too daft to ask questions. Anything genuine can be explained in plain language. If it can't be, that's the warning.
 *   **Your Wallet Is a One-Way Street:** Anyone — bot, person or "support agent" — who wants your seed phrase, your private keys, or a wallet connection for a "free airdrop" is trying to rob you. There's no legitimate reason for that request.
+
+## Red Flags at a Glance
+
+If you only skim one part of this guide, make it this. Here are the tells we see most often, what each one actually looks like in the wild, and the move that keeps your money where it belongs.
+
+| Red flag | What it looks like | What to do |
+| --- | --- | --- |
+| Fixed, "can't-lose" returns | "Earn a locked 2% a day", a profit chart that only ever goes up | Walk away. Real yields move with the market; a number that never wobbles was invented. |
+| Anonymous or fake team | No real names, stock-photo "founders", LinkedIn profiles that lead nowhere | Don't invest until you can verify real, accountable humans behind it. |
+| Manufactured urgency | Countdown timers, "exclusive spots", offers ending at midnight | Sleep on it. Anything that can't survive a day's thought isn't an opportunity. |
+| Deliberate complexity | "Quantum AI arbitrage", word-salad whitepaper, no plain explanation | Ask how it actually makes money. If nobody can answer simply, that's your answer. |
+| Wallet or seed-phrase requests | "Connect for a free airdrop", "share your phrase to sync recovery" | Never share a seed phrase or blind-sign approvals. No legitimate service needs them. |
+| Censored community | Honest questions deleted, sceptics banned within the minute | Treat it as a marketing channel, not a community. Doubt is being suppressed, not answered. |
+| Recovery "specialists" | DMs after a loss promising to pull stolen crypto back for a fee | Ignore them. Confirmed transactions are irreversible; this is a second scam. |
+
+Each of these gets the full treatment below.
 
 ## The Promise: If It Sounds Too Good to Be True...
 

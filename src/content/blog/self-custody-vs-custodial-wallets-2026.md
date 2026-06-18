@@ -8,7 +8,7 @@ image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/bl
 published: true
 auto_generated: false
 published_at: "2026-04-21T11:09:45.317144+00:00"
-updated_at: "2026-06-17T21:00:00Z"
+updated_at: "2026-06-18T12:00:00Z"
 meta_title: null
 meta_description: null
 ---
@@ -25,6 +25,16 @@ So this is the honest version. We'll weigh custodial against self custody, lean 
 A custodial wallet is run by someone else, usually a centralised exchange. They hold the private keys; you hold a login. Email, password, maybe a code from your phone. It feels like online banking, because that's roughly the deal: they mind the keys, you click the buttons. Comfortable and familiar. Also entirely dependent on them not getting it wrong.
 
 Self custody flips it. You hold the private keys, and nobody else does. You sign transactions yourself, straight onto the blockchain, using software or a small hardware device. You get total control over your money, along with total responsibility for keeping it safe, backing it up, and not making a mistake you can't undo.
+
+Here's the side-by-side, so you can see where each one actually trades off:
+
+| Factor | Custodial wallet | Self custody |
+| --- | --- | --- |
+| **Control** | The platform holds the keys; you hold a login. | You hold the keys. Nobody can move your funds but you. |
+| **Risk** | Counterparty risk: the platform can fail, freeze withdrawals or lock your account. | You are the target. Lost keys, phishing and signing mistakes are on you. |
+| **Recovery** | Reset by email or ID check if you lose your password. | None. Lose your seed phrase and the money is gone for good. |
+| **Convenience** | High. Fiat ramps, tax tools, fast trades, no gas to think about. | Lower. You manage backups, networks, gas and your own security. |
+| **Who it's for** | Beginners, small balances, active traders, buy-and-hold on big names. | Larger balances, DeFi users, anyone who wants ownership over convenience. |
 
 ## The evidence of risk
 
