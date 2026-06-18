@@ -8,7 +8,7 @@ summary: "Pioneering smart contract wallet that brought social recovery and gasl
 verdict: "A genuinely user-friendly entry point into self-custody. Social recovery removes the seed-phrase anxiety that scares newcomers, and the Starknet version offers near-zero fees. Trade-off: smaller ecosystem than Safe, and you're trusting Argent's smart contract design."
 category_id: "054b7595-4a8a-444b-83e5-c4bceb94b90b"
 website_url: "https://www.argent.xyz"
-logo_url: "https://www.argent.xyz/favicon.ico"
+logo_url: "/brands/argent-wallet.jpg"
 social_image_url: null
 pros: ["Social recovery — no seed phrase to lose","Built-in DeFi integrations (staking, swaps, lending)","Daily transfer limits add a security layer","Gasless transactions on Starknet","Mobile-first, polished UX"]
 cons: ["Mobile-only — no desktop app","Smaller ecosystem than Safe for advanced users","Recovery requires choosing trustworthy guardians"]

@@ -8,7 +8,7 @@ summary: "MetaMask stands as a widely adopted cryptocurrency wallet, available a
 verdict: "MetaMask receives a GREEN Alert from Crypto Watchdog. It is a fundamentally trustworthy and indispensable tool for those venturing into Web3 and DeFi. However, the inherent self-custody nature of MetaMask places significant responsibility on the user. Phishing attacks, malicious browser extensions, and social engineering remain the primary risks for any MetaMask user, demanding vigilance and robust security practices."
 category_id: "d0526e19-e642-4ccb-aa40-bfb00825ee4d"
 website_url: "https://metamask.io"
-logo_url: null
+logo_url: "/brands/metamask.png"
 social_image_url: null
 pros: ["Full self-custody — you own your keys","Open-source and audited","Massive dApp ecosystem","Multi-chain support"]
 cons: ["Phishing target — many fake versions","No customer support","Swap fees higher than DEX alternatives"]

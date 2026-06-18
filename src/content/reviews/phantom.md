@@ -8,7 +8,7 @@ summary: "Phantom Wallet is a popular non-custodial cryptocurrency wallet primar
 verdict: "Crypto Watchdog assigns Phantom Wallet a Green Alert rating, recognising it as a highly trusted and reliable wallet within the Solana ecosystem. While the wallet itself is broadly credible, users must remain vigilant against the high prevalence of scams, particularly fake tokens and predatory dApps, that often target users on the Solana blockchain. Phantom Wallet provides the tools, but user diligence remains paramount."
 category_id: "d0526e19-e642-4ccb-aa40-bfb00825ee4d"
 website_url: "https://phantom.app"
-logo_url: null
+logo_url: "/brands/phantom.png"
 social_image_url: null
 pros: ["Best-in-class Solana UX","Multi-chain (SOL, ETH, BTC, Polygon)","Open about being hot wallet","Ledger pairing"]
 cons: ["Hot wallet — phishing risk","Mobile app permissions can be aggressive","Some swap routes have wider spreads"]

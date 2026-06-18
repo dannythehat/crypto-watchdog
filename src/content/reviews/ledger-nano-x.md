@@ -8,7 +8,7 @@ summary: "The Ledger Nano X is a leading hardware wallet, providing a robust sol
 verdict: "Crypto Watchdog rates the Ledger Nano X with a Green Alert, recognising it as the gold standard for cold storage. Its core security model remains highly trusted for safeguarding digital assets. However, prospective users should be aware that this rating pertains to the device itself, not Ledger as a company, given the 2020 customer database breach affected user privacy."
 category_id: "29d57d1f-6f36-47d8-8d54-b0e3bb2facbc"
 website_url: "https://www.ledger.com"
-logo_url: null
+logo_url: "/brands/ledger-nano-x.png"
 social_image_url: null
 pros: ["Secure Element chip — bank-grade","Supports 5,500+ tokens","Bluetooth for mobile","Physical transaction confirmation"]
 cons: ["2020 customer database breach","Ledger Recover controversy","Premium price","Bluetooth attack surface debate"]

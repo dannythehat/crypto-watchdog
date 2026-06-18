@@ -8,7 +8,7 @@ summary: "The most battle-tested smart contract wallet in crypto. Multi-sig by d
 verdict: "Industry standard for self-custody at scale. If you're managing shared funds, a treasury, or want bulletproof multi-sig protection, Safe is the default choice. Open-source, audited repeatedly, and battle-tested through every market cycle since 2018."
 category_id: "054b7595-4a8a-444b-83e5-c4bceb94b90b"
 website_url: "https://safe.global"
-logo_url: "https://app.safe.global/favicon.ico"
+logo_url: "/brands/safe-gnosis.png"
 social_image_url: null
 pros: ["Battle-tested since 2018, securing $100B+ in assets","Open-source, audited by multiple top-tier firms","Native multi-sig with customisable signer thresholds","Wide ecosystem integrations (DeFi, dApps, modules)","Non-custodial — you always control the keys"]
 cons: ["Setup more complex than a regular wallet","Gas costs higher than EOA transactions","Best suited for teams/treasuries, not casual users"]

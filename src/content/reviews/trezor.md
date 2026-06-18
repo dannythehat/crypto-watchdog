@@ -8,7 +8,7 @@ summary: "The Trezor hardware wallet stands as a foundational pillar in cryptocu
 verdict: "Trezor is the original hardware wallet — fully open-source firmware, a long unbroken security record, and self-custody by design. The Safe 5 with its color touchscreen and Secure Element is the modern flagship; the Model One remains the cheapest serious cold-storage option on the market. The trade-off is a slightly less polished mobile experience than Ledger, and you have to handle your seed phrase yourself. For long-term holders who want true ownership, Trezor is one of the safest places to keep crypto."
 category_id: "29d57d1f-6f36-47d8-8d54-b0e3bb2facbc"
 website_url: "https://affil.trezor.io/aff_c?offer_id=133&aff_id=141550"
-logo_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/reviews/trezor/logo.png"
+logo_url: "/brands/trezor.jpg"
 social_image_url: null
 pros: ["Fully open-source firmware — anyone can audit the code","Founded 2013 — longest track record of any hardware wallet","Secure Element chip on Safe 3 / Safe 5 models","Trezor Suite desktop app with built-in exchange and portfolio tracking","Supports 9,000+ coins and tokens including Bitcoin, ETH, Solana, Cardano","Optional Shamir Backup splits your seed across multiple shares","Works with MetaMask, Rabby, Electrum and most major wallets"]
 cons: ["You are 100% responsible for your seed phrase — lose it, lose everything","Mobile experience trails Ledger Live (Safe 5 added Bluetooth, others USB-only)","Model One does not support Solana, Cardano or some newer chains","Upfront cost — ~$59 (Model One) to ~$169 (Safe 5)"]
