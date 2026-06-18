@@ -51,10 +51,10 @@ export const hubs: Hub[] = [
     heroSeed: 31,
     intro:
       "“AI” is the most abused word in crypto right now. For every genuine tool that uses machine learning to manage risk, there are a dozen **AI-washed** schemes that slap a chatbot on a Ponzi and promise guaranteed daily returns.\n\nWe test these platforms the same way we test everything: who runs it, where the money actually goes, and whether you can get it back out. Below are the AI finance platforms we currently **endorse**, the ones that need **caution**, and the ones to **avoid outright**. Start with our guide on [how to spot AI-washing](/blog/how-to-spot-ai-washing-crypto).",
-    trusted: ["moneyflare", "topone-futures"],
+    trusted: ["topone-futures"],
     caution: ["pionex", "3commas", "cryptohopper"],
     avoid: ["yieldmax-ai", "shadowtradebot", "crypto-signal-services-general"],
-    warnings: ["yieldmax-ai-scam-warning", "telegram-investment-bot-scams", "cryptomine-pro-scam-warning"],
+    warnings: ["moneyflare-scam-warning", "yieldmax-ai-scam-warning", "telegram-investment-bot-scams", "cryptomine-pro-scam-warning"],
     relatedPosts: ["how-to-spot-ai-washing-crypto", "what-is-ai-finance-crypto", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09"],
     faq: [
       { q: "Can AI really trade crypto profitably for me?", a: "Some tools genuinely use automation and risk models that help disciplined traders. But no honest platform can promise fixed daily profits — markets don't work that way. Any 'AI bot' guaranteeing returns is the oldest scam in a new costume." },
