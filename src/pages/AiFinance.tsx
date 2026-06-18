@@ -30,7 +30,7 @@ const SECTORS: { slug: string; label: string; blurb: string; icon: typeof Bot; a
   { slug: "nft-marketplaces", label: "NFT Marketplaces", blurb: "Where to mint and trade — minus the drainers.", icon: ImageIcon, accent: "#A78BFA", image: "/nft-marketplaces/hero.png" },
   { slug: "crypto-cards", label: "Crypto Cards", blurb: "Spend crypto in the real world, cashback and all.", icon: CreditCard, accent: "#16C784" },
   { slug: "blockchains", label: "Blockchains", blurb: "The base layers, rated by security and track record.", icon: Boxes, accent: "#4F8BFF" },
-  { slug: "cloud-mining", label: "Cloud Mining", blurb: "One of crypto's scam-heaviest corners — tread carefully.", icon: Cpu, accent: "#F5A524" },
+  { slug: "cloud-mining", label: "Cloud Mining", blurb: "One of crypto's scam-heaviest corners — tread carefully.", icon: Cpu, accent: "#F5A524", image: "/cloud-mining/hero.png" },
 ];
 
 const hubCount = (slug: string): number => {

@@ -379,6 +379,7 @@ export const hubs: Hub[] = [
     heroPrompt:
       "rows of glowing crypto mining rigs in a dark data centre with bitcoin symbols and warning amber light, cinematic, ultra detailed",
     heroSeed: 76,
+    heroImage: "/cloud-mining/hero.png",
     intro:
       "Cloud mining lets you rent mining power instead of buying hardware — in theory, passive crypto income. In practice, it's **one of the most scam-dense corners of crypto**: guaranteed-return 'mining' sites are very often Ponzi schemes that pay early users with new deposits until they vanish.\n\nWe rate the few credible services and call out the rest. If a platform guarantees daily profits, that's the tell — read [how to spot a crypto scam](/blog/how-to-spot-crypto-scam-2026).",
     trusted: [],
