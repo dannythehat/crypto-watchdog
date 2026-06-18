@@ -1,7 +1,7 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ExternalLink, Gift, ShieldCheck, ShieldAlert, ShieldX } from "lucide-react";
 import RatingBadge from "@/components/RatingBadge";
+import LogoTile from "@/components/LogoTile";
 import { getReview, getAffiliateByReviewSlug, isMonetisable } from "@/content";
 import { trackEvent } from "@/lib/analytics";
 
@@ -43,19 +43,9 @@ const TrustRing = ({ score }: { score: number | null }) => {
   );
 };
 
-const LogoTile = ({ name, logoUrl, accentHex }: { name: string; logoUrl?: string | null; accentHex: string }) => {
-  const [ok, setOk] = useState(true);
-  const initial = (name || "?").trim().charAt(0).toUpperCase();
-  return (
-    <div className="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-border bg-background/70">
-      <div className="pointer-events-none absolute inset-0 opacity-20" style={{ background: accentHex }} />
-      {logoUrl && ok ? (
-        <img src={logoUrl} alt={`${name} logo`} loading="lazy" onError={() => setOk(false)} className="relative h-full w-full object-contain p-1.5" />
-      ) : (
-        <span className="relative font-heading text-xl font-bold" style={{ color: accentHex }}>{initial}</span>
-      )}
-    </div>
-  );
+const domainFrom = (url?: string | null): string | null => {
+  if (!url) return null;
+  try { return new URL(url.startsWith("http") ? url : `https://${url}`).hostname.replace(/^www\./, ""); } catch { return null; }
 };
 
 const PlatformCard = ({ slug, variant }: { slug: string; variant: Variant }) => {
@@ -72,7 +62,7 @@ const PlatformCard = ({ slug, variant }: { slug: string; variant: Variant }) => 
       <div className={`pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full blur-2xl ${s.glow}`} />
 
       <div className="relative flex items-start gap-3">
-        <LogoTile name={review.name} logoUrl={review.logo_url} accentHex={s.hex} />
+        <LogoTile name={review.name} logoUrl={review.logo_url} domain={domainFrom((review as any).website_url)} accent={s.hex} size={56} />
         <div className="min-w-0 flex-1">
           <h3 className="truncate font-heading text-lg font-semibold">{review.name}</h3>
           {kind && <span className="text-xs text-muted-foreground">{kind}</span>}

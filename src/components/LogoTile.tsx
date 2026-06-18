@@ -1,19 +1,23 @@
 import { useState } from "react";
 
-// Brand logo tile: tries the real company logo (Clearbit, keyless) and falls
-// back to a premium gradient monogram so a box is never broken or empty.
+// Brand logo tile: tries an explicit logo URL, then the company's logo via
+// Clearbit (keyless, from the domain), then a premium gradient monogram — so a
+// box is never broken, empty, or a bare letter when a real mark is available.
 
 interface Props {
   name: string;
-  domain: string;
+  domain?: string | null;
+  logoUrl?: string | null;
   accent?: string;
   size?: number; // px
   rounded?: string;
   className?: string;
 }
 
-const LogoTile = ({ name, domain, accent = "#4F8BFF", size = 56, rounded = "rounded-2xl", className }: Props) => {
-  const [ok, setOk] = useState(true);
+const LogoTile = ({ name, domain, logoUrl, accent = "#4F8BFF", size = 56, rounded = "rounded-2xl", className }: Props) => {
+  const sources = [logoUrl || undefined, domain ? `https://logo.clearbit.com/${domain}?size=128` : undefined].filter(Boolean) as string[];
+  const [stage, setStage] = useState(0);
+  const src = sources[stage];
   const initials = name.replace(/[^a-zA-Z0-9 ]/g, "").split(/\s+/).map((w) => w[0]).slice(0, 2).join("").toUpperCase();
 
   return (
@@ -22,15 +26,15 @@ const LogoTile = ({ name, domain, accent = "#4F8BFF", size = 56, rounded = "roun
       style={{
         width: size,
         height: size,
-        background: ok ? "rgba(255,255,255,0.96)" : `linear-gradient(135deg, ${accent}, ${accent}99)`,
+        background: src ? "rgba(255,255,255,0.96)" : `linear-gradient(135deg, ${accent}, ${accent}99)`,
       }}
     >
-      {ok ? (
+      {src ? (
         <img
-          src={`https://logo.clearbit.com/${domain}?size=128`}
+          src={src}
           alt={`${name} logo`}
           loading="lazy"
-          onError={() => setOk(false)}
+          onError={() => setStage((s) => s + 1)}
           className="h-full w-full object-contain p-2"
         />
       ) : (

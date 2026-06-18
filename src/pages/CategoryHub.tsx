@@ -8,6 +8,7 @@ import Markdown from "@/components/Markdown";
 import AuroraBackdrop from "@/components/AuroraBackdrop";
 import WatchdogMascot from "@/components/WatchdogMascot";
 import PlatformCard from "@/components/PlatformCard";
+import LogoTile from "@/components/LogoTile";
 import RatingBadge from "@/components/RatingBadge";
 import NotFound from "./NotFound";
 import { getHub, hubs } from "@/content/hubs";
@@ -142,9 +143,7 @@ const CategoryHub = () => {
             <div className="relative overflow-hidden rounded-3xl border border-rating-green/30 bg-gradient-to-br from-rating-green/10 via-card/60 to-card/60 p-6 backdrop-blur-md md:p-8">
               <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-rating-green/20 blur-3xl" />
               <div className="relative flex flex-col gap-6 md:flex-row md:items-center">
-                <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-3xl border border-border bg-background/70">
-                  {featured.logo_url ? <img src={featured.logo_url} alt={featured.name} className="h-full w-full object-contain p-2" /> : <span className="font-heading text-2xl font-bold text-muted-foreground">{featured.name.charAt(0)}</span>}
-                </div>
+                <LogoTile name={featured.name} logoUrl={featured.logo_url} domain={(featured.website_url || "").replace(/^https?:\/\//, "").replace(/^www\./, "").split("/")[0] || null} accent={hub.accent} size={80} rounded="rounded-3xl" />
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-3"><h2 className="font-heading text-2xl font-bold">{featured.name}</h2><RatingBadge rating="green" size="md" /></div>
                   {slugType.get(featured.slug) && <p className="mt-1 text-sm text-muted-foreground">{slugType.get(featured.slug)}</p>}
