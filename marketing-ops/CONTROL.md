@@ -90,3 +90,11 @@ ships unless it's genuinely good. Report progress each milestone.
 - Plans/logs: `marketing-ops/` (SITE_BUILD_PLAN.md, content-plan.md, keyword-research.md)
 - Components: `src/components/` (Markdown, Seo, AuroraBackdrop, WatchdogMascot, PlatformCard, OfferCard, NewsCard, RatingBadge)
 - SEO: `src/lib/seo.ts`
+
+## 🌙 OVERNIGHT PROGRESS (2026-06-17 ~23:00)
+- DONE (full EEAT redo + calmer voice + table, committed/live): wave 1 (8) + wave 2 (8) = 16 blogs. Plus earlier: 13 hub guides + 6 blogs humanised+toned. Homepage humanised.
+- **MoneyFlare FIXED** (Danny flagged): review flipped green/95 → RED/8, removed from /ai-finance trusted, scam warning surfaced, ALL promo + affiliate link + rich_content blob stripped. Was actively promoting a debunked scam — now safe.
+- REMAINING: ~61 published blogs still need the calmer-voice/humanise pass (most already pass EEAT + have tables; keep their citations/tables, just rewrite prose to VOICE.md). Get next list via the `node` "remaining" inventory (filter updated_at != 2026-06-17).
+- ⚠️ SHARED USAGE/SESSION LIMIT hit ~22:50 UTC (resets ~23:40 UTC / "11:40pm UTC"). 3 subagents were cut off at the end but their files were saved. If new agents fail with "session limit", PAUSE launches and resume after reset.
+- Workflow per article: agent reads VOICE.md, rewrites body in calmer voice, keeps facts/links/citations/tables/FAQ/keyword, >=2000 words, zero banned phrases; commit `git add src/content/blog/` → push gitlab HEAD:main.
+- STILL TODO after blogs: screenshot-review every article; humanise hub intros+FAQs (hubs.ts) + casino page copy; fix broken internal link in due-diligence blog (/blog/how-to-vet-a-new-crypto-token → real slug ...-launch-and-avoid-getting-rekt-2026-04-29).
