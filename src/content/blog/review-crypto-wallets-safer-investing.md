@@ -1,11 +1,12 @@
 ---
+canonical_url: "/blog/understand-crypto-wallets-secure-your-digital-assets"
 type: "blog"
 title: "How to review crypto wallets step by step for safer investing"
 slug: "review-crypto-wallets-safer-investing"
 summary: "A calm, step-by-step way to review a crypto wallet before you trust it with real money: classify the type, check security and backups, weigh fees and support, then run a small live test."
 category: "Wallets"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1777256375482_Woman-researching-crypto-wallets-at-kitchen-table.jpeg"
-published: true
+published: false
 auto_generated: true
 published_at: "2026-04-27T06:00:04.424437+00:00"
 updated_at: "2026-06-18T10:00:00Z"

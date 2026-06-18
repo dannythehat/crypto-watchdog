@@ -1,11 +1,12 @@
 ---
+canonical_url: "/blog/how-to-spot-crypto-scam-2026"
 type: "blog"
 title: "How to identify and avoid crypto scams: investor guide"
 slug: "how-to-identify-and-avoid-crypto-scams-investor-guide"
 summary: "A calm, practical guide to how to avoid crypto scams: what they look like, the tactics scammers actually use, the checks that stop them, and what to do if you've already been hit."
 category: "Safety"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/heroes/scam-guide-investor.jpg"
-published: true
+published: false
 auto_generated: true
 published_at: "2026-04-26T07:24:45.255869+00:00"
 updated_at: "2026-06-18T11:00:00Z"

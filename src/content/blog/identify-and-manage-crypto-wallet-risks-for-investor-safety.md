@@ -1,11 +1,12 @@
 ---
+canonical_url: "/blog/understand-crypto-wallets-secure-your-digital-assets"
 type: "blog"
 title: "Identify and manage crypto wallet risks for investor safety"
 slug: "identify-and-manage-crypto-wallet-risks-for-investor-safety"
 summary: "Crypto wallet risks go far beyond a stolen seed phrase. Here's how remote attacks, signing mistakes and platform exposure actually drain wallets, and how to manage each one."
 category: "Wallets"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1778222511775_Investor-checking-crypto-wallet-in-cozy-home-office.jpeg"
-published: true
+published: false
 auto_generated: true
 published_at: "2026-05-08T06:55:39.126+00:00"
 updated_at: "2026-06-18T10:00:00Z"

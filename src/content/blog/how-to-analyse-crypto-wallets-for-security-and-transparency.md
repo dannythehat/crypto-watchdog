@@ -1,11 +1,12 @@
 ---
+canonical_url: "/blog/how-to-verify-crypto-wallet-safety-and-avoid-scams"
 type: "blog"
 title: "How to analyse crypto wallets for security and transparency"
 slug: "how-to-analyse-crypto-wallets-for-security-and-transparency"
 summary: "A calm, practical walkthrough on how to analyse crypto wallet security and transparency: the tools that matter, how to read risk scores honestly, and the human checks that keep you safe."
 category: "Wallets"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1777978332258_Cybersecurity-analyst-reviewing-crypto-wallet-data.jpeg"
-published: true
+published: false
 auto_generated: true
 published_at: "2026-05-06T05:56:06.083+00:00"
 updated_at: "2026-06-18T11:00:00Z"

@@ -1,11 +1,12 @@
 ---
+canonical_url: "/blog/how-to-choose-safer-crypto-platforms-and-protect-your-assets"
 type: "blog"
 title: "How to review crypto platforms safely and avoid scams"
 slug: "how-to-review-crypto-platforms-safely-and-avoid-scams"
 summary: "A calm, practical walkthrough of how to review a crypto platform yourself: what to gather, the checks that matter, and how to verify the evidence instead of trusting a score."
 category: "Safety"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1778402601373_Woman-reviewing-crypto-platform-in-home-office.jpeg"
-published: true
+published: false
 auto_generated: true
 published_at: "2026-05-11T04:56:27.392+00:00"
 updated_at: "2026-06-18T10:00:00Z"

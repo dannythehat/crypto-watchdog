@@ -1,11 +1,12 @@
 ---
+canonical_url: "/blog/how-to-choose-safer-crypto-platforms-and-protect-your-assets"
 type: "blog"
 title: "Why crypto platform trust is key to your security"
 slug: "why-crypto-platform-trust-is-key-to-your-security"
 summary: "Crypto platform trust isn't a feeling, it's something you check. Here's how to read the four pillars, spot the red flags, and protect your funds even on platforms that look safe."
 category: "Exchanges"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1777623075153_Person-reviewing-crypto-platform-dashboard-at-home.jpeg"
-published: true
+published: false
 auto_generated: true
 published_at: "2026-05-01T16:20:55.988+00:00"
 updated_at: "2026-06-18T10:00:00Z"

@@ -1,11 +1,12 @@
 ---
+canonical_url: "/blog/how-crypto-exchange-trust-frameworks-help-you-trade-safely"
 type: "blog"
 title: "Demystifying crypto platform transparency for safer trading"
 slug: "demystifying-crypto-platform-transparency-for-safer-trading"
 summary: "Crypto platform transparency in plain English: what real proof of reserves looks like in 2026, how to verify it yourself, and the red flags that should make you pause before you deposit."
 category: "Exchanges"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1777404764058_image.jpeg"
-published: true
+published: false
 auto_generated: true
 published_at: "2026-04-29T11:46:15.177+00:00"
 updated_at: "2026-06-18T10:00:00Z"
