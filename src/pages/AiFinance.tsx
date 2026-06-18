@@ -112,9 +112,16 @@ const AiFinance = () => {
                 <h1 className="mt-4 font-heading text-4xl font-bold leading-[1.05] tracking-tight md:text-5xl">AI Crypto Finance, mapped and rated</h1>
                 <p className="mt-5 max-w-xl text-lg text-muted-foreground">"AI finance" covers a huge spread — trading bots, copy trading, exchanges, DeFi, wallets and more. This is your map to all of it: <strong className="text-primary">what each sector is, how it works, and which platforms we actually trust.</strong></p>
                 <div className="mt-7 flex flex-wrap gap-3 text-sm">
-                  <a href="#sectors" className="inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-3 py-1.5 font-semibold text-primary"><Boxes className="h-4 w-4" />{SECTORS.length} sectors</a>
-                  <a href="#platforms" className="inline-flex items-center gap-1.5 rounded-full bg-rating-green/15 px-3 py-1.5 font-semibold text-rating-green"><ShieldCheck className="h-4 w-4" />{totalReviewed}+ platforms rated</a>
+                  <a href="#categories" className="inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-3 py-1.5 font-semibold text-primary"><Boxes className="h-4 w-4" />{SECTORS.length} categories</a>
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-rating-green/15 px-3 py-1.5 font-semibold text-rating-green"><ShieldCheck className="h-4 w-4" />{totalReviewed}+ platforms rated</span>
                 </div>
+                <p className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted-foreground">
+                  <span>Reviewed by the <span className="font-semibold text-foreground">Crypto Watchdog</span> team</span>
+                  <span aria-hidden>·</span>
+                  <span>Updated 18 June 2026</span>
+                  <span aria-hidden>·</span>
+                  <Link to="/methodology" className="font-medium text-primary hover:underline">Our methodology</Link>
+                </p>
               </div>
               <div className="md:col-span-2">
                 <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-2xl ring-1 ring-white/10">
@@ -155,11 +162,32 @@ const AiFinance = () => {
               <li><strong className="text-primary">Self-custody.</strong> The best new tools trade your wallet without ever holding your funds — but only if the smart contract really is scoped the way they claim.</li>
             </ul>
           </div>
+
+          <div className="mx-auto mt-8 grid max-w-4xl gap-5 md:grid-cols-2">
+            <div className="rounded-2xl border border-rating-green/30 bg-rating-green/5 p-5">
+              <p className="flex items-center gap-2 text-sm font-bold text-rating-green"><ShieldCheck className="h-4 w-4" /> The upside</p>
+              <ul className="mt-3 space-y-2 text-sm text-foreground/80">
+                <li>Removes emotion, FOMO and slow reactions from trading</li>
+                <li>Works 24/7 — crypto never closes, but you sleep</li>
+                <li>Self-custody options let you keep control of your funds</li>
+                <li>Lowers the barrier to strategies once locked to pros</li>
+              </ul>
+            </div>
+            <div className="rounded-2xl border border-rating-red/30 bg-rating-red/5 p-5">
+              <p className="flex items-center gap-2 text-sm font-bold text-rating-red"><Eye className="h-4 w-4" /> The catch</p>
+              <ul className="mt-3 space-y-2 text-sm text-foreground/80">
+                <li>"AI" is the #1 word used to dress up high-yield scams</li>
+                <li>Guaranteed or fixed daily returns are always a red flag</li>
+                <li>Leverage and automation amplify losses, not just gains</li>
+                <li>Custodial bots can vanish with your deposit</li>
+              </ul>
+            </div>
+          </div>
         </SectionWrapper>
 
         {/* Explore by sector */}
         <SectionWrapper>
-          <span id="sectors" className="block -translate-y-28" />
+          <span id="categories" className="block -translate-y-28" />
           <h2 className="font-heading text-2xl font-bold md:text-3xl">The key categories in AI finance</h2>
           <p className="mt-2 max-w-2xl text-muted-foreground">AI finance isn't one thing — it's a family of categories, each with its own platforms, returns and red flags. Here's the map: a quick read on each, then <strong className="text-foreground">tap through for the full breakdown</strong> and our rated platforms.</p>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -232,6 +260,44 @@ const AiFinance = () => {
             ].map((x) => (
               <div key={x.t} className="rounded-2xl border border-border bg-card/60 p-5 backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary/30"><div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10"><x.icon className="h-5 w-5 text-primary" /></div><h3 className="mt-3 font-heading font-semibold">{x.t}</h3><p className="mt-1.5 text-sm text-muted-foreground">{x.d}</p></div>
             ))}
+          </div>
+        </SectionWrapper>
+
+        {/* Deep-dive guide (expandable for SEO) */}
+        <SectionWrapper>
+          <div className="mx-auto max-w-3xl">
+            <details className="group rounded-2xl border border-border bg-card/60 p-6 backdrop-blur md:p-8">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 marker:content-none">
+                <span className="flex items-center gap-2 font-heading text-xl font-bold"><BookOpen className="h-5 w-5 text-primary" /> The complete guide to AI crypto finance</span>
+                <span className="shrink-0 rounded-full border border-border px-3 py-1 text-xs font-semibold text-muted-foreground group-open:hidden">Read more +</span>
+                <span className="hidden shrink-0 rounded-full border border-border px-3 py-1 text-xs font-semibold text-muted-foreground group-open:inline">Show less −</span>
+              </summary>
+              <div className="mt-6 space-y-6 border-t border-border pt-6 text-foreground/80">
+                <div>
+                  <h3 className="font-heading text-lg font-bold text-foreground">How AI crypto finance actually works</h3>
+                  <p className="mt-2 leading-relaxed">Under the hood, almost every AI finance product is three things stacked together. First, a <strong className="text-primary">data and signal layer</strong> ingests price feeds, order books, on-chain flows and sometimes social sentiment, then a model decides when to act. Second, an <strong className="text-primary">execution layer</strong> places the trades — through an exchange API, a smart contract, or a managed account the operator controls. Third, a <strong className="text-primary">custody layer</strong> determines where your money actually sits while all this happens. That last layer is the one that decides whether a bad day costs you a trade or your whole balance.</p>
+                  <p className="mt-3 leading-relaxed">The genuinely useful tools are transparent about all three. The dangerous ones blur the execution and custody layers on purpose — "deposit here and our AI does the rest" — because that's the setup that lets an operator walk away with the float.</p>
+                </div>
+                <div>
+                  <h3 className="font-heading text-lg font-bold text-foreground">Is AI crypto finance safe?</h3>
+                  <p className="mt-2 leading-relaxed">It can be, and it can also be a fast way to lose everything — the label tells you nothing. Safety comes down to <strong className="text-primary">custody</strong> (do you keep your keys?), <strong className="text-primary">verifiability</strong> (can you check the returns on-chain, or are they just numbers on a dashboard?), and <strong className="text-primary">honesty about risk</strong> (does it admit you can lose, or promise you can't?). A self-custody bot with an audited contract and a public track record is a different animal from a custodial "AI fund" promising 1% a day. We treat the second as a scam until proven otherwise.</p>
+                </div>
+                <div>
+                  <h3 className="font-heading text-lg font-bold text-foreground">How to choose an AI finance platform</h3>
+                  <ul className="mt-2 space-y-2 leading-relaxed">
+                    <li><strong className="text-primary">Check custody first.</strong> Self-custody (your wallet, your keys) beats handing funds to a company wallet, every time.</li>
+                    <li><strong className="text-primary">Demand proof, not promises.</strong> Real platforms show verifiable results; scams show screenshots and testimonials.</li>
+                    <li><strong className="text-primary">Find the team.</strong> Named, contactable founders with a history — not an anonymous brand and a three-week-old domain.</li>
+                    <li><strong className="text-primary">Read the fee and exit terms.</strong> Performance fees, lock-ups and withdrawal conditions decide your real return.</li>
+                    <li><strong className="text-primary">Start small.</strong> Test a withdrawal with a small amount before you trust a platform with more.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-heading text-lg font-bold text-foreground">The AI finance scams to avoid</h3>
+                  <p className="mt-2 leading-relaxed">The patterns repeat: <strong className="text-primary">guaranteed or fixed daily returns</strong>, <strong className="text-primary">"AI" with no explanation of the actual strategy</strong>, pressure to deposit quickly, referral schemes that pay you to recruit, and withdrawals that stall the moment you try to take money out. If you see those, it doesn't matter how slick the dashboard is. Cross-check anything against our <Link to="/scam-guides" className="font-medium text-primary underline underline-offset-2">scam guides</Link> and <Link to="/warnings" className="font-medium text-primary underline underline-offset-2">live scam alerts</Link> before you deposit a cent.</p>
+                </div>
+              </div>
+            </details>
           </div>
         </SectionWrapper>
 
