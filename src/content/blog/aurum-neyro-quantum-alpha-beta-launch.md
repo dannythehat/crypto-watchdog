@@ -76,7 +76,7 @@ Non-custodial is not the same as safe. A token approval is only as trustworthy a
 |---|---|
 | Full custody of your USDT at all times | Smart-contract risk (any DeFi product) |
 | No KYC, no email, no registration | Trading losses if the agent underperforms |
-| Quantum Alpha's self-reported 27.6% avg monthly track record | Self-reported numbers we have not yet independently verified |
+| Access to Quantum Alpha (Aurum claims a 27.6% avg monthly track record) | Self-reported numbers we have not yet independently verified |
 | One-click pause / revoke | Beta software — expect rough edges |
 | One of only 100 beta seats in the first wave | Slot scarcity — may close before you sign up |
 
@@ -120,7 +120,7 @@ You still need an Aurum account to reach the Neyro section, the same as Aurum's 
     <div>
       <h3 class="font-heading text-lg font-semibold text-foreground">Create your Aurum account</h3>
       <p class="mt-1 text-sm text-muted-foreground">Sign up via our affiliate link below. Email + password only — no KYC at this stage.</p>
-      <a href="https://backoffice.aurum.foundation/u/PKK5U0" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow hover:bg-primary/90 transition-colors">Sign up to Aurum — target ~15% monthly →</a>
+      <a href="https://backoffice.aurum.foundation/u/PKK5U0" target="_blank" rel="noopener sponsored" class="mt-3 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow hover:bg-primary/90 transition-colors">Sign up to Aurum (non-custodial) →</a>
     </div>
   </div>
   <div class="rounded-xl border border-border bg-card p-5 flex items-start gap-4">
@@ -160,7 +160,7 @@ You still need an Aurum account to reach the Neyro section, the same as Aurum's 
   </div>
 </div>
 
-Before you activate, you can review and tune the live signal stack the agent uses to size and time entries:
+Before you activate, you can review and tune the live signal stack the agent uses to size and time entries. The weightings below are pulled from the dashboard; what they actually do to performance is something we can only judge from results, not the labels:
 
 | Signal | Quantum Alpha weighting* |
 |---|---|
@@ -180,50 +180,52 @@ Before you activate, you can review and tune the live signal stack the agent use
 - A small amount of **BNB for gas** to sign the connection and trade approvals
 - USDT (BEP-20) you are comfortable allocating — never more than you can afford to lose. New to self-custody? Read our [hot wallets buyer's guide](/categories/hot-wallets) and [how to spot AI-washing](/blog/how-to-spot-ai-washing-crypto) first.
 
-## We are one of the 100 — here is our test plan
+## We took one of the 100 seats — here is our test plan
 
-We managed to secure one of the 100 beta seats. Over the next month we will be running Quantum Alpha with a small, transparent test allocation and tracking:
+We secured one of the 100 beta seats. Over the next month we are running Quantum Alpha with a small, transparent test allocation and tracking the things that actually tell you whether a bot is any good:
 
-- **Real, on-chain returns** vs the advertised 27.6% monthly average
-- **Drawdowns and worst-day losses** (the number nobody advertises)
-- **Win rate, average trade size, and execution slippage**
-- **Smart-contract behaviour** — does the system behave as a true non-custodial layer?
-- **Withdrawal and disconnection flow** — can we exit cleanly at any time?
+- **Real, on-chain returns** measured against the quoted 27.6% monthly average. If the live result lands well short, you will read it here.
+- **Drawdowns and worst-day losses.** The number nobody puts in the marketing. A strategy that makes 30% and then gives back 40% is not a winner.
+- **Win rate, average trade size, and execution slippage.** Where copy-trading quietly leaks money.
+- **Smart-contract behaviour.** Does the system genuinely behave as a non-custodial layer, or does custody slip somewhere along the way?
+- **Withdrawal and disconnection flow.** Can we revoke the approval and walk away cleanly, at any time, without a support ticket?
 
-We will publish a full follow-up review in **~30 days** with screenshots, on-chain transaction proofs, and our verdict on whether the live numbers match the marketing. Bookmark our [Trading Bots reviews hub](/categories/copy-trading) to catch the follow-up.
+We will publish a full follow-up in around **30 days** with screenshots, on-chain transaction proofs, and a plain verdict on whether the live numbers match the marketing — including if they don't. Bookmark our [Trading Bots reviews hub](/categories/copy-trading) to catch it.
 
-## Why this launch matters
+## Why this launch is worth watching
 
-Most "AI crypto bots" still rely on you depositing funds into a black box. Neyro's non-custodial design — if it delivers in practice — would be a genuine step forward for the category.
+Most "AI crypto bots" still ask you to deposit funds into a black box and hope. If Neyro's non-custodial design holds up in practice, that would be a real improvement for the category, because it removes the single biggest failure point: the company wallet that can be drained or simply disappear.
 
-Combine that with a proper agent marketplace where users can create and publish their own strategies, and Aurum is essentially building an on-chain answer to platforms like 3Commas and Cryptohopper, but with self-custody baked in.
+Pair that with an agent marketplace where users can build and publish their own strategies, and Aurum is aiming at the territory occupied by tools like 3Commas and Cryptohopper, but with self-custody as the default rather than an afterthought.
 
-That is a big "if" — and exactly why we are testing it ourselves before recommending anyone size up.
+The word doing the heavy lifting there is "if". A good design on a slide is not a verified product, and a three-month return figure is not a track record. That gap is exactly why we are testing this ourselves before we suggest anyone puts in more than they can lose.
 
 ## Quick FAQ
 
-**Is Neyro custodial?** Aurum says no — funds stay in your wallet and trades route through smart contracts. We will verify this on-chain during the beta.
+**Is Neyro custodial?** Aurum says no — funds stay in your wallet and trades route through smart contracts via a token approval you grant. That is the design; we will verify it on-chain during the beta before we vouch for it.
 
-**How many beta seats are there?** 100 in the first wave. After that, expect a waitlist.
+**Are the Aurum links here affiliate links?** Yes. Aurum is a partner of CryptoWatchdog, and we may earn a commission if you sign up through our link, at no extra cost to you. We use the same link ourselves, and being an affiliate has not softened our scepticism about the unverified returns.
+
+**How many beta seats are there?** 100 in the first wave, per Aurum. After that, expect a waitlist. Treat the scarcity as a marketing nudge, not a reason to rush.
 
 **How do I join the beta?** Through an existing Aurum partner link. You can use ours here: [Join Aurum Neyro Beta](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"}.
 
-**What is Quantum Alpha's reported performance?** +22.6%, +28.9%, +31.4% across three consecutive monthly windows (Jan–Apr). Average: 27.6% per month. **Self-reported, not yet independently verified.**
+**What is Quantum Alpha's reported performance?** +22.6%, +28.9%, +31.4% across three consecutive monthly windows (Jan–Apr), for an average of 27.6% per month. These are **self-reported by Aurum and not yet independently verified by us.** The CFTC's advisory on [AI trading bots](https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/AITradingBots.html){:target="_blank" rel="noopener"} is worth reading on why high return claims deserve caution.
 
 **Where can I read the full Aurum review?** Right here: [Aurum Foundation full review](/reviews/aurum-foundation).
 
-## Ready to grab a beta seat?
+## Thinking about a beta seat?
 
-Only 100 slots in the first wave. If you want in before the door closes:
+Aurum says there are 100 slots in the first wave. If you have read the caveats above and still want in, here is the link. Our honest advice: start small, or wait for our 30-day numbers.
 
 <div class="not-prose my-6 rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/15 via-primary/5 to-transparent p-6 text-center shadow-lg">
   <p class="text-[10px] font-semibold uppercase tracking-widest text-primary">Final CTA · 100 seats only</p>
   <h3 class="mt-1 font-heading text-xl font-bold text-foreground">Connect your wallet — keep custody — copy Quantum Alpha</h3>
   <p class="mt-2 text-sm text-muted-foreground">Same affiliate link we use ourselves. No KYC, no deposits, exit anytime.</p>
-  <a href="https://backoffice.aurum.foundation/u/PKK5U0" target="_blank" rel="noopener sponsored" class="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow hover:bg-primary/90 transition-colors">Sign up to Aurum — target ~15% monthly →</a>
+  <a href="https://backoffice.aurum.foundation/u/PKK5U0" target="_blank" rel="noopener sponsored" class="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow hover:bg-primary/90 transition-colors">Sign up to Aurum (non-custodial) →</a>
 </div>
 
-Same price for you, supports our independent on-chain testing.
+Same price for you, and it supports our independent on-chain testing. As an affiliate, we earn a commission if you sign up — which is exactly why we are holding the returns to a verification test rather than taking them on faith.
 
 ## Related reading
 

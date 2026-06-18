@@ -2,16 +2,16 @@
 type: "blog"
 title: "SIM Swap Scams: The Phone-Based Threat That Can Empty Your Crypto Wallet"
 slug: "sim-swap-scams-the-phone-based-threat-that-can-empty-your-crypto-wallet-2026-05-20"
-summary: "A SIM swap lets a criminal steal your phone number, intercept your SMS codes, and drain your crypto without ever touching your device. Here is how the attack works, what the FBI and FCC data actually show, and the concrete steps that protect you."
+summary: "A SIM swap lets a criminal take over your phone number, catch your SMS codes, and empty your crypto, all without ever touching your handset. Here is how the attack actually works, what the FBI and FCC numbers really say, and the practical steps that move you out of the easy-target pile."
 category: "Education"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog/sim-swap-scams-the-phone-based-threat-that-can-empty-your-crypto-wallet-1779256850771.png"
 published: true
 auto_generated: false
 published_at: "2026-05-20T06:00:51.27+00:00"
-updated_at: "2026-06-16T18:00:00Z"
-meta_title: "SIM Swap Scams: Protect Your Crypto From Phone Theft"
-meta_description: "SIM swap attacks let thieves hijack your phone number and drain crypto wallets. Learn how the scam works, what FBI data shows, and how to defend yourself."
-primary_keyword: "sim swap scam crypto"
+updated_at: "2026-06-18T11:30:00Z"
+meta_title: "SIM Swap Crypto: How to Stop Phone-Number Theft"
+meta_description: "A SIM swap lets thieves hijack your number and drain your crypto. Here is how the scam works, what FBI data shows, and how to lock yourself down."
+primary_keyword: "sim swap crypto"
 ---
 
 # SIM Swap Scams: The Phone-Based Threat That Can Empty Your Crypto Wallet
