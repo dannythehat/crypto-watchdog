@@ -13,11 +13,11 @@ meta_title: "Aurum Neyro Bot Review 2026: Is Aurum a Scam? On-Chain Evidence"
 meta_description: "A Crypto Watchdog investigation into the Aurum Neyro Bot: real BscScan payments, the paying treasury wallet, PancakeSwap V3 activity, BSC-USD, the Hacken audit, and the facts critics miss. Evidence-led, not hype."
 primary_keyword: "Aurum Neyro Bot"
 ---
-Type "Is Aurum a scam?" into Google and you'll get two camps shouting past each other. On one side, loyal users posting payout screenshots. On the other, instant "it's a Ponzi" replies from people who've never looked at a single transaction. Almost nobody in the middle doing the boring bit: actually following the money.
+Type "Is Aurum a scam?" into Google and you'll get **two camps shouting past each other.** On one side, loyal users posting payout screenshots. On the other, instant "it's a Ponzi" replies from people who've never looked at a single transaction. Almost nobody in the middle doing the boring bit: **actually following the money.**
 
-So that's what we did. This isn't a promo and it isn't a takedown. It's a record of what we could see on-chain as of 18 June 2026 — the payments, the wallet behind them, the smart-contract activity, the public audit — and an honest line on where the evidence stops.
+So that's what we did. **This isn't a promo, and it isn't a takedown.** It's a record of what we could see **on-chain as of 18 June 2026** — the payments, the wallet behind them, the smart-contract activity, the public audit — and an honest line on where the evidence stops.
 
-One thing up front, because it matters for trust: Aurum is one of our affiliate partners, and it's a platform we use ourselves. We earn a commission if you sign up through the link in this article. That's exactly why the rest of it leans on things you can verify yourself on a block explorer, not on our say-so. Where something is the company's own claim, we say so.
+One thing up front, because it matters for trust: **Aurum is one of our affiliate partners, and a platform we use ourselves.** We earn a commission if you sign up through our link. That's exactly why the rest of this leans on things **you can verify yourself on a block explorer** — not on our say-so. Where something is the company's own claim, we say so.
 
 > **The short version:** The evidence we reviewed does *not* support the popular claim that Aurum Neyro is "just a fake dashboard with no real on-chain activity." We saw real BSC-USD payments, a paying wallet holding around 38.7 million BSC-USD, PancakeSwap V3 liquidity interactions, and a public Hacken audit. That doesn't make returns guaranteed — it's still high-risk DeFi — but the lazy "it's all fake" argument doesn't survive the chain.
 

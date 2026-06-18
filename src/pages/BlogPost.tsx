@@ -111,7 +111,7 @@ const BlogPost = () => {
             )}
 
             <div className="mt-8 max-w-none">
-              <Markdown content={post.content} />
+              <Markdown content={post.content} dropcap />
             </div>
 
             <div className="mt-10 rounded-lg border border-border bg-muted/50 p-5 text-xs text-muted-foreground">

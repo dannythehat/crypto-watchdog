@@ -68,9 +68,18 @@ The wit is one light touch at most, often none. Mostly it's just a real person t
 ### Banned filler — never use (instant AI/generic tells)
 Furthermore · Moreover · Additionally · It's important to note · It's worth noting · In conclusion · In summary · In today's fast-paced world · in the ever-evolving world · delve · navigate the landscape · navigating · unlock the potential · robust · seamless · game-changer · in the world of crypto · at the end of the day · when it comes to · rest assured · look no further · the bottom line is · needless to say · crypto wild west · embark on a journey · paradigm shift · tapestry. If you've typed one of these, you've slipped onto autopilot — rewrite the sentence as a person.
 
+## 🧱 Never ship a wall of text (Danny, 2026-06-18)
+A "boring block of text" is a publishing fault, not just a style nit. Every article must be **scannable**:
+- **Bold the key phrase** in most paragraphs. Bold renders in brand blue, so it doubles as a visual anchor that breaks the grey. 1–2 bolded phrases per paragraph — the bit a skimmer must not miss. Don't bold whole sentences on autopilot, and don't bold everything (then nothing stands out).
+- **Short paragraphs.** Aim for 2–4 sentences. If a paragraph runs past ~5 lines on a phone, split it.
+- **A visual every few paragraphs.** Image, comparison table, callout/quote box, stat panel or CTA — never more than ~3 plain paragraphs in a row without a break. The opening especially: hero image → short intro → a highlight/"bottom line" box.
+- **The opening paragraph gets a drop cap automatically** on blog posts — but it still needs bold and to be short. A drop cap on a 6-line wall is still a wall.
+- Lead with structure: clear H2/H3, lists where they fit, a table where it lands faster than prose.
+
 ## Quick test before publishing
 1. Would a real, smart friend say it this way out loud?
 2. Did we open with a hook, not a warm-up?
 3. Any banned words/AI tells? Cut them.
 4. On serious topics: are we roasting the scam, not the victim?
 5. Is every claim still accurate, sourced and hype-free?
+6. Is it scannable — bold key phrases, short paragraphs, a visual every few paragraphs? No walls of text.

@@ -67,18 +67,25 @@ function renderInline(text: string, keyBase: string): ReactNode[] {
   return out;
 }
 
-const Markdown = ({ content }: { content: string }) => {
+const Markdown = ({ content, dropcap = false }: { content: string; dropcap?: boolean }) => {
   const lines = (content || "").replace(/\r\n/g, "\n").split("\n");
   const blocks: ReactNode[] = [];
   let para: string[] = [];
   let list: { ordered: boolean; items: string[] } | null = null;
   let quote: string[] = [];
   let k = 0;
+  // First prose paragraph gets a drop cap (opt-in, e.g. blog posts) so an
+  // article never opens as a flat wall of text.
+  let firstPara = dropcap;
 
   const flushPara = () => {
     if (para.length) {
       const key = `p${k++}`;
-      blocks.push(<p key={key} className="mb-4 leading-relaxed text-foreground/80">{renderInline(para.join(" "), key)}</p>);
+      const cap = firstPara
+        ? " first-letter:float-left first-letter:mr-2 first-letter:mt-1 first-letter:font-heading first-letter:text-5xl first-letter:font-bold first-letter:leading-[0.8] first-letter:text-primary"
+        : "";
+      firstPara = false;
+      blocks.push(<p key={key} className={`mb-4 leading-relaxed text-foreground/80${cap}`}>{renderInline(para.join(" "), key)}</p>);
       para = [];
     }
   };
