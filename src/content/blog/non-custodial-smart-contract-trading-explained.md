@@ -236,6 +236,9 @@ If you want to see what this looks like in practice, start with our [Aurum Found
 
 ## Sources & further reading
 
+- [Ethereum.org — ERC-20 token approvals & allowances](https://ethereum.org/developers/docs/standards/tokens/erc-20/)
+- [OpenZeppelin — smart contract security audits](https://www.openzeppelin.com/security-audits)
+
 - <a href="https://ethereum.org/developers/docs/standards/tokens/erc-20/" target="_blank" rel="noopener noreferrer">ethereum.org — ERC-20 token standard, including the `approve`/`allowance` spending model</a>
 - <a href="https://ethereum.org/developers/docs/smart-contracts/verifying/" target="_blank" rel="noopener noreferrer">ethereum.org — Verifying smart contracts and why published source code matters</a>
 - <a href="https://ethereum.org/roadmap/account-abstraction/" target="_blank" rel="noopener noreferrer">ethereum.org — Account abstraction (ERC-4337) and smart accounts</a>
