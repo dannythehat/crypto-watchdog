@@ -13,55 +13,55 @@ primary_keyword: "non-custodial AI trading bots"
 meta_title: "Non-Custodial AI Trading Bots: How They Work & Keep Funds Safe"
 meta_description: "How non-custodial AI trading bots trade from your own wallet without ever holding your funds, the real risks, and a 15-minute checklist to vet one before you connect."
 ---
-> **TL;DR:** A non-custodial AI trading bot is a piece of software that can execute trades from *your* wallet — without ever holding, withdrawing, or controlling the underlying funds. The keys stay with you. The bot only operates inside the rules you sign. This guide breaks down exactly how that works, why it matters, what the real risks are, and how to vet one before you connect.
+> **TL;DR:** A non-custodial AI trading bot is software that can execute trades from *your* wallet without ever holding, withdrawing, or controlling the underlying funds. The keys stay with you. The bot only acts inside the rules you sign, and you can revoke that permission whenever you like. This guide explains how that works, why it matters, the risks that don't disappear, and how to vet one before you connect.
 
 ![A non-custodial AI trading agent running on-chain while the user retains the wallet keys](https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/ai-noncustodial-hero.jpg)
 
 ## The 30-second answer
 
-Custodial bots ask for your money. You deposit USDT into their platform wallet, they "trade" with it, and you hope the withdraw button works.
+Custodial bots ask for your money. You deposit USDT into their platform wallet, they trade with it, and you hope the withdraw button works on the day you press it.
 
-Non-custodial bots ask for *permission*. Your USDT never leaves your wallet. The bot uses a smart-contract approval to execute trades inside the limits you set.
+Non-custodial AI trading bots ask for *permission* instead. Your USDT never leaves your wallet. The bot uses a smart-contract approval to trade inside limits you set, and nothing else.
 
-The difference is the difference between handing your car keys to a stranger and letting a valet park inside a roped-off lot. One is trust. The other is architecture.
+One model asks you to trust a company you can't see. The other replaces that trust with rules written into code you can read. That's the whole difference, and it's a big one.
 
 ## Why this category exists in 2026
 
-Centralised crypto bots had a brutal 2023–2025. Hundreds of platforms went dark. Most weren't hacks — they were exits.
+Centralised crypto bots had a grim run from 2023 to 2025. Hundreds of platforms went dark. Most of those weren't hacks. They were exits.
 
-The pattern was always the same. Smooth onboarding. Smooth deposits. Smooth daily yield numbers. Then withdrawal queues. Then "maintenance". Then silence.
+The pattern barely changed from one to the next. Smooth onboarding. Smooth deposits. Smooth daily yield numbers on a dashboard. Then withdrawal queues. Then a "maintenance" banner. Then nothing.
 
-Builders learned the lesson. The new generation of AI trading agents is being engineered so the operator *cannot* run away with the funds — even if they wanted to.
+Plenty of builders watched that happen and drew the obvious conclusion. The newer wave of AI trading agents is designed so the operator *can't* run off with the funds, whether they're tempted to or not.
 
-That's not marketing. It's enforced by the contract on-chain.
+We're not taking their word for it. The constraint lives in the contract on-chain, where anyone can check it.
 
 ## How a non-custodial AI bot actually works
 
-Strip away the branding and almost every honest non-custodial bot follows the same four-step model.
+Strip away the branding and almost every honest non-custodial bot runs on the same four-step model.
 
 ### Step 1 — You connect your wallet
 
-You connect a self-custody wallet (MetaMask, Rabby, Trust, or a [smart-contract wallet](/categories/smart-contract-wallets) like Safe). The bot's interface reads your balance. That's it.
+You connect a self-custody wallet (MetaMask, Rabby, Trust, or a [smart-contract wallet](/categories/smart-contract-wallets) like Safe). The bot's interface reads your balance. That's the whole of step one.
 
-No deposit. No transfer. No "company wallet" address.
+No deposit. No transfer. No "company wallet" address to send anything to.
 
 ### Step 2 — You sign a scoped approval
 
-This is the critical step. You sign a transaction giving the bot's smart contract permission to spend a specific token, up to a specific amount, on specific venues.
+This is the step that matters most, so read the prompt before you sign it. You're giving the bot's smart contract permission to spend a specific token, up to a specific amount, on specific venues.
 
-Good bots ask for the *minimum* approval. Bad bots ask for `unlimited` on every token in your wallet — that's a red flag we cover below.
+A good bot asks for the *minimum* approval it needs to do the job. A bad one asks for `unlimited` spending on every token in your wallet, which is the red flag we come back to below.
 
 ### Step 3 — The agent executes inside the rules
 
-When the AI logic decides to trade, it calls the contract. The contract checks that the action is within the approved scope. If yes, it routes the order through a [DEX or aggregator](/blog/what-is-a-decentralized-exchange-dex-explained). If no, it reverts.
+When the AI logic decides to trade, it calls the contract. The contract checks the action against the scope you approved. If it's inside the rules, it routes the order through a [DEX or aggregator](/blog/what-is-a-decentralized-exchange-dex-explained). If it isn't, the transaction reverts and nothing happens.
 
-You can watch every action on-chain. Nothing happens off-chain. Nothing happens silently.
+You can watch every action on-chain as it lands. Nothing runs off-chain. Nothing runs silently in the background.
 
 ### Step 4 — You revoke whenever you want
 
-One click on a tool like Revoke.cash and the permission is gone. The bot is locked out. Your funds were never anywhere else.
+One transaction on a tool like Revoke.cash and the permission is gone. The bot is locked out on the spot. Your funds never moved in the first place, so there's nothing to claw back.
 
-This single property — *revocable, scoped, on-chain permission* — is what makes the model honest.
+That single property — revocable, scoped, on-chain permission — is what makes the model honest. Take it away and you're back to trusting a stranger with the keys.
 
 ![How a smart-contract permission limits what an AI trading agent can do with your funds](https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/smart-contracts-handshake.jpg)
 
