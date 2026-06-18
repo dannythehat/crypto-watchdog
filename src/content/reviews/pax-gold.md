@@ -8,7 +8,7 @@ summary: "PAX Gold is regulated tokenized gold from Paxos, supervised by the New
 verdict: "PAX Gold is one of the most credible ways to own gold on-chain. Issued by the NYDFS-regulated Paxos, each PAXG is backed by a specific London Good Delivery bar with regular third-party attestations. The real risks are issuer/custody trust and high physical-redemption minimums — but on regulation and transparency it sets the benchmark for tokenized gold. Not financial advice."
 category_id: null
 website_url: "https://paxos.com/paxgold"
-logo_url: null
+logo_url: "/brands/pax-gold.jpg"
 pros: ["NYDFS-regulated issuer (Paxos)","Each token = one fine troy ounce of allocated LBMA gold","Regular third-party attestations of reserves","Redeemable and widely supported across exchanges","No management/storage fee (small on-chain fees apply)"]
 cons: ["Issuer & custody risk — you trust Paxos and its vaults","Physical redemption has high minimums","The gold price itself is volatile","Availability and tax treatment vary by country"]
 fees_info: "No ongoing storage or management fee from Paxos. You pay normal on-chain gas to move PAXG, plus any exchange trading fees. Paxos charges on-chain creation/destruction fees and physical redemption has its own (high) minimums."

@@ -8,7 +8,7 @@ summary: "Ondo Finance is the leading platform for tokenized US Treasuries, brin
 verdict: "Ondo is the leading on-ramp for tokenized US Treasuries, bringing genuine real-world yield on-chain with institutional backing and deep liquidity. It's about as close to 'real yield' as crypto gets — but it's still smart-contract and issuer dependent, and access is gated by jurisdiction and eligibility. A strong, transparent operator in the RWA space. Not financial advice."
 category_id: null
 website_url: "https://ondo.finance"
-logo_url: null
+logo_url: "/brands/ondo-finance.png"
 pros: ["Tokenizes real US Treasuries — yield from genuine assets","Institutional backing and partners","Audited contracts and clear disclosures","Deep liquidity for the RWA sector"]
 cons: ["Access gated by jurisdiction/eligibility (KYC)","Smart-contract and issuer/custody risk","Yield tracks rates — it can fall","Newer asset class with evolving regulation"]
 fees_info: "Management fees apply on the tokenized products (disclosed per product). On-chain gas applies to transfers. Check the current fee for the specific token (e.g. OUSG, USDY) before buying."

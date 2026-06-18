@@ -8,7 +8,7 @@ summary: "Allocated, audited, spendable physical gold and silver — monthly yie
 verdict: "Kinesis is one of the few Core Digital Gold Tokens (Physically Backed) that delivers real bullion, real yield, and real spendability."
 category_id: "7fac02cc-b735-42eb-aa63-cd0050759a11"
 website_url: "https://kinesis.money"
-logo_url: null
+logo_url: "/brands/kinesis-money.png"
 social_image_url: null
 pros: ["Fully allocated, audited gold and silver","Working Mastercard debit card","Monthly yield paid in physical metal","Zero storage or custody fees","Tight LBMA spot pricing","Established custody partners (Brink's, Loomis, Malca-Amit)"]
 cons: ["KYC required","Yields are variable","Card not yet available everywhere","Liquidity centralised on Kinesis exchange"]

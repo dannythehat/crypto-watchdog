@@ -8,7 +8,7 @@ summary: "RealT makes US rental property accessible on-chain from roughly $50, w
 verdict: "RealT makes US rental property accessible on-chain from around $50, with rent paid out on-chain. It's a genuinely interesting use of tokenization, but it's niche: liquidity is thin, exiting can be slow, and property/jurisdiction risk is real. Treat it as a long-horizon, illiquid holding, not a quick trade. Caution-rated. Not financial advice."
 category_id: null
 website_url: "https://realt.co"
-logo_url: null
+logo_url: "/brands/realt.png"
 pros: ["Fractional US property from ~$50","Rent distributed on-chain to holders","Lowers the barrier to real-estate exposure","Transparent property-level information"]
 cons: ["Thin liquidity — hard to exit quickly","Real property risk (vacancy, maintenance, value)","Jurisdiction/eligibility restrictions","Counterparty risk on the issuer/management"]
 fees_info: "Property tokens carry management/platform fees that reduce net rental yield; on-chain gas applies to transfers. Read each property's disclosures for the specific costs."

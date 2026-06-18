@@ -8,7 +8,7 @@ summary: "Tether Gold (XAUT) is a large, liquid tokenized-gold product where eac
 verdict: "Tether Gold is a large, liquid tokenized-gold product, each XAUT backed by a troy ounce of physical gold. It works well and trades deeply — but Tether discloses less than Paxos does for PAXG, so it scores a notch lower on transparency. Fine for exposure; PAXG is our pick if disclosure matters most to you. Not financial advice."
 category_id: null
 website_url: "https://gold.tether.to"
-logo_url: null
+logo_url: "/brands/tether-gold.jpg"
 pros: ["Each XAUT backed by one troy ounce of physical gold","Large market cap and deep liquidity","Self-custodiable token","Allocated gold held in Switzerland"]
 cons: ["Less public disclosure than PAXG","Issuer/custody risk (Tether)","Gold price volatility","Availability/tax varies by country"]
 fees_info: "No ongoing storage fee from Tether; on-chain gas applies to transfers, plus exchange trading fees. Confirm current creation/redemption terms on the official site."
