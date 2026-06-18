@@ -113,3 +113,13 @@ ships unless it's genuinely good. Report progress each milestone.
 - **FIXED 32 broken images** across 7 old articles (heroes repointed to real assets; some inline remapped to real /aurum/ images; rest + their figure/caption blocks removed). 0 broken images remain site-wide.
 - **FIXED internal links site-wide** (193 across 72 files): /categories/* → root hub slugs; renamed blog/warning slugs corrected; never-built pages (/education, /ai-evaluator, /scam-guides, /token-checker, /comparisons, /methodology, /editorial-policy, /affiliate-disclosure, /rwa-tokenization, /contact) → nearest real route. Validator: 0 broken (only a /reviews/some-slug example in a README remains, not rendered).
 - **Aurum affiliate** record updated to backoffice referral link `https://backoffice.aurum.foundation/u/PKK5U0` + classroom note. NOTE: these never-built pages (methodology/editorial-policy/affiliate-disclosure/scam-guides/education/ai-evaluator/token-checker/comparisons) are STILL not real routes — repointed for now; build them when asked.
+
+## 🎓 AURUM COMMUNITY (Skool) — community/classroom funnel (2026-06-18)
+- Community/classroom link (The Aurum Era on Skool): https://www.skool.com/the-aurum-era/about?ref=02839a883fef44d481b88d6b865db877
+- Use a BEAUTIFUL frosted, fully-clickable community box (gradient from-primary/15, ring, backdrop-blur) — distinct from the blue "Join Aurum here" AFFILIATE boxes (backoffice link). Wording: warm/welcoming, "join our wonderful community... we'll answer your questions & help you sign up... say Danny invited you." "The Aurum Era" + "Danny invited you" in text-primary blue.
+- Flagship article (aurum-neyro-bot-review-is-aurum-a-scam) has 2 community boxes (spaced: after "why people warn", and after "due diligence"). All other Aurum articles have 1 each. Aurum-foundation REVIEW: box lives in the `summary` field (ReviewDetail renders summary, NOT body).
+- TWO different CTAs: (1) affiliate = backoffice.aurum.foundation/u/PKK5U0 (sign-up, earns commission); (2) community = Skool link (join group, get help, say Danny invited you). Keep both; never bunch boxes together.
+
+## 🎨 ARTICLE STYLE STANDARD (Aurum article = the template, 2026-06-18)
+- Bold (**text**) renders brand-blue (Markdown.tsx strong = text-primary). Body/list/table/quote text = foreground/80-85 (higher contrast; the old light grey was hard to read). muted-foreground token bumped (dark 64%, light 36%).
+- Renderer outputs trusted block-level HTML (figures, CTA cards). Tailwind scans src/content so md-only classes generate.
