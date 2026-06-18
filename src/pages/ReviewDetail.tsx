@@ -11,7 +11,7 @@ import Markdown from "@/components/Markdown";
 import { Button } from "@/components/ui/button";
 import { useReview } from "@/hooks/useReviews";
 import { getAffiliateByReviewSlug, isMonetisable } from "@/content";
-import { breadcrumbJsonLd, reviewJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, reviewJsonLd, faqJsonLd } from "@/lib/seo";
 
 const ReviewDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -48,6 +48,8 @@ const ReviewDetail = () => {
   }
 
   const auditData = review.detailed_audit as Record<string, any> | null;
+  const rc = ((review as any).rich_content || {}) as Record<string, any>;
+  const rcFaqs = Array.isArray(rc.faq) ? rc.faq.map((f: any) => ({ q: f.question || f.q, a: f.answer || f.a })).filter((f: any) => f.q && f.a) : [];
   const path = `/reviews/${review.slug}`;
 
   return (
@@ -74,6 +76,7 @@ const ReviewDetail = () => {
             { name: "Reviews", path: "/reviews" },
             { name: review.name, path },
           ]),
+          faqJsonLd(rcFaqs) || {},
         ]}
       />
       <Navbar />
@@ -217,6 +220,89 @@ const ReviewDetail = () => {
                 </div>
               )}
             </div>
+
+            {/* Key features */}
+            {Array.isArray(rc.key_features) && rc.key_features.length > 0 && (
+              <div className="mt-10">
+                <h2 className="mb-4 font-heading text-2xl font-semibold">What you get</h2>
+                <div className="grid gap-4 md:grid-cols-2">
+                  {rc.key_features.map((f: any, i: number) => (
+                    <div key={i} className="rounded-xl border border-border bg-card p-5">
+                      <div className="flex items-center gap-2">
+                        {f.icon && <span className="text-xl">{f.icon}</span>}
+                        <h3 className="font-heading font-semibold">{f.title}</h3>
+                      </div>
+                      <p className="mt-2 text-sm text-muted-foreground">{f.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Green / Red flags */}
+            {((Array.isArray(rc.green_flags) && rc.green_flags.length > 0) || (Array.isArray(rc.red_flags) && rc.red_flags.length > 0)) && (
+              <div className="mt-8 grid gap-6 md:grid-cols-2">
+                {Array.isArray(rc.green_flags) && rc.green_flags.length > 0 && (
+                  <div className="rounded-2xl border border-rating-green/30 bg-rating-green/5 p-5">
+                    <h3 className="font-heading font-semibold text-rating-green">Green flags</h3>
+                    <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                      {rc.green_flags.map((g: string, i: number) => <li key={i} className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-rating-green" />{g}</li>)}
+                    </ul>
+                  </div>
+                )}
+                {Array.isArray(rc.red_flags) && rc.red_flags.length > 0 && (
+                  <div className="rounded-2xl border border-rating-red/30 bg-rating-red/5 p-5">
+                    <h3 className="font-heading font-semibold text-rating-red">Red flags to watch</h3>
+                    <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                      {rc.red_flags.map((g: string, i: number) => <li key={i} className="flex items-start gap-2"><X className="mt-0.5 h-4 w-4 shrink-0 text-rating-red" />{g}</li>)}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Who it's for */}
+            {rc.who_its_for && (
+              <div className="mt-8 rounded-xl border-l-4 border-primary bg-primary/5 p-5">
+                <h3 className="font-heading font-semibold">Who it's for</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{rc.who_its_for}</p>
+              </div>
+            )}
+
+            {/* Stats */}
+            {Array.isArray(rc.stats) && rc.stats.length > 0 && (
+              <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+                {rc.stats.map((s: any, i: number) => (
+                  <div key={i} className="rounded-xl border border-border bg-card p-4 text-center">
+                    <p className="font-heading text-xl font-bold text-primary">{s.value}</p>
+                    <p className="mt-1 text-xs text-muted-foreground">{s.label}</p>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Verify, don't trust */}
+            {rc.verify_dont_trust && (
+              <div className="mt-8 rounded-xl border border-amber-500/30 bg-amber-500/5 p-5">
+                <h3 className="font-heading font-semibold text-amber-500">🔒 Verify, don't trust</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{rc.verify_dont_trust}</p>
+              </div>
+            )}
+
+            {/* FAQ */}
+            {rcFaqs.length > 0 && (
+              <div className="mt-10">
+                <h2 className="mb-4 font-heading text-2xl font-semibold">Frequently asked questions</h2>
+                <div className="space-y-3">
+                  {rcFaqs.map((f: any, i: number) => (
+                    <details key={i} className="group rounded-xl border border-border bg-card p-5">
+                      <summary className="cursor-pointer list-none font-heading font-semibold marker:content-none"><span className="flex items-center justify-between gap-3">{f.q}<span className="text-primary transition-transform group-open:rotate-45">+</span></span></summary>
+                      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Disclaimer */}
             <div className="mt-10 rounded-lg border border-border bg-muted/50 p-5 text-xs text-muted-foreground">
