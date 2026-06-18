@@ -26,6 +26,20 @@ const HUB_ICONS: Record<string, typeof BrainCircuit> = {
   "crypto-trading-bots": Bot,
 };
 
+// Top-level category tiles for the homepage. Each opens a landing page (umbrella)
+// or its category pillar. Image-led; falls back to an icon where no art exists yet.
+const CATS: { label: string; about: string; to: string; image?: string; icon: typeof BrainCircuit; accent: string }[] = [
+  { label: "AI Finance", about: "AI trading, bots & agents — what's real, and what's a scam in a chatbot costume.", to: "/ai-finance", image: "/ai-finance/hero.png", icon: BrainCircuit, accent: "#4F8BFF" },
+  { label: "Trading", about: "Copy trading, automated bots and AI strategies — rated on evidence, not hype.", to: "/trading", image: "/copy-trading/hero.png", icon: Users, accent: "#F5A524" },
+  { label: "Exchanges", about: "Where you buy, sell and trade — and where we test withdrawals for real.", to: "/crypto-exchanges", image: "/crypto-exchanges/hero.png", icon: ArrowLeftRight, accent: "#16C784" },
+  { label: "Wallets", about: "Self-custody and hot wallets we actually trust — plus the fakes to avoid.", to: "/crypto-wallets", image: "/crypto-wallets/hero.png", icon: Wallet, accent: "#16C784" },
+  { label: "DeFi", about: "Real yield vs Ponzi yield — protocols rated on what's verifiable on-chain.", to: "/defi-platforms", icon: Layers, accent: "#4F8BFF" },
+  { label: "Tokenized Assets", about: "Gold, US treasuries and property, brought on-chain (RWA).", to: "/tokenized-assets", image: "/tokenized-assets/hero.png", icon: BrainCircuit, accent: "#A78BFA" },
+  { label: "NFT Marketplaces", about: "Where to mint and trade collectibles — minus the wallet drainers.", to: "/nft-marketplaces", image: "/nft-marketplaces/hero.png", icon: BrainCircuit, accent: "#A78BFA" },
+  { label: "Casinos & Sportsbooks", about: "Vetted crypto casinos and Bitcoin sportsbooks, scored out of 100.", to: "/crypto-casinos", image: "/crypto-casinos/hero.png", icon: Shield, accent: "#F5A524" },
+  { label: "Scams & Safety", about: "Spot, avoid and recover from crypto scams — the patterns that keep you safe.", to: "/scam-guides", image: "/scam-guides/hero.png", icon: Shield, accent: "#F23F52" },
+];
+
 const Index = () => {
   const { data: reviews } = useReviews();
   const { data: posts } = useBlogPosts();
@@ -113,45 +127,34 @@ const Index = () => {
         {/* Browse by category — hub landing pages */}
         <SectionWrapper>
           <div className="text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-primary">Endorsed vs avoid</span>
-            <h2 className="mt-2 font-heading text-3xl font-bold md:text-4xl">Browse by category</h2>
+            <span className="text-sm font-semibold uppercase tracking-wider text-primary">Explore</span>
+            <h2 className="mt-2 font-heading text-3xl font-bold md:text-4xl">Browse crypto by category</h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              Curated landing pages for every corner of crypto — the platforms we trust, the ones to watch, and the ones to avoid. Pick your battleground.
+              Every corner of crypto, mapped — the platforms we trust, the ones to watch, and the ones to avoid. Pick where you're headed.
             </p>
           </div>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {hubs.map((h) => (
+            {CATS.map((c) => (
               <Link
-                key={h.slug}
-                to={`/${h.slug}`}
-                className="group relative overflow-hidden rounded-2xl border border-border bg-card/60 p-6 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl"
+                key={c.to}
+                to={c.to}
+                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-2xl"
               >
-                <div
-                  className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full blur-2xl transition-opacity group-hover:opacity-80"
-                  style={{ background: h.accent, opacity: 0.18 }}
-                />
-                <div className="relative flex items-start justify-between gap-3">
-                  <div>
-                    <span className="text-xs font-semibold uppercase tracking-wider text-primary">{h.eyebrow}</span>
-                    <h3 className="mt-1 font-heading text-lg font-semibold leading-snug">{h.title.split(":")[0]}</h3>
+                {c.image ? (
+                  <div className="relative aspect-[16/10] overflow-hidden">
+                    <img src={c.image} alt={c.label} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-card via-card/10 to-transparent" />
                   </div>
-                  {(() => {
-                    const Icon = HUB_ICONS[h.slug] ?? Shield;
-                    return (
-                      <div
-                        className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border transition-transform group-hover:scale-110"
-                        style={{ borderColor: `${h.accent}55`, background: `${h.accent}14` }}
-                      >
-                        <Icon className="h-7 w-7" style={{ color: h.accent }} />
-                      </div>
-                    );
-                  })()}
-                </div>
-                <div className="relative mt-4 flex flex-wrap gap-2 text-xs font-semibold">
-                  <span className="inline-flex items-center gap-1 rounded-full bg-rating-green/15 px-2 py-0.5 text-rating-green"><ShieldCheck className="h-3 w-3" />{h.trusted.length}</span>
-                  <span className="inline-flex items-center gap-1 rounded-full bg-rating-orange/15 px-2 py-0.5 text-rating-orange"><ShieldAlert className="h-3 w-3" />{h.caution.length}</span>
-                  <span className="inline-flex items-center gap-1 rounded-full bg-rating-red/15 px-2 py-0.5 text-rating-red"><ShieldX className="h-3 w-3" />{h.avoid.length + h.warnings.length}</span>
-                  <span className="ml-auto inline-flex items-center gap-1 text-primary opacity-0 transition-opacity group-hover:opacity-100">Explore <ArrowRight className="h-3.5 w-3.5" /></span>
+                ) : (
+                  <div className="relative flex aspect-[16/10] items-center justify-center overflow-hidden" style={{ background: `linear-gradient(135deg, ${c.accent}26, transparent)` }}>
+                    <div className="pointer-events-none absolute -right-6 -top-6 h-24 w-24 rounded-full blur-3xl" style={{ background: `${c.accent}40` }} />
+                    <c.icon className="relative h-14 w-14" style={{ color: c.accent }} />
+                  </div>
+                )}
+                <div className="flex flex-1 flex-col p-5">
+                  <h3 className="font-heading text-lg font-bold">{c.label}</h3>
+                  <p className="mt-1 flex-1 text-sm text-muted-foreground">{c.about}</p>
+                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">Explore <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" /></span>
                 </div>
               </Link>
             ))}
