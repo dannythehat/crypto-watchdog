@@ -2,9 +2,11 @@
 // measurement id is configured; otherwise no-ops. Used for traffic + affiliate
 // click tracking so we can see what converts.
 //
-// Set VITE_GA_MEASUREMENT_ID (e.g. G-XXXXXXX) in the build env to enable.
+// Measurement ID can be overridden via VITE_GA_MEASUREMENT_ID in the build env;
+// otherwise it falls back to the live CryptoWatchdog GA4 property below.
 
-export const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined;
+export const GA_MEASUREMENT_ID =
+  (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined) || "G-E7H3P0PNK6";
 
 declare global {
   interface Window {
