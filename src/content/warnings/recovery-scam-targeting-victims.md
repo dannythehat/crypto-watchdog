@@ -30,7 +30,7 @@ This type of fraud is particularly damaging because it hits people when they are
 
 Furthermore, these scams erode trust in legitimate security efforts. When victims are lied to by people claiming to be investigators, they become less likely to cooperate with real authorities. This makes it harder for actual police to track criminal networks.
 
-Understanding the mechanics of these frauds is essential for [crypto safety education](/education). By learning how these predators operate, you can protect your remaining assets. It is vital to remember that legitimate recovery is exceptionally rare and never requires upfront payments.
+Understanding the mechanics of these frauds is essential for [crypto safety education](/blog). By learning how these predators operate, you can protect your remaining assets. It is vital to remember that legitimate recovery is exceptionally rare and never requires upfront payments.
 
 ## How the scam or exploit works
 
@@ -70,9 +70,9 @@ If you connected your wallet to any suspicious websites, use a [Revoke cash appr
 
 The best way to avoid these traps is to remain sceptical of any unsolicited offers. Always conduct thorough research before engaging with any service. You can use our [vetted crypto platform reviews](/reviews) to find reputable tools and services in the industry.
 
-Educate yourself on how blockchains actually work. Understanding that transactions are final will help you spot the lies told by recovery scammers. Our [crypto scam guides](/scam-guides) provide detailed breakdowns of common tactics used by criminals to deceive investors.
+Educate yourself on how blockchains actually work. Understanding that transactions are final will help you spot the lies told by recovery scammers. Our [crypto scam guides](/warnings) provide detailed breakdowns of common tactics used by criminals to deceive investors.
 
-Never share your private keys or recovery phrases with anyone. No legitimate recovery service or support agent will ever ask for this information. If you are unsure about a service, you can use our [free crypto safety check](/ai-evaluator) to get an automated risk assessment.
+Never share your private keys or recovery phrases with anyone. No legitimate recovery service or support agent will ever ask for this information. If you are unsure about a service, you can use our [free crypto safety check](/reviews) to get an automated risk assessment.
 
 Consider using a hardware wallet for long term storage of your assets. While not a silver bullet, a physical device adds a layer of protection against online attacks. Read our [hardware wallet safety guide](/blog/your-hardware-wallet-won-t-save-you-a-2026-security-guide-2026-04-22) to understand the limitations and benefits.
 

@@ -163,7 +163,7 @@ Popular gold platforms attract impersonators. Scammers build lookalike sites and
 - Always reach Kinesis through the official domain and verified links.
 - Be sceptical of any guaranteed-return pitch; the real Holder's Yield is variable.
 - If you have already lost money, beware [crypto recovery scams](/blog/crypto-recovery-scams-warning). No legitimate firm or agency asks for an upfront fee to recover lost tokens.
-- Run a [free crypto safety check](/ai-evaluator) before connecting a wallet to any new site.
+- Run a [free crypto safety check](/reviews) before connecting a wallet to any new site.
 
 ## How to get started safely
 

@@ -187,7 +187,7 @@ If this guide has made wallet analysis feel less like a black box, the sensible 
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-At [Crypto Watchdog](https://cryptowatchdog.net), we run an independent, evidence-based 8-point audit framework across exchanges, wallets, trading bots and DeFi protocols, and we publish a verifiable trust score out of 100 so your decisions rest on data rather than marketing. Our [wallet scam warnings](https://cryptowatchdog.net/warnings) are updated as new threats appear, and our [crypto wallet education](https://cryptowatchdog.net/education) section lays out structured learning for investors at any stage. Whether you're vetting a brand-new wallet or taking a fresh look at one you've held for years, the resources are built for exactly this kind of patient, repeated scrutiny.
+At [Crypto Watchdog](https://cryptowatchdog.net), we run an independent, evidence-based 8-point audit framework across exchanges, wallets, trading bots and DeFi protocols, and we publish a verifiable trust score out of 100 so your decisions rest on data rather than marketing. Our [wallet scam warnings](https://cryptowatchdog.net/warnings) are updated as new threats appear, and our [crypto wallet education](https://cryptowatchdog.net/blog) section lays out structured learning for investors at any stage. Whether you're vetting a brand-new wallet or taking a fresh look at one you've held for years, the resources are built for exactly this kind of patient, repeated scrutiny.
 
 ## Frequently asked questions
 

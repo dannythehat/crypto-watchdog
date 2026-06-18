@@ -163,7 +163,7 @@ Crypto Watchdog exists to help investors deal with exactly this kind of layered 
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-For wallet-specific threats, our [wallet scam alerts](https://cryptowatchdog.net/warnings) page keeps current warnings about cloned apps, malicious browser extensions, and fake wallet support services. When a new threat surfaces, we document it with evidence before we publish. Our [crypto education resources](https://cryptowatchdog.net/education) section goes further, with structured guides on wallet mechanics, DeFi safety, and deposit risk. Keeping up with a regularly updated, independent source is one of the most practical risk reductions any investor can manage, and it costs you nothing but a little attention.
+For wallet-specific threats, our [wallet scam alerts](https://cryptowatchdog.net/warnings) page keeps current warnings about cloned apps, malicious browser extensions, and fake wallet support services. When a new threat surfaces, we document it with evidence before we publish. Our [crypto education resources](https://cryptowatchdog.net/blog) section goes further, with structured guides on wallet mechanics, DeFi safety, and deposit risk. Keeping up with a regularly updated, independent source is one of the most practical risk reductions any investor can manage, and it costs you nothing but a little attention.
 
 ## Frequently asked questions
 

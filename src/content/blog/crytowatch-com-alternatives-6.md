@@ -329,7 +329,7 @@ Sorting trustworthy platforms from risky ones is the whole game, and it's harder
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-Have a look through our [Exchanges reviews](https://cryptowatchdog.net/categories/exchanges) or compare options in our [Wallets reviews](https://cryptowatchdog.net/categories/wallets) to see the Trust Score system and colour-coded alerts in action. Check the safety before you invest, not after, by visiting https://cryptowatchdog.net. The check costs you nothing. Skipping it can cost a lot.
+Have a look through our [Exchanges reviews](https://cryptowatchdog.net/crypto-exchanges) or compare options in our [Wallets reviews](https://cryptowatchdog.net/crypto-wallets) to see the Trust Score system and colour-coded alerts in action. Check the safety before you invest, not after, by visiting https://cryptowatchdog.net. The check costs you nothing. Skipping it can cost a lot.
 
 ## Frequently Asked Questions
 

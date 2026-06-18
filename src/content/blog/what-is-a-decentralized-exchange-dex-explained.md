@@ -96,7 +96,7 @@ DEX trading is not safe by default, and anyone telling you otherwise is selling 
 - **Impermanent loss.** If you provide liquidity and the two tokens move apart in price, you can end up worse off than if you'd simply held them. The name undersells how permanent the loss can feel.
 - **Slippage.** On thin, illiquid pairs the price you actually get can be far worse than the price you were quoted. Set a slippage limit and respect it.
 - **MEV and sandwich attacks.** Bots watch the pending transactions and can squeeze in front of your trade to profit off it. Tight slippage limits and a private RPC endpoint cut the risk.
-- **Rug pulls.** Anyone can create and list a token. Plenty are built to be drained the moment enough people buy in. Always verify the contract on a [token checker](/token-checker) before you go near it.
+- **Rug pulls.** Anyone can create and list a token. Plenty are built to be drained the moment enough people buy in. Always verify the contract on a [token checker](/blog/how-to-vet-a-new-crypto-token-launch-and-avoid-getting-rekt-2026-04-29) before you go near it.
 - **Phishing dApps.** Fake Uniswap clones empty wallets every single day. The site looks identical; the contract behind the "Connect" button is not. Bookmark the real URL and only ever use the bookmark.
 
 And one rule that's saved more people than any other: if a project promises **"guaranteed daily returns"** from a DEX, walk away. That isn't how AMMs work. A pool earns fees from trading volume, which goes up and down. Anyone guaranteeing a fixed daily number is either confused or lying, and neither is worth your money.
@@ -138,7 +138,7 @@ If you're going to do this, do it in an order that protects you. Here's the sequ
 2. **Fund it with the network's gas token.** BNB for BSC, ETH for Ethereum, SOL for Solana. Without gas, nothing moves.
 3. **Bridge or buy stablecoins.** USDT or USDC are the universal trading pair on most DEXs.
 4. **Start with a small swap.** Twenty dollars on the real network teaches you more than a week of YouTube tutorials. Real fees, real slippage, real confirmation screen.
-5. **Verify every contract address.** Use [our token checker](/token-checker) before you approve any new token. A thirty-second check beats a drained wallet.
+5. **Verify every contract address.** Use [our token checker](/blog/how-to-vet-a-new-crypto-token-launch-and-avoid-getting-rekt-2026-04-29) before you approve any new token. A thirty-second check beats a drained wallet.
 6. **Bookmark the official DEX URL.** Then only ever arrive via the bookmark. Never click a DEX link from a Telegram group or a Twitter ad.
 7. **Consider an AI agent for hands-off execution.** Once the basics click, a non-custodial bot like Aurum can run the strategy so you don't have to live on the charts.
 

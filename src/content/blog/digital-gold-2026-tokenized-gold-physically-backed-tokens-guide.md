@@ -116,7 +116,7 @@ Here is the path most readers will take. Follow it carefully.
 
 You can buy tokenized gold in three places. Each has different fees and trust trade-offs.
 
-**Centralized exchanges** (CEX): the easiest path. Sign up, complete KYC, fund with fiat, buy PAXG or XAUT directly. Spreads are tight and liquidity is deep. Custody risk is real — pull tokens to your own wallet after purchase. Browse audited [exchange reviews](/categories/exchanges) before depositing.
+**Centralized exchanges** (CEX): the easiest path. Sign up, complete KYC, fund with fiat, buy PAXG or XAUT directly. Spreads are tight and liquidity is deep. Custody risk is real — pull tokens to your own wallet after purchase. Browse audited [exchange reviews](/crypto-exchanges) before depositing.
 
 **Decentralized exchanges** (DEX): swap stablecoins for PAXG on Uniswap or another AMM. No KYC, but you'll pay gas, watch slippage, and need to verify the token contract address yourself.
 
@@ -233,7 +233,7 @@ Whatever the use case, size it sensibly and don't borrow to buy.
 
 ## Platforms That Offer Digital Gold (And What to Look For)
 
-We're actively reviewing partners in this category and will publish detailed audits as our [affiliate disclosures](/affiliate-disclosure) confirm. Until then, here's the checklist we use when evaluating any tokenized-gold platform.
+We're actively reviewing partners in this category and will publish detailed audits as our [affiliate disclosures](/about) confirm. Until then, here's the checklist we use when evaluating any tokenized-gold platform.
 
 ### Required boxes to tick
 
@@ -329,4 +329,4 @@ Stay safe, stay skeptical, and remember: the only gold that's truly yours is the
 - [Understanding Crypto Trust Scores](/blog/understanding-trust-scores) — how we audit any platform, including tokenized-gold issuers.
 - [Top Crypto Wallet Features for Safety](/blog/top-crypto-wallet-features-safety-usability) — where to actually store your PAXG or XAUT.
 - [How to Spot a Crypto Scam in 2026](/blog/how-to-spot-crypto-scam-2026) — the red flags that apply just as much to fake gold tokens as to fake exchanges.
-- Browse our full [exchange category](/categories/exchanges) to find audited venues that list tokenized gold.
+- Browse our full [exchange category](/crypto-exchanges) to find audited venues that list tokenized gold.

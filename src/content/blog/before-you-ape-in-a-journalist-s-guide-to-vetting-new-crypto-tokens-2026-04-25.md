@@ -19,7 +19,7 @@ Most people skip due diligence because it feels vague. "Do your own research" is
 
 This is the other thing. A repeatable method you can run on any token, in roughly the same order every time, that turns a fuzzy gut feeling into a list of specific yes/no answers. We've used a version of it on hundreds of projects for our reviews, and the same handful of checks keep catching the same handful of problems.
 
-If you want the absolute basics first — what a token even is, why anonymous teams matter — start with our sister guide on [how to vet a new crypto token](/blog/how-to-vet-a-new-crypto-token). This post assumes you've got the basics and want the deeper, hands-on version: the actual steps, the actual tools, the order to do them in.
+If you want the absolute basics first — what a token even is, why anonymous teams matter — start with our sister guide on [how to vet a new crypto token](/blog/how-to-vet-a-new-crypto-token-launch-and-avoid-getting-rekt-2026-04-29). This post assumes you've got the basics and want the deeper, hands-on version: the actual steps, the actual tools, the order to do them in.
 
 One honest caveat before we start. Due diligence lowers your odds of getting wrecked. It does not remove them. A project can pass every check here and still fail — through a market crash, a clever exploit, or a team that goes bad two years later. The goal is to filter out the obvious traps and understand exactly what you're holding, not to find a sure thing. There isn't one.
 
@@ -52,7 +52,7 @@ Two quick technical tells while you read. If the whitepaper is heavy on grammar 
 
 ## Step two: check the team and the funding
 
-You've probably read that an anonymous team is a red flag. True, but shallow. A named team is only useful if the names check out, and a doxxed founder can still be a fraud — that part is covered in the [basics guide](/blog/how-to-vet-a-new-crypto-token). Here's the deeper version of the check.
+You've probably read that an anonymous team is a red flag. True, but shallow. A named team is only useful if the names check out, and a doxxed founder can still be a fraud — that part is covered in the [basics guide](/blog/how-to-vet-a-new-crypto-token-launch-and-avoid-getting-rekt-2026-04-29). Here's the deeper version of the check.
 
 **Verify, don't just confirm existence.** A LinkedIn profile is trivial to fake. What's harder to fake is history. Has this person shipped anything before? Do other real, verifiable people vouch for them with their own names attached? A founder with three previous projects that all quietly died tells you more than a slick profile with 500 connections and no past.
 

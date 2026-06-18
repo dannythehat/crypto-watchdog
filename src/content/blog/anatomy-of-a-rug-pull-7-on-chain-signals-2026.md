@@ -19,7 +19,7 @@ Here's the part most people miss. Almost all of these scams leave evidence on-ch
 
 This guide walks through those seven signals. None of them need a developer background. All of the tools are free. The whole sequence takes about fifteen minutes, and it will catch the large majority of rugs before they catch you. We can't promise it catches every one — a determined, technically sophisticated team can hide things — but it removes most of the controllable risk.
 
-If you'd rather have software do the first pass, the [Crypto Watchdog Token Checker](/token-checker) automates many of these checks across the major chains. The point of reading on is to understand what it's checking, so you can sanity-check its output rather than trusting it blindly.
+If you'd rather have software do the first pass, the [Crypto Watchdog Token Checker](/blog/how-to-vet-a-new-crypto-token-launch-and-avoid-getting-rekt-2026-04-29) automates many of these checks across the major chains. The point of reading on is to understand what it's checking, so you can sanity-check its output rather than trusting it blindly.
 
 ## The numbers, and why they're worth knowing
 
@@ -117,7 +117,7 @@ A pool holding $5,000 of liquidity is trivial to drain and trivial to manipulate
 - Under 30 days old: elevated baseline risk no matter how clean the other signals look.
 - A 24-hour volume that dwarfs the liquidity (say, more than 5x) can point to wash trading inflating the activity.
 
-These are heuristics, not laws. A legitimate new project can be young and thin on day one. The point is to size your risk to match, not to pretend the risk isn't there. The [Token Checker](/token-checker) flags these automatically.
+These are heuristics, not laws. A legitimate new project can be young and thin on day one. The point is to size your risk to match, not to pretend the risk isn't there. The [Token Checker](/blog/how-to-vet-a-new-crypto-token-launch-and-avoid-getting-rekt-2026-04-29) flags these automatically.
 
 ### 7. Team and treasury wallet behaviour
 
@@ -137,7 +137,7 @@ Run this exact sequence before any token purchase. It takes a quarter of an hour
 4. Check the deployer wallet's history — its first transactions, other tokens it has launched, current balance.
 5. Find the team's claimed identities. Reverse-image-search their photos. Check when the LinkedIn profiles were actually created.
 6. Read the project's GitHub. No recent commits, or no GitHub at all, is a flag for anything claiming to be a real protocol.
-7. Run the address through the [Crypto Watchdog Token Checker](/token-checker) for the summary view, then compare it against what you found by hand.
+7. Run the address through the [Crypto Watchdog Token Checker](/blog/how-to-vet-a-new-crypto-token-launch-and-avoid-getting-rekt-2026-04-29) for the summary view, then compare it against what you found by hand.
 
 If anything in steps 1 to 4 fails, don't buy. If anything in 5 to 7 sits wrong with you, cut your position size or walk away. Walking away from a launch costs you nothing except a token you were never owed.
 
@@ -169,11 +169,11 @@ A hard rug is the dramatic version: the team drains the liquidity pool or mints 
 
 ### Which free tools do I actually need?
 
-Four cover the essentials. DEXScreener for liquidity, holders and pool age. Your chain's block explorer — Etherscan, BscScan, Solscan — for ownership and contract functions. Honeypot.is for the buy/sell simulation. Arkham Intelligence or DeBank for tracking team and treasury wallets. Our [Token Checker](/token-checker) bundles several of these into one view, but it's worth knowing the underlying tools so you can verify anything that looks off.
+Four cover the essentials. DEXScreener for liquidity, holders and pool age. Your chain's block explorer — Etherscan, BscScan, Solscan — for ownership and contract functions. Honeypot.is for the buy/sell simulation. Arkham Intelligence or DeBank for tracking team and treasury wallets. Our [Token Checker](/blog/how-to-vet-a-new-crypto-token-launch-and-avoid-getting-rekt-2026-04-29) bundles several of these into one view, but it's worth knowing the underlying tools so you can verify anything that looks off.
 
 ## Keep reading
 
 - [How to vet a new crypto token launch and avoid getting rekt](/blog/how-to-vet-a-new-crypto-token-launch-and-avoid-getting-rekt-2026-04-29)
 - [The new token launch landscape: a guide to legitimacy](/blog/navigating-the-new-token-launch-landscape-a-guide-to-legitimacy-2026-04-19)
 - [Before you ape in: DeFi protocol risks](/blog/before-you-ape-in-a-deep-dive-on-defi-protocol-risks-2026-04-21)
-- [DeFi platforms hub](/defi-platforms) · All [warnings](/warnings) · [Crypto recovery](/crypto-recovery) · [Token Checker tool](/token-checker)
+- [DeFi platforms hub](/defi-platforms) · All [warnings](/warnings) · [Crypto recovery](/crypto-recovery) · [Token Checker tool](/blog/how-to-vet-a-new-crypto-token-launch-and-avoid-getting-rekt-2026-04-29)

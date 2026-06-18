@@ -237,7 +237,7 @@ Finding a platform you can trust is harder than it should be, partly because eve
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-Browse our detailed [Exchanges reviews](https://cryptowatchdog.net/categories/exchanges) and [Wallets reviews](https://cryptowatchdog.net/categories/wallets) before you commit funds. The point is a simple one: a few minutes of checking beats finding out the hard way. Make the data-backed call at https://cryptowatchdog.net.
+Browse our detailed [Exchanges reviews](https://cryptowatchdog.net/crypto-exchanges) and [Wallets reviews](https://cryptowatchdog.net/crypto-wallets) before you commit funds. The point is a simple one: a few minutes of checking beats finding out the hard way. Make the data-backed call at https://cryptowatchdog.net.
 
 ## Frequently Asked Questions
 

@@ -155,7 +155,7 @@ If everything above lands on one practical point, it's this: when your capital i
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-At Crypto Watchdog, we run evidence-based, independent assessments of DeFi platforms, exchanges and crypto services using our structured 8-point audit framework. You can browse our [DeFi warnings](https://cryptowatchdog.net/warnings) to keep up with emerging exploits and scam alerts as they happen. Our [crypto education resources](https://cryptowatchdog.net/education) break down the complicated stuff into guidance you can actually act on, whatever your level. For full platform trust scores and detailed reviews, head to [Crypto Watchdog](https://cryptowatchdog.net) and check before you commit. We don't take platform referrals to shape our ratings, so what you read is what we found, not what a platform wished we'd say.
+At Crypto Watchdog, we run evidence-based, independent assessments of DeFi platforms, exchanges and crypto services using our structured 8-point audit framework. You can browse our [DeFi warnings](https://cryptowatchdog.net/warnings) to keep up with emerging exploits and scam alerts as they happen. Our [crypto education resources](https://cryptowatchdog.net/blog) break down the complicated stuff into guidance you can actually act on, whatever your level. For full platform trust scores and detailed reviews, head to [Crypto Watchdog](https://cryptowatchdog.net) and check before you commit. We don't take platform referrals to shape our ratings, so what you read is what we found, not what a platform wished we'd say.
 
 ## Frequently asked questions
 

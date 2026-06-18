@@ -175,7 +175,7 @@ Staying safe isn't a box you tick once. The cons keep evolving, new fake platfor
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-We publish [latest scam warnings](https://cryptowatchdog.net/warnings) as we find them: newly spotted fraudulent platforms, recovery-scam waves, phishing campaigns aimed at particular exchanges. Each one comes out of our 8-point audit framework and hands-on platform testing, so you're reading something we've actually checked rather than a rumour we reposted. If you want to go deeper, our [safety education](https://cryptowatchdog.net/education) library runs from how to judge whether an exchange is legitimate through to understanding DeFi risk. Reading a little, regularly, is the most reliable edge you've got against whatever the scammers try next.
+We publish [latest scam warnings](https://cryptowatchdog.net/warnings) as we find them: newly spotted fraudulent platforms, recovery-scam waves, phishing campaigns aimed at particular exchanges. Each one comes out of our 8-point audit framework and hands-on platform testing, so you're reading something we've actually checked rather than a rumour we reposted. If you want to go deeper, our [safety education](https://cryptowatchdog.net/blog) library runs from how to judge whether an exchange is legitimate through to understanding DeFi risk. Reading a little, regularly, is the most reliable edge you've got against whatever the scammers try next.
 
 ## Frequently asked questions
 

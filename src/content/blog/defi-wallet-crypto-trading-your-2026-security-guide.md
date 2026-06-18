@@ -160,7 +160,7 @@ Keeping your DeFi trading secure requires more than a well-configured wallet. It
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-Cryptowatchdog publishes independent, evidence-based [crypto safety reviews and scam alerts](https://cryptowatchdog.net/warnings) covering DeFi protocols, wallets, trading platforms, and more. Each assessment uses a rigorous 8-point audit framework and assigns a trust score out of 100, so you can evaluate a platform's credibility before connecting your wallet. For traders who want a broader understanding of how scams are structured and how to avoid them, the [crypto scam identification guides](https://cryptowatchdog.net/scam-guides) cover phishing, wallet drainers, fake airdrops, and rug pulls with practical, evidence-based detail. These resources are free, independent, and updated regularly as new threats emerge.
+Cryptowatchdog publishes independent, evidence-based [crypto safety reviews and scam alerts](https://cryptowatchdog.net/warnings) covering DeFi protocols, wallets, trading platforms, and more. Each assessment uses a rigorous 8-point audit framework and assigns a trust score out of 100, so you can evaluate a platform's credibility before connecting your wallet. For traders who want a broader understanding of how scams are structured and how to avoid them, the [crypto scam identification guides](https://cryptowatchdog.net/warnings) cover phishing, wallet drainers, fake airdrops, and rug pulls with practical, evidence-based detail. These resources are free, independent, and updated regularly as new threats emerge.
 
 ## FAQ
 

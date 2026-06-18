@@ -40,7 +40,7 @@ When you connect your wallet to the fake site, a pop up appears. It often looks 
 
 By signing this request, you are effectively giving the scammer a blank cheque. The MS drainer script then scans your wallet for the most valuable assets. It uses the permission you just granted to transfer those assets to the attacker's address in a single transaction.
 
-This method is particularly dangerous because it bypasses the need for the user to manually send funds. The drainer does the work for them. For more information on protecting your digital assets, consult our [crypto safety education](/education) resources.
+This method is particularly dangerous because it bypasses the need for the user to manually send funds. The drainer does the work for them. For more information on protecting your digital assets, consult our [crypto safety education](/blog) resources.
 
 ## Red flags to check first
 
@@ -50,7 +50,7 @@ Check the URL carefully for subtle misspellings or unusual domain extensions. Sc
 
 Be wary of any site that asks for token approvals immediately upon landing. A standard connection should only request to view your address. If your wallet extension warns you about "Permit" or "Set Approval For All," stop immediately and close the browser tab.
 
-Finally, ignore any direct messages on X or Telegram claiming to offer technical support for these platforms. These are often secondary layers of the same phishing campaign. You can find more tips on identifying these traps in our [crypto scam guides](/scam-guides).
+Finally, ignore any direct messages on X or Telegram claiming to offer technical support for these platforms. These are often secondary layers of the same phishing campaign. You can find more tips on identifying these traps in our [crypto scam guides](/warnings).
 
 ## What victims should do now
 
@@ -70,7 +70,7 @@ Consider using a dedicated browser for crypto activities. This browser should ha
 
 For long term storage, a hardware wallet is essential. However, even a hardware wallet cannot protect you if you sign a malicious "Permit" transaction. You must read every line of the transaction summary in your wallet before clicking confirm.
 
-Before using any new platform, you can use our [free crypto safety check](/ai-evaluator) to look for known issues. Staying informed through [vetted crypto platform reviews](/reviews) is also a vital part of a safe investment strategy. If you encounter a new suspicious site, please [report a crypto scam](/submit) to help the community.
+Before using any new platform, you can use our [free crypto safety check](/reviews) to look for known issues. Staying informed through [vetted crypto platform reviews](/reviews) is also a vital part of a safe investment strategy. If you encounter a new suspicious site, please [report a crypto scam](/submit) to help the community.
 
 ## Related reading
 

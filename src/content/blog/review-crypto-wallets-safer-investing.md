@@ -176,7 +176,7 @@ Knowing how to review a wallet is genuinely useful. Having a resource that keeps
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-At [Crypto Watchdog](https://cryptowatchdog.net), we publish independent, evidence-based wallet and platform reviews using a rigorous 8-point audit framework, giving each service a verified trust score and a clear risk rating. Our [crypto scam warnings](https://cryptowatchdog.net/warnings) keep you posted on newly identified threats, fraudulent platforms and emerging attack vectors before they reach your portfolio. Our [crypto education hub](https://cryptowatchdog.net/education) goes deeper on wallet security, custody models and safe asset management. We refresh our assessments regularly, so your decisions stay grounded in current, verified data.
+At [Crypto Watchdog](https://cryptowatchdog.net), we publish independent, evidence-based wallet and platform reviews using a rigorous 8-point audit framework, giving each service a verified trust score and a clear risk rating. Our [crypto scam warnings](https://cryptowatchdog.net/warnings) keep you posted on newly identified threats, fraudulent platforms and emerging attack vectors before they reach your portfolio. Our [crypto education hub](https://cryptowatchdog.net/blog) goes deeper on wallet security, custody models and safe asset management. We refresh our assessments regularly, so your decisions stay grounded in current, verified data.
 
 ## Frequently asked questions
 

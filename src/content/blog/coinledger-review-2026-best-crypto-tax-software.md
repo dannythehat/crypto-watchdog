@@ -265,6 +265,6 @@ We expect CoinLedger to keep adding coverage, and we'll update this review as ne
 
 Every review on this site goes through the same eight-point [audit framework](/about) covering team transparency, security posture, regulatory standing, fee clarity, customer support, product quality, community reputation and long-term track record. CoinLedger scored highly on all eight, with the only marginal point being product depth on novel DeFi chains — where, to be fair, every competitor faces the same limitation.
 
-We have no editorial relationship with CoinLedger beyond a standard affiliate arrangement. If you click a link in this article and sign up, we may receive a small commission at no cost to you. That commission funds the testing we do across other platforms. Our scoring framework does not change based on whether a product is monetised or not. You can read more in our [affiliate disclosure](/affiliate-disclosure) and [editorial policy](/editorial-policy).
+We have no editorial relationship with CoinLedger beyond a standard affiliate arrangement. If you click a link in this article and sign up, we may receive a small commission at no cost to you. That commission funds the testing we do across other platforms. Our scoring framework does not change based on whether a product is monetised or not. You can read more in our [affiliate disclosure](/about) and [editorial policy](/about).
 
-If you spot something we missed, [send us a note](/contact). We update reviews as products change and as we hear from users running real portfolios through the tools we cover.
+If you spot something we missed, [send us a note](/about). We update reviews as products change and as we hear from users running real portfolios through the tools we cover.

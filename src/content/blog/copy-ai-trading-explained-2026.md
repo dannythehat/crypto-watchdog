@@ -117,7 +117,7 @@ Look at **maximum drawdown**, **trade count**, and **track record length** befor
 
 Some platforms take 10–20% of your profits, plus a subscription, plus a spread mark-up on every trade. Stack those and a "30% return" strategy quietly hands you 8%.
 
-We pulled this apart in our piece on [the hidden costs of crypto leverage](/blog/the-hidden-costs-of-crypto-leverage-the-true-price-of-2026-04-25). The same maths applies to copy trading.
+We pulled this apart in our piece on [the hidden costs of crypto leverage](/blog/the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18). The same maths applies to copy trading.
 
 ### 3. Custodial blow-up risk
 
@@ -273,7 +273,7 @@ Do that, and copy trading stops being a high-variance gamble and starts looking 
 **Methodology & Risk**
 - [Recognise and manage crypto trading bot risks in 2026](/blog/crypto-trading-bot-risks-safer-trading)
 - [How to spot AI-washing in crypto: 9 red flags](/blog/how-to-spot-ai-washing-crypto)
-- [The hidden costs of crypto leverage](/blog/the-hidden-costs-of-crypto-leverage-the-true-price-of-2026-04-25)
+- [The hidden costs of crypto leverage](/blog/the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18)
 
 **Compare & Explore**
 - [Bitget 2026 Review: The Universal Exchange Behind Copy Trading](/blog/bitget-2026-review-universal-exchange-rwa)

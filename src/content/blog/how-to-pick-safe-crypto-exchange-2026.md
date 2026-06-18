@@ -16,7 +16,7 @@ The priciest mistake in crypto isn't buying the wrong coin. It's handing your mo
 
 [Celsius](https://www.sec.gov/news/press-release/2023-141) torched roughly $4.7 billion of customer money. [BlockFi](/reviews/blockfi) — once paraded around as the grown-up, "regulated" face of crypto lending — joined the pile in 2022. The script never changes. Solvent on Tuesday. "Withdrawals paused for maintenance" on Wednesday. Gone by Thursday.
 
-So this is the boring, useful guide: the checks that separate the dull, durable exchanges from the ones destined to become a future cautionary tale. It's opinionated. It assumes you're smart, not that you have a finance degree. And it leans on what we've actually seen running the [8-point audit framework](/methodology) across 30+ platforms.
+So this is the boring, useful guide: the checks that separate the dull, durable exchanges from the ones destined to become a future cautionary tale. It's opinionated. It assumes you're smart, not that you have a finance degree. And it leans on what we've actually seen running the [8-point audit framework](/about) across 30+ platforms.
 
 New to all this? Start gentler with [5 questions to ask before using any platform](/blog/5-questions-before-using-crypto-platform), then come back.
 
@@ -133,7 +133,7 @@ That's the whole thing. It won't squeeze out the last 0.5% of return. It'll prob
 - [Why withdrawal testing matters](/blog/why-withdrawal-testing-matters) — the single most important part of any review
 - [When the exchange crumbles: protecting your crypto in a bankruptcy](/blog/when-the-exchange-crumbles-protecting-your-crypto-in-a-bankruptcy-2026-04-16)
 - [Latest crypto exchange security incidents](/blog/latest-crypto-exchange-security-incidents-what-users-need-to-know-2026-04-17)
-- All [exchange reviews](/categories/exchanges) and [active scam warnings](/warnings)
+- All [exchange reviews](/crypto-exchanges) and [active scam warnings](/warnings)
 
 
 > **Editor's pick:** Of the major non-U.S. venues we've put through the wringer, [Bitget scored 92/100](/blog/bitget-2026-review-universal-exchange-rwa) on the strength of its monthly Proof of Reserves, ~$450M Protection Fund and low futures fees. You can [open an account via our verified partner link](https://www.bitget.com/referral/register?clacCode=90ED7DAM&from=%2Fevents%2Freferral-all-program&source=events&utmSource=PremierInviter) — affiliate, no extra cost to you.

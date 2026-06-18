@@ -21,7 +21,7 @@ What actually matters is what sits behind the screen: who holds the keys, who ch
 
 QuadrigaCX and FTX were not freak accidents. They failed in ways that regulators and independent auditors had warned about for years. The structures that brought them down were visible to anyone who knew where to look, which is the uncomfortable part.
 
-This guide leans on documented cases, regulatory warnings, and our own [8-point audit methodology](https://cryptowatchdog.net/methodology). The goal is simple: help you recognise the risky crypto services most likely to cost you everything, before you hand them a penny.
+This guide leans on documented cases, regulatory warnings, and our own [8-point audit methodology](https://cryptowatchdog.net/about). The goal is simple: help you recognise the risky crypto services most likely to cost you everything, before you hand them a penny.
 
 ## Key takeaways
 
@@ -64,7 +64,7 @@ The traits worth watching for:
 - **No clear withdrawal policy** or evidence of withdrawal testing
 - **Vague or missing terms of service** with no dispute resolution pathway
 
-If you want a structured way to score any platform against these criteria, our [methodology overview](https://cryptowatchdog.net/methodology) lays out the framework, and you can browse [verified platform reviews](https://cryptowatchdog.net/reviews) where every service is measured the same way.
+If you want a structured way to score any platform against these criteria, our [methodology overview](https://cryptowatchdog.net/about) lays out the framework, and you can browse [verified platform reviews](https://cryptowatchdog.net/reviews) where every service is measured the same way.
 
 ## The price of risk: real-world outcomes
 
@@ -115,7 +115,7 @@ The tells of a scam or Ponzi platform:
 
 Three fraud types show up again and again beyond the classic Ponzi. Recovery scams prey on people who have already lost money, posing as recovery agents who take an upfront fee and then disappear. It is a cruel one, and it works because the victims are desperate. Rug pulls happen when the developers of a new token or DeFi protocol drain the liquidity once enough deposits have rolled in, leaving holders with something worthless. Fake airdrops lure users into connecting their wallets to a malicious contract, which then hands the attacker the keys to everything inside.
 
-Learning to read these patterns before you engage with a platform is one of the most practical defences you have. Our [scam-spotting guides](https://cryptowatchdog.net/scam-guides) work through the warning signs in detail, and the [current platform warnings](https://cryptowatchdog.net/warnings) database shows which services have already been flagged.
+Learning to read these patterns before you engage with a platform is one of the most practical defences you have. Our [scam-spotting guides](https://cryptowatchdog.net/warnings) work through the warning signs in detail, and the [current platform warnings](https://cryptowatchdog.net/warnings) database shows which services have already been flagged.
 
 ![Infographic showing crypto platform risk indicators](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712250475_Infographic-showing-crypto-platform-risk-indicators.jpeg)
 
@@ -161,9 +161,9 @@ The evidence here points one direction: risky crypto services can cost you perma
 
 ![Crypto Watchdog](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-Crypto Watchdog publishes [trusted safety reviews](https://cryptowatchdog.net/reviews) built on an [8-point audit framework](https://cryptowatchdog.net/methodology), covering onboarding, withdrawal reliability, team transparency and live deposit tests. Each review carries a trust score out of 100 so you can compare platforms on the same scale rather than on vibes.
+Crypto Watchdog publishes [trusted safety reviews](https://cryptowatchdog.net/reviews) built on an [8-point audit framework](https://cryptowatchdog.net/about), covering onboarding, withdrawal reliability, team transparency and live deposit tests. Each review carries a trust score out of 100 so you can compare platforms on the same scale rather than on vibes.
 
-Check the [latest regulator warnings](https://cryptowatchdog.net/warnings) to see whether a platform you are eyeing has already been flagged, and browse the [crypto education centre](https://cryptowatchdog.net/education) to build the knowledge that keeps protecting you long after you close this tab. Informed decisions start here.
+Check the [latest regulator warnings](https://cryptowatchdog.net/warnings) to see whether a platform you are eyeing has already been flagged, and browse the [crypto education centre](https://cryptowatchdog.net/blog) to build the knowledge that keeps protecting you long after you close this tab. Informed decisions start here.
 
 ## Related reading
 

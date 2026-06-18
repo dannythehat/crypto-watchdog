@@ -25,7 +25,7 @@ This crypto scam warning highlights that these schemes rely on a constant influx
 
 Telegram has become a primary hub for crypto discussion, making it a fertile ground for fraudsters. The ease of creating automated bots allows scammers to operate at a massive scale. Because these bots are not regulated, victims have almost no legal recourse when their money vanishes.
 
-The rise of these scams damages the reputation of legitimate automated trading tools. It also puts inexperienced investors at risk of losing their entire savings. Understanding how these bots function is essential for anyone looking for [how to avoid crypto scams](/education) in the digital asset space.
+The rise of these scams damages the reputation of legitimate automated trading tools. It also puts inexperienced investors at risk of losing their entire savings. Understanding how these bots function is essential for anyone looking for [how to avoid crypto scams](/blog) in the digital asset space.
 
 Furthermore, these bots often request sensitive information or wallet permissions. This can lead to broader security breaches beyond the initial deposit. The global nature of Telegram makes it difficult for law enforcement agencies like [Action Fraud UK](@@PROTECTED_0@@) to track and stop every individual operator.
 
@@ -51,7 +51,7 @@ Pressure to recruit new members is another major warning sign. Real trading tool
 
 Be wary of bots that require you to send funds directly to a personal wallet address. Legitimate platforms often use secure payment gateways or smart contracts. You can use tools like [Revoke cash](@@PROTECTED_1@@) to see if you have given dangerous permissions to any suspicious applications.
 
-Finally, look for poor grammar or overly aggressive marketing. Scammers often use high pressure tactics to force quick decisions. They may claim that a special investment window is closing soon to stop you from performing a [free crypto safety check](/ai-evaluator) on their claims.
+Finally, look for poor grammar or overly aggressive marketing. Scammers often use high pressure tactics to force quick decisions. They may claim that a special investment window is closing soon to stop you from performing a [free crypto safety check](/reviews) on their claims.
 
 ## What victims should do now
 
@@ -65,7 +65,7 @@ Be extremely cautious of anyone claiming they can recover your lost funds. These
 
 ## How to avoid similar crypto scams
 
-Education is your best defence against digital asset fraud. Regularly visit a [scam guides hub](/scam-guides) to stay informed about the latest tactics used by criminals. Knowing the patterns of a phishing scam or a Ponzi scheme makes you much harder to target.
+Education is your best defence against digital asset fraud. Regularly visit a [scam guides hub](/warnings) to stay informed about the latest tactics used by criminals. Knowing the patterns of a phishing scam or a Ponzi scheme makes you much harder to target.
 
 Always perform deep research before committing funds to any platform. Look for independent reviews and community feedback. If a bot or service is not listed in [vetted crypto platform reviews](/reviews), it is safer to avoid it entirely until its legitimacy can be proven.
 

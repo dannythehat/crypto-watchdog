@@ -53,11 +53,11 @@ The first red flag is the promise of guaranteed returns. No legitimate trading b
 
 Check for a verifiable company registration and physical address. Legitimate financial services must be registered with authorities like the FCA in the UK or the SEC in the United States. ShadowTrade Bot lacks any such credentials, which is a major warning sign.
 
-Be wary of any platform that asks for additional fees to process a withdrawal. Real exchanges deduct fees from the balance being withdrawn. They never ask for a separate deposit to release funds. This is a definitive sign of a [phishing scam](/scam-guides) designed to steal more capital.
+Be wary of any platform that asks for additional fees to process a withdrawal. Real exchanges deduct fees from the balance being withdrawn. They never ask for a separate deposit to release funds. This is a definitive sign of a [phishing scam](/warnings) designed to steal more capital.
 
 Unresponsive customer support is another common indicator. Scammers are often very helpful during the deposit phase but disappear once you ask for your money back. You can check [latest crypto scam warnings](/warnings) to see if others have reported similar communication issues.
 
-Finally, look for technical red flags on the website. Poor grammar, broken links, and a lack of a comprehensive privacy policy are common in scam sites. You can use a [free crypto safety check](/ai-evaluator) to get an automated assessment of a platform's reputation before you commit.
+Finally, look for technical red flags on the website. Poor grammar, broken links, and a lack of a comprehensive privacy policy are common in scam sites. You can use a [free crypto safety check](/reviews) to get an automated assessment of a platform's reputation before you commit.
 
 ## What victims should do now
 
@@ -77,7 +77,7 @@ The best way to stay safe is to adopt a sceptical mindset. Always assume a platf
 
 Use reputable sources for your investments. Stick to well known exchanges and services that have a long history of transparency. You can find a list of [vetted crypto platform reviews](/reviews) to help you choose a safer place to trade your assets.
 
-Education is your strongest defence. Learn the common patterns of fraud by visiting a [crypto safety education](/education) hub. Understanding how scammers operate makes it much easier to spot a trap before you lose any money.
+Education is your strongest defence. Learn the common patterns of fraud by visiting a [crypto safety education](/blog) hub. Understanding how scammers operate makes it much easier to spot a trap before you lose any money.
 
 Always use a hardware wallet for long term storage. Keeping your main assets offline makes them much harder to steal. Even if you interact with a malicious site, your primary holdings will remain safe. Consult a [hardware wallet safety guide](/blog/your-hardware-wallet-won-t-save-you-a-2026-security-guide-2026-04-22) to set one up correctly.
 

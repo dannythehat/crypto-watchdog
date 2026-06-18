@@ -57,7 +57,7 @@ Check the status of the liquidity pool. If the liquidity is unlocked or controll
 
 Be wary of aggressive social media promotion. Any project promising guaranteed returns is likely a fraud. Genuine blockchain projects focus on technology and utility rather than price speculation and hype.
 
-Look for an audit from a reputable security firm. Most of these tokens have no audit, no visible team, and no actual product. You can use a [free crypto safety check](/ai-evaluator) to help identify these missing elements before you commit any funds.
+Look for an audit from a reputable security firm. Most of these tokens have no audit, no visible team, and no actual product. You can use a [free crypto safety check](/reviews) to help identify these missing elements before you commit any funds.
 
 ## What victims should do now
 
@@ -73,7 +73,7 @@ Share your experience to warn others in the community. You can [report a crypto 
 
 ## How to avoid similar crypto scams
 
-Education is the most effective defence against market manipulation. Learning [how to avoid crypto scams](/education) involves understanding market mechanics and technical indicators. Never buy an asset based solely on social media recommendations or influencer hype.
+Education is the most effective defence against market manipulation. Learning [how to avoid crypto scams](/blog) involves understanding market mechanics and technical indicators. Never buy an asset based solely on social media recommendations or influencer hype.
 
 Always perform independent research on any new token. Check the official website and whitepaper for technical substance. If the project lacks a clear purpose or a transparent team, it is best to avoid it entirely.
 
@@ -85,7 +85,7 @@ Stay updated by reading [vetted crypto platform reviews](/reviews) and security 
 
 ## Related reading
 
-To further your knowledge on digital asset security, explore our comprehensive [crypto scam guides](/scam-guides). These resources cover everything from basic phishing to complex smart contract exploits. Understanding the broader landscape helps you spot individual threats more easily.
+To further your knowledge on digital asset security, explore our comprehensive [crypto scam guides](/warnings). These resources cover everything from basic phishing to complex smart contract exploits. Understanding the broader landscape helps you spot individual threats more easily.
 
 For those interested in the technical side of security, the [Chainalysis crypto crime research](@@PROTECTED_4@@) offers data on global trends. This research highlights how scammers move funds and the methods used by law enforcement to track them.
 

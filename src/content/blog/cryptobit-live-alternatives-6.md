@@ -370,7 +370,7 @@ Picking an alternative to cryptobit.live gets easier once you know what to check
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-Use [Crypto Watchdog](https://cryptowatchdog.net) as your independent reference point. Start with our [Exchanges reviews](https://cryptowatchdog.net/categories/exchanges) and [Wallets reviews](https://cryptowatchdog.net/categories/wallets) to choose verified services, and check a platform before you deposit rather than after something goes wrong.
+Use [Crypto Watchdog](https://cryptowatchdog.net) as your independent reference point. Start with our [Exchanges reviews](https://cryptowatchdog.net/crypto-exchanges) and [Wallets reviews](https://cryptowatchdog.net/crypto-wallets) to choose verified services, and check a platform before you deposit rather than after something goes wrong.
 
 ## Frequently Asked Questions
 

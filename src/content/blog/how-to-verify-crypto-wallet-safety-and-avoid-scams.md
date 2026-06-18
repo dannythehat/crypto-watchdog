@@ -209,7 +209,7 @@ At Crypto Watchdog, we run independent audits of wallets, exchanges and DeFi pla
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-The scam landscape shifts constantly, which is why a single safety check can't carry you forever. Our [wallet safety warnings](https://cryptowatchdog.net/warnings) page is updated regularly with newly identified scam domains, phishing campaigns and wallet drainer alerts. If you'd rather build the knowledge yourself, our [crypto education resources](https://cryptowatchdog.net/education) cover everything from seed phrase security to advanced dApp permission management, so you can keep making informed calls about your own security long after you've closed this tab.
+The scam landscape shifts constantly, which is why a single safety check can't carry you forever. Our [wallet safety warnings](https://cryptowatchdog.net/warnings) page is updated regularly with newly identified scam domains, phishing campaigns and wallet drainer alerts. If you'd rather build the knowledge yourself, our [crypto education resources](https://cryptowatchdog.net/blog) cover everything from seed phrase security to advanced dApp permission management, so you can keep making informed calls about your own security long after you've closed this tab.
 
 ***
 

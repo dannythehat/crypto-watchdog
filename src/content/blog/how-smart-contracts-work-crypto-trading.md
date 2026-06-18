@@ -31,7 +31,7 @@ In traditional finance, every trade leans on people. Brokers route orders. Clear
 
 In crypto, the smart contract *is* the broker, the clearing house, and the settlement system, all at once. It can't be bribed, it doesn't take lunch breaks, and it can't quietly "lose" your money in a back office.
 
-That's why the changes shaping trading right now — DEXs, on-chain lending, [non-custodial AI bots](/blog/non-custodial-ai-trading-bots-explained), copy trading, [yield farming](/categories/yield-farming) — all run on smart contracts. Understand contracts and you understand most of what modern crypto is actually doing under the surface.
+That's why the changes shaping trading right now — DEXs, on-chain lending, [non-custodial AI bots](/blog/non-custodial-ai-trading-bots-explained), copy trading, [yield farming](/defi-platforms) — all run on smart contracts. Understand contracts and you understand most of what modern crypto is actually doing under the surface.
 
 The trade-off is honest, though. You're swapping "trust this company" for "trust this code". That's usually a better deal, because code is something you can read. But only if you actually read it, which is what the rest of this guide is for.
 
@@ -105,7 +105,7 @@ In practical terms:
 - It can't mint, burn, or transfer your assets without a signed authorisation that matches the scope of your approval.
 - Any upgrades are time-locked and visible on-chain, so you can revoke before a malicious change ever goes live.
 
-This is the architecture behind [non-custodial AI trading bots](/blog/non-custodial-ai-trading-bots-explained) and [smart-contract wallets](/categories/smart-contract-wallets) like Safe. The trust assumption moves from "trust the company" to "trust the audited code", and that's a much smaller, much more checkable surface. You can read code. You can't read a founder's intentions.
+This is the architecture behind [non-custodial AI trading bots](/blog/non-custodial-ai-trading-bots-explained) and [smart-contract wallets](/crypto-wallets) like Safe. The trust assumption moves from "trust the company" to "trust the audited code", and that's a much smaller, much more checkable surface. You can read code. You can't read a founder's intentions.
 
 ## Reading a contract before you sign — the 7-point checklist
 
@@ -256,7 +256,7 @@ So if you keep one habit from this guide, make it this: **read the approval befo
 - [DeFi lending in 2026: real yield vs ponzi yield](/blog/defi-lending-real-yield-vs-ponzi-yield-2026)
 - [Layer 1 vs Layer 2: a practical safety guide](/blog/layer-1-vs-layer-2-safety-guide-2026)
 - [Hardware wallets in 2026: the honest buyer's guide](/blog/hardware-wallets-2026-buyers-guide)
-- [Browse all DeFi reviews](/categories/defi)
+- [Browse all DeFi reviews](/defi-platforms)
 
 *This article is educational, not financial advice. Smart contracts are powerful but unforgiving — verify before you sign, and never connect a wallet you can't afford to lose access to.*
 

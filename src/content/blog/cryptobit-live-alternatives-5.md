@@ -301,7 +301,7 @@ Whatever you pick, the legitimacy checks matter more than the feature list. Veri
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-Use [Crypto Watchdog](https://cryptowatchdog.net) as your sense-check before you deposit anywhere. Start with our [Exchanges reviews](https://cryptowatchdog.net/categories/exchanges) and [Wallets reviews](https://cryptowatchdog.net/categories/wallets) to find services we've actually tested. A few minutes of reading is a lot cheaper than learning the hard way.
+Use [Crypto Watchdog](https://cryptowatchdog.net) as your sense-check before you deposit anywhere. Start with our [Exchanges reviews](https://cryptowatchdog.net/crypto-exchanges) and [Wallets reviews](https://cryptowatchdog.net/crypto-wallets) to find services we've actually tested. A few minutes of reading is a lot cheaper than learning the hard way.
 
 ## Frequently asked questions
 

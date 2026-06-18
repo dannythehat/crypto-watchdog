@@ -29,7 +29,7 @@ This trend is particularly dangerous because it targets people who are already i
 
 Legitimate blockchain recovery is an incredibly complex process that rarely involves private individuals on social media. Most successful recoveries are the result of multi year investigations by law enforcement or professional security firms. Private citizens are almost never able to reverse transactions on a public blockchain.
 
-Understanding the mechanics of these frauds is essential for [crypto safety education](/education). When a user loses funds to a wallet drainer or a smart contract exploit, the transaction is usually final. Believing otherwise can lead to a cycle of repeated financial loss and increased emotional trauma.
+Understanding the mechanics of these frauds is essential for [crypto safety education](/blog). When a user loses funds to a wallet drainer or a smart contract exploit, the transaction is usually final. Believing otherwise can lead to a cycle of repeated financial loss and increased emotional trauma.
 
 ## How this scam or exploit works
 
@@ -51,7 +51,7 @@ Be wary of accounts with high follower counts but very low engagement on their p
 
 Never share your private keys or recovery seed phrase with anyone. No legitimate recovery process requires this information. If a service asks you to connect your wallet to a website to scan for lost funds, stop immediately. You can use tools like [Revoke cash](@@PROTECTED_2@@) to check for dangerous permissions.
 
-Another warning sign is the use of high pressure tactics. Scammers will often claim that there is a limited window of time to catch the thief. They use this urgency to prevent you from thinking clearly or conducting a [free crypto safety check](/ai-evaluator) on their claims.
+Another warning sign is the use of high pressure tactics. Scammers will often claim that there is a limited window of time to catch the thief. They use this urgency to prevent you from thinking clearly or conducting a [free crypto safety check](/reviews) on their claims.
 
 ## What victims should do now
 
@@ -67,11 +67,11 @@ Gather all evidence of the interaction, including wallet addresses, transaction 
 
 The best way to stay safe is to accept that blockchain transactions are generally irreversible. Once you understand this reality, you become immune to the false promises of recovery agents. Always treat unsolicited messages offering financial help with extreme suspicion and scepticism.
 
-Educate yourself on the different types of fraud by visiting a [scam guides hub](/scam-guides). Knowing the patterns of common attacks makes them easier to spot in the wild. Awareness is your strongest defence against the evolving tactics used by digital criminals.
+Educate yourself on the different types of fraud by visiting a [scam guides hub](/warnings). Knowing the patterns of common attacks makes them easier to spot in the wild. Awareness is your strongest defence against the evolving tactics used by digital criminals.
 
 Always use official channels for support. If you are a victim of a hack on a specific platform, only communicate through their verified website or official email addresses. Never trust a link sent in a direct message or found in a social media comment section.
 
-Learning [how to avoid crypto scams](/education) involves a commitment to slow and careful decision making. Never rush into a transaction or a service agreement. If a deal seems too good to be true, it is almost certainly a trap designed to exploit your hope.
+Learning [how to avoid crypto scams](/blog) involves a commitment to slow and careful decision making. Never rush into a transaction or a service agreement. If a deal seems too good to be true, it is almost certainly a trap designed to exploit your hope.
 
 Consider using a dedicated device for your crypto transactions and keeping your main assets in cold storage. You can read a [Tangem wallet and card review](/blog/tangem-pay-decentralized-debit-card-review-2026) to see if a hardware solution fits your needs. Physical security layers significantly reduce the risk of remote theft.
 

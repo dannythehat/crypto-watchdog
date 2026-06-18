@@ -148,7 +148,7 @@ Good habits run on good tools and good information. DeFi due diligence isn't a o
 
 Crypto Watchdog runs independent, evidence-based audits of DeFi protocols, exchanges, wallets and other crypto services. Each one gets a trust score out of 100 and a colour-coded alert, so you can read the risk at a glance and dig into the detail when you want it. No grading on a curve, and no soft pedalling for the big names.
 
-Our reviews look at security architecture, withdrawal reliability, team transparency and live platform testing, which are the things that genuinely decide whether your money is safe. Head to our [crypto safety warnings](https://cryptowatchdog.net/warnings) page for current scam alerts and platform flags, and browse our [DeFi education hub](https://cryptowatchdog.net/education) for structured, jargon-light guidance on using this space more safely.
+Our reviews look at security architecture, withdrawal reliability, team transparency and live platform testing, which are the things that genuinely decide whether your money is safe. Head to our [crypto safety warnings](https://cryptowatchdog.net/warnings) page for current scam alerts and platform flags, and browse our [DeFi education hub](https://cryptowatchdog.net/blog) for structured, jargon-light guidance on using this space more safely.
 
 ## Frequently asked questions
 

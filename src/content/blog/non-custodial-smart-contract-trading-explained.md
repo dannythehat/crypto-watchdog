@@ -4,7 +4,7 @@ title: "Non-Custodial Smart Contract Trading: How Bots Can Trade Your Crypto Wit
 slug: "non-custodial-smart-contract-trading-explained"
 summary: "A plain-English guide to non-custodial smart contract trading: how bots can execute strategies on your wallet without holding your funds, why it's structurally safer than custodial yield platforms, and what to verify before you connect."
 category: "AI Finance"
-image_url: "/blog/non-custodial-trading-hero.jpg"
+image_url: "/aurum/neyro-vs-dexs.jpg"
 published: true
 auto_generated: false
 published_at: "2026-04-26T04:47:56.504189+00:00"
@@ -23,11 +23,6 @@ Smart contracts on modern blockchains finally remove that trade-off. You can let
 This guide explains, in plain English, how non-custodial smart contract trading works, why it is structurally safer than the old model, what to check before connecting any contract, and which platforms — like the [Aurum Foundation trading bot](/reviews/aurum-foundation) — are pioneering this model.
 
 ## What "non-custodial" actually means
-
-<figure class="my-8">
-  <img src="/blog/custodial-vs-noncustodial.jpg" alt="Custodial vs non-custodial: funds trapped in a corporate vault on the left, self-custody wallet driving a smart contract on the right" loading="lazy" class="rounded-lg border border-border w-full" />
-  <figcaption class="mt-2 text-xs text-muted-foreground text-center">Old model (left): your coins live inside the company. New model (right): your coins live in your wallet, the smart contract just gets permission to trade them.</figcaption>
-</figure>
 
 Custody is just a fancy word for *who is holding the keys*. In crypto, whoever holds the private keys controls the coins. That is the whole game.
 
@@ -52,19 +47,9 @@ Here is how the two models compare on the things that actually decide whether yo
 
 Neither column is free of risk — look at the bottom row. Non-custodial removes custody risk; it does not remove market risk or the chance of a flawed contract.
 
-<figure class="my-8">
-  <img src="/blog/non-custodial-architecture.jpg" alt="Three-part architecture: self-custody wallet sends permission to a smart contract, which sends trade signals to a DEX, profits return to the wallet" loading="lazy" class="rounded-lg border border-border w-full" />
-  <figcaption class="mt-2 text-xs text-muted-foreground text-center">The three-way relationship. The contract in the middle is hollow on purpose — it routes trades but never holds your funds. There is no real "connection" where money is actually transferred to a third party.</figcaption>
-</figure>
-
 ## How smart contract trading actually works
 
 The mechanics are simpler than they sound. Here is the full lifecycle of a non-custodial trading bot, step by step.
-
-<figure class="my-8">
-  <img src="/blog/non-custodial-lifecycle.jpg" alt="Five-step lifecycle: wallet, permission approval, smart contract module, decentralized exchange swap, profit returning to wallet" loading="lazy" class="rounded-lg border border-border w-full" />
-  <figcaption class="mt-2 text-xs text-muted-foreground text-center">The full round trip — from connecting a wallet to receiving profits — happens entirely on-chain. Your funds never leave addresses you control.</figcaption>
-</figure>
 
 ### Step 1 — You connect a self-custody wallet
 
@@ -88,11 +73,6 @@ You can revoke the spend allowance from your wallet in one click using a tool li
 
 ## The five structural safety wins
 
-<figure class="my-8">
-  <img src="/blog/smart-contract-empty-vault.jpg" alt="A glass smart contract wrapped in chains with a padlock that has no keyhole — visibly empty inside, no funds can ever be removed" loading="lazy" class="rounded-lg border border-border w-full" />
-  <figcaption class="mt-2 text-xs text-muted-foreground text-center">A well-written non-custodial trading contract is a vault with no door — code that can read your balance and route trades, but has no function to withdraw anything to itself.</figcaption>
-</figure>
-
 This model isn't just *a bit* safer than the custodial alternative. It removes entire categories of risk that have caused billions in losses.
 
 ### 1. The platform cannot run away with your money
@@ -104,11 +84,6 @@ Compare that to the <a href="https://www.sec.gov/news/press-release/2022-219" ta
 ### 2. The bot only earns when you earn
 
 Most legitimate non-custodial trading systems use a **performance fee** model: the contract takes a percentage (often 10–25%) *only of new profits*. If the bot doesn't make money, it gets nothing.
-
-<figure class="my-8">
-  <img src="/blog/non-custodial-performance-fee-v2.jpg" alt="Performance-fee chart showing the operator only earns a 10-25% slice of profit above the baseline; below the baseline, no fee is taken" loading="lazy" class="rounded-lg border border-border w-full" />
-  <figcaption class="mt-2 text-xs text-muted-foreground text-center">The operator's revenue is a thin slice of profit only. Flat performance produces zero income — the strongest possible incentive to keep the strategy actually working.</figcaption>
-</figure>
 
 This aligns incentives in a way custodial yield platforms structurally cannot. A custodial operator earns on your deposit whether you profit or not — sometimes through hidden spreads, sometimes through "management fees", sometimes by trading against you. A non-custodial performance-fee contract has zero revenue when the strategy is flat.
 
@@ -123,11 +98,6 @@ If the platform's website goes down tomorrow, your money is still in your wallet
 ### 4. The strategy is auditable in real time
 
 Every action the bot takes is a public transaction. You can open a block explorer like Etherscan or BscScan, paste the contract address, and see every trade it has ever made. No screenshots. No filtered dashboards. No marketing-team curated track record.
-
-<figure class="my-8">
-  <img src="/blog/non-custodial-onchain-audit.jpg" alt="Block-explorer window showing a list of trade transactions with token swap pairs and green confirmation checkmarks, a magnifying glass highlighting one row" loading="lazy" class="rounded-lg border border-border w-full" />
-  <figcaption class="mt-2 text-xs text-muted-foreground text-center">Every trade, every swap, every fee taken — all visible to anyone with the contract address. This is a level of transparency no centralised platform can match.</figcaption>
-</figure>
 
 This is a level of transparency that *no* centralised platform can offer, no matter how many "audited by" badges they put on their homepage.
 
@@ -157,14 +127,9 @@ We've published a full [Aurum Foundation review](/reviews/aurum-foundation) cove
 
 <div class="not-prose my-8 rounded-xl border border-primary/30 bg-gradient-to-br from-primary/10 to-primary/5 p-6 shadow-sm"><p class="text-xs font-semibold uppercase tracking-wider text-primary">Featured platform</p><p class="mt-2 font-heading text-xl font-bold leading-tight">Aurum Foundation — non-custodial smart contract trading</p><p class="mt-2 text-sm text-muted-foreground">A live, audited example of the model described in this guide. Funds stay in your wallet, the bot only earns on performance, and you can revoke access at any time.</p><a href="/reviews/aurum-foundation" class="mt-4 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90">Read the full Aurum review →</a></div>
 
-As more legitimate operators launch in this space, we'll add them to this guide and to our [AI Finance category](/categories/ai-finance) so you have a single place to compare them side by side.
+As more legitimate operators launch in this space, we'll add them to this guide and to our [AI Finance category](/ai-finance) so you have a single place to compare them side by side.
 
 ## What to verify before you connect any smart contract
-
-<figure class="my-8">
-  <img src="/blog/non-custodial-checklist.jpg" alt="Pre-flight safety checklist with icons for verified source code, audit report, bounded allowance, timelocked admin keys, and real team identity" loading="lazy" class="rounded-lg border border-border w-full" />
-  <figcaption class="mt-2 text-xs text-muted-foreground text-center">Run through every item below before you click "approve" on any smart contract. Skipping any one of them is how good intentions turn into expensive lessons.</figcaption>
-</figure>
 
 Non-custodial doesn't automatically mean "safe." A poorly-written contract is still a contract. Before you click "approve" on anything, run through this checklist.
 
@@ -190,11 +155,6 @@ This is the only "off-chain" check on the list, and it is non-negotiable. Anonym
 
 ## Common myths about non-custodial trading
 
-<figure class="my-8">
-  <img src="/blog/non-custodial-myths.jpg" alt="Myths versus reality: faded grey thought bubbles on the left, solid gold cards with clean icons on the right representing speed, ease of use, safety, and transparency" loading="lazy" class="rounded-lg border border-border w-full" />
-  <figcaption class="mt-2 text-xs text-muted-foreground text-center">Most objections to non-custodial trading are leftover assumptions from the 2018 era. Modern wallets, layer-2 chains, and audited contracts have closed every gap.</figcaption>
-</figure>
-
 A few persistent misunderstandings stop new users from exploring this model. Let's clear them up.
 
 **"If it's on-chain it's slow and expensive."** True for Ethereum mainnet five years ago. Not true today. Most non-custodial trading bots run on layer-2s (Arbitrum, Base, Optimism) or fast L1s (BNB Chain, Solana) where a typical trade costs cents and settles in seconds.
@@ -207,16 +167,11 @@ A few persistent misunderstandings stop new users from exploring this model. Let
 
 ## When non-custodial trading might not be right for you
 
-<figure class="my-8">
-  <img src="/blog/non-custodial-fork.jpg" alt="A fork in the road: one path leads to a regulated custodial institution, the other to a self-custody wallet connected to a smart contract" loading="lazy" class="rounded-lg border border-border w-full" />
-  <figcaption class="mt-2 text-xs text-muted-foreground text-center">Both paths are legitimate. The right choice depends on your wallet literacy, not on which model is "better" in the abstract.</figcaption>
-</figure>
-
 This isn't a universal recommendation. Some users are genuinely better off on a regulated custodial platform. Be honest with yourself about which group you're in.
 
 You are probably *not* a fit for non-custodial smart contract trading if: you have never set up a self-custody wallet, seed phrases feel overwhelming, you would not know how to revoke a token allowance, or your investment is small enough that custodial compliance overhead is irrelevant.
 
-If any of those describe you today, **start by reading our [non-custodial wallet guide](/categories/wallets) and our [scam guides](/scam-guides) before going further.** The tools are simple, but using them safely requires a base level of literacy.
+If any of those describe you today, **start by reading our [non-custodial wallet guide](/crypto-wallets) and our [scam guides](/warnings) before going further.** The tools are simple, but using them safely requires a base level of literacy.
 
 ## How we'll grow this guide
 
@@ -232,7 +187,7 @@ Non-custodial smart contract trading is not a marketing buzzword. It is a struct
 
 The model isn't perfect. Smart contracts can have bugs. Strategies can underperform. Markets can move against you. But you keep your keys, you keep your coins, and you can walk away in one click. That is a foundation no custodial platform can match.
 
-If you want to see what this looks like in practice, start with our [Aurum Foundation review](/reviews/aurum-foundation), check out the broader [AI Finance category](/ai-finance), and read our [scam guides](/scam-guides) to make sure you can spot the difference between a legitimate non-custodial operator and an "AI bot" wearing the same costume.
+If you want to see what this looks like in practice, start with our [Aurum Foundation review](/reviews/aurum-foundation), check out the broader [AI Finance category](/ai-finance), and read our [scam guides](/warnings) to make sure you can spot the difference between a legitimate non-custodial operator and an "AI bot" wearing the same costume.
 
 ## Sources & further reading
 
@@ -262,4 +217,4 @@ If you want to see what this looks like in practice, start with our [Aurum Found
 - [Types of DeFi platforms for safer investing](/blog/types-of-defi-platforms-safer-investing)
 - [Aurum Foundation review — full audit](/reviews/aurum-foundation)
 - [AI Finance hub — how we audit automated trading platforms](/ai-finance)
-- [Scam guides: spotting fake AI trading platforms](/scam-guides)
+- [Scam guides: spotting fake AI trading platforms](/warnings)

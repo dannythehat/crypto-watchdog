@@ -4,7 +4,7 @@ title: "RWA Tokenization Explained Like You're Five"
 slug: "rwa-tokenization-explained-like-youre-five"
 summary: "RWA tokenization explained in plain English: how real-world assets like treasuries, gold and property get put on a blockchain, who actually holds the asset, and the issuer, custody and redemption risks to check before you buy."
 category: "rwa-tokenization"
-image_url: "/blog/rwa-explainer.jpg"
+image_url: "/blog-images/rwa-tokenization-gold-silver-real-estate-2026.svg"
 published: true
 auto_generated: false
 published_at: "2026-04-25T17:56:19.941022+00:00"
@@ -13,7 +13,6 @@ meta_title: "RWA Tokenization Explained: A Beginner's Guide"
 meta_description: "RWA tokenization explained in plain English: how tokenized treasuries, gold and property work, plus the issuer, custody and redemption risks to check."
 primary_keyword: "RWA tokenization explained"
 ---
-<img src="/blog/rwa-deed-vs-asset.jpg" alt="A paper certificate floating above a small house, gold bar, and apartment building — symbolising a digital deed pointing at a real-world asset" loading="lazy" width="1280" height="720" class="w-full rounded-xl border border-border" />
 
 You've probably seen the phrase "real-world asset tokenization" and quietly hoped someone would explain it without the jargon. That's this article. No buzzwords, no breathless predictions about a multi-trillion-dollar future. Just RWA tokenization explained the way one person would explain it to another over coffee, plus the parts most marketing pages skip: who actually holds the asset, and what happens when you want your money back.
 
@@ -59,8 +58,6 @@ If someone sells you a token that "represents" a sports car but there's no actua
 
 Miss any one of those and you don't have a tokenized asset. You have a spreadsheet entry with good branding. Regulators have made roughly the same point: the US Securities and Exchange Commission's staff put out a [statement on tokenized securities](https://www.sec.gov/newsroom/speeches-statements/corp-fin-statement-tokenized-securities-012826-statement-tokenized-securities) noting that putting a security on a blockchain doesn't change what it legally is, or the obligations attached to it. Tokenization is a new way of recording ownership, not a loophole around the rules.
 
-<img src="/blog/rwa-asset-types.jpg" alt="Six small labelled cards arranged in a grid representing different RWA asset classes — treasuries, real estate, gold, private credit, art, and stocks" loading="lazy" width="1280" height="720" class="w-full rounded-xl border border-border" />
-
 ## The main types of real-world assets being tokenized
 
 Tokenization isn't a single product. Different asset classes behave very differently, carry different risks, and attract different buyers. Here's a plain-language map of the main categories, roughly from steadiest to most speculative.
@@ -92,8 +89,6 @@ Over the course of 2025, the on-chain RWA market excluding stablecoins grew from
 One honest caveat on the numbers: stablecoins are technically tokenized US dollars, and they dwarf everything else at well over $200 billion. Most reports keep them in a separate bucket because they're already mainstream, which is why "RWA market size" figures vary so much. When you see a headline number, check whether it includes stablecoins before you compare it to anything.
 
 And forecasts of the market hitting tens of trillions by 2030? Treat those as marketing, not facts. They might happen. They might not. Nobody knows, and anyone who tells you they do is selling something.
-
-<img src="/blog/rwa-red-flags.jpg" alt="A magnifying glass over a checklist of red checkmarks beside a 'rejected' stamp and a padlock — illustrating due diligence on tokenized assets" loading="lazy" width="1280" height="720" class="w-full rounded-xl border border-border" />
 
 ## The risks that actually matter
 

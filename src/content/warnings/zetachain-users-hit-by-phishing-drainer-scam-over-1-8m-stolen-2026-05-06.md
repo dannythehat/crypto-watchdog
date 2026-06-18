@@ -52,7 +52,7 @@ Another major warning sign was the timing of the airdrop. The official ZetaChain
 
 Users should also examine the URL of the website carefully. Scammers often use lookalike domains that replace one letter or use a different extension. For example, they might use a dot net or dot io address instead of the official dot com.
 
-Finally, pay close attention to your wallet pop up. If a site asks for SetApprovalForAll or a Permit2 signature when you only expected to login, it is likely a scam. You can learn more about identifying these threats in our [crypto scam guides](/scam-guides).
+Finally, pay close attention to your wallet pop up. If a site asks for SetApprovalForAll or a Permit2 signature when you only expected to login, it is likely a scam. You can learn more about identifying these threats in our [crypto scam guides](/warnings).
 
 ## What victims should do now
 
@@ -70,9 +70,9 @@ The best way to stay safe is to avoid clicking on any sponsored links for crypto
 
 Consider using a dedicated browser for your crypto activities. Install security extensions that flag known malicious domains. These tools can provide an extra layer of defence by blocking access to phishing sites before you even see them.
 
-Always read the full details of any transaction your wallet asks you to sign. If the technical language is confusing, do not sign it. You can use our [free crypto safety check](/ai-evaluator) to help evaluate the risks of different platforms.
+Always read the full details of any transaction your wallet asks you to sign. If the technical language is confusing, do not sign it. You can use our [free crypto safety check](/reviews) to help evaluate the risks of different platforms.
 
-Education is your strongest asset in this environment. Regularly check [Scam Sniffer wallet drainer reports](@@P3@@) to stay informed about new tactics. For a deeper dive into security, visit our [crypto safety education](/education) hub to build your knowledge.
+Education is your strongest asset in this environment. Regularly check [Scam Sniffer wallet drainer reports](@@P3@@) to stay informed about new tactics. For a deeper dive into security, visit our [crypto safety education](/blog) hub to build your knowledge.
 
 ## Related reading
 

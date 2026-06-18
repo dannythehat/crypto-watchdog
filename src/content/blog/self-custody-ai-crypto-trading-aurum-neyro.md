@@ -4,7 +4,7 @@ title: "AURUM Neyro Quantum Alpha: The Complete 11-Step Setup Guide for Self-Cus
 slug: "self-custody-ai-crypto-trading-aurum-neyro"
 summary: "A plain, step-by-step look at AURUM Neyro's Quantum Alpha agent: how self-custody AI crypto trading is meant to work, the 11 screens you'll actually see, the 70/30 split and commission tiers, and an honest read on what's verified versus what's just claimed."
 category: "AI Finance"
-image_url: "/aurum/neyro-dashboard-quantum-alpha.jpg"
+image_url: "/aurum/aurum-ai-agents.jpg"
 published: true
 auto_generated: false
 published_at: "2026-04-27T12:08:00.863751+00:00"
@@ -37,7 +37,7 @@ Neyro is built in three layers that are meant to stay separated:
 
 The selling point is straightforward: if AURUM's servers went dark tomorrow, your funds would still be in your wallet. Whether that holds in practice comes down to the contract's permissions, which is something you can and should inspect when you sign. Polygon is a public chain, so the contract and its activity are visible on a block explorer — Polygon's own [developer documentation](https://docs.polygon.technology/) explains how that works if you want to verify the chain side yourself.
 
-For a side-by-side comparison with custodial copy-trading bots, see our [Copy AI Trading guide](/blog/copy-ai-trading-best-platforms-2026).
+For a side-by-side comparison with custodial copy-trading bots, see our [Copy AI Trading guide](/blog/copy-ai-trading-explained-2026).
 
 ## Phase 1 vs Phase 2 — what's live right now
 
@@ -73,25 +73,19 @@ Under Financial Proposals, click **Neyro** to open the Neyro trading agents page
 
 At the top of the Neyro page, press **Connect Wallet & Get Access**. This starts the connection of your Web3 wallet to Neyro.
 
-![AURUM Neyro dashboard showing Quantum Alpha at +31.20% and the early-access slot counter](/aurum/neyro-dashboard-quantum-alpha.jpg)
-
 ### Step 5 — Connect your wallet
 
 In the pop-up window, choose the wallet you want to link and click **Connect to WalletConnect**. Set your wallet to the **Polygon network** so Neyro can access all features.
-
-![Wallet connect pop-up — make sure you're on Polygon](/aurum/neyro-step-walletconnect.jpg)
 
 ### Step 6 — Select your wallet
 
 In the "Connect Wallet" window, choose the wallet you want to use with Neyro — for example MetaMask, Trust Wallet, OKX Wallet, or SafePal. Make sure it's already installed and configured on the Polygon network before you proceed.
 
-![Wallet picker showing MetaMask, Trust Wallet, Binance Wallet, OKX Wallet and others](/aurum/neyro-step-select-wallet.jpg)
-
 ### Step 7 — Check your connected wallet
 
 After approving the request, you'll see your wallet listed as **Connected Wallet** in the Aurum backoffice. Verify the address shown is the right one. You can disconnect at any time with *Disconnect*; otherwise press *Close* and carry on.
 
-![Connected wallet confirmation screen showing the linked Trust Wallet address](/aurum/neyro-step-connected-wallet.jpg)
+![Connected wallet confirmation screen showing the linked Trust Wallet address](/aurum/ev-wallet-connection.png)
 
 ### Step 8 — Return to Neyro in the backoffice
 
@@ -105,13 +99,9 @@ On the Neyro page, press **Get Access** to activate your early-access slot and l
 
 In the *Top Performing Agent* block, choose **Quantum Alpha**, enter the amount you want to allocate (within your funded balance), and confirm to start copying the agent's trades.
 
-![Subscribe with USDT modal — choose your allocation amount for Quantum Alpha](/aurum/neyro-step-subscribe-usdt.jpg)
-
 ### Step 11 — Confirm the transaction in your wallet
 
 Your wallet opens a contract confirmation window. This is the moment that matters most for a self-custody setup: read what you're signing. Check the network, the destination contract address, the fees, and — if your wallet shows it — the spending permission you're granting. A blind approval is how non-custodial setups stop being safe. When it all checks out, click **Confirm**. After that, your funds are subscribed and the agent setup is complete.
-
-![Wallet transaction confirmation screen — verify network, contract, and fees before signing](/aurum/neyro-step-confirm-tx.jpg)
 
 <div class="not-prose my-8 rounded-2xl border-2 border-primary/40 bg-gradient-to-br from-primary/10 via-background to-primary/5 p-6 shadow-lg">
   <p class="text-xs font-bold uppercase tracking-widest text-primary">Ready to run the steps above?</p>
@@ -196,7 +186,7 @@ It removes nothing else. A few things to sit with before you fund anything:
 
 Put plainly: treat any allocation as risk capital, never more than you can afford to lose, and read AURUM's official disclaimer before funding. Trading authorities are consistent on this — the UK's [Financial Conduct Authority warns that crypto is high-risk and largely unregulated](https://www.fca.org.uk/investsmart/crypto-basics), and that holds whether a human or an AI is pulling the trigger.
 
-For our broader scam-spotting framework, see [How to Spot a Crypto Scam](/scam-guides) and our methodology page on [how Crypto Watchdog audits platforms](/about).
+For our broader scam-spotting framework, see [How to Spot a Crypto Scam](/warnings) and our methodology page on [how Crypto Watchdog audits platforms](/about).
 
 ## Frequently asked questions
 
@@ -219,7 +209,7 @@ For our broader scam-spotting framework, see [How to Spot a Crypto Scam](/scam-g
 - [Self-Custody AI Crypto Trading Explained — full primer on the non-custodial model](/blog/self-custody-ai-crypto-trading-aurum-neyro)
 - [Aurum Neyro & Quantum Alpha: Inside the First 100 Beta Wallets](/blog/aurum-neyro-quantum-alpha-beta-launch)
 - [Aurum EX Bot Review — the 0.5%/day trading bot, step by step](/blog/aurum-ex-bot-how-it-works-step-by-step)
-- [Copy AI Trading — Best Platforms in 2026](/blog/copy-ai-trading-best-platforms-2026)
+- [Copy AI Trading — Best Platforms in 2026](/blog/copy-ai-trading-explained-2026)
 - [AURUM Foundation full review and trust audit](/reviews/aurum-foundation)
 
 <div class="not-prose my-10 rounded-2xl border-2 border-primary/40 bg-gradient-to-br from-primary/10 via-background to-primary/5 p-8 text-center shadow-lg">
@@ -231,4 +221,4 @@ For our broader scam-spotting framework, see [How to Spot a Crypto Scam](/scam-g
   </a>
 </div>
 
-*Disclaimer: This article is educational and not financial advice. Trading crypto assets — including via AI agents — involves market risk. Always do your own research and never invest more than you can afford to lose. Crypto Watchdog may earn a commission via the AURUM affiliate link in this article. Read our [editorial policy](/editorial-policy) and [affiliate disclosure](/affiliate-disclosure).*
+*Disclaimer: This article is educational and not financial advice. Trading crypto assets — including via AI agents — involves market risk. Always do your own research and never invest more than you can afford to lose. Crypto Watchdog may earn a commission via the AURUM affiliate link in this article. Read our [editorial policy](/about) and [affiliate disclosure](/about).*

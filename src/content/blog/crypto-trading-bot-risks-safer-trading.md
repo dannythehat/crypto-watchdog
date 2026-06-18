@@ -158,7 +158,7 @@ Choosing a crypto trading bot does not have to be a guessing game paid for with 
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-At Crypto Watchdog, we publish [crypto safety education](https://cryptowatchdog.net/education) resources and platform-specific assessments built on our 8-point audit framework, covering everything from API security practices to real-world withdrawal testing. We also keep our [crypto scam warnings](https://cryptowatchdog.net/warnings) current, so you can spot and steer clear of platforms that have already shown red flags.
+At Crypto Watchdog, we publish [crypto safety education](https://cryptowatchdog.net/blog) resources and platform-specific assessments built on our 8-point audit framework, covering everything from API security practices to real-world withdrawal testing. We also keep our [crypto scam warnings](https://cryptowatchdog.net/warnings) current, so you can spot and steer clear of platforms that have already shown red flags.
 
 Before you connect a bot to your account, use those resources to check the platform's credibility and understand the specific risks involved. Protecting your capital starts with a decision made on evidence rather than a promise.
 

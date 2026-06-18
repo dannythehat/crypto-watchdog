@@ -19,7 +19,7 @@ Bitget runs one of the busiest promotion calendars in crypto. New accounts, copy
 
 This guide breaks down the main Bitget promotions advertised in 2026 — what each one realistically pays, how to qualify, and the small print that marketing pages tend to gloss over. We have hedged the specifics deliberately: promotional terms change frequently and almost always carry conditions, so treat every figure here as a starting point to verify, not a guarantee.
 
-> **Affiliate disclosure:** Bitget is an affiliate partner of CryptoWatchdog. If you sign up through our links we may earn a commission at no extra cost to you. That does not change the cautions in this article. Read our [affiliate disclosure](/affiliate-disclosure) for details.
+> **Affiliate disclosure:** Bitget is an affiliate partner of CryptoWatchdog. If you sign up through our links we may earn a commission at no extra cost to you. That does not change the cautions in this article. Read our [affiliate disclosure](/about) for details.
 
 **[See Bitget's current offers](/go/bitget)** — and always confirm the live terms on Bitget's official promotions page before depositing.
 
@@ -175,4 +175,4 @@ Only on Bitget's official promotions page, which changes frequently. Confirm any
 
 ---
 
-*This article is educational and not financial advice. Bitget is an affiliate partner; see our [affiliate disclosure](/affiliate-disclosure). Crypto trading is risky and bonuses do not change that. Bonus terms and fees change frequently and carry conditions — always verify current terms on the official site. Read our [methodology](/methodology) for how we assess platforms.*
+*This article is educational and not financial advice. Bitget is an affiliate partner; see our [affiliate disclosure](/about). Crypto trading is risky and bonuses do not change that. Bonus terms and fees change frequently and carry conditions — always verify current terms on the official site. Read our [methodology](/about) for how we assess platforms.*

@@ -168,7 +168,7 @@ Copy trading can genuinely sharpen how you approach the market, but only when th
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-At [Crypto Watchdog](https://cryptowatchdog.net), we independently audit copy trading platforms, exchanges and related services with our 8-point framework, covering security, withdrawal reliability, team transparency and live platform testing. Every review ends in a trust score and a clear risk rating, so you know exactly what you're dealing with before you commit a penny. When our testing turns up something serious, we publish scam alerts and platform warnings straight away. Have a look through our [crypto trading education resources](https://cryptowatchdog.net/education) to build a stronger base for judging any copy trading offer that crosses your path.
+At [Crypto Watchdog](https://cryptowatchdog.net), we independently audit copy trading platforms, exchanges and related services with our 8-point framework, covering security, withdrawal reliability, team transparency and live platform testing. Every review ends in a trust score and a clear risk rating, so you know exactly what you're dealing with before you commit a penny. When our testing turns up something serious, we publish scam alerts and platform warnings straight away. Have a look through our [crypto trading education resources](https://cryptowatchdog.net/blog) to build a stronger base for judging any copy trading offer that crosses your path.
 
 ***
 

@@ -67,7 +67,7 @@ If you're a buy-and-hold type sticking to the big names like Bitcoin or Ethereum
 
 Once you're holding serious money, though, self custody stops being optional. It's the only setup where no exchange can fail, freeze, or run off with your savings. It also gives you direct access to the whole blockchain, without asking anyone's permission.
 
-The catch is discipline. This freedom comes with work: managing your own backups, staying alert, and knowing the playbook in our [crypto scam guides](/scam-guides) before the scammers run it on you. One careless click on a dodgy link can empty a self custody wallet in seconds, and the blockchain has no undo button.
+The catch is discipline. This freedom comes with work: managing your own backups, staying alert, and knowing the playbook in our [crypto scam guides](/warnings) before the scammers run it on you. One careless click on a dodgy link can empty a self custody wallet in seconds, and the blockchain has no undo button.
 
 ### Why people choose self custody
 
@@ -124,7 +124,7 @@ Before you tap "confirm", read the address and the amount again. Then read them 
 
 The app stores and search results are full of counterfeit wallets that look identical to the real thing. They buy sponsored ad slots so they sit right at the top, looking respectable, and they show up in unofficial stores. The whole point is to harvest your seed phrase the instant you type it in. Convincing logo, identical layout, one job: to rob you.
 
-So download wallet software from the official project site, every time, even if it's an extra step. And remember this: a genuine wallet will never ask for your seed phrase to "update", "verify" or "sync" anything. That request is the scam giving itself away. Not sure about a link or an app? Run it through our [free crypto safety check](/ai-evaluator) before you trust it with a single coin.
+So download wallet software from the official project site, every time, even if it's an extra step. And remember this: a genuine wallet will never ask for your seed phrase to "update", "verify" or "sync" anything. That request is the scam giving itself away. Not sure about a link or an app? Run it through our [free crypto safety check](/reviews) before you trust it with a single coin.
 
 ## What to do if things go wrong
 
@@ -136,7 +136,7 @@ Then brace yourself for the second wave. Anyone who messages you promising to re
 
 So, [self custody versus custodial wallets](/blog/self-custody-vs-custodial-wallets-2026)? It comes down to two honest questions: how confident are you with the tech, and how much are you holding? For most people, the answer isn't one or the other. It's a sensible blend, taking the convenience of professional custody and the genuine ownership of holding your own keys.
 
-And don't let an online "maximalist" shame you into moving your money into a system you don't yet understand. That's how careful people get burned. Security is a habit you build, not a gadget you buy. Start small, get comfortable, top up your know-how with our [crypto safety education](/education), and increase your self custody only as fast as your confidence genuinely earns it. There's no prize for rushing.
+And don't let an online "maximalist" shame you into moving your money into a system you don't yet understand. That's how careful people get burned. Security is a habit you build, not a gadget you buy. Start small, get comfortable, top up your know-how with our [crypto safety education](/blog), and increase your self custody only as fast as your confidence genuinely earns it. There's no prize for rushing.
 
 ## Checklist for your 2026 wallet setup
 

@@ -4,7 +4,7 @@ title: "Aurum Neyro & Quantum Alpha: Inside the First 100 Beta Wallets"
 slug: "aurum-neyro-quantum-alpha-beta-launch"
 summary: "Aurum Neyro is a non-custodial AI agent platform, and Quantum Alpha is its first live trading agent. We took one of 100 beta seats. Here is what we can verify, what is still just a company claim, and exactly what we are testing over 30 days."
 category: "AI Trading Agents"
-image_url: "/blog/aurum-quantum-alpha-launch.jpg"
+image_url: "/aurum/hero-aurum-neyro-vs-watchdog.png"
 published: true
 auto_generated: false
 published_at: "2026-04-21T01:07:51.930341+00:00"
@@ -20,11 +20,11 @@ Aurum has launched **Neyro** — a non-custodial AI trading agent platform — a
 
 Here is our honest take up front. Aurum has a working product and a team we have met, and we have moved real money through their existing tools without trouble. That is more than most launches in this space can say. But a clean track record on one product does not validate the numbers being quoted for a brand-new one. So we took a seat to check those numbers ourselves, and we are writing this with the scepticism a launch like this deserves.
 
-For anyone following [crypto copy trading](/categories/copy-trading) and on-chain copy trading, the launch is worth a look because it sits where three trends meet: AI agents, smart-contract execution, and self-custody. Worth a look is not the same as worth your money. We will get to the difference.
+For anyone following [crypto copy trading](/copy-trading) and on-chain copy trading, the launch is worth a look because it sits where three trends meet: AI agents, smart-contract execution, and self-custody. Worth a look is not the same as worth your money. We will get to the difference.
 
 If you are new to the project, our full [Aurum Foundation review](/reviews/aurum-foundation) covers the team, history, fees, and how the existing Ex-Ai bot works. This post is about what is genuinely new with **Neyro** and **Quantum Alpha**.
 
-![Aurum is introducing Neyro — next-generation non-custodial trading agents](/blog/aurum-introducing-neyro.jpg)
+![Aurum is introducing Neyro — next-generation non-custodial trading agents](/aurum/aurum-ai-agents.jpg)
 
 ## Why this one cleared our filter
 
@@ -94,7 +94,7 @@ The SEC's investor-protection guidance puts it bluntly: it warns that [high retu
 
 If you want to copy Quantum Alpha during the beta window, you can [activate it through our affiliate link here](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"}. Same price for you; it helps fund our independent testing. We would rather you waited for our 30-day numbers first.
 
-![Quantum Alpha live performance dashboard inside Aurum Neyro](/blog/aurum-quantum-alpha-launch.jpg)
+![Quantum Alpha live performance dashboard inside Aurum Neyro](/aurum/neyro-vs-dexs.jpg)
 
 ## How the beta works
 
@@ -106,7 +106,7 @@ Aurum is opening **beta access to Neyro** to a first wave of **100 partners**. B
 
 A dedicated **Neyro section** appears inside the Aurum backoffice for beta users. The 100-seat cap is Aurum's framing, and scarcity is a classic nudge to sign up fast, so don't let the countdown do your thinking for you. If you do want a seat, you can register through our affiliate link: [Join Aurum Neyro Beta](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"}.
 
-![Aurum Neyro app interface showing Quantum Alpha performance and AI signals](/blog/aurum-neyro-app-screen.jpg)
+![Aurum Neyro app interface showing Quantum Alpha performance and AI signals](/aurum/neyro-advantages.jpg)
 
 ## How to connect your wallet & start with Neyro (step-by-step)
 
@@ -178,7 +178,7 @@ Before you activate, you can review and tune the live signal stack the agent use
 - An Aurum account with the **$25 license fee** paid
 - A funded Web3 wallet (MetaMask, Trust Wallet, or WalletConnect-compatible) on **BNB Smart Chain**
 - A small amount of **BNB for gas** to sign the connection and trade approvals
-- USDT (BEP-20) you are comfortable allocating — never more than you can afford to lose. New to self-custody? Read our [hot wallets buyer's guide](/categories/hot-wallets) and [how to spot AI-washing](/blog/how-to-spot-ai-washing-crypto) first.
+- USDT (BEP-20) you are comfortable allocating — never more than you can afford to lose. New to self-custody? Read our [hot wallets buyer's guide](/crypto-wallets) and [how to spot AI-washing](/blog/how-to-spot-ai-washing-crypto) first.
 
 ## We took one of the 100 seats — here is our test plan
 
@@ -190,7 +190,7 @@ We secured one of the 100 beta seats. Over the next month we are running Quantum
 - **Smart-contract behaviour.** Does the system genuinely behave as a non-custodial layer, or does custody slip somewhere along the way?
 - **Withdrawal and disconnection flow.** Can we revoke the approval and walk away cleanly, at any time, without a support ticket?
 
-We will publish a full follow-up in around **30 days** with screenshots, on-chain transaction proofs, and a plain verdict on whether the live numbers match the marketing — including if they don't. Bookmark our [Trading Bots reviews hub](/categories/copy-trading) to catch it.
+We will publish a full follow-up in around **30 days** with screenshots, on-chain transaction proofs, and a plain verdict on whether the live numbers match the marketing — including if they don't. Bookmark our [Trading Bots reviews hub](/copy-trading) to catch it.
 
 ## Why this launch is worth watching
 
@@ -230,8 +230,8 @@ Same price for you, and it supports our independent on-chain testing. As an affi
 ## Related reading
 
 - [Aurum Foundation full platform review](/reviews/aurum-foundation) — team, fees, Ex-Ai Bot, and trust score
-- [Crypto Trading Bots — all reviews](/categories/copy-trading) — the rest of the bot landscape
-- [How to spot a crypto Ponzi](/education) — read this before connecting your wallet to anything new
+- [Crypto Trading Bots — all reviews](/copy-trading) — the rest of the bot landscape
+- [How to spot a crypto Ponzi](/blog) — read this before connecting your wallet to anything new
 - [Join the Aurum Neyro Beta](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"} — our partner link, 100 seats only
 
 ---

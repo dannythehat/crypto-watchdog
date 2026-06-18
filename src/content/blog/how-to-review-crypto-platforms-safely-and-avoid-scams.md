@@ -162,7 +162,7 @@ A one-off review is genuinely useful, but the sector moves fast. New vulnerabili
 
 ![https://cryptowatchdog.net](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1776712114820_cryptowatchdog.jpg)
 
-At Crypto Watchdog, we publish independently conducted platform audits, live-test findings and fraud alerts on an ongoing basis. Our [latest scam alerts](https://cryptowatchdog.net/warnings) are updated as new risks come to light, so you're working from current intelligence rather than a stale assessment. If you want to build deeper knowledge across security, verification and risk management, our [education centre](https://cryptowatchdog.net/education) offers structured, evidence-based material made for active crypto users. You don't have to figure this out alone, and you certainly shouldn't have to rely on marketing to stay safe.
+At Crypto Watchdog, we publish independently conducted platform audits, live-test findings and fraud alerts on an ongoing basis. Our [latest scam alerts](https://cryptowatchdog.net/warnings) are updated as new risks come to light, so you're working from current intelligence rather than a stale assessment. If you want to build deeper knowledge across security, verification and risk management, our [education centre](https://cryptowatchdog.net/blog) offers structured, evidence-based material made for active crypto users. You don't have to figure this out alone, and you certainly shouldn't have to rely on marketing to stay safe.
 
 ## Frequently asked questions
 

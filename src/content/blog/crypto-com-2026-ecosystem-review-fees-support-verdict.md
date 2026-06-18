@@ -242,7 +242,7 @@ Crypto.com is not a fraud. It is a regulated, well-marketed, broadly capable eco
 
 Our honest take: if you are trying to grow a portfolio, route most of your activity somewhere else. Use Crypto.com for what it does best — the card, the brand certainty, the simple buy-and-hold flow — and use better-priced venues for everything else.
 
-Read more reviews on our [reviews hub](/reviews), browse the [exchanges category](/categories/exchanges), and subscribe to our newsletter for weekly safety digests.
+Read more reviews on our [reviews hub](/reviews), browse the [exchanges category](/crypto-exchanges), and subscribe to our newsletter for weekly safety digests.
 
 ---
 

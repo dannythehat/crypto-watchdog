@@ -41,7 +41,7 @@ Strip away the branding and almost every honest non-custodial bot runs on the sa
 
 ### Step 1 — You connect your wallet
 
-You connect a self-custody wallet (MetaMask, Rabby, Trust, or a [smart-contract wallet](/categories/smart-contract-wallets) like Safe). The bot's interface reads your balance. That's the whole of step one.
+You connect a self-custody wallet (MetaMask, Rabby, Trust, or a [smart-contract wallet](/crypto-wallets) like Safe). The bot's interface reads your balance. That's the whole of step one.
 
 No deposit. No transfer. No "company wallet" address to send anything to.
 
@@ -248,7 +248,7 @@ The "trust me, I'll trade for you" era is fading. "Verify the contract, then con
 - [AI trading bots & agents in 2026: what they can and can't do](/blog/ai-trading-bots-and-agents-2026-honest-guide)
 - [Crypto trading bot audit: a step-by-step guide](/blog/crypto-trading-bot-audit-step-by-step-guide)
 - [Self-custody vs custodial wallets in 2026](/blog/self-custody-vs-custodial-wallets-2026)
-- [Browse all AI Finance reviews](/categories/ai-finance)
+- [Browse all AI Finance reviews](/ai-finance)
 
 *This article is educational, not financial advice. Always do your own research and never connect a wallet you cannot afford to lose access to.*
 

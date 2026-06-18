@@ -4,7 +4,7 @@ title: "Aurum EX Bot Review: How the 0.5%/Day Trading Bot Actually Works (Step-b
 slug: "aurum-ex-bot-how-it-works-step-by-step"
 summary: "We've run the Aurum EX bot for months. This is the plain walkthrough — sign-up, 2FA, the $25 ecosystem fee, USDT/USDC deposits on Ethereum, funding the bot, daily profit credits, compounding, the 12-month lock, the 30% early-release fee, and what withdrawals really look like. Aurum is a partner; we flag what's verified and what isn't."
 category: "AI Finance"
-image_url: "/images/aurum-ex-bot-dashboard.jpg"
+image_url: "/aurum/neyro-advantages.jpg"
 published: true
 auto_generated: false
 published_at: "2026-04-24T03:49:31.74484+00:00"
@@ -14,7 +14,7 @@ meta_description: "A calm, step-by-step Aurum EX bot review: sign-up, 2FA, the $
 ---
 > **🆕 New step-by-step guide:** Want to actually connect Quantum Alpha right now? See our [**complete 11-step Neyro setup walkthrough**](/blog/self-custody-ai-crypto-trading-aurum-neyro) — every screen, every wallet pop-up, with screenshots from the live AURUM backoffice.
 
-> **Affiliate disclosure:** Aurum Foundation is one of our partners, and the links to [Aurum Foundation](https://aurum.foundation){:target="_blank" rel="noopener"} in this article are partner links — if you sign up through them, we may earn a commission at no cost to you. That relationship doesn't buy a good review. We only recommend platforms we use ourselves and have audited under our [8-point review framework](/methodology). Read our full [affiliate policy →](/affiliate-disclosure).
+> **Affiliate disclosure:** Aurum Foundation is one of our partners, and the links to [Aurum Foundation](https://aurum.foundation){:target="_blank" rel="noopener"} in this article are partner links — if you sign up through them, we may earn a commission at no cost to you. That relationship doesn't buy a good review. We only recommend platforms we use ourselves and have audited under our [8-point review framework](/about). Read our full [affiliate policy →](/about).
 
 The **Aurum EX bot** is an automated agent that trades on [decentralised exchanges (DEXs)](/blog/what-is-a-decentralized-exchange-dex-explained) on your behalf. It's the workhorse of the [Aurum Foundation](/reviews/aurum-foundation) ecosystem — a trading bot that *targets* roughly **~0.5% per day** (around **~15–17.5% per month**, depending on your tier), with profits credited to your dashboard daily.
 
@@ -25,8 +25,6 @@ We've been running the Aurum EX bot personally for months, so this is the versio
 If you just want to start, here's our partner link — the same dashboard we use:
 
 👉 **[Open an Aurum account →](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"}**
-
-![Aurum EX-AI Bot dashboard — automated crypto trading, secure & reliable, full control, stable income up to 17.5% monthly](/images/aurum-ex-bot-dashboard.jpg)
 
 One quick caveat about that dashboard image and the marketing language on it. Phrases like "secure & reliable" and "stable income up to 17.5% monthly" are Aurum's own words, not ours. We've seen the daily credits land during our test period, but "stable income" is a strong claim for any trading product, and we haven't independently audited the strategy behind the numbers. Keep that distinction in your head as you read.
 
@@ -48,7 +46,7 @@ One quick caveat about that dashboard image and the marketing language on it. Ph
 | **2FA required** | Yes — strongly recommended on day one |
 | **Our trust score** | [82 / 100](/reviews/aurum-foundation) |
 
-A word on that 82/100: it's our score, based on our [8-point framework](/methodology), and it reflects a platform we've used without trouble — not a clean bill of health. An 82 still leaves room for things we can't see. Treat it as "we've tested this and it's behaved so far", not "this is safe".
+A word on that 82/100: it's our score, based on our [8-point framework](/about), and it reflects a platform we've used without trouble — not a clean bill of health. An 82 still leaves room for things we can't see. Treat it as "we've tested this and it's behaved so far", not "this is safe".
 
 ---
 
@@ -61,8 +59,6 @@ Where Neyro is more directional, EX is the grinder. It runs around the clock acr
 You don't pick trades. You don't set stop losses. You fund it, you start it, and you check in. That hands-off design is the appeal — and it's also the thing to be clear-eyed about, because you're trusting a strategy you can't inspect line by line. Aurum hasn't published the full mechanics of how the bot trades, and we can't verify them independently. So the daily rate is something we've *observed*, not something we've *audited*.
 
 > 💡 **Want to see the maths first?** Open our interactive [Aurum profit calculator](/reviews/aurum-foundation#calculator) and model 1k, 5k or 10k USDT over 1–24 months, with or without daily compounding. Aurum's own native calculator looks like this:
-
-![Aurum native profit calculator — 1000 USDT over 1 year compounded = 4509.99 USDT](/images/aurum-ex-bot-profit-calculator.jpg)
 
 That screenshot is **Aurum's own dashboard**: 1,000 USDT in, a one-year term, daily compounding switched on, projecting roughly 4,509 USDT out. A projection is a calculator doing arithmetic on a fixed daily rate — it assumes the bot hits its target every single day, which no trading product does. Real results vary. It's useful for getting the order of magnitude the bot aims at, and nothing more.
 
@@ -94,7 +90,7 @@ Click the email verification link, set your password, and you'll land in the bac
 
 ### A note on KYC
 
-Aurum is light-touch on KYC at sign-up, but expect to verify your identity if you start moving meaningful sums or want to lift withdrawal limits. Have a passport or ID and a recent utility bill ready — it saves a day of back-and-forth later. We explain [why KYC matters in crypto here](/scam-guides). Light KYC is convenient, but it cuts both ways: less friction for you also means less standing between a bad actor and an account, so the 2FA in the next step matters even more.
+Aurum is light-touch on KYC at sign-up, but expect to verify your identity if you start moving meaningful sums or want to lift withdrawal limits. Have a passport or ID and a recent utility bill ready — it saves a day of back-and-forth later. We explain [why KYC matters in crypto here](/warnings). Light KYC is convenient, but it cuts both ways: less friction for you also means less standing between a bad actor and an account, so the 2FA in the next step matters even more.
 
 ---
 
@@ -106,7 +102,7 @@ Before you deposit a single dollar, **enable two-factor authentication (2FA)** i
 
 It's a small phone app that generates a fresh **6-digit code every 30 seconds**. When you log in or withdraw, Aurum asks for your password **and** the current code. Even if someone steals your password, they can't get into your account without your phone.
 
-In our book this isn't optional — it's the single biggest thing standing between an attacker and your balance. We go deeper on this in our [crypto security guides](/scam-guides).
+In our book this isn't optional — it's the single biggest thing standing between an attacker and your balance. We go deeper on this in our [crypto security guides](/warnings).
 
 ### Which app to use
 
@@ -184,8 +180,6 @@ That's it. The bot is now running. You'll start seeing daily profit credits with
 
 Aurum publishes the daily rate every day in its official Telegram channel. Here's a real one we received during our test period:
 
-![Aurum daily profit Telegram notification — 0.5775% on 3,111.16 USDT = 17.97 USDT profit credited](/images/aurum-ex-bot-daily-profit.jpg)
-
 That's **0.5775%** on a 3,111 USDT balance for a single day, which came to **17.97 USDT** credited automatically. We can verify the credit landed in our own account — that part we watched happen. What we can't independently verify is *how* that figure is generated, or that the rate Aurum publishes always matches real trading performance underneath. We're showing you a screenshot of a credit we received, not a proof of the strategy. Worth being honest about the difference.
 
 ### Compound or withdraw?
@@ -239,7 +233,7 @@ We've reviewed a lot of "AI trading bot" platforms, and honestly, most of them s
 | Generic "guaranteed return" bot | Custodial | "1–3% / day" | None (until withdrawal blocked) | 🚫 Avoid |
 | Self-hosted DCA bot (e.g., on Binance) | You hold keys | Variable | None | ✅ Lower risk, lower yield |
 
-Notice the word "custodial" against the Aurum row. It means Aurum holds the funds while the bot runs, rather than the money staying in a wallet you control. That's a real concentration of trust, and it's the main risk to weigh — separate from the platform behaving well day to day. The self-hosted option, where you hold your own keys, is lower-yield but keeps custody in your hands. There's no free lunch in that table; each row trades one thing for another. See more side-by-side breakdowns on our [comparisons page](/comparisons).
+Notice the word "custodial" against the Aurum row. It means Aurum holds the funds while the bot runs, rather than the money staying in a wallet you control. That's a real concentration of trust, and it's the main risk to weigh — separate from the platform behaving well day to day. The self-hosted option, where you hold your own keys, is lower-yield but keeps custody in your hands. There's no free lunch in that table; each row trades one thing for another. See more side-by-side breakdowns on our [comparisons page](/blog).
 
 ---
 
@@ -298,8 +292,8 @@ In most jurisdictions, yes. Daily bot profits are typically treated as income. C
 - [Aurum Foundation: full review & 82/100 trust score](/reviews/aurum-foundation)
 - [Aurum Neyro & Quantum Alpha beta launch](/blog/aurum-neyro-quantum-alpha-beta-launch)
 - [AI Finance hub — bots, yield products & how they work](/ai-finance)
-- [Side-by-side platform comparisons](/comparisons)
-- [Our 8-point review methodology](/methodology)
-- [Crypto safety & scam-spotting guides](/scam-guides)
+- [Side-by-side platform comparisons](/blog)
+- [Our 8-point review methodology](/about)
+- [Crypto safety & scam-spotting guides](/warnings)
 
 <div class="not-prose my-8 rounded-xl border border-primary/30 bg-gradient-to-br from-primary/10 to-primary/5 p-6 shadow-sm"><p class="text-xs font-semibold uppercase tracking-wider text-primary">Deeper Dive</p><p class="mt-2 font-heading text-xl font-bold leading-tight">Non-custodial smart contract trading, explained end-to-end</p><p class="mt-2 text-sm text-muted-foreground">Our long-form pillar guide on how bots can trade your wallet without ever holding your funds — the architecture, the safety wins, the audit checklist, and the real-world example to study first.</p><a href="/blog/non-custodial-smart-contract-trading-explained" class="mt-4 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90">Read the full guide →</a></div>
