@@ -129,10 +129,13 @@ const AiFinance = () => {
         <SectionWrapper className="border-y border-border bg-card/40 backdrop-blur">
           <div className="mx-auto max-w-3xl">
             <h2 className="font-heading text-2xl font-bold md:text-3xl">What is AI crypto finance?</h2>
-            <p className="mt-4 leading-relaxed text-foreground/80"><strong className="text-primary">AI finance is where automation meets your money on-chain.</strong> Instead of you watching charts all day, software reads the market and acts — placing trades, copying expert traders, rebalancing a portfolio or managing liquidity in a DeFi pool.</p>
-            <p className="mt-4 leading-relaxed text-foreground/80">Used well, it's a genuine edge. Used as a costume, it's the oldest scam in crypto with a chatbot bolted on. The difference always comes down to the same things: <strong className="text-primary">who controls the money, whether the returns are real, and whether you can get your funds back out.</strong> That's exactly what we test.</p>
+            <p className="mt-4 leading-relaxed text-foreground/80"><strong className="text-primary">AI finance is what happens when artificial intelligence is put in charge of money.</strong> It reads markets, spots patterns and acts faster than any human could. In crypto that means bots trading around the clock, agents managing liquidity in DeFi pools, copy-trading systems that mirror the best performers, and "quant" strategies that used to live behind hedge-fund doors — now running from a phone.</p>
+            <p className="mt-4 leading-relaxed text-foreground/80">The promise is simple: <strong className="text-primary">let software handle the watching, the maths and the discipline</strong> — the three things people are worst at when their own money is on the line. Done well, it strips emotion and reaction time out of the equation. Done badly, or dishonestly, it's the oldest scam in crypto with a chatbot bolted on the front.</p>
+            <p className="mt-4 leading-relaxed text-foreground/80">Which is which? It always comes down to the same three questions: <strong className="text-primary">who controls the money, whether the returns are real, and whether you can actually get your funds back out.</strong> That's exactly what we test — platform by platform.</p>
           </div>
-          <div className="mx-auto mt-10 grid max-w-4xl gap-5 md:grid-cols-3">
+
+          <h3 className="mx-auto mt-10 max-w-4xl font-heading text-lg font-bold">How it works, in three layers</h3>
+          <div className="mx-auto mt-4 grid max-w-4xl gap-5 md:grid-cols-3">
             {HOW_IT_WORKS.map((s) => (
               <div key={s.title} className="rounded-2xl border border-border bg-card/60 p-5 backdrop-blur">
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10"><s.icon className="h-5 w-5 text-primary" /></div>
@@ -141,13 +144,23 @@ const AiFinance = () => {
               </div>
             ))}
           </div>
+
+          <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-primary/20 bg-primary/[0.06] p-6">
+            <h3 className="font-heading text-lg font-bold">Why it's changing the game</h3>
+            <p className="mt-2 leading-relaxed text-foreground/80">Three shifts are making AI finance impossible to ignore — each with a matching risk, which is the whole reason this hub exists:</p>
+            <ul className="mt-4 space-y-3 text-sm text-foreground/80">
+              <li><strong className="text-primary">Access.</strong> Strategies once reserved for institutions now run from your pocket — but "institutional-grade" is also the favourite phrase of every fake fund.</li>
+              <li><strong className="text-primary">Speed.</strong> An AI agent reacts to a market move in milliseconds, not minutes — though faster execution can amplify losses just as easily as gains.</li>
+              <li><strong className="text-primary">Self-custody.</strong> The best new tools trade your wallet without ever holding your funds — but only if the smart contract really is scoped the way they claim.</li>
+            </ul>
+          </div>
         </SectionWrapper>
 
         {/* Explore by sector */}
         <SectionWrapper>
           <span id="sectors" className="block -translate-y-28" />
-          <h2 className="font-heading text-2xl font-bold md:text-3xl">Explore AI finance by sector</h2>
-          <p className="mt-2 max-w-2xl text-muted-foreground">Every corner of crypto finance, each with its own deep-dive page — the platforms we endorse, the ones to approach with caution, and the ones to avoid.</p>
+          <h2 className="font-heading text-2xl font-bold md:text-3xl">The key categories in AI finance</h2>
+          <p className="mt-2 max-w-2xl text-muted-foreground">AI finance isn't one thing — it's a family of categories, each with its own platforms, returns and red flags. Here's the map: a quick read on each, then <strong className="text-foreground">tap through for the full breakdown</strong> and our rated platforms.</p>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {SECTORS.map((s) => {
               const count = hubCount(s.slug);
