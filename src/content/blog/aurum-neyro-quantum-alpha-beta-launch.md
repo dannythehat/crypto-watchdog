@@ -2,43 +2,47 @@
 type: "blog"
 title: "Aurum Neyro & Quantum Alpha: Inside the First 100 Beta Wallets"
 slug: "aurum-neyro-quantum-alpha-beta-launch"
-summary: "Aurum Foundation is launching Neyro, a non-custodial AI agent platform, with Quantum Alpha as its first live trading agent. We secured one of 100 beta seats — here is what we know so far and what we will be testing."
+summary: "Aurum Neyro is a non-custodial AI agent platform, and Quantum Alpha is its first live trading agent. We took one of 100 beta seats. Here is what we can verify, what is still just a company claim, and exactly what we are testing over 30 days."
 category: "AI Trading Agents"
 image_url: "/blog/aurum-quantum-alpha-launch.jpg"
 published: true
 auto_generated: false
 published_at: "2026-04-21T01:07:51.930341+00:00"
-updated_at: "2026-05-11T04:24:41.104299+00:00"
-meta_title: null
-meta_description: null
+updated_at: "2026-06-18T10:30:00Z"
+meta_title: "Aurum Neyro & Quantum Alpha: An Honest Beta Look"
+meta_description: "Aurum Neyro is a non-custodial AI trading agent platform, with Quantum Alpha as its first live agent. We took a beta seat — what we verified, what is unproven, and our 30-day test plan."
 ---
 > **🆕 New step-by-step guide:** Want to actually connect Quantum Alpha right now? See our [**complete 11-step Neyro setup walkthrough**](/blog/self-custody-ai-crypto-trading-aurum-neyro) — every screen, every wallet pop-up, with screenshots from the live AURUM backoffice.
 
-> **Disclosure:** CryptoWatchdog secured one of the 100 beta seats for Aurum Neyro. This article is an early look, not financial advice. We will publish a full results review after 30 days of live testing. All performance figures below are reported by Aurum and have **not yet been independently verified by us**.
+> **Disclosure:** Aurum is a partner of CryptoWatchdog, and the links to Aurum in this article are affiliate links. If you sign up through them, we may earn a commission at no extra cost to you. We took one of the 100 beta seats for Aurum Neyro ourselves. This is an early look, not financial advice, and not a recommendation to invest. Every performance figure below is reported by Aurum and has **not yet been independently verified by us**. We will publish a full results review after 30 days of live testing.
 
-Aurum Foundation is opening the next chapter of its product roadmap with the launch of **Neyro** — a non-custodial, AI-driven trading agent platform — and its first live agent, **Quantum Alpha**.
+Aurum has launched **Neyro** — a non-custodial AI trading agent platform — alongside its first live agent, **Quantum Alpha**. We are calling the platform **Aurum Neyro** throughout this piece so you know exactly what we mean.
 
-For anyone tracking the rise of [crypto copy trading](/categories/copy-trading) and on-chain copy trading, this is one of the more interesting rollouts of the year because it sits at the intersection of three trends: AI agents, smart-contract execution, and self-custody.
+Here is our honest take up front. Aurum has a working product and a team we have met, and we have moved real money through their existing tools without trouble. That is more than most launches in this space can say. But a clean track record on one product does not validate the numbers being quoted for a brand-new one. So we took a seat to check those numbers ourselves, and we are writing this with the scepticism a launch like this deserves.
 
-If you are new to the project, our full [Aurum Foundation review](/reviews/aurum-foundation) covers the team, history, fees, and how the existing Ex-Ai bot works. This post focuses specifically on what is new with **Neyro** and **Quantum Alpha**.
+For anyone following [crypto copy trading](/categories/copy-trading) and on-chain copy trading, the launch is worth a look because it sits where three trends meet: AI agents, smart-contract execution, and self-custody. Worth a look is not the same as worth your money. We will get to the difference.
+
+If you are new to the project, our full [Aurum Foundation review](/reviews/aurum-foundation) covers the team, history, fees, and how the existing Ex-Ai bot works. This post is about what is genuinely new with **Neyro** and **Quantum Alpha**.
 
 ![Aurum is introducing Neyro — next-generation non-custodial trading agents](/blog/aurum-introducing-neyro.jpg)
 
-## Why we're backing this one
+## Why this one cleared our filter
 
-We see a lot of bot launches. Most we ignore. Here is why Neyro made it through our filter:
+We see a lot of bot launches. Most we ignore. A few things kept Neyro on the table — and none of them is the headline return figure.
 
-- **The team is real and verified.** We met the Aurum founders, their identities are public, and the company has a working product (the Ex-Ai Bot) that has been running for over a year. See our [full team breakdown](/reviews/aurum-foundation).
-- **We've already withdrawn real money from Aurum.** During our [Ex-Ai Bot review](/reviews/aurum-foundation) we deposited ~$3,000 USDT, received daily yield, and processed two test withdrawals (one cleared in ~1 hour, one in ~24 hours). That track record is why we accepted a Neyro beta seat.
-- **Non-custodial by architecture, not by promise.** Neyro doesn't hold your USDT. You sign a smart-contract permission, the agent trades inside the limits you set, and you can revoke that permission with a single click. No deposit, no company wallet to drain.
-- **Self-reported track record (not yet verified by us):** +22.6% / +28.9% / +31.4% across three consecutive monthly windows on Quantum Alpha. We're testing this live over the next 30 days — exactly so you don't have to.
-- **We use the same affiliate link we're asking you to use.** No two-tier nonsense. [Same link, same terms](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"}.
+- **The team is real and identifiable.** We have met the Aurum founders, their identities are public, and the company has a working product (the Ex-Ai Bot) that has been running for over a year. The detail is in our [full team breakdown](/reviews/aurum-foundation). An anonymous team is an instant no for us; this one passed that bar.
+- **We have already withdrawn real money from Aurum.** During our [Ex-Ai Bot review](/reviews/aurum-foundation) we deposited around $3,000 USDT, received daily yield, and ran two test withdrawals. One cleared in roughly an hour, the other in about a day. That experience is why we were willing to spend time on the beta — not proof that Neyro will perform the same way.
+- **The architecture is non-custodial, at least on paper.** Aurum says Neyro never holds your USDT: you sign a smart-contract permission, the agent trades inside limits you set, and you can revoke that permission yourself. We like the design. We will confirm it actually behaves that way on-chain before we vouch for it.
+- **A self-reported track record we have not checked.** Aurum quotes +22.6% / +28.9% / +31.4% across three consecutive monthly windows for Quantum Alpha. Treat those as marketing figures, not facts. We are testing them live over the next 30 days.
+- **One affiliate link, the same one we use.** We are an affiliate, and we are upfront about it. There is no separate VIP tier — [same link, same terms for everyone](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"}.
+
+A quick word on those returns. The CFTC has a plain-spoken warning about exactly this category: in its advisory ["AI Won't Turn Trading Bots into Money Machines"](https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/AITradingBots.html){:target="_blank" rel="noopener"}, it notes that AI cannot predict the market, and that claims of high or guaranteed returns are a red flag for fraud. We are not accusing Aurum of anything. We are saying that any double-digit monthly figure, from anyone, earns scrutiny rather than trust. That is the whole reason we are running the test.
 
 ## What is Aurum Neyro?
 
-Neyro is positioned as a next-generation, **non-custodial platform for creating and copying trading agents**. The pitch is simple: combine AI-driven logic, smart-contract architecture, and transparent on-chain execution inside a single backoffice — without ever taking custody of user funds.
+Aurum describes Neyro as a **non-custodial platform for creating and copying trading agents**. The pitch: combine AI-driven logic, smart-contract execution, and on-chain transparency inside one backoffice, without ever taking custody of user funds.
 
-Aurum is building Neyro around three core principles:
+Aurum says it is building Neyro around three principles. These are the company's framing, summarised:
 
 | Principle | What it means in practice |
 |---|---|
@@ -46,13 +50,13 @@ Aurum is building Neyro around three core principles:
 | **Create or copy agents** | Users can follow live, high-performing agents or build personalised agents aligned with their own strategy and risk profile. |
 | **Structured on-chain execution** | Every action follows a clear rules-based framework — transparent, trackable, and built for disciplined execution. |
 
-This is a meaningful shift from the original Aurum Ex-Ai Bot, which lived inside the centralised backoffice. Neyro pushes execution closer to the wallet layer, which is exactly the direction the market has been asking for after a long string of custodial-bot blow-ups.
+If it works as described, this is a real shift from the original Aurum Ex-Ai Bot, which lived inside the centralised backoffice. Neyro pushes execution closer to the wallet layer. That is the direction a lot of people have wanted after years of custodial bots failing and taking deposits with them. Whether Neyro delivers on it is something we will judge from the test, not the brochure.
 
 [**→ Reserve your Neyro beta seat (100 spots only)**](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"}
 
-## How your funds stay yours
+## How your funds are meant to stay yours
 
-This is the part most "AI bots" get wrong. Here is what actually happens when you connect to Neyro versus a typical custodial bot:
+This is the part most "AI bots" get wrong, so it is the part worth understanding before you sign anything. Here is how Aurum says Neyro works, set against a typical custodial bot. We will be checking the right-hand column on-chain during the beta.
 
 | Stage | Custodial bot (the old way) | Neyro (non-custodial) |
 |---|---|---|
@@ -62,9 +66,9 @@ This is the part most "AI bots" get wrong. Here is what actually happens when yo
 | If the platform vanishes | Your funds vanish with it | Your funds stay in your wallet |
 | Exiting | Withdrawal request → manual approval → wait | Revoke contract permission → instant |
 
-What that means in practice: you are **not depositing money into Aurum**. You are giving a smart contract a bounded, revocable permission to trade *with* your USDT, while the USDT itself never moves out of your control. If you don't like what the agent is doing, one signature ends it.
+In plain terms: if it works as advertised, you are **not depositing money into Aurum**. You grant a smart contract a bounded, revocable permission to trade *with* your USDT, and the USDT itself never leaves your control. Don't like what the agent is doing? One signature ends it. This is the same token-approval mechanism that every DeFi app uses; if you want the mechanics in detail, revoke.cash has a clear primer on [what token approvals are](https://revoke.cash/learn/approvals/what-are-token-approvals){:target="_blank" rel="noopener"} and how to revoke them.
 
-That said — non-custodial does not mean risk-free. Smart contracts can have bugs. Agents can take losing trades. Always start with a small allocation you can afford to lose. We'll be testing all of this in our 30-day review.
+Non-custodial is not the same as safe. A token approval is only as trustworthy as the contract you grant it to. Smart contracts can carry bugs. An over-broad approval can be abused if the contract is malicious or compromised. And a non-custodial bot can still lose money on bad trades while keeping perfect custody the whole time — those are two separate risks. Start small, with an amount you are genuinely fine losing. We will be stress-testing all of this in the 30-day review.
 
 ## What you get vs what you're risking
 
@@ -78,35 +82,37 @@ That said — non-custodial does not mean risk-free. Smart contracts can have bu
 
 ## Quantum Alpha: the first live agent
 
-Quantum Alpha is the first fully live trading agent inside Neyro. According to Aurum, it has been running in live testing for the past three months with the following self-reported results:
+Quantum Alpha is the first fully live trading agent inside Neyro. According to Aurum, it has run in live testing for three months, with these self-reported results:
 
 - **17 Jan – 17 Feb:** +22.6%
 - **17 Feb – 17 Mar:** +28.9%
 - **17 Mar – 17 Apr:** +31.4%
 
-That works out to a **self-reported average monthly return of 27.6%** over the test window. Those are strong numbers — and exactly the kind of numbers that warrant healthy scepticism until we see them in our own wallet, on-chain, in real conditions. That is precisely what we plan to do.
+Aurum puts the average at **27.6% per month** across that window. We want to be clear about what this is and is not. It is a figure published by the company. It is not a result we have reproduced, not a number pulled from on-chain history we can point you to, and not a promise of what your account would do. Three months is a short window, and any sample that short can flatter a strategy that simply caught a favourable market.
 
-If you want to copy Quantum Alpha during the beta window, you can [activate it through our affiliate link here](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"} — same price for you, helps support our independent testing.
+The SEC's investor-protection guidance puts it bluntly: there is [no such thing as high, guaranteed investment returns](https://www.investor.gov/protect-your-investments/fraud/types-fraud/ponzi-scheme){:target="_blank" rel="noopener"}, and every investment carries risk. We are not saying Quantum Alpha is anything like a fraud — the team and product are real. We are saying a 27.6% monthly figure should make you ask harder questions, not reach for your wallet. So that is what we are doing: running it live, on-chain, in real conditions, and reporting what we actually see.
+
+If you want to copy Quantum Alpha during the beta window, you can [activate it through our affiliate link here](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"}. Same price for you; it helps fund our independent testing. We would rather you waited for our 30-day numbers first.
 
 ![Quantum Alpha live performance dashboard inside Aurum Neyro](/blog/aurum-quantum-alpha-launch.jpg)
 
 ## How the beta works
 
-Within the next 48 hours, Aurum is opening **beta access to Neyro** — and only **100 partners** can join the first wave. Beta users will be able to:
+Aurum is opening **beta access to Neyro** to a first wave of **100 partners**. Beta users can:
 
 1. Connect their own wallet to the new Neyro section in the Aurum backoffice.
-2. Subscribe to Quantum Alpha and start copying its live trades.
-3. Keep full custody of funds throughout — trades are executed through smart contracts, not by handing assets to a custodian.
+2. Subscribe to Quantum Alpha and copy its live trades.
+3. Keep custody of their funds throughout, with trades routed through smart contracts rather than handed to a custodian.
 
-A dedicated **Neyro section** will appear inside the Aurum backoffice for beta users. If you want to try and grab a seat before the 100 slots fill, you can register through our affiliate link: [Join Aurum Neyro Beta](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"}.
+A dedicated **Neyro section** appears inside the Aurum backoffice for beta users. The 100-seat cap is Aurum's framing, and scarcity is a classic nudge to sign up fast, so don't let the countdown do your thinking for you. If you do want a seat, you can register through our affiliate link: [Join Aurum Neyro Beta](https://backoffice.aurum.foundation/u/PKK5U0){:target="_blank" rel="noopener sponsored"}.
 
 ![Aurum Neyro app interface showing Quantum Alpha performance and AI signals](/blog/aurum-neyro-app-screen.jpg)
 
 ## How to connect your wallet & start with Neyro (step-by-step)
 
-Neyro is fully **non-custodial** — there are no deposits to a company account, no KYC, and no registration form. Your USDT stays in your own wallet at all times, and Quantum Alpha (or any agent you build) executes trades through smart contracts on the [DEX layer](/blog/what-is-a-decentralized-exchange-dex-explained).
+Aurum describes Neyro as fully **non-custodial**: no deposits to a company account, no KYC, no registration form. The claim is that your USDT stays in your own wallet throughout, and Quantum Alpha (or any agent you build) trades through smart contracts on the [DEX layer](/blog/what-is-a-decentralized-exchange-dex-explained). That is the design we are verifying.
 
-You still need an Aurum account to access the Neyro section, the same way Aurum's other tools work. Here is the exact flow.
+You still need an Aurum account to reach the Neyro section, the same as Aurum's other tools. Here is the exact flow.
 
 <div class="not-prose my-6 grid gap-3">
   <div class="rounded-xl border border-border bg-card p-5 flex items-start gap-4">
