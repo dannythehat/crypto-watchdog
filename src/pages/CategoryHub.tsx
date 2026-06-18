@@ -105,6 +105,13 @@ const CategoryHub = () => {
                   {oranges > 0 && <a href="#picks" className="inline-flex items-center gap-1.5 rounded-full bg-rating-orange/15 px-3 py-1.5 font-semibold text-rating-orange"><ShieldAlert className="h-4 w-4" />{oranges} caution</a>}
                   {avoidCount > 0 && <a href="#avoid" className="inline-flex items-center gap-1.5 rounded-full bg-rating-red/15 px-3 py-1.5 font-semibold text-rating-red"><ShieldX className="h-4 w-4" />{avoidCount} avoid</a>}
                 </div>
+                <p className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted-foreground">
+                  <span>Reviewed by the <span className="font-semibold text-foreground">Crypto Watchdog</span> team</span>
+                  <span aria-hidden>·</span>
+                  <span>Updated June 2026</span>
+                  <span aria-hidden>·</span>
+                  <Link to="/methodology" className="font-medium text-primary hover:underline">Our methodology</Link>
+                </p>
               </div>
               <div className="md:col-span-2">
                 {hub.heroImage ? (
@@ -217,17 +224,27 @@ const CategoryHub = () => {
             <p className="mt-2 text-sm text-muted-foreground md:hidden">Swipe the table sideways →</p>
             <div className="mt-6 overflow-x-auto rounded-2xl border border-border bg-card/60 backdrop-blur-md">
               <table className="w-full min-w-[640px] text-sm">
-                <thead><tr className="bg-gradient-to-r from-primary/10 to-transparent text-left">{["#", "Platform", "Type", "Score", "Rating"].map((h) => <th key={h} className="px-4 py-3 font-heading font-semibold">{h}</th>)}</tr></thead>
+                <thead><tr className="bg-gradient-to-r from-primary/10 to-transparent text-left">{["#", "Platform", "Type", "Score", "Rating", ""].map((h, hi) => <th key={hi} className="px-4 py-3 font-heading font-semibold">{h}</th>)}</tr></thead>
                 <tbody>
-                  {ranked.map((r, i) => (
+                  {ranked.map((r, i) => {
+                    const rowAff = getAffiliateByReviewSlug(r.slug);
+                    const showCta = r.rating !== "red" && isMonetisable(rowAff);
+                    return (
                     <tr key={r.slug} className={`border-t border-border/60 transition-colors hover:bg-foreground/5 ${i % 2 ? "bg-foreground/[0.015]" : ""}`}>
                       <td className="px-4 py-3 font-heading font-bold text-muted-foreground">{i + 1}</td>
                       <td className="px-4 py-3"><Link to={`/reviews/${r.slug}`} className="font-medium hover:text-primary">{r.name}</Link></td>
                       <td className="px-4 py-3 text-muted-foreground">{slugType.get(r.slug) || r.categories?.name || hub.eyebrow}</td>
                       <td className={`px-4 py-3 font-heading font-bold ${scoreColor(r.trust_score ?? 0)}`}>{r.trust_score ?? "—"}</td>
                       <td className="px-4 py-3">{r.rating && <RatingBadge rating={r.rating as "green" | "orange" | "red"} />}</td>
+                      <td className="px-4 py-3 whitespace-nowrap">
+                        {showCta ? (
+                          <a href={`/go/${rowAff!.id}`} target="_blank" rel="sponsored noopener noreferrer" onClick={() => trackEvent("affiliate_click", { affiliate_id: rowAff!.id, placement: "hub_table", review_slug: r.slug })} className="inline-flex items-center gap-1 rounded-lg bg-gradient-to-r from-rating-green to-emerald-500 px-3 py-1.5 text-xs font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5">Visit <ExternalLink className="h-3 w-3" /></a>
+                        ) : (
+                          <Link to={`/reviews/${r.slug}`} className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline">Review <ArrowRight className="h-3 w-3" /></Link>
+                        )}
+                      </td>
                     </tr>
-                  ))}
+                  );})}
                 </tbody>
               </table>
             </div>
