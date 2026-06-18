@@ -98,35 +98,35 @@ So before you report a crypto scam, build a tidy evidence pack. The agencies all
 | Screenshot with browser timestamp | Capture platform pages with verifiable dates |
 | Notepad or word processor log | Create a chronological written summary |
 
-For broader guidance on limiting further harm once you suspect fraud, our [damage control guide](https://cryptowatchdog.net/blog/crypto-scammed-your-step-by-step-guide-to-damage-control-2026-04-24) outlines immediate steps to protect remaining funds and revoke suspicious token approvals.
+If you want a fuller playbook for limiting the bleeding while you gather all this, our [damage control guide](https://cryptowatchdog.net/blog/crypto-scammed-your-step-by-step-guide-to-damage-control-2026-04-24) covers the immediate steps: protecting what's left and revoking any token approvals you don't trust.
 
-Pro Tip: Enable multi-factor authentication (MFA) on every exchange account immediately, and never share private keys or seed phrases with anyone, including supposed support staff. Scammers frequently pose as customer service representatives to obtain these credentials under the guise of "verifying your account."
+Pro Tip: Turn on multi-factor authentication on every exchange account now, today, and never hand your private keys or seed phrase to anyone, "support staff" very much included. Posing as a helpful customer service rep who just needs to "verify your account" is one of the oldest tricks they've got.
 
 ## Step-by-step: how to file a crypto scam alert
 
-With evidence in hand, here is exactly how you begin the official reporting process. Many investors gather their evidence and then feel uncertain about where to send it. The answer is: multiple places simultaneously, not just one.
+Evidence packed? Good. Now the bit people stall on. They gather everything, then freeze, unsure where to send it. Here's the short answer: send it to several places at once, not one. Each agency does a different job, and overlapping reports is a feature, not a waste of your time.
 
 ![Infographic showing steps to report crypto scam](https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1778068808988_Infographic-showing-steps-to-report-crypto-scam.jpeg)
 
-The standard reporting process involves submitting evidence to the IC3, SEC, CFTC, FTC, and applicable state regulators. Each authority has a different remit, and your scam type will determine which agencies are most relevant.
+For most US victims, the route runs through the IC3, the FTC, the SEC, the CFTC, and your state regulator. Which ones matter most depends on your scam and the assets involved, but going wide costs you nothing and helps the data add up. Here's the order we'd use.
 
-**Step 1: File with the FBI's Internet Crime Complaint Center (IC3)**
-Visit ic3.gov and submit a detailed complaint. Include all transaction hashes, wallet addresses, and communications. The IC3 aggregates reports nationally and shares intelligence with law enforcement at federal and international levels. This should be your first submission in nearly all crypto fraud cases.
+**Step 1: File with the FBI's Internet Crime Complaint Center (IC3).**
+Go to ic3.gov and submit a detailed complaint, with every transaction hash, wallet address and message you've collected. The IC3 pools reports nationally and shares intelligence with law enforcement at federal and international level. For almost any crypto fraud, this is your first stop.
 
-**Step 2: Report to the FTC (Federal Trade Commission)**
-File at ReportFraud.ftc.gov. The FTC focuses on consumer fraud and uses aggregated data to identify patterns and issue public warnings. Individual case resolution is unlikely, but your report contributes to broader enforcement actions.
+**Step 2: Report to the FTC (Federal Trade Commission).**
+File at ReportFraud.ftc.gov. The FTC works at the pattern level: it uses aggregated reports to spot trends and issue public warnings. Don't expect them to resolve your case personally, but your report feeds bigger enforcement actions, and that's worth something.
 
-**Step 3: Submit a tip to the SEC (Securities and Exchange Commission)**
-If the scam involved tokens marketed as investments or promises of profit from others' efforts (which meets the legal definition of a security), report via the SEC's Tips, Complaints, and Referrals portal. The SEC has pursued enforcement against multiple fraudulent token issuers.
+**Step 3: Submit a tip to the SEC (Securities and Exchange Commission).**
+If the scam involved tokens sold as investments, or any "profit from our effort" pitch that meets the legal definition of a security, use the SEC's Tips, Complaints, and Referrals portal. They've gone after plenty of fraudulent token issuers, so the tip line isn't a dead drop.
 
-**Step 4: File with the CFTC (Commodity Futures Trading Commission)**
-The CFTC oversees commodity fraud, and Bitcoin and Ether are classified as commodities under US law. Scams involving these assets, or leveraged crypto trading fraud, fall within their jurisdiction. Use the SmartCheck portal at cftc.gov.
+**Step 4: File with the CFTC (Commodity Futures Trading Commission).**
+Under US law, Bitcoin and Ether count as commodities, so scams involving them, or leveraged crypto trading fraud, land in the CFTC's lap. Use the SmartCheck portal at cftc.gov.
 
-**Step 5: Contact your state financial regulator**
-Many states operate independent securities or financial fraud divisions. A quick search for your state's financial regulator will surface the relevant contact form. Some state-level agencies have moved faster than federal bodies on certain crypto fraud cases.
+**Step 5: Contact your state financial regulator.**
+Most states run their own securities or financial-fraud division, and a quick search for yours will turn up the contact form. Some of them move faster than the federal bodies on certain cases, so don't skip this one.
 
-**Step 6: Notify the exchange that processed your funds**
-Contact the customer support team of any legitimate exchange you used to send funds. While they cannot reverse blockchain transactions, they can flag destination wallets and, in some cases, freeze associated accounts if the scammer is also a user of that platform.
+**Step 6: Tell the exchange that processed your funds.**
+Reach out to support at any legitimate exchange you used. They can't reverse a blockchain transaction, nobody can, but they can flag the destination wallet and sometimes freeze accounts if the scammer happens to be a user on their platform too. It's a long shot worth taking.
 
 | Authority | Jurisdiction | Best suited for |
 |---|---|---|
