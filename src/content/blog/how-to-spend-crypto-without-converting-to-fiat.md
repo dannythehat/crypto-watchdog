@@ -22,7 +22,7 @@ The good news is that the impression is out of date. Between Lightning Network w
 ## Table of Contents
 
 - [What you need to spend crypto without converting to fiat](#what-you-need-to-spend-crypto-without-converting-to-fiat)
-- [Step-by-step guide to using crypto debit cards for seamless spending](#step-by-step-guide-to-using-crypto-debit-cards-for-seamless-spending)
+- [Step-by-step guide to using crypto debit cards for everyday spending](#step-by-step-guide-to-using-crypto-debit-cards-for-everyday-spending)
 - [Using the Lightning Network for instant non-custodial payments](#using-the-lightning-network-for-instant-non-custodial-payments)
 - [Spend crypto at mainstream retailers using gift card marketplaces](#spend-crypto-at-mainstream-retailers-using-gift-card-marketplaces)
 - [Security and transparency considerations for direct crypto spending](#security-and-transparency-considerations-for-direct-crypto-spending)
@@ -68,7 +68,7 @@ Fees deserve a moment of your attention too. Paying on Ethereum mainnet for a £
 
 ***
 
-## Step-by-step guide to using crypto debit cards for seamless spending
+## Step-by-step guide to using crypto debit cards for everyday spending
 
 Crypto debit cards are the easiest way in for most people, simply because they work at any terminal that takes a normal card. The merchant has no idea crypto was involved, and frankly doesn't care.
 
