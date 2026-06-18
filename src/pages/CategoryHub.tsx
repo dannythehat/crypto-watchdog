@@ -106,8 +106,17 @@ const CategoryHub = () => {
                   {avoidCount > 0 && <a href="#avoid" className="inline-flex items-center gap-1.5 rounded-full bg-rating-red/15 px-3 py-1.5 font-semibold text-rating-red"><ShieldX className="h-4 w-4" />{avoidCount} avoid</a>}
                 </div>
               </div>
-              <div className="hidden md:col-span-2 md:block">
-                <div className="cw-float mx-auto w-64 max-w-full"><WatchdogMascot mood={hub.mood} title={`CryptoWatchdog — ${hub.eyebrow}`} /></div>
+              <div className="md:col-span-2">
+                {hub.heroImage ? (
+                  <>
+                    <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-2xl ring-1 ring-white/10">
+                      <img src={hub.heroImage} alt={`${hub.eyebrow} — ${hub.title}`} className="w-full" loading="eager" />
+                    </div>
+                    <div className="cw-float mx-auto mt-5 hidden w-28 lg:block"><WatchdogMascot mood={hub.mood} title={`CryptoWatchdog — ${hub.eyebrow}`} /></div>
+                  </>
+                ) : (
+                  <div className="cw-float mx-auto hidden w-64 max-w-full md:block"><WatchdogMascot mood={hub.mood} title={`CryptoWatchdog — ${hub.eyebrow}`} /></div>
+                )}
               </div>
             </div>
           </SectionWrapper>

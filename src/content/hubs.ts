@@ -22,6 +22,7 @@ export interface Hub {
   accent: string;         // hex used for hero glow
   heroPrompt: string;     // Pollinations FLUX prompt for the hero image
   heroSeed: number;       // fixed seed → stable image
+  heroImage?: string;     // self-hosted hero image (overrides the mascot in the hero)
   intro: string;          // markdown, rendered under the hero
   trusted: string[];      // review slugs (green)
   caution: string[];      // review slugs (orange)
@@ -63,6 +64,32 @@ export const hubs: Hub[] = [
     ],
   },
   {
+    slug: "ai-trading-platforms",
+    eyebrow: "AI Trading",
+    title: "AI Crypto Trading Platforms 2026: Which Are Real — and Which Are Scams",
+    metaTitle: "AI Crypto Trading Platforms 2026: Best vs Scams",
+    metaDescription:
+      "AI crypto trading bots, agents and 'quant funds' are the most scam-prone niche in crypto. See which AI trading platforms we endorse, which need caution, and which to avoid.",
+    keyword: "ai crypto trading platforms",
+    mood: "scan",
+    accent: "#4F8BFF",
+    heroPrompt:
+      "dark cinematic cyber trading floor with a glowing blue AI neural-network brain made of circuitry hovering above holographic candlestick charts, electric blue and violet volumetric light, ultra detailed, futuristic, octane render",
+    heroSeed: 31,
+    intro:
+      "“AI” is the most abused word in crypto right now. For every genuine tool that uses machine learning to manage risk, there are a dozen **AI-washed** schemes that slap a chatbot on a Ponzi and promise guaranteed daily returns.\n\nWe test these platforms the same way we test everything: who runs it, where the money actually goes, and whether you can get it back out. Below are the AI trading platforms we currently **endorse**, the ones that need **caution**, and the ones to **avoid outright**. Start with our guide on [how to spot AI-washing](/blog/how-to-spot-ai-washing-crypto).",
+    trusted: ["topone-futures"],
+    caution: ["pionex", "3commas", "cryptohopper"],
+    avoid: ["yieldmax-ai", "shadowtradebot", "crypto-signal-services-general"],
+    warnings: ["moneyflare-scam-warning", "yieldmax-ai-scam-warning", "telegram-investment-bot-scams", "cryptomine-pro-scam-warning"],
+    relatedPosts: ["aurum-neyro-bot-review-is-aurum-a-scam", "how-to-spot-ai-washing-crypto", "what-is-ai-finance-crypto", "are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09"],
+    faq: [
+      { q: "Can AI really trade crypto profitably for me?", a: "Some tools genuinely use automation and risk models that help disciplined traders. But no honest platform can promise fixed daily profits — markets don't work that way. Any 'AI bot' guaranteeing returns is the oldest scam in a new costume." },
+      { q: "What is 'AI-washing'?", a: "It's when a project markets itself as AI-powered to look sophisticated, while the underlying business is just a high-yield investment scheme paying old investors with new deposits. The 'AI' is decoration." },
+      { q: "How do you decide which AI platforms to endorse?", a: "We look for a real, named team, a working product you control, transparent fees, withdrawals that actually clear, and no guaranteed-return claims. Platforms that fail these get an orange or red rating." },
+    ],
+  },
+  {
     slug: "crypto-exchanges",
     eyebrow: "Exchanges",
     title: "Best Crypto Exchanges 2026: The Safe Ones vs the Risky Ones",
@@ -75,6 +102,7 @@ export const hubs: Hub[] = [
     heroPrompt:
       "a secure futuristic crypto exchange vault, glowing emerald shields and golden bitcoin coins, holographic trading screens, deep teal and electric blue volumetric light, cinematic, ultra detailed",
     heroSeed: 32,
+    heroImage: "/crypto-exchanges/hero.png",
     intro:
       "An exchange is where most people's crypto journey starts — and where a lot of it ends badly. The difference between a well-run exchange and a risky one shows up exactly when it matters: **when you try to withdraw**.\n\nWe rate exchanges on security, regulation, transparency and real deposit/withdrawal testing. Here are the exchanges we currently trust, the ones to approach carefully, and the guides to read before you sign up — starting with [how to pick a safe crypto exchange](/blog/how-to-pick-safe-crypto-exchange-2026).",
     trusted: ["kraken", "coinbase", "binance", "xt-com", "okx", "bisq"],
@@ -107,6 +135,7 @@ export const hubs: Hub[] = [
     heroPrompt:
       "a glowing hardware crypto wallet device on a pedestal inside a dark vault, protective blue energy shields and a luminous key of light, emerald and electric blue, cinematic, ultra detailed",
     heroSeed: 33,
+    heroImage: "/crypto-wallets/hero.png",
     intro:
       "Not your keys, not your coins. A wallet you truly control is the single biggest upgrade you can make to your crypto security — but only if it's the real thing. Fake wallet apps and malicious browser extensions are one of the most common ways people get drained.\n\nBelow are the wallets we trust across hardware and software, plus the impostors to watch for. New to self-custody? Read [self-custody vs custodial wallets](/blog/self-custody-vs-custodial-wallets-2026) first.",
     trusted: ["ledger-nano-x", "trezor", "metamask", "phantom", "argent", "safe-gnosis", "trust-wallet"],
@@ -139,6 +168,7 @@ export const hubs: Hub[] = [
     heroPrompt:
       "a futuristic trading dashboard with mirrored glowing trader silhouettes and flowing data streams, warm amber and electric blue light, dark cyber floor, cinematic, ultra detailed",
     heroSeed: 34,
+    heroImage: "/copy-trading/hero.png",
     intro:
       "Copy trading sounds perfect: link your account, mirror a proven trader, and let the profits roll in. In reality, past performance is easy to fake, leverage quietly amplifies losses, and 'signal groups' are riddled with paid shillers.\n\nThere are legitimate, regulated copy-trading platforms — and a lot that aren't. Here's where we land on the main players, plus the [Telegram trading-bot investigation](/blog/are-telegram-trading-bots-safe-a-crypto-watchdog-investigation-2026-05-09) everyone considering this should read.",
     trusted: ["topone-futures", "aurum-foundation"],

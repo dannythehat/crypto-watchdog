@@ -150,8 +150,11 @@ const CryptoCasinos = () => {
                   <span className="inline-flex items-center gap-1.5 rounded-full bg-card/60 px-3 py-1.5 font-medium backdrop-blur">🔞 18+ • Gamble responsibly</span>
                 </div>
               </div>
-              <div className="hidden md:col-span-2 md:block">
-                <div className="cw-float mx-auto w-60"><WatchdogMascot mood="caution" title="Crypto gambling safety" /></div>
+              <div className="md:col-span-2">
+                <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-2xl ring-1 ring-white/10">
+                  <img src="/crypto-casinos/hero.png" alt="Crypto casinos & sportsbooks — vetted and ranked" className="w-full" loading="eager" />
+                </div>
+                <div className="cw-float mx-auto mt-5 hidden w-28 lg:block"><WatchdogMascot mood="caution" title="Crypto gambling safety" /></div>
               </div>
             </div>
           </SectionWrapper>
