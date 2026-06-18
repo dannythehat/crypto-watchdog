@@ -123,3 +123,12 @@ ships unless it's genuinely good. Report progress each milestone.
 ## 🎨 ARTICLE STYLE STANDARD (Aurum article = the template, 2026-06-18)
 - Bold (**text**) renders brand-blue (Markdown.tsx strong = text-primary). Body/list/table/quote text = foreground/80-85 (higher contrast; the old light grey was hard to read). muted-foreground token bumped (dark 64%, light 36%).
 - Renderer outputs trusted block-level HTML (figures, CTA cards). Tailwind scans src/content so md-only classes generate.
+
+## 🗺️ SITE HIERARCHY (2026-06-18, Danny-confirmed) — the rule
+Home → top categories (image grid) → **next-level landing pages** (split into sub-categories) → **final unique platform pages** → individual reviews.
+- **AI Finance** = top umbrella (`/ai-finance`, bespoke `AiFinance.tsx`): rich pillar (hero+image, E-E-A-T byline, what/how/why, pros/cons, category image tiles, at-a-glance comparison table, expandable "read more" SEO guide, how-we-rate, FAQ, related guides). THE locked formula for top pages.
+- **Crypto Trading** = next-level landing (`/crypto-trading`, bespoke `CryptoTrading.tsx`) → sub-tiles: **AI Trading Bots** (`/ai-trading-bots`), **Trading Bots** (`/trading-bots`), **Copy Trading** (`/copy-trading`), **Exchanges** (`/crypto-exchanges`, cross-linked + top-level). Exchanges & Wallets use `groups` (CEX/DEX/… ; hardware/software/…) = in-page sub-sections.
+- Leaf/final category pages run on `CategoryHub.tsx` (shared template): hero(+heroImage), byline, intro, featured pick, endorsed/caution PlatformCards (casino-grade), avoid/alerts, comparison table **with CTA column**, expandable buyer's guide (`hub-guides/<slug>.md`), how-we-rate, FAQ, related.
+- Removed/merged: standalone Trading page (→/ai-finance), ai-trading-platforms & crypto-trading-bots (merged then re-split into ai-trading-bots + trading-bots). Staking & Blockchains `hidden:true` (live for SEO, out of nav/tiles). 301s in public/_redirects.
+- Nav: `NAV_CATS` in Navbar.tsx = curated top categories (NOT a flat hubs dump). Homepage `CATS` in Index.tsx = image tiles.
+- **IMAGE RULE: a tile/hero only uses its OWN image; else a clean icon. Never borrow another category's art.** Hero images self-hosted at `public/<slug>/hero.png` (Danny supplies them; pollinations AI-gen is BLOCKED from sandbox so I can't generate — request from Danny). MISSING image: **ai-trading-bots** (icon placeholder for now).
