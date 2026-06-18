@@ -199,10 +199,10 @@ export const hubs: Hub[] = [
     heroSeed: 31,
     heroImage: "/ai-trading-bots/hero.png",
     intro:
-      "An AI trading bot claims to *adapt* — reading the market and adjusting its own strategy, rather than following fixed rules. A handful are genuine tools. Many more are the oldest scam in crypto with a chatbot bolted on: **\"our AI guarantees daily profit, just deposit here.\"**\n\nWe judge every one on the same three things — who holds your money, whether the returns are verifiable, and whether the strategy is ever actually explained. Start with [how to spot AI-washing](/blog/how-to-spot-ai-washing-crypto).",
-    trusted: ["topone-futures"],
-    caution: [],
-    avoid: ["yieldmax-ai", "crypto-signal-services-general"],
+      "An AI trading bot claims to *adapt* — reading the market and adjusting its own strategy, rather than following fixed rules. A handful are genuine tools. Many more are the oldest scam in crypto with a chatbot bolted on: **\"our AI guarantees daily profit, just deposit here.\"**\n\nWe judge every one on the same three things — who holds your money, whether the returns are verifiable, and whether the strategy is ever actually explained. The most credible operator we've audited at this scale is [Aurum](/reviews/aurum-foundation) — we followed its payments on-chain in our [Aurum Neyro investigation](/blog/aurum-neyro-bot-review-is-aurum-a-scam). Below are the bots we currently endorse, the ones that need caution, and the ones to avoid. Start with [how to spot AI-washing](/blog/how-to-spot-ai-washing-crypto).",
+    trusted: ["aurum-foundation", "pionex"],
+    caution: ["3commas", "cryptohopper"],
+    avoid: ["yieldmax-ai", "shadowtradebot", "crypto-signal-services-general"],
     warnings: ["yieldmax-ai-scam-warning"],
     relatedPosts: ["aurum-neyro-bot-review-is-aurum-a-scam", "how-to-spot-ai-washing-crypto", "non-custodial-ai-trading-bots-explained"],
     faq: [
