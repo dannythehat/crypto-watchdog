@@ -98,3 +98,10 @@ ships unless it's genuinely good. Report progress each milestone.
 - ⚠️ SHARED USAGE/SESSION LIMIT hit ~22:50 UTC (resets ~23:40 UTC / "11:40pm UTC"). 3 subagents were cut off at the end but their files were saved. If new agents fail with "session limit", PAUSE launches and resume after reset.
 - Workflow per article: agent reads VOICE.md, rewrites body in calmer voice, keeps facts/links/citations/tables/FAQ/keyword, >=2000 words, zero banned phrases; commit `git add src/content/blog/` → push gitlab HEAD:main.
 - STILL TODO after blogs: screenshot-review every article; humanise hub intros+FAQs (hubs.ts) + casino page copy; fix broken internal link in due-diligence blog (/blog/how-to-vet-a-new-crypto-token → real slug ...-launch-and-avoid-getting-rekt-2026-04-29).
+
+## ✅ CONTENT REDO COMPLETE (2026-06-18)
+- ALL published blogs redone in calmer house voice (VOICE.md) + full EEAT. Quality sweep: 101 published, 0 issues (2000+ words, comparison table, citations, links, FAQ, zero banned/AI-filler each).
+- DEDUP done: 8 near-dup programmatic-SEO blogs unpublished + 301-redirected to strongest sibling (see public/_redirects). 109 → 101 non-competing posts.
+- MoneyFlare: review red/8, off AI-Finance trusted, scam warning surfaced, all promo/affiliate stripped.
+- NO CRON exists. /news = live client-side fetch (auto, cryptocurrency.cv, curated fallback in news.ts). /freebies offers = STATIC (offers.ts) — only change on commit. Danny chose "leave as-is for now" (2026-06-18) — do NOT build automation unless asked.
+- NEXT (when asked): GA4 (`VITE_GA_MEASUREMENT_ID`), Search Console + submit sitemap, casino affiliates (email Danny signup links), SITE SEARCH (pillar #2), roll casino-template polish across hubs, screenshot spot-checks.
