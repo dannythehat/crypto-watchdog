@@ -57,17 +57,6 @@ const FAQS = [
 ];
 
 const Trading = () => {
-  const familySlugs = ["copy-trading", "crypto-trading-bots", "ai-trading-platforms"];
-  const seen = new Set<string>();
-  const family = familySlugs.flatMap((s) => { const h = getHub(s); return h ? [...h.trusted, ...h.caution] : []; });
-  const topPlatforms = family
-    .filter((slug) => { if (seen.has(slug)) return false; seen.add(slug); return !!getReview(slug); })
-    .map((slug) => getReview(slug)!)
-    .sort((a, b) => (b.trust_score ?? 0) - (a.trust_score ?? 0));
-  const featured = topPlatforms.find((r) => r.rating === "green") ?? topPlatforms[0] ?? null;
-  const featuredAff = featured ? getAffiliateByReviewSlug(featured.slug) : null;
-  const rest = topPlatforms.filter((r) => r.slug !== featured?.slug).slice(0, 6);
-
   return (
     <>
       <Seo
@@ -129,12 +118,11 @@ const Trading = () => {
               return (
                 <Link key={s.slug} to={`/${s.slug}`} className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-2xl">
                   {s.image ? (
-                    <div className="relative aspect-[16/10] overflow-hidden">
-                      <img src={s.image} alt={s.label} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-card via-card/10 to-transparent" />
+                    <div className="overflow-hidden border-b border-border/60">
+                      <img src={s.image} alt={s.label} loading="lazy" className="block w-full transition-transform duration-500 group-hover:scale-105" />
                     </div>
                   ) : (
-                    <div className="relative flex aspect-[16/10] items-center justify-center overflow-hidden" style={{ background: `linear-gradient(135deg, ${s.accent}26, transparent)` }}>
+                    <div className="relative flex aspect-[3/2] items-center justify-center overflow-hidden border-b border-border/60" style={{ background: `linear-gradient(135deg, ${s.accent}26, transparent)` }}>
                       <div className="pointer-events-none absolute -right-6 -top-6 h-24 w-24 rounded-full blur-3xl" style={{ background: `${s.accent}40` }} />
                       <s.icon className="relative h-14 w-14" style={{ color: s.accent }} />
                     </div>
@@ -153,38 +141,6 @@ const Trading = () => {
           </div>
         </SectionWrapper>
 
-        {featured && (
-          <SectionWrapper className="border-y border-border bg-card/40">
-            <span id="platforms" className="block -translate-y-28" />
-            <h2 className="font-heading text-2xl font-bold md:text-3xl">Top-rated trading platforms</h2>
-            <p className="mt-2 max-w-2xl text-muted-foreground">The highest-scoring platforms across copy trading, bots and AI — each with our full review and trust score.</p>
-            <div className="mt-8 relative overflow-hidden rounded-3xl border border-rating-green/30 bg-gradient-to-br from-rating-green/10 via-card/60 to-card/60 p-6 backdrop-blur-md md:p-8">
-              <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-rating-green/20 blur-3xl" />
-              <div className="relative mb-4 inline-flex items-center gap-2 text-rating-green"><Star className="h-5 w-5 fill-rating-green" /><span className="text-sm font-semibold uppercase tracking-wider">Our top pick</span></div>
-              <div className="relative flex flex-col gap-6 md:flex-row md:items-center">
-                <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-3xl border border-border bg-background/70">
-                  {featured.logo_url ? <img src={featured.logo_url} alt={featured.name} className="h-full w-full object-contain p-2" /> : <span className="font-heading text-2xl font-bold text-muted-foreground">{featured.name.charAt(0)}</span>}
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-center gap-3"><h3 className="font-heading text-2xl font-bold">{featured.name}</h3>{featured.rating && <RatingBadge rating={featured.rating as "green" | "orange" | "red"} size="md" />}</div>
-                  <p className="mt-3 max-w-xl text-muted-foreground">{(featured.summary || "").replace(/[#>*_`~|]/g, " ").slice(0, 180)}…</p>
-                  <div className="mt-5 flex flex-wrap gap-3">
-                    <Link to={`/reviews/${featured.slug}`} className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-transform hover:-translate-y-0.5">Read our {featured.name} review <ArrowRight className="h-4 w-4" /></Link>
-                    {isMonetisable(featuredAff) && (
-                      <a href={`/go/${featuredAff!.id}`} target="_blank" rel="sponsored noopener noreferrer" onClick={() => trackEvent("affiliate_click", { affiliate_id: featuredAff!.id, placement: "trading_featured", review_slug: featured.slug })} className="inline-flex items-center gap-2 rounded-xl bg-rating-green px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5">Visit {featured.name} <ExternalLink className="h-3.5 w-3.5" /></a>
-                    )}
-                  </div>
-                </div>
-                {featured.trust_score != null && <div className="md:pl-4"><TrustRing score={featured.trust_score} /></div>}
-              </div>
-            </div>
-            {rest.length > 0 && (
-              <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                {rest.map((r) => <PlatformCard key={r.slug} slug={r.slug} variant={r.rating === "green" ? "endorsed" : r.rating === "red" ? "avoid" : "caution"} />)}
-              </div>
-            )}
-          </SectionWrapper>
-        )}
 
         <SectionWrapper>
           <div className="text-center"><h2 className="font-heading text-2xl font-bold md:text-3xl">How we rate trading platforms</h2><p className="mx-auto mt-3 max-w-2xl text-muted-foreground">Every platform runs through the same evidence-led checklist. <Link to="/methodology" className="font-medium text-primary underline underline-offset-2">See our full methodology</Link>.</p></div>

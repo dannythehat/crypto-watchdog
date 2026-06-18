@@ -141,12 +141,11 @@ const Index = () => {
                 className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-2xl"
               >
                 {c.image ? (
-                  <div className="relative aspect-[16/10] overflow-hidden">
-                    <img src={c.image} alt={c.label} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-card via-card/10 to-transparent" />
+                  <div className="overflow-hidden border-b border-border/60">
+                    <img src={c.image} alt={c.label} loading="lazy" className="block w-full transition-transform duration-500 group-hover:scale-105" />
                   </div>
                 ) : (
-                  <div className="relative flex aspect-[16/10] items-center justify-center overflow-hidden" style={{ background: `linear-gradient(135deg, ${c.accent}26, transparent)` }}>
+                  <div className="relative flex aspect-[3/2] items-center justify-center overflow-hidden border-b border-border/60" style={{ background: `linear-gradient(135deg, ${c.accent}26, transparent)` }}>
                     <div className="pointer-events-none absolute -right-6 -top-6 h-24 w-24 rounded-full blur-3xl" style={{ background: `${c.accent}40` }} />
                     <c.icon className="relative h-14 w-14" style={{ color: c.accent }} />
                   </div>
