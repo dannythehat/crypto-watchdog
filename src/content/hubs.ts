@@ -273,6 +273,7 @@ export const hubs: Hub[] = [
     heroPrompt:
       "a futuristic neon NFT gallery with floating glowing digital art frames and a robotic collector, electric violet and blue volumetric light, dark cinematic background, ultra detailed",
     heroSeed: 72,
+    heroImage: "/nft-marketplaces/hero.png",
     intro:
       "NFT marketplaces are how you buy, sell and mint digital collectibles and in-game items — but they're also a top hunting ground for **wallet-drainer scams**, fake mints and malicious approvals. The marketplace itself can be fine while the links and offers around it are not.\n\nHere's how the major NFT platforms compare, plus the safety guide every collector should read: [our NFT safety guide](/blog/nft-safety-guide-2026).",
     trusted: [],
