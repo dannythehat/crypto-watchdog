@@ -94,7 +94,7 @@ const CategoryHub = () => {
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden">
-          <AuroraBackdrop accent={hub.accent} variant="hero" imagePrompt={hub.heroPrompt} imageSeed={hub.heroSeed} />
+          <AuroraBackdrop accent={hub.accent} variant="hero" />
           <SectionWrapper className="pb-12 pt-32 md:pt-40">
             <div className="grid items-center gap-8 md:grid-cols-5">
               <div className="md:col-span-3">

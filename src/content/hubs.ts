@@ -113,7 +113,7 @@ export const hubs: Hub[] = [
     heroImage: "/crypto-wallets/hero.png",
     intro:
       "Not your keys, not your coins. A wallet you truly control is the single biggest upgrade you can make to your crypto security — but only if it's the real thing. Fake wallet apps and malicious browser extensions are one of the most common ways people get drained.\n\nBelow are the wallets we trust across hardware and software, plus the impostors to watch for. New to self-custody? Read [self-custody vs custodial wallets](/blog/self-custody-vs-custodial-wallets-2026) first.",
-    trusted: ["ledger-nano-x", "trezor", "metamask", "phantom", "argent", "safe-gnosis", "trust-wallet"],
+    trusted: ["ledger-nano-x", "trezor", "metamask", "phantom", "safe-gnosis", "trust-wallet"],
     caution: ["coinbase-wallet-custodial"],
     avoid: [],
     warnings: ["fake-metamask-extensions", "fake-airdrop-wallet-drainer"],
@@ -126,7 +126,7 @@ export const hubs: Hub[] = [
     groups: [
       { title: "Hardware (cold storage)", subtitle: "Offline devices — the gold standard for serious amounts.", slugs: ["ledger-nano-x", "trezor"] },
       { title: "Software / hot wallets", subtitle: "Self-custody apps for everyday, on-chain use.", slugs: ["metamask", "phantom", "trust-wallet"] },
-      { title: "Smart-contract wallets", subtitle: "Account-abstraction & multi-sig for advanced security.", slugs: ["safe-gnosis", "argent"] },
+      { title: "Smart-contract wallets", subtitle: "Account-abstraction & multi-sig for advanced security.", slugs: ["safe-gnosis"] },
       { title: "Custodial wallets", subtitle: "A third party holds your keys — convenient, higher trust risk.", slugs: ["coinbase-wallet-custodial"] },
     ],
   },
