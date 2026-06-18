@@ -103,7 +103,7 @@ Strip away the brand and you can apply the same test to NEYRO or to any competit
 
 7. **Is urgency being manufactured?** "First 100 wallets," "fee rises after launch," "seats filling fast." Genuine opportunities don't usually need a countdown. Treat scarcity framing as a sales tool and slow down.
 
-For the wider context on this whole category — what's a real tool versus a wrapper around a signal group — our hubs on [AI in finance](/ai-finance) and [crypto trading bots](/crypto-trading-bots) collect our tested, sourced coverage in one place.
+For the wider context on this whole category — what's a real tool versus a wrapper around a signal group — our hubs on [AI in finance](/ai-finance) and [crypto trading bots](/crypto-trading) collect our tested, sourced coverage in one place.
 
 ## Our honest verdict
 

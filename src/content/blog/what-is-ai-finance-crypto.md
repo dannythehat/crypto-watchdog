@@ -46,7 +46,7 @@ The rest of this section walks through each one.
 
 These connect to your exchange account through API keys and place trades for you. The key detail is that your coins stay on your own exchange. The bot gets permission to buy and sell, and that's it. It should never be able to withdraw.
 
-Architecturally, this is about the safest corner of AI finance, because the worst a failing bot can usually do is lose money on bad trades rather than walk off with your balance. That "usually" is doing real work, though. The moment you grant withdrawal permission to a third-party tool, you've handed over the keys. Don't. We go deeper on how these tools are built and where they fall over in our guide to [crypto trading bots](/crypto-trading-bots).
+Architecturally, this is about the safest corner of AI finance, because the worst a failing bot can usually do is lose money on bad trades rather than walk off with your balance. That "usually" is doing real work, though. The moment you grant withdrawal permission to a third-party tool, you've handed over the keys. Don't. We go deeper on how these tools are built and where they fall over in our guide to [crypto trading bots](/crypto-trading).
 
 A legitimate bot will never ask for your seed phrase or private keys. If one does, it's not a trading tool, it's a wallet drainer with a nice interface. Close the tab.
 
@@ -167,5 +167,5 @@ Flag it to us through our [scam warnings hub](/warnings) so we can investigate a
 
 *   [How to spot AI-washing in crypto](/blog/how-to-spot-ai-washing-crypto)
 *   [The AI finance hub: tools, risks and reviews](/ai-finance)
-*   [How crypto trading bots really work](/crypto-trading-bots)
+*   [How crypto trading bots really work](/crypto-trading)
 *   [Latest crypto scam warnings and alerts](/warnings)

@@ -14,7 +14,7 @@ Not everything wearing the AI badge does the same thing. Split them into a few c
 
 ### AI trading agents & bots
 
-These place trades for you, off rules, signals, or model output. The legit ones are really just fancy automation: you keep custody, plug in via API keys with trading-only permissions, and accept that performance rides the market. An honest AI trading bot talks strategy, drawdowns and fees. It does not talk daily payouts. If you're sizing one up, our breakdown of [how crypto trading bots actually work](/crypto-trading-bots) digs into the custody and permission questions.
+These place trades for you, off rules, signals, or model output. The legit ones are really just fancy automation: you keep custody, plug in via API keys with trading-only permissions, and accept that performance rides the market. An honest AI trading bot talks strategy, drawdowns and fees. It does not talk daily payouts. If you're sizing one up, our breakdown of [how crypto trading bots actually work](/crypto-trading) digs into the custody and permission questions.
 
 A close cousin is [copy trading](/copy-trading), where an algorithm's or a person's positions get mirrored into your account. Same rule: past performance isn't a forecast, and any "AI strategy" that supposedly never loses is a warning light.
 

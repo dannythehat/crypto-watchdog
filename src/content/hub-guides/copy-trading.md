@@ -13,7 +13,7 @@ Most setups share a few traits:
 - **Performance fees.** Many platforms let lead traders skim a cut of profits, which tilts the incentive towards flashy short-term swings.
 - **Latency and slippage.** Your copy fires a beat after the original, so your numbers rarely match the advert exactly.
 
-That gap between the headline figure and what lands in your account is the whole game. For a wider view of automated tools, our guide to [crypto trading bots](/crypto-trading-bots) covers how execution software behaves when markets turn volatile.
+That gap between the headline figure and what lands in your account is the whole game. For a wider view of automated tools, our guide to [crypto trading bots](/crypto-trading) covers how execution software behaves when markets turn volatile.
 
 ## Types of copy trading
 
