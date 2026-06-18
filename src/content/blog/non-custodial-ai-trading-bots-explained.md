@@ -76,113 +76,113 @@ That single property — revocable, scoped, on-chain permission — is what make
 | Is the trading visible on-chain? | Usually no | Yes, every transaction |
 | Who controls the keys? | The platform | You |
 
-The honest read: custodial bots can be faster and offer fancier order types. Non-custodial bots offer something custodial ones literally cannot — a guarantee that an exit scam is impossible.
+Here's the honest read. Custodial bots can be faster and offer fancier order types, and some people genuinely value that. Non-custodial bots offer one thing custodial ones simply can't: an exit scam isn't possible, because there's nothing for the operator to exit with.
 
-For most retail users, that guarantee is worth more than a few extra basis points of performance.
+For most everyday users, that matters more than a few extra basis points of performance. You can recover from a strategy that underperforms. You can't recover from a withdraw button that never works again.
 
 ## Why the model aligns incentives
 
-Here's the part that gets undersold. A non-custodial bot operator only makes money when *you* make money.
+This part gets undersold, so I'll say it plainly. A non-custodial bot operator only earns when *you* earn.
 
-There's no deposit float to earn yield on. There's no "AUM" to point at in a pitch deck. No hidden order flow. The only revenue is the performance fee on real, on-chain profit.
+There's no deposit float sitting around to skim yield from. There's no "assets under management" figure to wave at investors. No hidden order flow to sell. The only revenue is a performance fee on real, on-chain profit.
 
-That single fact changes the operator's behaviour. A custodial bot can survive on inflows even when the strategy doesn't work. A non-custodial bot can't. If the agent is bad, users revoke. Revenue stops the same day.
+That one fact changes how an operator behaves. A custodial platform can coast on fresh deposits even while its strategy is quietly losing. A non-custodial one can't. If the agent is bad, people revoke, and the revenue stops the same day.
 
-It's the rare crypto product where the business model and the user's interests genuinely point the same direction.
+It's the unusual crypto product where the business model and your interests genuinely point the same way. That alignment isn't a guarantee of good returns, but it does remove a lot of the incentive to lie to you.
 
 ## What a "good" non-custodial bot looks like
 
-Not all non-custodial bots are equal. Architecture is one thing. Execution quality is another.
+Architecture is one thing. Execution is another, and the gap between them is where people lose money. So not every non-custodial bot deserves your wallet.
 
-We grade them on seven dimensions. You should too.
+We grade them on seven things. You should too.
 
 ### 1. Scoped, revocable approvals
 
-The contract should ask for the minimum permission needed. Per-token. With a sensible cap. And revocable in one transaction.
+The contract should ask for the minimum permission it needs. Per token. With a sensible cap. Revocable in a single transaction.
 
-If a bot asks for unlimited approval on every token in your wallet — close the tab.
+If a bot wants unlimited approval on every token in your wallet, close the tab. There's no good reason for it to ask.
 
 ### 2. Audited, verified contracts
 
-The trading contract must be verified on the relevant explorer (Etherscan, BscScan, Arbiscan). Source code public. Ideally a third-party audit from a known firm.
+The trading contract should be verified on the relevant explorer (Etherscan, BscScan, Arbiscan), with the source code public. A third-party audit from a known firm is better still.
 
-We expand on this in our [smart contracts in crypto trading guide](/blog/how-smart-contracts-work-crypto-trading).
+We go deeper on this in our [smart contracts in crypto trading guide](/blog/how-smart-contracts-work-crypto-trading).
 
 ### 3. On-chain transparency
 
-Every trade visible on-chain. Every fee visible on-chain. No private mempool tricks unless they're disclosed and benefit the user.
+Every trade visible on-chain. Every fee visible on-chain. No private mempool tricks unless they're disclosed and they actually benefit you rather than the operator.
 
-### 4. A real, doxxed team
+### 4. A real, named team
 
-A non-custodial architecture doesn't excuse anonymity. If something breaks, you need humans who can be held accountable. A registered company helps. A public founder helps more.
+A non-custodial design doesn't excuse anonymity. If something breaks, you want humans who can be held to account. A registered company helps. A founder who'll put their name to the product helps more.
 
 ### 5. Honest performance reporting
 
-Real, audited, time-stamped numbers — not cherry-picked screenshots. Drawdowns visible. Bad months disclosed. If you can't see the losing weeks, the winning weeks aren't real either.
+Real, audited, time-stamped numbers, not a gallery of winning screenshots. Drawdowns shown. Bad months admitted. If you can't see the losing weeks, treat the winning weeks as marketing too.
 
 ### 6. Aligned fees
 
-Performance fees only — paid on profit. No subscription fee. No hidden spread. No "deposit fee" of any kind on a non-custodial product (there's nothing to deposit into).
+Performance fees only, paid on profit. No subscription. No hidden spread. No "deposit fee" of any kind, because on a true non-custodial product there's nothing to deposit into.
 
 ### 7. A clean off-ramp
 
-Even though you hold the keys, you should be able to disconnect, revoke, and continue using your wallet normally with zero friction. If revoking breaks your wallet or requires "support", something is wrong.
+You hold the keys, so disconnecting, revoking, and going back to using your wallet normally should take seconds and no help. If revoking breaks your wallet or needs a support ticket, something is wrong with the product.
 
 ![Inspecting a smart contract before connecting an AI trading agent](https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/smart-contracts-audit.jpg)
 
 ## The risks that don't go away
 
-Non-custodial doesn't mean risk-free. Anyone telling you otherwise is selling something.
+Non-custodial doesn't mean risk-free, and anyone telling you it does is selling something. The model fixes the trust problem. It doesn't touch the market problem, and it introduces a couple of its own.
 
 ### Smart-contract risk
 
-The contract itself can have bugs. A bad bug can drain approvals. This is why audits, time-tested code, and bounded approval caps matter so much. Read our [DeFi protocol risk guide](/blog/before-you-ape-in-a-deep-dive-on-defi-protocol-risks-2026-04-21) for the deeper version.
+The contract itself can have bugs. A serious one can drain the approvals people have signed. This is exactly why audits, code that's been live and tested for a while, and bounded approval caps matter so much. For the longer version, read our [DeFi protocol risk guide](/blog/before-you-ape-in-a-deep-dive-on-defi-protocol-risks-2026-04-21).
 
 ### Strategy risk
 
-The AI agent can simply lose money. Markets are markets. A bot that worked in low-volatility conditions can blow up in a flash crash. Past performance is not future returns — even on-chain.
+The AI agent can simply lose money. Markets are markets. A bot that looked great through a calm, low-volatility stretch can come apart in a flash crash. Past performance doesn't promise future returns, and that holds even when every trade is on-chain and verifiable.
 
 ### Approval misuse risk
 
-If you sign a generous approval and the project later turns malicious, the contract could be upgraded to abuse it. This is why **revoking after you stop using a bot** is mandatory hygiene, not optional.
+If you sign a generous approval and the project later turns malicious, an upgradeable contract could be changed to abuse it. That's the reason **revoking once you stop using a bot** is basic hygiene rather than an optional extra. Treat a dormant approval like a key you left under the mat.
 
 ### Wallet hygiene risk
 
-Your seed phrase is still your seed phrase. Phishing, fake apps, and drainer sites still work. Read our [hardware wallets buyer's guide](/blog/hardware-wallets-2026-buyers-guide) for the basics that protect you.
+Your seed phrase is still your seed phrase. Phishing, fake apps, and drainer sites all still work, and they don't care how clever the contract is. Our [hardware wallets buyer's guide](/blog/hardware-wallets-2026-buyers-guide) covers the basics that keep you out of trouble.
 
 ## How to vet one in 15 minutes
 
-A practical checklist you can run before you sign anything.
+Here's a practical checklist you can run before you sign anything. None of it needs a developer's eye, just a bit of patience.
 
-1. **Find the contract address.** It should be displayed in the app and verifiable on the chain explorer.
-2. **Check verification.** Source code visible. Compiler version listed. No proxy with a hidden implementation.
-3. **Read the approval prompt carefully.** Token, spender, amount. Reject anything that says "unlimited" unless you understand exactly why.
-4. **Search for the audit.** Real audit firm. Recent date. Findings addressed.
-5. **Check the team.** LinkedIn. Company registration. Prior products. A live address helps.
-6. **Look at the on-chain history.** Use Dune or the explorer to see real trades — not screenshots from a marketing deck.
-7. **Test small.** Connect with a wallet that holds a tiny amount first. Let it run for a week. Then scale.
+1. **Find the contract address.** It should be shown in the app and verifiable on the chain explorer.
+2. **Check verification.** Source code visible, compiler version listed, and no proxy hiding the real implementation.
+3. **Read the approval prompt carefully.** Token, spender, amount. Reject anything that says "unlimited" unless you understand precisely why it's asking.
+4. **Search for the audit.** A real firm, a recent date, and findings that were actually addressed.
+5. **Check the team.** LinkedIn, company registration, earlier products. A real, traceable address helps.
+6. **Look at the on-chain history.** Use Dune or the explorer to see actual trades, not the screenshots from a marketing deck.
+7. **Test small.** Connect a wallet holding a tiny amount first, let it run for a week, then scale up if you're happy.
 
-Skipping step 7 is the single most common mistake we see.
+Skipping step 7 is the single most common mistake we see. Five minutes of patience here saves a lot of regret later.
 
 ## How to fund Aurum Neyro (step-by-step)
 
-If you want to follow exactly the path we use, here is the full flow from cold-start to a funded, running Neyro agent. The first two steps are inside the Aurum dashboard; from step 3 onwards, your funds stay in your own DeFi wallet.
+If you want to follow the exact path we use, here's the full flow from a cold start to a funded, running Neyro agent. The first two steps happen inside the Aurum dashboard. From step 3 onwards, your funds stay in your own DeFi wallet.
 
 > **Watchdog note.** Advertised yields (target ~15% monthly) are <em>not guaranteed</em>. Test with a small allocation first, withdraw once to confirm the off-ramp works for you, and only then scale up. Read our [guide on guaranteed-return claims](/blog/the-myth-of-guaranteed-returns-in-crypto-what-you-need-to-know-in-2026-2026-04-15) before committing larger sums.
 
 ## What we use ourselves
 
-We've tested several non-custodial AI agents across 2025–2026. The one we have funds running with is **Aurum Neyro** — an AI trading platform built on top of the Aurum Foundation's existing Ex-Ai infrastructure.
+We've tested several non-custodial AI agents across 2025 and 2026. The one we currently have real funds running with is **Aurum Neyro**, an AI trading platform built on top of the Aurum Foundation's existing Ex-Ai infrastructure.
 
 A few reasons it cleared our checklist:
 
-- **Real, verified team.** Public founders, registered company, working product since 2024. See our [full Aurum Foundation review](/reviews/aurum-foundation).
-- **Non-custodial by architecture.** Funds stay in your wallet. Smart-contract permissions only.
-- **We've withdrawn real money.** Documented in our [Aurum Ex Bot step-by-step guide](/blog/aurum-ex-bot-how-it-works-step-by-step) — two test withdrawals, both cleared, both on-chain.
+- **Real, verified team.** Public founders, a registered company, and a working product since 2024. See our [full Aurum Foundation review](/reviews/aurum-foundation).
+- **Non-custodial by design.** Funds stay in your wallet. Smart-contract permissions only.
+- **We've withdrawn real money.** Documented in our [Aurum Ex Bot step-by-step guide](/blog/aurum-ex-bot-how-it-works-step-by-step): two test withdrawals, both cleared, both on-chain.
 - **Aligned fees.** Performance only. No subscription, no spread games.
-- **Currently in beta** — 100 wallets only. We covered the launch in [Aurum Neyro & Quantum Alpha: inside the first 100 beta wallets](/blog/aurum-neyro-quantum-alpha-beta-launch).
+- **Currently in beta**, capped at 100 wallets. We covered the launch in [Aurum Neyro & Quantum Alpha: inside the first 100 beta wallets](/blog/aurum-neyro-quantum-alpha-beta-launch).
 
-It is not the only option, and we're not telling you it can't lose money. We are telling you the architecture is honest and the team is real. That puts it in a very small group.
+It's not the only option, and we're not claiming it can't lose money, because it can. What we are saying is that the architecture is honest and the team is real and reachable. In this corner of crypto, that combination puts it in a small group.
 
 <div class="not-prose my-8 rounded-2xl border border-primary/40 bg-gradient-to-br from-primary/15 via-primary/5 to-transparent p-6 shadow-lg">
   <p class="text-[10px] font-semibold uppercase tracking-widest text-primary">Beta access · 100 seats only</p>
@@ -193,7 +193,7 @@ It is not the only option, and we're not telling you it can't lose money. We are
 
 ## How non-custodial bots compare to other AI-finance tools
 
-The space is crowded and the marketing blurs together. Here's how we mentally separate the categories.
+The space is crowded and the marketing all blurs into the same promises. Here's how we separate the categories in our own heads.
 
 | Tool type | Where funds live | Best for |
 |---|---|---|
@@ -203,41 +203,41 @@ The space is crowded and the marketing blurs together. Here's how we mentally se
 | **Non-custodial AI bot** | **Your wallet** | **Active trading without custody risk** |
 | Pure DeFi vault | Vault smart contract | Yield strategies (no AI signals) |
 
-If you don't know what "non-custodial" really means, start with our [self-custody vs custodial wallets guide](/blog/self-custody-vs-custodial-wallets-2026). It's the single most useful concept in crypto.
+If "non-custodial" still feels fuzzy, start with our [self-custody vs custodial wallets guide](/blog/self-custody-vs-custodial-wallets-2026). It's one of the most useful concepts to nail down in crypto, and everything here builds on it.
 
-## Common questions
+## Frequently asked questions
 
 ### Can the bot rug me?
 
-Not in the way a custodial bot can. It cannot move your funds out of your wallet. It can only execute trades within the approval you signed — and you can revoke that approval at any time. Strategy losses are still possible.
+Not the way a custodial bot can. It can't move your funds out of your wallet at all. It can only trade within the approval you signed, and you can revoke that approval whenever you want. Strategy losses are still on the table, so this isn't a promise that you'll make money.
 
 ### What if the company disappears?
 
-Your tokens stay in your wallet. You revoke the approval. Life goes on. There is no withdrawal queue to wait in because there was never a deposit.
+Your tokens stay in your wallet. You revoke the approval and carry on. There's no withdrawal queue to wait in, because there was never a deposit for them to hold hostage.
 
 ### Is non-custodial always safer?
 
-Architecturally, yes. Operationally, only if the contract is well-built and you practise basic wallet hygiene. A bad contract is still a bad contract.
+On architecture, yes. In practice, only if the contract is well built and you keep up basic wallet hygiene. A bad contract is still a bad contract, no matter how good the label sounds.
 
 ### Why is this called "AI" trading?
 
-Because the strategy logic uses ML signals — pattern recognition, regime detection, dynamic position sizing. The "AI" part is the brain. The "non-custodial" part is the architecture. Two separate properties.
+Because the strategy logic leans on machine-learning signals: pattern recognition, regime detection, dynamic position sizing. The "AI" is the brain making the calls. The "non-custodial" is the architecture keeping your funds safe. They're two separate things, and a product can have one without the other.
 
 ### Do I still pay fees?
 
-Yes — typically a performance fee on profitable trades. There should be no subscription, no deposit fee, and no withdrawal fee on a true non-custodial product.
+Usually, yes, in the form of a performance fee on profitable trades. On a genuine non-custodial product there should be no subscription, no deposit fee, and no withdrawal fee.
 
 ### What's the catch?
 
-The catch is the same as any active strategy: it can lose money. Non-custodial fixes the trust problem, not the market problem. Risk-size accordingly.
+Same catch as any active strategy: it can lose money. Non-custodial fixes the trust problem, not the market problem. Size your risk with that in mind.
 
-## The bottom line
+## Our verdict
 
-Non-custodial AI trading bots are the first product in crypto where the operator literally cannot run with your funds. That doesn't make them risk-free, but it removes the single largest risk that has destroyed retail money in this space for a decade.
+Non-custodial AI trading bots are the first product in crypto where the operator genuinely can't run off with your funds. That doesn't make them safe to use blind, but it removes the single biggest thing that has wiped out everyday money in this space for a decade.
 
-If you're going to use an AI trading agent in 2026, this is the architecture worth using. Vet the contract. Vet the team. Test small. Revoke when you stop.
+If you're going to let an AI agent trade for you in 2026, this is the architecture worth insisting on. Vet the contract. Vet the team. Test with a small amount. Revoke the moment you stop.
 
-The era of "trust me bro, I'll trade for you" is ending. The era of "verify the contract, then connect" has started.
+The "trust me, I'll trade for you" era is fading. "Verify the contract, then connect" is a much better place to stand.
 
 ---
 
