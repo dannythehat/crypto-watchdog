@@ -50,7 +50,7 @@ Here is how the two models compare on the things that actually decide whether yo
 | What happens if the site goes dark | Funds may be stuck or lost | Funds stay in your wallet |
 | Main residual risk | Insolvency, fraud, hacks of their wallets | Smart-contract bugs, strategy losses |
 
-Neither column is "risk-free" — note the bottom row. Non-custodial removes custody risk; it does not remove market risk or the chance of a flawed contract.
+Neither column is free of risk — look at the bottom row. Non-custodial removes custody risk; it does not remove market risk or the chance of a flawed contract.
 
 <figure class="my-8">
   <img src="/blog/non-custodial-architecture.jpg" alt="Three-part architecture: self-custody wallet sends permission to a smart contract, which sends trade signals to a DEX, profits return to the wallet" loading="lazy" class="rounded-lg border border-border w-full" />
