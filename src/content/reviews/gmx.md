@@ -21,8 +21,8 @@ rich_content: {"faq":[{"answer":"Not a scam in the fraud sense, but GMX carries 
 published: true
 published_at: "2026-04-21T12:36:56.92192+00:00"
 updated_at: "2026-04-21T13:10:55.319844+00:00"
-meta_title: null
-meta_description: null
+meta_title: "GMX Review 2026: Is It Safe & Legit?"
+meta_description: "A decentralised perpetual exchange on Arbitrum and Avalanche offering up to 50x leverage with zero price impact via its multi-asset GLP/GM liquidity pools."
 ---
 A decentralised perpetual exchange on Arbitrum and Avalanche offering up to 50x leverage with zero price impact via its multi-asset GLP/GM liquidity pools.
 

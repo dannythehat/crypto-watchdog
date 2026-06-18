@@ -21,8 +21,8 @@ rich_content: {"tagline":"Independent Thomas Crypto Signals review · CryptoWatc
 published: true
 published_at: "2026-04-23T06:18:46.301163+00:00"
 updated_at: "2026-04-23T06:18:46.301163+00:00"
-meta_title: null
-meta_description: null
+meta_title: "Thomas Crypto Signals Review 2026: Is It Safe & Legit?"
+meta_description: "Thomas Crypto Signals (@futuresxsignals) is a 32k-member Telegram channel run by trader \'Thomas\' (manager @thomasskrypto), publishing crypto futures…"
 ---
 Thomas Crypto Signals (@futuresxsignals) is a 32k-member Telegram channel run by trader "Thomas" (manager @thomasskrypto), publishing crypto futures signals since 2014. Free tier on Telegram, paid VIP tier (~£120/month via Whop). One CryptoWatchdog editor tested the free signals over 3 months and withdrew a small profit — but the channel publishes no independently audited track record, so we rate Orange: legitimate-feeling but unverifiable.
 

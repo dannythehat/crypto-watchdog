@@ -21,8 +21,8 @@ rich_content: {"faq":[{"answer":"Not a scam in the fraud sense, but Coinbase (Cu
 published: true
 published_at: "2026-04-21T12:36:56.92192+00:00"
 updated_at: "2026-04-21T13:10:55.319844+00:00"
-meta_title: null
-meta_description: null
+meta_title: "Coinbase (Custodial Account) Review 2026: Is It Safe & Legit?"
+meta_description: "The custodial side of Coinbase — your crypto sits in Coinbase's wallets, secured by their cold storage and insurance, but you don't hold the keys."
 ---
 The custodial side of Coinbase — your crypto sits in Coinbase's wallets, secured by their cold storage and insurance, but you don't hold the keys.
 

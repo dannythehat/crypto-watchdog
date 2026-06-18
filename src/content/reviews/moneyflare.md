@@ -21,8 +21,8 @@ rich_content: {"tagline":"MoneyFlare scam warning · CryptoWatchdog 8-point fram
 published: true
 published_at: "2026-04-24T05:10:26.464512+00:00"
 updated_at: "2026-04-29T03:54:57.216288+00:00"
-meta_title: null
-meta_description: null
+meta_title: "MoneyFlare Review 2026: Scam Warning & Red Flags"
+meta_description: "⚠️ SCAM WARNING — we have reversed our view on MoneyFlare. Despite early payouts in our tests, the platform shows the classic hallmarks of a high-yield…"
 ---
 
 ## MoneyFlare — scam warning

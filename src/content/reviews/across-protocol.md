@@ -21,8 +21,8 @@ rich_content: {"faq":[{"answer":"Not a scam in the fraud sense, but Across Proto
 published: true
 published_at: "2026-04-21T12:36:56.92192+00:00"
 updated_at: "2026-04-21T13:10:55.319844+00:00"
-meta_title: null
-meta_description: null
+meta_title: "Across Protocol Review 2026: Is It Safe & Legit?"
+meta_description: "An intent-based cross-chain bridge known for the fastest fills and lowest fees among major bridges. Backed by UMA's optimistic oracle."
 ---
 An intent-based cross-chain bridge known for the fastest fills and lowest fees among major bridges. Backed by UMA's optimistic oracle.
 

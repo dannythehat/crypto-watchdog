@@ -21,8 +21,8 @@ rich_content: {"keywords":["Core Digital Gold Tokens","Physically Backed Gold To
 published: true
 published_at: "2026-05-05T08:50:53.588809+00:00"
 updated_at: "2026-05-05T08:50:53.588809+00:00"
-meta_title: null
-meta_description: null
+meta_title: "Kinesis Money Review 2026: Is It Safe & Legit?"
+meta_description: "Allocated, audited, spendable physical gold and silver — monthly yield, zero storage fees. The cleanest tokenized gold platform we have audited in 2026."
 ---
 Allocated, audited, spendable physical gold and silver — monthly yield, zero storage fees. The cleanest tokenized gold platform we have audited in 2026.
 

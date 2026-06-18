@@ -21,8 +21,8 @@ rich_content: {"faq":[{"answer":"Not a scam in the fraud sense, but Blur carries
 published: true
 published_at: "2026-04-21T11:38:36.239949+00:00"
 updated_at: "2026-04-21T13:10:55.319844+00:00"
-meta_title: null
-meta_description: null
+meta_title: "Blur Review 2026: Is It Safe & Legit?"
+meta_description: "Pro-trader NFT marketplace built around aggressive incentives, low fees and zero-royalty trading. Captured large share of Ethereum NFT volume, but its…"
 ---
 Pro-trader NFT marketplace built around aggressive incentives, low fees and zero-royalty trading. Captured large share of Ethereum NFT volume, but its incentive design encourages mercenary behaviour and short-term wash activity.
 

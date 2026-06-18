@@ -21,8 +21,8 @@ rich_content: {"faq":[{"answer":"Yes. XT.com has operated since 2018, serves 7.8
 published: true
 published_at: "2026-04-23T06:51:07.553127+00:00"
 updated_at: "2026-04-24T04:49:48.688965+00:00"
-meta_title: null
-meta_description: null
+meta_title: "XT.com Review 2026: Is It Safe & Legit?"
+meta_description: "XT.com is a Seychelles-headquartered centralized crypto exchange founded in 2018 that has grown into a top-30 venue by traffic. After three months of…"
 ---
 XT.com is a Seychelles-headquartered centralized crypto exchange founded in 2018 that has grown into a top-30 venue by traffic. After three months of hands-on testing, we rate it **Green — Broadly Credible** with a Trust Score of **97/100**.
 

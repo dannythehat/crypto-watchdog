@@ -21,8 +21,8 @@ rich_content: {"faq":[{"answer":"No. Based on our audit, Argent is a legitimate 
 published: true
 published_at: "2026-04-21T12:36:56.92192+00:00"
 updated_at: "2026-04-21T13:10:55.319844+00:00"
-meta_title: null
-meta_description: null
+meta_title: "Argent Review 2026: Is It Safe & Legit?"
+meta_description: "Pioneering smart contract wallet that brought social recovery and gasless transactions to mainstream users on Starknet and Ethereum."
 ---
 Pioneering smart contract wallet that brought social recovery and gasless transactions to mainstream users on Starknet and Ethereum.
 

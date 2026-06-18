@@ -21,8 +21,8 @@ rich_content: {"faq":[{"answer":"We rate Axie Infinity as high-risk. Whether it 
 published: true
 published_at: "2026-04-21T12:36:56.92192+00:00"
 updated_at: "2026-04-21T13:10:55.319844+00:00"
-meta_title: null
-meta_description: null
+meta_title: "Axie Infinity Review 2026: Scam Warning & Red Flags"
+meta_description: "The original play-to-earn phenomenon. Sky Mavis's NFT-based game peaked at $4B in monthly volume in 2021 before its economy collapsed and the Ronin bridge…"
 ---
 The original play-to-earn phenomenon. Sky Mavis's NFT-based game peaked at $4B in monthly volume in 2021 before its economy collapsed and the Ronin bridge was hacked for $625M.
 

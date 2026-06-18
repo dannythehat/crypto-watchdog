@@ -21,8 +21,8 @@ rich_content: {"faq":[{"answer":"No. Based on our audit, Safe (formerly Gnosis S
 published: true
 published_at: "2026-04-21T12:36:56.92192+00:00"
 updated_at: "2026-04-21T13:10:55.319844+00:00"
-meta_title: null
-meta_description: null
+meta_title: "Safe (formerly Gnosis Safe) Review 2026: Is It Safe & Legit?"
+meta_description: "The most battle-tested smart contract wallet in crypto. Multi-sig by design, used by DAOs, treasuries, and protocols holding tens of billions in assets."
 ---
 The most battle-tested smart contract wallet in crypto. Multi-sig by design, used by DAOs, treasuries, and protocols holding tens of billions in assets.
 
