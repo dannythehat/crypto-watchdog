@@ -287,11 +287,18 @@ const CategoryHub = () => {
             <Band icon={BookOpen} tone="text-primary" title="Read before you commit" subtitle="In-depth guides that go deeper on this category.">
               <div className="grid gap-5 md:grid-cols-3">
                 {posts.map((p) => (
-                  <Link key={p.slug} to={`/blog/${p.slug}`} className="group flex flex-col rounded-2xl border border-border bg-card/60 p-5 backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-lg">
-                    {p.category && <span className="text-xs font-semibold uppercase tracking-wide text-primary">{p.category}</span>}
-                    <h3 className="mt-1 font-heading font-semibold leading-snug">{p.title}</h3>
-                    {p.summary && <p className="mt-2 line-clamp-3 flex-1 text-sm text-muted-foreground">{p.summary.replace(/[#>*_`~|]/g, " ").slice(0, 140)}</p>}
-                    <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary">Read guide <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" /></span>
+                  <Link key={p.slug} to={`/blog/${p.slug}`} className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-lg">
+                    {p.image_url && (
+                      <div className="aspect-[16/9] w-full overflow-hidden bg-muted">
+                        <img src={p.image_url} alt={p.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                      </div>
+                    )}
+                    <div className="flex flex-1 flex-col p-5">
+                      {p.category && <span className="text-xs font-semibold uppercase tracking-wide text-primary">{p.category}</span>}
+                      <h3 className="mt-1 font-heading font-semibold leading-snug">{p.title}</h3>
+                      {p.summary && <p className="mt-2 line-clamp-3 flex-1 text-sm text-muted-foreground">{p.summary.replace(/[#>*_`~|]/g, " ").slice(0, 140)}</p>}
+                      <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary">Read guide <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" /></span>
+                    </div>
                   </Link>
                 ))}
               </div>
