@@ -6,6 +6,7 @@ summary: "Bitcoin consolidates above $68K as the market watches the Fed. A remin
 category: "Market Update"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog/bitcoin-holds-68k-as-market-awaits-fed-decision-1776666573832.png"
 published: false
+noindex: true
 auto_generated: true
 published_at: "2026-04-09T05:03:05.286897+00:00"
 updated_at: "2026-04-25T06:09:33.764515+00:00"

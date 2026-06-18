@@ -6,6 +6,7 @@ summary: "Crypto casinos feel private and quick, but that convenience hides real
 category: "Education"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1777703454612_image.jpeg"
 published: true
+noindex: true
 auto_generated: true
 published_at: "2026-05-03T07:11:10.426+00:00"
 updated_at: "2026-06-18T11:30:00Z"

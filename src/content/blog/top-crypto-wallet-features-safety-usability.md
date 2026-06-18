@@ -6,6 +6,7 @@ summary: "A calm, evidence-led look at the crypto wallet features that actually 
 category: "Wallets"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog/wallet-features-2026-v3.png"
 published: true
+noindex: true
 auto_generated: true
 published_at: "2026-04-22T06:34:47.916+00:00"
 updated_at: "2026-06-17T22:30:00Z"

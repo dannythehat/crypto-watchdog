@@ -6,6 +6,7 @@ summary: "A calm, plain-English walk through the main types of DeFi platforms, w
 category: "DeFi"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog/defi-platform-types-2026-v3.png"
 published: true
+noindex: true
 auto_generated: true
 published_at: "2026-04-22T06:34:58.952+00:00"
 updated_at: "2026-06-18T09:00:00Z"

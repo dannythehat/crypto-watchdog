@@ -56,6 +56,7 @@ const BlogPost = () => {
         path={path}
         image={post.image_url}
         type="article"
+        noindex={(post as any).noindex === true}
         jsonLd={[
           articleJsonLd({
             title: post.title,

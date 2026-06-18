@@ -6,6 +6,7 @@ summary: "Crypto performance audits explained for investors: what a real audit c
 category: "Regulation"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1778680892244_Analyst-reviews-crypto-audit-report-at-desk.jpeg"
 published: true
+noindex: true
 auto_generated: true
 published_at: "2026-05-14T06:06:30.671+00:00"
 updated_at: "2026-06-18T10:30:00Z"

@@ -6,6 +6,7 @@ summary: "A repeatable crypto due diligence method you can actually run: how to 
 category: "Education"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog/before-you-ape-in-a-journalist-s-guide-to-vetting-new-crypto-tokens-1777096852553.png"
 published: true
+noindex: true
 auto_generated: true
 published_at: "2026-04-25T06:00:52.782+00:00"
 updated_at: "2026-06-17T22:30:00Z"

@@ -6,6 +6,7 @@ summary: "Your seed phrase is the master key to every coin you own. Lose control
 category: "Wallets"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog/your-seed-phrase-the-one-secret-that-can-cost-you-everything-1777528854778.png"
 published: true
+noindex: true
 auto_generated: true
 published_at: "2026-04-30T06:00:55.191+00:00"
 updated_at: "2026-06-17T22:00:00Z"

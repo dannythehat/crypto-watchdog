@@ -6,6 +6,7 @@ summary: "A calm, practical walkthrough of how to report a crypto scam: spot the
 category: "Safety"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1778068221644_Professional-checking-crypto-wallet-for-scams.jpeg"
 published: true
+noindex: true
 auto_generated: true
 published_at: "2026-05-07T08:11:48.188+00:00"
 updated_at: "2026-06-18T11:00:00Z"

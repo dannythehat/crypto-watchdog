@@ -6,6 +6,7 @@ summary: "Gone are the days of simple brute-force attacks being the primary conc
 category: "Exchanges"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog/latest-crypto-exchange-security-incidents-what-users-need-to-know-1776666110943.png"
 published: false
+noindex: true
 auto_generated: true
 published_at: "2026-04-17T06:00:16.401+00:00"
 updated_at: "2026-04-30T14:32:19.468893+00:00"

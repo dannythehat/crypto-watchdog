@@ -6,6 +6,7 @@ summary: "A calm, evidence-led look at crypto deposit risks: where deposits actu
 category: "Safety"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1777532505142_Man-reviewing-crypto-security-at-kitchen-table.jpeg"
 published: true
+noindex: true
 auto_generated: true
 published_at: "2026-04-30T14:32:01.218+00:00"
 updated_at: "2026-06-18T10:00:00Z"

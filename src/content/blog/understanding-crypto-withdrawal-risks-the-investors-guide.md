@@ -6,6 +6,7 @@ summary: "Getting crypto onto an exchange is easy. Getting it back out is where 
 category: "Regulation"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1778725212106_Man-verifying-crypto-withdrawal-with-hardware-wallet.jpeg"
 published: true
+noindex: true
 auto_generated: true
 published_at: "2026-05-14T06:06:53.359+00:00"
 updated_at: "2026-06-18T11:30:00Z"

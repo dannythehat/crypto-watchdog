@@ -16,6 +16,7 @@ const fm = (file) => {
   const g = (k) => (block.match(new RegExp(`^${k}:\\s*(.*)$`, "m")) || [])[1]?.trim().replace(/^"|"$/g, "");
   return {
     published: (g("published") || "true") !== "false",
+    noindex: (g("noindex") || "") === "true",
     lastmod: ((g("updated_at") || g("published_at") || today) + "").slice(0, 10) || today,
   };
 };
@@ -43,7 +44,7 @@ for (const [d, prefix] of [["reviews", "/reviews/"], ["blog", "/blog/"], ["warni
   for (const f of dir(d)) {
     const slug = f.replace(/\.md$/, "");
     const meta = fm(path.join(root, "src/content", d, f));
-    if (meta.published) add(prefix + slug, meta.lastmod);
+    if (meta.published && !meta.noindex) add(prefix + slug, meta.lastmod);
   }
 }
 

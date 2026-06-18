@@ -6,6 +6,7 @@ summary: "CEX, DEX, hybrid, P2P, derivatives — the differences are easy to blu
 category: "Exchanges"
 image_url: "https://pubmhnynxpcngxcgwcgf.supabase.co/storage/v1/object/public/blog-images/blog%2Fexchanges-types-2026-04-23.jpg"
 published: true
+noindex: true
 auto_generated: true
 published_at: "2026-04-23T06:00:05.674611+00:00"
 updated_at: "2026-06-18T09:30:00Z"

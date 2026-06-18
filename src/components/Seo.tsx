@@ -7,6 +7,7 @@ interface SeoProps {
   path: string;                 // canonical path, e.g. /blog/my-slug
   image?: string | null;
   type?: "article" | "website";
+  noindex?: boolean;            // when true, emit <meta robots noindex,follow>
   jsonLd?: (Record<string, unknown> | null)[];
 }
 
@@ -16,7 +17,7 @@ interface SeoProps {
  * document title on unmount. Tags it adds are marked data-seo so they are
  * replaced (not duplicated) on navigation.
  */
-const Seo = ({ title, description, path, image, type = "article", jsonLd = [] }: SeoProps) => {
+const Seo = ({ title, description, path, image, type = "article", noindex = false, jsonLd = [] }: SeoProps) => {
   useEffect(() => {
     const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
     const url = absoluteUrl(path);
@@ -43,6 +44,7 @@ const Seo = ({ title, description, path, image, type = "article", jsonLd = [] }:
     document.head.appendChild(link);
     managed.push(link);
 
+    if (noindex) meta("name", "robots", "noindex, follow");
     meta("name", "description", description);
     meta("property", "og:title", fullTitle);
     meta("property", "og:description", description);
@@ -69,7 +71,7 @@ const Seo = ({ title, description, path, image, type = "article", jsonLd = [] }:
       managed.forEach((el) => el.remove());
       document.title = prevTitle;
     };
-  }, [title, description, path, image, type, JSON.stringify(jsonLd)]);
+  }, [title, description, path, image, type, noindex, JSON.stringify(jsonLd)]);
 
   return null;
 };

@@ -6,6 +6,7 @@ summary: "Crypto claims vs reality, explained plainly: why proof-of-reserves bad
 category: "Trading"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1778601699007_Man-reviewing-crypto-platform-at-home-table.jpeg"
 published: true
+noindex: true
 auto_generated: true
 published_at: "2026-05-13T05:30:14.773+00:00"
 updated_at: "2026-06-18T11:00:00Z"

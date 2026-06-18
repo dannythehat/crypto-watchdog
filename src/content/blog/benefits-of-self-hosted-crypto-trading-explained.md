@@ -6,6 +6,7 @@ summary: "Self-hosted crypto trading means your keys, your code, your rules. Her
 category: "Exchanges"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1778922736380_Man-trading-crypto-in-home-office-at-desk.jpeg"
 published: true
+noindex: true
 auto_generated: true
 published_at: "2026-05-16T09:36:13.594+00:00"
 updated_at: "2026-06-18T10:30:00Z"

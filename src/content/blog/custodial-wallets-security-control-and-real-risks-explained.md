@@ -6,6 +6,7 @@ summary: "Custodial wallet risks, explained plainly: how these wallets work, wha
 category: "Wallets"
 image_url: "https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-27129/1777789897446_User-accessing-custodial-wallet-in-home-setting.jpeg"
 published: true
+noindex: true
 auto_generated: true
 published_at: "2026-05-04T05:05:50.016+00:00"
 updated_at: "2026-06-18T09:30:00Z"
