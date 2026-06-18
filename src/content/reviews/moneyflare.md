@@ -24,6 +24,7 @@ updated_at: "2026-04-29T03:54:57.216288+00:00"
 meta_title: null
 meta_description: null
 ---
-MoneyFlare is a UK-registered automated crypto trading platform we have continued to use since our first deposit. Across 38+ deposit/withdrawal cycles every payout has cleared in hours — including a $3,000 test that returned $620 in 12 days. Every new account also gets a free $50 daily-trial bot that compounds to roughly £0.50/day with zero deposit risk.
 
-After months of continued real-money usage, MoneyFlare remains one of the most consistent automated trading platforms we have audited. Withdrawals always settle in hours, the UK entity (Ai Actuarial Limited, Companies House #13689250) is fully verifiable, and the free $50 daily-trial bot lets anyone earn around £0.50/day without depositing a penny. Industry Benchmark.
+## MoneyFlare — scam warning
+
+We previously rated MoneyFlare positively after early test withdrawals cleared. We have since reversed that view: a platform paying a fixed daily return on funds it custodies is the textbook shape of a high-yield investment scam, where small early payouts buy trust before bigger deposits vanish. Do not deposit. Read our [full MoneyFlare scam warning](/warnings/moneyflare-scam-warning).
