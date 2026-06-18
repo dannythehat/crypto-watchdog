@@ -221,6 +221,7 @@ export const hubs: Hub[] = [
     heroPrompt:
       "a sleek robotic trading-bot arm interacting with floating holographic candlestick charts, amber and electric blue glow, dark cyber background, cinematic, ultra detailed",
     heroSeed: 36,
+    heroImage: "/crypto-trading-bots/hero.png",
     intro:
       "A trading bot is just software that executes a strategy for you. Good ones are transparent tools you stay in control of. Bad ones are black boxes that ask you to deposit funds into *their* account and promise guaranteed profit — a classic setup for disappearing with your money.\n\nHere's how the main bots stack up, plus the [hidden costs of leverage](/blog/the-hidden-costs-of-crypto-leverage-for-beginners-more-than-just-margin-calls-2026-04-18) that automation can quietly amplify.",
     trusted: ["pionex"],
