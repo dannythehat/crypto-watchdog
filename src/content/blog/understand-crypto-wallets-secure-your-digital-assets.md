@@ -78,7 +78,7 @@ The upside is genuine: account recovery if you're locked out, customer support, 
 - **Hardware wallets (cold wallets):** Physical devices like a Ledger or Trezor that keep your keys offline. Transactions get signed on the device, so the keys never touch an internet-connected machine.
 - **Paper wallets:** Keys printed or written on paper. Safe from online attacks, but easily lost, damaged or stolen in the physical world.
 
-The custodial-versus-self-custody question isn't only technical. It's also about what you're comfortable being responsible for. Custodial suits people who value convenience, recovery and insurance. Self-custody suits people who want full control and accept the homework that comes with it. Our deep dive on [self-custody vs custodial wallets](https://cryptowatchdog.net/blog/self-custody-vs-custodial-wallets-2026) makes the same point: neither side is risk-free. The real question is which risks you're better placed to manage.
+The custodial-versus-self-custody question isn't only technical. It's also about what you're comfortable being responsible for. Custodial suits people who value convenience, recovery and insurance. Self-custody suits people who want full control and accept the homework that comes with it. Our deep dive on [self-custody vs custodial wallets](https://cryptowatchdog.net/blog/self-custody-vs-custodial-wallets-2026) makes the same point: neither side is without risk. The real question is which risks you're better placed to manage.
 
 The collapse of FTX in 2022 is the clearest example of custodial risk going wrong. Billions in customer funds vanished because users trusted a platform that misused those assets. Counterparty risk like that isn't unique to crypto either, as our look at [crypto vs forex trading](https://mt4copier.com/crypto-vs-forex-trading-what-you-need-to-know) explains. Whenever someone else holds your money, you're trusting them to still have it when you ask.
 
@@ -111,7 +111,7 @@ Custodial platforms have long been a favourite target, and exchanges have lost b
 
 There's no reversal on the blockchain. Unlike a bank transfer, a mistake stays made.
 
-**Fraud and scams** aimed at wallet users keep getting more sophisticated. Recovery scams, fake wallet apps and people impersonating support staff top the list of what gets reported. Our [hardware wallet security guide](https://cryptowatchdog.net/blog/your-hardware-wallet-won-t-save-you-a-2026-security-guide-2026-04-22) covers some of the less obvious angles, including supply chain attacks on the physical devices themselves.
+**Fraud and scams** aimed at wallet users keep getting more sophisticated. Recovery scams, fake wallet apps and people impersonating support staff top the list of what gets reported, and crypto-related fraud is now one of the largest categories tracked by the [FBI's Internet Crime Complaint Center](https://www.ic3.gov/AnnualReport/Reports). Our [hardware wallet security guide](https://cryptowatchdog.net/blog/your-hardware-wallet-won-t-save-you-a-2026-security-guide-2026-04-22) covers some of the less obvious angles, including supply chain attacks on the physical devices themselves.
 
 Here's a practical checklist, roughly in priority order:
 
