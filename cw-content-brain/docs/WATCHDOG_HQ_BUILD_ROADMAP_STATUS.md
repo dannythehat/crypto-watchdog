@@ -667,3 +667,48 @@ Safety:
 
 Next build:
 - Build 76 — Watchdog HQ Research & Intelligence Role Definition Pack v1
+
+## Build 76 — Watchdog HQ Research & Intelligence Role Definition Pack v1
+
+Status: built / ready for review
+
+Purpose: define the Research & Intelligence role definition pack using the Build 71 role review process.
+
+Output:
+- `cw-content-brain/docs/WATCHDOG_HQ_RESEARCH_INTELLIGENCE_ROLE_DEFINITION_PACK.md`
+
+Roles covered:
+- Research & Intelligence Director
+- Source Researcher
+- Evidence Researcher
+- Company / Platform Researcher
+- Product / Feature Researcher
+- Red Flag Researcher
+- Market / Competitor Intelligence Analyst
+- Research Pack Builder
+
+Safety:
+- no runnable agents
+- no role programming
+- no tool wiring
+- no API connections
+- no Safe Apply
+- no publishing
+- no live website edits
+- no Supabase writes
+- no affiliate URL insertion
+- no trust-rating edits
+- no outreach sending
+- no email sending
+- no media generation or download
+- READ_ONLY_REPORT_ONLY remains locked
+
+Next build:
+- Build 77 — Watchdog HQ SEO Role Definition Pack v1
+
+Sequential role-definition handoff after Build 77:
+- Build 78 — Watchdog HQ Content Production Role Definition Pack v1
+- Build 79 — Watchdog HQ Media Role Definition Pack v1
+- Build 80 — Watchdog HQ Affiliate & Commercial Role Definition Pack v1
+- Build 81 — Watchdog HQ Analytics & Lifecycle Role Definition Pack v1
+- Build 82 — Watchdog HQ Social & Distribution Role Definition Pack v1

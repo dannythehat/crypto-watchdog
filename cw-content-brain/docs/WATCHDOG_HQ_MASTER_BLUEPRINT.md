@@ -1029,3 +1029,24 @@ Build 75 does not programme agents, does not create runnable agents, does not cr
 
 No role may move to programming without Danny approval.
 READ_ONLY_REPORT_ONLY remains locked.
+
+## Build 76 lock — Research & Intelligence Role Definition Pack v1
+
+Build 76 locks `cw-content-brain/docs/WATCHDOG_HQ_RESEARCH_INTELLIGENCE_ROLE_DEFINITION_PACK.md` as the reviewed role definition pack for the Research & Intelligence department under the Build 71 role review process.
+
+Build 76 defines the Research & Intelligence roles for:
+- Research & Intelligence Director
+- Source Researcher
+- Evidence Researcher
+- Company / Platform Researcher
+- Product / Feature Researcher
+- Red Flag Researcher
+- Market / Competitor Intelligence Analyst
+- Research Pack Builder
+
+Build 76 does not programme agents, does not create runnable agents, does not wire tools, does not connect APIs, does not create Safe Apply, and does not approve any AI role for live execution.
+
+No role may move to programming without Danny approval.
+READ_ONLY_REPORT_ONLY remains locked.
+
+Build 77 will define the SEO Role Definition Pack v1.
