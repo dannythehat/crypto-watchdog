@@ -1,0 +1,55 @@
+# Content Automation Engine — Cloudflare config (doc 02).
+#
+# This is a TEMPLATE. The resource IDs below are placeholders — running the
+# provisioning commands in README.md fills them in. Until then `wrangler deploy`
+# will refuse (good: it can't go live by accident).
+#
+# Four Workers share ONE D1/KV/R2 set. Cron is UTC-only, no auto-retry (doc 02).
+#
+# HARD STOP: no secrets are stored here. DASH_TOKEN, ANTHROPIC_API_KEY, GH_TOKEN,
+# POSTIZ_* and PUBLISH_ARMED are set via `wrangler secret put` by Danny, later.
+
+name = "content-engine-core"
+main = "src/core.js"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# ── Shared bindings (same IDs across all four Workers) ──────────────────────
+[[d1_databases]]
+binding = "DB"
+database_name = "content-engine"
+database_id = "PLACEHOLDER_D1_ID"   # ← filled by: wrangler d1 create content-engine
+
+[[kv_namespaces]]
+binding = "KV"
+id = "PLACEHOLDER_KV_ID"            # ← filled by: wrangler kv namespace create blocklist
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "content-engine-images"
+
+# Vars (non-secret). Secrets go via `wrangler secret put`.
+[vars]
+PUBLISH_ARMED = "false"            # ignition OFF. Danny flips this last.
+
+# ── The three cron Workers are deployed as separate services that reuse the
+#    same bindings above. Each has its own [env.*] section so one repo deploys
+#    all four. Cron times are UTC.
+
+[env.ingest]
+name = "content-engine-ingest"
+main = "src/ingest.js"
+[env.ingest.triggers]
+crons = ["0 6 * * *"]              # 06:00 UTC daily — pull sources
+
+[env.draft]
+name = "content-engine-draft"
+main = "src/draft.js"
+[env.draft.triggers]
+crons = ["30 6 * * *"]             # 06:30 UTC daily — draft NEW rows
+
+[env.publish]
+name = "content-engine-publish"
+main = "src/publish.js"
+[env.publish.triggers]
+crons = ["0 8 * * *", "0 17 * * *"] # 08:00 & 17:00 UTC — publish APPROVED (when armed)

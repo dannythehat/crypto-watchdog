@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Content Queue — Approval Dashboard</title>
+<style>
+  /* Mobile-first approval dashboard (doc 03). Single file, no build step.
+     Premium, calm, evidence-led feel to match the brand. */
+  :root{
+    --bg:#0b1220; --card:#121b2e; --line:#22304d; --ink:#e8eefc; --mut:#8aa0c6;
+    --green:#1db981; --orange:#f5a623; --red:#ef4d5a; --blue:#4c8dff; --blue2:#1f3a66;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+  header{position:sticky;top:0;z-index:5;background:rgba(11,18,32,.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);padding:14px 16px;display:flex;align-items:center;gap:10px}
+  header h1{font-size:16px;margin:0;font-weight:650;letter-spacing:.2px}
+  header .sp{flex:1}
+  select,input,button{font:inherit;color:var(--ink)}
+  select,input{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+  .wrap{max-width:720px;margin:0 auto;padding:16px}
+  .tabs{display:flex;gap:8px;overflow:auto;padding:0 16px 12px;-webkit-overflow-scrolling:touch}
+  .tab{white-space:nowrap;padding:7px 12px;border-radius:999px;border:1px solid var(--line);
+    background:var(--card);color:var(--mut);cursor:pointer}
+  .tab.on{background:var(--blue2);color:var(--ink);border-color:var(--blue)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:0 0 14px}
+  .row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .type{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--mut);
+    border:1px solid var(--line);padding:2px 8px;border-radius:999px}
+  .title{font-size:17px;font-weight:650;margin:8px 0 6px}
+  .body{color:#cdd9f2;white-space:pre-wrap;max-height:8.5em;overflow:hidden;position:relative}
+  .body.open{max-height:none}
+  .more{color:var(--blue);background:none;border:none;padding:6px 0;cursor:pointer}
+  .badges{gap:6px;margin:10px 0}
+  .b{font-size:11px;padding:3px 9px;border-radius:999px;border:1px solid var(--line)}
+  .b.ok{color:var(--green);border-color:var(--green)} .b.no{color:var(--red);border-color:var(--red)}
+  .b.warn{color:var(--orange);border-color:var(--orange)}
+  .verdict{display:flex;gap:6px;margin:10px 0}
+  .v{flex:1;text-align:center;padding:9px;border-radius:10px;border:1px solid var(--line);
+    background:transparent;cursor:pointer;font-weight:600}
+  .v.green{color:var(--green)} .v.orange{color:var(--orange)} .v.red{color:var(--red)}
+  .v.sel.green{background:rgba(29,185,129,.16);border-color:var(--green)}
+  .v.sel.orange{background:rgba(245,166,35,.16);border-color:var(--orange)}
+  .v.sel.red{background:rgba(239,77,90,.16);border-color:var(--red)}
+  .reasons{color:var(--orange);font-size:13px;margin:8px 0;padding-left:18px}
+  .actions{display:flex;gap:8px;margin-top:12px}
+  .btn{flex:1;padding:11px;border-radius:12px;border:1px solid var(--line);background:var(--card);
+    cursor:pointer;font-weight:650}
+  .btn.approve{background:var(--green);color:#06231a;border-color:var(--green)}
+  .btn.approve:disabled{opacity:.4;cursor:not-allowed;filter:grayscale(.4)}
+  .btn.reject{color:var(--red)}
+  .disc{display:flex;align-items:center;gap:8px;margin:8px 0;color:var(--mut);font-size:13px}
+  .empty,.err{text-align:center;color:var(--mut);padding:40px 16px}
+  .err{color:var(--red)}
+  .login{max-width:360px;margin:60px auto;padding:24px;text-align:center}
+  .login input{width:100%;margin:12px 0}
+  .login button{width:100%;background:var(--blue);color:#04183a;border:none;border-radius:12px;padding:12px;font-weight:700;cursor:pointer}
+  small.note{color:var(--mut)}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+// ── tiny state ──────────────────────────────────────────────────────────────
+const S = {
+  token: localStorage.getItem("ce_token") || "",
+  api:   localStorage.getItem("ce_api")   || "",      // base URL of core Worker
+  brand: localStorage.getItem("ce_brand") || "cryptowatchdog",
+  status:"PENDING_REVIEW",
+  items: [], err:"", loading:false,
+};
+const STATUSES = ["PENDING_REVIEW","NEW","APPROVED","PUBLISHED","REJECTED","FAILED"];
+
+const h = (s)=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+async function api(path, opts={}){
+  const r = await fetch(S.api.replace(/\/$/,"") + path, {
+    ...opts,
+    headers:{ "authorization":"Bearer "+S.token, "content-type":"application/json", ...(opts.headers||{}) },
+  });
+  if(r.status===401) throw new Error("Unauthorized — check your token.");
+  return r.json();
+}
+
+async function load(){
+  S.loading=true; S.err=""; render();
+  try{
+    const d = await api(`/api/queue?brand=${encodeURIComponent(S.brand)}&status=${S.status}`);
+    if(!d.ok) throw new Error(d.error||"load failed");
+    S.items = d.items||[];
+  }catch(e){ S.err=e.message; S.items=[]; }
+  S.loading=false; render();
+}
+
+async function act(path, body){
+  try{
+    const d = await api(path+`?brand=${encodeURIComponent(S.brand)}`, {method:"POST", body:JSON.stringify(body)});
+    if(!d.ok){ alert((d.error||"failed")+(d.reasons?"\n• "+d.reasons.join("\n• "):"")); }
+    await load();
+  }catch(e){ alert(e.message); }
+}
+
+// ── views ───────────────────────────────────────────────────────────────────
+function login(){
+  document.getElementById("app").innerHTML = `
+   <div class="login card">
+     <h1>Content Queue</h1>
+     <p><small class="note">Connect to your approval API. Stored only on this device.</small></p>
+     <input id="api" placeholder="API URL (e.g. https://content-engine-core.workers.dev)" value="${h(S.api)}"/>
+     <input id="tok" type="password" placeholder="Dashboard token" value="${h(S.token)}"/>
+     <button onclick="saveLogin()">Connect</button>
+   </div>`;
+}
+window.saveLogin=()=>{
+  S.api=document.getElementById("api").value.trim();
+  S.token=document.getElementById("tok").value.trim();
+  localStorage.setItem("ce_api",S.api); localStorage.setItem("ce_token",S.token);
+  load();
+};
+window.logout=()=>{ localStorage.removeItem("ce_token"); S.token=""; render(); };
+
+function verdictRow(it){
+  const v = it._gates?.verdict?.rating || "";
+  if(it.content_type!=="review" && !v && !it.affiliate_json) return "";
+  const mk=(r)=>`<button class="v ${r.toLowerCase()} ${v===r?'sel':''}"
+     onclick="act('/api/set-verdict',{id:'${it.id}',rating:'${r}'})">${r}</button>`;
+  return `<div class="verdict">${mk("GREEN")}${mk("ORANGE")}${mk("RED")}</div>`;
+}
+
+function card(it){
+  const g = it._gates||{}; const appr = g.approve||{ok:true,reasons:[]};
+  const hasAff = it.affiliate_json && it.affiliate_json!=="null";
+  const isReview = it.content_type==="review";
+  const reasons = appr.reasons||[];
+  const canApprove = appr.ok && it.status==="PENDING_REVIEW";
+  return `
+  <div class="card">
+    <div class="row">
+      <span class="type">${h(it.content_type)}</span>
+      <span class="type">${h(it.status)}</span>
+      <span class="sp"></span>
+      ${it.ai_generated?'<span class="b warn">AI draft</span>':''}
+    </div>
+    <div class="title">${h(it.title||"(untitled)")}</div>
+    <div class="body" id="b_${it.id}">${h(it.body_md||"")}</div>
+    <button class="more" onclick="document.getElementById('b_${it.id}').classList.toggle('open')">show / hide</button>
+
+    <div class="row badges">
+      ${isReview?`<span class="b ${g.verdict?'ok':'no'}">${g.verdict?'verdict: '+g.verdict.rating:'no verdict'}</span>`:''}
+      ${hasAff?`<span class="b ${it.disclosure_applied?'ok':'no'}">${it.disclosure_applied?'disclosure ✓':'disclosure needed'}</span>`:'<span class="b">no affiliate</span>'}
+    </div>
+
+    ${verdictRow(it)}
+
+    ${hasAff?`<label class="disc"><input type="checkbox" ${it.disclosure_applied?'checked':''}
+        onchange="act('/api/set-disclosure',{id:'${it.id}',applied:this.checked})"/> FTC disclosure applied</label>`:''}
+
+    ${reasons.length?`<ul class="reasons">${reasons.map(r=>`<li>${h(r)}</li>`).join("")}</ul>`:''}
+
+    <div class="actions">
+      <button class="btn approve" ${canApprove?'':'disabled'}
+        onclick="act('/api/approve',{id:'${it.id}'})">Approve</button>
+      <button class="btn" onclick="act('/api/regenerate',{id:'${it.id}'})">Regenerate</button>
+      <button class="btn reject" onclick="if(confirm('Reject this item?'))act('/api/reject',{id:'${it.id}'})">Reject</button>
+    </div>
+  </div>`;
+}
+
+function render(){
+  if(!S.token || !S.api){ login(); return; }
+  const app=document.getElementById("app");
+  app.innerHTML = `
+   <header>
+     <h1>Content Queue</h1>
+     <span class="sp"></span>
+     <select onchange="S.brand=this.value;localStorage.setItem('ce_brand',S.brand);load()">
+       <option value="cryptowatchdog" ${S.brand==='cryptowatchdog'?'selected':''}>Crypto Watchdog</option>
+       <option value="littletinytreasures" ${S.brand==='littletinytreasures'?'selected':''}>Little Tiny Treasures</option>
+     </select>
+     <button class="tab" onclick="logout()">⎋</button>
+   </header>
+   <div class="tabs">
+     ${STATUSES.map(s=>`<div class="tab ${S.status===s?'on':''}" onclick="S.status='${s}';load()">${s.replace('_',' ')}</div>`).join("")}
+   </div>
+   <div class="wrap">
+     ${S.err?`<div class="err">${h(S.err)}</div>`:''}
+     ${S.loading?`<div class="empty">Loading…</div>`:
+       S.items.length?S.items.map(card).join(""):`<div class="empty">Nothing in ${h(S.status.replace('_',' '))}.</div>`}
+   </div>`;
+}
+
+if(S.token && S.api) load(); else render();
+</script>
+</body>
+</html>
