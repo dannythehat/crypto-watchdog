@@ -5,9 +5,10 @@ import Footer from "@/components/Footer";
 import SectionWrapper from "@/components/SectionWrapper";
 import Markdown from "@/components/Markdown";
 import Seo from "@/components/Seo";
+import AuthorBlock from "@/components/AuthorBlock";
 import { Button } from "@/components/ui/button";
 import { useWarning } from "@/hooks/useWarnings";
-import { articleJsonLd, breadcrumbJsonLd } from "@/lib/seo";
+import { articleJsonLd, authorFromContent, breadcrumbJsonLd } from "@/lib/seo";
 
 const WarningDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -60,6 +61,7 @@ const WarningDetail = () => {
             publishedAt: warning.published_at,
             modifiedAt: warning.updated_at,
             section: "Scam Warning",
+            author: authorFromContent(warning),
           }),
           breadcrumbJsonLd([
             { name: "Home", path: "/" },
@@ -87,11 +89,12 @@ const WarningDetail = () => {
               <p className="mt-2 text-muted-foreground">Platform: <strong>{warning.platform_name}</strong></p>
             )}
 
-            {warning.published_at && (
-              <p className="mt-2 text-sm text-muted-foreground">
-                {new Date(warning.published_at).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}
-              </p>
-            )}
+            <AuthorBlock
+              author={authorFromContent(warning)}
+              date={warning.published_at}
+              updated={warning.updated_at}
+              className="mt-4"
+            />
 
             <div className="mt-8 max-w-none">
               <Markdown content={warning.content} />

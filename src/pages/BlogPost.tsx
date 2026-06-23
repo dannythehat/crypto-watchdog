@@ -1,14 +1,15 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, CalendarDays } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionWrapper from "@/components/SectionWrapper";
 import Markdown from "@/components/Markdown";
 import Seo from "@/components/Seo";
+import AuthorBlock from "@/components/AuthorBlock";
 import { Button } from "@/components/ui/button";
 import { useBlogPost } from "@/hooks/useBlogPosts";
 import { getRelatedPosts } from "@/content";
-import { articleJsonLd, breadcrumbJsonLd, extractFaq, faqJsonLd } from "@/lib/seo";
+import { articleJsonLd, authorFromContent, breadcrumbJsonLd, extractFaq, faqJsonLd } from "@/lib/seo";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -66,6 +67,7 @@ const BlogPost = () => {
             publishedAt: post.published_at,
             modifiedAt: post.updated_at,
             section: post.category,
+            author: authorFromContent(post),
           }),
           faqJsonLd(faqs),
           breadcrumbJsonLd([
@@ -91,16 +93,12 @@ const BlogPost = () => {
 
             <h1 className="text-3xl leading-tight md:text-4xl">{post.title}</h1>
 
-            {post.published_at && (
-              <div className="mt-3 flex items-center gap-1.5 text-sm text-muted-foreground">
-                <CalendarDays className="h-4 w-4" />
-                {new Date(post.published_at).toLocaleDateString("en-GB", {
-                  day: "numeric",
-                  month: "long",
-                  year: "numeric",
-                })}
-              </div>
-            )}
+            <AuthorBlock
+              author={authorFromContent(post)}
+              date={post.published_at}
+              updated={post.updated_at}
+              className="mt-4"
+            />
 
             {post.image_url && (
               <img

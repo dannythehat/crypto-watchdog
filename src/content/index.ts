@@ -10,7 +10,15 @@ export interface Category {
   icon_name: string | null; parent_id: string | null; sort_order: number;
 }
 
-export interface BlogPost {
+// E-E-A-T author fields (optional) carried in frontmatter; absent on legacy
+// posts, which then fall back to the default author identity (see seo.ts).
+export interface AuthorFields {
+  author?: string | null; author_credentials?: string | null;
+  author_url?: string | null; author_same_as?: string[] | null;
+  author_image?: string | null;
+}
+
+export interface BlogPost extends AuthorFields {
   type: "blog"; title: string; slug: string; content: string;
   summary: string | null; category: string | null; image_url: string | null;
   published: boolean; auto_generated: boolean;
@@ -18,7 +26,7 @@ export interface BlogPost {
   meta_title: string | null; meta_description: string | null;
 }
 
-export interface Review {
+export interface Review extends AuthorFields {
   type: "review"; name: string; slug: string; content: string;
   rating: "green" | "orange" | "red" | null; trust_score: number | null;
   summary: string | null; verdict: string | null; category_id: string | null;
@@ -31,7 +39,7 @@ export interface Review {
   categories?: { name: string; slug: string } | null;
 }
 
-export interface Warning {
+export interface Warning extends AuthorFields {
   type: "warning"; title: string; slug: string; content: string;
   summary: string | null; severity: string | null; platform_name: string | null;
   alert_type: string | null; published: boolean;

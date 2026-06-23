@@ -6,6 +6,7 @@ import SectionWrapper from "@/components/SectionWrapper";
 import RatingBadge from "@/components/RatingBadge";
 import TrustScore from "@/components/TrustScore";
 import Seo from "@/components/Seo";
+import AuthorBlock from "@/components/AuthorBlock";
 import AffiliateCTA from "@/components/AffiliateCTA";
 import Markdown from "@/components/Markdown";
 import { Button } from "@/components/ui/button";
@@ -13,7 +14,7 @@ import { useReview } from "@/hooks/useReviews";
 import { getAffiliateByReviewSlug, isMonetisable } from "@/content";
 import { getCasino, claimUrl, hasAffiliate } from "@/content/casinos";
 import { trackEvent } from "@/lib/analytics";
-import { breadcrumbJsonLd, reviewJsonLd, faqJsonLd } from "@/lib/seo";
+import { authorFromContent, breadcrumbJsonLd, reviewJsonLd, faqJsonLd } from "@/lib/seo";
 
 const ReviewDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -78,6 +79,7 @@ const ReviewDetail = () => {
             image: review.logo_url || (review as any).social_image_url,
             publishedAt: (review as any).published_at,
             modifiedAt: (review as any).updated_at,
+            author: authorFromContent(review),
           }),
           breadcrumbJsonLd([
             { name: "Home", path: "/" },
@@ -112,6 +114,13 @@ const ReviewDetail = () => {
                 <RatingBadge rating={review.rating as "green" | "orange" | "red"} size="md" />
               </div>
             </div>
+
+            <AuthorBlock
+              author={authorFromContent(review)}
+              date={(review as any).published_at}
+              updated={(review as any).updated_at}
+              className="mt-5"
+            />
 
             {casino?.banner && (
               <a

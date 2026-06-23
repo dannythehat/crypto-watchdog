@@ -18,6 +18,53 @@ const organization = {
   logo: SITE.logo,
 };
 
+// ── Author identity (E-E-A-T) ───────────────────────────────────────────────
+// Named, credentialed author for bylines + JSON-LD Person. Per-article
+// frontmatter (author, author_credentials, …) overrides any field; when a post
+// has no author frontmatter we fall back to this brand-config identity (doc 09).
+export interface Author {
+  name: string;
+  credentials?: string | null;
+  url?: string | null;
+  sameAs?: string[] | null;
+  image?: string | null;
+}
+
+export const DEFAULT_AUTHOR: Author = {
+  name: "Danny Allan",
+  credentials: "Founder & lead analyst, CryptoWatchdog · former Complaints Manager at Crypto.com",
+  url: `${SITE.baseUrl}/about`,
+  sameAs: [],
+  image: null,
+};
+
+// Build an Author from a content object's frontmatter fields (or null if none).
+export function authorFromContent(o: unknown): Author | null {
+  const c = o as Record<string, unknown> | null;
+  if (!c || typeof c.author !== "string" || !c.author) return null;
+  return {
+    name: c.author,
+    credentials: (c.author_credentials as string) ?? null,
+    url: (c.author_url as string) ?? null,
+    sameAs: Array.isArray(c.author_same_as) ? (c.author_same_as as string[]) : null,
+    image: (c.author_image as string) ?? null,
+  };
+}
+
+// JSON-LD Person, merged over the default identity. Omits empty sameAs/image.
+function personJsonLd(a?: Author | null): Record<string, unknown> {
+  const author = { ...DEFAULT_AUTHOR, ...(a || {}) };
+  const sameAs = (author.sameAs || []).filter(Boolean);
+  return {
+    "@type": "Person",
+    name: author.name,
+    jobTitle: author.credentials || undefined,
+    url: author.url || undefined,
+    ...(sameAs.length ? { sameAs } : {}),
+    ...(author.image ? { image: author.image } : {}),
+  };
+}
+
 // Standalone JSON-LD for the homepage: brand identity + site entity.
 export const organizationJsonLd = (): Record<string, unknown> => ({
   "@context": "https://schema.org",
@@ -44,6 +91,7 @@ interface ArticleInput {
   publishedAt?: string | null;
   modifiedAt?: string | null;
   section?: string | null;
+  author?: Author | null;
 }
 
 export function articleJsonLd(a: ArticleInput): Record<string, unknown> {
@@ -59,7 +107,7 @@ export function articleJsonLd(a: ArticleInput): Record<string, unknown> {
     datePublished: a.publishedAt || undefined,
     dateModified: a.modifiedAt || a.publishedAt || undefined,
     articleSection: a.section || undefined,
-    author: organization,
+    author: personJsonLd(a.author),
     publisher: organization,
   };
 }
@@ -73,6 +121,7 @@ interface ReviewInput {
   image?: string | null;
   publishedAt?: string | null;
   modifiedAt?: string | null;
+  author?: Author | null;
 }
 
 // Maps the traffic-light/trust score to a 1-5 ratingValue for Review schema.
@@ -96,7 +145,7 @@ export function reviewJsonLd(r: ReviewInput): Record<string, unknown> {
     url,
     datePublished: r.publishedAt || undefined,
     dateModified: r.modifiedAt || r.publishedAt || undefined,
-    author: organization,
+    author: personJsonLd(r.author),
     publisher: organization,
     reviewRating: ratingValue
       ? { "@type": "Rating", ratingValue, bestRating: 5, worstRating: 1 }
