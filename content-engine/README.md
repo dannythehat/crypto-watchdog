@@ -13,12 +13,14 @@ content-engine/
   wrangler.toml     Cloudflare config TEMPLATE (placeholder IDs, no secrets, PUBLISH_ARMED=false)
   src/
     lib/gates.js    Compliance gates (doc 05): disclosure gate, RED-strip, trust firewall — PURE
+    lib/render.js   Template → site-markdown renderer (doc 08): E-E-A-T frontmatter — PURE
     core.js         Approval Dashboard API Worker (the human gate)
     ingest.js       Cron: sources → NEW rows (inert until sources activated)
     draft.js        Cron: NEW → PENDING_REVIEW via Claude (inert until ANTHROPIC_API_KEY set)
-    publish.js      Cron: APPROVED → live (DISARMED until PUBLISH_ARMED=true + per-channel creds)
+    publish.js      Cron: APPROVED → git-commit markdown (DISARMED until PUBLISH_ARMED + creds)
   dashboard/        Mobile-first approval UI (static, talks to core.js API)
-  test/dry-run.mjs  Offline acceptance test (node:sqlite, no network)
+  test/dry-run.mjs      Offline gate acceptance test (node:sqlite, no network)
+  test/render.test.mjs  Renderer test — output round-trips through the site's own parser
 ```
 
 ## Verify it works offline (no Cloudflare needed)
@@ -27,7 +29,11 @@ content-engine/
 node --experimental-sqlite content-engine/test/dry-run.mjs
 ```
 
-This loads the real `schema.sql` + `seed.sql` into in-memory SQLite and asserts every doc-05 gate (review needs verdict; disclosure gate; RED strips links; trust threshold; only APPROVED+disclosure publishes). Expect **20 passed, 0 failed**.
+```bash
+node --experimental-sqlite content-engine/test/render.test.mjs
+```
+
+The first loads `schema.sql` + `seed.sql` into in-memory SQLite and asserts every doc-05 gate (review needs verdict; disclosure gate; RED strips links; trust threshold; only APPROVED+disclosure publishes) — **20 passed**. The second proves the renderer's markdown round-trips through a faithful copy of the site's own frontmatter parser, with E-E-A-T author fields, dual `rating`/`trust_rating`, and disclosure-on-affiliate — **33 passed**.
 
 ## Provisioning (when you have a networked machine + Cloudflare login)
 
@@ -69,7 +75,7 @@ Each step below switches on exactly one capability. Do them one at a time.
 | To enable | Set secret / flag | Effect |
 |---|---|---|
 | Drafting | `wrangler secret put ANTHROPIC_API_KEY --env draft` | draft Worker starts writing drafts |
-| Website publish | `wrangler secret put GH_TOKEN --env publish` + `SITE_REPO` | publish can commit markdown to the site repo |
+| Website publish | `wrangler secret put GH_TOKEN --env publish` + vars `SITE_REPO`, `SITE_BRANCH` | publish can commit markdown to the site repo (triggers Pages build) |
 | Social publish | `POSTIZ_URL` + `POSTIZ_KEY` (`--env publish`) | publish can post to X/IG/FB via Postiz |
 | **Go live** | set `PUBLISH_ARMED = "true"` in `wrangler.toml`, redeploy publish | **ignition ON** |
 
